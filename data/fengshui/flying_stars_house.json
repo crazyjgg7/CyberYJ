@@ -1,0 +1,18 @@
+[
+  {
+    "period": 9,
+    "sitting_mountain": "壬",
+    "palace_map": {
+      "中宫": {"mountain_star": 9, "facing_star": 9},
+      "坎": {"mountain_star": 8, "facing_star": 1},
+      "坤": {"mountain_star": 2, "facing_star": 8},
+      "震": {"mountain_star": 7, "facing_star": 2},
+      "巽": {"mountain_star": 3, "facing_star": 7},
+      "乾": {"mountain_star": 6, "facing_star": 4},
+      "兑": {"mountain_star": 1, "facing_star": 6},
+      "艮": {"mountain_star": 5, "facing_star": 3},
+      "离": {"mountain_star": 4, "facing_star": 5}
+    },
+    "source_ref": "convention"
+  }
+]

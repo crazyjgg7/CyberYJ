@@ -177,6 +177,19 @@ class TestDataLoader:
         assert p2024 is not None
         assert p2024['period'] == 9
 
+    def test_get_flying_star_house_rule(self):
+        rule = self.loader.get_flying_star_house_rule(period=9, sitting_mountain='壬')
+        assert rule is not None
+        assert rule['period'] == 9
+        assert rule['sitting_mountain'] == '壬'
+        assert 'palace_map' in rule
+
+    def test_get_flying_star_scoring(self):
+        scoring = self.loader.get_flying_star_scoring()
+        assert 'stars' in scoring
+        assert '1' in scoring['stars']
+        assert 'score' in scoring['stars']['1']
+
     def test_get_sources(self):
         """测试获取来源数据"""
         sources = self.loader.get_sources()

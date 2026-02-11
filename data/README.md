@@ -163,6 +163,25 @@ data/
 }
 ```
 
+### fengshui/flying_stars_house.json
+```json
+{
+  "period": "number",
+  "sitting_mountain": "string",
+  "palace_map": "object",
+  "source_ref": "string"
+}
+```
+
+### fengshui/flying_stars_scoring.json
+```json
+{
+  "version": "string",
+  "stars": "object",
+  "source_ref": "string"
+}
+```
+
 ## 📝 更新日志
 
 ### V2 (2026-02-10)

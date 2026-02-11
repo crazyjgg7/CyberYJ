@@ -393,6 +393,44 @@ class DataLoader:
                 return period
         return None
 
+    def get_flying_star_house_rules(self) -> List[Dict[str, Any]]:
+        """
+        获取玄空飞星宅盘规则表
+
+        Returns:
+            宅盘规则列表
+        """
+        if 'flying_star_house' not in self._cache:
+            self._cache['flying_star_house'] = self._load_json(
+                'flying_stars_house.json',
+                'fengshui'
+            )
+        return self._cache['flying_star_house']
+
+    def get_flying_star_house_rule(
+        self,
+        period: int,
+        sitting_mountain: str
+    ) -> Optional[Dict[str, Any]]:
+        """
+        根据元运与坐山获取宅盘规则
+        """
+        for rule in self.get_flying_star_house_rules():
+            if rule['period'] == period and rule['sitting_mountain'] == sitting_mountain:
+                return rule
+        return None
+
+    def get_flying_star_scoring(self) -> Dict[str, Any]:
+        """
+        获取飞星评分规则
+        """
+        if 'flying_star_scoring' not in self._cache:
+            self._cache['flying_star_scoring'] = self._load_json(
+                'flying_stars_scoring.json',
+                'fengshui'
+            )
+        return self._cache['flying_star_scoring']
+
     def get_sources(self) -> List[Dict[str, Any]]:
         """
         获取数据来源索引

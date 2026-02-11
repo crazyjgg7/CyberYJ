@@ -1,0 +1,15 @@
+{
+  "version": "v1",
+  "stars": {
+    "1": {"score": 2, "label": "吉"},
+    "2": {"score": -2, "label": "凶"},
+    "3": {"score": -2, "label": "凶"},
+    "4": {"score": 2, "label": "吉"},
+    "5": {"score": -3, "label": "凶"},
+    "6": {"score": 2, "label": "吉"},
+    "7": {"score": -1, "label": "凶"},
+    "8": {"score": 3, "label": "吉"},
+    "9": {"score": 2, "label": "吉"}
+  },
+  "source_ref": "convention"
+}

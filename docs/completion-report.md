@@ -1,5 +1,8 @@
 # CyberYJ 项目阶段性完成报告
 
+> 历史说明（2026-02-11 更新）：本文件是 M1/M2 阶段归档，不再作为当前项目状态口径。  
+> 当前状态请以 `/Users/apple/dev/CyberYJ/docs/project-progress.md` 与 `/Users/apple/dev/CyberYJ/docs/requirements.md` 为准（“已完成 / 未完成（M4）”）。
+
 **报告日期**: 2026-02-09
 **完成阶段**: M1 + M2（数据层 + 逻辑层）
 **总体进度**: 75%

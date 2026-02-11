@@ -1,5 +1,8 @@
 # CyberYJ 项目最终完成报告
 
+> 历史说明（2026-02-11 更新）：本文件是早期阶段性归档，不再作为当前项目状态口径。  
+> 当前状态请以 `/Users/apple/dev/CyberYJ/docs/project-progress.md` 与 `/Users/apple/dev/CyberYJ/docs/requirements.md` 为准（“已完成 / 未完成（M4）”）。
+
 **项目名称**: CyberYJ - 玄学知识库 + MCP 服务
 **完成日期**: 2026-02-09
 **版本**: v1.0.0

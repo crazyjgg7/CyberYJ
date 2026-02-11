@@ -119,7 +119,7 @@
 
 **7. 数据模型与出处标注**
 - 所有规则与解释项必须含 `source_ref`
-- 统一来源索引 `data/sources.json`
+- 统一来源索引 `data/core/sources.json`
 - 经典文本作为理论依据；无法唯一对应出处的规则标记为 `convention`
 
 **权威来源替换（简化）**
@@ -145,28 +145,40 @@
 - 可扩展：数据与规则分离，方便迭代
 - 合规：当前阶段仅使用“书目级索引 + 归纳规则”，不录入受版权保护的原文
 
-**10. 里程碑**
-- M1：数据结构 + 规则表 + `sources.json`
-- M2：MCP schema + 基础计算逻辑
-- M3：输出模板与示例测试
-- M4：权威文本合法获取与本地数据落地（后续评估）
-  - 交付物：本地 `data` 目录的权威文本摘要/许可文本
-  - 形式：`authoritative_text_map.json` + 分模块映射文件
-  - 范围：卦辞/象辞/规则条目（按字段级映射）
-  - 校验：source_ref 可追溯、license 合规、trace 可标注
+**10. 里程碑（单一口径）**
+- M1（已完成）：数据结构 + 规则表 + `sources` 索引
+- M2（已完成）：MCP schema + 基础计算逻辑
+- M3（已完成）：输出模板、示例测试、关键词路由、统一 JSON 响应
+- M4（未完成）：权威文本合法获取与本地 `data` 知识库落地
 
-**当前进度摘要（2026-02-11）**
-- 所有场景数据已补齐（命运/事业/感情/财运/健康/学业/家庭/出行/诉讼）✅
-- `fengshui_divination` / `luopan_orientation` 已完成并可运行 ✅
-- MCP 输出统一 JSON ✅
-- 权威书目索引已建立（非原文录入）✅
-- V2 字段级权威映射已接入（flying_stars_periods / flying_stars_house / flying_stars_scoring + fengshui 场景字段示例）✅
+**11. 已完成 / 未完成（M4）**
 
-**场景覆盖**
-- 命运 / 事业 / 感情 / 财运 / 健康 / 学业 / 家庭 / 出行 / 诉讼
+已完成：
+- 所有场景数据已补齐（命运/事业/感情/财运/健康/学业/家庭/出行/诉讼）
+- `fengshui_divination` / `luopan_orientation` 可运行
+- `keyword_dispatch` 路由可运行
+- MCP 输出统一为 `tool + data + meta`
+- 权威书目索引已建立（`data/core/sources.json`）
+- 字段级权威映射首批落地（period/house/scoring + fengshui 场景示例）
 
-**11. 风险与开放问题**
-- 权威出处的具体版本需统一
-- 权威文本合法获取的方式与成本待评估
-- 节气天文算法需要选型（库或自研）
-- 玄空飞星宅盘规则需按权威版本逐条校核
+未完成（M4）：
+- 未完成“权威文本/许可摘要”在 `data` 目录的规模化替换
+- 未完成“字段级映射覆盖率”达标（当前仅首批示例）
+- 未完成“权威版本统一与逐条校核”（特别是 24 山向与飞星规则）
+
+**12. M4 可执行清单（按顺序）**
+1. 锁定版本：为 5 个权威来源确定具体版本与版本号，写入 `data/core/sources.json` 的 `edition/section`。
+2. 建立映射基线：按模块生成字段清单（hexagram/scenario/ba_zhai/flying_star/solar_term）。
+3. 制定覆盖目标：定义每模块 M4 最低覆盖率（如核心结论字段 >= 80%）。
+4. 批量补映射：扩充 `data/mappings/authoritative_text_map.json`，优先补高频输出字段。
+5. 引入校验器：增加“覆盖率 + source_ref + license”检查脚本与测试。
+6. 运行时追踪：确保映射命中后 `trace` 与 `sources` 可见，并区分 `citation_only/summary`。
+7. 逐条校核规则：按权威版本校核 24 山向、八宅、飞星评分与阈值口径。
+8. 出具验收报告：产出 M4 验收文档（覆盖率、缺口、风险、后续计划）。
+
+详细执行文档：`/Users/apple/dev/CyberYJ/docs/m4-checklist.md`
+
+**13. 风险与开放问题**
+- 权威出处具体版本仍需最终确认
+- 权威文本合法获取方式与成本需落实
+- 玄空飞星宅盘规则需持续逐条校核

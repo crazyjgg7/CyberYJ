@@ -1,0 +1,23 @@
+{
+  "version": "1.0.0",
+  "required_source_ids": [
+    "ctext_yijing",
+    "cma_24_terms",
+    "qingnang_aoyu",
+    "cinii_bazhai_mingjing",
+    "cinii_dili_bianzheng_shu"
+  ],
+  "required_fields": [
+    "title",
+    "edition",
+    "section",
+    "url_or_archive",
+    "license",
+    "notes"
+  ],
+  "disallow_values": [
+    "",
+    "TBD"
+  ],
+  "require_http_url": true
+}

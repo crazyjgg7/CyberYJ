@@ -39,6 +39,13 @@
 - 当前覆盖率：10/10 = 100%（>= 80%）
 - 说明：该结果仅代表“字段映射覆盖率达标”，不代表 M4 全部完成
 
+## M4 阶段进展（P2 进行中）
+
+- 已新增来源合规策略：`data/core/source_compliance_policy.json`
+- 已新增来源合规校验模块：`src/cyberYJ/utils/source_compliance.py`
+- 已新增来源合规脚本：`scripts/check_source_compliance.py`
+- 当前核心来源合规检查：PASS（5/5 必选来源，缺失与非法字段为 0）
+
 ## M4 可执行清单
 
 1. 固化权威版本：锁定来源版本并补全 `data/core/sources.json` 的版本字段。

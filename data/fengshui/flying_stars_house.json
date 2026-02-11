@@ -1,17 +1,9289 @@
 [
   {
+    "period": 1,
+    "sitting_mountain": "壬",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 1,
+        "facing_star": 1
+      },
+      "坎": {
+        "mountain_star": 9,
+        "facing_star": 2
+      },
+      "坤": {
+        "mountain_star": 3,
+        "facing_star": 9
+      },
+      "震": {
+        "mountain_star": 8,
+        "facing_star": 3
+      },
+      "巽": {
+        "mountain_star": 4,
+        "facing_star": 8
+      },
+      "乾": {
+        "mountain_star": 7,
+        "facing_star": 5
+      },
+      "兑": {
+        "mountain_star": 2,
+        "facing_star": 7
+      },
+      "艮": {
+        "mountain_star": 6,
+        "facing_star": 4
+      },
+      "离": {
+        "mountain_star": 5,
+        "facing_star": 6
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 1,
+    "sitting_mountain": "子",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 9,
+        "facing_star": 2
+      },
+      "坎": {
+        "mountain_star": 8,
+        "facing_star": 3
+      },
+      "坤": {
+        "mountain_star": 2,
+        "facing_star": 1
+      },
+      "震": {
+        "mountain_star": 7,
+        "facing_star": 4
+      },
+      "巽": {
+        "mountain_star": 3,
+        "facing_star": 9
+      },
+      "乾": {
+        "mountain_star": 6,
+        "facing_star": 6
+      },
+      "兑": {
+        "mountain_star": 1,
+        "facing_star": 8
+      },
+      "艮": {
+        "mountain_star": 5,
+        "facing_star": 5
+      },
+      "离": {
+        "mountain_star": 4,
+        "facing_star": 7
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 1,
+    "sitting_mountain": "癸",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 8,
+        "facing_star": 3
+      },
+      "坎": {
+        "mountain_star": 7,
+        "facing_star": 4
+      },
+      "坤": {
+        "mountain_star": 1,
+        "facing_star": 2
+      },
+      "震": {
+        "mountain_star": 6,
+        "facing_star": 5
+      },
+      "巽": {
+        "mountain_star": 2,
+        "facing_star": 1
+      },
+      "乾": {
+        "mountain_star": 5,
+        "facing_star": 7
+      },
+      "兑": {
+        "mountain_star": 9,
+        "facing_star": 9
+      },
+      "艮": {
+        "mountain_star": 4,
+        "facing_star": 6
+      },
+      "离": {
+        "mountain_star": 3,
+        "facing_star": 8
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 1,
+    "sitting_mountain": "丑",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 7,
+        "facing_star": 4
+      },
+      "坎": {
+        "mountain_star": 6,
+        "facing_star": 5
+      },
+      "坤": {
+        "mountain_star": 9,
+        "facing_star": 3
+      },
+      "震": {
+        "mountain_star": 5,
+        "facing_star": 6
+      },
+      "巽": {
+        "mountain_star": 1,
+        "facing_star": 2
+      },
+      "乾": {
+        "mountain_star": 4,
+        "facing_star": 8
+      },
+      "兑": {
+        "mountain_star": 8,
+        "facing_star": 1
+      },
+      "艮": {
+        "mountain_star": 3,
+        "facing_star": 7
+      },
+      "离": {
+        "mountain_star": 2,
+        "facing_star": 9
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 1,
+    "sitting_mountain": "艮",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 6,
+        "facing_star": 5
+      },
+      "坎": {
+        "mountain_star": 5,
+        "facing_star": 6
+      },
+      "坤": {
+        "mountain_star": 8,
+        "facing_star": 4
+      },
+      "震": {
+        "mountain_star": 4,
+        "facing_star": 7
+      },
+      "巽": {
+        "mountain_star": 9,
+        "facing_star": 3
+      },
+      "乾": {
+        "mountain_star": 3,
+        "facing_star": 9
+      },
+      "兑": {
+        "mountain_star": 7,
+        "facing_star": 2
+      },
+      "艮": {
+        "mountain_star": 2,
+        "facing_star": 8
+      },
+      "离": {
+        "mountain_star": 1,
+        "facing_star": 1
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 1,
+    "sitting_mountain": "寅",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 5,
+        "facing_star": 6
+      },
+      "坎": {
+        "mountain_star": 4,
+        "facing_star": 7
+      },
+      "坤": {
+        "mountain_star": 7,
+        "facing_star": 5
+      },
+      "震": {
+        "mountain_star": 3,
+        "facing_star": 8
+      },
+      "巽": {
+        "mountain_star": 8,
+        "facing_star": 4
+      },
+      "乾": {
+        "mountain_star": 2,
+        "facing_star": 1
+      },
+      "兑": {
+        "mountain_star": 6,
+        "facing_star": 3
+      },
+      "艮": {
+        "mountain_star": 1,
+        "facing_star": 9
+      },
+      "离": {
+        "mountain_star": 9,
+        "facing_star": 2
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 1,
+    "sitting_mountain": "甲",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 4,
+        "facing_star": 7
+      },
+      "坎": {
+        "mountain_star": 3,
+        "facing_star": 8
+      },
+      "坤": {
+        "mountain_star": 6,
+        "facing_star": 6
+      },
+      "震": {
+        "mountain_star": 2,
+        "facing_star": 9
+      },
+      "巽": {
+        "mountain_star": 7,
+        "facing_star": 5
+      },
+      "乾": {
+        "mountain_star": 1,
+        "facing_star": 2
+      },
+      "兑": {
+        "mountain_star": 5,
+        "facing_star": 4
+      },
+      "艮": {
+        "mountain_star": 9,
+        "facing_star": 1
+      },
+      "离": {
+        "mountain_star": 8,
+        "facing_star": 3
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 1,
+    "sitting_mountain": "卯",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 3,
+        "facing_star": 8
+      },
+      "坎": {
+        "mountain_star": 2,
+        "facing_star": 9
+      },
+      "坤": {
+        "mountain_star": 5,
+        "facing_star": 7
+      },
+      "震": {
+        "mountain_star": 1,
+        "facing_star": 1
+      },
+      "巽": {
+        "mountain_star": 6,
+        "facing_star": 6
+      },
+      "乾": {
+        "mountain_star": 9,
+        "facing_star": 3
+      },
+      "兑": {
+        "mountain_star": 4,
+        "facing_star": 5
+      },
+      "艮": {
+        "mountain_star": 8,
+        "facing_star": 2
+      },
+      "离": {
+        "mountain_star": 7,
+        "facing_star": 4
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 1,
+    "sitting_mountain": "乙",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 2,
+        "facing_star": 9
+      },
+      "坎": {
+        "mountain_star": 1,
+        "facing_star": 1
+      },
+      "坤": {
+        "mountain_star": 4,
+        "facing_star": 8
+      },
+      "震": {
+        "mountain_star": 9,
+        "facing_star": 2
+      },
+      "巽": {
+        "mountain_star": 5,
+        "facing_star": 7
+      },
+      "乾": {
+        "mountain_star": 8,
+        "facing_star": 4
+      },
+      "兑": {
+        "mountain_star": 3,
+        "facing_star": 6
+      },
+      "艮": {
+        "mountain_star": 7,
+        "facing_star": 3
+      },
+      "离": {
+        "mountain_star": 6,
+        "facing_star": 5
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 1,
+    "sitting_mountain": "辰",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 1,
+        "facing_star": 1
+      },
+      "坎": {
+        "mountain_star": 9,
+        "facing_star": 2
+      },
+      "坤": {
+        "mountain_star": 3,
+        "facing_star": 9
+      },
+      "震": {
+        "mountain_star": 8,
+        "facing_star": 3
+      },
+      "巽": {
+        "mountain_star": 4,
+        "facing_star": 8
+      },
+      "乾": {
+        "mountain_star": 7,
+        "facing_star": 5
+      },
+      "兑": {
+        "mountain_star": 2,
+        "facing_star": 7
+      },
+      "艮": {
+        "mountain_star": 6,
+        "facing_star": 4
+      },
+      "离": {
+        "mountain_star": 5,
+        "facing_star": 6
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 1,
+    "sitting_mountain": "巽",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 9,
+        "facing_star": 2
+      },
+      "坎": {
+        "mountain_star": 8,
+        "facing_star": 3
+      },
+      "坤": {
+        "mountain_star": 2,
+        "facing_star": 1
+      },
+      "震": {
+        "mountain_star": 7,
+        "facing_star": 4
+      },
+      "巽": {
+        "mountain_star": 3,
+        "facing_star": 9
+      },
+      "乾": {
+        "mountain_star": 6,
+        "facing_star": 6
+      },
+      "兑": {
+        "mountain_star": 1,
+        "facing_star": 8
+      },
+      "艮": {
+        "mountain_star": 5,
+        "facing_star": 5
+      },
+      "离": {
+        "mountain_star": 4,
+        "facing_star": 7
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 1,
+    "sitting_mountain": "巳",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 8,
+        "facing_star": 3
+      },
+      "坎": {
+        "mountain_star": 7,
+        "facing_star": 4
+      },
+      "坤": {
+        "mountain_star": 1,
+        "facing_star": 2
+      },
+      "震": {
+        "mountain_star": 6,
+        "facing_star": 5
+      },
+      "巽": {
+        "mountain_star": 2,
+        "facing_star": 1
+      },
+      "乾": {
+        "mountain_star": 5,
+        "facing_star": 7
+      },
+      "兑": {
+        "mountain_star": 9,
+        "facing_star": 9
+      },
+      "艮": {
+        "mountain_star": 4,
+        "facing_star": 6
+      },
+      "离": {
+        "mountain_star": 3,
+        "facing_star": 8
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 1,
+    "sitting_mountain": "丙",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 7,
+        "facing_star": 4
+      },
+      "坎": {
+        "mountain_star": 6,
+        "facing_star": 5
+      },
+      "坤": {
+        "mountain_star": 9,
+        "facing_star": 3
+      },
+      "震": {
+        "mountain_star": 5,
+        "facing_star": 6
+      },
+      "巽": {
+        "mountain_star": 1,
+        "facing_star": 2
+      },
+      "乾": {
+        "mountain_star": 4,
+        "facing_star": 8
+      },
+      "兑": {
+        "mountain_star": 8,
+        "facing_star": 1
+      },
+      "艮": {
+        "mountain_star": 3,
+        "facing_star": 7
+      },
+      "离": {
+        "mountain_star": 2,
+        "facing_star": 9
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 1,
+    "sitting_mountain": "午",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 6,
+        "facing_star": 5
+      },
+      "坎": {
+        "mountain_star": 5,
+        "facing_star": 6
+      },
+      "坤": {
+        "mountain_star": 8,
+        "facing_star": 4
+      },
+      "震": {
+        "mountain_star": 4,
+        "facing_star": 7
+      },
+      "巽": {
+        "mountain_star": 9,
+        "facing_star": 3
+      },
+      "乾": {
+        "mountain_star": 3,
+        "facing_star": 9
+      },
+      "兑": {
+        "mountain_star": 7,
+        "facing_star": 2
+      },
+      "艮": {
+        "mountain_star": 2,
+        "facing_star": 8
+      },
+      "离": {
+        "mountain_star": 1,
+        "facing_star": 1
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 1,
+    "sitting_mountain": "丁",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 5,
+        "facing_star": 6
+      },
+      "坎": {
+        "mountain_star": 4,
+        "facing_star": 7
+      },
+      "坤": {
+        "mountain_star": 7,
+        "facing_star": 5
+      },
+      "震": {
+        "mountain_star": 3,
+        "facing_star": 8
+      },
+      "巽": {
+        "mountain_star": 8,
+        "facing_star": 4
+      },
+      "乾": {
+        "mountain_star": 2,
+        "facing_star": 1
+      },
+      "兑": {
+        "mountain_star": 6,
+        "facing_star": 3
+      },
+      "艮": {
+        "mountain_star": 1,
+        "facing_star": 9
+      },
+      "离": {
+        "mountain_star": 9,
+        "facing_star": 2
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 1,
+    "sitting_mountain": "未",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 4,
+        "facing_star": 7
+      },
+      "坎": {
+        "mountain_star": 3,
+        "facing_star": 8
+      },
+      "坤": {
+        "mountain_star": 6,
+        "facing_star": 6
+      },
+      "震": {
+        "mountain_star": 2,
+        "facing_star": 9
+      },
+      "巽": {
+        "mountain_star": 7,
+        "facing_star": 5
+      },
+      "乾": {
+        "mountain_star": 1,
+        "facing_star": 2
+      },
+      "兑": {
+        "mountain_star": 5,
+        "facing_star": 4
+      },
+      "艮": {
+        "mountain_star": 9,
+        "facing_star": 1
+      },
+      "离": {
+        "mountain_star": 8,
+        "facing_star": 3
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 1,
+    "sitting_mountain": "坤",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 3,
+        "facing_star": 8
+      },
+      "坎": {
+        "mountain_star": 2,
+        "facing_star": 9
+      },
+      "坤": {
+        "mountain_star": 5,
+        "facing_star": 7
+      },
+      "震": {
+        "mountain_star": 1,
+        "facing_star": 1
+      },
+      "巽": {
+        "mountain_star": 6,
+        "facing_star": 6
+      },
+      "乾": {
+        "mountain_star": 9,
+        "facing_star": 3
+      },
+      "兑": {
+        "mountain_star": 4,
+        "facing_star": 5
+      },
+      "艮": {
+        "mountain_star": 8,
+        "facing_star": 2
+      },
+      "离": {
+        "mountain_star": 7,
+        "facing_star": 4
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 1,
+    "sitting_mountain": "申",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 2,
+        "facing_star": 9
+      },
+      "坎": {
+        "mountain_star": 1,
+        "facing_star": 1
+      },
+      "坤": {
+        "mountain_star": 4,
+        "facing_star": 8
+      },
+      "震": {
+        "mountain_star": 9,
+        "facing_star": 2
+      },
+      "巽": {
+        "mountain_star": 5,
+        "facing_star": 7
+      },
+      "乾": {
+        "mountain_star": 8,
+        "facing_star": 4
+      },
+      "兑": {
+        "mountain_star": 3,
+        "facing_star": 6
+      },
+      "艮": {
+        "mountain_star": 7,
+        "facing_star": 3
+      },
+      "离": {
+        "mountain_star": 6,
+        "facing_star": 5
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 1,
+    "sitting_mountain": "庚",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 1,
+        "facing_star": 1
+      },
+      "坎": {
+        "mountain_star": 9,
+        "facing_star": 2
+      },
+      "坤": {
+        "mountain_star": 3,
+        "facing_star": 9
+      },
+      "震": {
+        "mountain_star": 8,
+        "facing_star": 3
+      },
+      "巽": {
+        "mountain_star": 4,
+        "facing_star": 8
+      },
+      "乾": {
+        "mountain_star": 7,
+        "facing_star": 5
+      },
+      "兑": {
+        "mountain_star": 2,
+        "facing_star": 7
+      },
+      "艮": {
+        "mountain_star": 6,
+        "facing_star": 4
+      },
+      "离": {
+        "mountain_star": 5,
+        "facing_star": 6
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 1,
+    "sitting_mountain": "酉",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 9,
+        "facing_star": 2
+      },
+      "坎": {
+        "mountain_star": 8,
+        "facing_star": 3
+      },
+      "坤": {
+        "mountain_star": 2,
+        "facing_star": 1
+      },
+      "震": {
+        "mountain_star": 7,
+        "facing_star": 4
+      },
+      "巽": {
+        "mountain_star": 3,
+        "facing_star": 9
+      },
+      "乾": {
+        "mountain_star": 6,
+        "facing_star": 6
+      },
+      "兑": {
+        "mountain_star": 1,
+        "facing_star": 8
+      },
+      "艮": {
+        "mountain_star": 5,
+        "facing_star": 5
+      },
+      "离": {
+        "mountain_star": 4,
+        "facing_star": 7
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 1,
+    "sitting_mountain": "辛",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 8,
+        "facing_star": 3
+      },
+      "坎": {
+        "mountain_star": 7,
+        "facing_star": 4
+      },
+      "坤": {
+        "mountain_star": 1,
+        "facing_star": 2
+      },
+      "震": {
+        "mountain_star": 6,
+        "facing_star": 5
+      },
+      "巽": {
+        "mountain_star": 2,
+        "facing_star": 1
+      },
+      "乾": {
+        "mountain_star": 5,
+        "facing_star": 7
+      },
+      "兑": {
+        "mountain_star": 9,
+        "facing_star": 9
+      },
+      "艮": {
+        "mountain_star": 4,
+        "facing_star": 6
+      },
+      "离": {
+        "mountain_star": 3,
+        "facing_star": 8
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 1,
+    "sitting_mountain": "戌",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 7,
+        "facing_star": 4
+      },
+      "坎": {
+        "mountain_star": 6,
+        "facing_star": 5
+      },
+      "坤": {
+        "mountain_star": 9,
+        "facing_star": 3
+      },
+      "震": {
+        "mountain_star": 5,
+        "facing_star": 6
+      },
+      "巽": {
+        "mountain_star": 1,
+        "facing_star": 2
+      },
+      "乾": {
+        "mountain_star": 4,
+        "facing_star": 8
+      },
+      "兑": {
+        "mountain_star": 8,
+        "facing_star": 1
+      },
+      "艮": {
+        "mountain_star": 3,
+        "facing_star": 7
+      },
+      "离": {
+        "mountain_star": 2,
+        "facing_star": 9
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 1,
+    "sitting_mountain": "乾",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 6,
+        "facing_star": 5
+      },
+      "坎": {
+        "mountain_star": 5,
+        "facing_star": 6
+      },
+      "坤": {
+        "mountain_star": 8,
+        "facing_star": 4
+      },
+      "震": {
+        "mountain_star": 4,
+        "facing_star": 7
+      },
+      "巽": {
+        "mountain_star": 9,
+        "facing_star": 3
+      },
+      "乾": {
+        "mountain_star": 3,
+        "facing_star": 9
+      },
+      "兑": {
+        "mountain_star": 7,
+        "facing_star": 2
+      },
+      "艮": {
+        "mountain_star": 2,
+        "facing_star": 8
+      },
+      "离": {
+        "mountain_star": 1,
+        "facing_star": 1
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 1,
+    "sitting_mountain": "亥",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 5,
+        "facing_star": 6
+      },
+      "坎": {
+        "mountain_star": 4,
+        "facing_star": 7
+      },
+      "坤": {
+        "mountain_star": 7,
+        "facing_star": 5
+      },
+      "震": {
+        "mountain_star": 3,
+        "facing_star": 8
+      },
+      "巽": {
+        "mountain_star": 8,
+        "facing_star": 4
+      },
+      "乾": {
+        "mountain_star": 2,
+        "facing_star": 1
+      },
+      "兑": {
+        "mountain_star": 6,
+        "facing_star": 3
+      },
+      "艮": {
+        "mountain_star": 1,
+        "facing_star": 9
+      },
+      "离": {
+        "mountain_star": 9,
+        "facing_star": 2
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 2,
+    "sitting_mountain": "壬",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 2,
+        "facing_star": 2
+      },
+      "坎": {
+        "mountain_star": 1,
+        "facing_star": 3
+      },
+      "坤": {
+        "mountain_star": 4,
+        "facing_star": 1
+      },
+      "震": {
+        "mountain_star": 9,
+        "facing_star": 4
+      },
+      "巽": {
+        "mountain_star": 5,
+        "facing_star": 9
+      },
+      "乾": {
+        "mountain_star": 8,
+        "facing_star": 6
+      },
+      "兑": {
+        "mountain_star": 3,
+        "facing_star": 8
+      },
+      "艮": {
+        "mountain_star": 7,
+        "facing_star": 5
+      },
+      "离": {
+        "mountain_star": 6,
+        "facing_star": 7
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 2,
+    "sitting_mountain": "子",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 1,
+        "facing_star": 3
+      },
+      "坎": {
+        "mountain_star": 9,
+        "facing_star": 4
+      },
+      "坤": {
+        "mountain_star": 3,
+        "facing_star": 2
+      },
+      "震": {
+        "mountain_star": 8,
+        "facing_star": 5
+      },
+      "巽": {
+        "mountain_star": 4,
+        "facing_star": 1
+      },
+      "乾": {
+        "mountain_star": 7,
+        "facing_star": 7
+      },
+      "兑": {
+        "mountain_star": 2,
+        "facing_star": 9
+      },
+      "艮": {
+        "mountain_star": 6,
+        "facing_star": 6
+      },
+      "离": {
+        "mountain_star": 5,
+        "facing_star": 8
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 2,
+    "sitting_mountain": "癸",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 9,
+        "facing_star": 4
+      },
+      "坎": {
+        "mountain_star": 8,
+        "facing_star": 5
+      },
+      "坤": {
+        "mountain_star": 2,
+        "facing_star": 3
+      },
+      "震": {
+        "mountain_star": 7,
+        "facing_star": 6
+      },
+      "巽": {
+        "mountain_star": 3,
+        "facing_star": 2
+      },
+      "乾": {
+        "mountain_star": 6,
+        "facing_star": 8
+      },
+      "兑": {
+        "mountain_star": 1,
+        "facing_star": 1
+      },
+      "艮": {
+        "mountain_star": 5,
+        "facing_star": 7
+      },
+      "离": {
+        "mountain_star": 4,
+        "facing_star": 9
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 2,
+    "sitting_mountain": "丑",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 8,
+        "facing_star": 5
+      },
+      "坎": {
+        "mountain_star": 7,
+        "facing_star": 6
+      },
+      "坤": {
+        "mountain_star": 1,
+        "facing_star": 4
+      },
+      "震": {
+        "mountain_star": 6,
+        "facing_star": 7
+      },
+      "巽": {
+        "mountain_star": 2,
+        "facing_star": 3
+      },
+      "乾": {
+        "mountain_star": 5,
+        "facing_star": 9
+      },
+      "兑": {
+        "mountain_star": 9,
+        "facing_star": 2
+      },
+      "艮": {
+        "mountain_star": 4,
+        "facing_star": 8
+      },
+      "离": {
+        "mountain_star": 3,
+        "facing_star": 1
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 2,
+    "sitting_mountain": "艮",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 7,
+        "facing_star": 6
+      },
+      "坎": {
+        "mountain_star": 6,
+        "facing_star": 7
+      },
+      "坤": {
+        "mountain_star": 9,
+        "facing_star": 5
+      },
+      "震": {
+        "mountain_star": 5,
+        "facing_star": 8
+      },
+      "巽": {
+        "mountain_star": 1,
+        "facing_star": 4
+      },
+      "乾": {
+        "mountain_star": 4,
+        "facing_star": 1
+      },
+      "兑": {
+        "mountain_star": 8,
+        "facing_star": 3
+      },
+      "艮": {
+        "mountain_star": 3,
+        "facing_star": 9
+      },
+      "离": {
+        "mountain_star": 2,
+        "facing_star": 2
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 2,
+    "sitting_mountain": "寅",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 6,
+        "facing_star": 7
+      },
+      "坎": {
+        "mountain_star": 5,
+        "facing_star": 8
+      },
+      "坤": {
+        "mountain_star": 8,
+        "facing_star": 6
+      },
+      "震": {
+        "mountain_star": 4,
+        "facing_star": 9
+      },
+      "巽": {
+        "mountain_star": 9,
+        "facing_star": 5
+      },
+      "乾": {
+        "mountain_star": 3,
+        "facing_star": 2
+      },
+      "兑": {
+        "mountain_star": 7,
+        "facing_star": 4
+      },
+      "艮": {
+        "mountain_star": 2,
+        "facing_star": 1
+      },
+      "离": {
+        "mountain_star": 1,
+        "facing_star": 3
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 2,
+    "sitting_mountain": "甲",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 5,
+        "facing_star": 8
+      },
+      "坎": {
+        "mountain_star": 4,
+        "facing_star": 9
+      },
+      "坤": {
+        "mountain_star": 7,
+        "facing_star": 7
+      },
+      "震": {
+        "mountain_star": 3,
+        "facing_star": 1
+      },
+      "巽": {
+        "mountain_star": 8,
+        "facing_star": 6
+      },
+      "乾": {
+        "mountain_star": 2,
+        "facing_star": 3
+      },
+      "兑": {
+        "mountain_star": 6,
+        "facing_star": 5
+      },
+      "艮": {
+        "mountain_star": 1,
+        "facing_star": 2
+      },
+      "离": {
+        "mountain_star": 9,
+        "facing_star": 4
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 2,
+    "sitting_mountain": "卯",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 4,
+        "facing_star": 9
+      },
+      "坎": {
+        "mountain_star": 3,
+        "facing_star": 1
+      },
+      "坤": {
+        "mountain_star": 6,
+        "facing_star": 8
+      },
+      "震": {
+        "mountain_star": 2,
+        "facing_star": 2
+      },
+      "巽": {
+        "mountain_star": 7,
+        "facing_star": 7
+      },
+      "乾": {
+        "mountain_star": 1,
+        "facing_star": 4
+      },
+      "兑": {
+        "mountain_star": 5,
+        "facing_star": 6
+      },
+      "艮": {
+        "mountain_star": 9,
+        "facing_star": 3
+      },
+      "离": {
+        "mountain_star": 8,
+        "facing_star": 5
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 2,
+    "sitting_mountain": "乙",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 3,
+        "facing_star": 1
+      },
+      "坎": {
+        "mountain_star": 2,
+        "facing_star": 2
+      },
+      "坤": {
+        "mountain_star": 5,
+        "facing_star": 9
+      },
+      "震": {
+        "mountain_star": 1,
+        "facing_star": 3
+      },
+      "巽": {
+        "mountain_star": 6,
+        "facing_star": 8
+      },
+      "乾": {
+        "mountain_star": 9,
+        "facing_star": 5
+      },
+      "兑": {
+        "mountain_star": 4,
+        "facing_star": 7
+      },
+      "艮": {
+        "mountain_star": 8,
+        "facing_star": 4
+      },
+      "离": {
+        "mountain_star": 7,
+        "facing_star": 6
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 2,
+    "sitting_mountain": "辰",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 2,
+        "facing_star": 2
+      },
+      "坎": {
+        "mountain_star": 1,
+        "facing_star": 3
+      },
+      "坤": {
+        "mountain_star": 4,
+        "facing_star": 1
+      },
+      "震": {
+        "mountain_star": 9,
+        "facing_star": 4
+      },
+      "巽": {
+        "mountain_star": 5,
+        "facing_star": 9
+      },
+      "乾": {
+        "mountain_star": 8,
+        "facing_star": 6
+      },
+      "兑": {
+        "mountain_star": 3,
+        "facing_star": 8
+      },
+      "艮": {
+        "mountain_star": 7,
+        "facing_star": 5
+      },
+      "离": {
+        "mountain_star": 6,
+        "facing_star": 7
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 2,
+    "sitting_mountain": "巽",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 1,
+        "facing_star": 3
+      },
+      "坎": {
+        "mountain_star": 9,
+        "facing_star": 4
+      },
+      "坤": {
+        "mountain_star": 3,
+        "facing_star": 2
+      },
+      "震": {
+        "mountain_star": 8,
+        "facing_star": 5
+      },
+      "巽": {
+        "mountain_star": 4,
+        "facing_star": 1
+      },
+      "乾": {
+        "mountain_star": 7,
+        "facing_star": 7
+      },
+      "兑": {
+        "mountain_star": 2,
+        "facing_star": 9
+      },
+      "艮": {
+        "mountain_star": 6,
+        "facing_star": 6
+      },
+      "离": {
+        "mountain_star": 5,
+        "facing_star": 8
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 2,
+    "sitting_mountain": "巳",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 9,
+        "facing_star": 4
+      },
+      "坎": {
+        "mountain_star": 8,
+        "facing_star": 5
+      },
+      "坤": {
+        "mountain_star": 2,
+        "facing_star": 3
+      },
+      "震": {
+        "mountain_star": 7,
+        "facing_star": 6
+      },
+      "巽": {
+        "mountain_star": 3,
+        "facing_star": 2
+      },
+      "乾": {
+        "mountain_star": 6,
+        "facing_star": 8
+      },
+      "兑": {
+        "mountain_star": 1,
+        "facing_star": 1
+      },
+      "艮": {
+        "mountain_star": 5,
+        "facing_star": 7
+      },
+      "离": {
+        "mountain_star": 4,
+        "facing_star": 9
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 2,
+    "sitting_mountain": "丙",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 8,
+        "facing_star": 5
+      },
+      "坎": {
+        "mountain_star": 7,
+        "facing_star": 6
+      },
+      "坤": {
+        "mountain_star": 1,
+        "facing_star": 4
+      },
+      "震": {
+        "mountain_star": 6,
+        "facing_star": 7
+      },
+      "巽": {
+        "mountain_star": 2,
+        "facing_star": 3
+      },
+      "乾": {
+        "mountain_star": 5,
+        "facing_star": 9
+      },
+      "兑": {
+        "mountain_star": 9,
+        "facing_star": 2
+      },
+      "艮": {
+        "mountain_star": 4,
+        "facing_star": 8
+      },
+      "离": {
+        "mountain_star": 3,
+        "facing_star": 1
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 2,
+    "sitting_mountain": "午",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 7,
+        "facing_star": 6
+      },
+      "坎": {
+        "mountain_star": 6,
+        "facing_star": 7
+      },
+      "坤": {
+        "mountain_star": 9,
+        "facing_star": 5
+      },
+      "震": {
+        "mountain_star": 5,
+        "facing_star": 8
+      },
+      "巽": {
+        "mountain_star": 1,
+        "facing_star": 4
+      },
+      "乾": {
+        "mountain_star": 4,
+        "facing_star": 1
+      },
+      "兑": {
+        "mountain_star": 8,
+        "facing_star": 3
+      },
+      "艮": {
+        "mountain_star": 3,
+        "facing_star": 9
+      },
+      "离": {
+        "mountain_star": 2,
+        "facing_star": 2
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 2,
+    "sitting_mountain": "丁",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 6,
+        "facing_star": 7
+      },
+      "坎": {
+        "mountain_star": 5,
+        "facing_star": 8
+      },
+      "坤": {
+        "mountain_star": 8,
+        "facing_star": 6
+      },
+      "震": {
+        "mountain_star": 4,
+        "facing_star": 9
+      },
+      "巽": {
+        "mountain_star": 9,
+        "facing_star": 5
+      },
+      "乾": {
+        "mountain_star": 3,
+        "facing_star": 2
+      },
+      "兑": {
+        "mountain_star": 7,
+        "facing_star": 4
+      },
+      "艮": {
+        "mountain_star": 2,
+        "facing_star": 1
+      },
+      "离": {
+        "mountain_star": 1,
+        "facing_star": 3
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 2,
+    "sitting_mountain": "未",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 5,
+        "facing_star": 8
+      },
+      "坎": {
+        "mountain_star": 4,
+        "facing_star": 9
+      },
+      "坤": {
+        "mountain_star": 7,
+        "facing_star": 7
+      },
+      "震": {
+        "mountain_star": 3,
+        "facing_star": 1
+      },
+      "巽": {
+        "mountain_star": 8,
+        "facing_star": 6
+      },
+      "乾": {
+        "mountain_star": 2,
+        "facing_star": 3
+      },
+      "兑": {
+        "mountain_star": 6,
+        "facing_star": 5
+      },
+      "艮": {
+        "mountain_star": 1,
+        "facing_star": 2
+      },
+      "离": {
+        "mountain_star": 9,
+        "facing_star": 4
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 2,
+    "sitting_mountain": "坤",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 4,
+        "facing_star": 9
+      },
+      "坎": {
+        "mountain_star": 3,
+        "facing_star": 1
+      },
+      "坤": {
+        "mountain_star": 6,
+        "facing_star": 8
+      },
+      "震": {
+        "mountain_star": 2,
+        "facing_star": 2
+      },
+      "巽": {
+        "mountain_star": 7,
+        "facing_star": 7
+      },
+      "乾": {
+        "mountain_star": 1,
+        "facing_star": 4
+      },
+      "兑": {
+        "mountain_star": 5,
+        "facing_star": 6
+      },
+      "艮": {
+        "mountain_star": 9,
+        "facing_star": 3
+      },
+      "离": {
+        "mountain_star": 8,
+        "facing_star": 5
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 2,
+    "sitting_mountain": "申",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 3,
+        "facing_star": 1
+      },
+      "坎": {
+        "mountain_star": 2,
+        "facing_star": 2
+      },
+      "坤": {
+        "mountain_star": 5,
+        "facing_star": 9
+      },
+      "震": {
+        "mountain_star": 1,
+        "facing_star": 3
+      },
+      "巽": {
+        "mountain_star": 6,
+        "facing_star": 8
+      },
+      "乾": {
+        "mountain_star": 9,
+        "facing_star": 5
+      },
+      "兑": {
+        "mountain_star": 4,
+        "facing_star": 7
+      },
+      "艮": {
+        "mountain_star": 8,
+        "facing_star": 4
+      },
+      "离": {
+        "mountain_star": 7,
+        "facing_star": 6
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 2,
+    "sitting_mountain": "庚",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 2,
+        "facing_star": 2
+      },
+      "坎": {
+        "mountain_star": 1,
+        "facing_star": 3
+      },
+      "坤": {
+        "mountain_star": 4,
+        "facing_star": 1
+      },
+      "震": {
+        "mountain_star": 9,
+        "facing_star": 4
+      },
+      "巽": {
+        "mountain_star": 5,
+        "facing_star": 9
+      },
+      "乾": {
+        "mountain_star": 8,
+        "facing_star": 6
+      },
+      "兑": {
+        "mountain_star": 3,
+        "facing_star": 8
+      },
+      "艮": {
+        "mountain_star": 7,
+        "facing_star": 5
+      },
+      "离": {
+        "mountain_star": 6,
+        "facing_star": 7
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 2,
+    "sitting_mountain": "酉",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 1,
+        "facing_star": 3
+      },
+      "坎": {
+        "mountain_star": 9,
+        "facing_star": 4
+      },
+      "坤": {
+        "mountain_star": 3,
+        "facing_star": 2
+      },
+      "震": {
+        "mountain_star": 8,
+        "facing_star": 5
+      },
+      "巽": {
+        "mountain_star": 4,
+        "facing_star": 1
+      },
+      "乾": {
+        "mountain_star": 7,
+        "facing_star": 7
+      },
+      "兑": {
+        "mountain_star": 2,
+        "facing_star": 9
+      },
+      "艮": {
+        "mountain_star": 6,
+        "facing_star": 6
+      },
+      "离": {
+        "mountain_star": 5,
+        "facing_star": 8
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 2,
+    "sitting_mountain": "辛",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 9,
+        "facing_star": 4
+      },
+      "坎": {
+        "mountain_star": 8,
+        "facing_star": 5
+      },
+      "坤": {
+        "mountain_star": 2,
+        "facing_star": 3
+      },
+      "震": {
+        "mountain_star": 7,
+        "facing_star": 6
+      },
+      "巽": {
+        "mountain_star": 3,
+        "facing_star": 2
+      },
+      "乾": {
+        "mountain_star": 6,
+        "facing_star": 8
+      },
+      "兑": {
+        "mountain_star": 1,
+        "facing_star": 1
+      },
+      "艮": {
+        "mountain_star": 5,
+        "facing_star": 7
+      },
+      "离": {
+        "mountain_star": 4,
+        "facing_star": 9
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 2,
+    "sitting_mountain": "戌",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 8,
+        "facing_star": 5
+      },
+      "坎": {
+        "mountain_star": 7,
+        "facing_star": 6
+      },
+      "坤": {
+        "mountain_star": 1,
+        "facing_star": 4
+      },
+      "震": {
+        "mountain_star": 6,
+        "facing_star": 7
+      },
+      "巽": {
+        "mountain_star": 2,
+        "facing_star": 3
+      },
+      "乾": {
+        "mountain_star": 5,
+        "facing_star": 9
+      },
+      "兑": {
+        "mountain_star": 9,
+        "facing_star": 2
+      },
+      "艮": {
+        "mountain_star": 4,
+        "facing_star": 8
+      },
+      "离": {
+        "mountain_star": 3,
+        "facing_star": 1
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 2,
+    "sitting_mountain": "乾",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 7,
+        "facing_star": 6
+      },
+      "坎": {
+        "mountain_star": 6,
+        "facing_star": 7
+      },
+      "坤": {
+        "mountain_star": 9,
+        "facing_star": 5
+      },
+      "震": {
+        "mountain_star": 5,
+        "facing_star": 8
+      },
+      "巽": {
+        "mountain_star": 1,
+        "facing_star": 4
+      },
+      "乾": {
+        "mountain_star": 4,
+        "facing_star": 1
+      },
+      "兑": {
+        "mountain_star": 8,
+        "facing_star": 3
+      },
+      "艮": {
+        "mountain_star": 3,
+        "facing_star": 9
+      },
+      "离": {
+        "mountain_star": 2,
+        "facing_star": 2
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 2,
+    "sitting_mountain": "亥",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 6,
+        "facing_star": 7
+      },
+      "坎": {
+        "mountain_star": 5,
+        "facing_star": 8
+      },
+      "坤": {
+        "mountain_star": 8,
+        "facing_star": 6
+      },
+      "震": {
+        "mountain_star": 4,
+        "facing_star": 9
+      },
+      "巽": {
+        "mountain_star": 9,
+        "facing_star": 5
+      },
+      "乾": {
+        "mountain_star": 3,
+        "facing_star": 2
+      },
+      "兑": {
+        "mountain_star": 7,
+        "facing_star": 4
+      },
+      "艮": {
+        "mountain_star": 2,
+        "facing_star": 1
+      },
+      "离": {
+        "mountain_star": 1,
+        "facing_star": 3
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 3,
+    "sitting_mountain": "壬",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 3,
+        "facing_star": 3
+      },
+      "坎": {
+        "mountain_star": 2,
+        "facing_star": 4
+      },
+      "坤": {
+        "mountain_star": 5,
+        "facing_star": 2
+      },
+      "震": {
+        "mountain_star": 1,
+        "facing_star": 5
+      },
+      "巽": {
+        "mountain_star": 6,
+        "facing_star": 1
+      },
+      "乾": {
+        "mountain_star": 9,
+        "facing_star": 7
+      },
+      "兑": {
+        "mountain_star": 4,
+        "facing_star": 9
+      },
+      "艮": {
+        "mountain_star": 8,
+        "facing_star": 6
+      },
+      "离": {
+        "mountain_star": 7,
+        "facing_star": 8
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 3,
+    "sitting_mountain": "子",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 2,
+        "facing_star": 4
+      },
+      "坎": {
+        "mountain_star": 1,
+        "facing_star": 5
+      },
+      "坤": {
+        "mountain_star": 4,
+        "facing_star": 3
+      },
+      "震": {
+        "mountain_star": 9,
+        "facing_star": 6
+      },
+      "巽": {
+        "mountain_star": 5,
+        "facing_star": 2
+      },
+      "乾": {
+        "mountain_star": 8,
+        "facing_star": 8
+      },
+      "兑": {
+        "mountain_star": 3,
+        "facing_star": 1
+      },
+      "艮": {
+        "mountain_star": 7,
+        "facing_star": 7
+      },
+      "离": {
+        "mountain_star": 6,
+        "facing_star": 9
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 3,
+    "sitting_mountain": "癸",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 1,
+        "facing_star": 5
+      },
+      "坎": {
+        "mountain_star": 9,
+        "facing_star": 6
+      },
+      "坤": {
+        "mountain_star": 3,
+        "facing_star": 4
+      },
+      "震": {
+        "mountain_star": 8,
+        "facing_star": 7
+      },
+      "巽": {
+        "mountain_star": 4,
+        "facing_star": 3
+      },
+      "乾": {
+        "mountain_star": 7,
+        "facing_star": 9
+      },
+      "兑": {
+        "mountain_star": 2,
+        "facing_star": 2
+      },
+      "艮": {
+        "mountain_star": 6,
+        "facing_star": 8
+      },
+      "离": {
+        "mountain_star": 5,
+        "facing_star": 1
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 3,
+    "sitting_mountain": "丑",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 9,
+        "facing_star": 6
+      },
+      "坎": {
+        "mountain_star": 8,
+        "facing_star": 7
+      },
+      "坤": {
+        "mountain_star": 2,
+        "facing_star": 5
+      },
+      "震": {
+        "mountain_star": 7,
+        "facing_star": 8
+      },
+      "巽": {
+        "mountain_star": 3,
+        "facing_star": 4
+      },
+      "乾": {
+        "mountain_star": 6,
+        "facing_star": 1
+      },
+      "兑": {
+        "mountain_star": 1,
+        "facing_star": 3
+      },
+      "艮": {
+        "mountain_star": 5,
+        "facing_star": 9
+      },
+      "离": {
+        "mountain_star": 4,
+        "facing_star": 2
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 3,
+    "sitting_mountain": "艮",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 8,
+        "facing_star": 7
+      },
+      "坎": {
+        "mountain_star": 7,
+        "facing_star": 8
+      },
+      "坤": {
+        "mountain_star": 1,
+        "facing_star": 6
+      },
+      "震": {
+        "mountain_star": 6,
+        "facing_star": 9
+      },
+      "巽": {
+        "mountain_star": 2,
+        "facing_star": 5
+      },
+      "乾": {
+        "mountain_star": 5,
+        "facing_star": 2
+      },
+      "兑": {
+        "mountain_star": 9,
+        "facing_star": 4
+      },
+      "艮": {
+        "mountain_star": 4,
+        "facing_star": 1
+      },
+      "离": {
+        "mountain_star": 3,
+        "facing_star": 3
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 3,
+    "sitting_mountain": "寅",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 7,
+        "facing_star": 8
+      },
+      "坎": {
+        "mountain_star": 6,
+        "facing_star": 9
+      },
+      "坤": {
+        "mountain_star": 9,
+        "facing_star": 7
+      },
+      "震": {
+        "mountain_star": 5,
+        "facing_star": 1
+      },
+      "巽": {
+        "mountain_star": 1,
+        "facing_star": 6
+      },
+      "乾": {
+        "mountain_star": 4,
+        "facing_star": 3
+      },
+      "兑": {
+        "mountain_star": 8,
+        "facing_star": 5
+      },
+      "艮": {
+        "mountain_star": 3,
+        "facing_star": 2
+      },
+      "离": {
+        "mountain_star": 2,
+        "facing_star": 4
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 3,
+    "sitting_mountain": "甲",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 6,
+        "facing_star": 9
+      },
+      "坎": {
+        "mountain_star": 5,
+        "facing_star": 1
+      },
+      "坤": {
+        "mountain_star": 8,
+        "facing_star": 8
+      },
+      "震": {
+        "mountain_star": 4,
+        "facing_star": 2
+      },
+      "巽": {
+        "mountain_star": 9,
+        "facing_star": 7
+      },
+      "乾": {
+        "mountain_star": 3,
+        "facing_star": 4
+      },
+      "兑": {
+        "mountain_star": 7,
+        "facing_star": 6
+      },
+      "艮": {
+        "mountain_star": 2,
+        "facing_star": 3
+      },
+      "离": {
+        "mountain_star": 1,
+        "facing_star": 5
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 3,
+    "sitting_mountain": "卯",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 5,
+        "facing_star": 1
+      },
+      "坎": {
+        "mountain_star": 4,
+        "facing_star": 2
+      },
+      "坤": {
+        "mountain_star": 7,
+        "facing_star": 9
+      },
+      "震": {
+        "mountain_star": 3,
+        "facing_star": 3
+      },
+      "巽": {
+        "mountain_star": 8,
+        "facing_star": 8
+      },
+      "乾": {
+        "mountain_star": 2,
+        "facing_star": 5
+      },
+      "兑": {
+        "mountain_star": 6,
+        "facing_star": 7
+      },
+      "艮": {
+        "mountain_star": 1,
+        "facing_star": 4
+      },
+      "离": {
+        "mountain_star": 9,
+        "facing_star": 6
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 3,
+    "sitting_mountain": "乙",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 4,
+        "facing_star": 2
+      },
+      "坎": {
+        "mountain_star": 3,
+        "facing_star": 3
+      },
+      "坤": {
+        "mountain_star": 6,
+        "facing_star": 1
+      },
+      "震": {
+        "mountain_star": 2,
+        "facing_star": 4
+      },
+      "巽": {
+        "mountain_star": 7,
+        "facing_star": 9
+      },
+      "乾": {
+        "mountain_star": 1,
+        "facing_star": 6
+      },
+      "兑": {
+        "mountain_star": 5,
+        "facing_star": 8
+      },
+      "艮": {
+        "mountain_star": 9,
+        "facing_star": 5
+      },
+      "离": {
+        "mountain_star": 8,
+        "facing_star": 7
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 3,
+    "sitting_mountain": "辰",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 3,
+        "facing_star": 3
+      },
+      "坎": {
+        "mountain_star": 2,
+        "facing_star": 4
+      },
+      "坤": {
+        "mountain_star": 5,
+        "facing_star": 2
+      },
+      "震": {
+        "mountain_star": 1,
+        "facing_star": 5
+      },
+      "巽": {
+        "mountain_star": 6,
+        "facing_star": 1
+      },
+      "乾": {
+        "mountain_star": 9,
+        "facing_star": 7
+      },
+      "兑": {
+        "mountain_star": 4,
+        "facing_star": 9
+      },
+      "艮": {
+        "mountain_star": 8,
+        "facing_star": 6
+      },
+      "离": {
+        "mountain_star": 7,
+        "facing_star": 8
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 3,
+    "sitting_mountain": "巽",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 2,
+        "facing_star": 4
+      },
+      "坎": {
+        "mountain_star": 1,
+        "facing_star": 5
+      },
+      "坤": {
+        "mountain_star": 4,
+        "facing_star": 3
+      },
+      "震": {
+        "mountain_star": 9,
+        "facing_star": 6
+      },
+      "巽": {
+        "mountain_star": 5,
+        "facing_star": 2
+      },
+      "乾": {
+        "mountain_star": 8,
+        "facing_star": 8
+      },
+      "兑": {
+        "mountain_star": 3,
+        "facing_star": 1
+      },
+      "艮": {
+        "mountain_star": 7,
+        "facing_star": 7
+      },
+      "离": {
+        "mountain_star": 6,
+        "facing_star": 9
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 3,
+    "sitting_mountain": "巳",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 1,
+        "facing_star": 5
+      },
+      "坎": {
+        "mountain_star": 9,
+        "facing_star": 6
+      },
+      "坤": {
+        "mountain_star": 3,
+        "facing_star": 4
+      },
+      "震": {
+        "mountain_star": 8,
+        "facing_star": 7
+      },
+      "巽": {
+        "mountain_star": 4,
+        "facing_star": 3
+      },
+      "乾": {
+        "mountain_star": 7,
+        "facing_star": 9
+      },
+      "兑": {
+        "mountain_star": 2,
+        "facing_star": 2
+      },
+      "艮": {
+        "mountain_star": 6,
+        "facing_star": 8
+      },
+      "离": {
+        "mountain_star": 5,
+        "facing_star": 1
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 3,
+    "sitting_mountain": "丙",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 9,
+        "facing_star": 6
+      },
+      "坎": {
+        "mountain_star": 8,
+        "facing_star": 7
+      },
+      "坤": {
+        "mountain_star": 2,
+        "facing_star": 5
+      },
+      "震": {
+        "mountain_star": 7,
+        "facing_star": 8
+      },
+      "巽": {
+        "mountain_star": 3,
+        "facing_star": 4
+      },
+      "乾": {
+        "mountain_star": 6,
+        "facing_star": 1
+      },
+      "兑": {
+        "mountain_star": 1,
+        "facing_star": 3
+      },
+      "艮": {
+        "mountain_star": 5,
+        "facing_star": 9
+      },
+      "离": {
+        "mountain_star": 4,
+        "facing_star": 2
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 3,
+    "sitting_mountain": "午",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 8,
+        "facing_star": 7
+      },
+      "坎": {
+        "mountain_star": 7,
+        "facing_star": 8
+      },
+      "坤": {
+        "mountain_star": 1,
+        "facing_star": 6
+      },
+      "震": {
+        "mountain_star": 6,
+        "facing_star": 9
+      },
+      "巽": {
+        "mountain_star": 2,
+        "facing_star": 5
+      },
+      "乾": {
+        "mountain_star": 5,
+        "facing_star": 2
+      },
+      "兑": {
+        "mountain_star": 9,
+        "facing_star": 4
+      },
+      "艮": {
+        "mountain_star": 4,
+        "facing_star": 1
+      },
+      "离": {
+        "mountain_star": 3,
+        "facing_star": 3
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 3,
+    "sitting_mountain": "丁",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 7,
+        "facing_star": 8
+      },
+      "坎": {
+        "mountain_star": 6,
+        "facing_star": 9
+      },
+      "坤": {
+        "mountain_star": 9,
+        "facing_star": 7
+      },
+      "震": {
+        "mountain_star": 5,
+        "facing_star": 1
+      },
+      "巽": {
+        "mountain_star": 1,
+        "facing_star": 6
+      },
+      "乾": {
+        "mountain_star": 4,
+        "facing_star": 3
+      },
+      "兑": {
+        "mountain_star": 8,
+        "facing_star": 5
+      },
+      "艮": {
+        "mountain_star": 3,
+        "facing_star": 2
+      },
+      "离": {
+        "mountain_star": 2,
+        "facing_star": 4
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 3,
+    "sitting_mountain": "未",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 6,
+        "facing_star": 9
+      },
+      "坎": {
+        "mountain_star": 5,
+        "facing_star": 1
+      },
+      "坤": {
+        "mountain_star": 8,
+        "facing_star": 8
+      },
+      "震": {
+        "mountain_star": 4,
+        "facing_star": 2
+      },
+      "巽": {
+        "mountain_star": 9,
+        "facing_star": 7
+      },
+      "乾": {
+        "mountain_star": 3,
+        "facing_star": 4
+      },
+      "兑": {
+        "mountain_star": 7,
+        "facing_star": 6
+      },
+      "艮": {
+        "mountain_star": 2,
+        "facing_star": 3
+      },
+      "离": {
+        "mountain_star": 1,
+        "facing_star": 5
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 3,
+    "sitting_mountain": "坤",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 5,
+        "facing_star": 1
+      },
+      "坎": {
+        "mountain_star": 4,
+        "facing_star": 2
+      },
+      "坤": {
+        "mountain_star": 7,
+        "facing_star": 9
+      },
+      "震": {
+        "mountain_star": 3,
+        "facing_star": 3
+      },
+      "巽": {
+        "mountain_star": 8,
+        "facing_star": 8
+      },
+      "乾": {
+        "mountain_star": 2,
+        "facing_star": 5
+      },
+      "兑": {
+        "mountain_star": 6,
+        "facing_star": 7
+      },
+      "艮": {
+        "mountain_star": 1,
+        "facing_star": 4
+      },
+      "离": {
+        "mountain_star": 9,
+        "facing_star": 6
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 3,
+    "sitting_mountain": "申",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 4,
+        "facing_star": 2
+      },
+      "坎": {
+        "mountain_star": 3,
+        "facing_star": 3
+      },
+      "坤": {
+        "mountain_star": 6,
+        "facing_star": 1
+      },
+      "震": {
+        "mountain_star": 2,
+        "facing_star": 4
+      },
+      "巽": {
+        "mountain_star": 7,
+        "facing_star": 9
+      },
+      "乾": {
+        "mountain_star": 1,
+        "facing_star": 6
+      },
+      "兑": {
+        "mountain_star": 5,
+        "facing_star": 8
+      },
+      "艮": {
+        "mountain_star": 9,
+        "facing_star": 5
+      },
+      "离": {
+        "mountain_star": 8,
+        "facing_star": 7
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 3,
+    "sitting_mountain": "庚",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 3,
+        "facing_star": 3
+      },
+      "坎": {
+        "mountain_star": 2,
+        "facing_star": 4
+      },
+      "坤": {
+        "mountain_star": 5,
+        "facing_star": 2
+      },
+      "震": {
+        "mountain_star": 1,
+        "facing_star": 5
+      },
+      "巽": {
+        "mountain_star": 6,
+        "facing_star": 1
+      },
+      "乾": {
+        "mountain_star": 9,
+        "facing_star": 7
+      },
+      "兑": {
+        "mountain_star": 4,
+        "facing_star": 9
+      },
+      "艮": {
+        "mountain_star": 8,
+        "facing_star": 6
+      },
+      "离": {
+        "mountain_star": 7,
+        "facing_star": 8
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 3,
+    "sitting_mountain": "酉",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 2,
+        "facing_star": 4
+      },
+      "坎": {
+        "mountain_star": 1,
+        "facing_star": 5
+      },
+      "坤": {
+        "mountain_star": 4,
+        "facing_star": 3
+      },
+      "震": {
+        "mountain_star": 9,
+        "facing_star": 6
+      },
+      "巽": {
+        "mountain_star": 5,
+        "facing_star": 2
+      },
+      "乾": {
+        "mountain_star": 8,
+        "facing_star": 8
+      },
+      "兑": {
+        "mountain_star": 3,
+        "facing_star": 1
+      },
+      "艮": {
+        "mountain_star": 7,
+        "facing_star": 7
+      },
+      "离": {
+        "mountain_star": 6,
+        "facing_star": 9
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 3,
+    "sitting_mountain": "辛",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 1,
+        "facing_star": 5
+      },
+      "坎": {
+        "mountain_star": 9,
+        "facing_star": 6
+      },
+      "坤": {
+        "mountain_star": 3,
+        "facing_star": 4
+      },
+      "震": {
+        "mountain_star": 8,
+        "facing_star": 7
+      },
+      "巽": {
+        "mountain_star": 4,
+        "facing_star": 3
+      },
+      "乾": {
+        "mountain_star": 7,
+        "facing_star": 9
+      },
+      "兑": {
+        "mountain_star": 2,
+        "facing_star": 2
+      },
+      "艮": {
+        "mountain_star": 6,
+        "facing_star": 8
+      },
+      "离": {
+        "mountain_star": 5,
+        "facing_star": 1
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 3,
+    "sitting_mountain": "戌",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 9,
+        "facing_star": 6
+      },
+      "坎": {
+        "mountain_star": 8,
+        "facing_star": 7
+      },
+      "坤": {
+        "mountain_star": 2,
+        "facing_star": 5
+      },
+      "震": {
+        "mountain_star": 7,
+        "facing_star": 8
+      },
+      "巽": {
+        "mountain_star": 3,
+        "facing_star": 4
+      },
+      "乾": {
+        "mountain_star": 6,
+        "facing_star": 1
+      },
+      "兑": {
+        "mountain_star": 1,
+        "facing_star": 3
+      },
+      "艮": {
+        "mountain_star": 5,
+        "facing_star": 9
+      },
+      "离": {
+        "mountain_star": 4,
+        "facing_star": 2
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 3,
+    "sitting_mountain": "乾",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 8,
+        "facing_star": 7
+      },
+      "坎": {
+        "mountain_star": 7,
+        "facing_star": 8
+      },
+      "坤": {
+        "mountain_star": 1,
+        "facing_star": 6
+      },
+      "震": {
+        "mountain_star": 6,
+        "facing_star": 9
+      },
+      "巽": {
+        "mountain_star": 2,
+        "facing_star": 5
+      },
+      "乾": {
+        "mountain_star": 5,
+        "facing_star": 2
+      },
+      "兑": {
+        "mountain_star": 9,
+        "facing_star": 4
+      },
+      "艮": {
+        "mountain_star": 4,
+        "facing_star": 1
+      },
+      "离": {
+        "mountain_star": 3,
+        "facing_star": 3
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 3,
+    "sitting_mountain": "亥",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 7,
+        "facing_star": 8
+      },
+      "坎": {
+        "mountain_star": 6,
+        "facing_star": 9
+      },
+      "坤": {
+        "mountain_star": 9,
+        "facing_star": 7
+      },
+      "震": {
+        "mountain_star": 5,
+        "facing_star": 1
+      },
+      "巽": {
+        "mountain_star": 1,
+        "facing_star": 6
+      },
+      "乾": {
+        "mountain_star": 4,
+        "facing_star": 3
+      },
+      "兑": {
+        "mountain_star": 8,
+        "facing_star": 5
+      },
+      "艮": {
+        "mountain_star": 3,
+        "facing_star": 2
+      },
+      "离": {
+        "mountain_star": 2,
+        "facing_star": 4
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 4,
+    "sitting_mountain": "壬",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 4,
+        "facing_star": 4
+      },
+      "坎": {
+        "mountain_star": 3,
+        "facing_star": 5
+      },
+      "坤": {
+        "mountain_star": 6,
+        "facing_star": 3
+      },
+      "震": {
+        "mountain_star": 2,
+        "facing_star": 6
+      },
+      "巽": {
+        "mountain_star": 7,
+        "facing_star": 2
+      },
+      "乾": {
+        "mountain_star": 1,
+        "facing_star": 8
+      },
+      "兑": {
+        "mountain_star": 5,
+        "facing_star": 1
+      },
+      "艮": {
+        "mountain_star": 9,
+        "facing_star": 7
+      },
+      "离": {
+        "mountain_star": 8,
+        "facing_star": 9
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 4,
+    "sitting_mountain": "子",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 3,
+        "facing_star": 5
+      },
+      "坎": {
+        "mountain_star": 2,
+        "facing_star": 6
+      },
+      "坤": {
+        "mountain_star": 5,
+        "facing_star": 4
+      },
+      "震": {
+        "mountain_star": 1,
+        "facing_star": 7
+      },
+      "巽": {
+        "mountain_star": 6,
+        "facing_star": 3
+      },
+      "乾": {
+        "mountain_star": 9,
+        "facing_star": 9
+      },
+      "兑": {
+        "mountain_star": 4,
+        "facing_star": 2
+      },
+      "艮": {
+        "mountain_star": 8,
+        "facing_star": 8
+      },
+      "离": {
+        "mountain_star": 7,
+        "facing_star": 1
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 4,
+    "sitting_mountain": "癸",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 2,
+        "facing_star": 6
+      },
+      "坎": {
+        "mountain_star": 1,
+        "facing_star": 7
+      },
+      "坤": {
+        "mountain_star": 4,
+        "facing_star": 5
+      },
+      "震": {
+        "mountain_star": 9,
+        "facing_star": 8
+      },
+      "巽": {
+        "mountain_star": 5,
+        "facing_star": 4
+      },
+      "乾": {
+        "mountain_star": 8,
+        "facing_star": 1
+      },
+      "兑": {
+        "mountain_star": 3,
+        "facing_star": 3
+      },
+      "艮": {
+        "mountain_star": 7,
+        "facing_star": 9
+      },
+      "离": {
+        "mountain_star": 6,
+        "facing_star": 2
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 4,
+    "sitting_mountain": "丑",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 1,
+        "facing_star": 7
+      },
+      "坎": {
+        "mountain_star": 9,
+        "facing_star": 8
+      },
+      "坤": {
+        "mountain_star": 3,
+        "facing_star": 6
+      },
+      "震": {
+        "mountain_star": 8,
+        "facing_star": 9
+      },
+      "巽": {
+        "mountain_star": 4,
+        "facing_star": 5
+      },
+      "乾": {
+        "mountain_star": 7,
+        "facing_star": 2
+      },
+      "兑": {
+        "mountain_star": 2,
+        "facing_star": 4
+      },
+      "艮": {
+        "mountain_star": 6,
+        "facing_star": 1
+      },
+      "离": {
+        "mountain_star": 5,
+        "facing_star": 3
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 4,
+    "sitting_mountain": "艮",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 9,
+        "facing_star": 8
+      },
+      "坎": {
+        "mountain_star": 8,
+        "facing_star": 9
+      },
+      "坤": {
+        "mountain_star": 2,
+        "facing_star": 7
+      },
+      "震": {
+        "mountain_star": 7,
+        "facing_star": 1
+      },
+      "巽": {
+        "mountain_star": 3,
+        "facing_star": 6
+      },
+      "乾": {
+        "mountain_star": 6,
+        "facing_star": 3
+      },
+      "兑": {
+        "mountain_star": 1,
+        "facing_star": 5
+      },
+      "艮": {
+        "mountain_star": 5,
+        "facing_star": 2
+      },
+      "离": {
+        "mountain_star": 4,
+        "facing_star": 4
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 4,
+    "sitting_mountain": "寅",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 8,
+        "facing_star": 9
+      },
+      "坎": {
+        "mountain_star": 7,
+        "facing_star": 1
+      },
+      "坤": {
+        "mountain_star": 1,
+        "facing_star": 8
+      },
+      "震": {
+        "mountain_star": 6,
+        "facing_star": 2
+      },
+      "巽": {
+        "mountain_star": 2,
+        "facing_star": 7
+      },
+      "乾": {
+        "mountain_star": 5,
+        "facing_star": 4
+      },
+      "兑": {
+        "mountain_star": 9,
+        "facing_star": 6
+      },
+      "艮": {
+        "mountain_star": 4,
+        "facing_star": 3
+      },
+      "离": {
+        "mountain_star": 3,
+        "facing_star": 5
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 4,
+    "sitting_mountain": "甲",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 7,
+        "facing_star": 1
+      },
+      "坎": {
+        "mountain_star": 6,
+        "facing_star": 2
+      },
+      "坤": {
+        "mountain_star": 9,
+        "facing_star": 9
+      },
+      "震": {
+        "mountain_star": 5,
+        "facing_star": 3
+      },
+      "巽": {
+        "mountain_star": 1,
+        "facing_star": 8
+      },
+      "乾": {
+        "mountain_star": 4,
+        "facing_star": 5
+      },
+      "兑": {
+        "mountain_star": 8,
+        "facing_star": 7
+      },
+      "艮": {
+        "mountain_star": 3,
+        "facing_star": 4
+      },
+      "离": {
+        "mountain_star": 2,
+        "facing_star": 6
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 4,
+    "sitting_mountain": "卯",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 6,
+        "facing_star": 2
+      },
+      "坎": {
+        "mountain_star": 5,
+        "facing_star": 3
+      },
+      "坤": {
+        "mountain_star": 8,
+        "facing_star": 1
+      },
+      "震": {
+        "mountain_star": 4,
+        "facing_star": 4
+      },
+      "巽": {
+        "mountain_star": 9,
+        "facing_star": 9
+      },
+      "乾": {
+        "mountain_star": 3,
+        "facing_star": 6
+      },
+      "兑": {
+        "mountain_star": 7,
+        "facing_star": 8
+      },
+      "艮": {
+        "mountain_star": 2,
+        "facing_star": 5
+      },
+      "离": {
+        "mountain_star": 1,
+        "facing_star": 7
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 4,
+    "sitting_mountain": "乙",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 5,
+        "facing_star": 3
+      },
+      "坎": {
+        "mountain_star": 4,
+        "facing_star": 4
+      },
+      "坤": {
+        "mountain_star": 7,
+        "facing_star": 2
+      },
+      "震": {
+        "mountain_star": 3,
+        "facing_star": 5
+      },
+      "巽": {
+        "mountain_star": 8,
+        "facing_star": 1
+      },
+      "乾": {
+        "mountain_star": 2,
+        "facing_star": 7
+      },
+      "兑": {
+        "mountain_star": 6,
+        "facing_star": 9
+      },
+      "艮": {
+        "mountain_star": 1,
+        "facing_star": 6
+      },
+      "离": {
+        "mountain_star": 9,
+        "facing_star": 8
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 4,
+    "sitting_mountain": "辰",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 4,
+        "facing_star": 4
+      },
+      "坎": {
+        "mountain_star": 3,
+        "facing_star": 5
+      },
+      "坤": {
+        "mountain_star": 6,
+        "facing_star": 3
+      },
+      "震": {
+        "mountain_star": 2,
+        "facing_star": 6
+      },
+      "巽": {
+        "mountain_star": 7,
+        "facing_star": 2
+      },
+      "乾": {
+        "mountain_star": 1,
+        "facing_star": 8
+      },
+      "兑": {
+        "mountain_star": 5,
+        "facing_star": 1
+      },
+      "艮": {
+        "mountain_star": 9,
+        "facing_star": 7
+      },
+      "离": {
+        "mountain_star": 8,
+        "facing_star": 9
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 4,
+    "sitting_mountain": "巽",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 3,
+        "facing_star": 5
+      },
+      "坎": {
+        "mountain_star": 2,
+        "facing_star": 6
+      },
+      "坤": {
+        "mountain_star": 5,
+        "facing_star": 4
+      },
+      "震": {
+        "mountain_star": 1,
+        "facing_star": 7
+      },
+      "巽": {
+        "mountain_star": 6,
+        "facing_star": 3
+      },
+      "乾": {
+        "mountain_star": 9,
+        "facing_star": 9
+      },
+      "兑": {
+        "mountain_star": 4,
+        "facing_star": 2
+      },
+      "艮": {
+        "mountain_star": 8,
+        "facing_star": 8
+      },
+      "离": {
+        "mountain_star": 7,
+        "facing_star": 1
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 4,
+    "sitting_mountain": "巳",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 2,
+        "facing_star": 6
+      },
+      "坎": {
+        "mountain_star": 1,
+        "facing_star": 7
+      },
+      "坤": {
+        "mountain_star": 4,
+        "facing_star": 5
+      },
+      "震": {
+        "mountain_star": 9,
+        "facing_star": 8
+      },
+      "巽": {
+        "mountain_star": 5,
+        "facing_star": 4
+      },
+      "乾": {
+        "mountain_star": 8,
+        "facing_star": 1
+      },
+      "兑": {
+        "mountain_star": 3,
+        "facing_star": 3
+      },
+      "艮": {
+        "mountain_star": 7,
+        "facing_star": 9
+      },
+      "离": {
+        "mountain_star": 6,
+        "facing_star": 2
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 4,
+    "sitting_mountain": "丙",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 1,
+        "facing_star": 7
+      },
+      "坎": {
+        "mountain_star": 9,
+        "facing_star": 8
+      },
+      "坤": {
+        "mountain_star": 3,
+        "facing_star": 6
+      },
+      "震": {
+        "mountain_star": 8,
+        "facing_star": 9
+      },
+      "巽": {
+        "mountain_star": 4,
+        "facing_star": 5
+      },
+      "乾": {
+        "mountain_star": 7,
+        "facing_star": 2
+      },
+      "兑": {
+        "mountain_star": 2,
+        "facing_star": 4
+      },
+      "艮": {
+        "mountain_star": 6,
+        "facing_star": 1
+      },
+      "离": {
+        "mountain_star": 5,
+        "facing_star": 3
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 4,
+    "sitting_mountain": "午",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 9,
+        "facing_star": 8
+      },
+      "坎": {
+        "mountain_star": 8,
+        "facing_star": 9
+      },
+      "坤": {
+        "mountain_star": 2,
+        "facing_star": 7
+      },
+      "震": {
+        "mountain_star": 7,
+        "facing_star": 1
+      },
+      "巽": {
+        "mountain_star": 3,
+        "facing_star": 6
+      },
+      "乾": {
+        "mountain_star": 6,
+        "facing_star": 3
+      },
+      "兑": {
+        "mountain_star": 1,
+        "facing_star": 5
+      },
+      "艮": {
+        "mountain_star": 5,
+        "facing_star": 2
+      },
+      "离": {
+        "mountain_star": 4,
+        "facing_star": 4
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 4,
+    "sitting_mountain": "丁",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 8,
+        "facing_star": 9
+      },
+      "坎": {
+        "mountain_star": 7,
+        "facing_star": 1
+      },
+      "坤": {
+        "mountain_star": 1,
+        "facing_star": 8
+      },
+      "震": {
+        "mountain_star": 6,
+        "facing_star": 2
+      },
+      "巽": {
+        "mountain_star": 2,
+        "facing_star": 7
+      },
+      "乾": {
+        "mountain_star": 5,
+        "facing_star": 4
+      },
+      "兑": {
+        "mountain_star": 9,
+        "facing_star": 6
+      },
+      "艮": {
+        "mountain_star": 4,
+        "facing_star": 3
+      },
+      "离": {
+        "mountain_star": 3,
+        "facing_star": 5
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 4,
+    "sitting_mountain": "未",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 7,
+        "facing_star": 1
+      },
+      "坎": {
+        "mountain_star": 6,
+        "facing_star": 2
+      },
+      "坤": {
+        "mountain_star": 9,
+        "facing_star": 9
+      },
+      "震": {
+        "mountain_star": 5,
+        "facing_star": 3
+      },
+      "巽": {
+        "mountain_star": 1,
+        "facing_star": 8
+      },
+      "乾": {
+        "mountain_star": 4,
+        "facing_star": 5
+      },
+      "兑": {
+        "mountain_star": 8,
+        "facing_star": 7
+      },
+      "艮": {
+        "mountain_star": 3,
+        "facing_star": 4
+      },
+      "离": {
+        "mountain_star": 2,
+        "facing_star": 6
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 4,
+    "sitting_mountain": "坤",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 6,
+        "facing_star": 2
+      },
+      "坎": {
+        "mountain_star": 5,
+        "facing_star": 3
+      },
+      "坤": {
+        "mountain_star": 8,
+        "facing_star": 1
+      },
+      "震": {
+        "mountain_star": 4,
+        "facing_star": 4
+      },
+      "巽": {
+        "mountain_star": 9,
+        "facing_star": 9
+      },
+      "乾": {
+        "mountain_star": 3,
+        "facing_star": 6
+      },
+      "兑": {
+        "mountain_star": 7,
+        "facing_star": 8
+      },
+      "艮": {
+        "mountain_star": 2,
+        "facing_star": 5
+      },
+      "离": {
+        "mountain_star": 1,
+        "facing_star": 7
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 4,
+    "sitting_mountain": "申",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 5,
+        "facing_star": 3
+      },
+      "坎": {
+        "mountain_star": 4,
+        "facing_star": 4
+      },
+      "坤": {
+        "mountain_star": 7,
+        "facing_star": 2
+      },
+      "震": {
+        "mountain_star": 3,
+        "facing_star": 5
+      },
+      "巽": {
+        "mountain_star": 8,
+        "facing_star": 1
+      },
+      "乾": {
+        "mountain_star": 2,
+        "facing_star": 7
+      },
+      "兑": {
+        "mountain_star": 6,
+        "facing_star": 9
+      },
+      "艮": {
+        "mountain_star": 1,
+        "facing_star": 6
+      },
+      "离": {
+        "mountain_star": 9,
+        "facing_star": 8
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 4,
+    "sitting_mountain": "庚",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 4,
+        "facing_star": 4
+      },
+      "坎": {
+        "mountain_star": 3,
+        "facing_star": 5
+      },
+      "坤": {
+        "mountain_star": 6,
+        "facing_star": 3
+      },
+      "震": {
+        "mountain_star": 2,
+        "facing_star": 6
+      },
+      "巽": {
+        "mountain_star": 7,
+        "facing_star": 2
+      },
+      "乾": {
+        "mountain_star": 1,
+        "facing_star": 8
+      },
+      "兑": {
+        "mountain_star": 5,
+        "facing_star": 1
+      },
+      "艮": {
+        "mountain_star": 9,
+        "facing_star": 7
+      },
+      "离": {
+        "mountain_star": 8,
+        "facing_star": 9
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 4,
+    "sitting_mountain": "酉",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 3,
+        "facing_star": 5
+      },
+      "坎": {
+        "mountain_star": 2,
+        "facing_star": 6
+      },
+      "坤": {
+        "mountain_star": 5,
+        "facing_star": 4
+      },
+      "震": {
+        "mountain_star": 1,
+        "facing_star": 7
+      },
+      "巽": {
+        "mountain_star": 6,
+        "facing_star": 3
+      },
+      "乾": {
+        "mountain_star": 9,
+        "facing_star": 9
+      },
+      "兑": {
+        "mountain_star": 4,
+        "facing_star": 2
+      },
+      "艮": {
+        "mountain_star": 8,
+        "facing_star": 8
+      },
+      "离": {
+        "mountain_star": 7,
+        "facing_star": 1
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 4,
+    "sitting_mountain": "辛",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 2,
+        "facing_star": 6
+      },
+      "坎": {
+        "mountain_star": 1,
+        "facing_star": 7
+      },
+      "坤": {
+        "mountain_star": 4,
+        "facing_star": 5
+      },
+      "震": {
+        "mountain_star": 9,
+        "facing_star": 8
+      },
+      "巽": {
+        "mountain_star": 5,
+        "facing_star": 4
+      },
+      "乾": {
+        "mountain_star": 8,
+        "facing_star": 1
+      },
+      "兑": {
+        "mountain_star": 3,
+        "facing_star": 3
+      },
+      "艮": {
+        "mountain_star": 7,
+        "facing_star": 9
+      },
+      "离": {
+        "mountain_star": 6,
+        "facing_star": 2
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 4,
+    "sitting_mountain": "戌",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 1,
+        "facing_star": 7
+      },
+      "坎": {
+        "mountain_star": 9,
+        "facing_star": 8
+      },
+      "坤": {
+        "mountain_star": 3,
+        "facing_star": 6
+      },
+      "震": {
+        "mountain_star": 8,
+        "facing_star": 9
+      },
+      "巽": {
+        "mountain_star": 4,
+        "facing_star": 5
+      },
+      "乾": {
+        "mountain_star": 7,
+        "facing_star": 2
+      },
+      "兑": {
+        "mountain_star": 2,
+        "facing_star": 4
+      },
+      "艮": {
+        "mountain_star": 6,
+        "facing_star": 1
+      },
+      "离": {
+        "mountain_star": 5,
+        "facing_star": 3
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 4,
+    "sitting_mountain": "乾",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 9,
+        "facing_star": 8
+      },
+      "坎": {
+        "mountain_star": 8,
+        "facing_star": 9
+      },
+      "坤": {
+        "mountain_star": 2,
+        "facing_star": 7
+      },
+      "震": {
+        "mountain_star": 7,
+        "facing_star": 1
+      },
+      "巽": {
+        "mountain_star": 3,
+        "facing_star": 6
+      },
+      "乾": {
+        "mountain_star": 6,
+        "facing_star": 3
+      },
+      "兑": {
+        "mountain_star": 1,
+        "facing_star": 5
+      },
+      "艮": {
+        "mountain_star": 5,
+        "facing_star": 2
+      },
+      "离": {
+        "mountain_star": 4,
+        "facing_star": 4
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 4,
+    "sitting_mountain": "亥",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 8,
+        "facing_star": 9
+      },
+      "坎": {
+        "mountain_star": 7,
+        "facing_star": 1
+      },
+      "坤": {
+        "mountain_star": 1,
+        "facing_star": 8
+      },
+      "震": {
+        "mountain_star": 6,
+        "facing_star": 2
+      },
+      "巽": {
+        "mountain_star": 2,
+        "facing_star": 7
+      },
+      "乾": {
+        "mountain_star": 5,
+        "facing_star": 4
+      },
+      "兑": {
+        "mountain_star": 9,
+        "facing_star": 6
+      },
+      "艮": {
+        "mountain_star": 4,
+        "facing_star": 3
+      },
+      "离": {
+        "mountain_star": 3,
+        "facing_star": 5
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 5,
+    "sitting_mountain": "壬",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 5,
+        "facing_star": 5
+      },
+      "坎": {
+        "mountain_star": 4,
+        "facing_star": 6
+      },
+      "坤": {
+        "mountain_star": 7,
+        "facing_star": 4
+      },
+      "震": {
+        "mountain_star": 3,
+        "facing_star": 7
+      },
+      "巽": {
+        "mountain_star": 8,
+        "facing_star": 3
+      },
+      "乾": {
+        "mountain_star": 2,
+        "facing_star": 9
+      },
+      "兑": {
+        "mountain_star": 6,
+        "facing_star": 2
+      },
+      "艮": {
+        "mountain_star": 1,
+        "facing_star": 8
+      },
+      "离": {
+        "mountain_star": 9,
+        "facing_star": 1
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 5,
+    "sitting_mountain": "子",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 4,
+        "facing_star": 6
+      },
+      "坎": {
+        "mountain_star": 3,
+        "facing_star": 7
+      },
+      "坤": {
+        "mountain_star": 6,
+        "facing_star": 5
+      },
+      "震": {
+        "mountain_star": 2,
+        "facing_star": 8
+      },
+      "巽": {
+        "mountain_star": 7,
+        "facing_star": 4
+      },
+      "乾": {
+        "mountain_star": 1,
+        "facing_star": 1
+      },
+      "兑": {
+        "mountain_star": 5,
+        "facing_star": 3
+      },
+      "艮": {
+        "mountain_star": 9,
+        "facing_star": 9
+      },
+      "离": {
+        "mountain_star": 8,
+        "facing_star": 2
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 5,
+    "sitting_mountain": "癸",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 3,
+        "facing_star": 7
+      },
+      "坎": {
+        "mountain_star": 2,
+        "facing_star": 8
+      },
+      "坤": {
+        "mountain_star": 5,
+        "facing_star": 6
+      },
+      "震": {
+        "mountain_star": 1,
+        "facing_star": 9
+      },
+      "巽": {
+        "mountain_star": 6,
+        "facing_star": 5
+      },
+      "乾": {
+        "mountain_star": 9,
+        "facing_star": 2
+      },
+      "兑": {
+        "mountain_star": 4,
+        "facing_star": 4
+      },
+      "艮": {
+        "mountain_star": 8,
+        "facing_star": 1
+      },
+      "离": {
+        "mountain_star": 7,
+        "facing_star": 3
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 5,
+    "sitting_mountain": "丑",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 2,
+        "facing_star": 8
+      },
+      "坎": {
+        "mountain_star": 1,
+        "facing_star": 9
+      },
+      "坤": {
+        "mountain_star": 4,
+        "facing_star": 7
+      },
+      "震": {
+        "mountain_star": 9,
+        "facing_star": 1
+      },
+      "巽": {
+        "mountain_star": 5,
+        "facing_star": 6
+      },
+      "乾": {
+        "mountain_star": 8,
+        "facing_star": 3
+      },
+      "兑": {
+        "mountain_star": 3,
+        "facing_star": 5
+      },
+      "艮": {
+        "mountain_star": 7,
+        "facing_star": 2
+      },
+      "离": {
+        "mountain_star": 6,
+        "facing_star": 4
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 5,
+    "sitting_mountain": "艮",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 1,
+        "facing_star": 9
+      },
+      "坎": {
+        "mountain_star": 9,
+        "facing_star": 1
+      },
+      "坤": {
+        "mountain_star": 3,
+        "facing_star": 8
+      },
+      "震": {
+        "mountain_star": 8,
+        "facing_star": 2
+      },
+      "巽": {
+        "mountain_star": 4,
+        "facing_star": 7
+      },
+      "乾": {
+        "mountain_star": 7,
+        "facing_star": 4
+      },
+      "兑": {
+        "mountain_star": 2,
+        "facing_star": 6
+      },
+      "艮": {
+        "mountain_star": 6,
+        "facing_star": 3
+      },
+      "离": {
+        "mountain_star": 5,
+        "facing_star": 5
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 5,
+    "sitting_mountain": "寅",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 9,
+        "facing_star": 1
+      },
+      "坎": {
+        "mountain_star": 8,
+        "facing_star": 2
+      },
+      "坤": {
+        "mountain_star": 2,
+        "facing_star": 9
+      },
+      "震": {
+        "mountain_star": 7,
+        "facing_star": 3
+      },
+      "巽": {
+        "mountain_star": 3,
+        "facing_star": 8
+      },
+      "乾": {
+        "mountain_star": 6,
+        "facing_star": 5
+      },
+      "兑": {
+        "mountain_star": 1,
+        "facing_star": 7
+      },
+      "艮": {
+        "mountain_star": 5,
+        "facing_star": 4
+      },
+      "离": {
+        "mountain_star": 4,
+        "facing_star": 6
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 5,
+    "sitting_mountain": "甲",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 8,
+        "facing_star": 2
+      },
+      "坎": {
+        "mountain_star": 7,
+        "facing_star": 3
+      },
+      "坤": {
+        "mountain_star": 1,
+        "facing_star": 1
+      },
+      "震": {
+        "mountain_star": 6,
+        "facing_star": 4
+      },
+      "巽": {
+        "mountain_star": 2,
+        "facing_star": 9
+      },
+      "乾": {
+        "mountain_star": 5,
+        "facing_star": 6
+      },
+      "兑": {
+        "mountain_star": 9,
+        "facing_star": 8
+      },
+      "艮": {
+        "mountain_star": 4,
+        "facing_star": 5
+      },
+      "离": {
+        "mountain_star": 3,
+        "facing_star": 7
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 5,
+    "sitting_mountain": "卯",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 7,
+        "facing_star": 3
+      },
+      "坎": {
+        "mountain_star": 6,
+        "facing_star": 4
+      },
+      "坤": {
+        "mountain_star": 9,
+        "facing_star": 2
+      },
+      "震": {
+        "mountain_star": 5,
+        "facing_star": 5
+      },
+      "巽": {
+        "mountain_star": 1,
+        "facing_star": 1
+      },
+      "乾": {
+        "mountain_star": 4,
+        "facing_star": 7
+      },
+      "兑": {
+        "mountain_star": 8,
+        "facing_star": 9
+      },
+      "艮": {
+        "mountain_star": 3,
+        "facing_star": 6
+      },
+      "离": {
+        "mountain_star": 2,
+        "facing_star": 8
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 5,
+    "sitting_mountain": "乙",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 6,
+        "facing_star": 4
+      },
+      "坎": {
+        "mountain_star": 5,
+        "facing_star": 5
+      },
+      "坤": {
+        "mountain_star": 8,
+        "facing_star": 3
+      },
+      "震": {
+        "mountain_star": 4,
+        "facing_star": 6
+      },
+      "巽": {
+        "mountain_star": 9,
+        "facing_star": 2
+      },
+      "乾": {
+        "mountain_star": 3,
+        "facing_star": 8
+      },
+      "兑": {
+        "mountain_star": 7,
+        "facing_star": 1
+      },
+      "艮": {
+        "mountain_star": 2,
+        "facing_star": 7
+      },
+      "离": {
+        "mountain_star": 1,
+        "facing_star": 9
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 5,
+    "sitting_mountain": "辰",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 5,
+        "facing_star": 5
+      },
+      "坎": {
+        "mountain_star": 4,
+        "facing_star": 6
+      },
+      "坤": {
+        "mountain_star": 7,
+        "facing_star": 4
+      },
+      "震": {
+        "mountain_star": 3,
+        "facing_star": 7
+      },
+      "巽": {
+        "mountain_star": 8,
+        "facing_star": 3
+      },
+      "乾": {
+        "mountain_star": 2,
+        "facing_star": 9
+      },
+      "兑": {
+        "mountain_star": 6,
+        "facing_star": 2
+      },
+      "艮": {
+        "mountain_star": 1,
+        "facing_star": 8
+      },
+      "离": {
+        "mountain_star": 9,
+        "facing_star": 1
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 5,
+    "sitting_mountain": "巽",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 4,
+        "facing_star": 6
+      },
+      "坎": {
+        "mountain_star": 3,
+        "facing_star": 7
+      },
+      "坤": {
+        "mountain_star": 6,
+        "facing_star": 5
+      },
+      "震": {
+        "mountain_star": 2,
+        "facing_star": 8
+      },
+      "巽": {
+        "mountain_star": 7,
+        "facing_star": 4
+      },
+      "乾": {
+        "mountain_star": 1,
+        "facing_star": 1
+      },
+      "兑": {
+        "mountain_star": 5,
+        "facing_star": 3
+      },
+      "艮": {
+        "mountain_star": 9,
+        "facing_star": 9
+      },
+      "离": {
+        "mountain_star": 8,
+        "facing_star": 2
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 5,
+    "sitting_mountain": "巳",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 3,
+        "facing_star": 7
+      },
+      "坎": {
+        "mountain_star": 2,
+        "facing_star": 8
+      },
+      "坤": {
+        "mountain_star": 5,
+        "facing_star": 6
+      },
+      "震": {
+        "mountain_star": 1,
+        "facing_star": 9
+      },
+      "巽": {
+        "mountain_star": 6,
+        "facing_star": 5
+      },
+      "乾": {
+        "mountain_star": 9,
+        "facing_star": 2
+      },
+      "兑": {
+        "mountain_star": 4,
+        "facing_star": 4
+      },
+      "艮": {
+        "mountain_star": 8,
+        "facing_star": 1
+      },
+      "离": {
+        "mountain_star": 7,
+        "facing_star": 3
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 5,
+    "sitting_mountain": "丙",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 2,
+        "facing_star": 8
+      },
+      "坎": {
+        "mountain_star": 1,
+        "facing_star": 9
+      },
+      "坤": {
+        "mountain_star": 4,
+        "facing_star": 7
+      },
+      "震": {
+        "mountain_star": 9,
+        "facing_star": 1
+      },
+      "巽": {
+        "mountain_star": 5,
+        "facing_star": 6
+      },
+      "乾": {
+        "mountain_star": 8,
+        "facing_star": 3
+      },
+      "兑": {
+        "mountain_star": 3,
+        "facing_star": 5
+      },
+      "艮": {
+        "mountain_star": 7,
+        "facing_star": 2
+      },
+      "离": {
+        "mountain_star": 6,
+        "facing_star": 4
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 5,
+    "sitting_mountain": "午",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 1,
+        "facing_star": 9
+      },
+      "坎": {
+        "mountain_star": 9,
+        "facing_star": 1
+      },
+      "坤": {
+        "mountain_star": 3,
+        "facing_star": 8
+      },
+      "震": {
+        "mountain_star": 8,
+        "facing_star": 2
+      },
+      "巽": {
+        "mountain_star": 4,
+        "facing_star": 7
+      },
+      "乾": {
+        "mountain_star": 7,
+        "facing_star": 4
+      },
+      "兑": {
+        "mountain_star": 2,
+        "facing_star": 6
+      },
+      "艮": {
+        "mountain_star": 6,
+        "facing_star": 3
+      },
+      "离": {
+        "mountain_star": 5,
+        "facing_star": 5
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 5,
+    "sitting_mountain": "丁",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 9,
+        "facing_star": 1
+      },
+      "坎": {
+        "mountain_star": 8,
+        "facing_star": 2
+      },
+      "坤": {
+        "mountain_star": 2,
+        "facing_star": 9
+      },
+      "震": {
+        "mountain_star": 7,
+        "facing_star": 3
+      },
+      "巽": {
+        "mountain_star": 3,
+        "facing_star": 8
+      },
+      "乾": {
+        "mountain_star": 6,
+        "facing_star": 5
+      },
+      "兑": {
+        "mountain_star": 1,
+        "facing_star": 7
+      },
+      "艮": {
+        "mountain_star": 5,
+        "facing_star": 4
+      },
+      "离": {
+        "mountain_star": 4,
+        "facing_star": 6
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 5,
+    "sitting_mountain": "未",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 8,
+        "facing_star": 2
+      },
+      "坎": {
+        "mountain_star": 7,
+        "facing_star": 3
+      },
+      "坤": {
+        "mountain_star": 1,
+        "facing_star": 1
+      },
+      "震": {
+        "mountain_star": 6,
+        "facing_star": 4
+      },
+      "巽": {
+        "mountain_star": 2,
+        "facing_star": 9
+      },
+      "乾": {
+        "mountain_star": 5,
+        "facing_star": 6
+      },
+      "兑": {
+        "mountain_star": 9,
+        "facing_star": 8
+      },
+      "艮": {
+        "mountain_star": 4,
+        "facing_star": 5
+      },
+      "离": {
+        "mountain_star": 3,
+        "facing_star": 7
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 5,
+    "sitting_mountain": "坤",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 7,
+        "facing_star": 3
+      },
+      "坎": {
+        "mountain_star": 6,
+        "facing_star": 4
+      },
+      "坤": {
+        "mountain_star": 9,
+        "facing_star": 2
+      },
+      "震": {
+        "mountain_star": 5,
+        "facing_star": 5
+      },
+      "巽": {
+        "mountain_star": 1,
+        "facing_star": 1
+      },
+      "乾": {
+        "mountain_star": 4,
+        "facing_star": 7
+      },
+      "兑": {
+        "mountain_star": 8,
+        "facing_star": 9
+      },
+      "艮": {
+        "mountain_star": 3,
+        "facing_star": 6
+      },
+      "离": {
+        "mountain_star": 2,
+        "facing_star": 8
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 5,
+    "sitting_mountain": "申",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 6,
+        "facing_star": 4
+      },
+      "坎": {
+        "mountain_star": 5,
+        "facing_star": 5
+      },
+      "坤": {
+        "mountain_star": 8,
+        "facing_star": 3
+      },
+      "震": {
+        "mountain_star": 4,
+        "facing_star": 6
+      },
+      "巽": {
+        "mountain_star": 9,
+        "facing_star": 2
+      },
+      "乾": {
+        "mountain_star": 3,
+        "facing_star": 8
+      },
+      "兑": {
+        "mountain_star": 7,
+        "facing_star": 1
+      },
+      "艮": {
+        "mountain_star": 2,
+        "facing_star": 7
+      },
+      "离": {
+        "mountain_star": 1,
+        "facing_star": 9
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 5,
+    "sitting_mountain": "庚",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 5,
+        "facing_star": 5
+      },
+      "坎": {
+        "mountain_star": 4,
+        "facing_star": 6
+      },
+      "坤": {
+        "mountain_star": 7,
+        "facing_star": 4
+      },
+      "震": {
+        "mountain_star": 3,
+        "facing_star": 7
+      },
+      "巽": {
+        "mountain_star": 8,
+        "facing_star": 3
+      },
+      "乾": {
+        "mountain_star": 2,
+        "facing_star": 9
+      },
+      "兑": {
+        "mountain_star": 6,
+        "facing_star": 2
+      },
+      "艮": {
+        "mountain_star": 1,
+        "facing_star": 8
+      },
+      "离": {
+        "mountain_star": 9,
+        "facing_star": 1
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 5,
+    "sitting_mountain": "酉",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 4,
+        "facing_star": 6
+      },
+      "坎": {
+        "mountain_star": 3,
+        "facing_star": 7
+      },
+      "坤": {
+        "mountain_star": 6,
+        "facing_star": 5
+      },
+      "震": {
+        "mountain_star": 2,
+        "facing_star": 8
+      },
+      "巽": {
+        "mountain_star": 7,
+        "facing_star": 4
+      },
+      "乾": {
+        "mountain_star": 1,
+        "facing_star": 1
+      },
+      "兑": {
+        "mountain_star": 5,
+        "facing_star": 3
+      },
+      "艮": {
+        "mountain_star": 9,
+        "facing_star": 9
+      },
+      "离": {
+        "mountain_star": 8,
+        "facing_star": 2
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 5,
+    "sitting_mountain": "辛",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 3,
+        "facing_star": 7
+      },
+      "坎": {
+        "mountain_star": 2,
+        "facing_star": 8
+      },
+      "坤": {
+        "mountain_star": 5,
+        "facing_star": 6
+      },
+      "震": {
+        "mountain_star": 1,
+        "facing_star": 9
+      },
+      "巽": {
+        "mountain_star": 6,
+        "facing_star": 5
+      },
+      "乾": {
+        "mountain_star": 9,
+        "facing_star": 2
+      },
+      "兑": {
+        "mountain_star": 4,
+        "facing_star": 4
+      },
+      "艮": {
+        "mountain_star": 8,
+        "facing_star": 1
+      },
+      "离": {
+        "mountain_star": 7,
+        "facing_star": 3
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 5,
+    "sitting_mountain": "戌",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 2,
+        "facing_star": 8
+      },
+      "坎": {
+        "mountain_star": 1,
+        "facing_star": 9
+      },
+      "坤": {
+        "mountain_star": 4,
+        "facing_star": 7
+      },
+      "震": {
+        "mountain_star": 9,
+        "facing_star": 1
+      },
+      "巽": {
+        "mountain_star": 5,
+        "facing_star": 6
+      },
+      "乾": {
+        "mountain_star": 8,
+        "facing_star": 3
+      },
+      "兑": {
+        "mountain_star": 3,
+        "facing_star": 5
+      },
+      "艮": {
+        "mountain_star": 7,
+        "facing_star": 2
+      },
+      "离": {
+        "mountain_star": 6,
+        "facing_star": 4
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 5,
+    "sitting_mountain": "乾",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 1,
+        "facing_star": 9
+      },
+      "坎": {
+        "mountain_star": 9,
+        "facing_star": 1
+      },
+      "坤": {
+        "mountain_star": 3,
+        "facing_star": 8
+      },
+      "震": {
+        "mountain_star": 8,
+        "facing_star": 2
+      },
+      "巽": {
+        "mountain_star": 4,
+        "facing_star": 7
+      },
+      "乾": {
+        "mountain_star": 7,
+        "facing_star": 4
+      },
+      "兑": {
+        "mountain_star": 2,
+        "facing_star": 6
+      },
+      "艮": {
+        "mountain_star": 6,
+        "facing_star": 3
+      },
+      "离": {
+        "mountain_star": 5,
+        "facing_star": 5
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 5,
+    "sitting_mountain": "亥",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 9,
+        "facing_star": 1
+      },
+      "坎": {
+        "mountain_star": 8,
+        "facing_star": 2
+      },
+      "坤": {
+        "mountain_star": 2,
+        "facing_star": 9
+      },
+      "震": {
+        "mountain_star": 7,
+        "facing_star": 3
+      },
+      "巽": {
+        "mountain_star": 3,
+        "facing_star": 8
+      },
+      "乾": {
+        "mountain_star": 6,
+        "facing_star": 5
+      },
+      "兑": {
+        "mountain_star": 1,
+        "facing_star": 7
+      },
+      "艮": {
+        "mountain_star": 5,
+        "facing_star": 4
+      },
+      "离": {
+        "mountain_star": 4,
+        "facing_star": 6
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 6,
+    "sitting_mountain": "壬",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 6,
+        "facing_star": 6
+      },
+      "坎": {
+        "mountain_star": 5,
+        "facing_star": 7
+      },
+      "坤": {
+        "mountain_star": 8,
+        "facing_star": 5
+      },
+      "震": {
+        "mountain_star": 4,
+        "facing_star": 8
+      },
+      "巽": {
+        "mountain_star": 9,
+        "facing_star": 4
+      },
+      "乾": {
+        "mountain_star": 3,
+        "facing_star": 1
+      },
+      "兑": {
+        "mountain_star": 7,
+        "facing_star": 3
+      },
+      "艮": {
+        "mountain_star": 2,
+        "facing_star": 9
+      },
+      "离": {
+        "mountain_star": 1,
+        "facing_star": 2
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 6,
+    "sitting_mountain": "子",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 5,
+        "facing_star": 7
+      },
+      "坎": {
+        "mountain_star": 4,
+        "facing_star": 8
+      },
+      "坤": {
+        "mountain_star": 7,
+        "facing_star": 6
+      },
+      "震": {
+        "mountain_star": 3,
+        "facing_star": 9
+      },
+      "巽": {
+        "mountain_star": 8,
+        "facing_star": 5
+      },
+      "乾": {
+        "mountain_star": 2,
+        "facing_star": 2
+      },
+      "兑": {
+        "mountain_star": 6,
+        "facing_star": 4
+      },
+      "艮": {
+        "mountain_star": 1,
+        "facing_star": 1
+      },
+      "离": {
+        "mountain_star": 9,
+        "facing_star": 3
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 6,
+    "sitting_mountain": "癸",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 4,
+        "facing_star": 8
+      },
+      "坎": {
+        "mountain_star": 3,
+        "facing_star": 9
+      },
+      "坤": {
+        "mountain_star": 6,
+        "facing_star": 7
+      },
+      "震": {
+        "mountain_star": 2,
+        "facing_star": 1
+      },
+      "巽": {
+        "mountain_star": 7,
+        "facing_star": 6
+      },
+      "乾": {
+        "mountain_star": 1,
+        "facing_star": 3
+      },
+      "兑": {
+        "mountain_star": 5,
+        "facing_star": 5
+      },
+      "艮": {
+        "mountain_star": 9,
+        "facing_star": 2
+      },
+      "离": {
+        "mountain_star": 8,
+        "facing_star": 4
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 6,
+    "sitting_mountain": "丑",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 3,
+        "facing_star": 9
+      },
+      "坎": {
+        "mountain_star": 2,
+        "facing_star": 1
+      },
+      "坤": {
+        "mountain_star": 5,
+        "facing_star": 8
+      },
+      "震": {
+        "mountain_star": 1,
+        "facing_star": 2
+      },
+      "巽": {
+        "mountain_star": 6,
+        "facing_star": 7
+      },
+      "乾": {
+        "mountain_star": 9,
+        "facing_star": 4
+      },
+      "兑": {
+        "mountain_star": 4,
+        "facing_star": 6
+      },
+      "艮": {
+        "mountain_star": 8,
+        "facing_star": 3
+      },
+      "离": {
+        "mountain_star": 7,
+        "facing_star": 5
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 6,
+    "sitting_mountain": "艮",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 2,
+        "facing_star": 1
+      },
+      "坎": {
+        "mountain_star": 1,
+        "facing_star": 2
+      },
+      "坤": {
+        "mountain_star": 4,
+        "facing_star": 9
+      },
+      "震": {
+        "mountain_star": 9,
+        "facing_star": 3
+      },
+      "巽": {
+        "mountain_star": 5,
+        "facing_star": 8
+      },
+      "乾": {
+        "mountain_star": 8,
+        "facing_star": 5
+      },
+      "兑": {
+        "mountain_star": 3,
+        "facing_star": 7
+      },
+      "艮": {
+        "mountain_star": 7,
+        "facing_star": 4
+      },
+      "离": {
+        "mountain_star": 6,
+        "facing_star": 6
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 6,
+    "sitting_mountain": "寅",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 1,
+        "facing_star": 2
+      },
+      "坎": {
+        "mountain_star": 9,
+        "facing_star": 3
+      },
+      "坤": {
+        "mountain_star": 3,
+        "facing_star": 1
+      },
+      "震": {
+        "mountain_star": 8,
+        "facing_star": 4
+      },
+      "巽": {
+        "mountain_star": 4,
+        "facing_star": 9
+      },
+      "乾": {
+        "mountain_star": 7,
+        "facing_star": 6
+      },
+      "兑": {
+        "mountain_star": 2,
+        "facing_star": 8
+      },
+      "艮": {
+        "mountain_star": 6,
+        "facing_star": 5
+      },
+      "离": {
+        "mountain_star": 5,
+        "facing_star": 7
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 6,
+    "sitting_mountain": "甲",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 9,
+        "facing_star": 3
+      },
+      "坎": {
+        "mountain_star": 8,
+        "facing_star": 4
+      },
+      "坤": {
+        "mountain_star": 2,
+        "facing_star": 2
+      },
+      "震": {
+        "mountain_star": 7,
+        "facing_star": 5
+      },
+      "巽": {
+        "mountain_star": 3,
+        "facing_star": 1
+      },
+      "乾": {
+        "mountain_star": 6,
+        "facing_star": 7
+      },
+      "兑": {
+        "mountain_star": 1,
+        "facing_star": 9
+      },
+      "艮": {
+        "mountain_star": 5,
+        "facing_star": 6
+      },
+      "离": {
+        "mountain_star": 4,
+        "facing_star": 8
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 6,
+    "sitting_mountain": "卯",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 8,
+        "facing_star": 4
+      },
+      "坎": {
+        "mountain_star": 7,
+        "facing_star": 5
+      },
+      "坤": {
+        "mountain_star": 1,
+        "facing_star": 3
+      },
+      "震": {
+        "mountain_star": 6,
+        "facing_star": 6
+      },
+      "巽": {
+        "mountain_star": 2,
+        "facing_star": 2
+      },
+      "乾": {
+        "mountain_star": 5,
+        "facing_star": 8
+      },
+      "兑": {
+        "mountain_star": 9,
+        "facing_star": 1
+      },
+      "艮": {
+        "mountain_star": 4,
+        "facing_star": 7
+      },
+      "离": {
+        "mountain_star": 3,
+        "facing_star": 9
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 6,
+    "sitting_mountain": "乙",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 7,
+        "facing_star": 5
+      },
+      "坎": {
+        "mountain_star": 6,
+        "facing_star": 6
+      },
+      "坤": {
+        "mountain_star": 9,
+        "facing_star": 4
+      },
+      "震": {
+        "mountain_star": 5,
+        "facing_star": 7
+      },
+      "巽": {
+        "mountain_star": 1,
+        "facing_star": 3
+      },
+      "乾": {
+        "mountain_star": 4,
+        "facing_star": 9
+      },
+      "兑": {
+        "mountain_star": 8,
+        "facing_star": 2
+      },
+      "艮": {
+        "mountain_star": 3,
+        "facing_star": 8
+      },
+      "离": {
+        "mountain_star": 2,
+        "facing_star": 1
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 6,
+    "sitting_mountain": "辰",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 6,
+        "facing_star": 6
+      },
+      "坎": {
+        "mountain_star": 5,
+        "facing_star": 7
+      },
+      "坤": {
+        "mountain_star": 8,
+        "facing_star": 5
+      },
+      "震": {
+        "mountain_star": 4,
+        "facing_star": 8
+      },
+      "巽": {
+        "mountain_star": 9,
+        "facing_star": 4
+      },
+      "乾": {
+        "mountain_star": 3,
+        "facing_star": 1
+      },
+      "兑": {
+        "mountain_star": 7,
+        "facing_star": 3
+      },
+      "艮": {
+        "mountain_star": 2,
+        "facing_star": 9
+      },
+      "离": {
+        "mountain_star": 1,
+        "facing_star": 2
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 6,
+    "sitting_mountain": "巽",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 5,
+        "facing_star": 7
+      },
+      "坎": {
+        "mountain_star": 4,
+        "facing_star": 8
+      },
+      "坤": {
+        "mountain_star": 7,
+        "facing_star": 6
+      },
+      "震": {
+        "mountain_star": 3,
+        "facing_star": 9
+      },
+      "巽": {
+        "mountain_star": 8,
+        "facing_star": 5
+      },
+      "乾": {
+        "mountain_star": 2,
+        "facing_star": 2
+      },
+      "兑": {
+        "mountain_star": 6,
+        "facing_star": 4
+      },
+      "艮": {
+        "mountain_star": 1,
+        "facing_star": 1
+      },
+      "离": {
+        "mountain_star": 9,
+        "facing_star": 3
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 6,
+    "sitting_mountain": "巳",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 4,
+        "facing_star": 8
+      },
+      "坎": {
+        "mountain_star": 3,
+        "facing_star": 9
+      },
+      "坤": {
+        "mountain_star": 6,
+        "facing_star": 7
+      },
+      "震": {
+        "mountain_star": 2,
+        "facing_star": 1
+      },
+      "巽": {
+        "mountain_star": 7,
+        "facing_star": 6
+      },
+      "乾": {
+        "mountain_star": 1,
+        "facing_star": 3
+      },
+      "兑": {
+        "mountain_star": 5,
+        "facing_star": 5
+      },
+      "艮": {
+        "mountain_star": 9,
+        "facing_star": 2
+      },
+      "离": {
+        "mountain_star": 8,
+        "facing_star": 4
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 6,
+    "sitting_mountain": "丙",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 3,
+        "facing_star": 9
+      },
+      "坎": {
+        "mountain_star": 2,
+        "facing_star": 1
+      },
+      "坤": {
+        "mountain_star": 5,
+        "facing_star": 8
+      },
+      "震": {
+        "mountain_star": 1,
+        "facing_star": 2
+      },
+      "巽": {
+        "mountain_star": 6,
+        "facing_star": 7
+      },
+      "乾": {
+        "mountain_star": 9,
+        "facing_star": 4
+      },
+      "兑": {
+        "mountain_star": 4,
+        "facing_star": 6
+      },
+      "艮": {
+        "mountain_star": 8,
+        "facing_star": 3
+      },
+      "离": {
+        "mountain_star": 7,
+        "facing_star": 5
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 6,
+    "sitting_mountain": "午",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 2,
+        "facing_star": 1
+      },
+      "坎": {
+        "mountain_star": 1,
+        "facing_star": 2
+      },
+      "坤": {
+        "mountain_star": 4,
+        "facing_star": 9
+      },
+      "震": {
+        "mountain_star": 9,
+        "facing_star": 3
+      },
+      "巽": {
+        "mountain_star": 5,
+        "facing_star": 8
+      },
+      "乾": {
+        "mountain_star": 8,
+        "facing_star": 5
+      },
+      "兑": {
+        "mountain_star": 3,
+        "facing_star": 7
+      },
+      "艮": {
+        "mountain_star": 7,
+        "facing_star": 4
+      },
+      "离": {
+        "mountain_star": 6,
+        "facing_star": 6
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 6,
+    "sitting_mountain": "丁",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 1,
+        "facing_star": 2
+      },
+      "坎": {
+        "mountain_star": 9,
+        "facing_star": 3
+      },
+      "坤": {
+        "mountain_star": 3,
+        "facing_star": 1
+      },
+      "震": {
+        "mountain_star": 8,
+        "facing_star": 4
+      },
+      "巽": {
+        "mountain_star": 4,
+        "facing_star": 9
+      },
+      "乾": {
+        "mountain_star": 7,
+        "facing_star": 6
+      },
+      "兑": {
+        "mountain_star": 2,
+        "facing_star": 8
+      },
+      "艮": {
+        "mountain_star": 6,
+        "facing_star": 5
+      },
+      "离": {
+        "mountain_star": 5,
+        "facing_star": 7
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 6,
+    "sitting_mountain": "未",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 9,
+        "facing_star": 3
+      },
+      "坎": {
+        "mountain_star": 8,
+        "facing_star": 4
+      },
+      "坤": {
+        "mountain_star": 2,
+        "facing_star": 2
+      },
+      "震": {
+        "mountain_star": 7,
+        "facing_star": 5
+      },
+      "巽": {
+        "mountain_star": 3,
+        "facing_star": 1
+      },
+      "乾": {
+        "mountain_star": 6,
+        "facing_star": 7
+      },
+      "兑": {
+        "mountain_star": 1,
+        "facing_star": 9
+      },
+      "艮": {
+        "mountain_star": 5,
+        "facing_star": 6
+      },
+      "离": {
+        "mountain_star": 4,
+        "facing_star": 8
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 6,
+    "sitting_mountain": "坤",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 8,
+        "facing_star": 4
+      },
+      "坎": {
+        "mountain_star": 7,
+        "facing_star": 5
+      },
+      "坤": {
+        "mountain_star": 1,
+        "facing_star": 3
+      },
+      "震": {
+        "mountain_star": 6,
+        "facing_star": 6
+      },
+      "巽": {
+        "mountain_star": 2,
+        "facing_star": 2
+      },
+      "乾": {
+        "mountain_star": 5,
+        "facing_star": 8
+      },
+      "兑": {
+        "mountain_star": 9,
+        "facing_star": 1
+      },
+      "艮": {
+        "mountain_star": 4,
+        "facing_star": 7
+      },
+      "离": {
+        "mountain_star": 3,
+        "facing_star": 9
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 6,
+    "sitting_mountain": "申",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 7,
+        "facing_star": 5
+      },
+      "坎": {
+        "mountain_star": 6,
+        "facing_star": 6
+      },
+      "坤": {
+        "mountain_star": 9,
+        "facing_star": 4
+      },
+      "震": {
+        "mountain_star": 5,
+        "facing_star": 7
+      },
+      "巽": {
+        "mountain_star": 1,
+        "facing_star": 3
+      },
+      "乾": {
+        "mountain_star": 4,
+        "facing_star": 9
+      },
+      "兑": {
+        "mountain_star": 8,
+        "facing_star": 2
+      },
+      "艮": {
+        "mountain_star": 3,
+        "facing_star": 8
+      },
+      "离": {
+        "mountain_star": 2,
+        "facing_star": 1
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 6,
+    "sitting_mountain": "庚",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 6,
+        "facing_star": 6
+      },
+      "坎": {
+        "mountain_star": 5,
+        "facing_star": 7
+      },
+      "坤": {
+        "mountain_star": 8,
+        "facing_star": 5
+      },
+      "震": {
+        "mountain_star": 4,
+        "facing_star": 8
+      },
+      "巽": {
+        "mountain_star": 9,
+        "facing_star": 4
+      },
+      "乾": {
+        "mountain_star": 3,
+        "facing_star": 1
+      },
+      "兑": {
+        "mountain_star": 7,
+        "facing_star": 3
+      },
+      "艮": {
+        "mountain_star": 2,
+        "facing_star": 9
+      },
+      "离": {
+        "mountain_star": 1,
+        "facing_star": 2
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 6,
+    "sitting_mountain": "酉",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 5,
+        "facing_star": 7
+      },
+      "坎": {
+        "mountain_star": 4,
+        "facing_star": 8
+      },
+      "坤": {
+        "mountain_star": 7,
+        "facing_star": 6
+      },
+      "震": {
+        "mountain_star": 3,
+        "facing_star": 9
+      },
+      "巽": {
+        "mountain_star": 8,
+        "facing_star": 5
+      },
+      "乾": {
+        "mountain_star": 2,
+        "facing_star": 2
+      },
+      "兑": {
+        "mountain_star": 6,
+        "facing_star": 4
+      },
+      "艮": {
+        "mountain_star": 1,
+        "facing_star": 1
+      },
+      "离": {
+        "mountain_star": 9,
+        "facing_star": 3
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 6,
+    "sitting_mountain": "辛",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 4,
+        "facing_star": 8
+      },
+      "坎": {
+        "mountain_star": 3,
+        "facing_star": 9
+      },
+      "坤": {
+        "mountain_star": 6,
+        "facing_star": 7
+      },
+      "震": {
+        "mountain_star": 2,
+        "facing_star": 1
+      },
+      "巽": {
+        "mountain_star": 7,
+        "facing_star": 6
+      },
+      "乾": {
+        "mountain_star": 1,
+        "facing_star": 3
+      },
+      "兑": {
+        "mountain_star": 5,
+        "facing_star": 5
+      },
+      "艮": {
+        "mountain_star": 9,
+        "facing_star": 2
+      },
+      "离": {
+        "mountain_star": 8,
+        "facing_star": 4
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 6,
+    "sitting_mountain": "戌",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 3,
+        "facing_star": 9
+      },
+      "坎": {
+        "mountain_star": 2,
+        "facing_star": 1
+      },
+      "坤": {
+        "mountain_star": 5,
+        "facing_star": 8
+      },
+      "震": {
+        "mountain_star": 1,
+        "facing_star": 2
+      },
+      "巽": {
+        "mountain_star": 6,
+        "facing_star": 7
+      },
+      "乾": {
+        "mountain_star": 9,
+        "facing_star": 4
+      },
+      "兑": {
+        "mountain_star": 4,
+        "facing_star": 6
+      },
+      "艮": {
+        "mountain_star": 8,
+        "facing_star": 3
+      },
+      "离": {
+        "mountain_star": 7,
+        "facing_star": 5
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 6,
+    "sitting_mountain": "乾",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 2,
+        "facing_star": 1
+      },
+      "坎": {
+        "mountain_star": 1,
+        "facing_star": 2
+      },
+      "坤": {
+        "mountain_star": 4,
+        "facing_star": 9
+      },
+      "震": {
+        "mountain_star": 9,
+        "facing_star": 3
+      },
+      "巽": {
+        "mountain_star": 5,
+        "facing_star": 8
+      },
+      "乾": {
+        "mountain_star": 8,
+        "facing_star": 5
+      },
+      "兑": {
+        "mountain_star": 3,
+        "facing_star": 7
+      },
+      "艮": {
+        "mountain_star": 7,
+        "facing_star": 4
+      },
+      "离": {
+        "mountain_star": 6,
+        "facing_star": 6
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 6,
+    "sitting_mountain": "亥",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 1,
+        "facing_star": 2
+      },
+      "坎": {
+        "mountain_star": 9,
+        "facing_star": 3
+      },
+      "坤": {
+        "mountain_star": 3,
+        "facing_star": 1
+      },
+      "震": {
+        "mountain_star": 8,
+        "facing_star": 4
+      },
+      "巽": {
+        "mountain_star": 4,
+        "facing_star": 9
+      },
+      "乾": {
+        "mountain_star": 7,
+        "facing_star": 6
+      },
+      "兑": {
+        "mountain_star": 2,
+        "facing_star": 8
+      },
+      "艮": {
+        "mountain_star": 6,
+        "facing_star": 5
+      },
+      "离": {
+        "mountain_star": 5,
+        "facing_star": 7
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 7,
+    "sitting_mountain": "壬",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 7,
+        "facing_star": 7
+      },
+      "坎": {
+        "mountain_star": 6,
+        "facing_star": 8
+      },
+      "坤": {
+        "mountain_star": 9,
+        "facing_star": 6
+      },
+      "震": {
+        "mountain_star": 5,
+        "facing_star": 9
+      },
+      "巽": {
+        "mountain_star": 1,
+        "facing_star": 5
+      },
+      "乾": {
+        "mountain_star": 4,
+        "facing_star": 2
+      },
+      "兑": {
+        "mountain_star": 8,
+        "facing_star": 4
+      },
+      "艮": {
+        "mountain_star": 3,
+        "facing_star": 1
+      },
+      "离": {
+        "mountain_star": 2,
+        "facing_star": 3
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 7,
+    "sitting_mountain": "子",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 6,
+        "facing_star": 8
+      },
+      "坎": {
+        "mountain_star": 5,
+        "facing_star": 9
+      },
+      "坤": {
+        "mountain_star": 8,
+        "facing_star": 7
+      },
+      "震": {
+        "mountain_star": 4,
+        "facing_star": 1
+      },
+      "巽": {
+        "mountain_star": 9,
+        "facing_star": 6
+      },
+      "乾": {
+        "mountain_star": 3,
+        "facing_star": 3
+      },
+      "兑": {
+        "mountain_star": 7,
+        "facing_star": 5
+      },
+      "艮": {
+        "mountain_star": 2,
+        "facing_star": 2
+      },
+      "离": {
+        "mountain_star": 1,
+        "facing_star": 4
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 7,
+    "sitting_mountain": "癸",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 5,
+        "facing_star": 9
+      },
+      "坎": {
+        "mountain_star": 4,
+        "facing_star": 1
+      },
+      "坤": {
+        "mountain_star": 7,
+        "facing_star": 8
+      },
+      "震": {
+        "mountain_star": 3,
+        "facing_star": 2
+      },
+      "巽": {
+        "mountain_star": 8,
+        "facing_star": 7
+      },
+      "乾": {
+        "mountain_star": 2,
+        "facing_star": 4
+      },
+      "兑": {
+        "mountain_star": 6,
+        "facing_star": 6
+      },
+      "艮": {
+        "mountain_star": 1,
+        "facing_star": 3
+      },
+      "离": {
+        "mountain_star": 9,
+        "facing_star": 5
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 7,
+    "sitting_mountain": "丑",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 4,
+        "facing_star": 1
+      },
+      "坎": {
+        "mountain_star": 3,
+        "facing_star": 2
+      },
+      "坤": {
+        "mountain_star": 6,
+        "facing_star": 9
+      },
+      "震": {
+        "mountain_star": 2,
+        "facing_star": 3
+      },
+      "巽": {
+        "mountain_star": 7,
+        "facing_star": 8
+      },
+      "乾": {
+        "mountain_star": 1,
+        "facing_star": 5
+      },
+      "兑": {
+        "mountain_star": 5,
+        "facing_star": 7
+      },
+      "艮": {
+        "mountain_star": 9,
+        "facing_star": 4
+      },
+      "离": {
+        "mountain_star": 8,
+        "facing_star": 6
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 7,
+    "sitting_mountain": "艮",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 3,
+        "facing_star": 2
+      },
+      "坎": {
+        "mountain_star": 2,
+        "facing_star": 3
+      },
+      "坤": {
+        "mountain_star": 5,
+        "facing_star": 1
+      },
+      "震": {
+        "mountain_star": 1,
+        "facing_star": 4
+      },
+      "巽": {
+        "mountain_star": 6,
+        "facing_star": 9
+      },
+      "乾": {
+        "mountain_star": 9,
+        "facing_star": 6
+      },
+      "兑": {
+        "mountain_star": 4,
+        "facing_star": 8
+      },
+      "艮": {
+        "mountain_star": 8,
+        "facing_star": 5
+      },
+      "离": {
+        "mountain_star": 7,
+        "facing_star": 7
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 7,
+    "sitting_mountain": "寅",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 2,
+        "facing_star": 3
+      },
+      "坎": {
+        "mountain_star": 1,
+        "facing_star": 4
+      },
+      "坤": {
+        "mountain_star": 4,
+        "facing_star": 2
+      },
+      "震": {
+        "mountain_star": 9,
+        "facing_star": 5
+      },
+      "巽": {
+        "mountain_star": 5,
+        "facing_star": 1
+      },
+      "乾": {
+        "mountain_star": 8,
+        "facing_star": 7
+      },
+      "兑": {
+        "mountain_star": 3,
+        "facing_star": 9
+      },
+      "艮": {
+        "mountain_star": 7,
+        "facing_star": 6
+      },
+      "离": {
+        "mountain_star": 6,
+        "facing_star": 8
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 7,
+    "sitting_mountain": "甲",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 1,
+        "facing_star": 4
+      },
+      "坎": {
+        "mountain_star": 9,
+        "facing_star": 5
+      },
+      "坤": {
+        "mountain_star": 3,
+        "facing_star": 3
+      },
+      "震": {
+        "mountain_star": 8,
+        "facing_star": 6
+      },
+      "巽": {
+        "mountain_star": 4,
+        "facing_star": 2
+      },
+      "乾": {
+        "mountain_star": 7,
+        "facing_star": 8
+      },
+      "兑": {
+        "mountain_star": 2,
+        "facing_star": 1
+      },
+      "艮": {
+        "mountain_star": 6,
+        "facing_star": 7
+      },
+      "离": {
+        "mountain_star": 5,
+        "facing_star": 9
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 7,
+    "sitting_mountain": "卯",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 9,
+        "facing_star": 5
+      },
+      "坎": {
+        "mountain_star": 8,
+        "facing_star": 6
+      },
+      "坤": {
+        "mountain_star": 2,
+        "facing_star": 4
+      },
+      "震": {
+        "mountain_star": 7,
+        "facing_star": 7
+      },
+      "巽": {
+        "mountain_star": 3,
+        "facing_star": 3
+      },
+      "乾": {
+        "mountain_star": 6,
+        "facing_star": 9
+      },
+      "兑": {
+        "mountain_star": 1,
+        "facing_star": 2
+      },
+      "艮": {
+        "mountain_star": 5,
+        "facing_star": 8
+      },
+      "离": {
+        "mountain_star": 4,
+        "facing_star": 1
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 7,
+    "sitting_mountain": "乙",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 8,
+        "facing_star": 6
+      },
+      "坎": {
+        "mountain_star": 7,
+        "facing_star": 7
+      },
+      "坤": {
+        "mountain_star": 1,
+        "facing_star": 5
+      },
+      "震": {
+        "mountain_star": 6,
+        "facing_star": 8
+      },
+      "巽": {
+        "mountain_star": 2,
+        "facing_star": 4
+      },
+      "乾": {
+        "mountain_star": 5,
+        "facing_star": 1
+      },
+      "兑": {
+        "mountain_star": 9,
+        "facing_star": 3
+      },
+      "艮": {
+        "mountain_star": 4,
+        "facing_star": 9
+      },
+      "离": {
+        "mountain_star": 3,
+        "facing_star": 2
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 7,
+    "sitting_mountain": "辰",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 7,
+        "facing_star": 7
+      },
+      "坎": {
+        "mountain_star": 6,
+        "facing_star": 8
+      },
+      "坤": {
+        "mountain_star": 9,
+        "facing_star": 6
+      },
+      "震": {
+        "mountain_star": 5,
+        "facing_star": 9
+      },
+      "巽": {
+        "mountain_star": 1,
+        "facing_star": 5
+      },
+      "乾": {
+        "mountain_star": 4,
+        "facing_star": 2
+      },
+      "兑": {
+        "mountain_star": 8,
+        "facing_star": 4
+      },
+      "艮": {
+        "mountain_star": 3,
+        "facing_star": 1
+      },
+      "离": {
+        "mountain_star": 2,
+        "facing_star": 3
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 7,
+    "sitting_mountain": "巽",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 6,
+        "facing_star": 8
+      },
+      "坎": {
+        "mountain_star": 5,
+        "facing_star": 9
+      },
+      "坤": {
+        "mountain_star": 8,
+        "facing_star": 7
+      },
+      "震": {
+        "mountain_star": 4,
+        "facing_star": 1
+      },
+      "巽": {
+        "mountain_star": 9,
+        "facing_star": 6
+      },
+      "乾": {
+        "mountain_star": 3,
+        "facing_star": 3
+      },
+      "兑": {
+        "mountain_star": 7,
+        "facing_star": 5
+      },
+      "艮": {
+        "mountain_star": 2,
+        "facing_star": 2
+      },
+      "离": {
+        "mountain_star": 1,
+        "facing_star": 4
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 7,
+    "sitting_mountain": "巳",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 5,
+        "facing_star": 9
+      },
+      "坎": {
+        "mountain_star": 4,
+        "facing_star": 1
+      },
+      "坤": {
+        "mountain_star": 7,
+        "facing_star": 8
+      },
+      "震": {
+        "mountain_star": 3,
+        "facing_star": 2
+      },
+      "巽": {
+        "mountain_star": 8,
+        "facing_star": 7
+      },
+      "乾": {
+        "mountain_star": 2,
+        "facing_star": 4
+      },
+      "兑": {
+        "mountain_star": 6,
+        "facing_star": 6
+      },
+      "艮": {
+        "mountain_star": 1,
+        "facing_star": 3
+      },
+      "离": {
+        "mountain_star": 9,
+        "facing_star": 5
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 7,
+    "sitting_mountain": "丙",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 4,
+        "facing_star": 1
+      },
+      "坎": {
+        "mountain_star": 3,
+        "facing_star": 2
+      },
+      "坤": {
+        "mountain_star": 6,
+        "facing_star": 9
+      },
+      "震": {
+        "mountain_star": 2,
+        "facing_star": 3
+      },
+      "巽": {
+        "mountain_star": 7,
+        "facing_star": 8
+      },
+      "乾": {
+        "mountain_star": 1,
+        "facing_star": 5
+      },
+      "兑": {
+        "mountain_star": 5,
+        "facing_star": 7
+      },
+      "艮": {
+        "mountain_star": 9,
+        "facing_star": 4
+      },
+      "离": {
+        "mountain_star": 8,
+        "facing_star": 6
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 7,
+    "sitting_mountain": "午",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 3,
+        "facing_star": 2
+      },
+      "坎": {
+        "mountain_star": 2,
+        "facing_star": 3
+      },
+      "坤": {
+        "mountain_star": 5,
+        "facing_star": 1
+      },
+      "震": {
+        "mountain_star": 1,
+        "facing_star": 4
+      },
+      "巽": {
+        "mountain_star": 6,
+        "facing_star": 9
+      },
+      "乾": {
+        "mountain_star": 9,
+        "facing_star": 6
+      },
+      "兑": {
+        "mountain_star": 4,
+        "facing_star": 8
+      },
+      "艮": {
+        "mountain_star": 8,
+        "facing_star": 5
+      },
+      "离": {
+        "mountain_star": 7,
+        "facing_star": 7
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 7,
+    "sitting_mountain": "丁",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 2,
+        "facing_star": 3
+      },
+      "坎": {
+        "mountain_star": 1,
+        "facing_star": 4
+      },
+      "坤": {
+        "mountain_star": 4,
+        "facing_star": 2
+      },
+      "震": {
+        "mountain_star": 9,
+        "facing_star": 5
+      },
+      "巽": {
+        "mountain_star": 5,
+        "facing_star": 1
+      },
+      "乾": {
+        "mountain_star": 8,
+        "facing_star": 7
+      },
+      "兑": {
+        "mountain_star": 3,
+        "facing_star": 9
+      },
+      "艮": {
+        "mountain_star": 7,
+        "facing_star": 6
+      },
+      "离": {
+        "mountain_star": 6,
+        "facing_star": 8
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 7,
+    "sitting_mountain": "未",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 1,
+        "facing_star": 4
+      },
+      "坎": {
+        "mountain_star": 9,
+        "facing_star": 5
+      },
+      "坤": {
+        "mountain_star": 3,
+        "facing_star": 3
+      },
+      "震": {
+        "mountain_star": 8,
+        "facing_star": 6
+      },
+      "巽": {
+        "mountain_star": 4,
+        "facing_star": 2
+      },
+      "乾": {
+        "mountain_star": 7,
+        "facing_star": 8
+      },
+      "兑": {
+        "mountain_star": 2,
+        "facing_star": 1
+      },
+      "艮": {
+        "mountain_star": 6,
+        "facing_star": 7
+      },
+      "离": {
+        "mountain_star": 5,
+        "facing_star": 9
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 7,
+    "sitting_mountain": "坤",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 9,
+        "facing_star": 5
+      },
+      "坎": {
+        "mountain_star": 8,
+        "facing_star": 6
+      },
+      "坤": {
+        "mountain_star": 2,
+        "facing_star": 4
+      },
+      "震": {
+        "mountain_star": 7,
+        "facing_star": 7
+      },
+      "巽": {
+        "mountain_star": 3,
+        "facing_star": 3
+      },
+      "乾": {
+        "mountain_star": 6,
+        "facing_star": 9
+      },
+      "兑": {
+        "mountain_star": 1,
+        "facing_star": 2
+      },
+      "艮": {
+        "mountain_star": 5,
+        "facing_star": 8
+      },
+      "离": {
+        "mountain_star": 4,
+        "facing_star": 1
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 7,
+    "sitting_mountain": "申",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 8,
+        "facing_star": 6
+      },
+      "坎": {
+        "mountain_star": 7,
+        "facing_star": 7
+      },
+      "坤": {
+        "mountain_star": 1,
+        "facing_star": 5
+      },
+      "震": {
+        "mountain_star": 6,
+        "facing_star": 8
+      },
+      "巽": {
+        "mountain_star": 2,
+        "facing_star": 4
+      },
+      "乾": {
+        "mountain_star": 5,
+        "facing_star": 1
+      },
+      "兑": {
+        "mountain_star": 9,
+        "facing_star": 3
+      },
+      "艮": {
+        "mountain_star": 4,
+        "facing_star": 9
+      },
+      "离": {
+        "mountain_star": 3,
+        "facing_star": 2
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 7,
+    "sitting_mountain": "庚",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 7,
+        "facing_star": 7
+      },
+      "坎": {
+        "mountain_star": 6,
+        "facing_star": 8
+      },
+      "坤": {
+        "mountain_star": 9,
+        "facing_star": 6
+      },
+      "震": {
+        "mountain_star": 5,
+        "facing_star": 9
+      },
+      "巽": {
+        "mountain_star": 1,
+        "facing_star": 5
+      },
+      "乾": {
+        "mountain_star": 4,
+        "facing_star": 2
+      },
+      "兑": {
+        "mountain_star": 8,
+        "facing_star": 4
+      },
+      "艮": {
+        "mountain_star": 3,
+        "facing_star": 1
+      },
+      "离": {
+        "mountain_star": 2,
+        "facing_star": 3
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 7,
+    "sitting_mountain": "酉",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 6,
+        "facing_star": 8
+      },
+      "坎": {
+        "mountain_star": 5,
+        "facing_star": 9
+      },
+      "坤": {
+        "mountain_star": 8,
+        "facing_star": 7
+      },
+      "震": {
+        "mountain_star": 4,
+        "facing_star": 1
+      },
+      "巽": {
+        "mountain_star": 9,
+        "facing_star": 6
+      },
+      "乾": {
+        "mountain_star": 3,
+        "facing_star": 3
+      },
+      "兑": {
+        "mountain_star": 7,
+        "facing_star": 5
+      },
+      "艮": {
+        "mountain_star": 2,
+        "facing_star": 2
+      },
+      "离": {
+        "mountain_star": 1,
+        "facing_star": 4
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 7,
+    "sitting_mountain": "辛",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 5,
+        "facing_star": 9
+      },
+      "坎": {
+        "mountain_star": 4,
+        "facing_star": 1
+      },
+      "坤": {
+        "mountain_star": 7,
+        "facing_star": 8
+      },
+      "震": {
+        "mountain_star": 3,
+        "facing_star": 2
+      },
+      "巽": {
+        "mountain_star": 8,
+        "facing_star": 7
+      },
+      "乾": {
+        "mountain_star": 2,
+        "facing_star": 4
+      },
+      "兑": {
+        "mountain_star": 6,
+        "facing_star": 6
+      },
+      "艮": {
+        "mountain_star": 1,
+        "facing_star": 3
+      },
+      "离": {
+        "mountain_star": 9,
+        "facing_star": 5
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 7,
+    "sitting_mountain": "戌",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 4,
+        "facing_star": 1
+      },
+      "坎": {
+        "mountain_star": 3,
+        "facing_star": 2
+      },
+      "坤": {
+        "mountain_star": 6,
+        "facing_star": 9
+      },
+      "震": {
+        "mountain_star": 2,
+        "facing_star": 3
+      },
+      "巽": {
+        "mountain_star": 7,
+        "facing_star": 8
+      },
+      "乾": {
+        "mountain_star": 1,
+        "facing_star": 5
+      },
+      "兑": {
+        "mountain_star": 5,
+        "facing_star": 7
+      },
+      "艮": {
+        "mountain_star": 9,
+        "facing_star": 4
+      },
+      "离": {
+        "mountain_star": 8,
+        "facing_star": 6
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 7,
+    "sitting_mountain": "乾",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 3,
+        "facing_star": 2
+      },
+      "坎": {
+        "mountain_star": 2,
+        "facing_star": 3
+      },
+      "坤": {
+        "mountain_star": 5,
+        "facing_star": 1
+      },
+      "震": {
+        "mountain_star": 1,
+        "facing_star": 4
+      },
+      "巽": {
+        "mountain_star": 6,
+        "facing_star": 9
+      },
+      "乾": {
+        "mountain_star": 9,
+        "facing_star": 6
+      },
+      "兑": {
+        "mountain_star": 4,
+        "facing_star": 8
+      },
+      "艮": {
+        "mountain_star": 8,
+        "facing_star": 5
+      },
+      "离": {
+        "mountain_star": 7,
+        "facing_star": 7
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 7,
+    "sitting_mountain": "亥",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 2,
+        "facing_star": 3
+      },
+      "坎": {
+        "mountain_star": 1,
+        "facing_star": 4
+      },
+      "坤": {
+        "mountain_star": 4,
+        "facing_star": 2
+      },
+      "震": {
+        "mountain_star": 9,
+        "facing_star": 5
+      },
+      "巽": {
+        "mountain_star": 5,
+        "facing_star": 1
+      },
+      "乾": {
+        "mountain_star": 8,
+        "facing_star": 7
+      },
+      "兑": {
+        "mountain_star": 3,
+        "facing_star": 9
+      },
+      "艮": {
+        "mountain_star": 7,
+        "facing_star": 6
+      },
+      "离": {
+        "mountain_star": 6,
+        "facing_star": 8
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 8,
+    "sitting_mountain": "壬",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 8,
+        "facing_star": 8
+      },
+      "坎": {
+        "mountain_star": 7,
+        "facing_star": 9
+      },
+      "坤": {
+        "mountain_star": 1,
+        "facing_star": 7
+      },
+      "震": {
+        "mountain_star": 6,
+        "facing_star": 1
+      },
+      "巽": {
+        "mountain_star": 2,
+        "facing_star": 6
+      },
+      "乾": {
+        "mountain_star": 5,
+        "facing_star": 3
+      },
+      "兑": {
+        "mountain_star": 9,
+        "facing_star": 5
+      },
+      "艮": {
+        "mountain_star": 4,
+        "facing_star": 2
+      },
+      "离": {
+        "mountain_star": 3,
+        "facing_star": 4
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 8,
+    "sitting_mountain": "子",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 7,
+        "facing_star": 9
+      },
+      "坎": {
+        "mountain_star": 6,
+        "facing_star": 1
+      },
+      "坤": {
+        "mountain_star": 9,
+        "facing_star": 8
+      },
+      "震": {
+        "mountain_star": 5,
+        "facing_star": 2
+      },
+      "巽": {
+        "mountain_star": 1,
+        "facing_star": 7
+      },
+      "乾": {
+        "mountain_star": 4,
+        "facing_star": 4
+      },
+      "兑": {
+        "mountain_star": 8,
+        "facing_star": 6
+      },
+      "艮": {
+        "mountain_star": 3,
+        "facing_star": 3
+      },
+      "离": {
+        "mountain_star": 2,
+        "facing_star": 5
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 8,
+    "sitting_mountain": "癸",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 6,
+        "facing_star": 1
+      },
+      "坎": {
+        "mountain_star": 5,
+        "facing_star": 2
+      },
+      "坤": {
+        "mountain_star": 8,
+        "facing_star": 9
+      },
+      "震": {
+        "mountain_star": 4,
+        "facing_star": 3
+      },
+      "巽": {
+        "mountain_star": 9,
+        "facing_star": 8
+      },
+      "乾": {
+        "mountain_star": 3,
+        "facing_star": 5
+      },
+      "兑": {
+        "mountain_star": 7,
+        "facing_star": 7
+      },
+      "艮": {
+        "mountain_star": 2,
+        "facing_star": 4
+      },
+      "离": {
+        "mountain_star": 1,
+        "facing_star": 6
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 8,
+    "sitting_mountain": "丑",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 5,
+        "facing_star": 2
+      },
+      "坎": {
+        "mountain_star": 4,
+        "facing_star": 3
+      },
+      "坤": {
+        "mountain_star": 7,
+        "facing_star": 1
+      },
+      "震": {
+        "mountain_star": 3,
+        "facing_star": 4
+      },
+      "巽": {
+        "mountain_star": 8,
+        "facing_star": 9
+      },
+      "乾": {
+        "mountain_star": 2,
+        "facing_star": 6
+      },
+      "兑": {
+        "mountain_star": 6,
+        "facing_star": 8
+      },
+      "艮": {
+        "mountain_star": 1,
+        "facing_star": 5
+      },
+      "离": {
+        "mountain_star": 9,
+        "facing_star": 7
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 8,
+    "sitting_mountain": "艮",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 4,
+        "facing_star": 3
+      },
+      "坎": {
+        "mountain_star": 3,
+        "facing_star": 4
+      },
+      "坤": {
+        "mountain_star": 6,
+        "facing_star": 2
+      },
+      "震": {
+        "mountain_star": 2,
+        "facing_star": 5
+      },
+      "巽": {
+        "mountain_star": 7,
+        "facing_star": 1
+      },
+      "乾": {
+        "mountain_star": 1,
+        "facing_star": 7
+      },
+      "兑": {
+        "mountain_star": 5,
+        "facing_star": 9
+      },
+      "艮": {
+        "mountain_star": 9,
+        "facing_star": 6
+      },
+      "离": {
+        "mountain_star": 8,
+        "facing_star": 8
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 8,
+    "sitting_mountain": "寅",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 3,
+        "facing_star": 4
+      },
+      "坎": {
+        "mountain_star": 2,
+        "facing_star": 5
+      },
+      "坤": {
+        "mountain_star": 5,
+        "facing_star": 3
+      },
+      "震": {
+        "mountain_star": 1,
+        "facing_star": 6
+      },
+      "巽": {
+        "mountain_star": 6,
+        "facing_star": 2
+      },
+      "乾": {
+        "mountain_star": 9,
+        "facing_star": 8
+      },
+      "兑": {
+        "mountain_star": 4,
+        "facing_star": 1
+      },
+      "艮": {
+        "mountain_star": 8,
+        "facing_star": 7
+      },
+      "离": {
+        "mountain_star": 7,
+        "facing_star": 9
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 8,
+    "sitting_mountain": "甲",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 2,
+        "facing_star": 5
+      },
+      "坎": {
+        "mountain_star": 1,
+        "facing_star": 6
+      },
+      "坤": {
+        "mountain_star": 4,
+        "facing_star": 4
+      },
+      "震": {
+        "mountain_star": 9,
+        "facing_star": 7
+      },
+      "巽": {
+        "mountain_star": 5,
+        "facing_star": 3
+      },
+      "乾": {
+        "mountain_star": 8,
+        "facing_star": 9
+      },
+      "兑": {
+        "mountain_star": 3,
+        "facing_star": 2
+      },
+      "艮": {
+        "mountain_star": 7,
+        "facing_star": 8
+      },
+      "离": {
+        "mountain_star": 6,
+        "facing_star": 1
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 8,
+    "sitting_mountain": "卯",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 1,
+        "facing_star": 6
+      },
+      "坎": {
+        "mountain_star": 9,
+        "facing_star": 7
+      },
+      "坤": {
+        "mountain_star": 3,
+        "facing_star": 5
+      },
+      "震": {
+        "mountain_star": 8,
+        "facing_star": 8
+      },
+      "巽": {
+        "mountain_star": 4,
+        "facing_star": 4
+      },
+      "乾": {
+        "mountain_star": 7,
+        "facing_star": 1
+      },
+      "兑": {
+        "mountain_star": 2,
+        "facing_star": 3
+      },
+      "艮": {
+        "mountain_star": 6,
+        "facing_star": 9
+      },
+      "离": {
+        "mountain_star": 5,
+        "facing_star": 2
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 8,
+    "sitting_mountain": "乙",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 9,
+        "facing_star": 7
+      },
+      "坎": {
+        "mountain_star": 8,
+        "facing_star": 8
+      },
+      "坤": {
+        "mountain_star": 2,
+        "facing_star": 6
+      },
+      "震": {
+        "mountain_star": 7,
+        "facing_star": 9
+      },
+      "巽": {
+        "mountain_star": 3,
+        "facing_star": 5
+      },
+      "乾": {
+        "mountain_star": 6,
+        "facing_star": 2
+      },
+      "兑": {
+        "mountain_star": 1,
+        "facing_star": 4
+      },
+      "艮": {
+        "mountain_star": 5,
+        "facing_star": 1
+      },
+      "离": {
+        "mountain_star": 4,
+        "facing_star": 3
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 8,
+    "sitting_mountain": "辰",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 8,
+        "facing_star": 8
+      },
+      "坎": {
+        "mountain_star": 7,
+        "facing_star": 9
+      },
+      "坤": {
+        "mountain_star": 1,
+        "facing_star": 7
+      },
+      "震": {
+        "mountain_star": 6,
+        "facing_star": 1
+      },
+      "巽": {
+        "mountain_star": 2,
+        "facing_star": 6
+      },
+      "乾": {
+        "mountain_star": 5,
+        "facing_star": 3
+      },
+      "兑": {
+        "mountain_star": 9,
+        "facing_star": 5
+      },
+      "艮": {
+        "mountain_star": 4,
+        "facing_star": 2
+      },
+      "离": {
+        "mountain_star": 3,
+        "facing_star": 4
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 8,
+    "sitting_mountain": "巽",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 7,
+        "facing_star": 9
+      },
+      "坎": {
+        "mountain_star": 6,
+        "facing_star": 1
+      },
+      "坤": {
+        "mountain_star": 9,
+        "facing_star": 8
+      },
+      "震": {
+        "mountain_star": 5,
+        "facing_star": 2
+      },
+      "巽": {
+        "mountain_star": 1,
+        "facing_star": 7
+      },
+      "乾": {
+        "mountain_star": 4,
+        "facing_star": 4
+      },
+      "兑": {
+        "mountain_star": 8,
+        "facing_star": 6
+      },
+      "艮": {
+        "mountain_star": 3,
+        "facing_star": 3
+      },
+      "离": {
+        "mountain_star": 2,
+        "facing_star": 5
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 8,
+    "sitting_mountain": "巳",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 6,
+        "facing_star": 1
+      },
+      "坎": {
+        "mountain_star": 5,
+        "facing_star": 2
+      },
+      "坤": {
+        "mountain_star": 8,
+        "facing_star": 9
+      },
+      "震": {
+        "mountain_star": 4,
+        "facing_star": 3
+      },
+      "巽": {
+        "mountain_star": 9,
+        "facing_star": 8
+      },
+      "乾": {
+        "mountain_star": 3,
+        "facing_star": 5
+      },
+      "兑": {
+        "mountain_star": 7,
+        "facing_star": 7
+      },
+      "艮": {
+        "mountain_star": 2,
+        "facing_star": 4
+      },
+      "离": {
+        "mountain_star": 1,
+        "facing_star": 6
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 8,
+    "sitting_mountain": "丙",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 5,
+        "facing_star": 2
+      },
+      "坎": {
+        "mountain_star": 4,
+        "facing_star": 3
+      },
+      "坤": {
+        "mountain_star": 7,
+        "facing_star": 1
+      },
+      "震": {
+        "mountain_star": 3,
+        "facing_star": 4
+      },
+      "巽": {
+        "mountain_star": 8,
+        "facing_star": 9
+      },
+      "乾": {
+        "mountain_star": 2,
+        "facing_star": 6
+      },
+      "兑": {
+        "mountain_star": 6,
+        "facing_star": 8
+      },
+      "艮": {
+        "mountain_star": 1,
+        "facing_star": 5
+      },
+      "离": {
+        "mountain_star": 9,
+        "facing_star": 7
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 8,
+    "sitting_mountain": "午",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 4,
+        "facing_star": 3
+      },
+      "坎": {
+        "mountain_star": 3,
+        "facing_star": 4
+      },
+      "坤": {
+        "mountain_star": 6,
+        "facing_star": 2
+      },
+      "震": {
+        "mountain_star": 2,
+        "facing_star": 5
+      },
+      "巽": {
+        "mountain_star": 7,
+        "facing_star": 1
+      },
+      "乾": {
+        "mountain_star": 1,
+        "facing_star": 7
+      },
+      "兑": {
+        "mountain_star": 5,
+        "facing_star": 9
+      },
+      "艮": {
+        "mountain_star": 9,
+        "facing_star": 6
+      },
+      "离": {
+        "mountain_star": 8,
+        "facing_star": 8
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 8,
+    "sitting_mountain": "丁",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 3,
+        "facing_star": 4
+      },
+      "坎": {
+        "mountain_star": 2,
+        "facing_star": 5
+      },
+      "坤": {
+        "mountain_star": 5,
+        "facing_star": 3
+      },
+      "震": {
+        "mountain_star": 1,
+        "facing_star": 6
+      },
+      "巽": {
+        "mountain_star": 6,
+        "facing_star": 2
+      },
+      "乾": {
+        "mountain_star": 9,
+        "facing_star": 8
+      },
+      "兑": {
+        "mountain_star": 4,
+        "facing_star": 1
+      },
+      "艮": {
+        "mountain_star": 8,
+        "facing_star": 7
+      },
+      "离": {
+        "mountain_star": 7,
+        "facing_star": 9
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 8,
+    "sitting_mountain": "未",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 2,
+        "facing_star": 5
+      },
+      "坎": {
+        "mountain_star": 1,
+        "facing_star": 6
+      },
+      "坤": {
+        "mountain_star": 4,
+        "facing_star": 4
+      },
+      "震": {
+        "mountain_star": 9,
+        "facing_star": 7
+      },
+      "巽": {
+        "mountain_star": 5,
+        "facing_star": 3
+      },
+      "乾": {
+        "mountain_star": 8,
+        "facing_star": 9
+      },
+      "兑": {
+        "mountain_star": 3,
+        "facing_star": 2
+      },
+      "艮": {
+        "mountain_star": 7,
+        "facing_star": 8
+      },
+      "离": {
+        "mountain_star": 6,
+        "facing_star": 1
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 8,
+    "sitting_mountain": "坤",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 1,
+        "facing_star": 6
+      },
+      "坎": {
+        "mountain_star": 9,
+        "facing_star": 7
+      },
+      "坤": {
+        "mountain_star": 3,
+        "facing_star": 5
+      },
+      "震": {
+        "mountain_star": 8,
+        "facing_star": 8
+      },
+      "巽": {
+        "mountain_star": 4,
+        "facing_star": 4
+      },
+      "乾": {
+        "mountain_star": 7,
+        "facing_star": 1
+      },
+      "兑": {
+        "mountain_star": 2,
+        "facing_star": 3
+      },
+      "艮": {
+        "mountain_star": 6,
+        "facing_star": 9
+      },
+      "离": {
+        "mountain_star": 5,
+        "facing_star": 2
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 8,
+    "sitting_mountain": "申",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 9,
+        "facing_star": 7
+      },
+      "坎": {
+        "mountain_star": 8,
+        "facing_star": 8
+      },
+      "坤": {
+        "mountain_star": 2,
+        "facing_star": 6
+      },
+      "震": {
+        "mountain_star": 7,
+        "facing_star": 9
+      },
+      "巽": {
+        "mountain_star": 3,
+        "facing_star": 5
+      },
+      "乾": {
+        "mountain_star": 6,
+        "facing_star": 2
+      },
+      "兑": {
+        "mountain_star": 1,
+        "facing_star": 4
+      },
+      "艮": {
+        "mountain_star": 5,
+        "facing_star": 1
+      },
+      "离": {
+        "mountain_star": 4,
+        "facing_star": 3
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 8,
+    "sitting_mountain": "庚",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 8,
+        "facing_star": 8
+      },
+      "坎": {
+        "mountain_star": 7,
+        "facing_star": 9
+      },
+      "坤": {
+        "mountain_star": 1,
+        "facing_star": 7
+      },
+      "震": {
+        "mountain_star": 6,
+        "facing_star": 1
+      },
+      "巽": {
+        "mountain_star": 2,
+        "facing_star": 6
+      },
+      "乾": {
+        "mountain_star": 5,
+        "facing_star": 3
+      },
+      "兑": {
+        "mountain_star": 9,
+        "facing_star": 5
+      },
+      "艮": {
+        "mountain_star": 4,
+        "facing_star": 2
+      },
+      "离": {
+        "mountain_star": 3,
+        "facing_star": 4
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 8,
+    "sitting_mountain": "酉",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 7,
+        "facing_star": 9
+      },
+      "坎": {
+        "mountain_star": 6,
+        "facing_star": 1
+      },
+      "坤": {
+        "mountain_star": 9,
+        "facing_star": 8
+      },
+      "震": {
+        "mountain_star": 5,
+        "facing_star": 2
+      },
+      "巽": {
+        "mountain_star": 1,
+        "facing_star": 7
+      },
+      "乾": {
+        "mountain_star": 4,
+        "facing_star": 4
+      },
+      "兑": {
+        "mountain_star": 8,
+        "facing_star": 6
+      },
+      "艮": {
+        "mountain_star": 3,
+        "facing_star": 3
+      },
+      "离": {
+        "mountain_star": 2,
+        "facing_star": 5
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 8,
+    "sitting_mountain": "辛",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 6,
+        "facing_star": 1
+      },
+      "坎": {
+        "mountain_star": 5,
+        "facing_star": 2
+      },
+      "坤": {
+        "mountain_star": 8,
+        "facing_star": 9
+      },
+      "震": {
+        "mountain_star": 4,
+        "facing_star": 3
+      },
+      "巽": {
+        "mountain_star": 9,
+        "facing_star": 8
+      },
+      "乾": {
+        "mountain_star": 3,
+        "facing_star": 5
+      },
+      "兑": {
+        "mountain_star": 7,
+        "facing_star": 7
+      },
+      "艮": {
+        "mountain_star": 2,
+        "facing_star": 4
+      },
+      "离": {
+        "mountain_star": 1,
+        "facing_star": 6
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 8,
+    "sitting_mountain": "戌",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 5,
+        "facing_star": 2
+      },
+      "坎": {
+        "mountain_star": 4,
+        "facing_star": 3
+      },
+      "坤": {
+        "mountain_star": 7,
+        "facing_star": 1
+      },
+      "震": {
+        "mountain_star": 3,
+        "facing_star": 4
+      },
+      "巽": {
+        "mountain_star": 8,
+        "facing_star": 9
+      },
+      "乾": {
+        "mountain_star": 2,
+        "facing_star": 6
+      },
+      "兑": {
+        "mountain_star": 6,
+        "facing_star": 8
+      },
+      "艮": {
+        "mountain_star": 1,
+        "facing_star": 5
+      },
+      "离": {
+        "mountain_star": 9,
+        "facing_star": 7
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 8,
+    "sitting_mountain": "乾",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 4,
+        "facing_star": 3
+      },
+      "坎": {
+        "mountain_star": 3,
+        "facing_star": 4
+      },
+      "坤": {
+        "mountain_star": 6,
+        "facing_star": 2
+      },
+      "震": {
+        "mountain_star": 2,
+        "facing_star": 5
+      },
+      "巽": {
+        "mountain_star": 7,
+        "facing_star": 1
+      },
+      "乾": {
+        "mountain_star": 1,
+        "facing_star": 7
+      },
+      "兑": {
+        "mountain_star": 5,
+        "facing_star": 9
+      },
+      "艮": {
+        "mountain_star": 9,
+        "facing_star": 6
+      },
+      "离": {
+        "mountain_star": 8,
+        "facing_star": 8
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 8,
+    "sitting_mountain": "亥",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 3,
+        "facing_star": 4
+      },
+      "坎": {
+        "mountain_star": 2,
+        "facing_star": 5
+      },
+      "坤": {
+        "mountain_star": 5,
+        "facing_star": 3
+      },
+      "震": {
+        "mountain_star": 1,
+        "facing_star": 6
+      },
+      "巽": {
+        "mountain_star": 6,
+        "facing_star": 2
+      },
+      "乾": {
+        "mountain_star": 9,
+        "facing_star": 8
+      },
+      "兑": {
+        "mountain_star": 4,
+        "facing_star": 1
+      },
+      "艮": {
+        "mountain_star": 8,
+        "facing_star": 7
+      },
+      "离": {
+        "mountain_star": 7,
+        "facing_star": 9
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
     "period": 9,
     "sitting_mountain": "壬",
     "palace_map": {
-      "中宫": {"mountain_star": 9, "facing_star": 9},
-      "坎": {"mountain_star": 8, "facing_star": 1},
-      "坤": {"mountain_star": 2, "facing_star": 8},
-      "震": {"mountain_star": 7, "facing_star": 2},
-      "巽": {"mountain_star": 3, "facing_star": 7},
-      "乾": {"mountain_star": 6, "facing_star": 4},
-      "兑": {"mountain_star": 1, "facing_star": 6},
-      "艮": {"mountain_star": 5, "facing_star": 3},
-      "离": {"mountain_star": 4, "facing_star": 5}
+      "中宫": {
+        "mountain_star": 9,
+        "facing_star": 9
+      },
+      "坎": {
+        "mountain_star": 8,
+        "facing_star": 1
+      },
+      "坤": {
+        "mountain_star": 2,
+        "facing_star": 8
+      },
+      "震": {
+        "mountain_star": 7,
+        "facing_star": 2
+      },
+      "巽": {
+        "mountain_star": 3,
+        "facing_star": 7
+      },
+      "乾": {
+        "mountain_star": 6,
+        "facing_star": 4
+      },
+      "兑": {
+        "mountain_star": 1,
+        "facing_star": 6
+      },
+      "艮": {
+        "mountain_star": 5,
+        "facing_star": 3
+      },
+      "离": {
+        "mountain_star": 4,
+        "facing_star": 5
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 9,
+    "sitting_mountain": "子",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 8,
+        "facing_star": 1
+      },
+      "坎": {
+        "mountain_star": 7,
+        "facing_star": 2
+      },
+      "坤": {
+        "mountain_star": 1,
+        "facing_star": 9
+      },
+      "震": {
+        "mountain_star": 6,
+        "facing_star": 3
+      },
+      "巽": {
+        "mountain_star": 2,
+        "facing_star": 8
+      },
+      "乾": {
+        "mountain_star": 5,
+        "facing_star": 5
+      },
+      "兑": {
+        "mountain_star": 9,
+        "facing_star": 7
+      },
+      "艮": {
+        "mountain_star": 4,
+        "facing_star": 4
+      },
+      "离": {
+        "mountain_star": 3,
+        "facing_star": 6
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 9,
+    "sitting_mountain": "癸",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 7,
+        "facing_star": 2
+      },
+      "坎": {
+        "mountain_star": 6,
+        "facing_star": 3
+      },
+      "坤": {
+        "mountain_star": 9,
+        "facing_star": 1
+      },
+      "震": {
+        "mountain_star": 5,
+        "facing_star": 4
+      },
+      "巽": {
+        "mountain_star": 1,
+        "facing_star": 9
+      },
+      "乾": {
+        "mountain_star": 4,
+        "facing_star": 6
+      },
+      "兑": {
+        "mountain_star": 8,
+        "facing_star": 8
+      },
+      "艮": {
+        "mountain_star": 3,
+        "facing_star": 5
+      },
+      "离": {
+        "mountain_star": 2,
+        "facing_star": 7
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 9,
+    "sitting_mountain": "丑",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 6,
+        "facing_star": 3
+      },
+      "坎": {
+        "mountain_star": 5,
+        "facing_star": 4
+      },
+      "坤": {
+        "mountain_star": 8,
+        "facing_star": 2
+      },
+      "震": {
+        "mountain_star": 4,
+        "facing_star": 5
+      },
+      "巽": {
+        "mountain_star": 9,
+        "facing_star": 1
+      },
+      "乾": {
+        "mountain_star": 3,
+        "facing_star": 7
+      },
+      "兑": {
+        "mountain_star": 7,
+        "facing_star": 9
+      },
+      "艮": {
+        "mountain_star": 2,
+        "facing_star": 6
+      },
+      "离": {
+        "mountain_star": 1,
+        "facing_star": 8
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 9,
+    "sitting_mountain": "艮",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 5,
+        "facing_star": 4
+      },
+      "坎": {
+        "mountain_star": 4,
+        "facing_star": 5
+      },
+      "坤": {
+        "mountain_star": 7,
+        "facing_star": 3
+      },
+      "震": {
+        "mountain_star": 3,
+        "facing_star": 6
+      },
+      "巽": {
+        "mountain_star": 8,
+        "facing_star": 2
+      },
+      "乾": {
+        "mountain_star": 2,
+        "facing_star": 8
+      },
+      "兑": {
+        "mountain_star": 6,
+        "facing_star": 1
+      },
+      "艮": {
+        "mountain_star": 1,
+        "facing_star": 7
+      },
+      "离": {
+        "mountain_star": 9,
+        "facing_star": 9
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 9,
+    "sitting_mountain": "寅",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 4,
+        "facing_star": 5
+      },
+      "坎": {
+        "mountain_star": 3,
+        "facing_star": 6
+      },
+      "坤": {
+        "mountain_star": 6,
+        "facing_star": 4
+      },
+      "震": {
+        "mountain_star": 2,
+        "facing_star": 7
+      },
+      "巽": {
+        "mountain_star": 7,
+        "facing_star": 3
+      },
+      "乾": {
+        "mountain_star": 1,
+        "facing_star": 9
+      },
+      "兑": {
+        "mountain_star": 5,
+        "facing_star": 2
+      },
+      "艮": {
+        "mountain_star": 9,
+        "facing_star": 8
+      },
+      "离": {
+        "mountain_star": 8,
+        "facing_star": 1
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 9,
+    "sitting_mountain": "甲",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 3,
+        "facing_star": 6
+      },
+      "坎": {
+        "mountain_star": 2,
+        "facing_star": 7
+      },
+      "坤": {
+        "mountain_star": 5,
+        "facing_star": 5
+      },
+      "震": {
+        "mountain_star": 1,
+        "facing_star": 8
+      },
+      "巽": {
+        "mountain_star": 6,
+        "facing_star": 4
+      },
+      "乾": {
+        "mountain_star": 9,
+        "facing_star": 1
+      },
+      "兑": {
+        "mountain_star": 4,
+        "facing_star": 3
+      },
+      "艮": {
+        "mountain_star": 8,
+        "facing_star": 9
+      },
+      "离": {
+        "mountain_star": 7,
+        "facing_star": 2
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 9,
+    "sitting_mountain": "卯",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 2,
+        "facing_star": 7
+      },
+      "坎": {
+        "mountain_star": 1,
+        "facing_star": 8
+      },
+      "坤": {
+        "mountain_star": 4,
+        "facing_star": 6
+      },
+      "震": {
+        "mountain_star": 9,
+        "facing_star": 9
+      },
+      "巽": {
+        "mountain_star": 5,
+        "facing_star": 5
+      },
+      "乾": {
+        "mountain_star": 8,
+        "facing_star": 2
+      },
+      "兑": {
+        "mountain_star": 3,
+        "facing_star": 4
+      },
+      "艮": {
+        "mountain_star": 7,
+        "facing_star": 1
+      },
+      "离": {
+        "mountain_star": 6,
+        "facing_star": 3
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 9,
+    "sitting_mountain": "乙",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 1,
+        "facing_star": 8
+      },
+      "坎": {
+        "mountain_star": 9,
+        "facing_star": 9
+      },
+      "坤": {
+        "mountain_star": 3,
+        "facing_star": 7
+      },
+      "震": {
+        "mountain_star": 8,
+        "facing_star": 1
+      },
+      "巽": {
+        "mountain_star": 4,
+        "facing_star": 6
+      },
+      "乾": {
+        "mountain_star": 7,
+        "facing_star": 3
+      },
+      "兑": {
+        "mountain_star": 2,
+        "facing_star": 5
+      },
+      "艮": {
+        "mountain_star": 6,
+        "facing_star": 2
+      },
+      "离": {
+        "mountain_star": 5,
+        "facing_star": 4
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 9,
+    "sitting_mountain": "辰",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 9,
+        "facing_star": 9
+      },
+      "坎": {
+        "mountain_star": 8,
+        "facing_star": 1
+      },
+      "坤": {
+        "mountain_star": 2,
+        "facing_star": 8
+      },
+      "震": {
+        "mountain_star": 7,
+        "facing_star": 2
+      },
+      "巽": {
+        "mountain_star": 3,
+        "facing_star": 7
+      },
+      "乾": {
+        "mountain_star": 6,
+        "facing_star": 4
+      },
+      "兑": {
+        "mountain_star": 1,
+        "facing_star": 6
+      },
+      "艮": {
+        "mountain_star": 5,
+        "facing_star": 3
+      },
+      "离": {
+        "mountain_star": 4,
+        "facing_star": 5
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 9,
+    "sitting_mountain": "巽",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 8,
+        "facing_star": 1
+      },
+      "坎": {
+        "mountain_star": 7,
+        "facing_star": 2
+      },
+      "坤": {
+        "mountain_star": 1,
+        "facing_star": 9
+      },
+      "震": {
+        "mountain_star": 6,
+        "facing_star": 3
+      },
+      "巽": {
+        "mountain_star": 2,
+        "facing_star": 8
+      },
+      "乾": {
+        "mountain_star": 5,
+        "facing_star": 5
+      },
+      "兑": {
+        "mountain_star": 9,
+        "facing_star": 7
+      },
+      "艮": {
+        "mountain_star": 4,
+        "facing_star": 4
+      },
+      "离": {
+        "mountain_star": 3,
+        "facing_star": 6
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 9,
+    "sitting_mountain": "巳",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 7,
+        "facing_star": 2
+      },
+      "坎": {
+        "mountain_star": 6,
+        "facing_star": 3
+      },
+      "坤": {
+        "mountain_star": 9,
+        "facing_star": 1
+      },
+      "震": {
+        "mountain_star": 5,
+        "facing_star": 4
+      },
+      "巽": {
+        "mountain_star": 1,
+        "facing_star": 9
+      },
+      "乾": {
+        "mountain_star": 4,
+        "facing_star": 6
+      },
+      "兑": {
+        "mountain_star": 8,
+        "facing_star": 8
+      },
+      "艮": {
+        "mountain_star": 3,
+        "facing_star": 5
+      },
+      "离": {
+        "mountain_star": 2,
+        "facing_star": 7
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 9,
+    "sitting_mountain": "丙",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 6,
+        "facing_star": 3
+      },
+      "坎": {
+        "mountain_star": 5,
+        "facing_star": 4
+      },
+      "坤": {
+        "mountain_star": 8,
+        "facing_star": 2
+      },
+      "震": {
+        "mountain_star": 4,
+        "facing_star": 5
+      },
+      "巽": {
+        "mountain_star": 9,
+        "facing_star": 1
+      },
+      "乾": {
+        "mountain_star": 3,
+        "facing_star": 7
+      },
+      "兑": {
+        "mountain_star": 7,
+        "facing_star": 9
+      },
+      "艮": {
+        "mountain_star": 2,
+        "facing_star": 6
+      },
+      "离": {
+        "mountain_star": 1,
+        "facing_star": 8
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 9,
+    "sitting_mountain": "午",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 5,
+        "facing_star": 4
+      },
+      "坎": {
+        "mountain_star": 4,
+        "facing_star": 5
+      },
+      "坤": {
+        "mountain_star": 7,
+        "facing_star": 3
+      },
+      "震": {
+        "mountain_star": 3,
+        "facing_star": 6
+      },
+      "巽": {
+        "mountain_star": 8,
+        "facing_star": 2
+      },
+      "乾": {
+        "mountain_star": 2,
+        "facing_star": 8
+      },
+      "兑": {
+        "mountain_star": 6,
+        "facing_star": 1
+      },
+      "艮": {
+        "mountain_star": 1,
+        "facing_star": 7
+      },
+      "离": {
+        "mountain_star": 9,
+        "facing_star": 9
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 9,
+    "sitting_mountain": "丁",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 4,
+        "facing_star": 5
+      },
+      "坎": {
+        "mountain_star": 3,
+        "facing_star": 6
+      },
+      "坤": {
+        "mountain_star": 6,
+        "facing_star": 4
+      },
+      "震": {
+        "mountain_star": 2,
+        "facing_star": 7
+      },
+      "巽": {
+        "mountain_star": 7,
+        "facing_star": 3
+      },
+      "乾": {
+        "mountain_star": 1,
+        "facing_star": 9
+      },
+      "兑": {
+        "mountain_star": 5,
+        "facing_star": 2
+      },
+      "艮": {
+        "mountain_star": 9,
+        "facing_star": 8
+      },
+      "离": {
+        "mountain_star": 8,
+        "facing_star": 1
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 9,
+    "sitting_mountain": "未",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 3,
+        "facing_star": 6
+      },
+      "坎": {
+        "mountain_star": 2,
+        "facing_star": 7
+      },
+      "坤": {
+        "mountain_star": 5,
+        "facing_star": 5
+      },
+      "震": {
+        "mountain_star": 1,
+        "facing_star": 8
+      },
+      "巽": {
+        "mountain_star": 6,
+        "facing_star": 4
+      },
+      "乾": {
+        "mountain_star": 9,
+        "facing_star": 1
+      },
+      "兑": {
+        "mountain_star": 4,
+        "facing_star": 3
+      },
+      "艮": {
+        "mountain_star": 8,
+        "facing_star": 9
+      },
+      "离": {
+        "mountain_star": 7,
+        "facing_star": 2
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 9,
+    "sitting_mountain": "坤",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 2,
+        "facing_star": 7
+      },
+      "坎": {
+        "mountain_star": 1,
+        "facing_star": 8
+      },
+      "坤": {
+        "mountain_star": 4,
+        "facing_star": 6
+      },
+      "震": {
+        "mountain_star": 9,
+        "facing_star": 9
+      },
+      "巽": {
+        "mountain_star": 5,
+        "facing_star": 5
+      },
+      "乾": {
+        "mountain_star": 8,
+        "facing_star": 2
+      },
+      "兑": {
+        "mountain_star": 3,
+        "facing_star": 4
+      },
+      "艮": {
+        "mountain_star": 7,
+        "facing_star": 1
+      },
+      "离": {
+        "mountain_star": 6,
+        "facing_star": 3
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 9,
+    "sitting_mountain": "申",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 1,
+        "facing_star": 8
+      },
+      "坎": {
+        "mountain_star": 9,
+        "facing_star": 9
+      },
+      "坤": {
+        "mountain_star": 3,
+        "facing_star": 7
+      },
+      "震": {
+        "mountain_star": 8,
+        "facing_star": 1
+      },
+      "巽": {
+        "mountain_star": 4,
+        "facing_star": 6
+      },
+      "乾": {
+        "mountain_star": 7,
+        "facing_star": 3
+      },
+      "兑": {
+        "mountain_star": 2,
+        "facing_star": 5
+      },
+      "艮": {
+        "mountain_star": 6,
+        "facing_star": 2
+      },
+      "离": {
+        "mountain_star": 5,
+        "facing_star": 4
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 9,
+    "sitting_mountain": "庚",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 9,
+        "facing_star": 9
+      },
+      "坎": {
+        "mountain_star": 8,
+        "facing_star": 1
+      },
+      "坤": {
+        "mountain_star": 2,
+        "facing_star": 8
+      },
+      "震": {
+        "mountain_star": 7,
+        "facing_star": 2
+      },
+      "巽": {
+        "mountain_star": 3,
+        "facing_star": 7
+      },
+      "乾": {
+        "mountain_star": 6,
+        "facing_star": 4
+      },
+      "兑": {
+        "mountain_star": 1,
+        "facing_star": 6
+      },
+      "艮": {
+        "mountain_star": 5,
+        "facing_star": 3
+      },
+      "离": {
+        "mountain_star": 4,
+        "facing_star": 5
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 9,
+    "sitting_mountain": "酉",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 8,
+        "facing_star": 1
+      },
+      "坎": {
+        "mountain_star": 7,
+        "facing_star": 2
+      },
+      "坤": {
+        "mountain_star": 1,
+        "facing_star": 9
+      },
+      "震": {
+        "mountain_star": 6,
+        "facing_star": 3
+      },
+      "巽": {
+        "mountain_star": 2,
+        "facing_star": 8
+      },
+      "乾": {
+        "mountain_star": 5,
+        "facing_star": 5
+      },
+      "兑": {
+        "mountain_star": 9,
+        "facing_star": 7
+      },
+      "艮": {
+        "mountain_star": 4,
+        "facing_star": 4
+      },
+      "离": {
+        "mountain_star": 3,
+        "facing_star": 6
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 9,
+    "sitting_mountain": "辛",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 7,
+        "facing_star": 2
+      },
+      "坎": {
+        "mountain_star": 6,
+        "facing_star": 3
+      },
+      "坤": {
+        "mountain_star": 9,
+        "facing_star": 1
+      },
+      "震": {
+        "mountain_star": 5,
+        "facing_star": 4
+      },
+      "巽": {
+        "mountain_star": 1,
+        "facing_star": 9
+      },
+      "乾": {
+        "mountain_star": 4,
+        "facing_star": 6
+      },
+      "兑": {
+        "mountain_star": 8,
+        "facing_star": 8
+      },
+      "艮": {
+        "mountain_star": 3,
+        "facing_star": 5
+      },
+      "离": {
+        "mountain_star": 2,
+        "facing_star": 7
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 9,
+    "sitting_mountain": "戌",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 6,
+        "facing_star": 3
+      },
+      "坎": {
+        "mountain_star": 5,
+        "facing_star": 4
+      },
+      "坤": {
+        "mountain_star": 8,
+        "facing_star": 2
+      },
+      "震": {
+        "mountain_star": 4,
+        "facing_star": 5
+      },
+      "巽": {
+        "mountain_star": 9,
+        "facing_star": 1
+      },
+      "乾": {
+        "mountain_star": 3,
+        "facing_star": 7
+      },
+      "兑": {
+        "mountain_star": 7,
+        "facing_star": 9
+      },
+      "艮": {
+        "mountain_star": 2,
+        "facing_star": 6
+      },
+      "离": {
+        "mountain_star": 1,
+        "facing_star": 8
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 9,
+    "sitting_mountain": "乾",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 5,
+        "facing_star": 4
+      },
+      "坎": {
+        "mountain_star": 4,
+        "facing_star": 5
+      },
+      "坤": {
+        "mountain_star": 7,
+        "facing_star": 3
+      },
+      "震": {
+        "mountain_star": 3,
+        "facing_star": 6
+      },
+      "巽": {
+        "mountain_star": 8,
+        "facing_star": 2
+      },
+      "乾": {
+        "mountain_star": 2,
+        "facing_star": 8
+      },
+      "兑": {
+        "mountain_star": 6,
+        "facing_star": 1
+      },
+      "艮": {
+        "mountain_star": 1,
+        "facing_star": 7
+      },
+      "离": {
+        "mountain_star": 9,
+        "facing_star": 9
+      }
+    },
+    "source_ref": "convention"
+  },
+  {
+    "period": 9,
+    "sitting_mountain": "亥",
+    "palace_map": {
+      "中宫": {
+        "mountain_star": 4,
+        "facing_star": 5
+      },
+      "坎": {
+        "mountain_star": 3,
+        "facing_star": 6
+      },
+      "坤": {
+        "mountain_star": 6,
+        "facing_star": 4
+      },
+      "震": {
+        "mountain_star": 2,
+        "facing_star": 7
+      },
+      "巽": {
+        "mountain_star": 7,
+        "facing_star": 3
+      },
+      "乾": {
+        "mountain_star": 1,
+        "facing_star": 9
+      },
+      "兑": {
+        "mountain_star": 5,
+        "facing_star": 2
+      },
+      "艮": {
+        "mountain_star": 9,
+        "facing_star": 8
+      },
+      "离": {
+        "mountain_star": 8,
+        "facing_star": 1
+      }
     },
     "source_ref": "convention"
   }

@@ -142,21 +142,38 @@ class LuopanOrientationTool:
         current_inauspicious: List[str] = []
 
         scoring = self.data_loader.get_flying_star_scoring()
-        scoring_table = scoring.get('stars', {})
+        thresholds = scoring.get("thresholds", {})
+        fallback_cfg = scoring.get("fallback", {})
+        missing_annual_star_strategy = fallback_cfg.get("missing_annual_star", "skip")
+        if scoring.get("stars"):
+            trace.append(
+                f"飞星评分阈值: 吉>={thresholds.get('auspicious', 2)} "
+                f"凶<={thresholds.get('inauspicious', -2)}"
+            )
+            trace.append(f"缺失年星策略: {missing_annual_star_strategy}")
+        else:
+            trace.append("飞星评分规则缺失: 使用默认中性评分（0）")
 
-        if house_rule and flying_stars:
+        if not period_info:
+            trace.append(f"元运信息缺失: {year}年未匹配元运，降级为仅流年年盘")
+        elif not house_rule:
+            trace.append(
+                f"宅盘规则缺失: 第{period_info['period']}运 "
+                f"{direction_info['sitting_mountain']}山，降级为仅流年年盘"
+            )
+        elif not flying_stars:
+            trace.append(f"流年飞星缺失: {year}年无年盘，降级为仅宅盘")
+        else:
             combined, current_auspicious, current_inauspicious = combine_flying_stars(
                 house_rule['palace_map'],
                 flying_stars['palace_map'],
-                scoring_table
+                scoring
             )
             trace.append(
                 f"元运: 第{period_info['period']}运（{period_info['start_year']}-{period_info['end_year']}）"
             )
             trace.append(f"宅盘命中: {direction_info['sitting_mountain']}山")
             trace.append("飞星叠加: 宅盘 + 流年")
-        else:
-            trace.append("飞星叠加: 缺少宅盘或流年数据，降级为仅流年年盘")
 
         # 7. 生成布局建议
         layout_tips = self._generate_layout_tips(

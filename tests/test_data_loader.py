@@ -184,6 +184,24 @@ class TestDataLoader:
         assert rule['sitting_mountain'] == '壬'
         assert 'palace_map' in rule
 
+        # 覆盖校验：不同元运和不同山向都应有规则
+        rule2 = self.loader.get_flying_star_house_rule(period=8, sitting_mountain='乾')
+        assert rule2 is not None
+        assert rule2['period'] == 8
+        assert rule2['sitting_mountain'] == '乾'
+
+    def test_get_flying_star_house_rules_full_coverage(self):
+        rules = self.loader.get_flying_star_house_rules()
+        assert len(rules) == 216  # 24 山向 x 9 运
+
+    def test_validate_flying_star_house_rules(self):
+        report = self.loader.validate_flying_star_house_rules()
+        assert report["is_valid"] is True
+        assert report["rule_count"] == 216
+        assert report["expected_count"] == 216
+        assert report["missing_pairs"] == []
+        assert report["invalid_palace_entries"] == []
+
     def test_get_flying_star_scoring(self):
         scoring = self.loader.get_flying_star_scoring()
         assert 'stars' in scoring

@@ -158,6 +158,66 @@ class TestLuopanOrientationTool:
         assert isinstance(result['current_auspicious_positions'], list)
         assert isinstance(result['current_inauspicious_positions'], list)
 
+    def test_degrade_when_house_rule_missing(self, monkeypatch):
+        monkeypatch.setattr(
+            self.tool.data_loader,
+            "get_flying_star_house_rule",
+            lambda period, sitting_mountain: None
+        )
+        result = self.tool.execute(
+            sitting_direction="坐北朝南",
+            building_type="住宅",
+            timestamp="2026-06-01T10:00:00+08:00"
+        )
+        assert "combined_flying_stars" not in result
+        assert any("宅盘规则缺失" in step for step in result["trace"])
+
+    def test_scoring_fallback_strategy_passthrough(self, monkeypatch):
+        base_flying_stars = self.tool.data_loader.get_flying_stars_by_year(2026)
+
+        def fake_flying_stars(_year):
+            patched = dict(base_flying_stars)
+            palace_map = dict(base_flying_stars["palace_map"])
+            palace_map.pop("坎", None)
+            patched["palace_map"] = palace_map
+            return patched
+
+        monkeypatch.setattr(
+            self.tool.data_loader,
+            "get_flying_stars_by_year",
+            fake_flying_stars
+        )
+        monkeypatch.setattr(
+            self.tool.data_loader,
+            "get_flying_star_scoring",
+            lambda: {
+                "stars": {
+                    "1": {"score": 2},
+                    "2": {"score": -2},
+                    "3": {"score": -2},
+                    "4": {"score": 2},
+                    "5": {"score": -3},
+                    "6": {"score": 2},
+                    "7": {"score": -1},
+                    "8": {"score": 3},
+                    "9": {"score": 2}
+                },
+                "fallback": {
+                    "missing_annual_star": "neutral",
+                    "unknown_star_score": 0
+                }
+            }
+        )
+
+        result = self.tool.execute(
+            sitting_direction="坐北朝南",
+            building_type="住宅",
+            timestamp="2026-06-01T10:00:00+08:00"
+        )
+        assert "combined_flying_stars" in result
+        assert "坎" in result["combined_flying_stars"]
+        assert result["combined_flying_stars"]["坎"]["reason"] == "missing_annual_star"
+
     def test_layout_tips_generation(self):
         """测试布局建议生成"""
         result = self.tool.execute(

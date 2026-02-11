@@ -431,6 +431,65 @@ class DataLoader:
             )
         return self._cache['flying_star_scoring']
 
+    def validate_flying_star_house_rules(self) -> Dict[str, Any]:
+        """
+        校验宅盘规则表覆盖情况与数据结构完整性
+
+        Returns:
+            校验报告：
+            - is_valid: 是否通过校验
+            - rule_count: 实际规则条目数
+            - expected_count: 期望条目数（24 山向 x 9 运）
+            - missing_pairs: 缺失的 (period, mountain) 组合
+            - duplicate_pairs: 重复的 (period, mountain) 组合
+            - invalid_palace_entries: 九宫结构异常的规则键
+        """
+        periods = [p["period"] for p in self.get_flying_star_periods()]
+        mountains = [m["name"] for m in self.get_luopan()]
+        rules = self.get_flying_star_house_rules()
+
+        expected_pairs = {(period, mountain) for period in periods for mountain in mountains}
+        seen_pairs = set()
+        duplicate_pairs = []
+        invalid_palace_entries = []
+        expected_palaces = {"中宫", "坎", "坤", "震", "巽", "乾", "兑", "艮", "离"}
+
+        for rule in rules:
+            pair = (rule.get("period"), rule.get("sitting_mountain"))
+            if pair in seen_pairs:
+                duplicate_pairs.append(pair)
+            else:
+                seen_pairs.add(pair)
+
+            palace_map = rule.get("palace_map", {})
+            palace_keys = set(palace_map.keys())
+            if palace_keys != expected_palaces:
+                invalid_palace_entries.append(pair)
+                continue
+
+            for palace, stars in palace_map.items():
+                m_star = stars.get("mountain_star")
+                f_star = stars.get("facing_star")
+                if (
+                    not isinstance(m_star, int) or
+                    not isinstance(f_star, int) or
+                    m_star < 1 or m_star > 9 or
+                    f_star < 1 or f_star > 9
+                ):
+                    invalid_palace_entries.append((pair[0], f"{pair[1]}:{palace}"))
+                    break
+
+        missing_pairs = sorted(expected_pairs - seen_pairs)
+        report = {
+            "is_valid": not (missing_pairs or duplicate_pairs or invalid_palace_entries),
+            "rule_count": len(rules),
+            "expected_count": len(expected_pairs),
+            "missing_pairs": missing_pairs,
+            "duplicate_pairs": duplicate_pairs,
+            "invalid_palace_entries": invalid_palace_entries,
+        }
+        return report
+
     def get_sources(self) -> List[Dict[str, Any]]:
         """
         获取数据来源索引
@@ -615,6 +674,9 @@ class DataLoader:
         self.get_luopan()
         self.get_ba_zhai()
         self.get_flying_stars()
+        self.get_flying_star_periods()
+        self.get_flying_star_house_rules()
+        self.get_flying_star_scoring()
         self.get_sources()
 
 

@@ -29,6 +29,26 @@
         "cinii_dili_bianzheng_shu",
         "convention"
       ]
+    },
+    {
+      "field_path": "data.scenarios.career.hexagrams['11'].scenario_specific.求职.situation",
+      "text_kind": "summary",
+      "license": "summary_only",
+      "content": "求职判断需结合行业景气、岗位要求与个人准备度综合评估。",
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    {
+      "field_path": "data.scenarios.career.hexagrams['11'].overall_tendency",
+      "text_kind": "summary",
+      "license": "summary_only",
+      "content": "事业总体趋势可视为阶段性向上，但需结合周期与行动节奏审慎推进。",
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
     }
   ]
 }

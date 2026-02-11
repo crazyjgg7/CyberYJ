@@ -480,20 +480,17 @@ class FengshuiDivinationTool:
                 target = match["target"]
                 if target == "main_hexagram.judgment":
                     result["main_hexagram"]["judgment"] = content
+                    trace.append(f"权威映射: {match['field_path']}")
                 elif target == "main_hexagram.image":
                     result["main_hexagram"]["image"] = content
-                elif target == "scenario_analysis.key_points":
-                    result["scenario_analysis"]["key_points"] = [content]
-                elif target.startswith("scenario_specific."):
-                    parts = target.split(".")
-                    if len(parts) == 3:
-                        _, sub, field = parts
-                        if "scenario_specific" not in result:
-                            result["scenario_specific"] = {}
-                        if sub not in result["scenario_specific"]:
-                            result["scenario_specific"][sub] = {}
-                        result["scenario_specific"][sub][field] = content
-                trace.append(f"权威映射: {match['field_path']}")
+                    trace.append(f"权威映射: {match['field_path']}")
+                elif target.startswith("scenario_analysis.") or target.startswith("scenario_specific."):
+                    # 场景字段级映射不直接覆盖原结论，统一以 authoritative_notes 暴露给前端。
+                    result.setdefault("authoritative_notes", {})
+                    result["authoritative_notes"][target] = content
+                    trace.append(f"权威补充: {match['field_path']}")
+                else:
+                    trace.append(f"权威映射: {match['field_path']} (ignored_target)")
 
             for sid in source_ref:
                 if sid not in applied_sources:

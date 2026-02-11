@@ -87,6 +87,7 @@
 - `solar_term_influence`：节气影响
 - `scenario`：场景识别结果
 - `scenario_analysis` / `scenario_specific`：场景化建议
+- `authoritative_notes`：可选，字段级权威补充（不直接覆盖原场景结论）
 - `trace`：推导路径摘要
 - `sources`：来源列表
 - 其它字段（如 `do_dont`、`disclaimer`）按需要返回
@@ -107,6 +108,7 @@
 - `combined_flying_stars`：宅盘 + 流年叠加结果
 - `current_auspicious_positions` / `current_inauspicious_positions`：当前吉凶位
 - `layout_tips`：布局建议
+- `authoritative_notes`：可选，字段级权威补充
 - `trace`：推导路径摘要
 - `sources`：来源列表
 
@@ -158,7 +160,7 @@
 - `fengshui_divination` / `luopan_orientation` 已完成并可运行 ✅
 - MCP 输出统一 JSON ✅
 - 权威书目索引已建立（非原文录入）✅
-- V2 字段级权威映射已接入（flying_stars_periods / flying_stars_house / flying_stars_scoring）✅
+- V2 字段级权威映射已接入（flying_stars_periods / flying_stars_house / flying_stars_scoring + fengshui 场景字段示例）✅
 
 **场景覆盖**
 - 命运 / 事业 / 感情 / 财运 / 健康 / 学业 / 家庭 / 出行 / 诉讼

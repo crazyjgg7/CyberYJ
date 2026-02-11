@@ -23,7 +23,7 @@
 - 叠加计算器：✅
 - `luopan_orientation` 输出“当前吉凶位”：✅
 - 宅盘规则覆盖校验器：✅
-- 权威映射（V2 字段级）：✅（period/house/scoring 首批落地）
+- 权威映射（V2 字段级）：✅（period/house/scoring + fengshui 场景字段示例）
 
 ---
 
@@ -44,7 +44,7 @@
 
 1. **风水解卦**（关键词：`风水：`）
    - 输入：上卦/下卦 + 可选变爻 + 可选问题原文
-   - 输出：卦象、五行、节气影响、场景化建议、trace、sources
+   - 输出：卦象、五行、节气影响、场景化建议、authoritative_notes、trace、sources
 
 2. **罗盘坐向**（关键词：`罗盘：`）
    - 输入：坐向 + 建筑类型 + 可选出生日期

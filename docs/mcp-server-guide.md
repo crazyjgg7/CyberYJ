@@ -127,7 +127,7 @@ Claude 会调用: fengshui_divination
 
 ### 工具 2: luopan_orientation（罗盘坐向）
 
-**功能**: 罗盘坐向分析，提供八宅吉凶方位和布局建议
+**功能**: 罗盘坐向分析，提供八宅吉凶方位、宅盘 + 流年叠加与布局建议
 
 **参数**:
 - `sitting_direction` (必需): 坐向
@@ -305,6 +305,21 @@ PYTHONPATH=src pytest tests/ -v
     "facing_degree": 180.0,
     "auspicious_positions": ["生气位（东南方）"],
     "inauspicious_positions": ["绝命位（西方）"],
+    "annual_flying_stars": {
+      "year": 2026,
+      "central_star": 2,
+      "palace_map": {"中宫": 2, "坎": 1}
+    },
+    "house_flying_stars": {
+      "period": 9,
+      "sitting_mountain": "壬",
+      "palace_map": {"中宫": {"mountain_star": 9, "facing_star": 9}}
+    },
+    "combined_flying_stars": {
+      "中宫": {"mountain_star": 9, "facing_star": 9, "annual_star": 2, "score": 2, "level": "auspicious"}
+    },
+    "current_auspicious_positions": ["中宫"],
+    "current_inauspicious_positions": ["坎"],
     "layout_tips": ["主卧宜设在生气位"],
     "trace": ["步骤1", "步骤2"],
     "sources": ["来源1"]

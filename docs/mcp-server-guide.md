@@ -41,6 +41,11 @@ pip install mcp ephem pytz
 
 配置完成后，重启 Claude Desktop 应用。
 
+### 多 IDE 配置模板
+
+如需同时接入 Cursor / Cline，请直接使用：
+- `/Users/apple/dev/CyberYJ/docs/mcp-client-configs.md`
+
 ## 使用方法
 
 ### 关键词路由（可选）
@@ -249,6 +254,19 @@ PYTHONPATH=src python3 run_server.py
 ```
 
 然后通过 stdin/stdout 发送 JSON-RPC 请求。
+
+### 方法 2.1: 关键词入口冒烟测试（推荐）
+
+```bash
+cd /Users/apple/dev/CyberYJ
+python3 scripts/mcp_smoke_test.py
+```
+
+该脚本固定验证两条入口：
+- `风水：上坤下乾，问事业`
+- `罗盘：坐北朝南 住宅`
+
+并校验统一响应协议：`tool + data + meta`（包含 `trace` 与 `sources`）。
 
 ### 方法 3: 单元测试
 

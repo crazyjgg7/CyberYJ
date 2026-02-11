@@ -25,6 +25,12 @@
 - 宅盘规则覆盖校验器：✅
 - 权威映射（V2 字段级）：✅（period/house/scoring + fengshui 场景字段示例）
 
+## RC1 进度（多 IDE 接入稳定化）
+
+- 多客户端配置模板（Claude/Cursor/Cline）：✅
+- 关键词入口冒烟脚本（固定风水/罗盘两条）：✅
+- 统一协议校验（tool + data + meta + trace/sources）：✅
+
 ---
 
 ## 已完成（关键项）

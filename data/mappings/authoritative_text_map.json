@@ -1,4 +1,34 @@
 {
   "version": "1.0.0",
-  "items": []
+  "items": [
+    {
+      "field_path": "data.fengshui.flying_stars_periods.period",
+      "text_kind": "citation_only",
+      "license": "citation_only",
+      "source_ref": [
+        "cinii_dili_bianzheng_shu",
+        "convention"
+      ]
+    },
+    {
+      "field_path": "data.fengshui.flying_stars_house.palace_map",
+      "text_kind": "summary",
+      "license": "summary_only",
+      "content": "宅盘九宫规则按坐山与元运组合建立，当前为归纳规则库，需按权威版本逐条校核。",
+      "source_ref": [
+        "cinii_dili_bianzheng_shu",
+        "convention"
+      ]
+    },
+    {
+      "field_path": "data.fengshui.flying_stars_scoring.thresholds",
+      "text_kind": "summary",
+      "license": "summary_only",
+      "content": "飞星吉凶阈值用于排序与提示，不替代流派原文断法，后续应按权威版本细化。",
+      "source_ref": [
+        "cinii_dili_bianzheng_shu",
+        "convention"
+      ]
+    }
+  ]
 }

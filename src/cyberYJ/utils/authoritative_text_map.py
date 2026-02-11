@@ -93,7 +93,9 @@ _SCENARIO_SPECIFIC = re.compile(
 _SOLAR_TERMS_FIELD = re.compile(
     r"data\.core\.solar_terms(?:\[[^]]*name=='(?P<name>[^']+)'[^]]*\])?(?:\.(?P<field>\w+))?"
 )
-_FENGSHUI_FIELD = re.compile(r"data\\.fengshui\\.(?P<field>\\w+)")
+_FENGSHUI_FIELD = re.compile(
+    r"data\.fengshui\.(?P<section>\w+)(?:\.(?P<field>\w+))?"
+)
 
 
 def match_mapping_item(
@@ -166,6 +168,7 @@ def match_luopan_item(item: Dict[str, Any]) -> Optional[Dict[str, str]]:
 
     return {
         "target": "luopan",
-        "field": m.group("field"),
+        "section": m.group("section"),
+        "field": m.group("field") or "",
         "field_path": field_path
     }

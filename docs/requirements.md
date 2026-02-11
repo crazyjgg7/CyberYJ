@@ -158,6 +158,7 @@
 - `fengshui_divination` / `luopan_orientation` 已完成并可运行 ✅
 - MCP 输出统一 JSON ✅
 - 权威书目索引已建立（非原文录入）✅
+- V2 字段级权威映射已接入（flying_stars_periods / flying_stars_house / flying_stars_scoring）✅
 
 **场景覆盖**
 - 命运 / 事业 / 感情 / 财运 / 健康 / 学业 / 家庭 / 出行 / 诉讼

@@ -218,6 +218,36 @@ class TestLuopanOrientationTool:
         assert "坎" in result["combined_flying_stars"]
         assert result["combined_flying_stars"]["坎"]["reason"] == "missing_annual_star"
 
+    def test_authoritative_mapping_v2_field_note(self, monkeypatch):
+        monkeypatch.setattr(
+            self.tool.data_loader,
+            "get_authoritative_text_map",
+            lambda: {
+                "version": "1.0.0",
+                "items": [
+                    {
+                        "field_path": "data.fengshui.flying_stars_scoring.thresholds",
+                        "text_kind": "summary",
+                        "license": "summary_only",
+                        "content": "阈值规则摘要：吉凶阈值需结合流派版本统一。",
+                        "source_ref": ["cinii_dili_bianzheng_shu"]
+                    }
+                ]
+            }
+        )
+        result = self.tool.execute(
+            sitting_direction="坐北朝南",
+            building_type="住宅",
+            timestamp="2026-06-01T10:00:00+08:00"
+        )
+
+        assert "authoritative_notes" in result
+        assert (
+            result["authoritative_notes"]["flying_stars_scoring.thresholds"] ==
+            "阈值规则摘要：吉凶阈值需结合流派版本统一。"
+        )
+        assert any("权威补充: data.fengshui.flying_stars_scoring.thresholds" in step for step in result["trace"])
+
     def test_layout_tips_generation(self):
         """测试布局建议生成"""
         result = self.tool.execute(

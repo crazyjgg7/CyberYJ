@@ -379,9 +379,18 @@ class LuopanOrientationTool:
             if text_kind == "citation_only":
                 trace.append(f"权威映射: {match['field_path']} (citation_only)")
             elif content:
-                # 作为布局建议补充（不替换核心计算结果）
-                result.setdefault("layout_tips", [])
-                result["layout_tips"].insert(0, f"权威补充: {content}")
+                section = match.get("section", "")
+                field = match.get("field", "")
+                note_key = section if not field else f"{section}.{field}"
+
+                # V2 字段级映射：写入 authoritative_notes，便于前端按字段展示
+                if section in {"flying_stars_house", "flying_stars_periods", "flying_stars_scoring"}:
+                    result.setdefault("authoritative_notes", {})
+                    result["authoritative_notes"][note_key] = content
+                else:
+                    # 兼容旧逻辑：其他映射仍作为布局建议补充
+                    result.setdefault("layout_tips", [])
+                    result["layout_tips"].insert(0, f"权威补充: {content}")
                 trace.append(f"权威补充: {match['field_path']}")
 
             for sid in source_ref:

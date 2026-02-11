@@ -364,6 +364,35 @@ class DataLoader:
             "base_year": base_year
         }
 
+    def get_flying_star_periods(self) -> List[Dict[str, Any]]:
+        """
+        获取玄空元运周期数据
+
+        Returns:
+            元运列表，每个元素包含: period, start_year, end_year, source_ref
+        """
+        if 'flying_star_periods' not in self._cache:
+            self._cache['flying_star_periods'] = self._load_json(
+                'flying_stars_periods.json',
+                'fengshui'
+            )
+        return self._cache['flying_star_periods']
+
+    def get_flying_star_period_by_year(self, year: int) -> Optional[Dict[str, Any]]:
+        """
+        根据年份获取元运信息
+
+        Args:
+            year: 年份
+
+        Returns:
+            元运数据字典，未找到返回 None
+        """
+        for period in self.get_flying_star_periods():
+            if period['start_year'] <= year <= period['end_year']:
+                return period
+        return None
+
     def get_sources(self) -> List[Dict[str, Any]]:
         """
         获取数据来源索引

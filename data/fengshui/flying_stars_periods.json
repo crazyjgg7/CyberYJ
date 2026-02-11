@@ -1,0 +1,11 @@
+[
+  {"period": 1, "start_year": 1864, "end_year": 1883, "source_ref": "convention"},
+  {"period": 2, "start_year": 1884, "end_year": 1903, "source_ref": "convention"},
+  {"period": 3, "start_year": 1904, "end_year": 1923, "source_ref": "convention"},
+  {"period": 4, "start_year": 1924, "end_year": 1943, "source_ref": "convention"},
+  {"period": 5, "start_year": 1944, "end_year": 1963, "source_ref": "convention"},
+  {"period": 6, "start_year": 1964, "end_year": 1983, "source_ref": "convention"},
+  {"period": 7, "start_year": 1984, "end_year": 2003, "source_ref": "convention"},
+  {"period": 8, "start_year": 2004, "end_year": 2023, "source_ref": "convention"},
+  {"period": 9, "start_year": 2024, "end_year": 2043, "source_ref": "convention"}
+]

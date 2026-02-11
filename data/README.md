@@ -153,6 +153,16 @@ data/
 }
 ```
 
+### fengshui/flying_stars_periods.json
+```json
+{
+  "period": "number",
+  "start_year": "number",
+  "end_year": "number",
+  "source_ref": "string"
+}
+```
+
 ## 📝 更新日志
 
 ### V2 (2026-02-10)

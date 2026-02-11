@@ -165,6 +165,18 @@ class TestDataLoader:
         assert stars_2024['year'] == 2024
         assert stars_2024['central_star'] == 4
 
+    def test_get_flying_star_periods(self):
+        periods = self.loader.get_flying_star_periods()
+        assert len(periods) >= 9
+        assert all('period' in p for p in periods)
+        assert all('start_year' in p for p in periods)
+        assert all('end_year' in p for p in periods)
+
+    def test_get_flying_star_period_by_year(self):
+        p2024 = self.loader.get_flying_star_period_by_year(2024)
+        assert p2024 is not None
+        assert p2024['period'] == 9
+
     def test_get_sources(self):
         """测试获取来源数据"""
         sources = self.loader.get_sources()

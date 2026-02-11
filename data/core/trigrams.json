@@ -1,0 +1,10 @@
+[
+  {"id":"qian","name":"乾","symbol":"☰","element":"金","direction":"西北","source_ref":["ctext_shuogua","convention"]},
+  {"id":"kun","name":"坤","symbol":"☷","element":"土","direction":"西南","source_ref":["ctext_shuogua","convention"]},
+  {"id":"zhen","name":"震","symbol":"☳","element":"木","direction":"东","source_ref":["ctext_shuogua","convention"]},
+  {"id":"xun","name":"巽","symbol":"☴","element":"木","direction":"东南","source_ref":["ctext_shuogua","convention"]},
+  {"id":"kan","name":"坎","symbol":"☵","element":"水","direction":"北","source_ref":["ctext_shuogua","convention"]},
+  {"id":"li","name":"離","symbol":"☲","element":"火","direction":"南","source_ref":["ctext_shuogua","convention"]},
+  {"id":"gen","name":"艮","symbol":"☶","element":"土","direction":"东北","source_ref":["ctext_shuogua","convention"]},
+  {"id":"dui","name":"兌","symbol":"☱","element":"金","direction":"西","source_ref":["ctext_shuogua","convention"]}
+]

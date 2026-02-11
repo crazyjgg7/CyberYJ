@@ -1,0 +1,4132 @@
+{
+  "version": "1.0",
+  "scenario_info": {
+    "name": "学业",
+    "code": "study",
+    "description": "考试、竞赛、深造与学习规划",
+    "sub_scenarios": [
+      "考试",
+      "竞赛",
+      "深造",
+      "规划"
+    ],
+    "requires_disclaimer": false
+  },
+  "analysis_framework": {
+    "dimensions": [
+      "状态评估",
+      "方法策略",
+      "效率节奏",
+      "关键时机",
+      "复盘与调整"
+    ],
+    "focus": "稳步提升、方法优化、节奏控制",
+    "key_aspects": [
+      "投入与产出",
+      "学习策略",
+      "时间管理",
+      "阶段性建议"
+    ]
+  },
+  "output_structure": {
+    "template_id": "study_standard",
+    "sections": [
+      {
+        "id": "overall_study",
+        "title": "学业总览",
+        "type": "summary",
+        "required": true,
+        "includes": [
+          "状态评级",
+          "总体判断",
+          "重点建议"
+        ]
+      },
+      {
+        "id": "hexagram_analysis",
+        "title": "卦象解析",
+        "type": "explanation",
+        "required": true,
+        "includes": [
+          "卦象含义",
+          "五行关系",
+          "关键词解读"
+        ]
+      },
+      {
+        "id": "study_details",
+        "title": "学业详解",
+        "type": "detailed_analysis",
+        "required": true,
+        "sub_sections": [
+          {
+            "id": "method",
+            "title": "方法策略",
+            "description": "学习方法与策略"
+          },
+          {
+            "id": "efficiency",
+            "title": "效率节奏",
+            "description": "节奏与效率"
+          },
+          {
+            "id": "timing",
+            "title": "关键时机",
+            "description": "重要节点"
+          },
+          {
+            "id": "adjustment",
+            "title": "复盘调整",
+            "description": "调整与优化"
+          }
+        ]
+      },
+      {
+        "id": "action_guide",
+        "title": "行动建议",
+        "type": "advice",
+        "required": true,
+        "format": {
+          "do": "宜做事项（3-5条）",
+          "dont": "忌做事项（3-5条）"
+        }
+      }
+    ]
+  },
+  "prompt_template": {
+    "system_role": "你是一位注重方法与节奏的学习顾问，强调策略与效率。",
+    "analysis_focus": [
+      "建议要具体可执行",
+      "强调方法与节奏",
+      "避免夸大结果"
+    ],
+    "output_requirements": [
+      "结构清晰",
+      "建议可执行"
+    ]
+  },
+  "hexagrams": {
+    "1": {
+      "name": "乾",
+      "overall_tendency": "大吉",
+      "study_rating": 5,
+      "key_points": [
+        "学习状态较好，理解力提升",
+        "方法较稳，适合冲刺关键节点",
+        "效率稳定，适合考试/竞赛安排",
+        "注意保持节奏，避免自满"
+      ],
+      "scenario_specific": {
+        "考试": {
+          "situation": "应试把握偏大，发挥较稳",
+          "reasons": [
+            "准备充分",
+            "心态稳定"
+          ],
+          "advice": [
+            "按计划复习",
+            "重点突破薄弱点"
+          ],
+          "timing": "近期"
+        },
+        "竞赛": {
+          "situation": "竞争力较强，有机会取得较好成绩",
+          "reasons": [
+            "状态好",
+            "方法有效"
+          ],
+          "advice": [
+            "加强真题训练",
+            "注意细节"
+          ],
+          "timing": "近期"
+        },
+        "深造": {
+          "situation": "申请/深造机会较好",
+          "reasons": [
+            "能力突出",
+            "时机成熟"
+          ],
+          "advice": [
+            "完善材料",
+            "主动争取"
+          ],
+          "timing": "中期"
+        },
+        "规划": {
+          "situation": "规划较清晰，执行力较强",
+          "reasons": [
+            "目标明确"
+          ],
+          "advice": [
+            "分阶段目标",
+            "保持节奏"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "2": {
+      "name": "坤",
+      "overall_tendency": "大吉",
+      "study_rating": 5,
+      "key_points": [
+        "学习状态较好，理解力提升",
+        "方法较稳，适合冲刺关键节点",
+        "效率稳定，适合考试/竞赛安排",
+        "注意保持节奏，避免自满"
+      ],
+      "scenario_specific": {
+        "考试": {
+          "situation": "应试把握偏大，发挥较稳",
+          "reasons": [
+            "准备充分",
+            "心态稳定"
+          ],
+          "advice": [
+            "按计划复习",
+            "重点突破薄弱点"
+          ],
+          "timing": "近期"
+        },
+        "竞赛": {
+          "situation": "竞争力较强，有机会取得较好成绩",
+          "reasons": [
+            "状态好",
+            "方法有效"
+          ],
+          "advice": [
+            "加强真题训练",
+            "注意细节"
+          ],
+          "timing": "近期"
+        },
+        "深造": {
+          "situation": "申请/深造机会较好",
+          "reasons": [
+            "能力突出",
+            "时机成熟"
+          ],
+          "advice": [
+            "完善材料",
+            "主动争取"
+          ],
+          "timing": "中期"
+        },
+        "规划": {
+          "situation": "规划较清晰，执行力较强",
+          "reasons": [
+            "目标明确"
+          ],
+          "advice": [
+            "分阶段目标",
+            "保持节奏"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "3": {
+      "name": "屯",
+      "overall_tendency": "不利",
+      "study_rating": 2,
+      "key_points": [
+        "学习受阻，效率偏低",
+        "方法需调整，基础有待巩固",
+        "不宜急于求成，宜先夯实",
+        "注意情绪与作息，避免疲惫"
+      ],
+      "scenario_specific": {
+        "考试": {
+          "situation": "应试压力大，发挥不稳",
+          "reasons": [
+            "准备不足",
+            "心态波动"
+          ],
+          "advice": [
+            "先补基础",
+            "调整心态"
+          ],
+          "timing": "推迟或中后期"
+        },
+        "竞赛": {
+          "situation": "竞争力偏弱",
+          "reasons": [
+            "方法欠佳"
+          ],
+          "advice": [
+            "强化基础",
+            "减少冒进"
+          ],
+          "timing": "中后期"
+        },
+        "深造": {
+          "situation": "条件不足，成功率偏低",
+          "reasons": [
+            "材料薄弱"
+          ],
+          "advice": [
+            "先补短板",
+            "再择机"
+          ],
+          "timing": "中后期"
+        },
+        "规划": {
+          "situation": "目标摇摆，易中断",
+          "reasons": [
+            "节奏混乱"
+          ],
+          "advice": [
+            "缩小目标",
+            "重建计划"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "4": {
+      "name": "蒙",
+      "overall_tendency": "平",
+      "study_rating": 3,
+      "key_points": [
+        "学习状态平稳，仍需持续投入",
+        "方法可用但仍需优化",
+        "进度可控，避免拖延",
+        "注意复盘与调整"
+      ],
+      "scenario_specific": {
+        "考试": {
+          "situation": "发挥中等，结果取决于准备",
+          "reasons": [
+            "基础尚可"
+          ],
+          "advice": [
+            "补强薄弱点",
+            "稳住节奏"
+          ],
+          "timing": "中期"
+        },
+        "竞赛": {
+          "situation": "成绩有波动",
+          "reasons": [
+            "策略待优化"
+          ],
+          "advice": [
+            "优化训练节奏",
+            "复盘错题"
+          ],
+          "timing": "中期"
+        },
+        "深造": {
+          "situation": "机会一般",
+          "reasons": [
+            "条件尚可"
+          ],
+          "advice": [
+            "完善背景",
+            "提升核心能力"
+          ],
+          "timing": "中期"
+        },
+        "规划": {
+          "situation": "计划可行但仍需坚持",
+          "reasons": [
+            "执行力一般"
+          ],
+          "advice": [
+            "拆解任务",
+            "定期复盘"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "5": {
+      "name": "需",
+      "overall_tendency": "平",
+      "study_rating": 3,
+      "key_points": [
+        "学习状态平稳，仍需持续投入",
+        "方法可用但仍需优化",
+        "进度可控，避免拖延",
+        "注意复盘与调整"
+      ],
+      "scenario_specific": {
+        "考试": {
+          "situation": "发挥中等，结果取决于准备",
+          "reasons": [
+            "基础尚可"
+          ],
+          "advice": [
+            "补强薄弱点",
+            "稳住节奏"
+          ],
+          "timing": "中期"
+        },
+        "竞赛": {
+          "situation": "成绩有波动",
+          "reasons": [
+            "策略待优化"
+          ],
+          "advice": [
+            "优化训练节奏",
+            "复盘错题"
+          ],
+          "timing": "中期"
+        },
+        "深造": {
+          "situation": "机会一般",
+          "reasons": [
+            "条件尚可"
+          ],
+          "advice": [
+            "完善背景",
+            "提升核心能力"
+          ],
+          "timing": "中期"
+        },
+        "规划": {
+          "situation": "计划可行但仍需坚持",
+          "reasons": [
+            "执行力一般"
+          ],
+          "advice": [
+            "拆解任务",
+            "定期复盘"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "6": {
+      "name": "讼",
+      "overall_tendency": "不利",
+      "study_rating": 2,
+      "key_points": [
+        "学习受阻，效率偏低",
+        "方法需调整，基础有待巩固",
+        "不宜急于求成，宜先夯实",
+        "注意情绪与作息，避免疲惫"
+      ],
+      "scenario_specific": {
+        "考试": {
+          "situation": "应试压力大，发挥不稳",
+          "reasons": [
+            "准备不足",
+            "心态波动"
+          ],
+          "advice": [
+            "先补基础",
+            "调整心态"
+          ],
+          "timing": "推迟或中后期"
+        },
+        "竞赛": {
+          "situation": "竞争力偏弱",
+          "reasons": [
+            "方法欠佳"
+          ],
+          "advice": [
+            "强化基础",
+            "减少冒进"
+          ],
+          "timing": "中后期"
+        },
+        "深造": {
+          "situation": "条件不足，成功率偏低",
+          "reasons": [
+            "材料薄弱"
+          ],
+          "advice": [
+            "先补短板",
+            "再择机"
+          ],
+          "timing": "中后期"
+        },
+        "规划": {
+          "situation": "目标摇摆，易中断",
+          "reasons": [
+            "节奏混乱"
+          ],
+          "advice": [
+            "缩小目标",
+            "重建计划"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "7": {
+      "name": "师",
+      "overall_tendency": "吉",
+      "study_rating": 4,
+      "key_points": [
+        "学习状态较好，理解力提升",
+        "方法较稳，适合冲刺关键节点",
+        "效率稳定，适合考试/竞赛安排",
+        "注意保持节奏，避免自满"
+      ],
+      "scenario_specific": {
+        "考试": {
+          "situation": "应试把握偏大，发挥较稳",
+          "reasons": [
+            "准备充分",
+            "心态稳定"
+          ],
+          "advice": [
+            "按计划复习",
+            "重点突破薄弱点"
+          ],
+          "timing": "近期"
+        },
+        "竞赛": {
+          "situation": "竞争力较强，有机会取得较好成绩",
+          "reasons": [
+            "状态好",
+            "方法有效"
+          ],
+          "advice": [
+            "加强真题训练",
+            "注意细节"
+          ],
+          "timing": "近期"
+        },
+        "深造": {
+          "situation": "申请/深造机会较好",
+          "reasons": [
+            "能力突出",
+            "时机成熟"
+          ],
+          "advice": [
+            "完善材料",
+            "主动争取"
+          ],
+          "timing": "中期"
+        },
+        "规划": {
+          "situation": "规划较清晰，执行力较强",
+          "reasons": [
+            "目标明确"
+          ],
+          "advice": [
+            "分阶段目标",
+            "保持节奏"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "8": {
+      "name": "比",
+      "overall_tendency": "吉",
+      "study_rating": 4,
+      "key_points": [
+        "学习状态较好，理解力提升",
+        "方法较稳，适合冲刺关键节点",
+        "效率稳定，适合考试/竞赛安排",
+        "注意保持节奏，避免自满"
+      ],
+      "scenario_specific": {
+        "考试": {
+          "situation": "应试把握偏大，发挥较稳",
+          "reasons": [
+            "准备充分",
+            "心态稳定"
+          ],
+          "advice": [
+            "按计划复习",
+            "重点突破薄弱点"
+          ],
+          "timing": "近期"
+        },
+        "竞赛": {
+          "situation": "竞争力较强，有机会取得较好成绩",
+          "reasons": [
+            "状态好",
+            "方法有效"
+          ],
+          "advice": [
+            "加强真题训练",
+            "注意细节"
+          ],
+          "timing": "近期"
+        },
+        "深造": {
+          "situation": "申请/深造机会较好",
+          "reasons": [
+            "能力突出",
+            "时机成熟"
+          ],
+          "advice": [
+            "完善材料",
+            "主动争取"
+          ],
+          "timing": "中期"
+        },
+        "规划": {
+          "situation": "规划较清晰，执行力较强",
+          "reasons": [
+            "目标明确"
+          ],
+          "advice": [
+            "分阶段目标",
+            "保持节奏"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "9": {
+      "name": "小畜",
+      "overall_tendency": "平",
+      "study_rating": 3,
+      "key_points": [
+        "学习状态平稳，仍需持续投入",
+        "方法可用但仍需优化",
+        "进度可控，避免拖延",
+        "注意复盘与调整"
+      ],
+      "scenario_specific": {
+        "考试": {
+          "situation": "发挥中等，结果取决于准备",
+          "reasons": [
+            "基础尚可"
+          ],
+          "advice": [
+            "补强薄弱点",
+            "稳住节奏"
+          ],
+          "timing": "中期"
+        },
+        "竞赛": {
+          "situation": "成绩有波动",
+          "reasons": [
+            "策略待优化"
+          ],
+          "advice": [
+            "优化训练节奏",
+            "复盘错题"
+          ],
+          "timing": "中期"
+        },
+        "深造": {
+          "situation": "机会一般",
+          "reasons": [
+            "条件尚可"
+          ],
+          "advice": [
+            "完善背景",
+            "提升核心能力"
+          ],
+          "timing": "中期"
+        },
+        "规划": {
+          "situation": "计划可行但仍需坚持",
+          "reasons": [
+            "执行力一般"
+          ],
+          "advice": [
+            "拆解任务",
+            "定期复盘"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "10": {
+      "name": "履",
+      "overall_tendency": "平",
+      "study_rating": 3,
+      "key_points": [
+        "学习状态平稳，仍需持续投入",
+        "方法可用但仍需优化",
+        "进度可控，避免拖延",
+        "注意复盘与调整"
+      ],
+      "scenario_specific": {
+        "考试": {
+          "situation": "发挥中等，结果取决于准备",
+          "reasons": [
+            "基础尚可"
+          ],
+          "advice": [
+            "补强薄弱点",
+            "稳住节奏"
+          ],
+          "timing": "中期"
+        },
+        "竞赛": {
+          "situation": "成绩有波动",
+          "reasons": [
+            "策略待优化"
+          ],
+          "advice": [
+            "优化训练节奏",
+            "复盘错题"
+          ],
+          "timing": "中期"
+        },
+        "深造": {
+          "situation": "机会一般",
+          "reasons": [
+            "条件尚可"
+          ],
+          "advice": [
+            "完善背景",
+            "提升核心能力"
+          ],
+          "timing": "中期"
+        },
+        "规划": {
+          "situation": "计划可行但仍需坚持",
+          "reasons": [
+            "执行力一般"
+          ],
+          "advice": [
+            "拆解任务",
+            "定期复盘"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "11": {
+      "name": "泰",
+      "overall_tendency": "吉",
+      "study_rating": 4,
+      "key_points": [
+        "学习状态较好，理解力提升",
+        "方法较稳，适合冲刺关键节点",
+        "效率稳定，适合考试/竞赛安排",
+        "注意保持节奏，避免自满"
+      ],
+      "scenario_specific": {
+        "考试": {
+          "situation": "应试把握偏大，发挥较稳",
+          "reasons": [
+            "准备充分",
+            "心态稳定"
+          ],
+          "advice": [
+            "按计划复习",
+            "重点突破薄弱点"
+          ],
+          "timing": "近期"
+        },
+        "竞赛": {
+          "situation": "竞争力较强，有机会取得较好成绩",
+          "reasons": [
+            "状态好",
+            "方法有效"
+          ],
+          "advice": [
+            "加强真题训练",
+            "注意细节"
+          ],
+          "timing": "近期"
+        },
+        "深造": {
+          "situation": "申请/深造机会较好",
+          "reasons": [
+            "能力突出",
+            "时机成熟"
+          ],
+          "advice": [
+            "完善材料",
+            "主动争取"
+          ],
+          "timing": "中期"
+        },
+        "规划": {
+          "situation": "规划较清晰，执行力较强",
+          "reasons": [
+            "目标明确"
+          ],
+          "advice": [
+            "分阶段目标",
+            "保持节奏"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "12": {
+      "name": "否",
+      "overall_tendency": "凶",
+      "study_rating": 2,
+      "key_points": [
+        "学习受阻，效率偏低",
+        "方法需调整，基础有待巩固",
+        "不宜急于求成，宜先夯实",
+        "注意情绪与作息，避免疲惫"
+      ],
+      "scenario_specific": {
+        "考试": {
+          "situation": "应试压力大，发挥不稳",
+          "reasons": [
+            "准备不足",
+            "心态波动"
+          ],
+          "advice": [
+            "先补基础",
+            "调整心态"
+          ],
+          "timing": "推迟或中后期"
+        },
+        "竞赛": {
+          "situation": "竞争力偏弱",
+          "reasons": [
+            "方法欠佳"
+          ],
+          "advice": [
+            "强化基础",
+            "减少冒进"
+          ],
+          "timing": "中后期"
+        },
+        "深造": {
+          "situation": "条件不足，成功率偏低",
+          "reasons": [
+            "材料薄弱"
+          ],
+          "advice": [
+            "先补短板",
+            "再择机"
+          ],
+          "timing": "中后期"
+        },
+        "规划": {
+          "situation": "目标摇摆，易中断",
+          "reasons": [
+            "节奏混乱"
+          ],
+          "advice": [
+            "缩小目标",
+            "重建计划"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "13": {
+      "name": "同人",
+      "overall_tendency": "吉",
+      "study_rating": 4,
+      "key_points": [
+        "学习状态较好，理解力提升",
+        "方法较稳，适合冲刺关键节点",
+        "效率稳定，适合考试/竞赛安排",
+        "注意保持节奏，避免自满"
+      ],
+      "scenario_specific": {
+        "考试": {
+          "situation": "应试把握偏大，发挥较稳",
+          "reasons": [
+            "准备充分",
+            "心态稳定"
+          ],
+          "advice": [
+            "按计划复习",
+            "重点突破薄弱点"
+          ],
+          "timing": "近期"
+        },
+        "竞赛": {
+          "situation": "竞争力较强，有机会取得较好成绩",
+          "reasons": [
+            "状态好",
+            "方法有效"
+          ],
+          "advice": [
+            "加强真题训练",
+            "注意细节"
+          ],
+          "timing": "近期"
+        },
+        "深造": {
+          "situation": "申请/深造机会较好",
+          "reasons": [
+            "能力突出",
+            "时机成熟"
+          ],
+          "advice": [
+            "完善材料",
+            "主动争取"
+          ],
+          "timing": "中期"
+        },
+        "规划": {
+          "situation": "规划较清晰，执行力较强",
+          "reasons": [
+            "目标明确"
+          ],
+          "advice": [
+            "分阶段目标",
+            "保持节奏"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "14": {
+      "name": "大有",
+      "overall_tendency": "大吉",
+      "study_rating": 5,
+      "key_points": [
+        "学习状态较好，理解力提升",
+        "方法较稳，适合冲刺关键节点",
+        "效率稳定，适合考试/竞赛安排",
+        "注意保持节奏，避免自满"
+      ],
+      "scenario_specific": {
+        "考试": {
+          "situation": "应试把握偏大，发挥较稳",
+          "reasons": [
+            "准备充分",
+            "心态稳定"
+          ],
+          "advice": [
+            "按计划复习",
+            "重点突破薄弱点"
+          ],
+          "timing": "近期"
+        },
+        "竞赛": {
+          "situation": "竞争力较强，有机会取得较好成绩",
+          "reasons": [
+            "状态好",
+            "方法有效"
+          ],
+          "advice": [
+            "加强真题训练",
+            "注意细节"
+          ],
+          "timing": "近期"
+        },
+        "深造": {
+          "situation": "申请/深造机会较好",
+          "reasons": [
+            "能力突出",
+            "时机成熟"
+          ],
+          "advice": [
+            "完善材料",
+            "主动争取"
+          ],
+          "timing": "中期"
+        },
+        "规划": {
+          "situation": "规划较清晰，执行力较强",
+          "reasons": [
+            "目标明确"
+          ],
+          "advice": [
+            "分阶段目标",
+            "保持节奏"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "15": {
+      "name": "谦",
+      "overall_tendency": "吉",
+      "study_rating": 4,
+      "key_points": [
+        "学习状态较好，理解力提升",
+        "方法较稳，适合冲刺关键节点",
+        "效率稳定，适合考试/竞赛安排",
+        "注意保持节奏，避免自满"
+      ],
+      "scenario_specific": {
+        "考试": {
+          "situation": "应试把握偏大，发挥较稳",
+          "reasons": [
+            "准备充分",
+            "心态稳定"
+          ],
+          "advice": [
+            "按计划复习",
+            "重点突破薄弱点"
+          ],
+          "timing": "近期"
+        },
+        "竞赛": {
+          "situation": "竞争力较强，有机会取得较好成绩",
+          "reasons": [
+            "状态好",
+            "方法有效"
+          ],
+          "advice": [
+            "加强真题训练",
+            "注意细节"
+          ],
+          "timing": "近期"
+        },
+        "深造": {
+          "situation": "申请/深造机会较好",
+          "reasons": [
+            "能力突出",
+            "时机成熟"
+          ],
+          "advice": [
+            "完善材料",
+            "主动争取"
+          ],
+          "timing": "中期"
+        },
+        "规划": {
+          "situation": "规划较清晰，执行力较强",
+          "reasons": [
+            "目标明确"
+          ],
+          "advice": [
+            "分阶段目标",
+            "保持节奏"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "16": {
+      "name": "豫",
+      "overall_tendency": "吉",
+      "study_rating": 4,
+      "key_points": [
+        "学习状态较好，理解力提升",
+        "方法较稳，适合冲刺关键节点",
+        "效率稳定，适合考试/竞赛安排",
+        "注意保持节奏，避免自满"
+      ],
+      "scenario_specific": {
+        "考试": {
+          "situation": "应试把握偏大，发挥较稳",
+          "reasons": [
+            "准备充分",
+            "心态稳定"
+          ],
+          "advice": [
+            "按计划复习",
+            "重点突破薄弱点"
+          ],
+          "timing": "近期"
+        },
+        "竞赛": {
+          "situation": "竞争力较强，有机会取得较好成绩",
+          "reasons": [
+            "状态好",
+            "方法有效"
+          ],
+          "advice": [
+            "加强真题训练",
+            "注意细节"
+          ],
+          "timing": "近期"
+        },
+        "深造": {
+          "situation": "申请/深造机会较好",
+          "reasons": [
+            "能力突出",
+            "时机成熟"
+          ],
+          "advice": [
+            "完善材料",
+            "主动争取"
+          ],
+          "timing": "中期"
+        },
+        "规划": {
+          "situation": "规划较清晰，执行力较强",
+          "reasons": [
+            "目标明确"
+          ],
+          "advice": [
+            "分阶段目标",
+            "保持节奏"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "17": {
+      "name": "随",
+      "overall_tendency": "吉",
+      "study_rating": 4,
+      "key_points": [
+        "学习状态较好，理解力提升",
+        "方法较稳，适合冲刺关键节点",
+        "效率稳定，适合考试/竞赛安排",
+        "注意保持节奏，避免自满"
+      ],
+      "scenario_specific": {
+        "考试": {
+          "situation": "应试把握偏大，发挥较稳",
+          "reasons": [
+            "准备充分",
+            "心态稳定"
+          ],
+          "advice": [
+            "按计划复习",
+            "重点突破薄弱点"
+          ],
+          "timing": "近期"
+        },
+        "竞赛": {
+          "situation": "竞争力较强，有机会取得较好成绩",
+          "reasons": [
+            "状态好",
+            "方法有效"
+          ],
+          "advice": [
+            "加强真题训练",
+            "注意细节"
+          ],
+          "timing": "近期"
+        },
+        "深造": {
+          "situation": "申请/深造机会较好",
+          "reasons": [
+            "能力突出",
+            "时机成熟"
+          ],
+          "advice": [
+            "完善材料",
+            "主动争取"
+          ],
+          "timing": "中期"
+        },
+        "规划": {
+          "situation": "规划较清晰，执行力较强",
+          "reasons": [
+            "目标明确"
+          ],
+          "advice": [
+            "分阶段目标",
+            "保持节奏"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "18": {
+      "name": "蛊",
+      "overall_tendency": "不利",
+      "study_rating": 2,
+      "key_points": [
+        "学习受阻，效率偏低",
+        "方法需调整，基础有待巩固",
+        "不宜急于求成，宜先夯实",
+        "注意情绪与作息，避免疲惫"
+      ],
+      "scenario_specific": {
+        "考试": {
+          "situation": "应试压力大，发挥不稳",
+          "reasons": [
+            "准备不足",
+            "心态波动"
+          ],
+          "advice": [
+            "先补基础",
+            "调整心态"
+          ],
+          "timing": "推迟或中后期"
+        },
+        "竞赛": {
+          "situation": "竞争力偏弱",
+          "reasons": [
+            "方法欠佳"
+          ],
+          "advice": [
+            "强化基础",
+            "减少冒进"
+          ],
+          "timing": "中后期"
+        },
+        "深造": {
+          "situation": "条件不足，成功率偏低",
+          "reasons": [
+            "材料薄弱"
+          ],
+          "advice": [
+            "先补短板",
+            "再择机"
+          ],
+          "timing": "中后期"
+        },
+        "规划": {
+          "situation": "目标摇摆，易中断",
+          "reasons": [
+            "节奏混乱"
+          ],
+          "advice": [
+            "缩小目标",
+            "重建计划"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "19": {
+      "name": "临",
+      "overall_tendency": "吉",
+      "study_rating": 4,
+      "key_points": [
+        "学习状态较好，理解力提升",
+        "方法较稳，适合冲刺关键节点",
+        "效率稳定，适合考试/竞赛安排",
+        "注意保持节奏，避免自满"
+      ],
+      "scenario_specific": {
+        "考试": {
+          "situation": "应试把握偏大，发挥较稳",
+          "reasons": [
+            "准备充分",
+            "心态稳定"
+          ],
+          "advice": [
+            "按计划复习",
+            "重点突破薄弱点"
+          ],
+          "timing": "近期"
+        },
+        "竞赛": {
+          "situation": "竞争力较强，有机会取得较好成绩",
+          "reasons": [
+            "状态好",
+            "方法有效"
+          ],
+          "advice": [
+            "加强真题训练",
+            "注意细节"
+          ],
+          "timing": "近期"
+        },
+        "深造": {
+          "situation": "申请/深造机会较好",
+          "reasons": [
+            "能力突出",
+            "时机成熟"
+          ],
+          "advice": [
+            "完善材料",
+            "主动争取"
+          ],
+          "timing": "中期"
+        },
+        "规划": {
+          "situation": "规划较清晰，执行力较强",
+          "reasons": [
+            "目标明确"
+          ],
+          "advice": [
+            "分阶段目标",
+            "保持节奏"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "20": {
+      "name": "观",
+      "overall_tendency": "平",
+      "study_rating": 3,
+      "key_points": [
+        "学习状态平稳，仍需持续投入",
+        "方法可用但仍需优化",
+        "进度可控，避免拖延",
+        "注意复盘与调整"
+      ],
+      "scenario_specific": {
+        "考试": {
+          "situation": "发挥中等，结果取决于准备",
+          "reasons": [
+            "基础尚可"
+          ],
+          "advice": [
+            "补强薄弱点",
+            "稳住节奏"
+          ],
+          "timing": "中期"
+        },
+        "竞赛": {
+          "situation": "成绩有波动",
+          "reasons": [
+            "策略待优化"
+          ],
+          "advice": [
+            "优化训练节奏",
+            "复盘错题"
+          ],
+          "timing": "中期"
+        },
+        "深造": {
+          "situation": "机会一般",
+          "reasons": [
+            "条件尚可"
+          ],
+          "advice": [
+            "完善背景",
+            "提升核心能力"
+          ],
+          "timing": "中期"
+        },
+        "规划": {
+          "situation": "计划可行但仍需坚持",
+          "reasons": [
+            "执行力一般"
+          ],
+          "advice": [
+            "拆解任务",
+            "定期复盘"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "21": {
+      "name": "噬嗑",
+      "overall_tendency": "平",
+      "study_rating": 3,
+      "key_points": [
+        "学习状态平稳，仍需持续投入",
+        "方法可用但仍需优化",
+        "进度可控，避免拖延",
+        "注意复盘与调整"
+      ],
+      "scenario_specific": {
+        "考试": {
+          "situation": "发挥中等，结果取决于准备",
+          "reasons": [
+            "基础尚可"
+          ],
+          "advice": [
+            "补强薄弱点",
+            "稳住节奏"
+          ],
+          "timing": "中期"
+        },
+        "竞赛": {
+          "situation": "成绩有波动",
+          "reasons": [
+            "策略待优化"
+          ],
+          "advice": [
+            "优化训练节奏",
+            "复盘错题"
+          ],
+          "timing": "中期"
+        },
+        "深造": {
+          "situation": "机会一般",
+          "reasons": [
+            "条件尚可"
+          ],
+          "advice": [
+            "完善背景",
+            "提升核心能力"
+          ],
+          "timing": "中期"
+        },
+        "规划": {
+          "situation": "计划可行但仍需坚持",
+          "reasons": [
+            "执行力一般"
+          ],
+          "advice": [
+            "拆解任务",
+            "定期复盘"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "22": {
+      "name": "贲",
+      "overall_tendency": "吉",
+      "study_rating": 4,
+      "key_points": [
+        "学习状态较好，理解力提升",
+        "方法较稳，适合冲刺关键节点",
+        "效率稳定，适合考试/竞赛安排",
+        "注意保持节奏，避免自满"
+      ],
+      "scenario_specific": {
+        "考试": {
+          "situation": "应试把握偏大，发挥较稳",
+          "reasons": [
+            "准备充分",
+            "心态稳定"
+          ],
+          "advice": [
+            "按计划复习",
+            "重点突破薄弱点"
+          ],
+          "timing": "近期"
+        },
+        "竞赛": {
+          "situation": "竞争力较强，有机会取得较好成绩",
+          "reasons": [
+            "状态好",
+            "方法有效"
+          ],
+          "advice": [
+            "加强真题训练",
+            "注意细节"
+          ],
+          "timing": "近期"
+        },
+        "深造": {
+          "situation": "申请/深造机会较好",
+          "reasons": [
+            "能力突出",
+            "时机成熟"
+          ],
+          "advice": [
+            "完善材料",
+            "主动争取"
+          ],
+          "timing": "中期"
+        },
+        "规划": {
+          "situation": "规划较清晰，执行力较强",
+          "reasons": [
+            "目标明确"
+          ],
+          "advice": [
+            "分阶段目标",
+            "保持节奏"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "23": {
+      "name": "剥",
+      "overall_tendency": "凶",
+      "study_rating": 2,
+      "key_points": [
+        "学习受阻，效率偏低",
+        "方法需调整，基础有待巩固",
+        "不宜急于求成，宜先夯实",
+        "注意情绪与作息，避免疲惫"
+      ],
+      "scenario_specific": {
+        "考试": {
+          "situation": "应试压力大，发挥不稳",
+          "reasons": [
+            "准备不足",
+            "心态波动"
+          ],
+          "advice": [
+            "先补基础",
+            "调整心态"
+          ],
+          "timing": "推迟或中后期"
+        },
+        "竞赛": {
+          "situation": "竞争力偏弱",
+          "reasons": [
+            "方法欠佳"
+          ],
+          "advice": [
+            "强化基础",
+            "减少冒进"
+          ],
+          "timing": "中后期"
+        },
+        "深造": {
+          "situation": "条件不足，成功率偏低",
+          "reasons": [
+            "材料薄弱"
+          ],
+          "advice": [
+            "先补短板",
+            "再择机"
+          ],
+          "timing": "中后期"
+        },
+        "规划": {
+          "situation": "目标摇摆，易中断",
+          "reasons": [
+            "节奏混乱"
+          ],
+          "advice": [
+            "缩小目标",
+            "重建计划"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "24": {
+      "name": "复",
+      "overall_tendency": "吉",
+      "study_rating": 4,
+      "key_points": [
+        "学习状态较好，理解力提升",
+        "方法较稳，适合冲刺关键节点",
+        "效率稳定，适合考试/竞赛安排",
+        "注意保持节奏，避免自满"
+      ],
+      "scenario_specific": {
+        "考试": {
+          "situation": "应试把握偏大，发挥较稳",
+          "reasons": [
+            "准备充分",
+            "心态稳定"
+          ],
+          "advice": [
+            "按计划复习",
+            "重点突破薄弱点"
+          ],
+          "timing": "近期"
+        },
+        "竞赛": {
+          "situation": "竞争力较强，有机会取得较好成绩",
+          "reasons": [
+            "状态好",
+            "方法有效"
+          ],
+          "advice": [
+            "加强真题训练",
+            "注意细节"
+          ],
+          "timing": "近期"
+        },
+        "深造": {
+          "situation": "申请/深造机会较好",
+          "reasons": [
+            "能力突出",
+            "时机成熟"
+          ],
+          "advice": [
+            "完善材料",
+            "主动争取"
+          ],
+          "timing": "中期"
+        },
+        "规划": {
+          "situation": "规划较清晰，执行力较强",
+          "reasons": [
+            "目标明确"
+          ],
+          "advice": [
+            "分阶段目标",
+            "保持节奏"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "25": {
+      "name": "无妄",
+      "overall_tendency": "吉",
+      "study_rating": 4,
+      "key_points": [
+        "学习状态较好，理解力提升",
+        "方法较稳，适合冲刺关键节点",
+        "效率稳定，适合考试/竞赛安排",
+        "注意保持节奏，避免自满"
+      ],
+      "scenario_specific": {
+        "考试": {
+          "situation": "应试把握偏大，发挥较稳",
+          "reasons": [
+            "准备充分",
+            "心态稳定"
+          ],
+          "advice": [
+            "按计划复习",
+            "重点突破薄弱点"
+          ],
+          "timing": "近期"
+        },
+        "竞赛": {
+          "situation": "竞争力较强，有机会取得较好成绩",
+          "reasons": [
+            "状态好",
+            "方法有效"
+          ],
+          "advice": [
+            "加强真题训练",
+            "注意细节"
+          ],
+          "timing": "近期"
+        },
+        "深造": {
+          "situation": "申请/深造机会较好",
+          "reasons": [
+            "能力突出",
+            "时机成熟"
+          ],
+          "advice": [
+            "完善材料",
+            "主动争取"
+          ],
+          "timing": "中期"
+        },
+        "规划": {
+          "situation": "规划较清晰，执行力较强",
+          "reasons": [
+            "目标明确"
+          ],
+          "advice": [
+            "分阶段目标",
+            "保持节奏"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "26": {
+      "name": "大畜",
+      "overall_tendency": "吉",
+      "study_rating": 4,
+      "key_points": [
+        "学习状态较好，理解力提升",
+        "方法较稳，适合冲刺关键节点",
+        "效率稳定，适合考试/竞赛安排",
+        "注意保持节奏，避免自满"
+      ],
+      "scenario_specific": {
+        "考试": {
+          "situation": "应试把握偏大，发挥较稳",
+          "reasons": [
+            "准备充分",
+            "心态稳定"
+          ],
+          "advice": [
+            "按计划复习",
+            "重点突破薄弱点"
+          ],
+          "timing": "近期"
+        },
+        "竞赛": {
+          "situation": "竞争力较强，有机会取得较好成绩",
+          "reasons": [
+            "状态好",
+            "方法有效"
+          ],
+          "advice": [
+            "加强真题训练",
+            "注意细节"
+          ],
+          "timing": "近期"
+        },
+        "深造": {
+          "situation": "申请/深造机会较好",
+          "reasons": [
+            "能力突出",
+            "时机成熟"
+          ],
+          "advice": [
+            "完善材料",
+            "主动争取"
+          ],
+          "timing": "中期"
+        },
+        "规划": {
+          "situation": "规划较清晰，执行力较强",
+          "reasons": [
+            "目标明确"
+          ],
+          "advice": [
+            "分阶段目标",
+            "保持节奏"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "27": {
+      "name": "颐",
+      "overall_tendency": "平",
+      "study_rating": 3,
+      "key_points": [
+        "学习状态平稳，仍需持续投入",
+        "方法可用但仍需优化",
+        "进度可控，避免拖延",
+        "注意复盘与调整"
+      ],
+      "scenario_specific": {
+        "考试": {
+          "situation": "发挥中等，结果取决于准备",
+          "reasons": [
+            "基础尚可"
+          ],
+          "advice": [
+            "补强薄弱点",
+            "稳住节奏"
+          ],
+          "timing": "中期"
+        },
+        "竞赛": {
+          "situation": "成绩有波动",
+          "reasons": [
+            "策略待优化"
+          ],
+          "advice": [
+            "优化训练节奏",
+            "复盘错题"
+          ],
+          "timing": "中期"
+        },
+        "深造": {
+          "situation": "机会一般",
+          "reasons": [
+            "条件尚可"
+          ],
+          "advice": [
+            "完善背景",
+            "提升核心能力"
+          ],
+          "timing": "中期"
+        },
+        "规划": {
+          "situation": "计划可行但仍需坚持",
+          "reasons": [
+            "执行力一般"
+          ],
+          "advice": [
+            "拆解任务",
+            "定期复盘"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "28": {
+      "name": "大过",
+      "overall_tendency": "不利",
+      "study_rating": 2,
+      "key_points": [
+        "学习受阻，效率偏低",
+        "方法需调整，基础有待巩固",
+        "不宜急于求成，宜先夯实",
+        "注意情绪与作息，避免疲惫"
+      ],
+      "scenario_specific": {
+        "考试": {
+          "situation": "应试压力大，发挥不稳",
+          "reasons": [
+            "准备不足",
+            "心态波动"
+          ],
+          "advice": [
+            "先补基础",
+            "调整心态"
+          ],
+          "timing": "推迟或中后期"
+        },
+        "竞赛": {
+          "situation": "竞争力偏弱",
+          "reasons": [
+            "方法欠佳"
+          ],
+          "advice": [
+            "强化基础",
+            "减少冒进"
+          ],
+          "timing": "中后期"
+        },
+        "深造": {
+          "situation": "条件不足，成功率偏低",
+          "reasons": [
+            "材料薄弱"
+          ],
+          "advice": [
+            "先补短板",
+            "再择机"
+          ],
+          "timing": "中后期"
+        },
+        "规划": {
+          "situation": "目标摇摆，易中断",
+          "reasons": [
+            "节奏混乱"
+          ],
+          "advice": [
+            "缩小目标",
+            "重建计划"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "29": {
+      "name": "坎",
+      "overall_tendency": "不利",
+      "study_rating": 2,
+      "key_points": [
+        "学习受阻，效率偏低",
+        "方法需调整，基础有待巩固",
+        "不宜急于求成，宜先夯实",
+        "注意情绪与作息，避免疲惫"
+      ],
+      "scenario_specific": {
+        "考试": {
+          "situation": "应试压力大，发挥不稳",
+          "reasons": [
+            "准备不足",
+            "心态波动"
+          ],
+          "advice": [
+            "先补基础",
+            "调整心态"
+          ],
+          "timing": "推迟或中后期"
+        },
+        "竞赛": {
+          "situation": "竞争力偏弱",
+          "reasons": [
+            "方法欠佳"
+          ],
+          "advice": [
+            "强化基础",
+            "减少冒进"
+          ],
+          "timing": "中后期"
+        },
+        "深造": {
+          "situation": "条件不足，成功率偏低",
+          "reasons": [
+            "材料薄弱"
+          ],
+          "advice": [
+            "先补短板",
+            "再择机"
+          ],
+          "timing": "中后期"
+        },
+        "规划": {
+          "situation": "目标摇摆，易中断",
+          "reasons": [
+            "节奏混乱"
+          ],
+          "advice": [
+            "缩小目标",
+            "重建计划"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "30": {
+      "name": "离",
+      "overall_tendency": "吉",
+      "study_rating": 4,
+      "key_points": [
+        "学习状态较好，理解力提升",
+        "方法较稳，适合冲刺关键节点",
+        "效率稳定，适合考试/竞赛安排",
+        "注意保持节奏，避免自满"
+      ],
+      "scenario_specific": {
+        "考试": {
+          "situation": "应试把握偏大，发挥较稳",
+          "reasons": [
+            "准备充分",
+            "心态稳定"
+          ],
+          "advice": [
+            "按计划复习",
+            "重点突破薄弱点"
+          ],
+          "timing": "近期"
+        },
+        "竞赛": {
+          "situation": "竞争力较强，有机会取得较好成绩",
+          "reasons": [
+            "状态好",
+            "方法有效"
+          ],
+          "advice": [
+            "加强真题训练",
+            "注意细节"
+          ],
+          "timing": "近期"
+        },
+        "深造": {
+          "situation": "申请/深造机会较好",
+          "reasons": [
+            "能力突出",
+            "时机成熟"
+          ],
+          "advice": [
+            "完善材料",
+            "主动争取"
+          ],
+          "timing": "中期"
+        },
+        "规划": {
+          "situation": "规划较清晰，执行力较强",
+          "reasons": [
+            "目标明确"
+          ],
+          "advice": [
+            "分阶段目标",
+            "保持节奏"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "31": {
+      "name": "咸",
+      "overall_tendency": "吉",
+      "study_rating": 4,
+      "key_points": [
+        "学习状态较好，理解力提升",
+        "方法较稳，适合冲刺关键节点",
+        "效率稳定，适合考试/竞赛安排",
+        "注意保持节奏，避免自满"
+      ],
+      "scenario_specific": {
+        "考试": {
+          "situation": "应试把握偏大，发挥较稳",
+          "reasons": [
+            "准备充分",
+            "心态稳定"
+          ],
+          "advice": [
+            "按计划复习",
+            "重点突破薄弱点"
+          ],
+          "timing": "近期"
+        },
+        "竞赛": {
+          "situation": "竞争力较强，有机会取得较好成绩",
+          "reasons": [
+            "状态好",
+            "方法有效"
+          ],
+          "advice": [
+            "加强真题训练",
+            "注意细节"
+          ],
+          "timing": "近期"
+        },
+        "深造": {
+          "situation": "申请/深造机会较好",
+          "reasons": [
+            "能力突出",
+            "时机成熟"
+          ],
+          "advice": [
+            "完善材料",
+            "主动争取"
+          ],
+          "timing": "中期"
+        },
+        "规划": {
+          "situation": "规划较清晰，执行力较强",
+          "reasons": [
+            "目标明确"
+          ],
+          "advice": [
+            "分阶段目标",
+            "保持节奏"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "32": {
+      "name": "恒",
+      "overall_tendency": "吉",
+      "study_rating": 4,
+      "key_points": [
+        "学习状态较好，理解力提升",
+        "方法较稳，适合冲刺关键节点",
+        "效率稳定，适合考试/竞赛安排",
+        "注意保持节奏，避免自满"
+      ],
+      "scenario_specific": {
+        "考试": {
+          "situation": "应试把握偏大，发挥较稳",
+          "reasons": [
+            "准备充分",
+            "心态稳定"
+          ],
+          "advice": [
+            "按计划复习",
+            "重点突破薄弱点"
+          ],
+          "timing": "近期"
+        },
+        "竞赛": {
+          "situation": "竞争力较强，有机会取得较好成绩",
+          "reasons": [
+            "状态好",
+            "方法有效"
+          ],
+          "advice": [
+            "加强真题训练",
+            "注意细节"
+          ],
+          "timing": "近期"
+        },
+        "深造": {
+          "situation": "申请/深造机会较好",
+          "reasons": [
+            "能力突出",
+            "时机成熟"
+          ],
+          "advice": [
+            "完善材料",
+            "主动争取"
+          ],
+          "timing": "中期"
+        },
+        "规划": {
+          "situation": "规划较清晰，执行力较强",
+          "reasons": [
+            "目标明确"
+          ],
+          "advice": [
+            "分阶段目标",
+            "保持节奏"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "33": {
+      "name": "遁",
+      "overall_tendency": "平",
+      "study_rating": 3,
+      "key_points": [
+        "学习状态平稳，仍需持续投入",
+        "方法可用但仍需优化",
+        "进度可控，避免拖延",
+        "注意复盘与调整"
+      ],
+      "scenario_specific": {
+        "考试": {
+          "situation": "发挥中等，结果取决于准备",
+          "reasons": [
+            "基础尚可"
+          ],
+          "advice": [
+            "补强薄弱点",
+            "稳住节奏"
+          ],
+          "timing": "中期"
+        },
+        "竞赛": {
+          "situation": "成绩有波动",
+          "reasons": [
+            "策略待优化"
+          ],
+          "advice": [
+            "优化训练节奏",
+            "复盘错题"
+          ],
+          "timing": "中期"
+        },
+        "深造": {
+          "situation": "机会一般",
+          "reasons": [
+            "条件尚可"
+          ],
+          "advice": [
+            "完善背景",
+            "提升核心能力"
+          ],
+          "timing": "中期"
+        },
+        "规划": {
+          "situation": "计划可行但仍需坚持",
+          "reasons": [
+            "执行力一般"
+          ],
+          "advice": [
+            "拆解任务",
+            "定期复盘"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "34": {
+      "name": "大壮",
+      "overall_tendency": "吉",
+      "study_rating": 4,
+      "key_points": [
+        "学习状态较好，理解力提升",
+        "方法较稳，适合冲刺关键节点",
+        "效率稳定，适合考试/竞赛安排",
+        "注意保持节奏，避免自满"
+      ],
+      "scenario_specific": {
+        "考试": {
+          "situation": "应试把握偏大，发挥较稳",
+          "reasons": [
+            "准备充分",
+            "心态稳定"
+          ],
+          "advice": [
+            "按计划复习",
+            "重点突破薄弱点"
+          ],
+          "timing": "近期"
+        },
+        "竞赛": {
+          "situation": "竞争力较强，有机会取得较好成绩",
+          "reasons": [
+            "状态好",
+            "方法有效"
+          ],
+          "advice": [
+            "加强真题训练",
+            "注意细节"
+          ],
+          "timing": "近期"
+        },
+        "深造": {
+          "situation": "申请/深造机会较好",
+          "reasons": [
+            "能力突出",
+            "时机成熟"
+          ],
+          "advice": [
+            "完善材料",
+            "主动争取"
+          ],
+          "timing": "中期"
+        },
+        "规划": {
+          "situation": "规划较清晰，执行力较强",
+          "reasons": [
+            "目标明确"
+          ],
+          "advice": [
+            "分阶段目标",
+            "保持节奏"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "35": {
+      "name": "晋",
+      "overall_tendency": "大吉",
+      "study_rating": 5,
+      "key_points": [
+        "学习状态较好，理解力提升",
+        "方法较稳，适合冲刺关键节点",
+        "效率稳定，适合考试/竞赛安排",
+        "注意保持节奏，避免自满"
+      ],
+      "scenario_specific": {
+        "考试": {
+          "situation": "应试把握偏大，发挥较稳",
+          "reasons": [
+            "准备充分",
+            "心态稳定"
+          ],
+          "advice": [
+            "按计划复习",
+            "重点突破薄弱点"
+          ],
+          "timing": "近期"
+        },
+        "竞赛": {
+          "situation": "竞争力较强，有机会取得较好成绩",
+          "reasons": [
+            "状态好",
+            "方法有效"
+          ],
+          "advice": [
+            "加强真题训练",
+            "注意细节"
+          ],
+          "timing": "近期"
+        },
+        "深造": {
+          "situation": "申请/深造机会较好",
+          "reasons": [
+            "能力突出",
+            "时机成熟"
+          ],
+          "advice": [
+            "完善材料",
+            "主动争取"
+          ],
+          "timing": "中期"
+        },
+        "规划": {
+          "situation": "规划较清晰，执行力较强",
+          "reasons": [
+            "目标明确"
+          ],
+          "advice": [
+            "分阶段目标",
+            "保持节奏"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "36": {
+      "name": "明夷",
+      "overall_tendency": "凶",
+      "study_rating": 2,
+      "key_points": [
+        "学习受阻，效率偏低",
+        "方法需调整，基础有待巩固",
+        "不宜急于求成，宜先夯实",
+        "注意情绪与作息，避免疲惫"
+      ],
+      "scenario_specific": {
+        "考试": {
+          "situation": "应试压力大，发挥不稳",
+          "reasons": [
+            "准备不足",
+            "心态波动"
+          ],
+          "advice": [
+            "先补基础",
+            "调整心态"
+          ],
+          "timing": "推迟或中后期"
+        },
+        "竞赛": {
+          "situation": "竞争力偏弱",
+          "reasons": [
+            "方法欠佳"
+          ],
+          "advice": [
+            "强化基础",
+            "减少冒进"
+          ],
+          "timing": "中后期"
+        },
+        "深造": {
+          "situation": "条件不足，成功率偏低",
+          "reasons": [
+            "材料薄弱"
+          ],
+          "advice": [
+            "先补短板",
+            "再择机"
+          ],
+          "timing": "中后期"
+        },
+        "规划": {
+          "situation": "目标摇摆，易中断",
+          "reasons": [
+            "节奏混乱"
+          ],
+          "advice": [
+            "缩小目标",
+            "重建计划"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "37": {
+      "name": "家人",
+      "overall_tendency": "吉",
+      "study_rating": 4,
+      "key_points": [
+        "学习状态较好，理解力提升",
+        "方法较稳，适合冲刺关键节点",
+        "效率稳定，适合考试/竞赛安排",
+        "注意保持节奏，避免自满"
+      ],
+      "scenario_specific": {
+        "考试": {
+          "situation": "应试把握偏大，发挥较稳",
+          "reasons": [
+            "准备充分",
+            "心态稳定"
+          ],
+          "advice": [
+            "按计划复习",
+            "重点突破薄弱点"
+          ],
+          "timing": "近期"
+        },
+        "竞赛": {
+          "situation": "竞争力较强，有机会取得较好成绩",
+          "reasons": [
+            "状态好",
+            "方法有效"
+          ],
+          "advice": [
+            "加强真题训练",
+            "注意细节"
+          ],
+          "timing": "近期"
+        },
+        "深造": {
+          "situation": "申请/深造机会较好",
+          "reasons": [
+            "能力突出",
+            "时机成熟"
+          ],
+          "advice": [
+            "完善材料",
+            "主动争取"
+          ],
+          "timing": "中期"
+        },
+        "规划": {
+          "situation": "规划较清晰，执行力较强",
+          "reasons": [
+            "目标明确"
+          ],
+          "advice": [
+            "分阶段目标",
+            "保持节奏"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "38": {
+      "name": "睽",
+      "overall_tendency": "不利",
+      "study_rating": 2,
+      "key_points": [
+        "学习受阻，效率偏低",
+        "方法需调整，基础有待巩固",
+        "不宜急于求成，宜先夯实",
+        "注意情绪与作息，避免疲惫"
+      ],
+      "scenario_specific": {
+        "考试": {
+          "situation": "应试压力大，发挥不稳",
+          "reasons": [
+            "准备不足",
+            "心态波动"
+          ],
+          "advice": [
+            "先补基础",
+            "调整心态"
+          ],
+          "timing": "推迟或中后期"
+        },
+        "竞赛": {
+          "situation": "竞争力偏弱",
+          "reasons": [
+            "方法欠佳"
+          ],
+          "advice": [
+            "强化基础",
+            "减少冒进"
+          ],
+          "timing": "中后期"
+        },
+        "深造": {
+          "situation": "条件不足，成功率偏低",
+          "reasons": [
+            "材料薄弱"
+          ],
+          "advice": [
+            "先补短板",
+            "再择机"
+          ],
+          "timing": "中后期"
+        },
+        "规划": {
+          "situation": "目标摇摆，易中断",
+          "reasons": [
+            "节奏混乱"
+          ],
+          "advice": [
+            "缩小目标",
+            "重建计划"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "39": {
+      "name": "蹇",
+      "overall_tendency": "不利",
+      "study_rating": 2,
+      "key_points": [
+        "学习受阻，效率偏低",
+        "方法需调整，基础有待巩固",
+        "不宜急于求成，宜先夯实",
+        "注意情绪与作息，避免疲惫"
+      ],
+      "scenario_specific": {
+        "考试": {
+          "situation": "应试压力大，发挥不稳",
+          "reasons": [
+            "准备不足",
+            "心态波动"
+          ],
+          "advice": [
+            "先补基础",
+            "调整心态"
+          ],
+          "timing": "推迟或中后期"
+        },
+        "竞赛": {
+          "situation": "竞争力偏弱",
+          "reasons": [
+            "方法欠佳"
+          ],
+          "advice": [
+            "强化基础",
+            "减少冒进"
+          ],
+          "timing": "中后期"
+        },
+        "深造": {
+          "situation": "条件不足，成功率偏低",
+          "reasons": [
+            "材料薄弱"
+          ],
+          "advice": [
+            "先补短板",
+            "再择机"
+          ],
+          "timing": "中后期"
+        },
+        "规划": {
+          "situation": "目标摇摆，易中断",
+          "reasons": [
+            "节奏混乱"
+          ],
+          "advice": [
+            "缩小目标",
+            "重建计划"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "40": {
+      "name": "解",
+      "overall_tendency": "吉",
+      "study_rating": 4,
+      "key_points": [
+        "学习状态较好，理解力提升",
+        "方法较稳，适合冲刺关键节点",
+        "效率稳定，适合考试/竞赛安排",
+        "注意保持节奏，避免自满"
+      ],
+      "scenario_specific": {
+        "考试": {
+          "situation": "应试把握偏大，发挥较稳",
+          "reasons": [
+            "准备充分",
+            "心态稳定"
+          ],
+          "advice": [
+            "按计划复习",
+            "重点突破薄弱点"
+          ],
+          "timing": "近期"
+        },
+        "竞赛": {
+          "situation": "竞争力较强，有机会取得较好成绩",
+          "reasons": [
+            "状态好",
+            "方法有效"
+          ],
+          "advice": [
+            "加强真题训练",
+            "注意细节"
+          ],
+          "timing": "近期"
+        },
+        "深造": {
+          "situation": "申请/深造机会较好",
+          "reasons": [
+            "能力突出",
+            "时机成熟"
+          ],
+          "advice": [
+            "完善材料",
+            "主动争取"
+          ],
+          "timing": "中期"
+        },
+        "规划": {
+          "situation": "规划较清晰，执行力较强",
+          "reasons": [
+            "目标明确"
+          ],
+          "advice": [
+            "分阶段目标",
+            "保持节奏"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "41": {
+      "name": "损",
+      "overall_tendency": "平",
+      "study_rating": 3,
+      "key_points": [
+        "学习状态平稳，仍需持续投入",
+        "方法可用但仍需优化",
+        "进度可控，避免拖延",
+        "注意复盘与调整"
+      ],
+      "scenario_specific": {
+        "考试": {
+          "situation": "发挥中等，结果取决于准备",
+          "reasons": [
+            "基础尚可"
+          ],
+          "advice": [
+            "补强薄弱点",
+            "稳住节奏"
+          ],
+          "timing": "中期"
+        },
+        "竞赛": {
+          "situation": "成绩有波动",
+          "reasons": [
+            "策略待优化"
+          ],
+          "advice": [
+            "优化训练节奏",
+            "复盘错题"
+          ],
+          "timing": "中期"
+        },
+        "深造": {
+          "situation": "机会一般",
+          "reasons": [
+            "条件尚可"
+          ],
+          "advice": [
+            "完善背景",
+            "提升核心能力"
+          ],
+          "timing": "中期"
+        },
+        "规划": {
+          "situation": "计划可行但仍需坚持",
+          "reasons": [
+            "执行力一般"
+          ],
+          "advice": [
+            "拆解任务",
+            "定期复盘"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "42": {
+      "name": "益",
+      "overall_tendency": "大吉",
+      "study_rating": 5,
+      "key_points": [
+        "学习状态较好，理解力提升",
+        "方法较稳，适合冲刺关键节点",
+        "效率稳定，适合考试/竞赛安排",
+        "注意保持节奏，避免自满"
+      ],
+      "scenario_specific": {
+        "考试": {
+          "situation": "应试把握偏大，发挥较稳",
+          "reasons": [
+            "准备充分",
+            "心态稳定"
+          ],
+          "advice": [
+            "按计划复习",
+            "重点突破薄弱点"
+          ],
+          "timing": "近期"
+        },
+        "竞赛": {
+          "situation": "竞争力较强，有机会取得较好成绩",
+          "reasons": [
+            "状态好",
+            "方法有效"
+          ],
+          "advice": [
+            "加强真题训练",
+            "注意细节"
+          ],
+          "timing": "近期"
+        },
+        "深造": {
+          "situation": "申请/深造机会较好",
+          "reasons": [
+            "能力突出",
+            "时机成熟"
+          ],
+          "advice": [
+            "完善材料",
+            "主动争取"
+          ],
+          "timing": "中期"
+        },
+        "规划": {
+          "situation": "规划较清晰，执行力较强",
+          "reasons": [
+            "目标明确"
+          ],
+          "advice": [
+            "分阶段目标",
+            "保持节奏"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "43": {
+      "name": "夬",
+      "overall_tendency": "吉",
+      "study_rating": 4,
+      "key_points": [
+        "学习状态较好，理解力提升",
+        "方法较稳，适合冲刺关键节点",
+        "效率稳定，适合考试/竞赛安排",
+        "注意保持节奏，避免自满"
+      ],
+      "scenario_specific": {
+        "考试": {
+          "situation": "应试把握偏大，发挥较稳",
+          "reasons": [
+            "准备充分",
+            "心态稳定"
+          ],
+          "advice": [
+            "按计划复习",
+            "重点突破薄弱点"
+          ],
+          "timing": "近期"
+        },
+        "竞赛": {
+          "situation": "竞争力较强，有机会取得较好成绩",
+          "reasons": [
+            "状态好",
+            "方法有效"
+          ],
+          "advice": [
+            "加强真题训练",
+            "注意细节"
+          ],
+          "timing": "近期"
+        },
+        "深造": {
+          "situation": "申请/深造机会较好",
+          "reasons": [
+            "能力突出",
+            "时机成熟"
+          ],
+          "advice": [
+            "完善材料",
+            "主动争取"
+          ],
+          "timing": "中期"
+        },
+        "规划": {
+          "situation": "规划较清晰，执行力较强",
+          "reasons": [
+            "目标明确"
+          ],
+          "advice": [
+            "分阶段目标",
+            "保持节奏"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "44": {
+      "name": "姤",
+      "overall_tendency": "不利",
+      "study_rating": 2,
+      "key_points": [
+        "学习受阻，效率偏低",
+        "方法需调整，基础有待巩固",
+        "不宜急于求成，宜先夯实",
+        "注意情绪与作息，避免疲惫"
+      ],
+      "scenario_specific": {
+        "考试": {
+          "situation": "应试压力大，发挥不稳",
+          "reasons": [
+            "准备不足",
+            "心态波动"
+          ],
+          "advice": [
+            "先补基础",
+            "调整心态"
+          ],
+          "timing": "推迟或中后期"
+        },
+        "竞赛": {
+          "situation": "竞争力偏弱",
+          "reasons": [
+            "方法欠佳"
+          ],
+          "advice": [
+            "强化基础",
+            "减少冒进"
+          ],
+          "timing": "中后期"
+        },
+        "深造": {
+          "situation": "条件不足，成功率偏低",
+          "reasons": [
+            "材料薄弱"
+          ],
+          "advice": [
+            "先补短板",
+            "再择机"
+          ],
+          "timing": "中后期"
+        },
+        "规划": {
+          "situation": "目标摇摆，易中断",
+          "reasons": [
+            "节奏混乱"
+          ],
+          "advice": [
+            "缩小目标",
+            "重建计划"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "45": {
+      "name": "萃",
+      "overall_tendency": "吉",
+      "study_rating": 4,
+      "key_points": [
+        "学习状态较好，理解力提升",
+        "方法较稳，适合冲刺关键节点",
+        "效率稳定，适合考试/竞赛安排",
+        "注意保持节奏，避免自满"
+      ],
+      "scenario_specific": {
+        "考试": {
+          "situation": "应试把握偏大，发挥较稳",
+          "reasons": [
+            "准备充分",
+            "心态稳定"
+          ],
+          "advice": [
+            "按计划复习",
+            "重点突破薄弱点"
+          ],
+          "timing": "近期"
+        },
+        "竞赛": {
+          "situation": "竞争力较强，有机会取得较好成绩",
+          "reasons": [
+            "状态好",
+            "方法有效"
+          ],
+          "advice": [
+            "加强真题训练",
+            "注意细节"
+          ],
+          "timing": "近期"
+        },
+        "深造": {
+          "situation": "申请/深造机会较好",
+          "reasons": [
+            "能力突出",
+            "时机成熟"
+          ],
+          "advice": [
+            "完善材料",
+            "主动争取"
+          ],
+          "timing": "中期"
+        },
+        "规划": {
+          "situation": "规划较清晰，执行力较强",
+          "reasons": [
+            "目标明确"
+          ],
+          "advice": [
+            "分阶段目标",
+            "保持节奏"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "46": {
+      "name": "升",
+      "overall_tendency": "大吉",
+      "study_rating": 5,
+      "key_points": [
+        "学习状态较好，理解力提升",
+        "方法较稳，适合冲刺关键节点",
+        "效率稳定，适合考试/竞赛安排",
+        "注意保持节奏，避免自满"
+      ],
+      "scenario_specific": {
+        "考试": {
+          "situation": "应试把握偏大，发挥较稳",
+          "reasons": [
+            "准备充分",
+            "心态稳定"
+          ],
+          "advice": [
+            "按计划复习",
+            "重点突破薄弱点"
+          ],
+          "timing": "近期"
+        },
+        "竞赛": {
+          "situation": "竞争力较强，有机会取得较好成绩",
+          "reasons": [
+            "状态好",
+            "方法有效"
+          ],
+          "advice": [
+            "加强真题训练",
+            "注意细节"
+          ],
+          "timing": "近期"
+        },
+        "深造": {
+          "situation": "申请/深造机会较好",
+          "reasons": [
+            "能力突出",
+            "时机成熟"
+          ],
+          "advice": [
+            "完善材料",
+            "主动争取"
+          ],
+          "timing": "中期"
+        },
+        "规划": {
+          "situation": "规划较清晰，执行力较强",
+          "reasons": [
+            "目标明确"
+          ],
+          "advice": [
+            "分阶段目标",
+            "保持节奏"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "47": {
+      "name": "困",
+      "overall_tendency": "凶",
+      "study_rating": 2,
+      "key_points": [
+        "学习受阻，效率偏低",
+        "方法需调整，基础有待巩固",
+        "不宜急于求成，宜先夯实",
+        "注意情绪与作息，避免疲惫"
+      ],
+      "scenario_specific": {
+        "考试": {
+          "situation": "应试压力大，发挥不稳",
+          "reasons": [
+            "准备不足",
+            "心态波动"
+          ],
+          "advice": [
+            "先补基础",
+            "调整心态"
+          ],
+          "timing": "推迟或中后期"
+        },
+        "竞赛": {
+          "situation": "竞争力偏弱",
+          "reasons": [
+            "方法欠佳"
+          ],
+          "advice": [
+            "强化基础",
+            "减少冒进"
+          ],
+          "timing": "中后期"
+        },
+        "深造": {
+          "situation": "条件不足，成功率偏低",
+          "reasons": [
+            "材料薄弱"
+          ],
+          "advice": [
+            "先补短板",
+            "再择机"
+          ],
+          "timing": "中后期"
+        },
+        "规划": {
+          "situation": "目标摇摆，易中断",
+          "reasons": [
+            "节奏混乱"
+          ],
+          "advice": [
+            "缩小目标",
+            "重建计划"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "48": {
+      "name": "井",
+      "overall_tendency": "平",
+      "study_rating": 3,
+      "key_points": [
+        "学习状态平稳，仍需持续投入",
+        "方法可用但仍需优化",
+        "进度可控，避免拖延",
+        "注意复盘与调整"
+      ],
+      "scenario_specific": {
+        "考试": {
+          "situation": "发挥中等，结果取决于准备",
+          "reasons": [
+            "基础尚可"
+          ],
+          "advice": [
+            "补强薄弱点",
+            "稳住节奏"
+          ],
+          "timing": "中期"
+        },
+        "竞赛": {
+          "situation": "成绩有波动",
+          "reasons": [
+            "策略待优化"
+          ],
+          "advice": [
+            "优化训练节奏",
+            "复盘错题"
+          ],
+          "timing": "中期"
+        },
+        "深造": {
+          "situation": "机会一般",
+          "reasons": [
+            "条件尚可"
+          ],
+          "advice": [
+            "完善背景",
+            "提升核心能力"
+          ],
+          "timing": "中期"
+        },
+        "规划": {
+          "situation": "计划可行但仍需坚持",
+          "reasons": [
+            "执行力一般"
+          ],
+          "advice": [
+            "拆解任务",
+            "定期复盘"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "49": {
+      "name": "革",
+      "overall_tendency": "吉",
+      "study_rating": 4,
+      "key_points": [
+        "学习状态较好，理解力提升",
+        "方法较稳，适合冲刺关键节点",
+        "效率稳定，适合考试/竞赛安排",
+        "注意保持节奏，避免自满"
+      ],
+      "scenario_specific": {
+        "考试": {
+          "situation": "应试把握偏大，发挥较稳",
+          "reasons": [
+            "准备充分",
+            "心态稳定"
+          ],
+          "advice": [
+            "按计划复习",
+            "重点突破薄弱点"
+          ],
+          "timing": "近期"
+        },
+        "竞赛": {
+          "situation": "竞争力较强，有机会取得较好成绩",
+          "reasons": [
+            "状态好",
+            "方法有效"
+          ],
+          "advice": [
+            "加强真题训练",
+            "注意细节"
+          ],
+          "timing": "近期"
+        },
+        "深造": {
+          "situation": "申请/深造机会较好",
+          "reasons": [
+            "能力突出",
+            "时机成熟"
+          ],
+          "advice": [
+            "完善材料",
+            "主动争取"
+          ],
+          "timing": "中期"
+        },
+        "规划": {
+          "situation": "规划较清晰，执行力较强",
+          "reasons": [
+            "目标明确"
+          ],
+          "advice": [
+            "分阶段目标",
+            "保持节奏"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "50": {
+      "name": "鼎",
+      "overall_tendency": "大吉",
+      "study_rating": 5,
+      "key_points": [
+        "学习状态较好，理解力提升",
+        "方法较稳，适合冲刺关键节点",
+        "效率稳定，适合考试/竞赛安排",
+        "注意保持节奏，避免自满"
+      ],
+      "scenario_specific": {
+        "考试": {
+          "situation": "应试把握偏大，发挥较稳",
+          "reasons": [
+            "准备充分",
+            "心态稳定"
+          ],
+          "advice": [
+            "按计划复习",
+            "重点突破薄弱点"
+          ],
+          "timing": "近期"
+        },
+        "竞赛": {
+          "situation": "竞争力较强，有机会取得较好成绩",
+          "reasons": [
+            "状态好",
+            "方法有效"
+          ],
+          "advice": [
+            "加强真题训练",
+            "注意细节"
+          ],
+          "timing": "近期"
+        },
+        "深造": {
+          "situation": "申请/深造机会较好",
+          "reasons": [
+            "能力突出",
+            "时机成熟"
+          ],
+          "advice": [
+            "完善材料",
+            "主动争取"
+          ],
+          "timing": "中期"
+        },
+        "规划": {
+          "situation": "规划较清晰，执行力较强",
+          "reasons": [
+            "目标明确"
+          ],
+          "advice": [
+            "分阶段目标",
+            "保持节奏"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "51": {
+      "name": "震",
+      "overall_tendency": "平",
+      "study_rating": 3,
+      "key_points": [
+        "学习状态平稳，仍需持续投入",
+        "方法可用但仍需优化",
+        "进度可控，避免拖延",
+        "注意复盘与调整"
+      ],
+      "scenario_specific": {
+        "考试": {
+          "situation": "发挥中等，结果取决于准备",
+          "reasons": [
+            "基础尚可"
+          ],
+          "advice": [
+            "补强薄弱点",
+            "稳住节奏"
+          ],
+          "timing": "中期"
+        },
+        "竞赛": {
+          "situation": "成绩有波动",
+          "reasons": [
+            "策略待优化"
+          ],
+          "advice": [
+            "优化训练节奏",
+            "复盘错题"
+          ],
+          "timing": "中期"
+        },
+        "深造": {
+          "situation": "机会一般",
+          "reasons": [
+            "条件尚可"
+          ],
+          "advice": [
+            "完善背景",
+            "提升核心能力"
+          ],
+          "timing": "中期"
+        },
+        "规划": {
+          "situation": "计划可行但仍需坚持",
+          "reasons": [
+            "执行力一般"
+          ],
+          "advice": [
+            "拆解任务",
+            "定期复盘"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "52": {
+      "name": "艮",
+      "overall_tendency": "平",
+      "study_rating": 3,
+      "key_points": [
+        "学习状态平稳，仍需持续投入",
+        "方法可用但仍需优化",
+        "进度可控，避免拖延",
+        "注意复盘与调整"
+      ],
+      "scenario_specific": {
+        "考试": {
+          "situation": "发挥中等，结果取决于准备",
+          "reasons": [
+            "基础尚可"
+          ],
+          "advice": [
+            "补强薄弱点",
+            "稳住节奏"
+          ],
+          "timing": "中期"
+        },
+        "竞赛": {
+          "situation": "成绩有波动",
+          "reasons": [
+            "策略待优化"
+          ],
+          "advice": [
+            "优化训练节奏",
+            "复盘错题"
+          ],
+          "timing": "中期"
+        },
+        "深造": {
+          "situation": "机会一般",
+          "reasons": [
+            "条件尚可"
+          ],
+          "advice": [
+            "完善背景",
+            "提升核心能力"
+          ],
+          "timing": "中期"
+        },
+        "规划": {
+          "situation": "计划可行但仍需坚持",
+          "reasons": [
+            "执行力一般"
+          ],
+          "advice": [
+            "拆解任务",
+            "定期复盘"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "53": {
+      "name": "渐",
+      "overall_tendency": "吉",
+      "study_rating": 4,
+      "key_points": [
+        "学习状态较好，理解力提升",
+        "方法较稳，适合冲刺关键节点",
+        "效率稳定，适合考试/竞赛安排",
+        "注意保持节奏，避免自满"
+      ],
+      "scenario_specific": {
+        "考试": {
+          "situation": "应试把握偏大，发挥较稳",
+          "reasons": [
+            "准备充分",
+            "心态稳定"
+          ],
+          "advice": [
+            "按计划复习",
+            "重点突破薄弱点"
+          ],
+          "timing": "近期"
+        },
+        "竞赛": {
+          "situation": "竞争力较强，有机会取得较好成绩",
+          "reasons": [
+            "状态好",
+            "方法有效"
+          ],
+          "advice": [
+            "加强真题训练",
+            "注意细节"
+          ],
+          "timing": "近期"
+        },
+        "深造": {
+          "situation": "申请/深造机会较好",
+          "reasons": [
+            "能力突出",
+            "时机成熟"
+          ],
+          "advice": [
+            "完善材料",
+            "主动争取"
+          ],
+          "timing": "中期"
+        },
+        "规划": {
+          "situation": "规划较清晰，执行力较强",
+          "reasons": [
+            "目标明确"
+          ],
+          "advice": [
+            "分阶段目标",
+            "保持节奏"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "54": {
+      "name": "归妹",
+      "overall_tendency": "不利",
+      "study_rating": 2,
+      "key_points": [
+        "学习受阻，效率偏低",
+        "方法需调整，基础有待巩固",
+        "不宜急于求成，宜先夯实",
+        "注意情绪与作息，避免疲惫"
+      ],
+      "scenario_specific": {
+        "考试": {
+          "situation": "应试压力大，发挥不稳",
+          "reasons": [
+            "准备不足",
+            "心态波动"
+          ],
+          "advice": [
+            "先补基础",
+            "调整心态"
+          ],
+          "timing": "推迟或中后期"
+        },
+        "竞赛": {
+          "situation": "竞争力偏弱",
+          "reasons": [
+            "方法欠佳"
+          ],
+          "advice": [
+            "强化基础",
+            "减少冒进"
+          ],
+          "timing": "中后期"
+        },
+        "深造": {
+          "situation": "条件不足，成功率偏低",
+          "reasons": [
+            "材料薄弱"
+          ],
+          "advice": [
+            "先补短板",
+            "再择机"
+          ],
+          "timing": "中后期"
+        },
+        "规划": {
+          "situation": "目标摇摆，易中断",
+          "reasons": [
+            "节奏混乱"
+          ],
+          "advice": [
+            "缩小目标",
+            "重建计划"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "55": {
+      "name": "丰",
+      "overall_tendency": "大吉",
+      "study_rating": 5,
+      "key_points": [
+        "学习状态较好，理解力提升",
+        "方法较稳，适合冲刺关键节点",
+        "效率稳定，适合考试/竞赛安排",
+        "注意保持节奏，避免自满"
+      ],
+      "scenario_specific": {
+        "考试": {
+          "situation": "应试把握偏大，发挥较稳",
+          "reasons": [
+            "准备充分",
+            "心态稳定"
+          ],
+          "advice": [
+            "按计划复习",
+            "重点突破薄弱点"
+          ],
+          "timing": "近期"
+        },
+        "竞赛": {
+          "situation": "竞争力较强，有机会取得较好成绩",
+          "reasons": [
+            "状态好",
+            "方法有效"
+          ],
+          "advice": [
+            "加强真题训练",
+            "注意细节"
+          ],
+          "timing": "近期"
+        },
+        "深造": {
+          "situation": "申请/深造机会较好",
+          "reasons": [
+            "能力突出",
+            "时机成熟"
+          ],
+          "advice": [
+            "完善材料",
+            "主动争取"
+          ],
+          "timing": "中期"
+        },
+        "规划": {
+          "situation": "规划较清晰，执行力较强",
+          "reasons": [
+            "目标明确"
+          ],
+          "advice": [
+            "分阶段目标",
+            "保持节奏"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "56": {
+      "name": "旅",
+      "overall_tendency": "平",
+      "study_rating": 3,
+      "key_points": [
+        "学习状态平稳，仍需持续投入",
+        "方法可用但仍需优化",
+        "进度可控，避免拖延",
+        "注意复盘与调整"
+      ],
+      "scenario_specific": {
+        "考试": {
+          "situation": "发挥中等，结果取决于准备",
+          "reasons": [
+            "基础尚可"
+          ],
+          "advice": [
+            "补强薄弱点",
+            "稳住节奏"
+          ],
+          "timing": "中期"
+        },
+        "竞赛": {
+          "situation": "成绩有波动",
+          "reasons": [
+            "策略待优化"
+          ],
+          "advice": [
+            "优化训练节奏",
+            "复盘错题"
+          ],
+          "timing": "中期"
+        },
+        "深造": {
+          "situation": "机会一般",
+          "reasons": [
+            "条件尚可"
+          ],
+          "advice": [
+            "完善背景",
+            "提升核心能力"
+          ],
+          "timing": "中期"
+        },
+        "规划": {
+          "situation": "计划可行但仍需坚持",
+          "reasons": [
+            "执行力一般"
+          ],
+          "advice": [
+            "拆解任务",
+            "定期复盘"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "57": {
+      "name": "巽",
+      "overall_tendency": "吉",
+      "study_rating": 4,
+      "key_points": [
+        "学习状态较好，理解力提升",
+        "方法较稳，适合冲刺关键节点",
+        "效率稳定，适合考试/竞赛安排",
+        "注意保持节奏，避免自满"
+      ],
+      "scenario_specific": {
+        "考试": {
+          "situation": "应试把握偏大，发挥较稳",
+          "reasons": [
+            "准备充分",
+            "心态稳定"
+          ],
+          "advice": [
+            "按计划复习",
+            "重点突破薄弱点"
+          ],
+          "timing": "近期"
+        },
+        "竞赛": {
+          "situation": "竞争力较强，有机会取得较好成绩",
+          "reasons": [
+            "状态好",
+            "方法有效"
+          ],
+          "advice": [
+            "加强真题训练",
+            "注意细节"
+          ],
+          "timing": "近期"
+        },
+        "深造": {
+          "situation": "申请/深造机会较好",
+          "reasons": [
+            "能力突出",
+            "时机成熟"
+          ],
+          "advice": [
+            "完善材料",
+            "主动争取"
+          ],
+          "timing": "中期"
+        },
+        "规划": {
+          "situation": "规划较清晰，执行力较强",
+          "reasons": [
+            "目标明确"
+          ],
+          "advice": [
+            "分阶段目标",
+            "保持节奏"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "58": {
+      "name": "兑",
+      "overall_tendency": "吉",
+      "study_rating": 4,
+      "key_points": [
+        "学习状态较好，理解力提升",
+        "方法较稳，适合冲刺关键节点",
+        "效率稳定，适合考试/竞赛安排",
+        "注意保持节奏，避免自满"
+      ],
+      "scenario_specific": {
+        "考试": {
+          "situation": "应试把握偏大，发挥较稳",
+          "reasons": [
+            "准备充分",
+            "心态稳定"
+          ],
+          "advice": [
+            "按计划复习",
+            "重点突破薄弱点"
+          ],
+          "timing": "近期"
+        },
+        "竞赛": {
+          "situation": "竞争力较强，有机会取得较好成绩",
+          "reasons": [
+            "状态好",
+            "方法有效"
+          ],
+          "advice": [
+            "加强真题训练",
+            "注意细节"
+          ],
+          "timing": "近期"
+        },
+        "深造": {
+          "situation": "申请/深造机会较好",
+          "reasons": [
+            "能力突出",
+            "时机成熟"
+          ],
+          "advice": [
+            "完善材料",
+            "主动争取"
+          ],
+          "timing": "中期"
+        },
+        "规划": {
+          "situation": "规划较清晰，执行力较强",
+          "reasons": [
+            "目标明确"
+          ],
+          "advice": [
+            "分阶段目标",
+            "保持节奏"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "59": {
+      "name": "涣",
+      "overall_tendency": "平",
+      "study_rating": 3,
+      "key_points": [
+        "学习状态平稳，仍需持续投入",
+        "方法可用但仍需优化",
+        "进度可控，避免拖延",
+        "注意复盘与调整"
+      ],
+      "scenario_specific": {
+        "考试": {
+          "situation": "发挥中等，结果取决于准备",
+          "reasons": [
+            "基础尚可"
+          ],
+          "advice": [
+            "补强薄弱点",
+            "稳住节奏"
+          ],
+          "timing": "中期"
+        },
+        "竞赛": {
+          "situation": "成绩有波动",
+          "reasons": [
+            "策略待优化"
+          ],
+          "advice": [
+            "优化训练节奏",
+            "复盘错题"
+          ],
+          "timing": "中期"
+        },
+        "深造": {
+          "situation": "机会一般",
+          "reasons": [
+            "条件尚可"
+          ],
+          "advice": [
+            "完善背景",
+            "提升核心能力"
+          ],
+          "timing": "中期"
+        },
+        "规划": {
+          "situation": "计划可行但仍需坚持",
+          "reasons": [
+            "执行力一般"
+          ],
+          "advice": [
+            "拆解任务",
+            "定期复盘"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "60": {
+      "name": "节",
+      "overall_tendency": "平",
+      "study_rating": 3,
+      "key_points": [
+        "学习状态平稳，仍需持续投入",
+        "方法可用但仍需优化",
+        "进度可控，避免拖延",
+        "注意复盘与调整"
+      ],
+      "scenario_specific": {
+        "考试": {
+          "situation": "发挥中等，结果取决于准备",
+          "reasons": [
+            "基础尚可"
+          ],
+          "advice": [
+            "补强薄弱点",
+            "稳住节奏"
+          ],
+          "timing": "中期"
+        },
+        "竞赛": {
+          "situation": "成绩有波动",
+          "reasons": [
+            "策略待优化"
+          ],
+          "advice": [
+            "优化训练节奏",
+            "复盘错题"
+          ],
+          "timing": "中期"
+        },
+        "深造": {
+          "situation": "机会一般",
+          "reasons": [
+            "条件尚可"
+          ],
+          "advice": [
+            "完善背景",
+            "提升核心能力"
+          ],
+          "timing": "中期"
+        },
+        "规划": {
+          "situation": "计划可行但仍需坚持",
+          "reasons": [
+            "执行力一般"
+          ],
+          "advice": [
+            "拆解任务",
+            "定期复盘"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "61": {
+      "name": "中孚",
+      "overall_tendency": "吉",
+      "study_rating": 4,
+      "key_points": [
+        "学习状态较好，理解力提升",
+        "方法较稳，适合冲刺关键节点",
+        "效率稳定，适合考试/竞赛安排",
+        "注意保持节奏，避免自满"
+      ],
+      "scenario_specific": {
+        "考试": {
+          "situation": "应试把握偏大，发挥较稳",
+          "reasons": [
+            "准备充分",
+            "心态稳定"
+          ],
+          "advice": [
+            "按计划复习",
+            "重点突破薄弱点"
+          ],
+          "timing": "近期"
+        },
+        "竞赛": {
+          "situation": "竞争力较强，有机会取得较好成绩",
+          "reasons": [
+            "状态好",
+            "方法有效"
+          ],
+          "advice": [
+            "加强真题训练",
+            "注意细节"
+          ],
+          "timing": "近期"
+        },
+        "深造": {
+          "situation": "申请/深造机会较好",
+          "reasons": [
+            "能力突出",
+            "时机成熟"
+          ],
+          "advice": [
+            "完善材料",
+            "主动争取"
+          ],
+          "timing": "中期"
+        },
+        "规划": {
+          "situation": "规划较清晰，执行力较强",
+          "reasons": [
+            "目标明确"
+          ],
+          "advice": [
+            "分阶段目标",
+            "保持节奏"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "62": {
+      "name": "小过",
+      "overall_tendency": "平",
+      "study_rating": 3,
+      "key_points": [
+        "学习状态平稳，仍需持续投入",
+        "方法可用但仍需优化",
+        "进度可控，避免拖延",
+        "注意复盘与调整"
+      ],
+      "scenario_specific": {
+        "考试": {
+          "situation": "发挥中等，结果取决于准备",
+          "reasons": [
+            "基础尚可"
+          ],
+          "advice": [
+            "补强薄弱点",
+            "稳住节奏"
+          ],
+          "timing": "中期"
+        },
+        "竞赛": {
+          "situation": "成绩有波动",
+          "reasons": [
+            "策略待优化"
+          ],
+          "advice": [
+            "优化训练节奏",
+            "复盘错题"
+          ],
+          "timing": "中期"
+        },
+        "深造": {
+          "situation": "机会一般",
+          "reasons": [
+            "条件尚可"
+          ],
+          "advice": [
+            "完善背景",
+            "提升核心能力"
+          ],
+          "timing": "中期"
+        },
+        "规划": {
+          "situation": "计划可行但仍需坚持",
+          "reasons": [
+            "执行力一般"
+          ],
+          "advice": [
+            "拆解任务",
+            "定期复盘"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "63": {
+      "name": "既济",
+      "overall_tendency": "吉",
+      "study_rating": 4,
+      "key_points": [
+        "学习状态较好，理解力提升",
+        "方法较稳，适合冲刺关键节点",
+        "效率稳定，适合考试/竞赛安排",
+        "注意保持节奏，避免自满"
+      ],
+      "scenario_specific": {
+        "考试": {
+          "situation": "应试把握偏大，发挥较稳",
+          "reasons": [
+            "准备充分",
+            "心态稳定"
+          ],
+          "advice": [
+            "按计划复习",
+            "重点突破薄弱点"
+          ],
+          "timing": "近期"
+        },
+        "竞赛": {
+          "situation": "竞争力较强，有机会取得较好成绩",
+          "reasons": [
+            "状态好",
+            "方法有效"
+          ],
+          "advice": [
+            "加强真题训练",
+            "注意细节"
+          ],
+          "timing": "近期"
+        },
+        "深造": {
+          "situation": "申请/深造机会较好",
+          "reasons": [
+            "能力突出",
+            "时机成熟"
+          ],
+          "advice": [
+            "完善材料",
+            "主动争取"
+          ],
+          "timing": "中期"
+        },
+        "规划": {
+          "situation": "规划较清晰，执行力较强",
+          "reasons": [
+            "目标明确"
+          ],
+          "advice": [
+            "分阶段目标",
+            "保持节奏"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "64": {
+      "name": "未济",
+      "overall_tendency": "平",
+      "study_rating": 3,
+      "key_points": [
+        "学习状态平稳，仍需持续投入",
+        "方法可用但仍需优化",
+        "进度可控，避免拖延",
+        "注意复盘与调整"
+      ],
+      "scenario_specific": {
+        "考试": {
+          "situation": "发挥中等，结果取决于准备",
+          "reasons": [
+            "基础尚可"
+          ],
+          "advice": [
+            "补强薄弱点",
+            "稳住节奏"
+          ],
+          "timing": "中期"
+        },
+        "竞赛": {
+          "situation": "成绩有波动",
+          "reasons": [
+            "策略待优化"
+          ],
+          "advice": [
+            "优化训练节奏",
+            "复盘错题"
+          ],
+          "timing": "中期"
+        },
+        "深造": {
+          "situation": "机会一般",
+          "reasons": [
+            "条件尚可"
+          ],
+          "advice": [
+            "完善背景",
+            "提升核心能力"
+          ],
+          "timing": "中期"
+        },
+        "规划": {
+          "situation": "计划可行但仍需坚持",
+          "reasons": [
+            "执行力一般"
+          ],
+          "advice": [
+            "拆解任务",
+            "定期复盘"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    }
+  },
+  "notes": [
+    "所有卦象数据需包含 source_ref"
+  ]
+}

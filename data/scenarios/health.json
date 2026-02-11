@@ -1,0 +1,3771 @@
+{
+  "version": "1.0",
+  "scenario_info": {
+    "name": "健康",
+    "code": "health",
+    "description": "身体状态、心理状态与恢复趋势",
+    "sub_scenarios": [
+      "身体",
+      "心理",
+      "慢性",
+      "恢复"
+    ],
+    "requires_disclaimer": true
+  },
+  "analysis_framework": {
+    "dimensions": [
+      "整体状态",
+      "风险提示",
+      "恢复趋势",
+      "生活方式",
+      "注意事项"
+    ],
+    "focus": "以谨慎提示为主，强调就医与科学建议",
+    "key_aspects": [
+      "风险等级",
+      "趋势判断",
+      "生活方式建议",
+      "提醒就医"
+    ]
+  },
+  "output_structure": {
+    "template_id": "health_standard",
+    "sections": [
+      {
+        "id": "overall_health",
+        "title": "健康总览",
+        "type": "summary",
+        "required": true,
+        "includes": [
+          "状态评级",
+          "风险提示",
+          "总体建议"
+        ]
+      },
+      {
+        "id": "hexagram_analysis",
+        "title": "卦象解析",
+        "type": "explanation",
+        "required": true,
+        "includes": [
+          "卦象含义",
+          "五行关系",
+          "关键词解读"
+        ]
+      },
+      {
+        "id": "health_details",
+        "title": "健康详解",
+        "type": "detailed_analysis",
+        "required": true,
+        "sub_sections": [
+          {
+            "id": "status",
+            "title": "当前状态",
+            "description": "整体状态与主要问题"
+          },
+          {
+            "id": "risk",
+            "title": "风险提示",
+            "description": "需要关注的风险"
+          },
+          {
+            "id": "recovery",
+            "title": "恢复趋势",
+            "description": "恢复与调养建议"
+          },
+          {
+            "id": "lifestyle",
+            "title": "生活方式",
+            "description": "作息与习惯建议"
+          }
+        ]
+      },
+      {
+        "id": "action_guide",
+        "title": "行动建议",
+        "type": "advice",
+        "required": true,
+        "format": {
+          "do": "宜做事项（3-5条）",
+          "dont": "忌做事项（3-5条）"
+        }
+      }
+    ]
+  },
+  "prompt_template": {
+    "system_role": "你是一位谨慎的健康分析师，强调科学就医与风险提示。",
+    "analysis_focus": [
+      "提示风险，不替代医疗诊断",
+      "建议偏生活方式调整",
+      "强调就医与检查",
+      "语言严谨、克制"
+    ],
+    "output_requirements": [
+      "风险提示明确",
+      "避免医疗承诺",
+      "建议可执行"
+    ]
+  },
+  "hexagrams": {
+    "1": {
+      "name": "乾",
+      "overall_tendency": "吉",
+      "health_rating": 4,
+      "key_points": [
+        "精力充沛",
+        "体能恢复快",
+        "适合规律运动",
+        "注意过劳"
+      ],
+      "scenario_specific": {
+        "身体": {
+          "situation": "身体状态良好",
+          "reasons": [
+            "精力充沛"
+          ],
+          "advice": [
+            "保持运动",
+            "避免过度劳累"
+          ],
+          "timing": "持续"
+        },
+        "心理": {
+          "situation": "心理状态积极",
+          "reasons": [
+            "自信"
+          ],
+          "advice": [
+            "保持平衡",
+            "注意休息"
+          ],
+          "timing": "持续"
+        },
+        "慢性": {
+          "situation": "慢性问题可控",
+          "reasons": [
+            "自律"
+          ],
+          "advice": [
+            "维持作息"
+          ],
+          "timing": "持续"
+        },
+        "恢复": {
+          "situation": "恢复速度快",
+          "reasons": [
+            "体能好"
+          ],
+          "advice": [
+            "循序渐进"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "2": {
+      "name": "坤",
+      "overall_tendency": "吉",
+      "health_rating": 4,
+      "key_points": [
+        "状态稳健",
+        "适合调养",
+        "重视睡眠与饮食",
+        "避免久坐"
+      ],
+      "scenario_specific": {
+        "身体": {
+          "situation": "身体状态平稳",
+          "reasons": [
+            "稳健"
+          ],
+          "advice": [
+            "保持规律作息"
+          ],
+          "timing": "持续"
+        },
+        "心理": {
+          "situation": "心理平和",
+          "reasons": [
+            "心态稳定"
+          ],
+          "advice": [
+            "保持平衡"
+          ],
+          "timing": "持续"
+        },
+        "慢性": {
+          "situation": "慢性状况稳定",
+          "reasons": [
+            "稳健管理"
+          ],
+          "advice": [
+            "持续管理"
+          ],
+          "timing": "长期"
+        },
+        "恢复": {
+          "situation": "恢复稳步",
+          "reasons": [
+            "节奏平稳"
+          ],
+          "advice": [
+            "循序渐进"
+          ],
+          "timing": "长期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "3": {
+      "name": "屯",
+      "overall_tendency": "不利",
+      "health_rating": 2,
+      "key_points": [
+        "恢复受阻",
+        "易疲劳",
+        "需降低强度",
+        "注意风险"
+      ],
+      "scenario_specific": {
+        "身体": {
+          "situation": "体能下降",
+          "reasons": [
+            "阻力"
+          ],
+          "advice": [
+            "降低运动强度",
+            "多休息"
+          ],
+          "timing": "短期"
+        },
+        "心理": {
+          "situation": "情绪低落",
+          "reasons": [
+            "压力"
+          ],
+          "advice": [
+            "减压",
+            "保持支持系统"
+          ],
+          "timing": "短期"
+        },
+        "慢性": {
+          "situation": "慢性问题易加重",
+          "reasons": [
+            "抵抗力低"
+          ],
+          "advice": [
+            "加强管理",
+            "必要时就医"
+          ],
+          "timing": "短期"
+        },
+        "恢复": {
+          "situation": "恢复缓慢",
+          "reasons": [
+            "精力不足"
+          ],
+          "advice": [
+            "循序渐进"
+          ],
+          "timing": "短期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "4": {
+      "name": "蒙",
+      "overall_tendency": "平",
+      "health_rating": 3,
+      "key_points": [
+        "需学习健康管理",
+        "规律作息重要",
+        "避免盲目尝试",
+        "重视检查"
+      ],
+      "scenario_specific": {
+        "身体": {
+          "situation": "状态一般",
+          "reasons": [
+            "管理不足"
+          ],
+          "advice": [
+            "建立健康习惯"
+          ],
+          "timing": "中期"
+        },
+        "心理": {
+          "situation": "情绪波动",
+          "reasons": [
+            "认知不足"
+          ],
+          "advice": [
+            "学习放松方法"
+          ],
+          "timing": "中期"
+        },
+        "慢性": {
+          "situation": "慢性问题需管理",
+          "reasons": [
+            "管理不足"
+          ],
+          "advice": [
+            "规律复查"
+          ],
+          "timing": "中期"
+        },
+        "恢复": {
+          "situation": "恢复一般",
+          "reasons": [
+            "节奏不稳"
+          ],
+          "advice": [
+            "规律作息"
+          ],
+          "timing": "中期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "5": {
+      "name": "需",
+      "overall_tendency": "平",
+      "health_rating": 3,
+      "key_points": [
+        "需要耐心调养",
+        "避免操之过急",
+        "重视恢复节奏",
+        "适合修复"
+      ],
+      "scenario_specific": {
+        "身体": {
+          "situation": "体力恢复中",
+          "reasons": [
+            "调养期"
+          ],
+          "advice": [
+            "耐心调养"
+          ],
+          "timing": "中期"
+        },
+        "心理": {
+          "situation": "情绪恢复中",
+          "reasons": [
+            "调养"
+          ],
+          "advice": [
+            "保持耐心"
+          ],
+          "timing": "中期"
+        },
+        "慢性": {
+          "situation": "慢性需长期管理",
+          "reasons": [
+            "恢复期"
+          ],
+          "advice": [
+            "按医嘱管理"
+          ],
+          "timing": "长期"
+        },
+        "恢复": {
+          "situation": "恢复期需要耐心",
+          "reasons": [
+            "节奏"
+          ],
+          "advice": [
+            "循序渐进"
+          ],
+          "timing": "中期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "6": {
+      "name": "讼",
+      "overall_tendency": "不利",
+      "health_rating": 2,
+      "key_points": [
+        "压力导致问题",
+        "需减压",
+        "避免冲突",
+        "优先休息"
+      ],
+      "scenario_specific": {
+        "身体": {
+          "situation": "压力引发不适",
+          "reasons": [
+            "紧张"
+          ],
+          "advice": [
+            "减少压力",
+            "注意休息"
+          ],
+          "timing": "短期"
+        },
+        "心理": {
+          "situation": "情绪冲突",
+          "reasons": [
+            "压力"
+          ],
+          "advice": [
+            "寻求支持"
+          ],
+          "timing": "短期"
+        },
+        "慢性": {
+          "situation": "慢性问题易受影响",
+          "reasons": [
+            "压力"
+          ],
+          "advice": [
+            "稳定作息"
+          ],
+          "timing": "短期"
+        },
+        "恢复": {
+          "situation": "恢复受阻",
+          "reasons": [
+            "压力"
+          ],
+          "advice": [
+            "减压优先"
+          ],
+          "timing": "短期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "7": {
+      "name": "师",
+      "overall_tendency": "吉",
+      "health_rating": 4,
+      "key_points": [
+        "纪律与规律有利健康",
+        "适合制定计划",
+        "稳步改善",
+        "重视执行"
+      ],
+      "scenario_specific": {
+        "身体": {
+          "situation": "健康改善可期",
+          "reasons": [
+            "规律"
+          ],
+          "advice": [
+            "制定运动计划"
+          ],
+          "timing": "中期"
+        },
+        "心理": {
+          "situation": "情绪稳定",
+          "reasons": [
+            "纪律"
+          ],
+          "advice": [
+            "保持规律"
+          ],
+          "timing": "中期"
+        },
+        "慢性": {
+          "situation": "慢性可控制",
+          "reasons": [
+            "管理"
+          ],
+          "advice": [
+            "持续执行"
+          ],
+          "timing": "长期"
+        },
+        "恢复": {
+          "situation": "恢复良好",
+          "reasons": [
+            "执行力"
+          ],
+          "advice": [
+            "坚持计划"
+          ],
+          "timing": "中期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "8": {
+      "name": "比",
+      "overall_tendency": "吉",
+      "health_rating": 4,
+      "key_points": [
+        "他人支持有利恢复",
+        "适合团队或陪伴",
+        "情绪改善",
+        "互助有效"
+      ],
+      "scenario_specific": {
+        "身体": {
+          "situation": "借助支持改善",
+          "reasons": [
+            "协助"
+          ],
+          "advice": [
+            "寻求陪伴"
+          ],
+          "timing": "中期"
+        },
+        "心理": {
+          "situation": "情绪改善",
+          "reasons": [
+            "支持"
+          ],
+          "advice": [
+            "与人交流"
+          ],
+          "timing": "中期"
+        },
+        "慢性": {
+          "situation": "管理更有效",
+          "reasons": [
+            "支持系统"
+          ],
+          "advice": [
+            "加入支持群体"
+          ],
+          "timing": "长期"
+        },
+        "恢复": {
+          "situation": "恢复更顺",
+          "reasons": [
+            "协助"
+          ],
+          "advice": [
+            "持续配合"
+          ],
+          "timing": "中期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "9": {
+      "name": "小畜",
+      "overall_tendency": "平",
+      "health_rating": 3,
+      "key_points": [
+        "小步改善",
+        "稳步调养",
+        "重视习惯",
+        "不宜激进"
+      ],
+      "scenario_specific": {
+        "身体": {
+          "situation": "体能逐步改善",
+          "reasons": [
+            "小步积累"
+          ],
+          "advice": [
+            "小步提升"
+          ],
+          "timing": "中期"
+        },
+        "心理": {
+          "situation": "情绪逐步稳定",
+          "reasons": [
+            "积累"
+          ],
+          "advice": [
+            "保持节奏"
+          ],
+          "timing": "中期"
+        },
+        "慢性": {
+          "situation": "慢性可逐步缓解",
+          "reasons": [
+            "稳步管理"
+          ],
+          "advice": [
+            "保持规律"
+          ],
+          "timing": "长期"
+        },
+        "恢复": {
+          "situation": "恢复逐步推进",
+          "reasons": [
+            "节奏"
+          ],
+          "advice": [
+            "循序渐进"
+          ],
+          "timing": "中期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "10": {
+      "name": "履",
+      "overall_tendency": "平",
+      "health_rating": 3,
+      "key_points": [
+        "谨慎自律",
+        "避免过度",
+        "遵循规律",
+        "稳中求进"
+      ],
+      "scenario_specific": {
+        "身体": {
+          "situation": "体能稳定",
+          "reasons": [
+            "自律"
+          ],
+          "advice": [
+            "保持规律"
+          ],
+          "timing": "稳定"
+        },
+        "心理": {
+          "situation": "情绪可控",
+          "reasons": [
+            "自律"
+          ],
+          "advice": [
+            "保持边界"
+          ],
+          "timing": "稳定"
+        },
+        "慢性": {
+          "situation": "慢性稳定",
+          "reasons": [
+            "规律"
+          ],
+          "advice": [
+            "持续管理"
+          ],
+          "timing": "长期"
+        },
+        "恢复": {
+          "situation": "恢复稳定",
+          "reasons": [
+            "规律"
+          ],
+          "advice": [
+            "循序渐进"
+          ],
+          "timing": "稳定"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "11": {
+      "name": "泰",
+      "overall_tendency": "吉",
+      "health_rating": 4,
+      "key_points": [
+        "状态通畅",
+        "恢复良好",
+        "适合提升体能",
+        "注意节奏"
+      ],
+      "scenario_specific": {
+        "身体": {
+          "situation": "体能提升",
+          "reasons": [
+            "状态向好"
+          ],
+          "advice": [
+            "保持运动"
+          ],
+          "timing": "近期"
+        },
+        "心理": {
+          "situation": "心态积极",
+          "reasons": [
+            "状态好"
+          ],
+          "advice": [
+            "保持节奏"
+          ],
+          "timing": "近期"
+        },
+        "慢性": {
+          "situation": "慢性稳定",
+          "reasons": [
+            "状态好"
+          ],
+          "advice": [
+            "维持管理"
+          ],
+          "timing": "长期"
+        },
+        "恢复": {
+          "situation": "恢复顺利",
+          "reasons": [
+            "通畅"
+          ],
+          "advice": [
+            "适度提升"
+          ],
+          "timing": "近期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "12": {
+      "name": "否",
+      "overall_tendency": "不利",
+      "health_rating": 2,
+      "key_points": [
+        "状态受阻",
+        "易疲劳",
+        "需减少负担",
+        "谨慎调养"
+      ],
+      "scenario_specific": {
+        "身体": {
+          "situation": "体能下降",
+          "reasons": [
+            "受阻"
+          ],
+          "advice": [
+            "减少负担"
+          ],
+          "timing": "短期"
+        },
+        "心理": {
+          "situation": "情绪低落",
+          "reasons": [
+            "压力"
+          ],
+          "advice": [
+            "寻求支持"
+          ],
+          "timing": "短期"
+        },
+        "慢性": {
+          "situation": "慢性易波动",
+          "reasons": [
+            "受阻"
+          ],
+          "advice": [
+            "加强管理"
+          ],
+          "timing": "短期"
+        },
+        "恢复": {
+          "situation": "恢复受阻",
+          "reasons": [
+            "状态不佳"
+          ],
+          "advice": [
+            "谨慎调养"
+          ],
+          "timing": "短期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "13": {
+      "name": "同人",
+      "overall_tendency": "吉",
+      "health_rating": 4,
+      "key_points": [
+        "社交支持有利恢复",
+        "团队氛围改善",
+        "互助有效",
+        "情绪提升"
+      ],
+      "scenario_specific": {
+        "身体": {
+          "situation": "运动与康复有支持",
+          "reasons": [
+            "互助"
+          ],
+          "advice": [
+            "加入支持群体"
+          ],
+          "timing": "近期"
+        },
+        "心理": {
+          "situation": "情绪改善",
+          "reasons": [
+            "支持"
+          ],
+          "advice": [
+            "多交流"
+          ],
+          "timing": "近期"
+        },
+        "慢性": {
+          "situation": "慢性管理更好",
+          "reasons": [
+            "互助"
+          ],
+          "advice": [
+            "规律随访"
+          ],
+          "timing": "长期"
+        },
+        "恢复": {
+          "situation": "恢复更顺利",
+          "reasons": [
+            "支持"
+          ],
+          "advice": [
+            "持续配合"
+          ],
+          "timing": "中期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "14": {
+      "name": "大有",
+      "overall_tendency": "吉",
+      "health_rating": 4,
+      "key_points": [
+        "状态佳",
+        "恢复快",
+        "适合提升体能",
+        "注意过度"
+      ],
+      "scenario_specific": {
+        "身体": {
+          "situation": "体能充沛",
+          "reasons": [
+            "状态佳"
+          ],
+          "advice": [
+            "适度强化"
+          ],
+          "timing": "近期"
+        },
+        "心理": {
+          "situation": "心理积极",
+          "reasons": [
+            "状态佳"
+          ],
+          "advice": [
+            "保持平衡"
+          ],
+          "timing": "近期"
+        },
+        "慢性": {
+          "situation": "慢性稳定",
+          "reasons": [
+            "状态佳"
+          ],
+          "advice": [
+            "持续管理"
+          ],
+          "timing": "长期"
+        },
+        "恢复": {
+          "situation": "恢复快",
+          "reasons": [
+            "体能强"
+          ],
+          "advice": [
+            "循序渐进"
+          ],
+          "timing": "近期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "15": {
+      "name": "谦",
+      "overall_tendency": "吉",
+      "health_rating": 4,
+      "key_points": [
+        "稳健调养",
+        "节奏适中",
+        "重视休息",
+        "避免过劳"
+      ],
+      "scenario_specific": {
+        "身体": {
+          "situation": "状态稳健",
+          "reasons": [
+            "节奏好"
+          ],
+          "advice": [
+            "保持节奏"
+          ],
+          "timing": "长期"
+        },
+        "心理": {
+          "situation": "心态稳定",
+          "reasons": [
+            "克制"
+          ],
+          "advice": [
+            "保持平衡"
+          ],
+          "timing": "长期"
+        },
+        "慢性": {
+          "situation": "慢性稳定",
+          "reasons": [
+            "稳健"
+          ],
+          "advice": [
+            "持续管理"
+          ],
+          "timing": "长期"
+        },
+        "恢复": {
+          "situation": "恢复稳步",
+          "reasons": [
+            "节奏好"
+          ],
+          "advice": [
+            "循序渐进"
+          ],
+          "timing": "长期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "16": {
+      "name": "豫",
+      "overall_tendency": "吉",
+      "health_rating": 4,
+      "key_points": [
+        "情绪向好",
+        "恢复积极",
+        "适合适度运动",
+        "避免兴奋过度"
+      ],
+      "scenario_specific": {
+        "身体": {
+          "situation": "状态向好",
+          "reasons": [
+            "情绪向好"
+          ],
+          "advice": [
+            "适度运动"
+          ],
+          "timing": "近期"
+        },
+        "心理": {
+          "situation": "情绪积极",
+          "reasons": [
+            "气氛好"
+          ],
+          "advice": [
+            "保持平衡"
+          ],
+          "timing": "近期"
+        },
+        "慢性": {
+          "situation": "慢性稳定",
+          "reasons": [
+            "心态好"
+          ],
+          "advice": [
+            "持续管理"
+          ],
+          "timing": "长期"
+        },
+        "恢复": {
+          "situation": "恢复顺利",
+          "reasons": [
+            "状态改善"
+          ],
+          "advice": [
+            "循序渐进"
+          ],
+          "timing": "近期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "17": {
+      "name": "随",
+      "overall_tendency": "吉",
+      "health_rating": 4,
+      "key_points": [
+        "顺势调养",
+        "心态积极",
+        "适合调整节奏",
+        "避免过度"
+      ],
+      "scenario_specific": {
+        "身体": {
+          "situation": "状态向好",
+          "reasons": [
+            "顺势"
+          ],
+          "advice": [
+            "保持节奏"
+          ],
+          "timing": "近期"
+        },
+        "心理": {
+          "situation": "情绪改善",
+          "reasons": [
+            "顺势"
+          ],
+          "advice": [
+            "保持平衡"
+          ],
+          "timing": "近期"
+        },
+        "慢性": {
+          "situation": "慢性稳定",
+          "reasons": [
+            "顺势"
+          ],
+          "advice": [
+            "持续管理"
+          ],
+          "timing": "长期"
+        },
+        "恢复": {
+          "situation": "恢复顺利",
+          "reasons": [
+            "顺势"
+          ],
+          "advice": [
+            "循序渐进"
+          ],
+          "timing": "近期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "18": {
+      "name": "蛊",
+      "overall_tendency": "平",
+      "health_rating": 3,
+      "key_points": [
+        "需修复旧问题",
+        "调整生活方式",
+        "先治本后改善",
+        "避免拖延"
+      ],
+      "scenario_specific": {
+        "身体": {
+          "situation": "旧问题影响",
+          "reasons": [
+            "积弊"
+          ],
+          "advice": [
+            "修复习惯"
+          ],
+          "timing": "中期"
+        },
+        "心理": {
+          "situation": "情绪需修复",
+          "reasons": [
+            "积压"
+          ],
+          "advice": [
+            "减压"
+          ],
+          "timing": "中期"
+        },
+        "慢性": {
+          "situation": "慢性需整顿",
+          "reasons": [
+            "管理不足"
+          ],
+          "advice": [
+            "加强管理"
+          ],
+          "timing": "长期"
+        },
+        "恢复": {
+          "situation": "恢复需修复基础",
+          "reasons": [
+            "根基"
+          ],
+          "advice": [
+            "循序渐进"
+          ],
+          "timing": "中期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "19": {
+      "name": "临",
+      "overall_tendency": "吉",
+      "health_rating": 4,
+      "key_points": [
+        "状态上升",
+        "恢复良好",
+        "适合增强体能",
+        "注意节奏"
+      ],
+      "scenario_specific": {
+        "身体": {
+          "situation": "体能提升",
+          "reasons": [
+            "上升期"
+          ],
+          "advice": [
+            "适度锻炼"
+          ],
+          "timing": "近期"
+        },
+        "心理": {
+          "situation": "心态向好",
+          "reasons": [
+            "状态改善"
+          ],
+          "advice": [
+            "保持积极"
+          ],
+          "timing": "近期"
+        },
+        "慢性": {
+          "situation": "慢性稳定",
+          "reasons": [
+            "上升期"
+          ],
+          "advice": [
+            "持续管理"
+          ],
+          "timing": "长期"
+        },
+        "恢复": {
+          "situation": "恢复加快",
+          "reasons": [
+            "状态改善"
+          ],
+          "advice": [
+            "循序渐进"
+          ],
+          "timing": "近期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "20": {
+      "name": "观",
+      "overall_tendency": "平",
+      "health_rating": 3,
+      "key_points": [
+        "适合观察与复盘",
+        "先了解身体信号",
+        "不宜贸然尝试",
+        "谨慎调整"
+      ],
+      "scenario_specific": {
+        "身体": {
+          "situation": "需观察身体信号",
+          "reasons": [
+            "不明确"
+          ],
+          "advice": [
+            "做好记录"
+          ],
+          "timing": "短期"
+        },
+        "心理": {
+          "situation": "情绪需观察",
+          "reasons": [
+            "波动"
+          ],
+          "advice": [
+            "自我觉察"
+          ],
+          "timing": "短期"
+        },
+        "慢性": {
+          "situation": "慢性需复盘",
+          "reasons": [
+            "反复"
+          ],
+          "advice": [
+            "定期复查"
+          ],
+          "timing": "短期"
+        },
+        "恢复": {
+          "situation": "恢复需观察",
+          "reasons": [
+            "节奏不稳"
+          ],
+          "advice": [
+            "谨慎调整"
+          ],
+          "timing": "短期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "21": {
+      "name": "噬嗑",
+      "overall_tendency": "平",
+      "health_rating": 3,
+      "key_points": [
+        "需果断处理问题",
+        "规律与纪律重要",
+        "避免拖延",
+        "加强执行"
+      ],
+      "scenario_specific": {
+        "身体": {
+          "situation": "问题需及时处理",
+          "reasons": [
+            "拖延"
+          ],
+          "advice": [
+            "及时干预"
+          ],
+          "timing": "短期"
+        },
+        "心理": {
+          "situation": "情绪问题需处理",
+          "reasons": [
+            "压力"
+          ],
+          "advice": [
+            "及时沟通"
+          ],
+          "timing": "短期"
+        },
+        "慢性": {
+          "situation": "慢性需执行管理",
+          "reasons": [
+            "纪律"
+          ],
+          "advice": [
+            "按计划管理"
+          ],
+          "timing": "长期"
+        },
+        "恢复": {
+          "situation": "恢复需执行计划",
+          "reasons": [
+            "纪律"
+          ],
+          "advice": [
+            "坚持计划"
+          ],
+          "timing": "中期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "22": {
+      "name": "贲",
+      "overall_tendency": "平",
+      "health_rating": 3,
+      "key_points": [
+        "外在改善需配合内在",
+        "注意形象管理",
+        "不可舍本逐末",
+        "以稳为主"
+      ],
+      "scenario_specific": {
+        "身体": {
+          "situation": "体态改善需长期",
+          "reasons": [
+            "外在"
+          ],
+          "advice": [
+            "循序渐进"
+          ],
+          "timing": "中期"
+        },
+        "心理": {
+          "situation": "情绪需内在支撑",
+          "reasons": [
+            "内在"
+          ],
+          "advice": [
+            "关注内在"
+          ],
+          "timing": "中期"
+        },
+        "慢性": {
+          "situation": "慢性管理需内外结合",
+          "reasons": [
+            "内在"
+          ],
+          "advice": [
+            "综合管理"
+          ],
+          "timing": "长期"
+        },
+        "恢复": {
+          "situation": "恢复需循序渐进",
+          "reasons": [
+            "稳健"
+          ],
+          "advice": [
+            "稳步"
+          ],
+          "timing": "中期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "23": {
+      "name": "剥",
+      "overall_tendency": "不利",
+      "health_rating": 2,
+      "key_points": [
+        "状态下降",
+        "抵抗力不足",
+        "需减少负担",
+        "注意风险"
+      ],
+      "scenario_specific": {
+        "身体": {
+          "situation": "体能下降",
+          "reasons": [
+            "消耗"
+          ],
+          "advice": [
+            "减少负担"
+          ],
+          "timing": "短期"
+        },
+        "心理": {
+          "situation": "情绪低落",
+          "reasons": [
+            "压力"
+          ],
+          "advice": [
+            "寻求支持"
+          ],
+          "timing": "短期"
+        },
+        "慢性": {
+          "situation": "慢性问题易加重",
+          "reasons": [
+            "抵抗力弱"
+          ],
+          "advice": [
+            "严格管理"
+          ],
+          "timing": "短期"
+        },
+        "恢复": {
+          "situation": "恢复受阻",
+          "reasons": [
+            "状态差"
+          ],
+          "advice": [
+            "谨慎调养"
+          ],
+          "timing": "短期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "24": {
+      "name": "复",
+      "overall_tendency": "吉",
+      "health_rating": 4,
+      "key_points": [
+        "恢复回暖",
+        "适合重启调养",
+        "循序渐进",
+        "把握机会"
+      ],
+      "scenario_specific": {
+        "身体": {
+          "situation": "体能回升",
+          "reasons": [
+            "回暖"
+          ],
+          "advice": [
+            "稳步恢复"
+          ],
+          "timing": "近期"
+        },
+        "心理": {
+          "situation": "情绪改善",
+          "reasons": [
+            "回暖"
+          ],
+          "advice": [
+            "保持积极"
+          ],
+          "timing": "近期"
+        },
+        "慢性": {
+          "situation": "慢性稳定",
+          "reasons": [
+            "回暖"
+          ],
+          "advice": [
+            "持续管理"
+          ],
+          "timing": "长期"
+        },
+        "恢复": {
+          "situation": "恢复顺利",
+          "reasons": [
+            "回暖"
+          ],
+          "advice": [
+            "循序渐进"
+          ],
+          "timing": "近期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "25": {
+      "name": "无妄",
+      "overall_tendency": "吉",
+      "health_rating": 4,
+      "key_points": [
+        "规律生活有益",
+        "不宜冒险尝试",
+        "稳健调养",
+        "保持克制"
+      ],
+      "scenario_specific": {
+        "身体": {
+          "situation": "状态稳定",
+          "reasons": [
+            "规律"
+          ],
+          "advice": [
+            "保持规律"
+          ],
+          "timing": "长期"
+        },
+        "心理": {
+          "situation": "情绪平稳",
+          "reasons": [
+            "克制"
+          ],
+          "advice": [
+            "保持平衡"
+          ],
+          "timing": "长期"
+        },
+        "慢性": {
+          "situation": "慢性稳定",
+          "reasons": [
+            "规律"
+          ],
+          "advice": [
+            "持续管理"
+          ],
+          "timing": "长期"
+        },
+        "恢复": {
+          "situation": "恢复良好",
+          "reasons": [
+            "规律"
+          ],
+          "advice": [
+            "保持节奏"
+          ],
+          "timing": "长期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "26": {
+      "name": "大畜",
+      "overall_tendency": "平",
+      "health_rating": 3,
+      "key_points": [
+        "需储备体能",
+        "适合慢慢积累",
+        "不宜急进",
+        "重视基础"
+      ],
+      "scenario_specific": {
+        "身体": {
+          "situation": "体能需积累",
+          "reasons": [
+            "基础"
+          ],
+          "advice": [
+            "循序渐进"
+          ],
+          "timing": "中期"
+        },
+        "心理": {
+          "situation": "心态需稳定",
+          "reasons": [
+            "基础"
+          ],
+          "advice": [
+            "保持节奏"
+          ],
+          "timing": "中期"
+        },
+        "慢性": {
+          "situation": "慢性需长期管理",
+          "reasons": [
+            "积累"
+          ],
+          "advice": [
+            "持续管理"
+          ],
+          "timing": "长期"
+        },
+        "恢复": {
+          "situation": "恢复需积累",
+          "reasons": [
+            "基础"
+          ],
+          "advice": [
+            "循序渐进"
+          ],
+          "timing": "中期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "27": {
+      "name": "颐",
+      "overall_tendency": "平",
+      "health_rating": 3,
+      "key_points": [
+        "重视基础调养",
+        "饮食作息重要",
+        "稳步改善",
+        "避免分心"
+      ],
+      "scenario_specific": {
+        "身体": {
+          "situation": "需注意基础调养",
+          "reasons": [
+            "基础"
+          ],
+          "advice": [
+            "规律作息"
+          ],
+          "timing": "长期"
+        },
+        "心理": {
+          "situation": "心理需滋养",
+          "reasons": [
+            "基础"
+          ],
+          "advice": [
+            "减少压力"
+          ],
+          "timing": "长期"
+        },
+        "慢性": {
+          "situation": "慢性需基础管理",
+          "reasons": [
+            "基础"
+          ],
+          "advice": [
+            "持续管理"
+          ],
+          "timing": "长期"
+        },
+        "恢复": {
+          "situation": "恢复需稳定作息",
+          "reasons": [
+            "基础"
+          ],
+          "advice": [
+            "保持规律"
+          ],
+          "timing": "长期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "28": {
+      "name": "大过",
+      "overall_tendency": "平",
+      "health_rating": 3,
+      "key_points": [
+        "负担过重",
+        "需减压",
+        "注意过劳",
+        "恢复平衡"
+      ],
+      "scenario_specific": {
+        "身体": {
+          "situation": "体能负担大",
+          "reasons": [
+            "过劳"
+          ],
+          "advice": [
+            "减少强度"
+          ],
+          "timing": "短期"
+        },
+        "心理": {
+          "situation": "心理压力大",
+          "reasons": [
+            "负担"
+          ],
+          "advice": [
+            "减压"
+          ],
+          "timing": "短期"
+        },
+        "慢性": {
+          "situation": "慢性易受影响",
+          "reasons": [
+            "负担"
+          ],
+          "advice": [
+            "严格管理"
+          ],
+          "timing": "短期"
+        },
+        "恢复": {
+          "situation": "恢复缓慢",
+          "reasons": [
+            "过劳"
+          ],
+          "advice": [
+            "降低负荷"
+          ],
+          "timing": "短期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "29": {
+      "name": "坎",
+      "overall_tendency": "不利",
+      "health_rating": 2,
+      "key_points": [
+        "反复波动",
+        "风险较高",
+        "需谨慎",
+        "优先安全"
+      ],
+      "scenario_specific": {
+        "身体": {
+          "situation": "状态反复",
+          "reasons": [
+            "波动"
+          ],
+          "advice": [
+            "谨慎管理"
+          ],
+          "timing": "短期"
+        },
+        "心理": {
+          "situation": "情绪波动",
+          "reasons": [
+            "压力"
+          ],
+          "advice": [
+            "寻求支持"
+          ],
+          "timing": "短期"
+        },
+        "慢性": {
+          "situation": "慢性波动",
+          "reasons": [
+            "不稳定"
+          ],
+          "advice": [
+            "定期复查"
+          ],
+          "timing": "短期"
+        },
+        "恢复": {
+          "situation": "恢复受阻",
+          "reasons": [
+            "波动"
+          ],
+          "advice": [
+            "谨慎调养"
+          ],
+          "timing": "短期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "30": {
+      "name": "离",
+      "overall_tendency": "吉",
+      "health_rating": 4,
+      "key_points": [
+        "状态明朗",
+        "适合改善",
+        "注意持续性",
+        "避免浮躁"
+      ],
+      "scenario_specific": {
+        "身体": {
+          "situation": "状态改善",
+          "reasons": [
+            "明朗"
+          ],
+          "advice": [
+            "保持节奏"
+          ],
+          "timing": "近期"
+        },
+        "心理": {
+          "situation": "心理稳定",
+          "reasons": [
+            "明朗"
+          ],
+          "advice": [
+            "保持积极"
+          ],
+          "timing": "近期"
+        },
+        "慢性": {
+          "situation": "慢性稳定",
+          "reasons": [
+            "明朗"
+          ],
+          "advice": [
+            "持续管理"
+          ],
+          "timing": "长期"
+        },
+        "恢复": {
+          "situation": "恢复良好",
+          "reasons": [
+            "明朗"
+          ],
+          "advice": [
+            "循序渐进"
+          ],
+          "timing": "近期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "31": {
+      "name": "咸",
+      "overall_tendency": "吉",
+      "health_rating": 4,
+      "key_points": [
+        "互动与支持有利",
+        "心态改善",
+        "适合群体支持",
+        "避免孤立"
+      ],
+      "scenario_specific": {
+        "身体": {
+          "situation": "支持促进恢复",
+          "reasons": [
+            "支持"
+          ],
+          "advice": [
+            "寻求陪伴"
+          ],
+          "timing": "近期"
+        },
+        "心理": {
+          "situation": "情绪改善",
+          "reasons": [
+            "互动"
+          ],
+          "advice": [
+            "多交流"
+          ],
+          "timing": "近期"
+        },
+        "慢性": {
+          "situation": "慢性管理更好",
+          "reasons": [
+            "支持"
+          ],
+          "advice": [
+            "加入支持群"
+          ],
+          "timing": "长期"
+        },
+        "恢复": {
+          "situation": "恢复顺利",
+          "reasons": [
+            "支持"
+          ],
+          "advice": [
+            "持续配合"
+          ],
+          "timing": "中期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "32": {
+      "name": "恒",
+      "overall_tendency": "吉",
+      "health_rating": 4,
+      "key_points": [
+        "稳定持久",
+        "规律作息有益",
+        "长期调养",
+        "保持恒心"
+      ],
+      "scenario_specific": {
+        "身体": {
+          "situation": "状态稳定",
+          "reasons": [
+            "规律"
+          ],
+          "advice": [
+            "保持规律"
+          ],
+          "timing": "长期"
+        },
+        "心理": {
+          "situation": "心理稳定",
+          "reasons": [
+            "恒心"
+          ],
+          "advice": [
+            "保持恒心"
+          ],
+          "timing": "长期"
+        },
+        "慢性": {
+          "situation": "慢性稳定",
+          "reasons": [
+            "规律"
+          ],
+          "advice": [
+            "长期管理"
+          ],
+          "timing": "长期"
+        },
+        "恢复": {
+          "situation": "恢复持续",
+          "reasons": [
+            "规律"
+          ],
+          "advice": [
+            "保持节奏"
+          ],
+          "timing": "长期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "33": {
+      "name": "遯",
+      "overall_tendency": "平",
+      "health_rating": 3,
+      "key_points": [
+        "宜退守休养",
+        "避免过度",
+        "减少压力",
+        "等待转机"
+      ],
+      "scenario_specific": {
+        "身体": {
+          "situation": "体能需休养",
+          "reasons": [
+            "过劳"
+          ],
+          "advice": [
+            "减少负荷"
+          ],
+          "timing": "短期"
+        },
+        "心理": {
+          "situation": "情绪需退一步",
+          "reasons": [
+            "压力"
+          ],
+          "advice": [
+            "减少刺激"
+          ],
+          "timing": "短期"
+        },
+        "慢性": {
+          "situation": "慢性需稳住",
+          "reasons": [
+            "过度"
+          ],
+          "advice": [
+            "减少负担"
+          ],
+          "timing": "短期"
+        },
+        "恢复": {
+          "situation": "恢复需休养",
+          "reasons": [
+            "过劳"
+          ],
+          "advice": [
+            "休养为先"
+          ],
+          "timing": "短期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "34": {
+      "name": "大壮",
+      "overall_tendency": "吉",
+      "health_rating": 4,
+      "key_points": [
+        "体能增强",
+        "适合加强锻炼",
+        "注意节制",
+        "避免过度"
+      ],
+      "scenario_specific": {
+        "身体": {
+          "situation": "体能提升",
+          "reasons": [
+            "能量足"
+          ],
+          "advice": [
+            "适度增强"
+          ],
+          "timing": "近期"
+        },
+        "心理": {
+          "situation": "精神旺盛",
+          "reasons": [
+            "状态好"
+          ],
+          "advice": [
+            "保持节制"
+          ],
+          "timing": "近期"
+        },
+        "慢性": {
+          "situation": "慢性稳定",
+          "reasons": [
+            "状态好"
+          ],
+          "advice": [
+            "持续管理"
+          ],
+          "timing": "长期"
+        },
+        "恢复": {
+          "situation": "恢复快",
+          "reasons": [
+            "能量足"
+          ],
+          "advice": [
+            "循序渐进"
+          ],
+          "timing": "近期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "35": {
+      "name": "晋",
+      "overall_tendency": "吉",
+      "health_rating": 4,
+      "key_points": [
+        "状态上升",
+        "适合改善",
+        "保持节奏",
+        "注意持续"
+      ],
+      "scenario_specific": {
+        "身体": {
+          "situation": "体能提升",
+          "reasons": [
+            "上升期"
+          ],
+          "advice": [
+            "稳步增强"
+          ],
+          "timing": "近期"
+        },
+        "心理": {
+          "situation": "心理改善",
+          "reasons": [
+            "状态改善"
+          ],
+          "advice": [
+            "保持积极"
+          ],
+          "timing": "近期"
+        },
+        "慢性": {
+          "situation": "慢性稳定",
+          "reasons": [
+            "上升"
+          ],
+          "advice": [
+            "持续管理"
+          ],
+          "timing": "长期"
+        },
+        "恢复": {
+          "situation": "恢复顺利",
+          "reasons": [
+            "上升"
+          ],
+          "advice": [
+            "循序渐进"
+          ],
+          "timing": "近期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "36": {
+      "name": "明夷",
+      "overall_tendency": "不利",
+      "health_rating": 2,
+      "key_points": [
+        "需收敛消耗",
+        "避免过劳",
+        "低调调养",
+        "等待转机"
+      ],
+      "scenario_specific": {
+        "身体": {
+          "situation": "体能受损",
+          "reasons": [
+            "过劳"
+          ],
+          "advice": [
+            "减少负荷"
+          ],
+          "timing": "短期"
+        },
+        "心理": {
+          "situation": "情绪受挫",
+          "reasons": [
+            "压力"
+          ],
+          "advice": [
+            "寻求支持"
+          ],
+          "timing": "短期"
+        },
+        "慢性": {
+          "situation": "慢性易波动",
+          "reasons": [
+            "状态弱"
+          ],
+          "advice": [
+            "谨慎管理"
+          ],
+          "timing": "短期"
+        },
+        "恢复": {
+          "situation": "恢复慢",
+          "reasons": [
+            "能量低"
+          ],
+          "advice": [
+            "休养"
+          ],
+          "timing": "短期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "37": {
+      "name": "家人",
+      "overall_tendency": "平",
+      "health_rating": 3,
+      "key_points": [
+        "家庭作息影响健康",
+        "重视规律",
+        "关注家庭支持",
+        "避免冲突"
+      ],
+      "scenario_specific": {
+        "身体": {
+          "situation": "健康受家庭节奏影响",
+          "reasons": [
+            "作息"
+          ],
+          "advice": [
+            "规律作息"
+          ],
+          "timing": "长期"
+        },
+        "心理": {
+          "situation": "情绪受家庭影响",
+          "reasons": [
+            "关系"
+          ],
+          "advice": [
+            "保持沟通"
+          ],
+          "timing": "长期"
+        },
+        "慢性": {
+          "situation": "慢性需家庭支持",
+          "reasons": [
+            "支持"
+          ],
+          "advice": [
+            "寻求支持"
+          ],
+          "timing": "长期"
+        },
+        "恢复": {
+          "situation": "恢复需家庭配合",
+          "reasons": [
+            "支持"
+          ],
+          "advice": [
+            "配合调养"
+          ],
+          "timing": "长期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "38": {
+      "name": "睽",
+      "overall_tendency": "平",
+      "health_rating": 3,
+      "key_points": [
+        "内外分歧影响状态",
+        "需调和",
+        "避免争执",
+        "注重协调"
+      ],
+      "scenario_specific": {
+        "身体": {
+          "situation": "状态不稳",
+          "reasons": [
+            "分歧"
+          ],
+          "advice": [
+            "调整节奏"
+          ],
+          "timing": "短期"
+        },
+        "心理": {
+          "situation": "情绪分裂",
+          "reasons": [
+            "矛盾"
+          ],
+          "advice": [
+            "寻求平衡"
+          ],
+          "timing": "短期"
+        },
+        "慢性": {
+          "situation": "慢性受影响",
+          "reasons": [
+            "波动"
+          ],
+          "advice": [
+            "稳定管理"
+          ],
+          "timing": "短期"
+        },
+        "恢复": {
+          "situation": "恢复不稳",
+          "reasons": [
+            "分歧"
+          ],
+          "advice": [
+            "稳步"
+          ],
+          "timing": "短期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "39": {
+      "name": "蹇",
+      "overall_tendency": "不利",
+      "health_rating": 2,
+      "key_points": [
+        "恢复受阻",
+        "需减轻负担",
+        "避免冒进",
+        "寻求支持"
+      ],
+      "scenario_specific": {
+        "身体": {
+          "situation": "恢复受阻",
+          "reasons": [
+            "阻力"
+          ],
+          "advice": [
+            "降低强度"
+          ],
+          "timing": "短期"
+        },
+        "心理": {
+          "situation": "情绪受阻",
+          "reasons": [
+            "压力"
+          ],
+          "advice": [
+            "寻求支持"
+          ],
+          "timing": "短期"
+        },
+        "慢性": {
+          "situation": "慢性易受阻",
+          "reasons": [
+            "阻力"
+          ],
+          "advice": [
+            "加强管理"
+          ],
+          "timing": "短期"
+        },
+        "恢复": {
+          "situation": "恢复缓慢",
+          "reasons": [
+            "阻力"
+          ],
+          "advice": [
+            "循序渐进"
+          ],
+          "timing": "短期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "40": {
+      "name": "解",
+      "overall_tendency": "吉",
+      "health_rating": 4,
+      "key_points": [
+        "阻力解除",
+        "恢复好转",
+        "适合修复",
+        "顺势改善"
+      ],
+      "scenario_specific": {
+        "身体": {
+          "situation": "恢复好转",
+          "reasons": [
+            "阻力减少"
+          ],
+          "advice": [
+            "稳步恢复"
+          ],
+          "timing": "近期"
+        },
+        "心理": {
+          "situation": "情绪改善",
+          "reasons": [
+            "压力缓解"
+          ],
+          "advice": [
+            "保持积极"
+          ],
+          "timing": "近期"
+        },
+        "慢性": {
+          "situation": "慢性稳定",
+          "reasons": [
+            "缓解"
+          ],
+          "advice": [
+            "持续管理"
+          ],
+          "timing": "长期"
+        },
+        "恢复": {
+          "situation": "恢复顺利",
+          "reasons": [
+            "改善"
+          ],
+          "advice": [
+            "循序渐进"
+          ],
+          "timing": "近期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "41": {
+      "name": "损",
+      "overall_tendency": "平",
+      "health_rating": 3,
+      "key_points": [
+        "需要减负",
+        "调整节奏",
+        "重视休息",
+        "先减后增"
+      ],
+      "scenario_specific": {
+        "身体": {
+          "situation": "需减少负荷",
+          "reasons": [
+            "过劳"
+          ],
+          "advice": [
+            "减少强度"
+          ],
+          "timing": "短期"
+        },
+        "心理": {
+          "situation": "情绪需减压",
+          "reasons": [
+            "负担"
+          ],
+          "advice": [
+            "减压"
+          ],
+          "timing": "短期"
+        },
+        "慢性": {
+          "situation": "慢性需减负",
+          "reasons": [
+            "负担"
+          ],
+          "advice": [
+            "控制节奏"
+          ],
+          "timing": "短期"
+        },
+        "恢复": {
+          "situation": "恢复需减负",
+          "reasons": [
+            "负担"
+          ],
+          "advice": [
+            "先休养"
+          ],
+          "timing": "短期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "42": {
+      "name": "益",
+      "overall_tendency": "吉",
+      "health_rating": 4,
+      "key_points": [
+        "状态增益",
+        "体能提升",
+        "适合改善",
+        "把握节奏"
+      ],
+      "scenario_specific": {
+        "身体": {
+          "situation": "体能提升",
+          "reasons": [
+            "增益"
+          ],
+          "advice": [
+            "保持节奏"
+          ],
+          "timing": "近期"
+        },
+        "心理": {
+          "situation": "情绪改善",
+          "reasons": [
+            "状态好"
+          ],
+          "advice": [
+            "保持积极"
+          ],
+          "timing": "近期"
+        },
+        "慢性": {
+          "situation": "慢性稳定",
+          "reasons": [
+            "增益"
+          ],
+          "advice": [
+            "持续管理"
+          ],
+          "timing": "长期"
+        },
+        "恢复": {
+          "situation": "恢复加快",
+          "reasons": [
+            "增益"
+          ],
+          "advice": [
+            "循序渐进"
+          ],
+          "timing": "近期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "43": {
+      "name": "夬",
+      "overall_tendency": "平",
+      "health_rating": 3,
+      "key_points": [
+        "需要果断改变习惯",
+        "避免拖延",
+        "改善关键点",
+        "保持纪律"
+      ],
+      "scenario_specific": {
+        "身体": {
+          "situation": "需果断调整",
+          "reasons": [
+            "习惯问题"
+          ],
+          "advice": [
+            "立刻调整"
+          ],
+          "timing": "短期"
+        },
+        "心理": {
+          "situation": "情绪需果断调整",
+          "reasons": [
+            "习惯"
+          ],
+          "advice": [
+            "立即修正"
+          ],
+          "timing": "短期"
+        },
+        "慢性": {
+          "situation": "慢性需改变管理方式",
+          "reasons": [
+            "拖延"
+          ],
+          "advice": [
+            "调整方案"
+          ],
+          "timing": "短期"
+        },
+        "恢复": {
+          "situation": "恢复需果断执行",
+          "reasons": [
+            "拖延"
+          ],
+          "advice": [
+            "执行计划"
+          ],
+          "timing": "短期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "44": {
+      "name": "姤",
+      "overall_tendency": "平",
+      "health_rating": 3,
+      "key_points": [
+        "突发状况需谨慎",
+        "先观察",
+        "避免过度反应",
+        "保持冷静"
+      ],
+      "scenario_specific": {
+        "身体": {
+          "situation": "突发不适",
+          "reasons": [
+            "变化"
+          ],
+          "advice": [
+            "观察记录"
+          ],
+          "timing": "短期"
+        },
+        "心理": {
+          "situation": "情绪突变",
+          "reasons": [
+            "变化"
+          ],
+          "advice": [
+            "保持冷静"
+          ],
+          "timing": "短期"
+        },
+        "慢性": {
+          "situation": "慢性波动",
+          "reasons": [
+            "变化"
+          ],
+          "advice": [
+            "谨慎调整"
+          ],
+          "timing": "短期"
+        },
+        "恢复": {
+          "situation": "恢复中突变",
+          "reasons": [
+            "变化"
+          ],
+          "advice": [
+            "谨慎评估"
+          ],
+          "timing": "短期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "45": {
+      "name": "萃",
+      "overall_tendency": "吉",
+      "health_rating": 4,
+      "key_points": [
+        "资源与支持汇聚",
+        "社群支持有效",
+        "情绪改善",
+        "互助有利"
+      ],
+      "scenario_specific": {
+        "身体": {
+          "situation": "支持促进恢复",
+          "reasons": [
+            "互助"
+          ],
+          "advice": [
+            "加入支持群体"
+          ],
+          "timing": "近期"
+        },
+        "心理": {
+          "situation": "情绪改善",
+          "reasons": [
+            "支持"
+          ],
+          "advice": [
+            "多交流"
+          ],
+          "timing": "近期"
+        },
+        "慢性": {
+          "situation": "慢性管理更好",
+          "reasons": [
+            "支持"
+          ],
+          "advice": [
+            "持续管理"
+          ],
+          "timing": "长期"
+        },
+        "恢复": {
+          "situation": "恢复顺利",
+          "reasons": [
+            "支持"
+          ],
+          "advice": [
+            "持续配合"
+          ],
+          "timing": "中期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "46": {
+      "name": "升",
+      "overall_tendency": "吉",
+      "health_rating": 4,
+      "key_points": [
+        "稳步改善",
+        "循序渐进",
+        "长期调养",
+        "保持节奏"
+      ],
+      "scenario_specific": {
+        "身体": {
+          "situation": "体能逐步改善",
+          "reasons": [
+            "积累"
+          ],
+          "advice": [
+            "持续训练"
+          ],
+          "timing": "中期"
+        },
+        "心理": {
+          "situation": "情绪逐步改善",
+          "reasons": [
+            "积累"
+          ],
+          "advice": [
+            "持续调养"
+          ],
+          "timing": "中期"
+        },
+        "慢性": {
+          "situation": "慢性稳定",
+          "reasons": [
+            "积累"
+          ],
+          "advice": [
+            "长期管理"
+          ],
+          "timing": "长期"
+        },
+        "恢复": {
+          "situation": "恢复稳定",
+          "reasons": [
+            "积累"
+          ],
+          "advice": [
+            "循序渐进"
+          ],
+          "timing": "中期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "47": {
+      "name": "困",
+      "overall_tendency": "不利",
+      "health_rating": 2,
+      "key_points": [
+        "身心受困",
+        "易疲劳",
+        "需休养",
+        "避免过劳"
+      ],
+      "scenario_specific": {
+        "身体": {
+          "situation": "体能受限",
+          "reasons": [
+            "疲劳"
+          ],
+          "advice": [
+            "休养"
+          ],
+          "timing": "短期"
+        },
+        "心理": {
+          "situation": "情绪低落",
+          "reasons": [
+            "压力"
+          ],
+          "advice": [
+            "寻求支持"
+          ],
+          "timing": "短期"
+        },
+        "慢性": {
+          "situation": "慢性受限",
+          "reasons": [
+            "疲劳"
+          ],
+          "advice": [
+            "加强管理"
+          ],
+          "timing": "短期"
+        },
+        "恢复": {
+          "situation": "恢复受阻",
+          "reasons": [
+            "疲劳"
+          ],
+          "advice": [
+            "休养"
+          ],
+          "timing": "短期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "48": {
+      "name": "井",
+      "overall_tendency": "平",
+      "health_rating": 3,
+      "key_points": [
+        "重视基础修复",
+        "持续调养",
+        "稳定作息",
+        "避免急进"
+      ],
+      "scenario_specific": {
+        "身体": {
+          "situation": "基础调养重要",
+          "reasons": [
+            "基础"
+          ],
+          "advice": [
+            "规律作息"
+          ],
+          "timing": "长期"
+        },
+        "心理": {
+          "situation": "情绪需稳定",
+          "reasons": [
+            "基础"
+          ],
+          "advice": [
+            "保持平衡"
+          ],
+          "timing": "长期"
+        },
+        "慢性": {
+          "situation": "慢性需基础管理",
+          "reasons": [
+            "基础"
+          ],
+          "advice": [
+            "持续管理"
+          ],
+          "timing": "长期"
+        },
+        "恢复": {
+          "situation": "恢复需稳定节奏",
+          "reasons": [
+            "基础"
+          ],
+          "advice": [
+            "循序渐进"
+          ],
+          "timing": "长期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "49": {
+      "name": "革",
+      "overall_tendency": "吉",
+      "health_rating": 4,
+      "key_points": [
+        "需要改变习惯",
+        "适合调整方式",
+        "改善有利",
+        "注意稳定"
+      ],
+      "scenario_specific": {
+        "身体": {
+          "situation": "需改变习惯",
+          "reasons": [
+            "变革"
+          ],
+          "advice": [
+            "调整生活方式"
+          ],
+          "timing": "近期"
+        },
+        "心理": {
+          "situation": "需调整心理模式",
+          "reasons": [
+            "变革"
+          ],
+          "advice": [
+            "尝试新方法"
+          ],
+          "timing": "近期"
+        },
+        "慢性": {
+          "situation": "慢性管理需更新",
+          "reasons": [
+            "变革"
+          ],
+          "advice": [
+            "调整管理方案"
+          ],
+          "timing": "长期"
+        },
+        "恢复": {
+          "situation": "恢复需新方法",
+          "reasons": [
+            "变革"
+          ],
+          "advice": [
+            "循序渐进"
+          ],
+          "timing": "近期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "50": {
+      "name": "鼎",
+      "overall_tendency": "吉",
+      "health_rating": 4,
+      "key_points": [
+        "状态成型",
+        "调养见效",
+        "制度化管理",
+        "稳中求进"
+      ],
+      "scenario_specific": {
+        "身体": {
+          "situation": "状态稳定",
+          "reasons": [
+            "成型"
+          ],
+          "advice": [
+            "维持方案"
+          ],
+          "timing": "长期"
+        },
+        "心理": {
+          "situation": "心态稳定",
+          "reasons": [
+            "成型"
+          ],
+          "advice": [
+            "保持平衡"
+          ],
+          "timing": "长期"
+        },
+        "慢性": {
+          "situation": "慢性稳定",
+          "reasons": [
+            "成型"
+          ],
+          "advice": [
+            "长期管理"
+          ],
+          "timing": "长期"
+        },
+        "恢复": {
+          "situation": "恢复稳定",
+          "reasons": [
+            "成型"
+          ],
+          "advice": [
+            "持续执行"
+          ],
+          "timing": "长期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "51": {
+      "name": "震",
+      "overall_tendency": "平",
+      "health_rating": 3,
+      "key_points": [
+        "突发变化",
+        "需冷静处理",
+        "避免惊慌",
+        "注意安全"
+      ],
+      "scenario_specific": {
+        "身体": {
+          "situation": "突发不适",
+          "reasons": [
+            "变化"
+          ],
+          "advice": [
+            "观察记录",
+            "必要时就医"
+          ],
+          "timing": "短期"
+        },
+        "心理": {
+          "situation": "情绪波动",
+          "reasons": [
+            "突发"
+          ],
+          "advice": [
+            "保持冷静"
+          ],
+          "timing": "短期"
+        },
+        "慢性": {
+          "situation": "慢性波动",
+          "reasons": [
+            "变化"
+          ],
+          "advice": [
+            "谨慎调整"
+          ],
+          "timing": "短期"
+        },
+        "恢复": {
+          "situation": "恢复受波动影响",
+          "reasons": [
+            "变化"
+          ],
+          "advice": [
+            "谨慎"
+          ],
+          "timing": "短期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "52": {
+      "name": "艮",
+      "overall_tendency": "平",
+      "health_rating": 3,
+      "key_points": [
+        "宜静养",
+        "避免过度",
+        "保持稳定",
+        "不宜冒进"
+      ],
+      "scenario_specific": {
+        "身体": {
+          "situation": "需要静养",
+          "reasons": [
+            "状态"
+          ],
+          "advice": [
+            "减少活动"
+          ],
+          "timing": "短期"
+        },
+        "心理": {
+          "situation": "需要静心",
+          "reasons": [
+            "压力"
+          ],
+          "advice": [
+            "减少刺激"
+          ],
+          "timing": "短期"
+        },
+        "慢性": {
+          "situation": "慢性需稳住",
+          "reasons": [
+            "稳定"
+          ],
+          "advice": [
+            "保持规律"
+          ],
+          "timing": "长期"
+        },
+        "恢复": {
+          "situation": "恢复需静养",
+          "reasons": [
+            "节奏"
+          ],
+          "advice": [
+            "静养"
+          ],
+          "timing": "短期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "53": {
+      "name": "渐",
+      "overall_tendency": "吉",
+      "health_rating": 4,
+      "key_points": [
+        "循序渐进",
+        "状态改善",
+        "长期调养",
+        "保持耐心"
+      ],
+      "scenario_specific": {
+        "身体": {
+          "situation": "体能逐步改善",
+          "reasons": [
+            "积累"
+          ],
+          "advice": [
+            "循序渐进"
+          ],
+          "timing": "中期"
+        },
+        "心理": {
+          "situation": "情绪逐步稳定",
+          "reasons": [
+            "积累"
+          ],
+          "advice": [
+            "保持耐心"
+          ],
+          "timing": "中期"
+        },
+        "慢性": {
+          "situation": "慢性稳定",
+          "reasons": [
+            "积累"
+          ],
+          "advice": [
+            "持续管理"
+          ],
+          "timing": "长期"
+        },
+        "恢复": {
+          "situation": "恢复渐进",
+          "reasons": [
+            "积累"
+          ],
+          "advice": [
+            "循序渐进"
+          ],
+          "timing": "中期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "54": {
+      "name": "归妹",
+      "overall_tendency": "平",
+      "health_rating": 3,
+      "key_points": [
+        "不宜仓促决定",
+        "状态波动",
+        "谨慎调整",
+        "避免冲动"
+      ],
+      "scenario_specific": {
+        "身体": {
+          "situation": "状态波动",
+          "reasons": [
+            "不稳"
+          ],
+          "advice": [
+            "谨慎调整"
+          ],
+          "timing": "短期"
+        },
+        "心理": {
+          "situation": "情绪波动",
+          "reasons": [
+            "不稳"
+          ],
+          "advice": [
+            "保持冷静"
+          ],
+          "timing": "短期"
+        },
+        "慢性": {
+          "situation": "慢性波动",
+          "reasons": [
+            "不稳"
+          ],
+          "advice": [
+            "谨慎管理"
+          ],
+          "timing": "短期"
+        },
+        "恢复": {
+          "situation": "恢复不稳",
+          "reasons": [
+            "波动"
+          ],
+          "advice": [
+            "谨慎"
+          ],
+          "timing": "短期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "55": {
+      "name": "丰",
+      "overall_tendency": "吉",
+      "health_rating": 4,
+      "key_points": [
+        "状态良好",
+        "精力充沛",
+        "注意节制",
+        "避免过度"
+      ],
+      "scenario_specific": {
+        "身体": {
+          "situation": "体能充沛",
+          "reasons": [
+            "状态好"
+          ],
+          "advice": [
+            "避免过度"
+          ],
+          "timing": "近期"
+        },
+        "心理": {
+          "situation": "情绪积极",
+          "reasons": [
+            "状态好"
+          ],
+          "advice": [
+            "保持平衡"
+          ],
+          "timing": "近期"
+        },
+        "慢性": {
+          "situation": "慢性稳定",
+          "reasons": [
+            "状态好"
+          ],
+          "advice": [
+            "持续管理"
+          ],
+          "timing": "长期"
+        },
+        "恢复": {
+          "situation": "恢复快",
+          "reasons": [
+            "状态好"
+          ],
+          "advice": [
+            "循序渐进"
+          ],
+          "timing": "近期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "56": {
+      "name": "旅",
+      "overall_tendency": "平",
+      "health_rating": 3,
+      "key_points": [
+        "环境多变",
+        "需适应",
+        "注意作息",
+        "避免劳累"
+      ],
+      "scenario_specific": {
+        "身体": {
+          "situation": "环境变化影响状态",
+          "reasons": [
+            "变化"
+          ],
+          "advice": [
+            "注意休息"
+          ],
+          "timing": "短期"
+        },
+        "心理": {
+          "situation": "情绪受环境影响",
+          "reasons": [
+            "变化"
+          ],
+          "advice": [
+            "保持稳定"
+          ],
+          "timing": "短期"
+        },
+        "慢性": {
+          "situation": "慢性受环境影响",
+          "reasons": [
+            "变化"
+          ],
+          "advice": [
+            "做好管理"
+          ],
+          "timing": "短期"
+        },
+        "恢复": {
+          "situation": "恢复受环境影响",
+          "reasons": [
+            "变化"
+          ],
+          "advice": [
+            "注意休息"
+          ],
+          "timing": "短期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "57": {
+      "name": "巽",
+      "overall_tendency": "吉",
+      "health_rating": 4,
+      "key_points": [
+        "循序改善",
+        "细节管理",
+        "重视长期",
+        "保持耐心"
+      ],
+      "scenario_specific": {
+        "身体": {
+          "situation": "体能改善",
+          "reasons": [
+            "细节"
+          ],
+          "advice": [
+            "注意细节"
+          ],
+          "timing": "中期"
+        },
+        "心理": {
+          "situation": "心理改善",
+          "reasons": [
+            "细节"
+          ],
+          "advice": [
+            "保持耐心"
+          ],
+          "timing": "中期"
+        },
+        "慢性": {
+          "situation": "慢性改善",
+          "reasons": [
+            "细节"
+          ],
+          "advice": [
+            "持续管理"
+          ],
+          "timing": "长期"
+        },
+        "恢复": {
+          "situation": "恢复稳定",
+          "reasons": [
+            "细节"
+          ],
+          "advice": [
+            "循序渐进"
+          ],
+          "timing": "中期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "58": {
+      "name": "兑",
+      "overall_tendency": "吉",
+      "health_rating": 4,
+      "key_points": [
+        "沟通与愉悦有益",
+        "情绪改善",
+        "适度社交",
+        "避免过度"
+      ],
+      "scenario_specific": {
+        "身体": {
+          "situation": "状态改善",
+          "reasons": [
+            "情绪好"
+          ],
+          "advice": [
+            "适度活动"
+          ],
+          "timing": "近期"
+        },
+        "心理": {
+          "situation": "情绪积极",
+          "reasons": [
+            "沟通"
+          ],
+          "advice": [
+            "适度社交"
+          ],
+          "timing": "近期"
+        },
+        "慢性": {
+          "situation": "慢性稳定",
+          "reasons": [
+            "情绪"
+          ],
+          "advice": [
+            "持续管理"
+          ],
+          "timing": "长期"
+        },
+        "恢复": {
+          "situation": "恢复良好",
+          "reasons": [
+            "情绪"
+          ],
+          "advice": [
+            "保持节奏"
+          ],
+          "timing": "近期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "59": {
+      "name": "涣",
+      "overall_tendency": "平",
+      "health_rating": 3,
+      "key_points": [
+        "分散注意力",
+        "需重新聚焦",
+        "避免疲劳",
+        "调整节奏"
+      ],
+      "scenario_specific": {
+        "身体": {
+          "situation": "体能分散",
+          "reasons": [
+            "分心"
+          ],
+          "advice": [
+            "聚焦调养"
+          ],
+          "timing": "短期"
+        },
+        "心理": {
+          "situation": "情绪分散",
+          "reasons": [
+            "分心"
+          ],
+          "advice": [
+            "减少分心"
+          ],
+          "timing": "短期"
+        },
+        "慢性": {
+          "situation": "慢性管理分散",
+          "reasons": [
+            "分心"
+          ],
+          "advice": [
+            "聚焦管理"
+          ],
+          "timing": "短期"
+        },
+        "恢复": {
+          "situation": "恢复分散",
+          "reasons": [
+            "分心"
+          ],
+          "advice": [
+            "聚焦"
+          ],
+          "timing": "短期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "60": {
+      "name": "节",
+      "overall_tendency": "平",
+      "health_rating": 3,
+      "key_points": [
+        "节制有度",
+        "控制节奏",
+        "规律作息",
+        "稳中求进"
+      ],
+      "scenario_specific": {
+        "身体": {
+          "situation": "需节制",
+          "reasons": [
+            "节制"
+          ],
+          "advice": [
+            "规律作息"
+          ],
+          "timing": "长期"
+        },
+        "心理": {
+          "situation": "需节制情绪",
+          "reasons": [
+            "节制"
+          ],
+          "advice": [
+            "保持平衡"
+          ],
+          "timing": "长期"
+        },
+        "慢性": {
+          "situation": "慢性需节制管理",
+          "reasons": [
+            "节制"
+          ],
+          "advice": [
+            "持续管理"
+          ],
+          "timing": "长期"
+        },
+        "恢复": {
+          "situation": "恢复需节制",
+          "reasons": [
+            "节制"
+          ],
+          "advice": [
+            "循序渐进"
+          ],
+          "timing": "长期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "61": {
+      "name": "中孚",
+      "overall_tendency": "吉",
+      "health_rating": 4,
+      "key_points": [
+        "信任支持有益",
+        "心态稳定",
+        "规律作息",
+        "持续改善"
+      ],
+      "scenario_specific": {
+        "身体": {
+          "situation": "状态稳定",
+          "reasons": [
+            "信任"
+          ],
+          "advice": [
+            "保持规律"
+          ],
+          "timing": "长期"
+        },
+        "心理": {
+          "situation": "心态稳定",
+          "reasons": [
+            "信任"
+          ],
+          "advice": [
+            "保持支持"
+          ],
+          "timing": "长期"
+        },
+        "慢性": {
+          "situation": "慢性稳定",
+          "reasons": [
+            "稳定"
+          ],
+          "advice": [
+            "持续管理"
+          ],
+          "timing": "长期"
+        },
+        "恢复": {
+          "situation": "恢复稳定",
+          "reasons": [
+            "稳定"
+          ],
+          "advice": [
+            "保持节奏"
+          ],
+          "timing": "长期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "62": {
+      "name": "小过",
+      "overall_tendency": "平",
+      "health_rating": 3,
+      "key_points": [
+        "小步改善",
+        "避免冒进",
+        "稳住节奏",
+        "谨慎"
+      ],
+      "scenario_specific": {
+        "身体": {
+          "situation": "需小步改善",
+          "reasons": [
+            "谨慎"
+          ],
+          "advice": [
+            "循序渐进"
+          ],
+          "timing": "短期"
+        },
+        "心理": {
+          "situation": "情绪需小步调整",
+          "reasons": [
+            "谨慎"
+          ],
+          "advice": [
+            "循序渐进"
+          ],
+          "timing": "短期"
+        },
+        "慢性": {
+          "situation": "慢性需小步管理",
+          "reasons": [
+            "谨慎"
+          ],
+          "advice": [
+            "小步推进"
+          ],
+          "timing": "短期"
+        },
+        "恢复": {
+          "situation": "恢复需小步推进",
+          "reasons": [
+            "谨慎"
+          ],
+          "advice": [
+            "循序渐进"
+          ],
+          "timing": "短期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "63": {
+      "name": "既济",
+      "overall_tendency": "平",
+      "health_rating": 3,
+      "key_points": [
+        "阶段完成",
+        "需防反复",
+        "保持警惕",
+        "稳住成果"
+      ],
+      "scenario_specific": {
+        "身体": {
+          "situation": "状态稳定",
+          "reasons": [
+            "完成"
+          ],
+          "advice": [
+            "防反复"
+          ],
+          "timing": "短期"
+        },
+        "心理": {
+          "situation": "心态稳定",
+          "reasons": [
+            "完成"
+          ],
+          "advice": [
+            "保持警惕"
+          ],
+          "timing": "短期"
+        },
+        "慢性": {
+          "situation": "慢性稳定",
+          "reasons": [
+            "完成"
+          ],
+          "advice": [
+            "持续管理"
+          ],
+          "timing": "长期"
+        },
+        "恢复": {
+          "situation": "恢复稳定",
+          "reasons": [
+            "完成"
+          ],
+          "advice": [
+            "保持节奏"
+          ],
+          "timing": "长期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "64": {
+      "name": "未济",
+      "overall_tendency": "平",
+      "health_rating": 3,
+      "key_points": [
+        "尚未完成",
+        "需继续调养",
+        "保持耐心",
+        "避免急躁"
+      ],
+      "scenario_specific": {
+        "身体": {
+          "situation": "恢复尚未完成",
+          "reasons": [
+            "阶段未完"
+          ],
+          "advice": [
+            "持续调养"
+          ],
+          "timing": "短期"
+        },
+        "心理": {
+          "situation": "情绪尚未稳定",
+          "reasons": [
+            "阶段未完"
+          ],
+          "advice": [
+            "保持耐心"
+          ],
+          "timing": "短期"
+        },
+        "慢性": {
+          "situation": "慢性仍需管理",
+          "reasons": [
+            "阶段未完"
+          ],
+          "advice": [
+            "持续管理"
+          ],
+          "timing": "长期"
+        },
+        "恢复": {
+          "situation": "恢复未完成",
+          "reasons": [
+            "阶段未完"
+          ],
+          "advice": [
+            "循序渐进"
+          ],
+          "timing": "短期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    }
+  },
+  "notes": [
+    "本场景必须输出关键免责声明",
+    "所有卦象数据需包含 source_ref"
+  ]
+}

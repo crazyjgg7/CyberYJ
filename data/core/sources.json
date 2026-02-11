@@ -1,0 +1,119 @@
+[
+  {
+    "source_id": "convention",
+    "title": "行业惯例汇编",
+    "edition": "TBD",
+    "section": "TBD",
+    "url_or_archive": "TBD",
+    "license": "TBD",
+    "notes": "用于暂无法唯一对应权威出处的规则，后续应尽量替换为明确出处。"
+  },
+  {
+    "source_id": "ctext_yijing",
+    "title": "周易（易经）",
+    "edition": "Chinese Text Project",
+    "section": "全文",
+    "url_or_archive": "https://ctext.org/book-of-changes",
+    "license": "See site terms",
+    "notes": "六十四卦名、卦辞等文本的权威基准来源。"
+  },
+  {
+    "source_id": "ctext_shuogua",
+    "title": "周易·说卦传",
+    "edition": "Chinese Text Project",
+    "section": "说卦传（含“帝出乎震…坎正北…艮东北”段落）",
+    "url_or_archive": "https://ctext.org/book-of-changes/shuo-gua",
+    "license": "See site terms",
+    "notes": "用于八卦方位与象征属性的基础依据。"
+  },
+  {
+    "source_id": "cma_24_terms",
+    "title": "二十四节气那些事儿",
+    "edition": "中国气象局政府门户网站",
+    "section": "“黄道360°等分为24份、每15°一节气”与节气名称序列",
+    "url_or_archive": "https://www.cma.gov.cn/2011xzt/2019zt/20190323/2019032306/201903/t20190318_517626.html",
+    "license": "See site terms",
+    "notes": "用于节气黄经划分规则与顺序。"
+  },
+  {
+    "source_id": "gbt33661_2017",
+    "title": "GB/T 33661-2017 农历的编算和颁行",
+    "edition": "国家标准馆·国家数字标准馆",
+    "section": "标准题录",
+    "url_or_archive": "https://www.ndls.org.cn/standard/detail/3e07da09d5e528b42bff188bb70b4e3a",
+    "license": "See site terms",
+    "notes": "国家标准题录，用于标准性依据索引。"
+  },
+  {
+    "source_id": "qingnang_aoyu",
+    "title": "青囊奥语",
+    "edition": "维基文库（四库全书本）",
+    "section": "涉及“二十四山”表述",
+    "url_or_archive": "https://zh.wikisource.org/zh-hans/%E9%9D%92%E5%9B%8A%E5%A5%A7%E8%AA%9E",
+    "license": "CC BY-SA 4.0",
+    "notes": "用于二十四山概念的经典文本依据。"
+  },
+  {
+    "source_id": "cinii_bazhai_mingjing",
+    "title": "八宅明镜（2卷）乐真堂 乾隆55",
+    "edition": "CiNii Books 书目记录",
+    "section": "书目信息",
+    "url_or_archive": "https://ci.nii.ac.jp/ncid/BA6955911X",
+    "license": "See site terms",
+    "notes": "八宅派重要典籍的权威书目依据。"
+  },
+  {
+    "source_id": "bookschina_bazhai_mingjing",
+    "title": "八宅明镜",
+    "edition": "世界知识出版社（2010）ISBN 9787501237296",
+    "section": "书目信息",
+    "url_or_archive": "https://www.bookschina.com/4634931.htm",
+    "license": "See site terms",
+    "notes": "八宅明镜的现代出版版本书目索引，用于版本与ISBN核对。"
+  },
+  {
+    "source_id": "sanmin_bazhai_mingjing",
+    "title": "八宅明镜",
+    "edition": "世界知識出版社（2010）ISBN 9787501237296",
+    "section": "书目信息",
+    "url_or_archive": "https://www.sanmin.com.tw/product/index/001277102",
+    "license": "See site terms",
+    "notes": "八宅明镜出版信息（含ISBN与出版社）。"
+  },
+  {
+    "source_id": "cinii_dili_bianzheng_shu",
+    "title": "地理辨正疏 5卷",
+    "edition": "CiNii Research 书目记录",
+    "section": "书目信息",
+    "url_or_archive": "https://cir.nii.ac.jp/crid/1971149384801051909",
+    "license": "See site terms",
+    "notes": "玄空相关典籍的权威书目依据。"
+  },
+  {
+    "source_id": "openlibrary_dili_bianzheng_shu",
+    "title": "地理辨正疏",
+    "edition": "Open Library / WorldCat 书目记录",
+    "section": "书目信息",
+    "url_or_archive": "https://openlibrary.org/works/OL44622033W/%E5%9C%B0%E7%90%86%E8%BE%A8%E6%AD%A3%E7%96%8F",
+    "license": "See site terms",
+    "notes": "地理辨正疏的国际书目索引（含 OCLC/WorldCat 记录）。"
+  },
+  {
+    "source_id": "books_com_tw_dili_bianzheng_shu",
+    "title": "地理辨正疏",
+    "edition": "武陵出版（1982）书目记录",
+    "section": "书目信息",
+    "url_or_archive": "https://www.books.com.tw/products/0010161523",
+    "license": "See site terms",
+    "notes": "地理辨正疏现代出版版本书目索引。"
+  },
+  {
+    "source_id": "sanmin_dili_bianzheng_shu",
+    "title": "地理辨正疏",
+    "edition": "武陵出版社 ISBN 9789573506638",
+    "section": "书目信息",
+    "url_or_archive": "https://www.sanmin.com.tw/product/index/000111192",
+    "license": "See site terms",
+    "notes": "地理辨正疏出版信息（含ISBN与出版社）。"
+  }
+]

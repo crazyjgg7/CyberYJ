@@ -1,0 +1,146 @@
+[
+  {
+    "id": "term_01",
+    "name": "立春",
+    "solar_longitude_deg": 315,
+    "source_ref": "cma_24_terms"
+  },
+  {
+    "id": "term_02",
+    "name": "雨水",
+    "solar_longitude_deg": 330,
+    "source_ref": "cma_24_terms"
+  },
+  {
+    "id": "term_03",
+    "name": "惊蛰",
+    "solar_longitude_deg": 345,
+    "source_ref": "cma_24_terms"
+  },
+  {
+    "id": "term_04",
+    "name": "春分",
+    "solar_longitude_deg": 0,
+    "source_ref": "cma_24_terms"
+  },
+  {
+    "id": "term_05",
+    "name": "清明",
+    "solar_longitude_deg": 15,
+    "source_ref": "cma_24_terms"
+  },
+  {
+    "id": "term_06",
+    "name": "谷雨",
+    "solar_longitude_deg": 30,
+    "source_ref": "cma_24_terms"
+  },
+  {
+    "id": "term_07",
+    "name": "立夏",
+    "solar_longitude_deg": 45,
+    "source_ref": "cma_24_terms"
+  },
+  {
+    "id": "term_08",
+    "name": "小满",
+    "solar_longitude_deg": 60,
+    "source_ref": "cma_24_terms"
+  },
+  {
+    "id": "term_09",
+    "name": "芒种",
+    "solar_longitude_deg": 75,
+    "source_ref": "cma_24_terms"
+  },
+  {
+    "id": "term_10",
+    "name": "夏至",
+    "solar_longitude_deg": 90,
+    "source_ref": "cma_24_terms"
+  },
+  {
+    "id": "term_11",
+    "name": "小暑",
+    "solar_longitude_deg": 105,
+    "source_ref": "cma_24_terms"
+  },
+  {
+    "id": "term_12",
+    "name": "大暑",
+    "solar_longitude_deg": 120,
+    "source_ref": "cma_24_terms"
+  },
+  {
+    "id": "term_13",
+    "name": "立秋",
+    "solar_longitude_deg": 135,
+    "source_ref": "cma_24_terms"
+  },
+  {
+    "id": "term_14",
+    "name": "处暑",
+    "solar_longitude_deg": 150,
+    "source_ref": "cma_24_terms"
+  },
+  {
+    "id": "term_15",
+    "name": "白露",
+    "solar_longitude_deg": 165,
+    "source_ref": "cma_24_terms"
+  },
+  {
+    "id": "term_16",
+    "name": "秋分",
+    "solar_longitude_deg": 180,
+    "source_ref": "cma_24_terms"
+  },
+  {
+    "id": "term_17",
+    "name": "寒露",
+    "solar_longitude_deg": 195,
+    "source_ref": "cma_24_terms"
+  },
+  {
+    "id": "term_18",
+    "name": "霜降",
+    "solar_longitude_deg": 210,
+    "source_ref": "cma_24_terms"
+  },
+  {
+    "id": "term_19",
+    "name": "立冬",
+    "solar_longitude_deg": 225,
+    "source_ref": "cma_24_terms"
+  },
+  {
+    "id": "term_20",
+    "name": "小雪",
+    "solar_longitude_deg": 240,
+    "source_ref": "cma_24_terms"
+  },
+  {
+    "id": "term_21",
+    "name": "大雪",
+    "solar_longitude_deg": 255,
+    "source_ref": "cma_24_terms"
+  },
+  {
+    "id": "term_22",
+    "name": "冬至",
+    "solar_longitude_deg": 270,
+    "source_ref": "cma_24_terms"
+  },
+  {
+    "id": "term_23",
+    "name": "小寒",
+    "solar_longitude_deg": 285,
+    "source_ref": "cma_24_terms"
+  },
+  {
+    "id": "term_24",
+    "name": "大寒",
+    "solar_longitude_deg": 300,
+    "source_ref": "cma_24_terms"
+  }
+]

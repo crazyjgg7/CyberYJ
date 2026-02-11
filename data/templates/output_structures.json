@@ -1,0 +1,299 @@
+{
+  "version": "1.0",
+  "description": "各场景的输出结构模板定义",
+  "templates": {
+    "fortune_standard": {
+      "name": "命运标准模板",
+      "description": "用于命运、流年运势分析",
+      "structure": {
+        "hexagram_info": {
+          "required": true,
+          "fields": [
+            "id",
+            "name",
+            "symbol",
+            "judgment",
+            "image"
+          ]
+        },
+        "fortune_analysis": {
+          "required": true,
+          "sections": {
+            "overall": {
+              "required": true,
+              "fields": [
+                "rating",
+                "summary",
+                "key_points"
+              ]
+            },
+            "hexagram_explanation": {
+              "required": true,
+              "fields": [
+                "meaning",
+                "element_relation",
+                "keywords"
+              ]
+            },
+            "fortune_details": {
+              "required": true,
+              "sub_sections": [
+                "trend",
+                "opportunities",
+                "challenges",
+                "timing"
+              ]
+            },
+            "action_guide": {
+              "required": true,
+              "format": {
+                "do": "list",
+                "dont": "list"
+              }
+            }
+          }
+        },
+        "additional_info": {
+          "required": true,
+          "fields": [
+            "solar_term",
+            "sources"
+          ]
+        }
+      },
+      "display_format": {
+        "use_emoji": true,
+        "use_sections": true,
+        "use_rating_stars": true,
+        "title_format": "# 第{id}卦 - {name}卦（{symbol}）"
+      }
+    },
+    "career_standard": {
+      "name": "事业标准模板",
+      "description": "用于事业、职业发展分析",
+      "structure": {
+        "hexagram_info": {
+          "required": true,
+          "fields": [
+            "id",
+            "name",
+            "symbol",
+            "judgment",
+            "image"
+          ]
+        },
+        "career_analysis": {
+          "required": true,
+          "sections": {
+            "overall": {
+              "required": true,
+              "fields": [
+                "rating",
+                "summary",
+                "key_points"
+              ]
+            },
+            "hexagram_explanation": {
+              "required": true,
+              "fields": [
+                "meaning",
+                "element_relation",
+                "keywords"
+              ]
+            },
+            "scenario_analysis": {
+              "required": true,
+              "scenarios": [
+                "求职者",
+                "在职者",
+                "创业者",
+                "转型者"
+              ],
+              "each_includes": [
+                "situation",
+                "reasons",
+                "advice",
+                "timing"
+              ]
+            },
+            "interpersonal": {
+              "required": true,
+              "aspects": [
+                "boss",
+                "colleague",
+                "partner"
+              ]
+            },
+            "action_guide": {
+              "required": true,
+              "format": {
+                "do": "list",
+                "dont": "list"
+              }
+            }
+          }
+        },
+        "additional_info": {
+          "required": true,
+          "fields": [
+            "solar_term",
+            "sources"
+          ]
+        }
+      },
+      "display_format": {
+        "use_emoji": true,
+        "use_sections": true,
+        "use_rating_stars": true,
+        "title_format": "# 第{id}卦 - {name}卦（{symbol}）"
+      }
+    },
+    "love_standard": {
+      "name": "感情标准模板",
+      "description": "用于感情、恋爱、婚姻分析",
+      "structure": {
+        "hexagram_info": {
+          "required": true,
+          "fields": [
+            "id",
+            "name",
+            "symbol",
+            "judgment",
+            "image"
+          ]
+        },
+        "love_analysis": {
+          "required": true,
+          "sections": {
+            "overall": {
+              "required": true,
+              "fields": [
+                "rating",
+                "summary",
+                "key_points"
+              ]
+            },
+            "hexagram_explanation": {
+              "required": true,
+              "fields": [
+                "meaning",
+                "element_relation",
+                "keywords"
+              ]
+            },
+            "scenario_analysis": {
+              "required": true,
+              "scenarios": [
+                "单身者",
+                "恋爱中",
+                "已婚者",
+                "复合"
+              ],
+              "each_includes": [
+                "situation",
+                "reasons",
+                "advice",
+                "timing"
+              ]
+            },
+            "action_guide": {
+              "required": true,
+              "format": {
+                "do": "list",
+                "dont": "list"
+              }
+            }
+          }
+        },
+        "additional_info": {
+          "required": true,
+          "fields": [
+            "solar_term",
+            "sources"
+          ]
+        }
+      },
+      "display_format": {
+        "use_emoji": true,
+        "use_sections": true,
+        "use_rating_stars": true,
+        "title_format": "# 第{id}卦 - {name}卦（{symbol}）"
+      }
+    }
+  },
+  "rating_display": {
+    "5": {
+      "text": "大吉",
+      "emoji": "⭐⭐⭐⭐⭐",
+      "color": "green"
+    },
+    "4": {
+      "text": "吉",
+      "emoji": "⭐⭐⭐⭐",
+      "color": "lightgreen"
+    },
+    "3": {
+      "text": "平",
+      "emoji": "⭐⭐⭐",
+      "color": "yellow"
+    },
+    "2": {
+      "text": "不利",
+      "emoji": "⭐⭐",
+      "color": "orange"
+    },
+    "1": {
+      "text": "凶",
+      "emoji": "⭐",
+      "color": "red"
+    }
+  },
+  "notes": [
+    "本文件定义各场景的输出结构模板",
+    "每个模板包含：结构定义、显示格式",
+    "运势评级统一使用1-5分制",
+    "所有模板都要求包含卦象信息、分析内容、附加信息"
+  ],
+  "wealth_standard": {
+    "name": "wealth_standard",
+    "sections": [],
+    "notes": [
+      "占位模板，待补充"
+    ]
+  },
+  "health_standard": {
+    "name": "health_standard",
+    "sections": [],
+    "notes": [
+      "占位模板，待补充"
+    ]
+  },
+  "study_standard": {
+    "name": "study_standard",
+    "sections": [],
+    "notes": [
+      "占位模板，待补充"
+    ]
+  },
+  "family_standard": {
+    "name": "family_standard",
+    "sections": [],
+    "notes": [
+      "占位模板，待补充"
+    ]
+  },
+  "travel_standard": {
+    "name": "travel_standard",
+    "sections": [],
+    "notes": [
+      "占位模板，待补充"
+    ]
+  },
+  "lawsuit_standard": {
+    "name": "lawsuit_standard",
+    "sections": [],
+    "notes": [
+      "占位模板，待补充"
+    ]
+  }
+}

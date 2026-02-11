@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "CyberYJ": {
+      "command": "/Users/apple/dev/CyberYJ/venv/bin/python",
+      "args": [
+        "/Users/apple/dev/CyberYJ/run_server.py"
+      ],
+      "env": {
+        "PYTHONPATH": "/Users/apple/dev/CyberYJ/src"
+      }
+    }
+  }
+}

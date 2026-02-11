@@ -1,0 +1,114 @@
+[
+  {
+    "year": 2024,
+    "central_star": 4,
+    "palace_map": {
+      "中宫": 4,
+      "坎": 3,
+      "坤": 8,
+      "震": 2,
+      "巽": 7,
+      "乾": 6,
+      "兑": 1,
+      "艮": 5,
+      "离": 9
+    },
+    "source_ref": "cinii_dili_bianzheng_shu"
+  },
+  {
+    "year": 2025,
+    "central_star": 3,
+    "palace_map": {
+      "中宫": 3,
+      "坎": 2,
+      "坤": 7,
+      "震": 1,
+      "巽": 6,
+      "乾": 5,
+      "兑": 9,
+      "艮": 4,
+      "离": 8
+    },
+    "source_ref": "cinii_dili_bianzheng_shu"
+  },
+  {
+    "year": 2026,
+    "central_star": 2,
+    "palace_map": {
+      "中宫": 2,
+      "坎": 1,
+      "坤": 6,
+      "震": 9,
+      "巽": 5,
+      "乾": 4,
+      "兑": 8,
+      "艮": 3,
+      "离": 7
+    },
+    "source_ref": "cinii_dili_bianzheng_shu"
+  },
+  {
+    "year": 2027,
+    "central_star": 1,
+    "palace_map": {
+      "中宫": 1,
+      "坎": 9,
+      "坤": 5,
+      "震": 8,
+      "巽": 4,
+      "乾": 3,
+      "兑": 7,
+      "艮": 2,
+      "离": 6
+    },
+    "source_ref": "cinii_dili_bianzheng_shu"
+  },
+  {
+    "year": 2028,
+    "central_star": 9,
+    "palace_map": {
+      "中宫": 9,
+      "坎": 8,
+      "坤": 4,
+      "震": 7,
+      "巽": 3,
+      "乾": 2,
+      "兑": 6,
+      "艮": 1,
+      "离": 5
+    },
+    "source_ref": "cinii_dili_bianzheng_shu"
+  },
+  {
+    "year": 2029,
+    "central_star": 8,
+    "palace_map": {
+      "中宫": 8,
+      "坎": 7,
+      "坤": 3,
+      "震": 6,
+      "巽": 2,
+      "乾": 1,
+      "兑": 5,
+      "艮": 9,
+      "离": 4
+    },
+    "source_ref": "cinii_dili_bianzheng_shu"
+  },
+  {
+    "year": 2030,
+    "central_star": 7,
+    "palace_map": {
+      "中宫": 7,
+      "坎": 6,
+      "坤": 2,
+      "震": 5,
+      "巽": 1,
+      "乾": 9,
+      "兑": 4,
+      "艮": 8,
+      "离": 3
+    },
+    "source_ref": "cinii_dili_bianzheng_shu"
+  }
+]

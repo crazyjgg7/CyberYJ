@@ -1,0 +1,4017 @@
+{
+  "version": "1.0",
+  "scenario_info": {
+    "name": "出行",
+    "code": "travel",
+    "description": "短途、长途、出差与迁移",
+    "sub_scenarios": [
+      "短途",
+      "长途",
+      "出差",
+      "迁移"
+    ],
+    "requires_disclaimer": false
+  },
+  "analysis_framework": {
+    "dimensions": [
+      "风险评估",
+      "时机判断",
+      "准备程度",
+      "环境变化",
+      "安全提示"
+    ],
+    "focus": "安全优先，准备充分，避免冒进",
+    "key_aspects": [
+      "风险等级",
+      "行动时机",
+      "准备清单",
+      "安全建议"
+    ]
+  },
+  "output_structure": {
+    "template_id": "travel_standard",
+    "sections": [
+      {
+        "id": "overall_travel",
+        "title": "出行总览",
+        "type": "summary",
+        "required": true,
+        "includes": [
+          "风险评级",
+          "总体判断",
+          "注意事项"
+        ]
+      },
+      {
+        "id": "hexagram_analysis",
+        "title": "卦象解析",
+        "type": "explanation",
+        "required": true,
+        "includes": [
+          "卦象含义",
+          "五行关系",
+          "关键词解读"
+        ]
+      },
+      {
+        "id": "travel_details",
+        "title": "出行详解",
+        "type": "detailed_analysis",
+        "required": true,
+        "sub_sections": [
+          {
+            "id": "risk",
+            "title": "风险",
+            "description": "风险点与规避"
+          },
+          {
+            "id": "timing",
+            "title": "时机",
+            "description": "合适的出行动作"
+          },
+          {
+            "id": "preparation",
+            "title": "准备",
+            "description": "准备清单与注意事项"
+          },
+          {
+            "id": "environment",
+            "title": "环境",
+            "description": "环境与变化"
+          }
+        ]
+      },
+      {
+        "id": "action_guide",
+        "title": "行动建议",
+        "type": "advice",
+        "required": true,
+        "format": {
+          "do": "宜做事项（3-5条）",
+          "dont": "忌做事项（3-5条）"
+        }
+      }
+    ]
+  },
+  "prompt_template": {
+    "system_role": "你是一位谨慎的出行风险分析师，强调安全与准备。",
+    "analysis_focus": [
+      "风险提示优先",
+      "建议具体可执行",
+      "避免夸大"
+    ],
+    "output_requirements": [
+      "结构清晰",
+      "风险提示明确"
+    ]
+  },
+  "hexagrams": {
+    "1": {
+      "name": "乾",
+      "overall_tendency": "大吉",
+      "travel_rating": 5,
+      "key_points": [
+        "出行较顺，风险较低",
+        "整体安排较顺畅",
+        "准备充分，细节到位",
+        "注意途中安全与休息"
+      ],
+      "scenario_specific": {
+        "短途": {
+          "situation": "出行较顺",
+          "reasons": [
+            "路况可控"
+          ],
+          "advice": [
+            "准备基础物品",
+            "注意时间"
+          ],
+          "timing": "近期"
+        },
+        "长途": {
+          "situation": "整体较顺",
+          "reasons": [
+            "准备充分"
+          ],
+          "advice": [
+            "规划路线",
+            "留出缓冲"
+          ],
+          "timing": "近期"
+        },
+        "出差": {
+          "situation": "行程较顺",
+          "reasons": [
+            "安排明确"
+          ],
+          "advice": [
+            "提前确认日程",
+            "注意休息"
+          ],
+          "timing": "近期"
+        },
+        "迁移": {
+          "situation": "迁移条件较好",
+          "reasons": [
+            "计划完善"
+          ],
+          "advice": [
+            "分步推进",
+            "处理手续"
+          ],
+          "timing": "中期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "2": {
+      "name": "坤",
+      "overall_tendency": "大吉",
+      "travel_rating": 5,
+      "key_points": [
+        "出行较顺，风险较低",
+        "整体安排较顺畅",
+        "准备充分，细节到位",
+        "注意途中安全与休息"
+      ],
+      "scenario_specific": {
+        "短途": {
+          "situation": "出行较顺",
+          "reasons": [
+            "路况可控"
+          ],
+          "advice": [
+            "准备基础物品",
+            "注意时间"
+          ],
+          "timing": "近期"
+        },
+        "长途": {
+          "situation": "整体较顺",
+          "reasons": [
+            "准备充分"
+          ],
+          "advice": [
+            "规划路线",
+            "留出缓冲"
+          ],
+          "timing": "近期"
+        },
+        "出差": {
+          "situation": "行程较顺",
+          "reasons": [
+            "安排明确"
+          ],
+          "advice": [
+            "提前确认日程",
+            "注意休息"
+          ],
+          "timing": "近期"
+        },
+        "迁移": {
+          "situation": "迁移条件较好",
+          "reasons": [
+            "计划完善"
+          ],
+          "advice": [
+            "分步推进",
+            "处理手续"
+          ],
+          "timing": "中期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "3": {
+      "name": "屯",
+      "overall_tendency": "不利",
+      "travel_rating": 2,
+      "key_points": [
+        "风险偏高，不宜冒进",
+        "不确定性增加",
+        "建议调整计划或延后",
+        "安全优先，减少夜行"
+      ],
+      "scenario_specific": {
+        "短途": {
+          "situation": "不宜贸然出行",
+          "reasons": [
+            "风险升高"
+          ],
+          "advice": [
+            "推迟出行",
+            "必要时短行"
+          ],
+          "timing": "近期谨慎"
+        },
+        "长途": {
+          "situation": "长途风险偏高",
+          "reasons": [
+            "不确定性多"
+          ],
+          "advice": [
+            "考虑延期",
+            "做好保险"
+          ],
+          "timing": "中后期"
+        },
+        "出差": {
+          "situation": "可能受阻",
+          "reasons": [
+            "沟通不畅"
+          ],
+          "advice": [
+            "减少出行",
+            "远程替代"
+          ],
+          "timing": "近期谨慎"
+        },
+        "迁移": {
+          "situation": "迁移阻力大",
+          "reasons": [
+            "条件不足"
+          ],
+          "advice": [
+            "先解决核心问题",
+            "再推进"
+          ],
+          "timing": "中后期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "4": {
+      "name": "蒙",
+      "overall_tendency": "平",
+      "travel_rating": 3,
+      "key_points": [
+        "风险可控但有波折",
+        "需做好准备与预案",
+        "避免临时变更",
+        "留有时间与预算余量"
+      ],
+      "scenario_specific": {
+        "短途": {
+          "situation": "可成行但有小波折",
+          "reasons": [
+            "安排一般"
+          ],
+          "advice": [
+            "留出时间",
+            "备选方案"
+          ],
+          "timing": "近期"
+        },
+        "长途": {
+          "situation": "存在不确定性",
+          "reasons": [
+            "行程复杂"
+          ],
+          "advice": [
+            "强化准备",
+            "关注天气"
+          ],
+          "timing": "中期"
+        },
+        "出差": {
+          "situation": "进度一般",
+          "reasons": [
+            "沟通不足"
+          ],
+          "advice": [
+            "提前确认",
+            "减少临时变更"
+          ],
+          "timing": "近期"
+        },
+        "迁移": {
+          "situation": "条件一般",
+          "reasons": [
+            "资源尚可"
+          ],
+          "advice": [
+            "评估成本",
+            "完善计划"
+          ],
+          "timing": "中期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "5": {
+      "name": "需",
+      "overall_tendency": "平",
+      "travel_rating": 3,
+      "key_points": [
+        "风险可控但有波折",
+        "需做好准备与预案",
+        "避免临时变更",
+        "留有时间与预算余量"
+      ],
+      "scenario_specific": {
+        "短途": {
+          "situation": "可成行但有小波折",
+          "reasons": [
+            "安排一般"
+          ],
+          "advice": [
+            "留出时间",
+            "备选方案"
+          ],
+          "timing": "近期"
+        },
+        "长途": {
+          "situation": "存在不确定性",
+          "reasons": [
+            "行程复杂"
+          ],
+          "advice": [
+            "强化准备",
+            "关注天气"
+          ],
+          "timing": "中期"
+        },
+        "出差": {
+          "situation": "进度一般",
+          "reasons": [
+            "沟通不足"
+          ],
+          "advice": [
+            "提前确认",
+            "减少临时变更"
+          ],
+          "timing": "近期"
+        },
+        "迁移": {
+          "situation": "条件一般",
+          "reasons": [
+            "资源尚可"
+          ],
+          "advice": [
+            "评估成本",
+            "完善计划"
+          ],
+          "timing": "中期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "6": {
+      "name": "讼",
+      "overall_tendency": "不利",
+      "travel_rating": 2,
+      "key_points": [
+        "风险偏高，不宜冒进",
+        "不确定性增加",
+        "建议调整计划或延后",
+        "安全优先，减少夜行"
+      ],
+      "scenario_specific": {
+        "短途": {
+          "situation": "不宜贸然出行",
+          "reasons": [
+            "风险升高"
+          ],
+          "advice": [
+            "推迟出行",
+            "必要时短行"
+          ],
+          "timing": "近期谨慎"
+        },
+        "长途": {
+          "situation": "长途风险偏高",
+          "reasons": [
+            "不确定性多"
+          ],
+          "advice": [
+            "考虑延期",
+            "做好保险"
+          ],
+          "timing": "中后期"
+        },
+        "出差": {
+          "situation": "可能受阻",
+          "reasons": [
+            "沟通不畅"
+          ],
+          "advice": [
+            "减少出行",
+            "远程替代"
+          ],
+          "timing": "近期谨慎"
+        },
+        "迁移": {
+          "situation": "迁移阻力大",
+          "reasons": [
+            "条件不足"
+          ],
+          "advice": [
+            "先解决核心问题",
+            "再推进"
+          ],
+          "timing": "中后期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "7": {
+      "name": "师",
+      "overall_tendency": "吉",
+      "travel_rating": 4,
+      "key_points": [
+        "出行较顺，风险较低",
+        "整体安排较顺畅",
+        "准备充分，细节到位",
+        "注意途中安全与休息"
+      ],
+      "scenario_specific": {
+        "短途": {
+          "situation": "出行较顺",
+          "reasons": [
+            "路况可控"
+          ],
+          "advice": [
+            "准备基础物品",
+            "注意时间"
+          ],
+          "timing": "近期"
+        },
+        "长途": {
+          "situation": "整体较顺",
+          "reasons": [
+            "准备充分"
+          ],
+          "advice": [
+            "规划路线",
+            "留出缓冲"
+          ],
+          "timing": "近期"
+        },
+        "出差": {
+          "situation": "行程较顺",
+          "reasons": [
+            "安排明确"
+          ],
+          "advice": [
+            "提前确认日程",
+            "注意休息"
+          ],
+          "timing": "近期"
+        },
+        "迁移": {
+          "situation": "迁移条件较好",
+          "reasons": [
+            "计划完善"
+          ],
+          "advice": [
+            "分步推进",
+            "处理手续"
+          ],
+          "timing": "中期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "8": {
+      "name": "比",
+      "overall_tendency": "吉",
+      "travel_rating": 4,
+      "key_points": [
+        "出行较顺，风险较低",
+        "整体安排较顺畅",
+        "准备充分，细节到位",
+        "注意途中安全与休息"
+      ],
+      "scenario_specific": {
+        "短途": {
+          "situation": "出行较顺",
+          "reasons": [
+            "路况可控"
+          ],
+          "advice": [
+            "准备基础物品",
+            "注意时间"
+          ],
+          "timing": "近期"
+        },
+        "长途": {
+          "situation": "整体较顺",
+          "reasons": [
+            "准备充分"
+          ],
+          "advice": [
+            "规划路线",
+            "留出缓冲"
+          ],
+          "timing": "近期"
+        },
+        "出差": {
+          "situation": "行程较顺",
+          "reasons": [
+            "安排明确"
+          ],
+          "advice": [
+            "提前确认日程",
+            "注意休息"
+          ],
+          "timing": "近期"
+        },
+        "迁移": {
+          "situation": "迁移条件较好",
+          "reasons": [
+            "计划完善"
+          ],
+          "advice": [
+            "分步推进",
+            "处理手续"
+          ],
+          "timing": "中期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "9": {
+      "name": "小畜",
+      "overall_tendency": "平",
+      "travel_rating": 3,
+      "key_points": [
+        "风险可控但有波折",
+        "需做好准备与预案",
+        "避免临时变更",
+        "留有时间与预算余量"
+      ],
+      "scenario_specific": {
+        "短途": {
+          "situation": "可成行但有小波折",
+          "reasons": [
+            "安排一般"
+          ],
+          "advice": [
+            "留出时间",
+            "备选方案"
+          ],
+          "timing": "近期"
+        },
+        "长途": {
+          "situation": "存在不确定性",
+          "reasons": [
+            "行程复杂"
+          ],
+          "advice": [
+            "强化准备",
+            "关注天气"
+          ],
+          "timing": "中期"
+        },
+        "出差": {
+          "situation": "进度一般",
+          "reasons": [
+            "沟通不足"
+          ],
+          "advice": [
+            "提前确认",
+            "减少临时变更"
+          ],
+          "timing": "近期"
+        },
+        "迁移": {
+          "situation": "条件一般",
+          "reasons": [
+            "资源尚可"
+          ],
+          "advice": [
+            "评估成本",
+            "完善计划"
+          ],
+          "timing": "中期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "10": {
+      "name": "履",
+      "overall_tendency": "平",
+      "travel_rating": 3,
+      "key_points": [
+        "风险可控但有波折",
+        "需做好准备与预案",
+        "避免临时变更",
+        "留有时间与预算余量"
+      ],
+      "scenario_specific": {
+        "短途": {
+          "situation": "可成行但有小波折",
+          "reasons": [
+            "安排一般"
+          ],
+          "advice": [
+            "留出时间",
+            "备选方案"
+          ],
+          "timing": "近期"
+        },
+        "长途": {
+          "situation": "存在不确定性",
+          "reasons": [
+            "行程复杂"
+          ],
+          "advice": [
+            "强化准备",
+            "关注天气"
+          ],
+          "timing": "中期"
+        },
+        "出差": {
+          "situation": "进度一般",
+          "reasons": [
+            "沟通不足"
+          ],
+          "advice": [
+            "提前确认",
+            "减少临时变更"
+          ],
+          "timing": "近期"
+        },
+        "迁移": {
+          "situation": "条件一般",
+          "reasons": [
+            "资源尚可"
+          ],
+          "advice": [
+            "评估成本",
+            "完善计划"
+          ],
+          "timing": "中期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "11": {
+      "name": "泰",
+      "overall_tendency": "吉",
+      "travel_rating": 4,
+      "key_points": [
+        "出行较顺，风险较低",
+        "整体安排较顺畅",
+        "准备充分，细节到位",
+        "注意途中安全与休息"
+      ],
+      "scenario_specific": {
+        "短途": {
+          "situation": "出行较顺",
+          "reasons": [
+            "路况可控"
+          ],
+          "advice": [
+            "准备基础物品",
+            "注意时间"
+          ],
+          "timing": "近期"
+        },
+        "长途": {
+          "situation": "整体较顺",
+          "reasons": [
+            "准备充分"
+          ],
+          "advice": [
+            "规划路线",
+            "留出缓冲"
+          ],
+          "timing": "近期"
+        },
+        "出差": {
+          "situation": "行程较顺",
+          "reasons": [
+            "安排明确"
+          ],
+          "advice": [
+            "提前确认日程",
+            "注意休息"
+          ],
+          "timing": "近期"
+        },
+        "迁移": {
+          "situation": "迁移条件较好",
+          "reasons": [
+            "计划完善"
+          ],
+          "advice": [
+            "分步推进",
+            "处理手续"
+          ],
+          "timing": "中期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "12": {
+      "name": "否",
+      "overall_tendency": "凶",
+      "travel_rating": 2,
+      "key_points": [
+        "风险偏高，不宜冒进",
+        "不确定性增加",
+        "建议调整计划或延后",
+        "安全优先，减少夜行"
+      ],
+      "scenario_specific": {
+        "短途": {
+          "situation": "不宜贸然出行",
+          "reasons": [
+            "风险升高"
+          ],
+          "advice": [
+            "推迟出行",
+            "必要时短行"
+          ],
+          "timing": "近期谨慎"
+        },
+        "长途": {
+          "situation": "长途风险偏高",
+          "reasons": [
+            "不确定性多"
+          ],
+          "advice": [
+            "考虑延期",
+            "做好保险"
+          ],
+          "timing": "中后期"
+        },
+        "出差": {
+          "situation": "可能受阻",
+          "reasons": [
+            "沟通不畅"
+          ],
+          "advice": [
+            "减少出行",
+            "远程替代"
+          ],
+          "timing": "近期谨慎"
+        },
+        "迁移": {
+          "situation": "迁移阻力大",
+          "reasons": [
+            "条件不足"
+          ],
+          "advice": [
+            "先解决核心问题",
+            "再推进"
+          ],
+          "timing": "中后期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "13": {
+      "name": "同人",
+      "overall_tendency": "吉",
+      "travel_rating": 4,
+      "key_points": [
+        "出行较顺，风险较低",
+        "整体安排较顺畅",
+        "准备充分，细节到位",
+        "注意途中安全与休息"
+      ],
+      "scenario_specific": {
+        "短途": {
+          "situation": "出行较顺",
+          "reasons": [
+            "路况可控"
+          ],
+          "advice": [
+            "准备基础物品",
+            "注意时间"
+          ],
+          "timing": "近期"
+        },
+        "长途": {
+          "situation": "整体较顺",
+          "reasons": [
+            "准备充分"
+          ],
+          "advice": [
+            "规划路线",
+            "留出缓冲"
+          ],
+          "timing": "近期"
+        },
+        "出差": {
+          "situation": "行程较顺",
+          "reasons": [
+            "安排明确"
+          ],
+          "advice": [
+            "提前确认日程",
+            "注意休息"
+          ],
+          "timing": "近期"
+        },
+        "迁移": {
+          "situation": "迁移条件较好",
+          "reasons": [
+            "计划完善"
+          ],
+          "advice": [
+            "分步推进",
+            "处理手续"
+          ],
+          "timing": "中期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "14": {
+      "name": "大有",
+      "overall_tendency": "大吉",
+      "travel_rating": 5,
+      "key_points": [
+        "出行较顺，风险较低",
+        "整体安排较顺畅",
+        "准备充分，细节到位",
+        "注意途中安全与休息"
+      ],
+      "scenario_specific": {
+        "短途": {
+          "situation": "出行较顺",
+          "reasons": [
+            "路况可控"
+          ],
+          "advice": [
+            "准备基础物品",
+            "注意时间"
+          ],
+          "timing": "近期"
+        },
+        "长途": {
+          "situation": "整体较顺",
+          "reasons": [
+            "准备充分"
+          ],
+          "advice": [
+            "规划路线",
+            "留出缓冲"
+          ],
+          "timing": "近期"
+        },
+        "出差": {
+          "situation": "行程较顺",
+          "reasons": [
+            "安排明确"
+          ],
+          "advice": [
+            "提前确认日程",
+            "注意休息"
+          ],
+          "timing": "近期"
+        },
+        "迁移": {
+          "situation": "迁移条件较好",
+          "reasons": [
+            "计划完善"
+          ],
+          "advice": [
+            "分步推进",
+            "处理手续"
+          ],
+          "timing": "中期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "15": {
+      "name": "谦",
+      "overall_tendency": "吉",
+      "travel_rating": 4,
+      "key_points": [
+        "出行较顺，风险较低",
+        "整体安排较顺畅",
+        "准备充分，细节到位",
+        "注意途中安全与休息"
+      ],
+      "scenario_specific": {
+        "短途": {
+          "situation": "出行较顺",
+          "reasons": [
+            "路况可控"
+          ],
+          "advice": [
+            "准备基础物品",
+            "注意时间"
+          ],
+          "timing": "近期"
+        },
+        "长途": {
+          "situation": "整体较顺",
+          "reasons": [
+            "准备充分"
+          ],
+          "advice": [
+            "规划路线",
+            "留出缓冲"
+          ],
+          "timing": "近期"
+        },
+        "出差": {
+          "situation": "行程较顺",
+          "reasons": [
+            "安排明确"
+          ],
+          "advice": [
+            "提前确认日程",
+            "注意休息"
+          ],
+          "timing": "近期"
+        },
+        "迁移": {
+          "situation": "迁移条件较好",
+          "reasons": [
+            "计划完善"
+          ],
+          "advice": [
+            "分步推进",
+            "处理手续"
+          ],
+          "timing": "中期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "16": {
+      "name": "豫",
+      "overall_tendency": "吉",
+      "travel_rating": 4,
+      "key_points": [
+        "出行较顺，风险较低",
+        "整体安排较顺畅",
+        "准备充分，细节到位",
+        "注意途中安全与休息"
+      ],
+      "scenario_specific": {
+        "短途": {
+          "situation": "出行较顺",
+          "reasons": [
+            "路况可控"
+          ],
+          "advice": [
+            "准备基础物品",
+            "注意时间"
+          ],
+          "timing": "近期"
+        },
+        "长途": {
+          "situation": "整体较顺",
+          "reasons": [
+            "准备充分"
+          ],
+          "advice": [
+            "规划路线",
+            "留出缓冲"
+          ],
+          "timing": "近期"
+        },
+        "出差": {
+          "situation": "行程较顺",
+          "reasons": [
+            "安排明确"
+          ],
+          "advice": [
+            "提前确认日程",
+            "注意休息"
+          ],
+          "timing": "近期"
+        },
+        "迁移": {
+          "situation": "迁移条件较好",
+          "reasons": [
+            "计划完善"
+          ],
+          "advice": [
+            "分步推进",
+            "处理手续"
+          ],
+          "timing": "中期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "17": {
+      "name": "随",
+      "overall_tendency": "吉",
+      "travel_rating": 4,
+      "key_points": [
+        "出行较顺，风险较低",
+        "整体安排较顺畅",
+        "准备充分，细节到位",
+        "注意途中安全与休息"
+      ],
+      "scenario_specific": {
+        "短途": {
+          "situation": "出行较顺",
+          "reasons": [
+            "路况可控"
+          ],
+          "advice": [
+            "准备基础物品",
+            "注意时间"
+          ],
+          "timing": "近期"
+        },
+        "长途": {
+          "situation": "整体较顺",
+          "reasons": [
+            "准备充分"
+          ],
+          "advice": [
+            "规划路线",
+            "留出缓冲"
+          ],
+          "timing": "近期"
+        },
+        "出差": {
+          "situation": "行程较顺",
+          "reasons": [
+            "安排明确"
+          ],
+          "advice": [
+            "提前确认日程",
+            "注意休息"
+          ],
+          "timing": "近期"
+        },
+        "迁移": {
+          "situation": "迁移条件较好",
+          "reasons": [
+            "计划完善"
+          ],
+          "advice": [
+            "分步推进",
+            "处理手续"
+          ],
+          "timing": "中期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "18": {
+      "name": "蛊",
+      "overall_tendency": "不利",
+      "travel_rating": 2,
+      "key_points": [
+        "风险偏高，不宜冒进",
+        "不确定性增加",
+        "建议调整计划或延后",
+        "安全优先，减少夜行"
+      ],
+      "scenario_specific": {
+        "短途": {
+          "situation": "不宜贸然出行",
+          "reasons": [
+            "风险升高"
+          ],
+          "advice": [
+            "推迟出行",
+            "必要时短行"
+          ],
+          "timing": "近期谨慎"
+        },
+        "长途": {
+          "situation": "长途风险偏高",
+          "reasons": [
+            "不确定性多"
+          ],
+          "advice": [
+            "考虑延期",
+            "做好保险"
+          ],
+          "timing": "中后期"
+        },
+        "出差": {
+          "situation": "可能受阻",
+          "reasons": [
+            "沟通不畅"
+          ],
+          "advice": [
+            "减少出行",
+            "远程替代"
+          ],
+          "timing": "近期谨慎"
+        },
+        "迁移": {
+          "situation": "迁移阻力大",
+          "reasons": [
+            "条件不足"
+          ],
+          "advice": [
+            "先解决核心问题",
+            "再推进"
+          ],
+          "timing": "中后期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "19": {
+      "name": "临",
+      "overall_tendency": "吉",
+      "travel_rating": 4,
+      "key_points": [
+        "出行较顺，风险较低",
+        "整体安排较顺畅",
+        "准备充分，细节到位",
+        "注意途中安全与休息"
+      ],
+      "scenario_specific": {
+        "短途": {
+          "situation": "出行较顺",
+          "reasons": [
+            "路况可控"
+          ],
+          "advice": [
+            "准备基础物品",
+            "注意时间"
+          ],
+          "timing": "近期"
+        },
+        "长途": {
+          "situation": "整体较顺",
+          "reasons": [
+            "准备充分"
+          ],
+          "advice": [
+            "规划路线",
+            "留出缓冲"
+          ],
+          "timing": "近期"
+        },
+        "出差": {
+          "situation": "行程较顺",
+          "reasons": [
+            "安排明确"
+          ],
+          "advice": [
+            "提前确认日程",
+            "注意休息"
+          ],
+          "timing": "近期"
+        },
+        "迁移": {
+          "situation": "迁移条件较好",
+          "reasons": [
+            "计划完善"
+          ],
+          "advice": [
+            "分步推进",
+            "处理手续"
+          ],
+          "timing": "中期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "20": {
+      "name": "观",
+      "overall_tendency": "平",
+      "travel_rating": 3,
+      "key_points": [
+        "风险可控但有波折",
+        "需做好准备与预案",
+        "避免临时变更",
+        "留有时间与预算余量"
+      ],
+      "scenario_specific": {
+        "短途": {
+          "situation": "可成行但有小波折",
+          "reasons": [
+            "安排一般"
+          ],
+          "advice": [
+            "留出时间",
+            "备选方案"
+          ],
+          "timing": "近期"
+        },
+        "长途": {
+          "situation": "存在不确定性",
+          "reasons": [
+            "行程复杂"
+          ],
+          "advice": [
+            "强化准备",
+            "关注天气"
+          ],
+          "timing": "中期"
+        },
+        "出差": {
+          "situation": "进度一般",
+          "reasons": [
+            "沟通不足"
+          ],
+          "advice": [
+            "提前确认",
+            "减少临时变更"
+          ],
+          "timing": "近期"
+        },
+        "迁移": {
+          "situation": "条件一般",
+          "reasons": [
+            "资源尚可"
+          ],
+          "advice": [
+            "评估成本",
+            "完善计划"
+          ],
+          "timing": "中期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "21": {
+      "name": "噬嗑",
+      "overall_tendency": "平",
+      "travel_rating": 3,
+      "key_points": [
+        "风险可控但有波折",
+        "需做好准备与预案",
+        "避免临时变更",
+        "留有时间与预算余量"
+      ],
+      "scenario_specific": {
+        "短途": {
+          "situation": "可成行但有小波折",
+          "reasons": [
+            "安排一般"
+          ],
+          "advice": [
+            "留出时间",
+            "备选方案"
+          ],
+          "timing": "近期"
+        },
+        "长途": {
+          "situation": "存在不确定性",
+          "reasons": [
+            "行程复杂"
+          ],
+          "advice": [
+            "强化准备",
+            "关注天气"
+          ],
+          "timing": "中期"
+        },
+        "出差": {
+          "situation": "进度一般",
+          "reasons": [
+            "沟通不足"
+          ],
+          "advice": [
+            "提前确认",
+            "减少临时变更"
+          ],
+          "timing": "近期"
+        },
+        "迁移": {
+          "situation": "条件一般",
+          "reasons": [
+            "资源尚可"
+          ],
+          "advice": [
+            "评估成本",
+            "完善计划"
+          ],
+          "timing": "中期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "22": {
+      "name": "贲",
+      "overall_tendency": "吉",
+      "travel_rating": 4,
+      "key_points": [
+        "出行较顺，风险较低",
+        "整体安排较顺畅",
+        "准备充分，细节到位",
+        "注意途中安全与休息"
+      ],
+      "scenario_specific": {
+        "短途": {
+          "situation": "出行较顺",
+          "reasons": [
+            "路况可控"
+          ],
+          "advice": [
+            "准备基础物品",
+            "注意时间"
+          ],
+          "timing": "近期"
+        },
+        "长途": {
+          "situation": "整体较顺",
+          "reasons": [
+            "准备充分"
+          ],
+          "advice": [
+            "规划路线",
+            "留出缓冲"
+          ],
+          "timing": "近期"
+        },
+        "出差": {
+          "situation": "行程较顺",
+          "reasons": [
+            "安排明确"
+          ],
+          "advice": [
+            "提前确认日程",
+            "注意休息"
+          ],
+          "timing": "近期"
+        },
+        "迁移": {
+          "situation": "迁移条件较好",
+          "reasons": [
+            "计划完善"
+          ],
+          "advice": [
+            "分步推进",
+            "处理手续"
+          ],
+          "timing": "中期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "23": {
+      "name": "剥",
+      "overall_tendency": "凶",
+      "travel_rating": 2,
+      "key_points": [
+        "风险偏高，不宜冒进",
+        "不确定性增加",
+        "建议调整计划或延后",
+        "安全优先，减少夜行"
+      ],
+      "scenario_specific": {
+        "短途": {
+          "situation": "不宜贸然出行",
+          "reasons": [
+            "风险升高"
+          ],
+          "advice": [
+            "推迟出行",
+            "必要时短行"
+          ],
+          "timing": "近期谨慎"
+        },
+        "长途": {
+          "situation": "长途风险偏高",
+          "reasons": [
+            "不确定性多"
+          ],
+          "advice": [
+            "考虑延期",
+            "做好保险"
+          ],
+          "timing": "中后期"
+        },
+        "出差": {
+          "situation": "可能受阻",
+          "reasons": [
+            "沟通不畅"
+          ],
+          "advice": [
+            "减少出行",
+            "远程替代"
+          ],
+          "timing": "近期谨慎"
+        },
+        "迁移": {
+          "situation": "迁移阻力大",
+          "reasons": [
+            "条件不足"
+          ],
+          "advice": [
+            "先解决核心问题",
+            "再推进"
+          ],
+          "timing": "中后期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "24": {
+      "name": "复",
+      "overall_tendency": "吉",
+      "travel_rating": 4,
+      "key_points": [
+        "出行较顺，风险较低",
+        "整体安排较顺畅",
+        "准备充分，细节到位",
+        "注意途中安全与休息"
+      ],
+      "scenario_specific": {
+        "短途": {
+          "situation": "出行较顺",
+          "reasons": [
+            "路况可控"
+          ],
+          "advice": [
+            "准备基础物品",
+            "注意时间"
+          ],
+          "timing": "近期"
+        },
+        "长途": {
+          "situation": "整体较顺",
+          "reasons": [
+            "准备充分"
+          ],
+          "advice": [
+            "规划路线",
+            "留出缓冲"
+          ],
+          "timing": "近期"
+        },
+        "出差": {
+          "situation": "行程较顺",
+          "reasons": [
+            "安排明确"
+          ],
+          "advice": [
+            "提前确认日程",
+            "注意休息"
+          ],
+          "timing": "近期"
+        },
+        "迁移": {
+          "situation": "迁移条件较好",
+          "reasons": [
+            "计划完善"
+          ],
+          "advice": [
+            "分步推进",
+            "处理手续"
+          ],
+          "timing": "中期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "25": {
+      "name": "无妄",
+      "overall_tendency": "吉",
+      "travel_rating": 4,
+      "key_points": [
+        "出行较顺，风险较低",
+        "整体安排较顺畅",
+        "准备充分，细节到位",
+        "注意途中安全与休息"
+      ],
+      "scenario_specific": {
+        "短途": {
+          "situation": "出行较顺",
+          "reasons": [
+            "路况可控"
+          ],
+          "advice": [
+            "准备基础物品",
+            "注意时间"
+          ],
+          "timing": "近期"
+        },
+        "长途": {
+          "situation": "整体较顺",
+          "reasons": [
+            "准备充分"
+          ],
+          "advice": [
+            "规划路线",
+            "留出缓冲"
+          ],
+          "timing": "近期"
+        },
+        "出差": {
+          "situation": "行程较顺",
+          "reasons": [
+            "安排明确"
+          ],
+          "advice": [
+            "提前确认日程",
+            "注意休息"
+          ],
+          "timing": "近期"
+        },
+        "迁移": {
+          "situation": "迁移条件较好",
+          "reasons": [
+            "计划完善"
+          ],
+          "advice": [
+            "分步推进",
+            "处理手续"
+          ],
+          "timing": "中期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "26": {
+      "name": "大畜",
+      "overall_tendency": "吉",
+      "travel_rating": 4,
+      "key_points": [
+        "出行较顺，风险较低",
+        "整体安排较顺畅",
+        "准备充分，细节到位",
+        "注意途中安全与休息"
+      ],
+      "scenario_specific": {
+        "短途": {
+          "situation": "出行较顺",
+          "reasons": [
+            "路况可控"
+          ],
+          "advice": [
+            "准备基础物品",
+            "注意时间"
+          ],
+          "timing": "近期"
+        },
+        "长途": {
+          "situation": "整体较顺",
+          "reasons": [
+            "准备充分"
+          ],
+          "advice": [
+            "规划路线",
+            "留出缓冲"
+          ],
+          "timing": "近期"
+        },
+        "出差": {
+          "situation": "行程较顺",
+          "reasons": [
+            "安排明确"
+          ],
+          "advice": [
+            "提前确认日程",
+            "注意休息"
+          ],
+          "timing": "近期"
+        },
+        "迁移": {
+          "situation": "迁移条件较好",
+          "reasons": [
+            "计划完善"
+          ],
+          "advice": [
+            "分步推进",
+            "处理手续"
+          ],
+          "timing": "中期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "27": {
+      "name": "颐",
+      "overall_tendency": "平",
+      "travel_rating": 3,
+      "key_points": [
+        "风险可控但有波折",
+        "需做好准备与预案",
+        "避免临时变更",
+        "留有时间与预算余量"
+      ],
+      "scenario_specific": {
+        "短途": {
+          "situation": "可成行但有小波折",
+          "reasons": [
+            "安排一般"
+          ],
+          "advice": [
+            "留出时间",
+            "备选方案"
+          ],
+          "timing": "近期"
+        },
+        "长途": {
+          "situation": "存在不确定性",
+          "reasons": [
+            "行程复杂"
+          ],
+          "advice": [
+            "强化准备",
+            "关注天气"
+          ],
+          "timing": "中期"
+        },
+        "出差": {
+          "situation": "进度一般",
+          "reasons": [
+            "沟通不足"
+          ],
+          "advice": [
+            "提前确认",
+            "减少临时变更"
+          ],
+          "timing": "近期"
+        },
+        "迁移": {
+          "situation": "条件一般",
+          "reasons": [
+            "资源尚可"
+          ],
+          "advice": [
+            "评估成本",
+            "完善计划"
+          ],
+          "timing": "中期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "28": {
+      "name": "大过",
+      "overall_tendency": "不利",
+      "travel_rating": 2,
+      "key_points": [
+        "风险偏高，不宜冒进",
+        "不确定性增加",
+        "建议调整计划或延后",
+        "安全优先，减少夜行"
+      ],
+      "scenario_specific": {
+        "短途": {
+          "situation": "不宜贸然出行",
+          "reasons": [
+            "风险升高"
+          ],
+          "advice": [
+            "推迟出行",
+            "必要时短行"
+          ],
+          "timing": "近期谨慎"
+        },
+        "长途": {
+          "situation": "长途风险偏高",
+          "reasons": [
+            "不确定性多"
+          ],
+          "advice": [
+            "考虑延期",
+            "做好保险"
+          ],
+          "timing": "中后期"
+        },
+        "出差": {
+          "situation": "可能受阻",
+          "reasons": [
+            "沟通不畅"
+          ],
+          "advice": [
+            "减少出行",
+            "远程替代"
+          ],
+          "timing": "近期谨慎"
+        },
+        "迁移": {
+          "situation": "迁移阻力大",
+          "reasons": [
+            "条件不足"
+          ],
+          "advice": [
+            "先解决核心问题",
+            "再推进"
+          ],
+          "timing": "中后期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "29": {
+      "name": "坎",
+      "overall_tendency": "不利",
+      "travel_rating": 2,
+      "key_points": [
+        "风险偏高，不宜冒进",
+        "不确定性增加",
+        "建议调整计划或延后",
+        "安全优先，减少夜行"
+      ],
+      "scenario_specific": {
+        "短途": {
+          "situation": "不宜贸然出行",
+          "reasons": [
+            "风险升高"
+          ],
+          "advice": [
+            "推迟出行",
+            "必要时短行"
+          ],
+          "timing": "近期谨慎"
+        },
+        "长途": {
+          "situation": "长途风险偏高",
+          "reasons": [
+            "不确定性多"
+          ],
+          "advice": [
+            "考虑延期",
+            "做好保险"
+          ],
+          "timing": "中后期"
+        },
+        "出差": {
+          "situation": "可能受阻",
+          "reasons": [
+            "沟通不畅"
+          ],
+          "advice": [
+            "减少出行",
+            "远程替代"
+          ],
+          "timing": "近期谨慎"
+        },
+        "迁移": {
+          "situation": "迁移阻力大",
+          "reasons": [
+            "条件不足"
+          ],
+          "advice": [
+            "先解决核心问题",
+            "再推进"
+          ],
+          "timing": "中后期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "30": {
+      "name": "离",
+      "overall_tendency": "吉",
+      "travel_rating": 4,
+      "key_points": [
+        "出行较顺，风险较低",
+        "整体安排较顺畅",
+        "准备充分，细节到位",
+        "注意途中安全与休息"
+      ],
+      "scenario_specific": {
+        "短途": {
+          "situation": "出行较顺",
+          "reasons": [
+            "路况可控"
+          ],
+          "advice": [
+            "准备基础物品",
+            "注意时间"
+          ],
+          "timing": "近期"
+        },
+        "长途": {
+          "situation": "整体较顺",
+          "reasons": [
+            "准备充分"
+          ],
+          "advice": [
+            "规划路线",
+            "留出缓冲"
+          ],
+          "timing": "近期"
+        },
+        "出差": {
+          "situation": "行程较顺",
+          "reasons": [
+            "安排明确"
+          ],
+          "advice": [
+            "提前确认日程",
+            "注意休息"
+          ],
+          "timing": "近期"
+        },
+        "迁移": {
+          "situation": "迁移条件较好",
+          "reasons": [
+            "计划完善"
+          ],
+          "advice": [
+            "分步推进",
+            "处理手续"
+          ],
+          "timing": "中期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "31": {
+      "name": "咸",
+      "overall_tendency": "吉",
+      "travel_rating": 4,
+      "key_points": [
+        "出行较顺，风险较低",
+        "整体安排较顺畅",
+        "准备充分，细节到位",
+        "注意途中安全与休息"
+      ],
+      "scenario_specific": {
+        "短途": {
+          "situation": "出行较顺",
+          "reasons": [
+            "路况可控"
+          ],
+          "advice": [
+            "准备基础物品",
+            "注意时间"
+          ],
+          "timing": "近期"
+        },
+        "长途": {
+          "situation": "整体较顺",
+          "reasons": [
+            "准备充分"
+          ],
+          "advice": [
+            "规划路线",
+            "留出缓冲"
+          ],
+          "timing": "近期"
+        },
+        "出差": {
+          "situation": "行程较顺",
+          "reasons": [
+            "安排明确"
+          ],
+          "advice": [
+            "提前确认日程",
+            "注意休息"
+          ],
+          "timing": "近期"
+        },
+        "迁移": {
+          "situation": "迁移条件较好",
+          "reasons": [
+            "计划完善"
+          ],
+          "advice": [
+            "分步推进",
+            "处理手续"
+          ],
+          "timing": "中期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "32": {
+      "name": "恒",
+      "overall_tendency": "吉",
+      "travel_rating": 4,
+      "key_points": [
+        "出行较顺，风险较低",
+        "整体安排较顺畅",
+        "准备充分，细节到位",
+        "注意途中安全与休息"
+      ],
+      "scenario_specific": {
+        "短途": {
+          "situation": "出行较顺",
+          "reasons": [
+            "路况可控"
+          ],
+          "advice": [
+            "准备基础物品",
+            "注意时间"
+          ],
+          "timing": "近期"
+        },
+        "长途": {
+          "situation": "整体较顺",
+          "reasons": [
+            "准备充分"
+          ],
+          "advice": [
+            "规划路线",
+            "留出缓冲"
+          ],
+          "timing": "近期"
+        },
+        "出差": {
+          "situation": "行程较顺",
+          "reasons": [
+            "安排明确"
+          ],
+          "advice": [
+            "提前确认日程",
+            "注意休息"
+          ],
+          "timing": "近期"
+        },
+        "迁移": {
+          "situation": "迁移条件较好",
+          "reasons": [
+            "计划完善"
+          ],
+          "advice": [
+            "分步推进",
+            "处理手续"
+          ],
+          "timing": "中期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "33": {
+      "name": "遁",
+      "overall_tendency": "平",
+      "travel_rating": 3,
+      "key_points": [
+        "风险可控但有波折",
+        "需做好准备与预案",
+        "避免临时变更",
+        "留有时间与预算余量"
+      ],
+      "scenario_specific": {
+        "短途": {
+          "situation": "可成行但有小波折",
+          "reasons": [
+            "安排一般"
+          ],
+          "advice": [
+            "留出时间",
+            "备选方案"
+          ],
+          "timing": "近期"
+        },
+        "长途": {
+          "situation": "存在不确定性",
+          "reasons": [
+            "行程复杂"
+          ],
+          "advice": [
+            "强化准备",
+            "关注天气"
+          ],
+          "timing": "中期"
+        },
+        "出差": {
+          "situation": "进度一般",
+          "reasons": [
+            "沟通不足"
+          ],
+          "advice": [
+            "提前确认",
+            "减少临时变更"
+          ],
+          "timing": "近期"
+        },
+        "迁移": {
+          "situation": "条件一般",
+          "reasons": [
+            "资源尚可"
+          ],
+          "advice": [
+            "评估成本",
+            "完善计划"
+          ],
+          "timing": "中期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "34": {
+      "name": "大壮",
+      "overall_tendency": "吉",
+      "travel_rating": 4,
+      "key_points": [
+        "出行较顺，风险较低",
+        "整体安排较顺畅",
+        "准备充分，细节到位",
+        "注意途中安全与休息"
+      ],
+      "scenario_specific": {
+        "短途": {
+          "situation": "出行较顺",
+          "reasons": [
+            "路况可控"
+          ],
+          "advice": [
+            "准备基础物品",
+            "注意时间"
+          ],
+          "timing": "近期"
+        },
+        "长途": {
+          "situation": "整体较顺",
+          "reasons": [
+            "准备充分"
+          ],
+          "advice": [
+            "规划路线",
+            "留出缓冲"
+          ],
+          "timing": "近期"
+        },
+        "出差": {
+          "situation": "行程较顺",
+          "reasons": [
+            "安排明确"
+          ],
+          "advice": [
+            "提前确认日程",
+            "注意休息"
+          ],
+          "timing": "近期"
+        },
+        "迁移": {
+          "situation": "迁移条件较好",
+          "reasons": [
+            "计划完善"
+          ],
+          "advice": [
+            "分步推进",
+            "处理手续"
+          ],
+          "timing": "中期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "35": {
+      "name": "晋",
+      "overall_tendency": "大吉",
+      "travel_rating": 5,
+      "key_points": [
+        "出行较顺，风险较低",
+        "整体安排较顺畅",
+        "准备充分，细节到位",
+        "注意途中安全与休息"
+      ],
+      "scenario_specific": {
+        "短途": {
+          "situation": "出行较顺",
+          "reasons": [
+            "路况可控"
+          ],
+          "advice": [
+            "准备基础物品",
+            "注意时间"
+          ],
+          "timing": "近期"
+        },
+        "长途": {
+          "situation": "整体较顺",
+          "reasons": [
+            "准备充分"
+          ],
+          "advice": [
+            "规划路线",
+            "留出缓冲"
+          ],
+          "timing": "近期"
+        },
+        "出差": {
+          "situation": "行程较顺",
+          "reasons": [
+            "安排明确"
+          ],
+          "advice": [
+            "提前确认日程",
+            "注意休息"
+          ],
+          "timing": "近期"
+        },
+        "迁移": {
+          "situation": "迁移条件较好",
+          "reasons": [
+            "计划完善"
+          ],
+          "advice": [
+            "分步推进",
+            "处理手续"
+          ],
+          "timing": "中期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "36": {
+      "name": "明夷",
+      "overall_tendency": "凶",
+      "travel_rating": 2,
+      "key_points": [
+        "风险偏高，不宜冒进",
+        "不确定性增加",
+        "建议调整计划或延后",
+        "安全优先，减少夜行"
+      ],
+      "scenario_specific": {
+        "短途": {
+          "situation": "不宜贸然出行",
+          "reasons": [
+            "风险升高"
+          ],
+          "advice": [
+            "推迟出行",
+            "必要时短行"
+          ],
+          "timing": "近期谨慎"
+        },
+        "长途": {
+          "situation": "长途风险偏高",
+          "reasons": [
+            "不确定性多"
+          ],
+          "advice": [
+            "考虑延期",
+            "做好保险"
+          ],
+          "timing": "中后期"
+        },
+        "出差": {
+          "situation": "可能受阻",
+          "reasons": [
+            "沟通不畅"
+          ],
+          "advice": [
+            "减少出行",
+            "远程替代"
+          ],
+          "timing": "近期谨慎"
+        },
+        "迁移": {
+          "situation": "迁移阻力大",
+          "reasons": [
+            "条件不足"
+          ],
+          "advice": [
+            "先解决核心问题",
+            "再推进"
+          ],
+          "timing": "中后期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "37": {
+      "name": "家人",
+      "overall_tendency": "吉",
+      "travel_rating": 4,
+      "key_points": [
+        "出行较顺，风险较低",
+        "整体安排较顺畅",
+        "准备充分，细节到位",
+        "注意途中安全与休息"
+      ],
+      "scenario_specific": {
+        "短途": {
+          "situation": "出行较顺",
+          "reasons": [
+            "路况可控"
+          ],
+          "advice": [
+            "准备基础物品",
+            "注意时间"
+          ],
+          "timing": "近期"
+        },
+        "长途": {
+          "situation": "整体较顺",
+          "reasons": [
+            "准备充分"
+          ],
+          "advice": [
+            "规划路线",
+            "留出缓冲"
+          ],
+          "timing": "近期"
+        },
+        "出差": {
+          "situation": "行程较顺",
+          "reasons": [
+            "安排明确"
+          ],
+          "advice": [
+            "提前确认日程",
+            "注意休息"
+          ],
+          "timing": "近期"
+        },
+        "迁移": {
+          "situation": "迁移条件较好",
+          "reasons": [
+            "计划完善"
+          ],
+          "advice": [
+            "分步推进",
+            "处理手续"
+          ],
+          "timing": "中期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "38": {
+      "name": "睽",
+      "overall_tendency": "不利",
+      "travel_rating": 2,
+      "key_points": [
+        "风险偏高，不宜冒进",
+        "不确定性增加",
+        "建议调整计划或延后",
+        "安全优先，减少夜行"
+      ],
+      "scenario_specific": {
+        "短途": {
+          "situation": "不宜贸然出行",
+          "reasons": [
+            "风险升高"
+          ],
+          "advice": [
+            "推迟出行",
+            "必要时短行"
+          ],
+          "timing": "近期谨慎"
+        },
+        "长途": {
+          "situation": "长途风险偏高",
+          "reasons": [
+            "不确定性多"
+          ],
+          "advice": [
+            "考虑延期",
+            "做好保险"
+          ],
+          "timing": "中后期"
+        },
+        "出差": {
+          "situation": "可能受阻",
+          "reasons": [
+            "沟通不畅"
+          ],
+          "advice": [
+            "减少出行",
+            "远程替代"
+          ],
+          "timing": "近期谨慎"
+        },
+        "迁移": {
+          "situation": "迁移阻力大",
+          "reasons": [
+            "条件不足"
+          ],
+          "advice": [
+            "先解决核心问题",
+            "再推进"
+          ],
+          "timing": "中后期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "39": {
+      "name": "蹇",
+      "overall_tendency": "不利",
+      "travel_rating": 2,
+      "key_points": [
+        "风险偏高，不宜冒进",
+        "不确定性增加",
+        "建议调整计划或延后",
+        "安全优先，减少夜行"
+      ],
+      "scenario_specific": {
+        "短途": {
+          "situation": "不宜贸然出行",
+          "reasons": [
+            "风险升高"
+          ],
+          "advice": [
+            "推迟出行",
+            "必要时短行"
+          ],
+          "timing": "近期谨慎"
+        },
+        "长途": {
+          "situation": "长途风险偏高",
+          "reasons": [
+            "不确定性多"
+          ],
+          "advice": [
+            "考虑延期",
+            "做好保险"
+          ],
+          "timing": "中后期"
+        },
+        "出差": {
+          "situation": "可能受阻",
+          "reasons": [
+            "沟通不畅"
+          ],
+          "advice": [
+            "减少出行",
+            "远程替代"
+          ],
+          "timing": "近期谨慎"
+        },
+        "迁移": {
+          "situation": "迁移阻力大",
+          "reasons": [
+            "条件不足"
+          ],
+          "advice": [
+            "先解决核心问题",
+            "再推进"
+          ],
+          "timing": "中后期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "40": {
+      "name": "解",
+      "overall_tendency": "吉",
+      "travel_rating": 4,
+      "key_points": [
+        "出行较顺，风险较低",
+        "整体安排较顺畅",
+        "准备充分，细节到位",
+        "注意途中安全与休息"
+      ],
+      "scenario_specific": {
+        "短途": {
+          "situation": "出行较顺",
+          "reasons": [
+            "路况可控"
+          ],
+          "advice": [
+            "准备基础物品",
+            "注意时间"
+          ],
+          "timing": "近期"
+        },
+        "长途": {
+          "situation": "整体较顺",
+          "reasons": [
+            "准备充分"
+          ],
+          "advice": [
+            "规划路线",
+            "留出缓冲"
+          ],
+          "timing": "近期"
+        },
+        "出差": {
+          "situation": "行程较顺",
+          "reasons": [
+            "安排明确"
+          ],
+          "advice": [
+            "提前确认日程",
+            "注意休息"
+          ],
+          "timing": "近期"
+        },
+        "迁移": {
+          "situation": "迁移条件较好",
+          "reasons": [
+            "计划完善"
+          ],
+          "advice": [
+            "分步推进",
+            "处理手续"
+          ],
+          "timing": "中期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "41": {
+      "name": "损",
+      "overall_tendency": "平",
+      "travel_rating": 3,
+      "key_points": [
+        "风险可控但有波折",
+        "需做好准备与预案",
+        "避免临时变更",
+        "留有时间与预算余量"
+      ],
+      "scenario_specific": {
+        "短途": {
+          "situation": "可成行但有小波折",
+          "reasons": [
+            "安排一般"
+          ],
+          "advice": [
+            "留出时间",
+            "备选方案"
+          ],
+          "timing": "近期"
+        },
+        "长途": {
+          "situation": "存在不确定性",
+          "reasons": [
+            "行程复杂"
+          ],
+          "advice": [
+            "强化准备",
+            "关注天气"
+          ],
+          "timing": "中期"
+        },
+        "出差": {
+          "situation": "进度一般",
+          "reasons": [
+            "沟通不足"
+          ],
+          "advice": [
+            "提前确认",
+            "减少临时变更"
+          ],
+          "timing": "近期"
+        },
+        "迁移": {
+          "situation": "条件一般",
+          "reasons": [
+            "资源尚可"
+          ],
+          "advice": [
+            "评估成本",
+            "完善计划"
+          ],
+          "timing": "中期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "42": {
+      "name": "益",
+      "overall_tendency": "大吉",
+      "travel_rating": 5,
+      "key_points": [
+        "出行较顺，风险较低",
+        "整体安排较顺畅",
+        "准备充分，细节到位",
+        "注意途中安全与休息"
+      ],
+      "scenario_specific": {
+        "短途": {
+          "situation": "出行较顺",
+          "reasons": [
+            "路况可控"
+          ],
+          "advice": [
+            "准备基础物品",
+            "注意时间"
+          ],
+          "timing": "近期"
+        },
+        "长途": {
+          "situation": "整体较顺",
+          "reasons": [
+            "准备充分"
+          ],
+          "advice": [
+            "规划路线",
+            "留出缓冲"
+          ],
+          "timing": "近期"
+        },
+        "出差": {
+          "situation": "行程较顺",
+          "reasons": [
+            "安排明确"
+          ],
+          "advice": [
+            "提前确认日程",
+            "注意休息"
+          ],
+          "timing": "近期"
+        },
+        "迁移": {
+          "situation": "迁移条件较好",
+          "reasons": [
+            "计划完善"
+          ],
+          "advice": [
+            "分步推进",
+            "处理手续"
+          ],
+          "timing": "中期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "43": {
+      "name": "夬",
+      "overall_tendency": "吉",
+      "travel_rating": 4,
+      "key_points": [
+        "出行较顺，风险较低",
+        "整体安排较顺畅",
+        "准备充分，细节到位",
+        "注意途中安全与休息"
+      ],
+      "scenario_specific": {
+        "短途": {
+          "situation": "出行较顺",
+          "reasons": [
+            "路况可控"
+          ],
+          "advice": [
+            "准备基础物品",
+            "注意时间"
+          ],
+          "timing": "近期"
+        },
+        "长途": {
+          "situation": "整体较顺",
+          "reasons": [
+            "准备充分"
+          ],
+          "advice": [
+            "规划路线",
+            "留出缓冲"
+          ],
+          "timing": "近期"
+        },
+        "出差": {
+          "situation": "行程较顺",
+          "reasons": [
+            "安排明确"
+          ],
+          "advice": [
+            "提前确认日程",
+            "注意休息"
+          ],
+          "timing": "近期"
+        },
+        "迁移": {
+          "situation": "迁移条件较好",
+          "reasons": [
+            "计划完善"
+          ],
+          "advice": [
+            "分步推进",
+            "处理手续"
+          ],
+          "timing": "中期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "44": {
+      "name": "姤",
+      "overall_tendency": "不利",
+      "travel_rating": 2,
+      "key_points": [
+        "风险偏高，不宜冒进",
+        "不确定性增加",
+        "建议调整计划或延后",
+        "安全优先，减少夜行"
+      ],
+      "scenario_specific": {
+        "短途": {
+          "situation": "不宜贸然出行",
+          "reasons": [
+            "风险升高"
+          ],
+          "advice": [
+            "推迟出行",
+            "必要时短行"
+          ],
+          "timing": "近期谨慎"
+        },
+        "长途": {
+          "situation": "长途风险偏高",
+          "reasons": [
+            "不确定性多"
+          ],
+          "advice": [
+            "考虑延期",
+            "做好保险"
+          ],
+          "timing": "中后期"
+        },
+        "出差": {
+          "situation": "可能受阻",
+          "reasons": [
+            "沟通不畅"
+          ],
+          "advice": [
+            "减少出行",
+            "远程替代"
+          ],
+          "timing": "近期谨慎"
+        },
+        "迁移": {
+          "situation": "迁移阻力大",
+          "reasons": [
+            "条件不足"
+          ],
+          "advice": [
+            "先解决核心问题",
+            "再推进"
+          ],
+          "timing": "中后期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "45": {
+      "name": "萃",
+      "overall_tendency": "吉",
+      "travel_rating": 4,
+      "key_points": [
+        "出行较顺，风险较低",
+        "整体安排较顺畅",
+        "准备充分，细节到位",
+        "注意途中安全与休息"
+      ],
+      "scenario_specific": {
+        "短途": {
+          "situation": "出行较顺",
+          "reasons": [
+            "路况可控"
+          ],
+          "advice": [
+            "准备基础物品",
+            "注意时间"
+          ],
+          "timing": "近期"
+        },
+        "长途": {
+          "situation": "整体较顺",
+          "reasons": [
+            "准备充分"
+          ],
+          "advice": [
+            "规划路线",
+            "留出缓冲"
+          ],
+          "timing": "近期"
+        },
+        "出差": {
+          "situation": "行程较顺",
+          "reasons": [
+            "安排明确"
+          ],
+          "advice": [
+            "提前确认日程",
+            "注意休息"
+          ],
+          "timing": "近期"
+        },
+        "迁移": {
+          "situation": "迁移条件较好",
+          "reasons": [
+            "计划完善"
+          ],
+          "advice": [
+            "分步推进",
+            "处理手续"
+          ],
+          "timing": "中期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "46": {
+      "name": "升",
+      "overall_tendency": "大吉",
+      "travel_rating": 5,
+      "key_points": [
+        "出行较顺，风险较低",
+        "整体安排较顺畅",
+        "准备充分，细节到位",
+        "注意途中安全与休息"
+      ],
+      "scenario_specific": {
+        "短途": {
+          "situation": "出行较顺",
+          "reasons": [
+            "路况可控"
+          ],
+          "advice": [
+            "准备基础物品",
+            "注意时间"
+          ],
+          "timing": "近期"
+        },
+        "长途": {
+          "situation": "整体较顺",
+          "reasons": [
+            "准备充分"
+          ],
+          "advice": [
+            "规划路线",
+            "留出缓冲"
+          ],
+          "timing": "近期"
+        },
+        "出差": {
+          "situation": "行程较顺",
+          "reasons": [
+            "安排明确"
+          ],
+          "advice": [
+            "提前确认日程",
+            "注意休息"
+          ],
+          "timing": "近期"
+        },
+        "迁移": {
+          "situation": "迁移条件较好",
+          "reasons": [
+            "计划完善"
+          ],
+          "advice": [
+            "分步推进",
+            "处理手续"
+          ],
+          "timing": "中期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "47": {
+      "name": "困",
+      "overall_tendency": "凶",
+      "travel_rating": 2,
+      "key_points": [
+        "风险偏高，不宜冒进",
+        "不确定性增加",
+        "建议调整计划或延后",
+        "安全优先，减少夜行"
+      ],
+      "scenario_specific": {
+        "短途": {
+          "situation": "不宜贸然出行",
+          "reasons": [
+            "风险升高"
+          ],
+          "advice": [
+            "推迟出行",
+            "必要时短行"
+          ],
+          "timing": "近期谨慎"
+        },
+        "长途": {
+          "situation": "长途风险偏高",
+          "reasons": [
+            "不确定性多"
+          ],
+          "advice": [
+            "考虑延期",
+            "做好保险"
+          ],
+          "timing": "中后期"
+        },
+        "出差": {
+          "situation": "可能受阻",
+          "reasons": [
+            "沟通不畅"
+          ],
+          "advice": [
+            "减少出行",
+            "远程替代"
+          ],
+          "timing": "近期谨慎"
+        },
+        "迁移": {
+          "situation": "迁移阻力大",
+          "reasons": [
+            "条件不足"
+          ],
+          "advice": [
+            "先解决核心问题",
+            "再推进"
+          ],
+          "timing": "中后期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "48": {
+      "name": "井",
+      "overall_tendency": "平",
+      "travel_rating": 3,
+      "key_points": [
+        "风险可控但有波折",
+        "需做好准备与预案",
+        "避免临时变更",
+        "留有时间与预算余量"
+      ],
+      "scenario_specific": {
+        "短途": {
+          "situation": "可成行但有小波折",
+          "reasons": [
+            "安排一般"
+          ],
+          "advice": [
+            "留出时间",
+            "备选方案"
+          ],
+          "timing": "近期"
+        },
+        "长途": {
+          "situation": "存在不确定性",
+          "reasons": [
+            "行程复杂"
+          ],
+          "advice": [
+            "强化准备",
+            "关注天气"
+          ],
+          "timing": "中期"
+        },
+        "出差": {
+          "situation": "进度一般",
+          "reasons": [
+            "沟通不足"
+          ],
+          "advice": [
+            "提前确认",
+            "减少临时变更"
+          ],
+          "timing": "近期"
+        },
+        "迁移": {
+          "situation": "条件一般",
+          "reasons": [
+            "资源尚可"
+          ],
+          "advice": [
+            "评估成本",
+            "完善计划"
+          ],
+          "timing": "中期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "49": {
+      "name": "革",
+      "overall_tendency": "吉",
+      "travel_rating": 4,
+      "key_points": [
+        "出行较顺，风险较低",
+        "整体安排较顺畅",
+        "准备充分，细节到位",
+        "注意途中安全与休息"
+      ],
+      "scenario_specific": {
+        "短途": {
+          "situation": "出行较顺",
+          "reasons": [
+            "路况可控"
+          ],
+          "advice": [
+            "准备基础物品",
+            "注意时间"
+          ],
+          "timing": "近期"
+        },
+        "长途": {
+          "situation": "整体较顺",
+          "reasons": [
+            "准备充分"
+          ],
+          "advice": [
+            "规划路线",
+            "留出缓冲"
+          ],
+          "timing": "近期"
+        },
+        "出差": {
+          "situation": "行程较顺",
+          "reasons": [
+            "安排明确"
+          ],
+          "advice": [
+            "提前确认日程",
+            "注意休息"
+          ],
+          "timing": "近期"
+        },
+        "迁移": {
+          "situation": "迁移条件较好",
+          "reasons": [
+            "计划完善"
+          ],
+          "advice": [
+            "分步推进",
+            "处理手续"
+          ],
+          "timing": "中期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "50": {
+      "name": "鼎",
+      "overall_tendency": "大吉",
+      "travel_rating": 5,
+      "key_points": [
+        "出行较顺，风险较低",
+        "整体安排较顺畅",
+        "准备充分，细节到位",
+        "注意途中安全与休息"
+      ],
+      "scenario_specific": {
+        "短途": {
+          "situation": "出行较顺",
+          "reasons": [
+            "路况可控"
+          ],
+          "advice": [
+            "准备基础物品",
+            "注意时间"
+          ],
+          "timing": "近期"
+        },
+        "长途": {
+          "situation": "整体较顺",
+          "reasons": [
+            "准备充分"
+          ],
+          "advice": [
+            "规划路线",
+            "留出缓冲"
+          ],
+          "timing": "近期"
+        },
+        "出差": {
+          "situation": "行程较顺",
+          "reasons": [
+            "安排明确"
+          ],
+          "advice": [
+            "提前确认日程",
+            "注意休息"
+          ],
+          "timing": "近期"
+        },
+        "迁移": {
+          "situation": "迁移条件较好",
+          "reasons": [
+            "计划完善"
+          ],
+          "advice": [
+            "分步推进",
+            "处理手续"
+          ],
+          "timing": "中期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "51": {
+      "name": "震",
+      "overall_tendency": "平",
+      "travel_rating": 3,
+      "key_points": [
+        "风险可控但有波折",
+        "需做好准备与预案",
+        "避免临时变更",
+        "留有时间与预算余量"
+      ],
+      "scenario_specific": {
+        "短途": {
+          "situation": "可成行但有小波折",
+          "reasons": [
+            "安排一般"
+          ],
+          "advice": [
+            "留出时间",
+            "备选方案"
+          ],
+          "timing": "近期"
+        },
+        "长途": {
+          "situation": "存在不确定性",
+          "reasons": [
+            "行程复杂"
+          ],
+          "advice": [
+            "强化准备",
+            "关注天气"
+          ],
+          "timing": "中期"
+        },
+        "出差": {
+          "situation": "进度一般",
+          "reasons": [
+            "沟通不足"
+          ],
+          "advice": [
+            "提前确认",
+            "减少临时变更"
+          ],
+          "timing": "近期"
+        },
+        "迁移": {
+          "situation": "条件一般",
+          "reasons": [
+            "资源尚可"
+          ],
+          "advice": [
+            "评估成本",
+            "完善计划"
+          ],
+          "timing": "中期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "52": {
+      "name": "艮",
+      "overall_tendency": "平",
+      "travel_rating": 3,
+      "key_points": [
+        "风险可控但有波折",
+        "需做好准备与预案",
+        "避免临时变更",
+        "留有时间与预算余量"
+      ],
+      "scenario_specific": {
+        "短途": {
+          "situation": "可成行但有小波折",
+          "reasons": [
+            "安排一般"
+          ],
+          "advice": [
+            "留出时间",
+            "备选方案"
+          ],
+          "timing": "近期"
+        },
+        "长途": {
+          "situation": "存在不确定性",
+          "reasons": [
+            "行程复杂"
+          ],
+          "advice": [
+            "强化准备",
+            "关注天气"
+          ],
+          "timing": "中期"
+        },
+        "出差": {
+          "situation": "进度一般",
+          "reasons": [
+            "沟通不足"
+          ],
+          "advice": [
+            "提前确认",
+            "减少临时变更"
+          ],
+          "timing": "近期"
+        },
+        "迁移": {
+          "situation": "条件一般",
+          "reasons": [
+            "资源尚可"
+          ],
+          "advice": [
+            "评估成本",
+            "完善计划"
+          ],
+          "timing": "中期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "53": {
+      "name": "渐",
+      "overall_tendency": "吉",
+      "travel_rating": 4,
+      "key_points": [
+        "出行较顺，风险较低",
+        "整体安排较顺畅",
+        "准备充分，细节到位",
+        "注意途中安全与休息"
+      ],
+      "scenario_specific": {
+        "短途": {
+          "situation": "出行较顺",
+          "reasons": [
+            "路况可控"
+          ],
+          "advice": [
+            "准备基础物品",
+            "注意时间"
+          ],
+          "timing": "近期"
+        },
+        "长途": {
+          "situation": "整体较顺",
+          "reasons": [
+            "准备充分"
+          ],
+          "advice": [
+            "规划路线",
+            "留出缓冲"
+          ],
+          "timing": "近期"
+        },
+        "出差": {
+          "situation": "行程较顺",
+          "reasons": [
+            "安排明确"
+          ],
+          "advice": [
+            "提前确认日程",
+            "注意休息"
+          ],
+          "timing": "近期"
+        },
+        "迁移": {
+          "situation": "迁移条件较好",
+          "reasons": [
+            "计划完善"
+          ],
+          "advice": [
+            "分步推进",
+            "处理手续"
+          ],
+          "timing": "中期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "54": {
+      "name": "归妹",
+      "overall_tendency": "不利",
+      "travel_rating": 2,
+      "key_points": [
+        "风险偏高，不宜冒进",
+        "不确定性增加",
+        "建议调整计划或延后",
+        "安全优先，减少夜行"
+      ],
+      "scenario_specific": {
+        "短途": {
+          "situation": "不宜贸然出行",
+          "reasons": [
+            "风险升高"
+          ],
+          "advice": [
+            "推迟出行",
+            "必要时短行"
+          ],
+          "timing": "近期谨慎"
+        },
+        "长途": {
+          "situation": "长途风险偏高",
+          "reasons": [
+            "不确定性多"
+          ],
+          "advice": [
+            "考虑延期",
+            "做好保险"
+          ],
+          "timing": "中后期"
+        },
+        "出差": {
+          "situation": "可能受阻",
+          "reasons": [
+            "沟通不畅"
+          ],
+          "advice": [
+            "减少出行",
+            "远程替代"
+          ],
+          "timing": "近期谨慎"
+        },
+        "迁移": {
+          "situation": "迁移阻力大",
+          "reasons": [
+            "条件不足"
+          ],
+          "advice": [
+            "先解决核心问题",
+            "再推进"
+          ],
+          "timing": "中后期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "55": {
+      "name": "丰",
+      "overall_tendency": "大吉",
+      "travel_rating": 5,
+      "key_points": [
+        "出行较顺，风险较低",
+        "整体安排较顺畅",
+        "准备充分，细节到位",
+        "注意途中安全与休息"
+      ],
+      "scenario_specific": {
+        "短途": {
+          "situation": "出行较顺",
+          "reasons": [
+            "路况可控"
+          ],
+          "advice": [
+            "准备基础物品",
+            "注意时间"
+          ],
+          "timing": "近期"
+        },
+        "长途": {
+          "situation": "整体较顺",
+          "reasons": [
+            "准备充分"
+          ],
+          "advice": [
+            "规划路线",
+            "留出缓冲"
+          ],
+          "timing": "近期"
+        },
+        "出差": {
+          "situation": "行程较顺",
+          "reasons": [
+            "安排明确"
+          ],
+          "advice": [
+            "提前确认日程",
+            "注意休息"
+          ],
+          "timing": "近期"
+        },
+        "迁移": {
+          "situation": "迁移条件较好",
+          "reasons": [
+            "计划完善"
+          ],
+          "advice": [
+            "分步推进",
+            "处理手续"
+          ],
+          "timing": "中期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "56": {
+      "name": "旅",
+      "overall_tendency": "平",
+      "travel_rating": 3,
+      "key_points": [
+        "风险可控但有波折",
+        "需做好准备与预案",
+        "避免临时变更",
+        "留有时间与预算余量"
+      ],
+      "scenario_specific": {
+        "短途": {
+          "situation": "可成行但有小波折",
+          "reasons": [
+            "安排一般"
+          ],
+          "advice": [
+            "留出时间",
+            "备选方案"
+          ],
+          "timing": "近期"
+        },
+        "长途": {
+          "situation": "存在不确定性",
+          "reasons": [
+            "行程复杂"
+          ],
+          "advice": [
+            "强化准备",
+            "关注天气"
+          ],
+          "timing": "中期"
+        },
+        "出差": {
+          "situation": "进度一般",
+          "reasons": [
+            "沟通不足"
+          ],
+          "advice": [
+            "提前确认",
+            "减少临时变更"
+          ],
+          "timing": "近期"
+        },
+        "迁移": {
+          "situation": "条件一般",
+          "reasons": [
+            "资源尚可"
+          ],
+          "advice": [
+            "评估成本",
+            "完善计划"
+          ],
+          "timing": "中期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "57": {
+      "name": "巽",
+      "overall_tendency": "吉",
+      "travel_rating": 4,
+      "key_points": [
+        "出行较顺，风险较低",
+        "整体安排较顺畅",
+        "准备充分，细节到位",
+        "注意途中安全与休息"
+      ],
+      "scenario_specific": {
+        "短途": {
+          "situation": "出行较顺",
+          "reasons": [
+            "路况可控"
+          ],
+          "advice": [
+            "准备基础物品",
+            "注意时间"
+          ],
+          "timing": "近期"
+        },
+        "长途": {
+          "situation": "整体较顺",
+          "reasons": [
+            "准备充分"
+          ],
+          "advice": [
+            "规划路线",
+            "留出缓冲"
+          ],
+          "timing": "近期"
+        },
+        "出差": {
+          "situation": "行程较顺",
+          "reasons": [
+            "安排明确"
+          ],
+          "advice": [
+            "提前确认日程",
+            "注意休息"
+          ],
+          "timing": "近期"
+        },
+        "迁移": {
+          "situation": "迁移条件较好",
+          "reasons": [
+            "计划完善"
+          ],
+          "advice": [
+            "分步推进",
+            "处理手续"
+          ],
+          "timing": "中期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "58": {
+      "name": "兑",
+      "overall_tendency": "吉",
+      "travel_rating": 4,
+      "key_points": [
+        "出行较顺，风险较低",
+        "整体安排较顺畅",
+        "准备充分，细节到位",
+        "注意途中安全与休息"
+      ],
+      "scenario_specific": {
+        "短途": {
+          "situation": "出行较顺",
+          "reasons": [
+            "路况可控"
+          ],
+          "advice": [
+            "准备基础物品",
+            "注意时间"
+          ],
+          "timing": "近期"
+        },
+        "长途": {
+          "situation": "整体较顺",
+          "reasons": [
+            "准备充分"
+          ],
+          "advice": [
+            "规划路线",
+            "留出缓冲"
+          ],
+          "timing": "近期"
+        },
+        "出差": {
+          "situation": "行程较顺",
+          "reasons": [
+            "安排明确"
+          ],
+          "advice": [
+            "提前确认日程",
+            "注意休息"
+          ],
+          "timing": "近期"
+        },
+        "迁移": {
+          "situation": "迁移条件较好",
+          "reasons": [
+            "计划完善"
+          ],
+          "advice": [
+            "分步推进",
+            "处理手续"
+          ],
+          "timing": "中期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "59": {
+      "name": "涣",
+      "overall_tendency": "平",
+      "travel_rating": 3,
+      "key_points": [
+        "风险可控但有波折",
+        "需做好准备与预案",
+        "避免临时变更",
+        "留有时间与预算余量"
+      ],
+      "scenario_specific": {
+        "短途": {
+          "situation": "可成行但有小波折",
+          "reasons": [
+            "安排一般"
+          ],
+          "advice": [
+            "留出时间",
+            "备选方案"
+          ],
+          "timing": "近期"
+        },
+        "长途": {
+          "situation": "存在不确定性",
+          "reasons": [
+            "行程复杂"
+          ],
+          "advice": [
+            "强化准备",
+            "关注天气"
+          ],
+          "timing": "中期"
+        },
+        "出差": {
+          "situation": "进度一般",
+          "reasons": [
+            "沟通不足"
+          ],
+          "advice": [
+            "提前确认",
+            "减少临时变更"
+          ],
+          "timing": "近期"
+        },
+        "迁移": {
+          "situation": "条件一般",
+          "reasons": [
+            "资源尚可"
+          ],
+          "advice": [
+            "评估成本",
+            "完善计划"
+          ],
+          "timing": "中期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "60": {
+      "name": "节",
+      "overall_tendency": "平",
+      "travel_rating": 3,
+      "key_points": [
+        "风险可控但有波折",
+        "需做好准备与预案",
+        "避免临时变更",
+        "留有时间与预算余量"
+      ],
+      "scenario_specific": {
+        "短途": {
+          "situation": "可成行但有小波折",
+          "reasons": [
+            "安排一般"
+          ],
+          "advice": [
+            "留出时间",
+            "备选方案"
+          ],
+          "timing": "近期"
+        },
+        "长途": {
+          "situation": "存在不确定性",
+          "reasons": [
+            "行程复杂"
+          ],
+          "advice": [
+            "强化准备",
+            "关注天气"
+          ],
+          "timing": "中期"
+        },
+        "出差": {
+          "situation": "进度一般",
+          "reasons": [
+            "沟通不足"
+          ],
+          "advice": [
+            "提前确认",
+            "减少临时变更"
+          ],
+          "timing": "近期"
+        },
+        "迁移": {
+          "situation": "条件一般",
+          "reasons": [
+            "资源尚可"
+          ],
+          "advice": [
+            "评估成本",
+            "完善计划"
+          ],
+          "timing": "中期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "61": {
+      "name": "中孚",
+      "overall_tendency": "吉",
+      "travel_rating": 4,
+      "key_points": [
+        "出行较顺，风险较低",
+        "整体安排较顺畅",
+        "准备充分，细节到位",
+        "注意途中安全与休息"
+      ],
+      "scenario_specific": {
+        "短途": {
+          "situation": "出行较顺",
+          "reasons": [
+            "路况可控"
+          ],
+          "advice": [
+            "准备基础物品",
+            "注意时间"
+          ],
+          "timing": "近期"
+        },
+        "长途": {
+          "situation": "整体较顺",
+          "reasons": [
+            "准备充分"
+          ],
+          "advice": [
+            "规划路线",
+            "留出缓冲"
+          ],
+          "timing": "近期"
+        },
+        "出差": {
+          "situation": "行程较顺",
+          "reasons": [
+            "安排明确"
+          ],
+          "advice": [
+            "提前确认日程",
+            "注意休息"
+          ],
+          "timing": "近期"
+        },
+        "迁移": {
+          "situation": "迁移条件较好",
+          "reasons": [
+            "计划完善"
+          ],
+          "advice": [
+            "分步推进",
+            "处理手续"
+          ],
+          "timing": "中期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "62": {
+      "name": "小过",
+      "overall_tendency": "平",
+      "travel_rating": 3,
+      "key_points": [
+        "风险可控但有波折",
+        "需做好准备与预案",
+        "避免临时变更",
+        "留有时间与预算余量"
+      ],
+      "scenario_specific": {
+        "短途": {
+          "situation": "可成行但有小波折",
+          "reasons": [
+            "安排一般"
+          ],
+          "advice": [
+            "留出时间",
+            "备选方案"
+          ],
+          "timing": "近期"
+        },
+        "长途": {
+          "situation": "存在不确定性",
+          "reasons": [
+            "行程复杂"
+          ],
+          "advice": [
+            "强化准备",
+            "关注天气"
+          ],
+          "timing": "中期"
+        },
+        "出差": {
+          "situation": "进度一般",
+          "reasons": [
+            "沟通不足"
+          ],
+          "advice": [
+            "提前确认",
+            "减少临时变更"
+          ],
+          "timing": "近期"
+        },
+        "迁移": {
+          "situation": "条件一般",
+          "reasons": [
+            "资源尚可"
+          ],
+          "advice": [
+            "评估成本",
+            "完善计划"
+          ],
+          "timing": "中期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "63": {
+      "name": "既济",
+      "overall_tendency": "吉",
+      "travel_rating": 4,
+      "key_points": [
+        "出行较顺，风险较低",
+        "整体安排较顺畅",
+        "准备充分，细节到位",
+        "注意途中安全与休息"
+      ],
+      "scenario_specific": {
+        "短途": {
+          "situation": "出行较顺",
+          "reasons": [
+            "路况可控"
+          ],
+          "advice": [
+            "准备基础物品",
+            "注意时间"
+          ],
+          "timing": "近期"
+        },
+        "长途": {
+          "situation": "整体较顺",
+          "reasons": [
+            "准备充分"
+          ],
+          "advice": [
+            "规划路线",
+            "留出缓冲"
+          ],
+          "timing": "近期"
+        },
+        "出差": {
+          "situation": "行程较顺",
+          "reasons": [
+            "安排明确"
+          ],
+          "advice": [
+            "提前确认日程",
+            "注意休息"
+          ],
+          "timing": "近期"
+        },
+        "迁移": {
+          "situation": "迁移条件较好",
+          "reasons": [
+            "计划完善"
+          ],
+          "advice": [
+            "分步推进",
+            "处理手续"
+          ],
+          "timing": "中期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "64": {
+      "name": "未济",
+      "overall_tendency": "平",
+      "travel_rating": 3,
+      "key_points": [
+        "风险可控但有波折",
+        "需做好准备与预案",
+        "避免临时变更",
+        "留有时间与预算余量"
+      ],
+      "scenario_specific": {
+        "短途": {
+          "situation": "可成行但有小波折",
+          "reasons": [
+            "安排一般"
+          ],
+          "advice": [
+            "留出时间",
+            "备选方案"
+          ],
+          "timing": "近期"
+        },
+        "长途": {
+          "situation": "存在不确定性",
+          "reasons": [
+            "行程复杂"
+          ],
+          "advice": [
+            "强化准备",
+            "关注天气"
+          ],
+          "timing": "中期"
+        },
+        "出差": {
+          "situation": "进度一般",
+          "reasons": [
+            "沟通不足"
+          ],
+          "advice": [
+            "提前确认",
+            "减少临时变更"
+          ],
+          "timing": "近期"
+        },
+        "迁移": {
+          "situation": "条件一般",
+          "reasons": [
+            "资源尚可"
+          ],
+          "advice": [
+            "评估成本",
+            "完善计划"
+          ],
+          "timing": "中期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    }
+  },
+  "notes": [
+    "所有卦象数据需包含 source_ref"
+  ]
+}

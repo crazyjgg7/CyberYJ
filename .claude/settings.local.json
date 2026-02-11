@@ -1,0 +1,43 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:ctext.org)",
+      "Bash(python3:*)",
+      "Bash(for file in *.json)",
+      "Bash(do echo \"=== $file ===\")",
+      "Bash(done)",
+      "Bash(pip3 install:*)",
+      "Bash(PYTHONPATH=/Users/apple/dev/CyberYJ/src:$PYTHONPATH python3:*)",
+      "Bash(pip install:*)",
+      "Bash(python -m pytest:*)",
+      "Bash(python:*)",
+      "Bash(PYTHONPATH=/Users/apple/dev/CyberYJ/src python:*)",
+      "Bash(PYTHONPATH=/Users/apple/dev/CyberYJ/src:$PYTHONPATH python -m pytest:*)",
+      "Bash(conda install:*)",
+      "Bash(PYTHONPATH=/Users/apple/dev/CyberYJ/src:$PYTHONPATH python:*)",
+      "Bash(wc:*)",
+      "Bash(pip3 list:*)",
+      "Bash(PYTHONPATH=src:$PYTHONPATH python3 -m pytest:*)",
+      "Bash(PYTHONPATH=src:$PYTHONPATH python3:*)",
+      "Bash(chmod:*)",
+      "Bash(PYTHONPATH=src timeout 5 python3:*)",
+      "Bash(PYTHONPATH=src python3:*)",
+      "Bash(arch -arm64 /usr/bin/python3:*)",
+      "Bash(./venv/bin/pip install:*)",
+      "Bash(/Users/apple/opt/anaconda3/envs/py310/bin/python3.10 -m venv:*)",
+      "Bash(./venv/bin/python:*)",
+      "Bash(/Users/apple/opt/anaconda3/envs/py310/bin/claude:*)",
+      "Bash(happy --version)",
+      "Bash(npm config:*)",
+      "Bash(echo:*)",
+      "Bash(npm install:*)",
+      "Bash(claude mcp --help:*)",
+      "Bash(claude mcp list:*)",
+      "Bash(claude mcp add:*)",
+      "Bash(/Users/apple/dev/CyberYJ/venv/bin/python:*)",
+      "Bash(claude mcp get:*)",
+      "mcp__CyberYJ__fengshui_divination",
+      "Bash(ls:*)"
+    ]
+  }
+}

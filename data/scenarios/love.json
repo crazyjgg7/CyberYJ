@@ -1,0 +1,4019 @@
+{
+  "version": "1.0",
+  "scenario_info": {
+    "name": "感情",
+    "code": "love",
+    "description": "恋爱、婚姻、单身、复合",
+    "sub_scenarios": [
+      "单身",
+      "恋爱中",
+      "已婚",
+      "复合"
+    ],
+    "requires_disclaimer": false
+  },
+  "analysis_framework": {
+    "dimensions": [
+      "关系状态",
+      "沟通情况",
+      "外部因素",
+      "发展趋势",
+      "关键时机"
+    ],
+    "focus": "情感连接、相处和谐、长期发展",
+    "key_aspects": [
+      "感情状态评估",
+      "关系发展方向",
+      "沟通技巧",
+      "矛盾化解"
+    ]
+  },
+  "output_structure": {
+    "template_id": "love_standard",
+    "sections": [
+      {
+        "id": "overall_love",
+        "title": "感情运势",
+        "type": "summary",
+        "required": true,
+        "includes": [
+          "运势评级",
+          "总体评价",
+          "核心特点"
+        ]
+      },
+      {
+        "id": "hexagram_analysis",
+        "title": "卦象解析",
+        "type": "explanation",
+        "required": true,
+        "includes": [
+          "卦象含义",
+          "五行关系",
+          "关键词解读"
+        ]
+      },
+      {
+        "id": "scenario_analysis",
+        "title": "分层分析",
+        "type": "scenarios",
+        "required": true,
+        "scenarios": [
+          "单身者",
+          "恋爱中",
+          "已婚者",
+          "复合"
+        ],
+        "each_includes": [
+          "现状分析",
+          "原因分析",
+          "具体建议",
+          "时机把握"
+        ]
+      },
+      {
+        "id": "action_guide",
+        "title": "行动建议",
+        "type": "advice",
+        "required": true,
+        "format": {
+          "do": "宜做事项（3-5条）",
+          "dont": "忌做事项（3-5条）"
+        }
+      }
+    ]
+  },
+  "prompt_template": {
+    "system_role": "你是一位精通易经的情感咨询师，擅长分析感情运势和关系发展。",
+    "analysis_focus": [
+      "基于卦象分析感情状态和发展趋势",
+      "结合五行关系判断感情和谐度",
+      "针对不同感情状态给出具体建议",
+      "提供沟通技巧和矛盾化解方法",
+      "语言要温暖，贴近情感实际"
+    ],
+    "output_requirements": [
+      "温暖贴心，理解用户情感",
+      "建议具体，可操作性强",
+      "分层分析，覆盖不同人群",
+      "适当使用emoji增强可读性"
+    ]
+  },
+  "hexagrams": {
+    "1": {
+      "name": "乾",
+      "overall_tendency": "吉",
+      "love_rating": 4,
+      "key_points": [
+        "感情运势良好，主动进取",
+        "适合表白或推进关系",
+        "需要注意不要过于强势",
+        "保持真诚，以诚待人"
+      ],
+      "scenario_specific": {
+        "单身": {
+          "situation": "单身运势良好，容易遇到心仪对象，主动出击成功率高",
+          "reasons": [
+            "魅力提升",
+            "自信满满",
+            "社交活跃",
+            "桃花运旺"
+          ],
+          "advice": [
+            "主动出击，勇敢表白",
+            "展现自信和魅力",
+            "扩大社交圈，多参加活动",
+            "不要过于强势，注意对方感受"
+          ],
+          "timing": "春夏季桃花运最旺，适合脱单"
+        },
+        "恋爱中": {
+          "situation": "感情发展顺利，关系稳定，适合进一步发展（如见家长、订婚）",
+          "reasons": [
+            "感情深厚",
+            "沟通顺畅",
+            "目标一致",
+            "家人支持"
+          ],
+          "advice": [
+            "主动推进关系，讨论未来",
+            "保持沟通，增进了解",
+            "注意不要过于强势，尊重对方",
+            "适时见家长，获得祝福"
+          ],
+          "timing": "春夏季适合订婚或结婚"
+        },
+        "已婚": {
+          "situation": "夫妻关系和谐，家庭美满，但要注意不要忽视对方",
+          "reasons": [
+            "感情稳定",
+            "相互理解",
+            "家庭和睦"
+          ],
+          "advice": [
+            "保持沟通，增进感情",
+            "不要因工作忽视家庭",
+            "注意不要过于强势，尊重对方",
+            "共同规划未来，增进默契"
+          ],
+          "timing": "全年感情稳定"
+        },
+        "复合": {
+          "situation": "复合机会较大，但需要主动出击，真诚沟通",
+          "reasons": [
+            "旧情未了",
+            "对方有意",
+            "时机成熟"
+          ],
+          "advice": [
+            "主动联系，表达心意",
+            "真诚道歉，改正错误",
+            "展现改变，重建信任",
+            "不要过于强势，给对方空间"
+          ],
+          "timing": "春夏季复合成功率高"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "2": {
+      "name": "坤",
+      "overall_tendency": "吉",
+      "love_rating": 4,
+      "key_points": [
+        "感情运势稳健，以柔克刚",
+        "适合包容和理解",
+        "贵人运强，长辈支持",
+        "需要耐心，不要急于求成"
+      ],
+      "scenario_specific": {
+        "单身": {
+          "situation": "单身运势平稳，通过朋友介绍或长辈牵线更容易成功",
+          "reasons": [
+            "人缘好",
+            "性格温和",
+            "长辈喜欢",
+            "稳重可靠"
+          ],
+          "advice": [
+            "通过朋友或长辈介绍",
+            "展现温柔和包容",
+            "不要急于求成，慢慢了解",
+            "选择稳重可靠的对象"
+          ],
+          "timing": "秋冬季桃花运更佳"
+        },
+        "恋爱中": {
+          "situation": "感情稳定，关系和谐，适合细水长流，慢慢发展",
+          "reasons": [
+            "相互包容",
+            "感情深厚",
+            "家人支持"
+          ],
+          "advice": [
+            "保持包容和理解",
+            "加强沟通，增进感情",
+            "不要急于结婚，慢慢了解",
+            "获得双方家人的支持"
+          ],
+          "timing": "秋冬季感情更稳定"
+        },
+        "已婚": {
+          "situation": "夫妻关系和谐，家庭美满，相互包容理解",
+          "reasons": [
+            "感情深厚",
+            "相互理解",
+            "家庭和睦"
+          ],
+          "advice": [
+            "保持包容和理解",
+            "多陪伴家人，增进感情",
+            "不要过于依赖对方，保持独立",
+            "共同经营家庭，创造幸福"
+          ],
+          "timing": "全年感情稳定"
+        },
+        "复合": {
+          "situation": "复合需要耐心，不要急于求成，通过朋友或长辈调解更容易成功",
+          "reasons": [
+            "旧情未了",
+            "双方犹豫",
+            "需要时间"
+          ],
+          "advice": [
+            "通过朋友或长辈调解",
+            "展现包容和理解",
+            "不要急于求成，给对方时间",
+            "真诚沟通，重建信任"
+          ],
+          "timing": "秋冬季复合更容易"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "39": {
+      "name": "蹇",
+      "overall_tendency": "不利",
+      "love_rating": 2,
+      "key_points": [
+        "感情遇到阻碍，不太顺利",
+        "沟通不畅，容易产生误会",
+        "需要耐心和智慧化解",
+        "宜寻求外部支持"
+      ],
+      "scenario_specific": {
+        "单身": {
+          "situation": "目前追求爱情会遇到较多困难和阻碍，可能是时机未到，或外部条件不成熟",
+          "reasons": [
+            "缘分未到",
+            "自身准备不足",
+            "眼光过高",
+            "社交圈子窄"
+          ],
+          "advice": [
+            "不要急于求成，先充实自己",
+            "扩大社交圈，增加认识新朋友的机会",
+            "可以请长辈或朋友介绍",
+            "降低标准，给彼此机会了解",
+            "等待合适的时机，不要强求"
+          ],
+          "timing": "不宜在近期主动表白或追求，建议先建立友谊"
+        },
+        "恋爱中": {
+          "situation": "感情可能遇到瓶颈或矛盾，双方沟通不畅，或有外部因素干扰（如家人反对、异地等）",
+          "reasons": [
+            "沟通不畅",
+            "价值观差异",
+            "外部压力",
+            "信任危机"
+          ],
+          "advice": [
+            "加强沟通，主动化解误会",
+            "寻求双方家人的理解和支持",
+            "暂时不要做重大决定（如结婚、分手）",
+            "以退为进，给彼此空间",
+            "可以寻求情感咨询师的帮助"
+          ],
+          "timing": "不宜在近期谈婚论嫁，建议先解决当前问题"
+        },
+        "已婚": {
+          "situation": "夫妻关系可能处于冷淡期，缺乏沟通，容易因小事争吵",
+          "reasons": [
+            "生活压力",
+            "缺乏沟通",
+            "忽视对方",
+            "第三者干扰"
+          ],
+          "advice": [
+            "反省自身问题，不要一味指责对方",
+            "增加陪伴时间，重建情感连接",
+            "寻求婚姻咨询，专业指导",
+            "不要轻言离婚，给彼此机会",
+            "可以请双方父母或长辈调解"
+          ],
+          "timing": "不宜在近期做出离婚等重大决定"
+        },
+        "复合": {
+          "situation": "复合难度较大，双方都有顾虑，旧问题未解决",
+          "reasons": [
+            "旧问题未解决",
+            "信任破裂",
+            "新的生活",
+            "面子问题"
+          ],
+          "advice": [
+            "先反思分手原因，是否真的解决了",
+            "不要急于复合，先重建信任",
+            "可以从朋友做起，慢慢恢复关系",
+            "如果对方已有新恋情，建议放手",
+            "寻求专业情感咨询"
+          ],
+          "timing": "不宜在近期主动提出复合，建议先观察一段时间"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "3": {
+      "name": "屯",
+      "overall_tendency": "不利",
+      "love_rating": 2,
+      "key_points": [
+        "感情起步困难，阻力较多",
+        "宜先观察与磨合",
+        "需要耐心与信任",
+        "避免急于推进"
+      ],
+      "scenario_specific": {
+        "单身": {
+          "situation": "桃花受阻，容易遇到不合适的人",
+          "reasons": [
+            "时机未到",
+            "缘分不稳"
+          ],
+          "advice": [
+            "放慢节奏",
+            "先提升自己",
+            "扩大社交圈"
+          ],
+          "timing": "近期不宜强求"
+        },
+        "恋爱中": {
+          "situation": "关系发展受阻，容易出现误会",
+          "reasons": [
+            "沟通不足",
+            "外部压力"
+          ],
+          "advice": [
+            "加强沟通",
+            "放慢进度",
+            "共同解决问题"
+          ],
+          "timing": "先稳后进"
+        },
+        "已婚": {
+          "situation": "家庭事务繁杂，需共同面对",
+          "reasons": [
+            "现实压力"
+          ],
+          "advice": [
+            "分担责任",
+            "保持沟通",
+            "避免争吵"
+          ],
+          "timing": "短期需稳住情绪"
+        },
+        "复合": {
+          "situation": "复合阻力较大，旧问题未解",
+          "reasons": [
+            "信任不足"
+          ],
+          "advice": [
+            "先修复关系",
+            "不要急于复合"
+          ],
+          "timing": "暂缓行动"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "4": {
+      "name": "蒙",
+      "overall_tendency": "平",
+      "love_rating": 3,
+      "key_points": [
+        "感情需要学习与理解",
+        "适合慢热型相处",
+        "需要指引或沟通规则",
+        "避免盲目"
+      ],
+      "scenario_specific": {
+        "单身": {
+          "situation": "容易陷入迷茫，选择不定",
+          "reasons": [
+            "定位不清"
+          ],
+          "advice": [
+            "明确择偶标准",
+            "多了解再决定"
+          ],
+          "timing": "慢慢来"
+        },
+        "恋爱中": {
+          "situation": "感情处于磨合期",
+          "reasons": [
+            "价值观差异"
+          ],
+          "advice": [
+            "建立沟通规则",
+            "共同成长"
+          ],
+          "timing": "稳步推进"
+        },
+        "已婚": {
+          "situation": "需要加强理解与包容",
+          "reasons": [
+            "沟通不足"
+          ],
+          "advice": [
+            "多交流",
+            "尊重差异"
+          ],
+          "timing": "全年可修复"
+        },
+        "复合": {
+          "situation": "复合需要指导与反思",
+          "reasons": [
+            "旧问题未理清"
+          ],
+          "advice": [
+            "先厘清问题再谈复合"
+          ],
+          "timing": "循序渐进"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "5": {
+      "name": "需",
+      "overall_tendency": "平",
+      "love_rating": 3,
+      "key_points": [
+        "感情需要等待时机",
+        "适合耐心经营",
+        "不要操之过急",
+        "保持诚意"
+      ],
+      "scenario_specific": {
+        "单身": {
+          "situation": "桃花在路上，但需要时间",
+          "reasons": [
+            "缘分未到"
+          ],
+          "advice": [
+            "保持开放心态",
+            "提升自我"
+          ],
+          "timing": "1-3个月后更佳"
+        },
+        "恋爱中": {
+          "situation": "关系稳定但需耐心推进",
+          "reasons": [
+            "节奏不一致"
+          ],
+          "advice": [
+            "尊重对方节奏",
+            "稳步沟通"
+          ],
+          "timing": "中期更佳"
+        },
+        "已婚": {
+          "situation": "婚姻平稳，需共度小考验",
+          "reasons": [
+            "现实压力"
+          ],
+          "advice": [
+            "共同面对",
+            "保持信任"
+          ],
+          "timing": "稳中向好"
+        },
+        "复合": {
+          "situation": "复合机会存在但需等待",
+          "reasons": [
+            "对方犹豫"
+          ],
+          "advice": [
+            "保持联系但不催促"
+          ],
+          "timing": "等待合适时机"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "6": {
+      "name": "讼",
+      "overall_tendency": "不利",
+      "love_rating": 2,
+      "key_points": [
+        "感情易起争执",
+        "避免对立与指责",
+        "需要理性沟通",
+        "以和为贵"
+      ],
+      "scenario_specific": {
+        "单身": {
+          "situation": "容易遇到价值观冲突的对象",
+          "reasons": [
+            "沟通不合"
+          ],
+          "advice": [
+            "谨慎选择",
+            "避免冲动"
+          ],
+          "timing": "近期不宜仓促"
+        },
+        "恋爱中": {
+          "situation": "争执频繁，容易误会",
+          "reasons": [
+            "沟通方式问题"
+          ],
+          "advice": [
+            "降温沟通",
+            "避免翻旧账"
+          ],
+          "timing": "先稳住关系"
+        },
+        "已婚": {
+          "situation": "家庭矛盾易升级",
+          "reasons": [
+            "压力累积"
+          ],
+          "advice": [
+            "理性协商",
+            "必要时寻求调解"
+          ],
+          "timing": "短期谨慎"
+        },
+        "复合": {
+          "situation": "旧怨未解，复合难度大",
+          "reasons": [
+            "信任缺失"
+          ],
+          "advice": [
+            "先处理矛盾"
+          ],
+          "timing": "不宜强求"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "7": {
+      "name": "师",
+      "overall_tendency": "吉",
+      "love_rating": 4,
+      "key_points": [
+        "感情需要规则与担当",
+        "稳定踏实更有利",
+        "适合确定关系",
+        "重视责任"
+      ],
+      "scenario_specific": {
+        "单身": {
+          "situation": "稳定型桃花出现，适合认真交往",
+          "reasons": [
+            "对方可靠"
+          ],
+          "advice": [
+            "以诚相待",
+            "慢慢了解"
+          ],
+          "timing": "近期可把握"
+        },
+        "恋爱中": {
+          "situation": "关系稳健，适合谈婚论嫁",
+          "reasons": [
+            "责任心强"
+          ],
+          "advice": [
+            "明确未来规划",
+            "注重家庭建设"
+          ],
+          "timing": "近期可推进"
+        },
+        "已婚": {
+          "situation": "家庭稳定，重视责任分工",
+          "reasons": [
+            "共同目标"
+          ],
+          "advice": [
+            "分工明确",
+            "保持沟通"
+          ],
+          "timing": "全年稳定"
+        },
+        "复合": {
+          "situation": "复合可行，但需明确规则",
+          "reasons": [
+            "双方仍有责任感"
+          ],
+          "advice": [
+            "先定规则再复合"
+          ],
+          "timing": "谨慎推进"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "8": {
+      "name": "比",
+      "overall_tendency": "吉",
+      "love_rating": 4,
+      "key_points": [
+        "感情重在陪伴与互助",
+        "适合结盟共度",
+        "朋友关系助力",
+        "需要选择合适对象"
+      ],
+      "scenario_specific": {
+        "单身": {
+          "situation": "通过朋友介绍更易脱单",
+          "reasons": [
+            "人脉助力"
+          ],
+          "advice": [
+            "积极社交",
+            "接受介绍"
+          ],
+          "timing": "社交活跃期佳"
+        },
+        "恋爱中": {
+          "situation": "关系和谐，适合一起规划未来",
+          "reasons": [
+            "互相扶持"
+          ],
+          "advice": [
+            "共同目标",
+            "保持信任"
+          ],
+          "timing": "近期可推进"
+        },
+        "已婚": {
+          "situation": "家庭合作良好，重视伙伴关系",
+          "reasons": [
+            "互相支持"
+          ],
+          "advice": [
+            "共同承担责任"
+          ],
+          "timing": "稳定"
+        },
+        "复合": {
+          "situation": "朋友或共同圈子可促成复合",
+          "reasons": [
+            "外部支持"
+          ],
+          "advice": [
+            "借助朋友沟通"
+          ],
+          "timing": "循序渐进"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "9": {
+      "name": "小畜",
+      "overall_tendency": "平",
+      "love_rating": 3,
+      "key_points": [
+        "感情小有进展，仍需积累",
+        "不宜操之过急",
+        "重视稳定与细节",
+        "循序渐进"
+      ],
+      "scenario_specific": {
+        "单身": {
+          "situation": "有暧昧或小机会，但未稳定",
+          "reasons": [
+            "缘分未深"
+          ],
+          "advice": [
+            "稳步了解",
+            "不要急于确认"
+          ],
+          "timing": "中期更佳"
+        },
+        "恋爱中": {
+          "situation": "感情平稳但缺乏突破",
+          "reasons": [
+            "节奏偏慢"
+          ],
+          "advice": [
+            "增加互动",
+            "提升默契"
+          ],
+          "timing": "稳步推进"
+        },
+        "已婚": {
+          "situation": "婚姻稳定但需更多经营",
+          "reasons": [
+            "生活琐事"
+          ],
+          "advice": [
+            "多陪伴",
+            "关注细节"
+          ],
+          "timing": "稳定"
+        },
+        "复合": {
+          "situation": "复合需要时间累积",
+          "reasons": [
+            "信任不足"
+          ],
+          "advice": [
+            "慢慢修复"
+          ],
+          "timing": "不宜急"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "10": {
+      "name": "履",
+      "overall_tendency": "平",
+      "love_rating": 3,
+      "key_points": [
+        "感情需谨慎行事",
+        "尊重边界与规则",
+        "避免试探过度",
+        "稳中求进"
+      ],
+      "scenario_specific": {
+        "单身": {
+          "situation": "需谨慎选择对象，避免踩雷",
+          "reasons": [
+            "风险因素"
+          ],
+          "advice": [
+            "观察对方人品",
+            "不要冲动"
+          ],
+          "timing": "稳步推进"
+        },
+        "恋爱中": {
+          "situation": "相处需注意分寸",
+          "reasons": [
+            "边界感不足"
+          ],
+          "advice": [
+            "尊重对方",
+            "避免过度控制"
+          ],
+          "timing": "稳定"
+        },
+        "已婚": {
+          "situation": "家庭关系需要谨慎处理矛盾",
+          "reasons": [
+            "小摩擦"
+          ],
+          "advice": [
+            "谨言慎行",
+            "避免刺激"
+          ],
+          "timing": "平稳"
+        },
+        "复合": {
+          "situation": "复合需谨慎评估风险",
+          "reasons": [
+            "旧问题"
+          ],
+          "advice": [
+            "先观察再决定"
+          ],
+          "timing": "不宜急"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "11": {
+      "name": "泰",
+      "overall_tendency": "吉",
+      "love_rating": 4,
+      "key_points": [
+        "感情通泰，关系顺畅",
+        "适合推进关系",
+        "沟通和谐",
+        "需防安逸"
+      ],
+      "scenario_specific": {
+        "单身": {
+          "situation": "桃花旺盛，易遇良缘",
+          "reasons": [
+            "人缘佳"
+          ],
+          "advice": [
+            "积极社交",
+            "把握机会"
+          ],
+          "timing": "近期利好"
+        },
+        "恋爱中": {
+          "situation": "关系顺利，适合谈婚论嫁",
+          "reasons": [
+            "默契提升"
+          ],
+          "advice": [
+            "推进关系",
+            "规划未来"
+          ],
+          "timing": "近期"
+        },
+        "已婚": {
+          "situation": "家庭和谐，沟通顺畅",
+          "reasons": [
+            "相互理解"
+          ],
+          "advice": [
+            "保持沟通",
+            "避免懈怠"
+          ],
+          "timing": "稳定"
+        },
+        "复合": {
+          "situation": "复合机会增多，沟通顺畅",
+          "reasons": [
+            "旧情未了"
+          ],
+          "advice": [
+            "重建信任",
+            "循序渐进"
+          ],
+          "timing": "近期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "12": {
+      "name": "否",
+      "overall_tendency": "不利",
+      "love_rating": 2,
+      "key_points": [
+        "感情受阻，沟通不畅",
+        "宜守不宜攻",
+        "避免强求",
+        "等待时机"
+      ],
+      "scenario_specific": {
+        "单身": {
+          "situation": "桃花受阻，难有进展",
+          "reasons": [
+            "时机不佳"
+          ],
+          "advice": [
+            "保持耐心",
+            "先充实自己"
+          ],
+          "timing": "近期不利"
+        },
+        "恋爱中": {
+          "situation": "关系受阻，易生冷淡",
+          "reasons": [
+            "沟通不足"
+          ],
+          "advice": [
+            "放慢节奏",
+            "避免争执"
+          ],
+          "timing": "短期谨慎"
+        },
+        "已婚": {
+          "situation": "家庭气氛偏冷，需要修复",
+          "reasons": [
+            "误解累积"
+          ],
+          "advice": [
+            "加强沟通",
+            "避免激化"
+          ],
+          "timing": "缓慢修复"
+        },
+        "复合": {
+          "situation": "复合难度大，时机未到",
+          "reasons": [
+            "阻碍较多"
+          ],
+          "advice": [
+            "暂缓行动"
+          ],
+          "timing": "不宜"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "13": {
+      "name": "同人",
+      "overall_tendency": "吉",
+      "love_rating": 4,
+      "key_points": [
+        "感情重在同心",
+        "适合建立共识",
+        "朋友关系助力",
+        "公开透明有利"
+      ],
+      "scenario_specific": {
+        "单身": {
+          "situation": "通过朋友认识对象机会大",
+          "reasons": [
+            "人脉支持"
+          ],
+          "advice": [
+            "积极社交",
+            "接受介绍"
+          ],
+          "timing": "近期"
+        },
+        "恋爱中": {
+          "situation": "适合建立共同目标",
+          "reasons": [
+            "价值观接近"
+          ],
+          "advice": [
+            "多沟通",
+            "共同规划"
+          ],
+          "timing": "近期"
+        },
+        "已婚": {
+          "situation": "家庭需要共同目标支撑",
+          "reasons": [
+            "合作关系"
+          ],
+          "advice": [
+            "共同行动",
+            "避免隔阂"
+          ],
+          "timing": "稳定"
+        },
+        "复合": {
+          "situation": "复合可通过朋友调解",
+          "reasons": [
+            "外部支持"
+          ],
+          "advice": [
+            "循序渐进"
+          ],
+          "timing": "中期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "14": {
+      "name": "大有",
+      "overall_tendency": "吉",
+      "love_rating": 4,
+      "key_points": [
+        "感情资源丰厚",
+        "适合确定关系",
+        "收获明显",
+        "需保持谦逊"
+      ],
+      "scenario_specific": {
+        "单身": {
+          "situation": "桃花旺，选择多",
+          "reasons": [
+            "魅力提升"
+          ],
+          "advice": [
+            "慎重选择",
+            "避免暧昧"
+          ],
+          "timing": "近期"
+        },
+        "恋爱中": {
+          "situation": "关系成熟，适合订婚或结婚",
+          "reasons": [
+            "感情稳定"
+          ],
+          "advice": [
+            "明确承诺",
+            "共同规划"
+          ],
+          "timing": "近期"
+        },
+        "已婚": {
+          "situation": "家庭美满，收获感强",
+          "reasons": [
+            "相互成就"
+          ],
+          "advice": [
+            "保持感恩",
+            "继续经营"
+          ],
+          "timing": "稳定"
+        },
+        "复合": {
+          "situation": "复合机会好，但需真诚",
+          "reasons": [
+            "旧情仍在"
+          ],
+          "advice": [
+            "真诚沟通"
+          ],
+          "timing": "近期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "15": {
+      "name": "谦",
+      "overall_tendency": "吉",
+      "love_rating": 4,
+      "key_points": [
+        "感情稳健，谦逊有利",
+        "以退为进",
+        "适合长期经营",
+        "避免强势"
+      ],
+      "scenario_specific": {
+        "单身": {
+          "situation": "桃花平稳，适合慢热相处",
+          "reasons": [
+            "性格温和"
+          ],
+          "advice": [
+            "慢慢了解",
+            "不急于表白"
+          ],
+          "timing": "中期"
+        },
+        "恋爱中": {
+          "situation": "关系稳定，适合细水长流",
+          "reasons": [
+            "互相包容"
+          ],
+          "advice": [
+            "保持谦让",
+            "尊重对方"
+          ],
+          "timing": "长期"
+        },
+        "已婚": {
+          "situation": "家庭稳定，需相互尊重",
+          "reasons": [
+            "包容"
+          ],
+          "advice": [
+            "多沟通",
+            "少争执"
+          ],
+          "timing": "稳定"
+        },
+        "复合": {
+          "situation": "复合需以退为进",
+          "reasons": [
+            "对方顾虑"
+          ],
+          "advice": [
+            "展现改变"
+          ],
+          "timing": "中期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "16": {
+      "name": "豫",
+      "overall_tendency": "吉",
+      "love_rating": 4,
+      "key_points": [
+        "感情氛围轻松",
+        "互动愉快",
+        "适合推进关系",
+        "避免过度乐观"
+      ],
+      "scenario_specific": {
+        "单身": {
+          "situation": "社交活跃，桃花出现",
+          "reasons": [
+            "心态积极"
+          ],
+          "advice": [
+            "积极参与活动",
+            "把握机会"
+          ],
+          "timing": "近期"
+        },
+        "恋爱中": {
+          "situation": "关系甜蜜，适合加深承诺",
+          "reasons": [
+            "气氛好"
+          ],
+          "advice": [
+            "深化关系",
+            "避免冲动"
+          ],
+          "timing": "近期"
+        },
+        "已婚": {
+          "situation": "家庭氛围愉快",
+          "reasons": [
+            "相处融洽"
+          ],
+          "advice": [
+            "保持互动",
+            "共同娱乐"
+          ],
+          "timing": "稳定"
+        },
+        "复合": {
+          "situation": "复合氛围好",
+          "reasons": [
+            "沟通顺畅"
+          ],
+          "advice": [
+            "把握机会"
+          ],
+          "timing": "近期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "17": {
+      "name": "随",
+      "overall_tendency": "吉",
+      "love_rating": 4,
+      "key_points": [
+        "顺势相处，关系更融洽",
+        "适合共同目标",
+        "保持原则",
+        "避免盲从"
+      ],
+      "scenario_specific": {
+        "单身": {
+          "situation": "顺势而为易遇良缘",
+          "reasons": [
+            "缘分自来"
+          ],
+          "advice": [
+            "顺其自然",
+            "扩大社交"
+          ],
+          "timing": "近期"
+        },
+        "恋爱中": {
+          "situation": "相处融洽，顺势推进",
+          "reasons": [
+            "默契提升"
+          ],
+          "advice": [
+            "共同规划",
+            "保持原则"
+          ],
+          "timing": "近期"
+        },
+        "已婚": {
+          "situation": "家庭和顺，关系稳定",
+          "reasons": [
+            "相互配合"
+          ],
+          "advice": [
+            "尊重彼此",
+            "保持原则"
+          ],
+          "timing": "稳定"
+        },
+        "复合": {
+          "situation": "复合顺势可成",
+          "reasons": [
+            "氛围转暖"
+          ],
+          "advice": [
+            "顺其自然"
+          ],
+          "timing": "近期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "18": {
+      "name": "蛊",
+      "overall_tendency": "平",
+      "love_rating": 3,
+      "key_points": [
+        "感情问题暴露",
+        "需要修复与整顿",
+        "先治本后推进",
+        "避免拖延"
+      ],
+      "scenario_specific": {
+        "单身": {
+          "situation": "旧情阴影影响选择",
+          "reasons": [
+            "心理包袱"
+          ],
+          "advice": [
+            "放下过去",
+            "重新出发"
+          ],
+          "timing": "修复期"
+        },
+        "恋爱中": {
+          "situation": "关系需修复问题",
+          "reasons": [
+            "矛盾积累"
+          ],
+          "advice": [
+            "坦诚沟通",
+            "解决根因"
+          ],
+          "timing": "修复期"
+        },
+        "已婚": {
+          "situation": "家庭矛盾需整顿",
+          "reasons": [
+            "误解累积"
+          ],
+          "advice": [
+            "共同修复",
+            "建立新规则"
+          ],
+          "timing": "修复期"
+        },
+        "复合": {
+          "situation": "复合需先修复旧问题",
+          "reasons": [
+            "信任问题"
+          ],
+          "advice": [
+            "先修复再谈复合"
+          ],
+          "timing": "暂缓"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "19": {
+      "name": "临",
+      "overall_tendency": "吉",
+      "love_rating": 4,
+      "key_points": [
+        "感情上升期",
+        "适合确定关系",
+        "机遇增加",
+        "需谨慎"
+      ],
+      "scenario_specific": {
+        "单身": {
+          "situation": "桃花上升，机会增加",
+          "reasons": [
+            "人缘提升"
+          ],
+          "advice": [
+            "把握机会",
+            "大胆接触"
+          ],
+          "timing": "近期"
+        },
+        "恋爱中": {
+          "situation": "适合推进关系",
+          "reasons": [
+            "感情升温"
+          ],
+          "advice": [
+            "明确承诺",
+            "谨慎决策"
+          ],
+          "timing": "近期"
+        },
+        "已婚": {
+          "situation": "家庭和谐，关系升温",
+          "reasons": [
+            "互动增加"
+          ],
+          "advice": [
+            "保持甜蜜",
+            "避免大意"
+          ],
+          "timing": "稳定"
+        },
+        "复合": {
+          "situation": "复合机会出现",
+          "reasons": [
+            "感情回暖"
+          ],
+          "advice": [
+            "抓住时机"
+          ],
+          "timing": "近期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "20": {
+      "name": "观",
+      "overall_tendency": "平",
+      "love_rating": 3,
+      "key_points": [
+        "适合观察与思考",
+        "调整关系策略",
+        "不宜贸然行动",
+        "需看清方向"
+      ],
+      "scenario_specific": {
+        "单身": {
+          "situation": "宜观察对象，不宜急进",
+          "reasons": [
+            "了解不足"
+          ],
+          "advice": [
+            "多观察",
+            "慢慢接触"
+          ],
+          "timing": "短期观望"
+        },
+        "恋爱中": {
+          "situation": "关系需观察调整",
+          "reasons": [
+            "存在不确定"
+          ],
+          "advice": [
+            "先复盘",
+            "再沟通"
+          ],
+          "timing": "短期"
+        },
+        "已婚": {
+          "situation": "家庭关系需观察与调整",
+          "reasons": [
+            "沟通不足"
+          ],
+          "advice": [
+            "先调整再行动"
+          ],
+          "timing": "短期"
+        },
+        "复合": {
+          "situation": "复合需观望",
+          "reasons": [
+            "时机未明"
+          ],
+          "advice": [
+            "保持距离"
+          ],
+          "timing": "暂缓"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "21": {
+      "name": "噬嗑",
+      "overall_tendency": "平",
+      "love_rating": 3,
+      "key_points": [
+        "需要果断处理矛盾",
+        "规则与边界重要",
+        "沟通要直接",
+        "避免拖延"
+      ],
+      "scenario_specific": {
+        "单身": {
+          "situation": "需要清晰标准，避免纠结",
+          "reasons": [
+            "选择困难"
+          ],
+          "advice": [
+            "明确择偶标准",
+            "果断选择"
+          ],
+          "timing": "短期"
+        },
+        "恋爱中": {
+          "situation": "矛盾需快速解决",
+          "reasons": [
+            "沟通不畅"
+          ],
+          "advice": [
+            "直面问题",
+            "设定规则"
+          ],
+          "timing": "近期"
+        },
+        "已婚": {
+          "situation": "家庭矛盾需处理",
+          "reasons": [
+            "规则缺失"
+          ],
+          "advice": [
+            "制定家庭规则",
+            "及时沟通"
+          ],
+          "timing": "近期"
+        },
+        "复合": {
+          "situation": "复合需果断处理旧问题",
+          "reasons": [
+            "旧怨"
+          ],
+          "advice": [
+            "先解决矛盾"
+          ],
+          "timing": "短期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "22": {
+      "name": "贲",
+      "overall_tendency": "平",
+      "love_rating": 3,
+      "key_points": [
+        "外在吸引力提升",
+        "重视形象与表达",
+        "关系需要润色",
+        "避免虚浮"
+      ],
+      "scenario_specific": {
+        "单身": {
+          "situation": "桃花受外在形象影响较大",
+          "reasons": [
+            "形象重要"
+          ],
+          "advice": [
+            "提升形象",
+            "注意表达"
+          ],
+          "timing": "近期"
+        },
+        "恋爱中": {
+          "situation": "关系需增加仪式感",
+          "reasons": [
+            "表达不足"
+          ],
+          "advice": [
+            "提升表达",
+            "制造浪漫"
+          ],
+          "timing": "近期"
+        },
+        "已婚": {
+          "situation": "婚姻需要经营与润色",
+          "reasons": [
+            "生活平淡"
+          ],
+          "advice": [
+            "增加仪式感",
+            "重视沟通"
+          ],
+          "timing": "稳定"
+        },
+        "复合": {
+          "situation": "复合需调整形象与表达",
+          "reasons": [
+            "吸引力下降"
+          ],
+          "advice": [
+            "提升自我",
+            "真诚沟通"
+          ],
+          "timing": "近期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "23": {
+      "name": "剥",
+      "overall_tendency": "不利",
+      "love_rating": 2,
+      "key_points": [
+        "感情处于低谷",
+        "易有失落感",
+        "不宜强求",
+        "先守后修"
+      ],
+      "scenario_specific": {
+        "单身": {
+          "situation": "桃花低迷，机会减少",
+          "reasons": [
+            "时机不佳"
+          ],
+          "advice": [
+            "先调整状态",
+            "不急于脱单"
+          ],
+          "timing": "短期不利"
+        },
+        "恋爱中": {
+          "situation": "关系受挫，易冷淡",
+          "reasons": [
+            "情感消耗"
+          ],
+          "advice": [
+            "先稳定情绪",
+            "避免争执"
+          ],
+          "timing": "短期"
+        },
+        "已婚": {
+          "situation": "家庭关系紧张",
+          "reasons": [
+            "压力增大"
+          ],
+          "advice": [
+            "减少冲突",
+            "共同修复"
+          ],
+          "timing": "修复期"
+        },
+        "复合": {
+          "situation": "复合难度大",
+          "reasons": [
+            "情感枯竭"
+          ],
+          "advice": [
+            "先放下执念"
+          ],
+          "timing": "暂缓"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "24": {
+      "name": "复",
+      "overall_tendency": "吉",
+      "love_rating": 4,
+      "key_points": [
+        "关系回暖，有复苏迹象",
+        "适合修复与重启",
+        "循序渐进",
+        "把握机会"
+      ],
+      "scenario_specific": {
+        "单身": {
+          "situation": "桃花回暖，旧缘或新缘出现",
+          "reasons": [
+            "缘分回归"
+          ],
+          "advice": [
+            "把握机会",
+            "开放心态"
+          ],
+          "timing": "近期"
+        },
+        "恋爱中": {
+          "situation": "关系修复，适合重启",
+          "reasons": [
+            "沟通改善"
+          ],
+          "advice": [
+            "循序渐进",
+            "重建信任"
+          ],
+          "timing": "近期"
+        },
+        "已婚": {
+          "situation": "家庭回暖，适合修复",
+          "reasons": [
+            "关系改善"
+          ],
+          "advice": [
+            "多沟通",
+            "共同修复"
+          ],
+          "timing": "近期"
+        },
+        "复合": {
+          "situation": "复合机会增加",
+          "reasons": [
+            "旧情回暖"
+          ],
+          "advice": [
+            "循序渐进"
+          ],
+          "timing": "近期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "25": {
+      "name": "无妄",
+      "overall_tendency": "吉",
+      "love_rating": 4,
+      "key_points": [
+        "以真诚为本",
+        "不宜投机取巧",
+        "稳定发展",
+        "保持坦诚"
+      ],
+      "scenario_specific": {
+        "单身": {
+          "situation": "以真诚吸引合适对象",
+          "reasons": [
+            "坦诚"
+          ],
+          "advice": [
+            "真实表达",
+            "不伪装"
+          ],
+          "timing": "稳定"
+        },
+        "恋爱中": {
+          "situation": "关系稳定，适合真诚沟通",
+          "reasons": [
+            "信任"
+          ],
+          "advice": [
+            "保持坦诚",
+            "避免试探"
+          ],
+          "timing": "稳定"
+        },
+        "已婚": {
+          "situation": "家庭稳定，重视真诚",
+          "reasons": [
+            "信任基础"
+          ],
+          "advice": [
+            "保持透明",
+            "减少隐瞒"
+          ],
+          "timing": "稳定"
+        },
+        "复合": {
+          "situation": "复合需真诚沟通",
+          "reasons": [
+            "信任重建"
+          ],
+          "advice": [
+            "坦诚表达",
+            "不隐瞒"
+          ],
+          "timing": "稳定"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "26": {
+      "name": "大畜",
+      "overall_tendency": "平",
+      "love_rating": 3,
+      "key_points": [
+        "需要积蓄情感力量",
+        "适合修炼与等待",
+        "不要急于推进",
+        "稳住节奏"
+      ],
+      "scenario_specific": {
+        "单身": {
+          "situation": "桃花未到，需积累",
+          "reasons": [
+            "时机未到"
+          ],
+          "advice": [
+            "提升自己",
+            "耐心等待"
+          ],
+          "timing": "中期"
+        },
+        "恋爱中": {
+          "situation": "关系需要沉淀",
+          "reasons": [
+            "节奏偏慢"
+          ],
+          "advice": [
+            "保持耐心",
+            "稳步推进"
+          ],
+          "timing": "中期"
+        },
+        "已婚": {
+          "situation": "家庭稳定但需经营",
+          "reasons": [
+            "生活琐事"
+          ],
+          "advice": [
+            "积累温情",
+            "保持耐心"
+          ],
+          "timing": "稳定"
+        },
+        "复合": {
+          "situation": "复合需等待时机",
+          "reasons": [
+            "时机未到"
+          ],
+          "advice": [
+            "暂缓推进"
+          ],
+          "timing": "中期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "27": {
+      "name": "颐",
+      "overall_tendency": "平",
+      "love_rating": 3,
+      "key_points": [
+        "重视滋养与陪伴",
+        "关系需要经营",
+        "注重基础",
+        "避免忽视"
+      ],
+      "scenario_specific": {
+        "单身": {
+          "situation": "需提升自我吸引力",
+          "reasons": [
+            "基础不足"
+          ],
+          "advice": [
+            "关注自我成长",
+            "提升魅力"
+          ],
+          "timing": "长期"
+        },
+        "恋爱中": {
+          "situation": "关系需更多陪伴",
+          "reasons": [
+            "互动不足"
+          ],
+          "advice": [
+            "增加互动",
+            "稳定情感"
+          ],
+          "timing": "长期"
+        },
+        "已婚": {
+          "situation": "家庭关系需经营",
+          "reasons": [
+            "忽视对方"
+          ],
+          "advice": [
+            "多关怀",
+            "增加交流"
+          ],
+          "timing": "长期"
+        },
+        "复合": {
+          "situation": "复合需重新滋养关系",
+          "reasons": [
+            "情感缺口"
+          ],
+          "advice": [
+            "先重建互动"
+          ],
+          "timing": "长期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "28": {
+      "name": "大过",
+      "overall_tendency": "平",
+      "love_rating": 3,
+      "key_points": [
+        "责任压力大",
+        "关系需调整结构",
+        "避免过度负担",
+        "寻找平衡"
+      ],
+      "scenario_specific": {
+        "单身": {
+          "situation": "择偶压力大",
+          "reasons": [
+            "期待过高"
+          ],
+          "advice": [
+            "适度放低标准",
+            "先观察"
+          ],
+          "timing": "谨慎"
+        },
+        "恋爱中": {
+          "situation": "关系压力增大",
+          "reasons": [
+            "责任增加"
+          ],
+          "advice": [
+            "分担责任",
+            "保持沟通"
+          ],
+          "timing": "短期"
+        },
+        "已婚": {
+          "situation": "家庭负担重",
+          "reasons": [
+            "事务繁多"
+          ],
+          "advice": [
+            "分工协作",
+            "避免过劳"
+          ],
+          "timing": "短期"
+        },
+        "复合": {
+          "situation": "复合压力大",
+          "reasons": [
+            "责任未解"
+          ],
+          "advice": [
+            "先解决压力"
+          ],
+          "timing": "暂缓"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "29": {
+      "name": "坎",
+      "overall_tendency": "不利",
+      "love_rating": 2,
+      "key_points": [
+        "感情多波折",
+        "需要谨慎面对",
+        "避免冒进",
+        "安全感优先"
+      ],
+      "scenario_specific": {
+        "单身": {
+          "situation": "感情反复受挫",
+          "reasons": [
+            "时机不佳"
+          ],
+          "advice": [
+            "先稳住情绪",
+            "不急"
+          ],
+          "timing": "短期"
+        },
+        "恋爱中": {
+          "situation": "关系波折，需谨慎处理",
+          "reasons": [
+            "信任问题"
+          ],
+          "advice": [
+            "建立安全感",
+            "稳步沟通"
+          ],
+          "timing": "短期"
+        },
+        "已婚": {
+          "situation": "家庭矛盾反复",
+          "reasons": [
+            "误解"
+          ],
+          "advice": [
+            "冷静沟通",
+            "避免激化"
+          ],
+          "timing": "短期"
+        },
+        "复合": {
+          "situation": "复合不稳定",
+          "reasons": [
+            "旧问题"
+          ],
+          "advice": [
+            "谨慎评估"
+          ],
+          "timing": "暂缓"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "30": {
+      "name": "离",
+      "overall_tendency": "吉",
+      "love_rating": 4,
+      "key_points": [
+        "感情光明向上",
+        "互动热烈",
+        "适合表白或承诺",
+        "避免浮躁"
+      ],
+      "scenario_specific": {
+        "单身": {
+          "situation": "桃花旺，容易被注意",
+          "reasons": [
+            "吸引力强"
+          ],
+          "advice": [
+            "主动表达",
+            "把握机会"
+          ],
+          "timing": "近期"
+        },
+        "恋爱中": {
+          "situation": "关系升温，适合推进",
+          "reasons": [
+            "互动增加"
+          ],
+          "advice": [
+            "深入沟通",
+            "明确承诺"
+          ],
+          "timing": "近期"
+        },
+        "已婚": {
+          "situation": "家庭氛围热烈",
+          "reasons": [
+            "互动频繁"
+          ],
+          "advice": [
+            "保持热情",
+            "避免冲动"
+          ],
+          "timing": "稳定"
+        },
+        "复合": {
+          "situation": "复合机会好",
+          "reasons": [
+            "情感回温"
+          ],
+          "advice": [
+            "真诚表达"
+          ],
+          "timing": "近期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "31": {
+      "name": "咸",
+      "overall_tendency": "吉",
+      "love_rating": 4,
+      "key_points": [
+        "互动与吸引增强",
+        "沟通顺畅",
+        "适合推进关系",
+        "重视真诚"
+      ],
+      "scenario_specific": {
+        "单身": {
+          "situation": "吸引力提升，桃花增加",
+          "reasons": [
+            "魅力提升"
+          ],
+          "advice": [
+            "积极互动",
+            "真诚沟通"
+          ],
+          "timing": "近期"
+        },
+        "恋爱中": {
+          "situation": "关系互动良好",
+          "reasons": [
+            "默契提升"
+          ],
+          "advice": [
+            "加深沟通",
+            "维持热度"
+          ],
+          "timing": "近期"
+        },
+        "已婚": {
+          "situation": "夫妻互动增加",
+          "reasons": [
+            "沟通顺畅"
+          ],
+          "advice": [
+            "多交流",
+            "增强默契"
+          ],
+          "timing": "稳定"
+        },
+        "复合": {
+          "situation": "复合机会增强",
+          "reasons": [
+            "吸引力回升"
+          ],
+          "advice": [
+            "真诚表达"
+          ],
+          "timing": "近期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "32": {
+      "name": "恒",
+      "overall_tendency": "吉",
+      "love_rating": 4,
+      "key_points": [
+        "感情稳定持久",
+        "适合长期关系",
+        "坚持与承诺",
+        "不宜频繁变动"
+      ],
+      "scenario_specific": {
+        "单身": {
+          "situation": "适合寻找稳定对象",
+          "reasons": [
+            "长期主义"
+          ],
+          "advice": [
+            "重视长期价值观",
+            "避免冲动"
+          ],
+          "timing": "稳定"
+        },
+        "恋爱中": {
+          "situation": "关系稳定，适合确定承诺",
+          "reasons": [
+            "稳定感"
+          ],
+          "advice": [
+            "坚定承诺",
+            "共同规划"
+          ],
+          "timing": "长期"
+        },
+        "已婚": {
+          "situation": "婚姻稳定，适合长期经营",
+          "reasons": [
+            "稳定"
+          ],
+          "advice": [
+            "保持恒心",
+            "日常经营"
+          ],
+          "timing": "长期"
+        },
+        "复合": {
+          "situation": "复合需坚持与耐心",
+          "reasons": [
+            "关系修复"
+          ],
+          "advice": [
+            "持续沟通",
+            "稳步推进"
+          ],
+          "timing": "中期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "33": {
+      "name": "遯",
+      "overall_tendency": "平",
+      "love_rating": 3,
+      "key_points": [
+        "适度退让，避免冲突",
+        "保持距离有利",
+        "等待更好时机",
+        "以守为主"
+      ],
+      "scenario_specific": {
+        "单身": {
+          "situation": "不宜主动强求",
+          "reasons": [
+            "时机未到"
+          ],
+          "advice": [
+            "先观察",
+            "保持距离"
+          ],
+          "timing": "短期"
+        },
+        "恋爱中": {
+          "situation": "关系需退一步",
+          "reasons": [
+            "矛盾存在"
+          ],
+          "advice": [
+            "冷静处理",
+            "避免争执"
+          ],
+          "timing": "短期"
+        },
+        "已婚": {
+          "situation": "家庭需暂时退让",
+          "reasons": [
+            "压力较大"
+          ],
+          "advice": [
+            "先稳住情绪",
+            "避免冲突"
+          ],
+          "timing": "短期"
+        },
+        "复合": {
+          "situation": "复合宜暂缓",
+          "reasons": [
+            "条件未成熟"
+          ],
+          "advice": [
+            "先保持距离"
+          ],
+          "timing": "暂缓"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "34": {
+      "name": "大壮",
+      "overall_tendency": "吉",
+      "love_rating": 4,
+      "key_points": [
+        "感情动力强",
+        "适合主动推进",
+        "保持分寸",
+        "避免冲动"
+      ],
+      "scenario_specific": {
+        "单身": {
+          "situation": "主动出击成功率高",
+          "reasons": [
+            "动力足"
+          ],
+          "advice": [
+            "积极表达",
+            "注意分寸"
+          ],
+          "timing": "近期"
+        },
+        "恋爱中": {
+          "situation": "关系推进快，易升级",
+          "reasons": [
+            "动力强"
+          ],
+          "advice": [
+            "把握节奏",
+            "避免冲动"
+          ],
+          "timing": "近期"
+        },
+        "已婚": {
+          "situation": "家庭关系有活力",
+          "reasons": [
+            "互动提升"
+          ],
+          "advice": [
+            "保持沟通",
+            "避免冲动"
+          ],
+          "timing": "稳定"
+        },
+        "复合": {
+          "situation": "复合可快速推进",
+          "reasons": [
+            "动力强"
+          ],
+          "advice": [
+            "把握分寸"
+          ],
+          "timing": "近期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "35": {
+      "name": "晋",
+      "overall_tendency": "吉",
+      "love_rating": 4,
+      "key_points": [
+        "感情上升期",
+        "适合推进关系",
+        "机会增多",
+        "注意节奏"
+      ],
+      "scenario_specific": {
+        "单身": {
+          "situation": "桃花上升，机会增多",
+          "reasons": [
+            "吸引力强"
+          ],
+          "advice": [
+            "把握机会",
+            "主动沟通"
+          ],
+          "timing": "近期"
+        },
+        "恋爱中": {
+          "situation": "关系升温，适合确定关系",
+          "reasons": [
+            "默契增加"
+          ],
+          "advice": [
+            "推进承诺",
+            "保持节奏"
+          ],
+          "timing": "近期"
+        },
+        "已婚": {
+          "situation": "家庭氛围提升",
+          "reasons": [
+            "互动增加"
+          ],
+          "advice": [
+            "保持新鲜感",
+            "多沟通"
+          ],
+          "timing": "稳定"
+        },
+        "复合": {
+          "situation": "复合机会增加",
+          "reasons": [
+            "关系回暖"
+          ],
+          "advice": [
+            "把握机会"
+          ],
+          "timing": "近期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "36": {
+      "name": "明夷",
+      "overall_tendency": "不利",
+      "love_rating": 2,
+      "key_points": [
+        "感情易受伤",
+        "需低调守护",
+        "避免冲突",
+        "先自保"
+      ],
+      "scenario_specific": {
+        "单身": {
+          "situation": "桃花不稳，易受伤",
+          "reasons": [
+            "时机不佳"
+          ],
+          "advice": [
+            "保护自己",
+            "不急于投入"
+          ],
+          "timing": "短期"
+        },
+        "恋爱中": {
+          "situation": "关系容易受挫",
+          "reasons": [
+            "外部压力"
+          ],
+          "advice": [
+            "保持低调",
+            "避免争执"
+          ],
+          "timing": "短期"
+        },
+        "已婚": {
+          "situation": "家庭矛盾易激化",
+          "reasons": [
+            "压力大"
+          ],
+          "advice": [
+            "减少冲突",
+            "先稳住"
+          ],
+          "timing": "短期"
+        },
+        "复合": {
+          "situation": "复合不宜高调",
+          "reasons": [
+            "时机未到"
+          ],
+          "advice": [
+            "先观察"
+          ],
+          "timing": "暂缓"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "37": {
+      "name": "家人",
+      "overall_tendency": "平",
+      "love_rating": 3,
+      "key_points": [
+        "家庭秩序重要",
+        "需分工与规则",
+        "沟通是关键",
+        "避免失衡"
+      ],
+      "scenario_specific": {
+        "单身": {
+          "situation": "家庭因素影响择偶",
+          "reasons": [
+            "家庭干预"
+          ],
+          "advice": [
+            "沟通家庭期待",
+            "保持边界"
+          ],
+          "timing": "中期"
+        },
+        "恋爱中": {
+          "situation": "关系需明确规则与责任",
+          "reasons": [
+            "现实问题"
+          ],
+          "advice": [
+            "明确分工",
+            "保持沟通"
+          ],
+          "timing": "中期"
+        },
+        "已婚": {
+          "situation": "家庭分工需调整",
+          "reasons": [
+            "事务繁杂"
+          ],
+          "advice": [
+            "明确责任",
+            "加强沟通"
+          ],
+          "timing": "中期"
+        },
+        "复合": {
+          "situation": "复合需处理家庭问题",
+          "reasons": [
+            "现实压力"
+          ],
+          "advice": [
+            "先解决现实再谈"
+          ],
+          "timing": "暂缓"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "38": {
+      "name": "睽",
+      "overall_tendency": "平",
+      "love_rating": 3,
+      "key_points": [
+        "分歧明显，求同存异",
+        "不宜硬碰硬",
+        "小事可成",
+        "大事暂缓"
+      ],
+      "scenario_specific": {
+        "单身": {
+          "situation": "择偶标准分歧大",
+          "reasons": [
+            "眼光不同"
+          ],
+          "advice": [
+            "保持弹性",
+            "避免执念"
+          ],
+          "timing": "短期"
+        },
+        "恋爱中": {
+          "situation": "关系分歧增多",
+          "reasons": [
+            "沟通不足"
+          ],
+          "advice": [
+            "求同存异",
+            "避免争执"
+          ],
+          "timing": "短期"
+        },
+        "已婚": {
+          "situation": "家庭分歧明显",
+          "reasons": [
+            "价值观差异"
+          ],
+          "advice": [
+            "求同存异",
+            "不要激化"
+          ],
+          "timing": "短期"
+        },
+        "复合": {
+          "situation": "复合分歧大",
+          "reasons": [
+            "旧问题"
+          ],
+          "advice": [
+            "先协调",
+            "不要强求"
+          ],
+          "timing": "暂缓"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "40": {
+      "name": "解",
+      "overall_tendency": "吉",
+      "love_rating": 4,
+      "key_points": [
+        "矛盾缓解，关系回暖",
+        "适合修复与沟通",
+        "机会重现",
+        "顺势而为"
+      ],
+      "scenario_specific": {
+        "单身": {
+          "situation": "桃花回暖，机会出现",
+          "reasons": [
+            "时机改善"
+          ],
+          "advice": [
+            "把握机会",
+            "主动沟通"
+          ],
+          "timing": "近期"
+        },
+        "恋爱中": {
+          "situation": "关系缓和，适合修复",
+          "reasons": [
+            "矛盾缓解"
+          ],
+          "advice": [
+            "加强沟通",
+            "重建信任"
+          ],
+          "timing": "近期"
+        },
+        "已婚": {
+          "situation": "家庭矛盾缓解，关系修复",
+          "reasons": [
+            "压力缓解"
+          ],
+          "advice": [
+            "多沟通",
+            "共同修复"
+          ],
+          "timing": "近期"
+        },
+        "复合": {
+          "situation": "复合障碍减少",
+          "reasons": [
+            "关系回暖"
+          ],
+          "advice": [
+            "顺势推进"
+          ],
+          "timing": "近期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "41": {
+      "name": "损",
+      "overall_tendency": "平",
+      "love_rating": 3,
+      "key_points": [
+        "适度取舍，关系减负",
+        "先减后增",
+        "减少消耗",
+        "回归本质"
+      ],
+      "scenario_specific": {
+        "单身": {
+          "situation": "需降低期待，先调整心态",
+          "reasons": [
+            "心态压力"
+          ],
+          "advice": [
+            "放下执念",
+            "先稳定"
+          ],
+          "timing": "短期"
+        },
+        "恋爱中": {
+          "situation": "关系需减负",
+          "reasons": [
+            "负担过重"
+          ],
+          "advice": [
+            "减少消耗",
+            "回归本质"
+          ],
+          "timing": "近期"
+        },
+        "已婚": {
+          "situation": "家庭需减轻压力",
+          "reasons": [
+            "现实负担"
+          ],
+          "advice": [
+            "分担责任",
+            "减少冲突"
+          ],
+          "timing": "近期"
+        },
+        "复合": {
+          "situation": "复合需先减少纠缠",
+          "reasons": [
+            "负担过重"
+          ],
+          "advice": [
+            "先放下执念"
+          ],
+          "timing": "短期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "42": {
+      "name": "益",
+      "overall_tendency": "吉",
+      "love_rating": 4,
+      "key_points": [
+        "感情增益",
+        "互动增加",
+        "适合投入",
+        "关系向好"
+      ],
+      "scenario_specific": {
+        "单身": {
+          "situation": "桃花增加，机会变多",
+          "reasons": [
+            "缘分增加"
+          ],
+          "advice": [
+            "主动出击",
+            "把握机会"
+          ],
+          "timing": "近期"
+        },
+        "恋爱中": {
+          "situation": "关系增温",
+          "reasons": [
+            "互动增强"
+          ],
+          "advice": [
+            "增加投入",
+            "深化关系"
+          ],
+          "timing": "近期"
+        },
+        "已婚": {
+          "situation": "家庭关系向好",
+          "reasons": [
+            "支持增加"
+          ],
+          "advice": [
+            "保持投入",
+            "珍惜"
+          ],
+          "timing": "稳定"
+        },
+        "复合": {
+          "situation": "复合机会增多",
+          "reasons": [
+            "关系回暖"
+          ],
+          "advice": [
+            "顺势推进"
+          ],
+          "timing": "近期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "43": {
+      "name": "夬",
+      "overall_tendency": "平",
+      "love_rating": 3,
+      "key_points": [
+        "需要果断决断",
+        "避免拖泥带水",
+        "明确关系",
+        "不宜犹豫"
+      ],
+      "scenario_specific": {
+        "单身": {
+          "situation": "需果断选择对象",
+          "reasons": [
+            "机会短"
+          ],
+          "advice": [
+            "明确心意",
+            "果断行动"
+          ],
+          "timing": "近期"
+        },
+        "恋爱中": {
+          "situation": "关系需明确态度",
+          "reasons": [
+            "不确定"
+          ],
+          "advice": [
+            "直接沟通",
+            "避免拖延"
+          ],
+          "timing": "近期"
+        },
+        "已婚": {
+          "situation": "家庭问题需果断处理",
+          "reasons": [
+            "拖延问题"
+          ],
+          "advice": [
+            "果断解决",
+            "避免积累"
+          ],
+          "timing": "近期"
+        },
+        "复合": {
+          "situation": "复合需果断表态",
+          "reasons": [
+            "犹豫"
+          ],
+          "advice": [
+            "明确态度"
+          ],
+          "timing": "近期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "44": {
+      "name": "姤",
+      "overall_tendency": "平",
+      "love_rating": 3,
+      "key_points": [
+        "突发邂逅",
+        "需谨慎判断",
+        "避免冲动",
+        "先观察"
+      ],
+      "scenario_specific": {
+        "单身": {
+          "situation": "可能出现突发桃花",
+          "reasons": [
+            "偶然机会"
+          ],
+          "advice": [
+            "先观察",
+            "谨慎判断"
+          ],
+          "timing": "近期"
+        },
+        "恋爱中": {
+          "situation": "关系中可能出现突发变量",
+          "reasons": [
+            "外部诱因"
+          ],
+          "advice": [
+            "保持冷静",
+            "避免冲动"
+          ],
+          "timing": "短期"
+        },
+        "已婚": {
+          "situation": "家庭需防突发干扰",
+          "reasons": [
+            "外部因素"
+          ],
+          "advice": [
+            "保持边界",
+            "避免误会"
+          ],
+          "timing": "短期"
+        },
+        "复合": {
+          "situation": "复合机会突然出现",
+          "reasons": [
+            "时机突发"
+          ],
+          "advice": [
+            "谨慎评估"
+          ],
+          "timing": "短期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "45": {
+      "name": "萃",
+      "overall_tendency": "吉",
+      "love_rating": 4,
+      "key_points": [
+        "关系聚合",
+        "人脉助力",
+        "适合集体环境",
+        "凝聚力增强"
+      ],
+      "scenario_specific": {
+        "单身": {
+          "situation": "社交聚会带来机会",
+          "reasons": [
+            "人脉聚合"
+          ],
+          "advice": [
+            "参与社交",
+            "拓展圈子"
+          ],
+          "timing": "近期"
+        },
+        "恋爱中": {
+          "situation": "关系凝聚，适合见家长",
+          "reasons": [
+            "凝聚力强"
+          ],
+          "advice": [
+            "推动关系",
+            "增强认同"
+          ],
+          "timing": "近期"
+        },
+        "已婚": {
+          "situation": "家庭凝聚力增强",
+          "reasons": [
+            "支持增强"
+          ],
+          "advice": [
+            "保持互动",
+            "增强纽带"
+          ],
+          "timing": "稳定"
+        },
+        "复合": {
+          "situation": "复合可借助朋友助力",
+          "reasons": [
+            "外部支持"
+          ],
+          "advice": [
+            "借助人脉"
+          ],
+          "timing": "近期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "46": {
+      "name": "升",
+      "overall_tendency": "吉",
+      "love_rating": 4,
+      "key_points": [
+        "感情稳步上升",
+        "循序渐进",
+        "稳中求进",
+        "适合长期发展"
+      ],
+      "scenario_specific": {
+        "单身": {
+          "situation": "桃花逐步增多",
+          "reasons": [
+            "状态提升"
+          ],
+          "advice": [
+            "持续社交",
+            "稳步推进"
+          ],
+          "timing": "中期"
+        },
+        "恋爱中": {
+          "situation": "关系逐步升温",
+          "reasons": [
+            "积累见效"
+          ],
+          "advice": [
+            "循序渐进",
+            "保持耐心"
+          ],
+          "timing": "中期"
+        },
+        "已婚": {
+          "situation": "家庭关系逐步改善",
+          "reasons": [
+            "沟通改善"
+          ],
+          "advice": [
+            "持续经营",
+            "保持耐心"
+          ],
+          "timing": "中期"
+        },
+        "复合": {
+          "situation": "复合需循序渐进",
+          "reasons": [
+            "信任积累"
+          ],
+          "advice": [
+            "逐步修复"
+          ],
+          "timing": "中期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "47": {
+      "name": "困",
+      "overall_tendency": "不利",
+      "love_rating": 2,
+      "key_points": [
+        "感情受困，压力大",
+        "需要耐心",
+        "不宜强求",
+        "等待转机"
+      ],
+      "scenario_specific": {
+        "单身": {
+          "situation": "桃花受阻",
+          "reasons": [
+            "环境不利"
+          ],
+          "advice": [
+            "保持耐心",
+            "先自我调整"
+          ],
+          "timing": "短期"
+        },
+        "恋爱中": {
+          "situation": "关系受困，容易疲惫",
+          "reasons": [
+            "压力累积"
+          ],
+          "advice": [
+            "减少冲突",
+            "先稳住"
+          ],
+          "timing": "短期"
+        },
+        "已婚": {
+          "situation": "家庭压力加大",
+          "reasons": [
+            "现实压力"
+          ],
+          "advice": [
+            "共同承担",
+            "避免冲突"
+          ],
+          "timing": "短期"
+        },
+        "复合": {
+          "situation": "复合困难",
+          "reasons": [
+            "条件不成熟"
+          ],
+          "advice": [
+            "暂缓"
+          ],
+          "timing": "暂缓"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "48": {
+      "name": "井",
+      "overall_tendency": "平",
+      "love_rating": 3,
+      "key_points": [
+        "关系需修复基础",
+        "重视经营",
+        "稳固根基",
+        "循序渐进"
+      ],
+      "scenario_specific": {
+        "单身": {
+          "situation": "需提升自身基础",
+          "reasons": [
+            "基础不足"
+          ],
+          "advice": [
+            "提升自我",
+            "稳步"
+          ],
+          "timing": "中期"
+        },
+        "恋爱中": {
+          "situation": "关系需加强基础",
+          "reasons": [
+            "沟通不足"
+          ],
+          "advice": [
+            "加强沟通",
+            "重建信任"
+          ],
+          "timing": "中期"
+        },
+        "已婚": {
+          "situation": "家庭需修复基础",
+          "reasons": [
+            "积累问题"
+          ],
+          "advice": [
+            "共同修复",
+            "加强沟通"
+          ],
+          "timing": "中期"
+        },
+        "复合": {
+          "situation": "复合需先打基础",
+          "reasons": [
+            "信任不足"
+          ],
+          "advice": [
+            "重建信任"
+          ],
+          "timing": "中期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "49": {
+      "name": "革",
+      "overall_tendency": "吉",
+      "love_rating": 4,
+      "key_points": [
+        "适合改变关系模式",
+        "需要革新",
+        "顺势调整",
+        "果断行动"
+      ],
+      "scenario_specific": {
+        "单身": {
+          "situation": "适合改变择偶方式",
+          "reasons": [
+            "需要调整"
+          ],
+          "advice": [
+            "尝试新社交方式"
+          ],
+          "timing": "近期"
+        },
+        "恋爱中": {
+          "situation": "关系需要改变模式",
+          "reasons": [
+            "旧模式不适"
+          ],
+          "advice": [
+            "调整相处方式",
+            "建立新规则"
+          ],
+          "timing": "近期"
+        },
+        "已婚": {
+          "situation": "家庭关系需更新",
+          "reasons": [
+            "旧问题"
+          ],
+          "advice": [
+            "改革分工",
+            "重建秩序"
+          ],
+          "timing": "近期"
+        },
+        "复合": {
+          "situation": "复合需改变旧模式",
+          "reasons": [
+            "旧问题"
+          ],
+          "advice": [
+            "先改变再谈"
+          ],
+          "timing": "近期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "50": {
+      "name": "鼎",
+      "overall_tendency": "吉",
+      "love_rating": 4,
+      "key_points": [
+        "关系稳定成型",
+        "适合定下承诺",
+        "秩序与稳定",
+        "稳中求进"
+      ],
+      "scenario_specific": {
+        "单身": {
+          "situation": "适合建立稳定关系",
+          "reasons": [
+            "条件成熟"
+          ],
+          "advice": [
+            "认真对待",
+            "避免摇摆"
+          ],
+          "timing": "中期"
+        },
+        "恋爱中": {
+          "situation": "关系成熟，适合稳定承诺",
+          "reasons": [
+            "成熟期"
+          ],
+          "advice": [
+            "明确承诺",
+            "保持稳定"
+          ],
+          "timing": "中期"
+        },
+        "已婚": {
+          "situation": "家庭稳定",
+          "reasons": [
+            "秩序成型"
+          ],
+          "advice": [
+            "保持稳定",
+            "持续经营"
+          ],
+          "timing": "稳定"
+        },
+        "复合": {
+          "situation": "复合需建立稳定规则",
+          "reasons": [
+            "规则缺失"
+          ],
+          "advice": [
+            "先定规则"
+          ],
+          "timing": "中期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "51": {
+      "name": "震",
+      "overall_tendency": "平",
+      "love_rating": 3,
+      "key_points": [
+        "突发变化，需冷静应对",
+        "动中求稳",
+        "避免恐慌",
+        "保持信任"
+      ],
+      "scenario_specific": {
+        "单身": {
+          "situation": "突发桃花或变化",
+          "reasons": [
+            "偶发机会"
+          ],
+          "advice": [
+            "保持冷静",
+            "谨慎评估"
+          ],
+          "timing": "短期"
+        },
+        "恋爱中": {
+          "situation": "关系可能出现突发情况",
+          "reasons": [
+            "外部变动"
+          ],
+          "advice": [
+            "冷静沟通",
+            "稳定情绪"
+          ],
+          "timing": "短期"
+        },
+        "已婚": {
+          "situation": "家庭可能遇到突发变动",
+          "reasons": [
+            "外部压力"
+          ],
+          "advice": [
+            "同心协力",
+            "稳住关系"
+          ],
+          "timing": "短期"
+        },
+        "复合": {
+          "situation": "复合可能出现突发进展",
+          "reasons": [
+            "机会突发"
+          ],
+          "advice": [
+            "冷静评估"
+          ],
+          "timing": "短期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "52": {
+      "name": "艮",
+      "overall_tendency": "平",
+      "love_rating": 3,
+      "key_points": [
+        "以静制动",
+        "感情需稳住",
+        "避免冒进",
+        "保持冷静"
+      ],
+      "scenario_specific": {
+        "单身": {
+          "situation": "宜先观望",
+          "reasons": [
+            "时机未到"
+          ],
+          "advice": [
+            "先稳定自己",
+            "不急"
+          ],
+          "timing": "短期"
+        },
+        "恋爱中": {
+          "situation": "关系需要冷静期",
+          "reasons": [
+            "矛盾未解"
+          ],
+          "advice": [
+            "保持冷静",
+            "暂缓争执"
+          ],
+          "timing": "短期"
+        },
+        "已婚": {
+          "situation": "家庭需冷静处理矛盾",
+          "reasons": [
+            "压力"
+          ],
+          "advice": [
+            "先缓和",
+            "后沟通"
+          ],
+          "timing": "短期"
+        },
+        "复合": {
+          "situation": "复合宜暂缓",
+          "reasons": [
+            "条件不足"
+          ],
+          "advice": [
+            "先观察"
+          ],
+          "timing": "暂缓"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "53": {
+      "name": "渐",
+      "overall_tendency": "吉",
+      "love_rating": 4,
+      "key_points": [
+        "循序渐进",
+        "关系稳步发展",
+        "不宜急进",
+        "长期可成"
+      ],
+      "scenario_specific": {
+        "单身": {
+          "situation": "桃花逐步出现",
+          "reasons": [
+            "机会积累"
+          ],
+          "advice": [
+            "持续社交",
+            "稳步推进"
+          ],
+          "timing": "中期"
+        },
+        "恋爱中": {
+          "situation": "关系稳定提升",
+          "reasons": [
+            "积累"
+          ],
+          "advice": [
+            "循序渐进",
+            "保持耐心"
+          ],
+          "timing": "中期"
+        },
+        "已婚": {
+          "situation": "家庭关系逐步改善",
+          "reasons": [
+            "沟通改善"
+          ],
+          "advice": [
+            "持续经营",
+            "保持耐心"
+          ],
+          "timing": "中期"
+        },
+        "复合": {
+          "situation": "复合需逐步推进",
+          "reasons": [
+            "信任积累"
+          ],
+          "advice": [
+            "循序渐进"
+          ],
+          "timing": "中期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "54": {
+      "name": "归妹",
+      "overall_tendency": "平",
+      "love_rating": 3,
+      "key_points": [
+        "关系不宜仓促",
+        "短期波动",
+        "慎重决策",
+        "避免冲动"
+      ],
+      "scenario_specific": {
+        "单身": {
+          "situation": "短暂桃花，需谨慎",
+          "reasons": [
+            "不稳定"
+          ],
+          "advice": [
+            "谨慎选择",
+            "避免冲动"
+          ],
+          "timing": "短期"
+        },
+        "恋爱中": {
+          "situation": "关系需谨慎推进",
+          "reasons": [
+            "时机不稳"
+          ],
+          "advice": [
+            "不要仓促",
+            "稳步沟通"
+          ],
+          "timing": "短期"
+        },
+        "已婚": {
+          "situation": "家庭需谨慎处理冲突",
+          "reasons": [
+            "波动"
+          ],
+          "advice": [
+            "冷静处理",
+            "避免冲动"
+          ],
+          "timing": "短期"
+        },
+        "复合": {
+          "situation": "复合需谨慎评估",
+          "reasons": [
+            "条件不足"
+          ],
+          "advice": [
+            "先观望"
+          ],
+          "timing": "短期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "55": {
+      "name": "丰",
+      "overall_tendency": "吉",
+      "love_rating": 4,
+      "key_points": [
+        "感情丰盛",
+        "关系热烈",
+        "收获明显",
+        "注意平衡"
+      ],
+      "scenario_specific": {
+        "单身": {
+          "situation": "桃花旺盛，机会多",
+          "reasons": [
+            "人气高"
+          ],
+          "advice": [
+            "慎重选择",
+            "把握机会"
+          ],
+          "timing": "近期"
+        },
+        "恋爱中": {
+          "situation": "关系热烈，互动频繁",
+          "reasons": [
+            "感情升温"
+          ],
+          "advice": [
+            "把握热度",
+            "避免过度"
+          ],
+          "timing": "近期"
+        },
+        "已婚": {
+          "situation": "家庭氛围热烈",
+          "reasons": [
+            "互动增加"
+          ],
+          "advice": [
+            "保持平衡",
+            "避免过度"
+          ],
+          "timing": "稳定"
+        },
+        "复合": {
+          "situation": "复合机会多",
+          "reasons": [
+            "热度回升"
+          ],
+          "advice": [
+            "把握机会"
+          ],
+          "timing": "近期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "56": {
+      "name": "旅",
+      "overall_tendency": "平",
+      "love_rating": 3,
+      "key_points": [
+        "感情多变，需适应",
+        "关系不稳",
+        "短期互动",
+        "保持谨慎"
+      ],
+      "scenario_specific": {
+        "单身": {
+          "situation": "桃花多变，难以稳定",
+          "reasons": [
+            "环境变动"
+          ],
+          "advice": [
+            "保持灵活",
+            "不急"
+          ],
+          "timing": "短期"
+        },
+        "恋爱中": {
+          "situation": "关系多变，需适应",
+          "reasons": [
+            "外部变动"
+          ],
+          "advice": [
+            "保持沟通",
+            "适应变化"
+          ],
+          "timing": "短期"
+        },
+        "已婚": {
+          "situation": "家庭关系需适应变化",
+          "reasons": [
+            "环境变动"
+          ],
+          "advice": [
+            "保持沟通",
+            "适应变化"
+          ],
+          "timing": "短期"
+        },
+        "复合": {
+          "situation": "复合不稳定",
+          "reasons": [
+            "变数"
+          ],
+          "advice": [
+            "谨慎"
+          ],
+          "timing": "短期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "57": {
+      "name": "巽",
+      "overall_tendency": "吉",
+      "love_rating": 4,
+      "key_points": [
+        "柔顺沟通",
+        "关系渗透式改善",
+        "循序渐进",
+        "细节重要"
+      ],
+      "scenario_specific": {
+        "单身": {
+          "situation": "需耐心沟通",
+          "reasons": [
+            "柔性策略"
+          ],
+          "advice": [
+            "耐心沟通",
+            "稳步推进"
+          ],
+          "timing": "近期"
+        },
+        "恋爱中": {
+          "situation": "关系改善靠沟通",
+          "reasons": [
+            "细节重要"
+          ],
+          "advice": [
+            "耐心沟通",
+            "避免急躁"
+          ],
+          "timing": "近期"
+        },
+        "已婚": {
+          "situation": "家庭关系靠细节维护",
+          "reasons": [
+            "细节"
+          ],
+          "advice": [
+            "重视细节",
+            "持续沟通"
+          ],
+          "timing": "长期"
+        },
+        "复合": {
+          "situation": "复合需耐心沟通",
+          "reasons": [
+            "信任"
+          ],
+          "advice": [
+            "循序渐进"
+          ],
+          "timing": "中期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "58": {
+      "name": "兑",
+      "overall_tendency": "吉",
+      "love_rating": 4,
+      "key_points": [
+        "交流顺畅",
+        "关系和谐",
+        "表达能力关键",
+        "注意口舌"
+      ],
+      "scenario_specific": {
+        "单身": {
+          "situation": "沟通顺利，易有进展",
+          "reasons": [
+            "表达优势"
+          ],
+          "advice": [
+            "多交流",
+            "把握机会"
+          ],
+          "timing": "近期"
+        },
+        "恋爱中": {
+          "situation": "关系和谐，沟通良好",
+          "reasons": [
+            "交流顺畅"
+          ],
+          "advice": [
+            "保持沟通",
+            "避免口舌"
+          ],
+          "timing": "近期"
+        },
+        "已婚": {
+          "situation": "家庭沟通顺畅",
+          "reasons": [
+            "表达良好"
+          ],
+          "advice": [
+            "保持沟通",
+            "避免争执"
+          ],
+          "timing": "稳定"
+        },
+        "复合": {
+          "situation": "复合沟通顺畅",
+          "reasons": [
+            "表达优势"
+          ],
+          "advice": [
+            "多交流"
+          ],
+          "timing": "近期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "59": {
+      "name": "涣",
+      "overall_tendency": "平",
+      "love_rating": 3,
+      "key_points": [
+        "分散与疏解",
+        "需要重新聚焦",
+        "避免分心",
+        "关系需整合"
+      ],
+      "scenario_specific": {
+        "单身": {
+          "situation": "方向分散，难以稳定",
+          "reasons": [
+            "目标不清"
+          ],
+          "advice": [
+            "聚焦目标",
+            "减少分心"
+          ],
+          "timing": "短期"
+        },
+        "恋爱中": {
+          "situation": "关系松散，需整合",
+          "reasons": [
+            "沟通不足"
+          ],
+          "advice": [
+            "加强沟通",
+            "重新聚焦"
+          ],
+          "timing": "短期"
+        },
+        "已婚": {
+          "situation": "家庭关系松散，需整合",
+          "reasons": [
+            "互动减少"
+          ],
+          "advice": [
+            "加强互动",
+            "重新聚焦"
+          ],
+          "timing": "短期"
+        },
+        "复合": {
+          "situation": "复合需重新聚焦",
+          "reasons": [
+            "方向不清"
+          ],
+          "advice": [
+            "重新整合"
+          ],
+          "timing": "短期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "60": {
+      "name": "节",
+      "overall_tendency": "平",
+      "love_rating": 3,
+      "key_points": [
+        "节制有度",
+        "关系需规则",
+        "控制节奏",
+        "稳中求进"
+      ],
+      "scenario_specific": {
+        "单身": {
+          "situation": "感情需控制节奏",
+          "reasons": [
+            "节制"
+          ],
+          "advice": [
+            "慢一点",
+            "避免冲动"
+          ],
+          "timing": "稳定"
+        },
+        "恋爱中": {
+          "situation": "关系需控制节奏",
+          "reasons": [
+            "规则"
+          ],
+          "advice": [
+            "设定规则",
+            "避免过度"
+          ],
+          "timing": "稳定"
+        },
+        "已婚": {
+          "situation": "家庭需规则与节制",
+          "reasons": [
+            "秩序"
+          ],
+          "advice": [
+            "控制节奏",
+            "保持规则"
+          ],
+          "timing": "稳定"
+        },
+        "复合": {
+          "situation": "复合需节制",
+          "reasons": [
+            "节奏"
+          ],
+          "advice": [
+            "放慢节奏"
+          ],
+          "timing": "稳定"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "61": {
+      "name": "中孚",
+      "overall_tendency": "吉",
+      "love_rating": 4,
+      "key_points": [
+        "诚信为本",
+        "信任建立",
+        "关系稳固",
+        "适合长期发展"
+      ],
+      "scenario_specific": {
+        "单身": {
+          "situation": "真诚吸引合适对象",
+          "reasons": [
+            "信任"
+          ],
+          "advice": [
+            "真诚表达",
+            "建立信任"
+          ],
+          "timing": "稳定"
+        },
+        "恋爱中": {
+          "situation": "关系稳固，信任提升",
+          "reasons": [
+            "诚信"
+          ],
+          "advice": [
+            "保持坦诚",
+            "稳定关系"
+          ],
+          "timing": "稳定"
+        },
+        "已婚": {
+          "situation": "家庭信任稳固",
+          "reasons": [
+            "信任"
+          ],
+          "advice": [
+            "保持坦诚",
+            "共同成长"
+          ],
+          "timing": "稳定"
+        },
+        "复合": {
+          "situation": "复合需重建信任",
+          "reasons": [
+            "信任"
+          ],
+          "advice": [
+            "真诚沟通"
+          ],
+          "timing": "稳定"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "62": {
+      "name": "小过",
+      "overall_tendency": "平",
+      "love_rating": 3,
+      "key_points": [
+        "小事可成，大事谨慎",
+        "避免冒进",
+        "稳步推进",
+        "保持谨慎"
+      ],
+      "scenario_specific": {
+        "单身": {
+          "situation": "适合小步接触",
+          "reasons": [
+            "谨慎"
+          ],
+          "advice": [
+            "慢慢了解"
+          ],
+          "timing": "短期"
+        },
+        "恋爱中": {
+          "situation": "关系需谨慎推进",
+          "reasons": [
+            "不确定"
+          ],
+          "advice": [
+            "小步推进",
+            "避免冒进"
+          ],
+          "timing": "短期"
+        },
+        "已婚": {
+          "situation": "家庭事务需谨慎",
+          "reasons": [
+            "谨慎"
+          ],
+          "advice": [
+            "稳步处理",
+            "避免冲突"
+          ],
+          "timing": "短期"
+        },
+        "复合": {
+          "situation": "复合宜小步推进",
+          "reasons": [
+            "谨慎"
+          ],
+          "advice": [
+            "慢慢恢复"
+          ],
+          "timing": "短期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "63": {
+      "name": "既济",
+      "overall_tendency": "平",
+      "love_rating": 3,
+      "key_points": [
+        "阶段完成，需防反复",
+        "保持警惕",
+        "稳住成果",
+        "避免松懈"
+      ],
+      "scenario_specific": {
+        "单身": {
+          "situation": "阶段性有成果，但需谨慎",
+          "reasons": [
+            "阶段完成"
+          ],
+          "advice": [
+            "保持警惕",
+            "避免松懈"
+          ],
+          "timing": "短期"
+        },
+        "恋爱中": {
+          "situation": "关系稳定但需维护",
+          "reasons": [
+            "阶段完成"
+          ],
+          "advice": [
+            "保持新鲜",
+            "避免松懈"
+          ],
+          "timing": "短期"
+        },
+        "已婚": {
+          "situation": "家庭稳定但需维护",
+          "reasons": [
+            "成果稳固"
+          ],
+          "advice": [
+            "持续经营",
+            "避免松懈"
+          ],
+          "timing": "短期"
+        },
+        "复合": {
+          "situation": "复合阶段完成，需防反复",
+          "reasons": [
+            "阶段完成"
+          ],
+          "advice": [
+            "稳住成果"
+          ],
+          "timing": "短期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "64": {
+      "name": "未济",
+      "overall_tendency": "平",
+      "love_rating": 3,
+      "key_points": [
+        "尚未完成，需继续努力",
+        "保持耐心",
+        "循序推进",
+        "避免急躁"
+      ],
+      "scenario_specific": {
+        "单身": {
+          "situation": "感情尚未成形",
+          "reasons": [
+            "时机未到"
+          ],
+          "advice": [
+            "保持耐心",
+            "持续努力"
+          ],
+          "timing": "短期"
+        },
+        "恋爱中": {
+          "situation": "关系尚在发展",
+          "reasons": [
+            "阶段未完"
+          ],
+          "advice": [
+            "持续推进",
+            "保持耐心"
+          ],
+          "timing": "短期"
+        },
+        "已婚": {
+          "situation": "家庭仍在磨合",
+          "reasons": [
+            "阶段未完"
+          ],
+          "advice": [
+            "持续经营",
+            "保持耐心"
+          ],
+          "timing": "短期"
+        },
+        "复合": {
+          "situation": "复合仍在推进",
+          "reasons": [
+            "阶段未完"
+          ],
+          "advice": [
+            "耐心等待"
+          ],
+          "timing": "短期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    }
+  },
+  "notes": [
+    "本场景框架用于感情、恋爱、婚姻分析",
+    "每个卦象包含：运势评级、关键点、分层分析（单身/恋爱/已婚/复合）",
+    "运势评级：1-5分，1=大凶，2=不利，3=平，4=吉，5=大吉",
+    "数据将分批添加，目前包含3个示例卦象"
+  ]
+}

@@ -1,0 +1,130 @@
+[
+  {
+    "house_gua": "乾宅",
+    "auspicious_positions": [
+      "生气位（西方）",
+      "延年位（西北方）",
+      "天医位（西南方）",
+      "伏位位（东北方）"
+    ],
+    "inauspicious_positions": [
+      "绝命位（东方）",
+      "五鬼位（东南方）",
+      "六煞位（南方）",
+      "祸害位（北方）"
+    ],
+    "source_ref": "cinii_bazhai_mingjing"
+  },
+  {
+    "house_gua": "坤宅",
+    "auspicious_positions": [
+      "生气位（东北方）",
+      "延年位（西方）",
+      "天医位（西北方）",
+      "伏位位（西南方）"
+    ],
+    "inauspicious_positions": [
+      "绝命位（东南方）",
+      "五鬼位（南方）",
+      "六煞位（北方）",
+      "祸害位（东方）"
+    ],
+    "source_ref": "cinii_bazhai_mingjing"
+  },
+  {
+    "house_gua": "震宅",
+    "auspicious_positions": [
+      "生气位（南方）",
+      "延年位（东南方）",
+      "天医位（北方）",
+      "伏位位（东方）"
+    ],
+    "inauspicious_positions": [
+      "绝命位（西南方）",
+      "五鬼位（东北方）",
+      "六煞位（西北方）",
+      "祸害位（西方）"
+    ],
+    "source_ref": "cinii_bazhai_mingjing"
+  },
+  {
+    "house_gua": "巽宅",
+    "auspicious_positions": [
+      "生气位（北方）",
+      "延年位（东方）",
+      "天医位（东南方）",
+      "伏位位（南方）"
+    ],
+    "inauspicious_positions": [
+      "绝命位（东北方）",
+      "五鬼位（西方）",
+      "六煞位（西南方）",
+      "祸害位（西北方）"
+    ],
+    "source_ref": "cinii_bazhai_mingjing"
+  },
+  {
+    "house_gua": "坎宅",
+    "auspicious_positions": [
+      "生气位（东南方）",
+      "延年位（南方）",
+      "天医位（东方）",
+      "伏位位（北方）"
+    ],
+    "inauspicious_positions": [
+      "绝命位（西方）",
+      "五鬼位（西北方）",
+      "六煞位（西南方）",
+      "祸害位（东北方）"
+    ],
+    "source_ref": "cinii_bazhai_mingjing"
+  },
+  {
+    "house_gua": "离宅",
+    "auspicious_positions": [
+      "生气位（东方）",
+      "延年位（北方）",
+      "天医位（东南方）",
+      "伏位位（南方）"
+    ],
+    "inauspicious_positions": [
+      "绝命位（西北方）",
+      "五鬼位（西方）",
+      "六煞位（东北方）",
+      "祸害位（西南方）"
+    ],
+    "source_ref": "cinii_bazhai_mingjing"
+  },
+  {
+    "house_gua": "艮宅",
+    "auspicious_positions": [
+      "生气位（西南方）",
+      "延年位（西北方）",
+      "天医位（西方）",
+      "伏位位（东北方）"
+    ],
+    "inauspicious_positions": [
+      "绝命位（南方）",
+      "五鬼位（东南方）",
+      "六煞位（东方）",
+      "祸害位（北方）"
+    ],
+    "source_ref": "cinii_bazhai_mingjing"
+  },
+  {
+    "house_gua": "兑宅",
+    "auspicious_positions": [
+      "生气位（西北方）",
+      "延年位（西南方）",
+      "天医位（东北方）",
+      "伏位位（西方）"
+    ],
+    "inauspicious_positions": [
+      "绝命位（北方）",
+      "五鬼位（东方）",
+      "六煞位（东南方）",
+      "祸害位（南方）"
+    ],
+    "source_ref": "cinii_bazhai_mingjing"
+  }
+]

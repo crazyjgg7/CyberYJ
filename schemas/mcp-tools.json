@@ -1,0 +1,82 @@
+{
+  "version": "v1",
+  "timezone_default": "Asia/Shanghai",
+  "tools": [
+    {
+      "name": "fengshui_divination",
+      "description": "易经六十四卦解卦分析（八宅 + 玄空飞星体系下的节气影响解释）",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "upper_trigram": {"type": "string", "description": "上卦（卦名/数字/方位）"},
+          "lower_trigram": {"type": "string", "description": "下卦（卦名/数字/方位）"},
+          "question_type": {"type": "string", "enum": ["事业", "财运", "感情", "健康"]},
+          "question_text": {"type": "string", "description": "用户问题原文（用于智能场景识别）"},
+          "changing_line": {"type": "integer", "minimum": 1, "maximum": 6},
+          "timestamp": {"type": "string", "description": "RFC3339 时间戳"},
+          "timezone": {"type": "string", "description": "IANA 时区名"}
+        },
+        "required": ["upper_trigram", "lower_trigram"]
+      },
+      "output_schema": {
+        "type": "object",
+        "properties": {
+          "main_hexagram": {
+            "type": "object",
+            "properties": {
+              "name": {"type": "string"},
+              "symbol": {"type": "string"},
+              "judgment": {"type": "string"}
+            },
+            "required": ["name"]
+          },
+          "five_elements": {"type": "string"},
+          "solar_term_influence": {"type": "string"},
+          "fortune_advice": {"type": "string"},
+          "scenario": {
+            "type": "object",
+            "properties": {
+              "code": {"type": "string"},
+              "name": {"type": "string"}
+            }
+          },
+          "scenario_analysis": {"type": "object"},
+          "do_dont": {"type": "object"},
+          "disclaimer": {"type": "string"},
+          "sources": {"type": "array", "items": {"type": "string"}},
+          "trace": {"type": "array", "items": {"type": "string"}}
+        },
+        "required": ["main_hexagram", "trace"]
+      }
+    },
+    {
+      "name": "luopan_orientation",
+      "description": "罗盘坐向分析（八宅 + 玄空飞星）",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "sitting_direction": {"type": "string", "description": "坐向（坐北朝南 / 坐340向160 / 坐亥向巳）"},
+          "building_type": {"type": "string", "enum": ["住宅", "办公室", "商铺", "工厂"]},
+          "owner_birth": {"type": "string", "description": "公历生日（YYYY-MM-DD）"},
+          "timestamp": {"type": "string", "description": "RFC3339 时间戳"},
+          "timezone": {"type": "string", "description": "IANA 时区名"}
+        },
+        "required": ["sitting_direction", "building_type"]
+      },
+      "output_schema": {
+        "type": "object",
+        "properties": {
+          "direction_class": {"type": "string"},
+          "house_gua": {"type": "string"},
+          "ming_gua_match": {"type": "string"},
+          "auspicious_positions": {"type": "array", "items": {"type": "string"}},
+          "inauspicious_positions": {"type": "array", "items": {"type": "string"}},
+          "annual_flying_stars": {"type": "object"},
+          "layout_tips": {"type": "array", "items": {"type": "string"}},
+          "trace": {"type": "array", "items": {"type": "string"}}
+        },
+        "required": ["direction_class", "trace"]
+      }
+    }
+  ]
+}

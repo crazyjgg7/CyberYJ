@@ -1,0 +1,194 @@
+[
+  {
+    "id": "ren",
+    "name": "壬",
+    "start_deg": 352.5,
+    "end_deg": 7.5,
+    "direction_group": "北",
+    "source_ref": "qingnang_aoyu"
+  },
+  {
+    "id": "zi",
+    "name": "子",
+    "start_deg": 7.5,
+    "end_deg": 22.5,
+    "direction_group": "北",
+    "source_ref": "qingnang_aoyu"
+  },
+  {
+    "id": "gui",
+    "name": "癸",
+    "start_deg": 22.5,
+    "end_deg": 37.5,
+    "direction_group": "北",
+    "source_ref": "qingnang_aoyu"
+  },
+  {
+    "id": "chou",
+    "name": "丑",
+    "start_deg": 37.5,
+    "end_deg": 52.5,
+    "direction_group": "东北",
+    "source_ref": "qingnang_aoyu"
+  },
+  {
+    "id": "gen",
+    "name": "艮",
+    "start_deg": 52.5,
+    "end_deg": 67.5,
+    "direction_group": "东北",
+    "source_ref": "qingnang_aoyu"
+  },
+  {
+    "id": "yin",
+    "name": "寅",
+    "start_deg": 67.5,
+    "end_deg": 82.5,
+    "direction_group": "东北",
+    "source_ref": "qingnang_aoyu"
+  },
+  {
+    "id": "jia",
+    "name": "甲",
+    "start_deg": 82.5,
+    "end_deg": 97.5,
+    "direction_group": "东",
+    "source_ref": "qingnang_aoyu"
+  },
+  {
+    "id": "mao",
+    "name": "卯",
+    "start_deg": 97.5,
+    "end_deg": 112.5,
+    "direction_group": "东",
+    "source_ref": "qingnang_aoyu"
+  },
+  {
+    "id": "yi",
+    "name": "乙",
+    "start_deg": 112.5,
+    "end_deg": 127.5,
+    "direction_group": "东",
+    "source_ref": "qingnang_aoyu"
+  },
+  {
+    "id": "chen",
+    "name": "辰",
+    "start_deg": 127.5,
+    "end_deg": 142.5,
+    "direction_group": "东南",
+    "source_ref": "qingnang_aoyu"
+  },
+  {
+    "id": "xun",
+    "name": "巽",
+    "start_deg": 142.5,
+    "end_deg": 157.5,
+    "direction_group": "东南",
+    "source_ref": "qingnang_aoyu"
+  },
+  {
+    "id": "si",
+    "name": "巳",
+    "start_deg": 157.5,
+    "end_deg": 172.5,
+    "direction_group": "东南",
+    "source_ref": "qingnang_aoyu"
+  },
+  {
+    "id": "bing",
+    "name": "丙",
+    "start_deg": 172.5,
+    "end_deg": 187.5,
+    "direction_group": "南",
+    "source_ref": "qingnang_aoyu"
+  },
+  {
+    "id": "wu",
+    "name": "午",
+    "start_deg": 187.5,
+    "end_deg": 202.5,
+    "direction_group": "南",
+    "source_ref": "qingnang_aoyu"
+  },
+  {
+    "id": "ding",
+    "name": "丁",
+    "start_deg": 202.5,
+    "end_deg": 217.5,
+    "direction_group": "南",
+    "source_ref": "qingnang_aoyu"
+  },
+  {
+    "id": "wei",
+    "name": "未",
+    "start_deg": 217.5,
+    "end_deg": 232.5,
+    "direction_group": "西南",
+    "source_ref": "qingnang_aoyu"
+  },
+  {
+    "id": "kun",
+    "name": "坤",
+    "start_deg": 232.5,
+    "end_deg": 247.5,
+    "direction_group": "西南",
+    "source_ref": "qingnang_aoyu"
+  },
+  {
+    "id": "shen",
+    "name": "申",
+    "start_deg": 247.5,
+    "end_deg": 262.5,
+    "direction_group": "西南",
+    "source_ref": "qingnang_aoyu"
+  },
+  {
+    "id": "geng",
+    "name": "庚",
+    "start_deg": 262.5,
+    "end_deg": 277.5,
+    "direction_group": "西",
+    "source_ref": "qingnang_aoyu"
+  },
+  {
+    "id": "you",
+    "name": "酉",
+    "start_deg": 277.5,
+    "end_deg": 292.5,
+    "direction_group": "西",
+    "source_ref": "qingnang_aoyu"
+  },
+  {
+    "id": "xin",
+    "name": "辛",
+    "start_deg": 292.5,
+    "end_deg": 307.5,
+    "direction_group": "西",
+    "source_ref": "qingnang_aoyu"
+  },
+  {
+    "id": "xu",
+    "name": "戌",
+    "start_deg": 307.5,
+    "end_deg": 322.5,
+    "direction_group": "西北",
+    "source_ref": "qingnang_aoyu"
+  },
+  {
+    "id": "qian",
+    "name": "乾",
+    "start_deg": 322.5,
+    "end_deg": 337.5,
+    "direction_group": "西北",
+    "source_ref": "qingnang_aoyu"
+  },
+  {
+    "id": "hai",
+    "name": "亥",
+    "start_deg": 337.5,
+    "end_deg": 352.5,
+    "direction_group": "西北",
+    "source_ref": "qingnang_aoyu"
+  }
+]

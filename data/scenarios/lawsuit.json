@@ -1,0 +1,4031 @@
+{
+  "version": "1.0",
+  "scenario_info": {
+    "name": "诉讼",
+    "code": "lawsuit",
+    "description": "纠纷、仲裁、合同与谈判",
+    "sub_scenarios": [
+      "纠纷",
+      "仲裁",
+      "合同",
+      "谈判"
+    ],
+    "requires_disclaimer": true
+  },
+  "analysis_framework": {
+    "dimensions": [
+      "风险评估",
+      "证据与资源",
+      "时间成本",
+      "策略选择",
+      "协商空间"
+    ],
+    "focus": "风险优先、证据优先、合法合规",
+    "key_aspects": [
+      "风险等级",
+      "资源准备",
+      "策略建议",
+      "时间成本"
+    ]
+  },
+  "output_structure": {
+    "template_id": "lawsuit_standard",
+    "sections": [
+      {
+        "id": "overall_lawsuit",
+        "title": "诉讼总览",
+        "type": "summary",
+        "required": true,
+        "includes": [
+          "风险评级",
+          "总体判断",
+          "重要提示"
+        ]
+      },
+      {
+        "id": "hexagram_analysis",
+        "title": "卦象解析",
+        "type": "explanation",
+        "required": true,
+        "includes": [
+          "卦象含义",
+          "五行关系",
+          "关键词解读"
+        ]
+      },
+      {
+        "id": "lawsuit_details",
+        "title": "诉讼详解",
+        "type": "detailed_analysis",
+        "required": true,
+        "sub_sections": [
+          {
+            "id": "risk",
+            "title": "风险",
+            "description": "主要风险点"
+          },
+          {
+            "id": "evidence",
+            "title": "证据与资源",
+            "description": "准备情况"
+          },
+          {
+            "id": "strategy",
+            "title": "策略",
+            "description": "推进策略"
+          },
+          {
+            "id": "timing",
+            "title": "时间成本",
+            "description": "时间与成本评估"
+          }
+        ]
+      },
+      {
+        "id": "action_guide",
+        "title": "行动建议",
+        "type": "advice",
+        "required": true,
+        "format": {
+          "do": "宜做事项（3-5条）",
+          "dont": "忌做事项（3-5条）"
+        }
+      }
+    ]
+  },
+  "prompt_template": {
+    "system_role": "你是一位谨慎的风险分析师，强调合规与专业咨询。",
+    "analysis_focus": [
+      "强调风险与证据",
+      "建议避免激化",
+      "提示寻求专业法律意见"
+    ],
+    "output_requirements": [
+      "风险提示明确",
+      "避免替代法律意见"
+    ]
+  },
+  "hexagrams": {
+    "1": {
+      "name": "乾",
+      "overall_tendency": "大吉",
+      "lawsuit_rating": 5,
+      "key_points": [
+        "证据较充分，胜算相对占优",
+        "宜走正规程序，稳步推进",
+        "注意时间与成本控制",
+        "保持沟通，避免激化"
+      ],
+      "scenario_specific": {
+        "纠纷": {
+          "situation": "处理相对顺利，立场较有利",
+          "reasons": [
+            "证据清晰"
+          ],
+          "advice": [
+            "按程序推进",
+            "保持沟通"
+          ],
+          "timing": "近期"
+        },
+        "仲裁": {
+          "situation": "仲裁结果存在积极可能",
+          "reasons": [
+            "规则有利"
+          ],
+          "advice": [
+            "准备材料",
+            "稳步推进"
+          ],
+          "timing": "中期"
+        },
+        "合同": {
+          "situation": "合同争议可控",
+          "reasons": [
+            "条款明确"
+          ],
+          "advice": [
+            "保留证据",
+            "依法主张"
+          ],
+          "timing": "近期"
+        },
+        "谈判": {
+          "situation": "谈判主动权较高",
+          "reasons": [
+            "筹码充分"
+          ],
+          "advice": [
+            "设定底线",
+            "避免拖延"
+          ],
+          "timing": "近期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "2": {
+      "name": "坤",
+      "overall_tendency": "大吉",
+      "lawsuit_rating": 5,
+      "key_points": [
+        "证据较充分，胜算相对占优",
+        "宜走正规程序，稳步推进",
+        "注意时间与成本控制",
+        "保持沟通，避免激化"
+      ],
+      "scenario_specific": {
+        "纠纷": {
+          "situation": "处理相对顺利，立场较有利",
+          "reasons": [
+            "证据清晰"
+          ],
+          "advice": [
+            "按程序推进",
+            "保持沟通"
+          ],
+          "timing": "近期"
+        },
+        "仲裁": {
+          "situation": "仲裁结果存在积极可能",
+          "reasons": [
+            "规则有利"
+          ],
+          "advice": [
+            "准备材料",
+            "稳步推进"
+          ],
+          "timing": "中期"
+        },
+        "合同": {
+          "situation": "合同争议可控",
+          "reasons": [
+            "条款明确"
+          ],
+          "advice": [
+            "保留证据",
+            "依法主张"
+          ],
+          "timing": "近期"
+        },
+        "谈判": {
+          "situation": "谈判主动权较高",
+          "reasons": [
+            "筹码充分"
+          ],
+          "advice": [
+            "设定底线",
+            "避免拖延"
+          ],
+          "timing": "近期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "3": {
+      "name": "屯",
+      "overall_tendency": "不利",
+      "lawsuit_rating": 2,
+      "key_points": [
+        "风险偏高，证据不足",
+        "不宜冒进，优先协商",
+        "成本与不确定性较大",
+        "避免情绪化处理"
+      ],
+      "scenario_specific": {
+        "纠纷": {
+          "situation": "风险较高",
+          "reasons": [
+            "证据不足",
+            "对方强势"
+          ],
+          "advice": [
+            "谨慎推进",
+            "优先协商"
+          ],
+          "timing": "近期需谨慎"
+        },
+        "仲裁": {
+          "situation": "败诉风险偏高",
+          "reasons": [
+            "不利证据"
+          ],
+          "advice": [
+            "评估成本",
+            "考虑撤回"
+          ],
+          "timing": "中后期"
+        },
+        "合同": {
+          "situation": "不利因素多",
+          "reasons": [
+            "条款不清"
+          ],
+          "advice": [
+            "补充证据",
+            "寻求专业支持"
+          ],
+          "timing": "中期"
+        },
+        "谈判": {
+          "situation": "谈判易僵",
+          "reasons": [
+            "分歧大"
+          ],
+          "advice": [
+            "降温沟通",
+            "引入第三方"
+          ],
+          "timing": "近期谨慎"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "4": {
+      "name": "蒙",
+      "overall_tendency": "平",
+      "lawsuit_rating": 3,
+      "key_points": [
+        "胜负未定，需补强证据",
+        "谈判空间存在",
+        "注意时间成本与风险",
+        "建议寻求专业意见"
+      ],
+      "scenario_specific": {
+        "纠纷": {
+          "situation": "局势胶着",
+          "reasons": [
+            "证据一般"
+          ],
+          "advice": [
+            "补强证据",
+            "寻求调解"
+          ],
+          "timing": "中期"
+        },
+        "仲裁": {
+          "situation": "结果不明",
+          "reasons": [
+            "规则解读分歧"
+          ],
+          "advice": [
+            "咨询专业意见",
+            "做好备选"
+          ],
+          "timing": "中期"
+        },
+        "合同": {
+          "situation": "争议复杂",
+          "reasons": [
+            "条款模糊"
+          ],
+          "advice": [
+            "梳理事实",
+            "争取和解"
+          ],
+          "timing": "中期"
+        },
+        "谈判": {
+          "situation": "谈判空间存在",
+          "reasons": [
+            "双方顾虑"
+          ],
+          "advice": [
+            "提高方案可行性",
+            "控制情绪"
+          ],
+          "timing": "近期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "5": {
+      "name": "需",
+      "overall_tendency": "平",
+      "lawsuit_rating": 3,
+      "key_points": [
+        "胜负未定，需补强证据",
+        "谈判空间存在",
+        "注意时间成本与风险",
+        "建议寻求专业意见"
+      ],
+      "scenario_specific": {
+        "纠纷": {
+          "situation": "局势胶着",
+          "reasons": [
+            "证据一般"
+          ],
+          "advice": [
+            "补强证据",
+            "寻求调解"
+          ],
+          "timing": "中期"
+        },
+        "仲裁": {
+          "situation": "结果不明",
+          "reasons": [
+            "规则解读分歧"
+          ],
+          "advice": [
+            "咨询专业意见",
+            "做好备选"
+          ],
+          "timing": "中期"
+        },
+        "合同": {
+          "situation": "争议复杂",
+          "reasons": [
+            "条款模糊"
+          ],
+          "advice": [
+            "梳理事实",
+            "争取和解"
+          ],
+          "timing": "中期"
+        },
+        "谈判": {
+          "situation": "谈判空间存在",
+          "reasons": [
+            "双方顾虑"
+          ],
+          "advice": [
+            "提高方案可行性",
+            "控制情绪"
+          ],
+          "timing": "近期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "6": {
+      "name": "讼",
+      "overall_tendency": "不利",
+      "lawsuit_rating": 2,
+      "key_points": [
+        "风险偏高，证据不足",
+        "不宜冒进，优先协商",
+        "成本与不确定性较大",
+        "避免情绪化处理"
+      ],
+      "scenario_specific": {
+        "纠纷": {
+          "situation": "风险较高",
+          "reasons": [
+            "证据不足",
+            "对方强势"
+          ],
+          "advice": [
+            "谨慎推进",
+            "优先协商"
+          ],
+          "timing": "近期需谨慎"
+        },
+        "仲裁": {
+          "situation": "败诉风险偏高",
+          "reasons": [
+            "不利证据"
+          ],
+          "advice": [
+            "评估成本",
+            "考虑撤回"
+          ],
+          "timing": "中后期"
+        },
+        "合同": {
+          "situation": "不利因素多",
+          "reasons": [
+            "条款不清"
+          ],
+          "advice": [
+            "补充证据",
+            "寻求专业支持"
+          ],
+          "timing": "中期"
+        },
+        "谈判": {
+          "situation": "谈判易僵",
+          "reasons": [
+            "分歧大"
+          ],
+          "advice": [
+            "降温沟通",
+            "引入第三方"
+          ],
+          "timing": "近期谨慎"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "7": {
+      "name": "师",
+      "overall_tendency": "吉",
+      "lawsuit_rating": 4,
+      "key_points": [
+        "证据较充分，胜算相对占优",
+        "宜走正规程序，稳步推进",
+        "注意时间与成本控制",
+        "保持沟通，避免激化"
+      ],
+      "scenario_specific": {
+        "纠纷": {
+          "situation": "处理相对顺利，立场较有利",
+          "reasons": [
+            "证据清晰"
+          ],
+          "advice": [
+            "按程序推进",
+            "保持沟通"
+          ],
+          "timing": "近期"
+        },
+        "仲裁": {
+          "situation": "仲裁结果存在积极可能",
+          "reasons": [
+            "规则有利"
+          ],
+          "advice": [
+            "准备材料",
+            "稳步推进"
+          ],
+          "timing": "中期"
+        },
+        "合同": {
+          "situation": "合同争议可控",
+          "reasons": [
+            "条款明确"
+          ],
+          "advice": [
+            "保留证据",
+            "依法主张"
+          ],
+          "timing": "近期"
+        },
+        "谈判": {
+          "situation": "谈判主动权较高",
+          "reasons": [
+            "筹码充分"
+          ],
+          "advice": [
+            "设定底线",
+            "避免拖延"
+          ],
+          "timing": "近期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "8": {
+      "name": "比",
+      "overall_tendency": "吉",
+      "lawsuit_rating": 4,
+      "key_points": [
+        "证据较充分，胜算相对占优",
+        "宜走正规程序，稳步推进",
+        "注意时间与成本控制",
+        "保持沟通，避免激化"
+      ],
+      "scenario_specific": {
+        "纠纷": {
+          "situation": "处理相对顺利，立场较有利",
+          "reasons": [
+            "证据清晰"
+          ],
+          "advice": [
+            "按程序推进",
+            "保持沟通"
+          ],
+          "timing": "近期"
+        },
+        "仲裁": {
+          "situation": "仲裁结果存在积极可能",
+          "reasons": [
+            "规则有利"
+          ],
+          "advice": [
+            "准备材料",
+            "稳步推进"
+          ],
+          "timing": "中期"
+        },
+        "合同": {
+          "situation": "合同争议可控",
+          "reasons": [
+            "条款明确"
+          ],
+          "advice": [
+            "保留证据",
+            "依法主张"
+          ],
+          "timing": "近期"
+        },
+        "谈判": {
+          "situation": "谈判主动权较高",
+          "reasons": [
+            "筹码充分"
+          ],
+          "advice": [
+            "设定底线",
+            "避免拖延"
+          ],
+          "timing": "近期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "9": {
+      "name": "小畜",
+      "overall_tendency": "平",
+      "lawsuit_rating": 3,
+      "key_points": [
+        "胜负未定，需补强证据",
+        "谈判空间存在",
+        "注意时间成本与风险",
+        "建议寻求专业意见"
+      ],
+      "scenario_specific": {
+        "纠纷": {
+          "situation": "局势胶着",
+          "reasons": [
+            "证据一般"
+          ],
+          "advice": [
+            "补强证据",
+            "寻求调解"
+          ],
+          "timing": "中期"
+        },
+        "仲裁": {
+          "situation": "结果不明",
+          "reasons": [
+            "规则解读分歧"
+          ],
+          "advice": [
+            "咨询专业意见",
+            "做好备选"
+          ],
+          "timing": "中期"
+        },
+        "合同": {
+          "situation": "争议复杂",
+          "reasons": [
+            "条款模糊"
+          ],
+          "advice": [
+            "梳理事实",
+            "争取和解"
+          ],
+          "timing": "中期"
+        },
+        "谈判": {
+          "situation": "谈判空间存在",
+          "reasons": [
+            "双方顾虑"
+          ],
+          "advice": [
+            "提高方案可行性",
+            "控制情绪"
+          ],
+          "timing": "近期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "10": {
+      "name": "履",
+      "overall_tendency": "平",
+      "lawsuit_rating": 3,
+      "key_points": [
+        "胜负未定，需补强证据",
+        "谈判空间存在",
+        "注意时间成本与风险",
+        "建议寻求专业意见"
+      ],
+      "scenario_specific": {
+        "纠纷": {
+          "situation": "局势胶着",
+          "reasons": [
+            "证据一般"
+          ],
+          "advice": [
+            "补强证据",
+            "寻求调解"
+          ],
+          "timing": "中期"
+        },
+        "仲裁": {
+          "situation": "结果不明",
+          "reasons": [
+            "规则解读分歧"
+          ],
+          "advice": [
+            "咨询专业意见",
+            "做好备选"
+          ],
+          "timing": "中期"
+        },
+        "合同": {
+          "situation": "争议复杂",
+          "reasons": [
+            "条款模糊"
+          ],
+          "advice": [
+            "梳理事实",
+            "争取和解"
+          ],
+          "timing": "中期"
+        },
+        "谈判": {
+          "situation": "谈判空间存在",
+          "reasons": [
+            "双方顾虑"
+          ],
+          "advice": [
+            "提高方案可行性",
+            "控制情绪"
+          ],
+          "timing": "近期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "11": {
+      "name": "泰",
+      "overall_tendency": "吉",
+      "lawsuit_rating": 4,
+      "key_points": [
+        "证据较充分，胜算相对占优",
+        "宜走正规程序，稳步推进",
+        "注意时间与成本控制",
+        "保持沟通，避免激化"
+      ],
+      "scenario_specific": {
+        "纠纷": {
+          "situation": "处理相对顺利，立场较有利",
+          "reasons": [
+            "证据清晰"
+          ],
+          "advice": [
+            "按程序推进",
+            "保持沟通"
+          ],
+          "timing": "近期"
+        },
+        "仲裁": {
+          "situation": "仲裁结果存在积极可能",
+          "reasons": [
+            "规则有利"
+          ],
+          "advice": [
+            "准备材料",
+            "稳步推进"
+          ],
+          "timing": "中期"
+        },
+        "合同": {
+          "situation": "合同争议可控",
+          "reasons": [
+            "条款明确"
+          ],
+          "advice": [
+            "保留证据",
+            "依法主张"
+          ],
+          "timing": "近期"
+        },
+        "谈判": {
+          "situation": "谈判主动权较高",
+          "reasons": [
+            "筹码充分"
+          ],
+          "advice": [
+            "设定底线",
+            "避免拖延"
+          ],
+          "timing": "近期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "12": {
+      "name": "否",
+      "overall_tendency": "凶",
+      "lawsuit_rating": 2,
+      "key_points": [
+        "风险偏高，证据不足",
+        "不宜冒进，优先协商",
+        "成本与不确定性较大",
+        "避免情绪化处理"
+      ],
+      "scenario_specific": {
+        "纠纷": {
+          "situation": "风险较高",
+          "reasons": [
+            "证据不足",
+            "对方强势"
+          ],
+          "advice": [
+            "谨慎推进",
+            "优先协商"
+          ],
+          "timing": "近期需谨慎"
+        },
+        "仲裁": {
+          "situation": "败诉风险偏高",
+          "reasons": [
+            "不利证据"
+          ],
+          "advice": [
+            "评估成本",
+            "考虑撤回"
+          ],
+          "timing": "中后期"
+        },
+        "合同": {
+          "situation": "不利因素多",
+          "reasons": [
+            "条款不清"
+          ],
+          "advice": [
+            "补充证据",
+            "寻求专业支持"
+          ],
+          "timing": "中期"
+        },
+        "谈判": {
+          "situation": "谈判易僵",
+          "reasons": [
+            "分歧大"
+          ],
+          "advice": [
+            "降温沟通",
+            "引入第三方"
+          ],
+          "timing": "近期谨慎"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "13": {
+      "name": "同人",
+      "overall_tendency": "吉",
+      "lawsuit_rating": 4,
+      "key_points": [
+        "证据较充分，胜算相对占优",
+        "宜走正规程序，稳步推进",
+        "注意时间与成本控制",
+        "保持沟通，避免激化"
+      ],
+      "scenario_specific": {
+        "纠纷": {
+          "situation": "处理相对顺利，立场较有利",
+          "reasons": [
+            "证据清晰"
+          ],
+          "advice": [
+            "按程序推进",
+            "保持沟通"
+          ],
+          "timing": "近期"
+        },
+        "仲裁": {
+          "situation": "仲裁结果存在积极可能",
+          "reasons": [
+            "规则有利"
+          ],
+          "advice": [
+            "准备材料",
+            "稳步推进"
+          ],
+          "timing": "中期"
+        },
+        "合同": {
+          "situation": "合同争议可控",
+          "reasons": [
+            "条款明确"
+          ],
+          "advice": [
+            "保留证据",
+            "依法主张"
+          ],
+          "timing": "近期"
+        },
+        "谈判": {
+          "situation": "谈判主动权较高",
+          "reasons": [
+            "筹码充分"
+          ],
+          "advice": [
+            "设定底线",
+            "避免拖延"
+          ],
+          "timing": "近期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "14": {
+      "name": "大有",
+      "overall_tendency": "大吉",
+      "lawsuit_rating": 5,
+      "key_points": [
+        "证据较充分，胜算相对占优",
+        "宜走正规程序，稳步推进",
+        "注意时间与成本控制",
+        "保持沟通，避免激化"
+      ],
+      "scenario_specific": {
+        "纠纷": {
+          "situation": "处理相对顺利，立场较有利",
+          "reasons": [
+            "证据清晰"
+          ],
+          "advice": [
+            "按程序推进",
+            "保持沟通"
+          ],
+          "timing": "近期"
+        },
+        "仲裁": {
+          "situation": "仲裁结果存在积极可能",
+          "reasons": [
+            "规则有利"
+          ],
+          "advice": [
+            "准备材料",
+            "稳步推进"
+          ],
+          "timing": "中期"
+        },
+        "合同": {
+          "situation": "合同争议可控",
+          "reasons": [
+            "条款明确"
+          ],
+          "advice": [
+            "保留证据",
+            "依法主张"
+          ],
+          "timing": "近期"
+        },
+        "谈判": {
+          "situation": "谈判主动权较高",
+          "reasons": [
+            "筹码充分"
+          ],
+          "advice": [
+            "设定底线",
+            "避免拖延"
+          ],
+          "timing": "近期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "15": {
+      "name": "谦",
+      "overall_tendency": "吉",
+      "lawsuit_rating": 4,
+      "key_points": [
+        "证据较充分，胜算相对占优",
+        "宜走正规程序，稳步推进",
+        "注意时间与成本控制",
+        "保持沟通，避免激化"
+      ],
+      "scenario_specific": {
+        "纠纷": {
+          "situation": "处理相对顺利，立场较有利",
+          "reasons": [
+            "证据清晰"
+          ],
+          "advice": [
+            "按程序推进",
+            "保持沟通"
+          ],
+          "timing": "近期"
+        },
+        "仲裁": {
+          "situation": "仲裁结果存在积极可能",
+          "reasons": [
+            "规则有利"
+          ],
+          "advice": [
+            "准备材料",
+            "稳步推进"
+          ],
+          "timing": "中期"
+        },
+        "合同": {
+          "situation": "合同争议可控",
+          "reasons": [
+            "条款明确"
+          ],
+          "advice": [
+            "保留证据",
+            "依法主张"
+          ],
+          "timing": "近期"
+        },
+        "谈判": {
+          "situation": "谈判主动权较高",
+          "reasons": [
+            "筹码充分"
+          ],
+          "advice": [
+            "设定底线",
+            "避免拖延"
+          ],
+          "timing": "近期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "16": {
+      "name": "豫",
+      "overall_tendency": "吉",
+      "lawsuit_rating": 4,
+      "key_points": [
+        "证据较充分，胜算相对占优",
+        "宜走正规程序，稳步推进",
+        "注意时间与成本控制",
+        "保持沟通，避免激化"
+      ],
+      "scenario_specific": {
+        "纠纷": {
+          "situation": "处理相对顺利，立场较有利",
+          "reasons": [
+            "证据清晰"
+          ],
+          "advice": [
+            "按程序推进",
+            "保持沟通"
+          ],
+          "timing": "近期"
+        },
+        "仲裁": {
+          "situation": "仲裁结果存在积极可能",
+          "reasons": [
+            "规则有利"
+          ],
+          "advice": [
+            "准备材料",
+            "稳步推进"
+          ],
+          "timing": "中期"
+        },
+        "合同": {
+          "situation": "合同争议可控",
+          "reasons": [
+            "条款明确"
+          ],
+          "advice": [
+            "保留证据",
+            "依法主张"
+          ],
+          "timing": "近期"
+        },
+        "谈判": {
+          "situation": "谈判主动权较高",
+          "reasons": [
+            "筹码充分"
+          ],
+          "advice": [
+            "设定底线",
+            "避免拖延"
+          ],
+          "timing": "近期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "17": {
+      "name": "随",
+      "overall_tendency": "吉",
+      "lawsuit_rating": 4,
+      "key_points": [
+        "证据较充分，胜算相对占优",
+        "宜走正规程序，稳步推进",
+        "注意时间与成本控制",
+        "保持沟通，避免激化"
+      ],
+      "scenario_specific": {
+        "纠纷": {
+          "situation": "处理相对顺利，立场较有利",
+          "reasons": [
+            "证据清晰"
+          ],
+          "advice": [
+            "按程序推进",
+            "保持沟通"
+          ],
+          "timing": "近期"
+        },
+        "仲裁": {
+          "situation": "仲裁结果存在积极可能",
+          "reasons": [
+            "规则有利"
+          ],
+          "advice": [
+            "准备材料",
+            "稳步推进"
+          ],
+          "timing": "中期"
+        },
+        "合同": {
+          "situation": "合同争议可控",
+          "reasons": [
+            "条款明确"
+          ],
+          "advice": [
+            "保留证据",
+            "依法主张"
+          ],
+          "timing": "近期"
+        },
+        "谈判": {
+          "situation": "谈判主动权较高",
+          "reasons": [
+            "筹码充分"
+          ],
+          "advice": [
+            "设定底线",
+            "避免拖延"
+          ],
+          "timing": "近期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "18": {
+      "name": "蛊",
+      "overall_tendency": "不利",
+      "lawsuit_rating": 2,
+      "key_points": [
+        "风险偏高，证据不足",
+        "不宜冒进，优先协商",
+        "成本与不确定性较大",
+        "避免情绪化处理"
+      ],
+      "scenario_specific": {
+        "纠纷": {
+          "situation": "风险较高",
+          "reasons": [
+            "证据不足",
+            "对方强势"
+          ],
+          "advice": [
+            "谨慎推进",
+            "优先协商"
+          ],
+          "timing": "近期需谨慎"
+        },
+        "仲裁": {
+          "situation": "败诉风险偏高",
+          "reasons": [
+            "不利证据"
+          ],
+          "advice": [
+            "评估成本",
+            "考虑撤回"
+          ],
+          "timing": "中后期"
+        },
+        "合同": {
+          "situation": "不利因素多",
+          "reasons": [
+            "条款不清"
+          ],
+          "advice": [
+            "补充证据",
+            "寻求专业支持"
+          ],
+          "timing": "中期"
+        },
+        "谈判": {
+          "situation": "谈判易僵",
+          "reasons": [
+            "分歧大"
+          ],
+          "advice": [
+            "降温沟通",
+            "引入第三方"
+          ],
+          "timing": "近期谨慎"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "19": {
+      "name": "临",
+      "overall_tendency": "吉",
+      "lawsuit_rating": 4,
+      "key_points": [
+        "证据较充分，胜算相对占优",
+        "宜走正规程序，稳步推进",
+        "注意时间与成本控制",
+        "保持沟通，避免激化"
+      ],
+      "scenario_specific": {
+        "纠纷": {
+          "situation": "处理相对顺利，立场较有利",
+          "reasons": [
+            "证据清晰"
+          ],
+          "advice": [
+            "按程序推进",
+            "保持沟通"
+          ],
+          "timing": "近期"
+        },
+        "仲裁": {
+          "situation": "仲裁结果存在积极可能",
+          "reasons": [
+            "规则有利"
+          ],
+          "advice": [
+            "准备材料",
+            "稳步推进"
+          ],
+          "timing": "中期"
+        },
+        "合同": {
+          "situation": "合同争议可控",
+          "reasons": [
+            "条款明确"
+          ],
+          "advice": [
+            "保留证据",
+            "依法主张"
+          ],
+          "timing": "近期"
+        },
+        "谈判": {
+          "situation": "谈判主动权较高",
+          "reasons": [
+            "筹码充分"
+          ],
+          "advice": [
+            "设定底线",
+            "避免拖延"
+          ],
+          "timing": "近期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "20": {
+      "name": "观",
+      "overall_tendency": "平",
+      "lawsuit_rating": 3,
+      "key_points": [
+        "胜负未定，需补强证据",
+        "谈判空间存在",
+        "注意时间成本与风险",
+        "建议寻求专业意见"
+      ],
+      "scenario_specific": {
+        "纠纷": {
+          "situation": "局势胶着",
+          "reasons": [
+            "证据一般"
+          ],
+          "advice": [
+            "补强证据",
+            "寻求调解"
+          ],
+          "timing": "中期"
+        },
+        "仲裁": {
+          "situation": "结果不明",
+          "reasons": [
+            "规则解读分歧"
+          ],
+          "advice": [
+            "咨询专业意见",
+            "做好备选"
+          ],
+          "timing": "中期"
+        },
+        "合同": {
+          "situation": "争议复杂",
+          "reasons": [
+            "条款模糊"
+          ],
+          "advice": [
+            "梳理事实",
+            "争取和解"
+          ],
+          "timing": "中期"
+        },
+        "谈判": {
+          "situation": "谈判空间存在",
+          "reasons": [
+            "双方顾虑"
+          ],
+          "advice": [
+            "提高方案可行性",
+            "控制情绪"
+          ],
+          "timing": "近期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "21": {
+      "name": "噬嗑",
+      "overall_tendency": "平",
+      "lawsuit_rating": 3,
+      "key_points": [
+        "胜负未定，需补强证据",
+        "谈判空间存在",
+        "注意时间成本与风险",
+        "建议寻求专业意见"
+      ],
+      "scenario_specific": {
+        "纠纷": {
+          "situation": "局势胶着",
+          "reasons": [
+            "证据一般"
+          ],
+          "advice": [
+            "补强证据",
+            "寻求调解"
+          ],
+          "timing": "中期"
+        },
+        "仲裁": {
+          "situation": "结果不明",
+          "reasons": [
+            "规则解读分歧"
+          ],
+          "advice": [
+            "咨询专业意见",
+            "做好备选"
+          ],
+          "timing": "中期"
+        },
+        "合同": {
+          "situation": "争议复杂",
+          "reasons": [
+            "条款模糊"
+          ],
+          "advice": [
+            "梳理事实",
+            "争取和解"
+          ],
+          "timing": "中期"
+        },
+        "谈判": {
+          "situation": "谈判空间存在",
+          "reasons": [
+            "双方顾虑"
+          ],
+          "advice": [
+            "提高方案可行性",
+            "控制情绪"
+          ],
+          "timing": "近期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "22": {
+      "name": "贲",
+      "overall_tendency": "吉",
+      "lawsuit_rating": 4,
+      "key_points": [
+        "证据较充分，胜算相对占优",
+        "宜走正规程序，稳步推进",
+        "注意时间与成本控制",
+        "保持沟通，避免激化"
+      ],
+      "scenario_specific": {
+        "纠纷": {
+          "situation": "处理相对顺利，立场较有利",
+          "reasons": [
+            "证据清晰"
+          ],
+          "advice": [
+            "按程序推进",
+            "保持沟通"
+          ],
+          "timing": "近期"
+        },
+        "仲裁": {
+          "situation": "仲裁结果存在积极可能",
+          "reasons": [
+            "规则有利"
+          ],
+          "advice": [
+            "准备材料",
+            "稳步推进"
+          ],
+          "timing": "中期"
+        },
+        "合同": {
+          "situation": "合同争议可控",
+          "reasons": [
+            "条款明确"
+          ],
+          "advice": [
+            "保留证据",
+            "依法主张"
+          ],
+          "timing": "近期"
+        },
+        "谈判": {
+          "situation": "谈判主动权较高",
+          "reasons": [
+            "筹码充分"
+          ],
+          "advice": [
+            "设定底线",
+            "避免拖延"
+          ],
+          "timing": "近期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "23": {
+      "name": "剥",
+      "overall_tendency": "凶",
+      "lawsuit_rating": 2,
+      "key_points": [
+        "风险偏高，证据不足",
+        "不宜冒进，优先协商",
+        "成本与不确定性较大",
+        "避免情绪化处理"
+      ],
+      "scenario_specific": {
+        "纠纷": {
+          "situation": "风险较高",
+          "reasons": [
+            "证据不足",
+            "对方强势"
+          ],
+          "advice": [
+            "谨慎推进",
+            "优先协商"
+          ],
+          "timing": "近期需谨慎"
+        },
+        "仲裁": {
+          "situation": "败诉风险偏高",
+          "reasons": [
+            "不利证据"
+          ],
+          "advice": [
+            "评估成本",
+            "考虑撤回"
+          ],
+          "timing": "中后期"
+        },
+        "合同": {
+          "situation": "不利因素多",
+          "reasons": [
+            "条款不清"
+          ],
+          "advice": [
+            "补充证据",
+            "寻求专业支持"
+          ],
+          "timing": "中期"
+        },
+        "谈判": {
+          "situation": "谈判易僵",
+          "reasons": [
+            "分歧大"
+          ],
+          "advice": [
+            "降温沟通",
+            "引入第三方"
+          ],
+          "timing": "近期谨慎"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "24": {
+      "name": "复",
+      "overall_tendency": "吉",
+      "lawsuit_rating": 4,
+      "key_points": [
+        "证据较充分，胜算相对占优",
+        "宜走正规程序，稳步推进",
+        "注意时间与成本控制",
+        "保持沟通，避免激化"
+      ],
+      "scenario_specific": {
+        "纠纷": {
+          "situation": "处理相对顺利，立场较有利",
+          "reasons": [
+            "证据清晰"
+          ],
+          "advice": [
+            "按程序推进",
+            "保持沟通"
+          ],
+          "timing": "近期"
+        },
+        "仲裁": {
+          "situation": "仲裁结果存在积极可能",
+          "reasons": [
+            "规则有利"
+          ],
+          "advice": [
+            "准备材料",
+            "稳步推进"
+          ],
+          "timing": "中期"
+        },
+        "合同": {
+          "situation": "合同争议可控",
+          "reasons": [
+            "条款明确"
+          ],
+          "advice": [
+            "保留证据",
+            "依法主张"
+          ],
+          "timing": "近期"
+        },
+        "谈判": {
+          "situation": "谈判主动权较高",
+          "reasons": [
+            "筹码充分"
+          ],
+          "advice": [
+            "设定底线",
+            "避免拖延"
+          ],
+          "timing": "近期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "25": {
+      "name": "无妄",
+      "overall_tendency": "吉",
+      "lawsuit_rating": 4,
+      "key_points": [
+        "证据较充分，胜算相对占优",
+        "宜走正规程序，稳步推进",
+        "注意时间与成本控制",
+        "保持沟通，避免激化"
+      ],
+      "scenario_specific": {
+        "纠纷": {
+          "situation": "处理相对顺利，立场较有利",
+          "reasons": [
+            "证据清晰"
+          ],
+          "advice": [
+            "按程序推进",
+            "保持沟通"
+          ],
+          "timing": "近期"
+        },
+        "仲裁": {
+          "situation": "仲裁结果存在积极可能",
+          "reasons": [
+            "规则有利"
+          ],
+          "advice": [
+            "准备材料",
+            "稳步推进"
+          ],
+          "timing": "中期"
+        },
+        "合同": {
+          "situation": "合同争议可控",
+          "reasons": [
+            "条款明确"
+          ],
+          "advice": [
+            "保留证据",
+            "依法主张"
+          ],
+          "timing": "近期"
+        },
+        "谈判": {
+          "situation": "谈判主动权较高",
+          "reasons": [
+            "筹码充分"
+          ],
+          "advice": [
+            "设定底线",
+            "避免拖延"
+          ],
+          "timing": "近期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "26": {
+      "name": "大畜",
+      "overall_tendency": "吉",
+      "lawsuit_rating": 4,
+      "key_points": [
+        "证据较充分，胜算相对占优",
+        "宜走正规程序，稳步推进",
+        "注意时间与成本控制",
+        "保持沟通，避免激化"
+      ],
+      "scenario_specific": {
+        "纠纷": {
+          "situation": "处理相对顺利，立场较有利",
+          "reasons": [
+            "证据清晰"
+          ],
+          "advice": [
+            "按程序推进",
+            "保持沟通"
+          ],
+          "timing": "近期"
+        },
+        "仲裁": {
+          "situation": "仲裁结果存在积极可能",
+          "reasons": [
+            "规则有利"
+          ],
+          "advice": [
+            "准备材料",
+            "稳步推进"
+          ],
+          "timing": "中期"
+        },
+        "合同": {
+          "situation": "合同争议可控",
+          "reasons": [
+            "条款明确"
+          ],
+          "advice": [
+            "保留证据",
+            "依法主张"
+          ],
+          "timing": "近期"
+        },
+        "谈判": {
+          "situation": "谈判主动权较高",
+          "reasons": [
+            "筹码充分"
+          ],
+          "advice": [
+            "设定底线",
+            "避免拖延"
+          ],
+          "timing": "近期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "27": {
+      "name": "颐",
+      "overall_tendency": "平",
+      "lawsuit_rating": 3,
+      "key_points": [
+        "胜负未定，需补强证据",
+        "谈判空间存在",
+        "注意时间成本与风险",
+        "建议寻求专业意见"
+      ],
+      "scenario_specific": {
+        "纠纷": {
+          "situation": "局势胶着",
+          "reasons": [
+            "证据一般"
+          ],
+          "advice": [
+            "补强证据",
+            "寻求调解"
+          ],
+          "timing": "中期"
+        },
+        "仲裁": {
+          "situation": "结果不明",
+          "reasons": [
+            "规则解读分歧"
+          ],
+          "advice": [
+            "咨询专业意见",
+            "做好备选"
+          ],
+          "timing": "中期"
+        },
+        "合同": {
+          "situation": "争议复杂",
+          "reasons": [
+            "条款模糊"
+          ],
+          "advice": [
+            "梳理事实",
+            "争取和解"
+          ],
+          "timing": "中期"
+        },
+        "谈判": {
+          "situation": "谈判空间存在",
+          "reasons": [
+            "双方顾虑"
+          ],
+          "advice": [
+            "提高方案可行性",
+            "控制情绪"
+          ],
+          "timing": "近期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "28": {
+      "name": "大过",
+      "overall_tendency": "不利",
+      "lawsuit_rating": 2,
+      "key_points": [
+        "风险偏高，证据不足",
+        "不宜冒进，优先协商",
+        "成本与不确定性较大",
+        "避免情绪化处理"
+      ],
+      "scenario_specific": {
+        "纠纷": {
+          "situation": "风险较高",
+          "reasons": [
+            "证据不足",
+            "对方强势"
+          ],
+          "advice": [
+            "谨慎推进",
+            "优先协商"
+          ],
+          "timing": "近期需谨慎"
+        },
+        "仲裁": {
+          "situation": "败诉风险偏高",
+          "reasons": [
+            "不利证据"
+          ],
+          "advice": [
+            "评估成本",
+            "考虑撤回"
+          ],
+          "timing": "中后期"
+        },
+        "合同": {
+          "situation": "不利因素多",
+          "reasons": [
+            "条款不清"
+          ],
+          "advice": [
+            "补充证据",
+            "寻求专业支持"
+          ],
+          "timing": "中期"
+        },
+        "谈判": {
+          "situation": "谈判易僵",
+          "reasons": [
+            "分歧大"
+          ],
+          "advice": [
+            "降温沟通",
+            "引入第三方"
+          ],
+          "timing": "近期谨慎"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "29": {
+      "name": "坎",
+      "overall_tendency": "不利",
+      "lawsuit_rating": 2,
+      "key_points": [
+        "风险偏高，证据不足",
+        "不宜冒进，优先协商",
+        "成本与不确定性较大",
+        "避免情绪化处理"
+      ],
+      "scenario_specific": {
+        "纠纷": {
+          "situation": "风险较高",
+          "reasons": [
+            "证据不足",
+            "对方强势"
+          ],
+          "advice": [
+            "谨慎推进",
+            "优先协商"
+          ],
+          "timing": "近期需谨慎"
+        },
+        "仲裁": {
+          "situation": "败诉风险偏高",
+          "reasons": [
+            "不利证据"
+          ],
+          "advice": [
+            "评估成本",
+            "考虑撤回"
+          ],
+          "timing": "中后期"
+        },
+        "合同": {
+          "situation": "不利因素多",
+          "reasons": [
+            "条款不清"
+          ],
+          "advice": [
+            "补充证据",
+            "寻求专业支持"
+          ],
+          "timing": "中期"
+        },
+        "谈判": {
+          "situation": "谈判易僵",
+          "reasons": [
+            "分歧大"
+          ],
+          "advice": [
+            "降温沟通",
+            "引入第三方"
+          ],
+          "timing": "近期谨慎"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "30": {
+      "name": "离",
+      "overall_tendency": "吉",
+      "lawsuit_rating": 4,
+      "key_points": [
+        "证据较充分，胜算相对占优",
+        "宜走正规程序，稳步推进",
+        "注意时间与成本控制",
+        "保持沟通，避免激化"
+      ],
+      "scenario_specific": {
+        "纠纷": {
+          "situation": "处理相对顺利，立场较有利",
+          "reasons": [
+            "证据清晰"
+          ],
+          "advice": [
+            "按程序推进",
+            "保持沟通"
+          ],
+          "timing": "近期"
+        },
+        "仲裁": {
+          "situation": "仲裁结果存在积极可能",
+          "reasons": [
+            "规则有利"
+          ],
+          "advice": [
+            "准备材料",
+            "稳步推进"
+          ],
+          "timing": "中期"
+        },
+        "合同": {
+          "situation": "合同争议可控",
+          "reasons": [
+            "条款明确"
+          ],
+          "advice": [
+            "保留证据",
+            "依法主张"
+          ],
+          "timing": "近期"
+        },
+        "谈判": {
+          "situation": "谈判主动权较高",
+          "reasons": [
+            "筹码充分"
+          ],
+          "advice": [
+            "设定底线",
+            "避免拖延"
+          ],
+          "timing": "近期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "31": {
+      "name": "咸",
+      "overall_tendency": "吉",
+      "lawsuit_rating": 4,
+      "key_points": [
+        "证据较充分，胜算相对占优",
+        "宜走正规程序，稳步推进",
+        "注意时间与成本控制",
+        "保持沟通，避免激化"
+      ],
+      "scenario_specific": {
+        "纠纷": {
+          "situation": "处理相对顺利，立场较有利",
+          "reasons": [
+            "证据清晰"
+          ],
+          "advice": [
+            "按程序推进",
+            "保持沟通"
+          ],
+          "timing": "近期"
+        },
+        "仲裁": {
+          "situation": "仲裁结果存在积极可能",
+          "reasons": [
+            "规则有利"
+          ],
+          "advice": [
+            "准备材料",
+            "稳步推进"
+          ],
+          "timing": "中期"
+        },
+        "合同": {
+          "situation": "合同争议可控",
+          "reasons": [
+            "条款明确"
+          ],
+          "advice": [
+            "保留证据",
+            "依法主张"
+          ],
+          "timing": "近期"
+        },
+        "谈判": {
+          "situation": "谈判主动权较高",
+          "reasons": [
+            "筹码充分"
+          ],
+          "advice": [
+            "设定底线",
+            "避免拖延"
+          ],
+          "timing": "近期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "32": {
+      "name": "恒",
+      "overall_tendency": "吉",
+      "lawsuit_rating": 4,
+      "key_points": [
+        "证据较充分，胜算相对占优",
+        "宜走正规程序，稳步推进",
+        "注意时间与成本控制",
+        "保持沟通，避免激化"
+      ],
+      "scenario_specific": {
+        "纠纷": {
+          "situation": "处理相对顺利，立场较有利",
+          "reasons": [
+            "证据清晰"
+          ],
+          "advice": [
+            "按程序推进",
+            "保持沟通"
+          ],
+          "timing": "近期"
+        },
+        "仲裁": {
+          "situation": "仲裁结果存在积极可能",
+          "reasons": [
+            "规则有利"
+          ],
+          "advice": [
+            "准备材料",
+            "稳步推进"
+          ],
+          "timing": "中期"
+        },
+        "合同": {
+          "situation": "合同争议可控",
+          "reasons": [
+            "条款明确"
+          ],
+          "advice": [
+            "保留证据",
+            "依法主张"
+          ],
+          "timing": "近期"
+        },
+        "谈判": {
+          "situation": "谈判主动权较高",
+          "reasons": [
+            "筹码充分"
+          ],
+          "advice": [
+            "设定底线",
+            "避免拖延"
+          ],
+          "timing": "近期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "33": {
+      "name": "遁",
+      "overall_tendency": "平",
+      "lawsuit_rating": 3,
+      "key_points": [
+        "胜负未定，需补强证据",
+        "谈判空间存在",
+        "注意时间成本与风险",
+        "建议寻求专业意见"
+      ],
+      "scenario_specific": {
+        "纠纷": {
+          "situation": "局势胶着",
+          "reasons": [
+            "证据一般"
+          ],
+          "advice": [
+            "补强证据",
+            "寻求调解"
+          ],
+          "timing": "中期"
+        },
+        "仲裁": {
+          "situation": "结果不明",
+          "reasons": [
+            "规则解读分歧"
+          ],
+          "advice": [
+            "咨询专业意见",
+            "做好备选"
+          ],
+          "timing": "中期"
+        },
+        "合同": {
+          "situation": "争议复杂",
+          "reasons": [
+            "条款模糊"
+          ],
+          "advice": [
+            "梳理事实",
+            "争取和解"
+          ],
+          "timing": "中期"
+        },
+        "谈判": {
+          "situation": "谈判空间存在",
+          "reasons": [
+            "双方顾虑"
+          ],
+          "advice": [
+            "提高方案可行性",
+            "控制情绪"
+          ],
+          "timing": "近期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "34": {
+      "name": "大壮",
+      "overall_tendency": "吉",
+      "lawsuit_rating": 4,
+      "key_points": [
+        "证据较充分，胜算相对占优",
+        "宜走正规程序，稳步推进",
+        "注意时间与成本控制",
+        "保持沟通，避免激化"
+      ],
+      "scenario_specific": {
+        "纠纷": {
+          "situation": "处理相对顺利，立场较有利",
+          "reasons": [
+            "证据清晰"
+          ],
+          "advice": [
+            "按程序推进",
+            "保持沟通"
+          ],
+          "timing": "近期"
+        },
+        "仲裁": {
+          "situation": "仲裁结果存在积极可能",
+          "reasons": [
+            "规则有利"
+          ],
+          "advice": [
+            "准备材料",
+            "稳步推进"
+          ],
+          "timing": "中期"
+        },
+        "合同": {
+          "situation": "合同争议可控",
+          "reasons": [
+            "条款明确"
+          ],
+          "advice": [
+            "保留证据",
+            "依法主张"
+          ],
+          "timing": "近期"
+        },
+        "谈判": {
+          "situation": "谈判主动权较高",
+          "reasons": [
+            "筹码充分"
+          ],
+          "advice": [
+            "设定底线",
+            "避免拖延"
+          ],
+          "timing": "近期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "35": {
+      "name": "晋",
+      "overall_tendency": "大吉",
+      "lawsuit_rating": 5,
+      "key_points": [
+        "证据较充分，胜算相对占优",
+        "宜走正规程序，稳步推进",
+        "注意时间与成本控制",
+        "保持沟通，避免激化"
+      ],
+      "scenario_specific": {
+        "纠纷": {
+          "situation": "处理相对顺利，立场较有利",
+          "reasons": [
+            "证据清晰"
+          ],
+          "advice": [
+            "按程序推进",
+            "保持沟通"
+          ],
+          "timing": "近期"
+        },
+        "仲裁": {
+          "situation": "仲裁结果存在积极可能",
+          "reasons": [
+            "规则有利"
+          ],
+          "advice": [
+            "准备材料",
+            "稳步推进"
+          ],
+          "timing": "中期"
+        },
+        "合同": {
+          "situation": "合同争议可控",
+          "reasons": [
+            "条款明确"
+          ],
+          "advice": [
+            "保留证据",
+            "依法主张"
+          ],
+          "timing": "近期"
+        },
+        "谈判": {
+          "situation": "谈判主动权较高",
+          "reasons": [
+            "筹码充分"
+          ],
+          "advice": [
+            "设定底线",
+            "避免拖延"
+          ],
+          "timing": "近期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "36": {
+      "name": "明夷",
+      "overall_tendency": "凶",
+      "lawsuit_rating": 2,
+      "key_points": [
+        "风险偏高，证据不足",
+        "不宜冒进，优先协商",
+        "成本与不确定性较大",
+        "避免情绪化处理"
+      ],
+      "scenario_specific": {
+        "纠纷": {
+          "situation": "风险较高",
+          "reasons": [
+            "证据不足",
+            "对方强势"
+          ],
+          "advice": [
+            "谨慎推进",
+            "优先协商"
+          ],
+          "timing": "近期需谨慎"
+        },
+        "仲裁": {
+          "situation": "败诉风险偏高",
+          "reasons": [
+            "不利证据"
+          ],
+          "advice": [
+            "评估成本",
+            "考虑撤回"
+          ],
+          "timing": "中后期"
+        },
+        "合同": {
+          "situation": "不利因素多",
+          "reasons": [
+            "条款不清"
+          ],
+          "advice": [
+            "补充证据",
+            "寻求专业支持"
+          ],
+          "timing": "中期"
+        },
+        "谈判": {
+          "situation": "谈判易僵",
+          "reasons": [
+            "分歧大"
+          ],
+          "advice": [
+            "降温沟通",
+            "引入第三方"
+          ],
+          "timing": "近期谨慎"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "37": {
+      "name": "家人",
+      "overall_tendency": "吉",
+      "lawsuit_rating": 4,
+      "key_points": [
+        "证据较充分，胜算相对占优",
+        "宜走正规程序，稳步推进",
+        "注意时间与成本控制",
+        "保持沟通，避免激化"
+      ],
+      "scenario_specific": {
+        "纠纷": {
+          "situation": "处理相对顺利，立场较有利",
+          "reasons": [
+            "证据清晰"
+          ],
+          "advice": [
+            "按程序推进",
+            "保持沟通"
+          ],
+          "timing": "近期"
+        },
+        "仲裁": {
+          "situation": "仲裁结果存在积极可能",
+          "reasons": [
+            "规则有利"
+          ],
+          "advice": [
+            "准备材料",
+            "稳步推进"
+          ],
+          "timing": "中期"
+        },
+        "合同": {
+          "situation": "合同争议可控",
+          "reasons": [
+            "条款明确"
+          ],
+          "advice": [
+            "保留证据",
+            "依法主张"
+          ],
+          "timing": "近期"
+        },
+        "谈判": {
+          "situation": "谈判主动权较高",
+          "reasons": [
+            "筹码充分"
+          ],
+          "advice": [
+            "设定底线",
+            "避免拖延"
+          ],
+          "timing": "近期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "38": {
+      "name": "睽",
+      "overall_tendency": "不利",
+      "lawsuit_rating": 2,
+      "key_points": [
+        "风险偏高，证据不足",
+        "不宜冒进，优先协商",
+        "成本与不确定性较大",
+        "避免情绪化处理"
+      ],
+      "scenario_specific": {
+        "纠纷": {
+          "situation": "风险较高",
+          "reasons": [
+            "证据不足",
+            "对方强势"
+          ],
+          "advice": [
+            "谨慎推进",
+            "优先协商"
+          ],
+          "timing": "近期需谨慎"
+        },
+        "仲裁": {
+          "situation": "败诉风险偏高",
+          "reasons": [
+            "不利证据"
+          ],
+          "advice": [
+            "评估成本",
+            "考虑撤回"
+          ],
+          "timing": "中后期"
+        },
+        "合同": {
+          "situation": "不利因素多",
+          "reasons": [
+            "条款不清"
+          ],
+          "advice": [
+            "补充证据",
+            "寻求专业支持"
+          ],
+          "timing": "中期"
+        },
+        "谈判": {
+          "situation": "谈判易僵",
+          "reasons": [
+            "分歧大"
+          ],
+          "advice": [
+            "降温沟通",
+            "引入第三方"
+          ],
+          "timing": "近期谨慎"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "39": {
+      "name": "蹇",
+      "overall_tendency": "不利",
+      "lawsuit_rating": 2,
+      "key_points": [
+        "风险偏高，证据不足",
+        "不宜冒进，优先协商",
+        "成本与不确定性较大",
+        "避免情绪化处理"
+      ],
+      "scenario_specific": {
+        "纠纷": {
+          "situation": "风险较高",
+          "reasons": [
+            "证据不足",
+            "对方强势"
+          ],
+          "advice": [
+            "谨慎推进",
+            "优先协商"
+          ],
+          "timing": "近期需谨慎"
+        },
+        "仲裁": {
+          "situation": "败诉风险偏高",
+          "reasons": [
+            "不利证据"
+          ],
+          "advice": [
+            "评估成本",
+            "考虑撤回"
+          ],
+          "timing": "中后期"
+        },
+        "合同": {
+          "situation": "不利因素多",
+          "reasons": [
+            "条款不清"
+          ],
+          "advice": [
+            "补充证据",
+            "寻求专业支持"
+          ],
+          "timing": "中期"
+        },
+        "谈判": {
+          "situation": "谈判易僵",
+          "reasons": [
+            "分歧大"
+          ],
+          "advice": [
+            "降温沟通",
+            "引入第三方"
+          ],
+          "timing": "近期谨慎"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "40": {
+      "name": "解",
+      "overall_tendency": "吉",
+      "lawsuit_rating": 4,
+      "key_points": [
+        "证据较充分，胜算相对占优",
+        "宜走正规程序，稳步推进",
+        "注意时间与成本控制",
+        "保持沟通，避免激化"
+      ],
+      "scenario_specific": {
+        "纠纷": {
+          "situation": "处理相对顺利，立场较有利",
+          "reasons": [
+            "证据清晰"
+          ],
+          "advice": [
+            "按程序推进",
+            "保持沟通"
+          ],
+          "timing": "近期"
+        },
+        "仲裁": {
+          "situation": "仲裁结果存在积极可能",
+          "reasons": [
+            "规则有利"
+          ],
+          "advice": [
+            "准备材料",
+            "稳步推进"
+          ],
+          "timing": "中期"
+        },
+        "合同": {
+          "situation": "合同争议可控",
+          "reasons": [
+            "条款明确"
+          ],
+          "advice": [
+            "保留证据",
+            "依法主张"
+          ],
+          "timing": "近期"
+        },
+        "谈判": {
+          "situation": "谈判主动权较高",
+          "reasons": [
+            "筹码充分"
+          ],
+          "advice": [
+            "设定底线",
+            "避免拖延"
+          ],
+          "timing": "近期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "41": {
+      "name": "损",
+      "overall_tendency": "平",
+      "lawsuit_rating": 3,
+      "key_points": [
+        "胜负未定，需补强证据",
+        "谈判空间存在",
+        "注意时间成本与风险",
+        "建议寻求专业意见"
+      ],
+      "scenario_specific": {
+        "纠纷": {
+          "situation": "局势胶着",
+          "reasons": [
+            "证据一般"
+          ],
+          "advice": [
+            "补强证据",
+            "寻求调解"
+          ],
+          "timing": "中期"
+        },
+        "仲裁": {
+          "situation": "结果不明",
+          "reasons": [
+            "规则解读分歧"
+          ],
+          "advice": [
+            "咨询专业意见",
+            "做好备选"
+          ],
+          "timing": "中期"
+        },
+        "合同": {
+          "situation": "争议复杂",
+          "reasons": [
+            "条款模糊"
+          ],
+          "advice": [
+            "梳理事实",
+            "争取和解"
+          ],
+          "timing": "中期"
+        },
+        "谈判": {
+          "situation": "谈判空间存在",
+          "reasons": [
+            "双方顾虑"
+          ],
+          "advice": [
+            "提高方案可行性",
+            "控制情绪"
+          ],
+          "timing": "近期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "42": {
+      "name": "益",
+      "overall_tendency": "大吉",
+      "lawsuit_rating": 5,
+      "key_points": [
+        "证据较充分，胜算相对占优",
+        "宜走正规程序，稳步推进",
+        "注意时间与成本控制",
+        "保持沟通，避免激化"
+      ],
+      "scenario_specific": {
+        "纠纷": {
+          "situation": "处理相对顺利，立场较有利",
+          "reasons": [
+            "证据清晰"
+          ],
+          "advice": [
+            "按程序推进",
+            "保持沟通"
+          ],
+          "timing": "近期"
+        },
+        "仲裁": {
+          "situation": "仲裁结果存在积极可能",
+          "reasons": [
+            "规则有利"
+          ],
+          "advice": [
+            "准备材料",
+            "稳步推进"
+          ],
+          "timing": "中期"
+        },
+        "合同": {
+          "situation": "合同争议可控",
+          "reasons": [
+            "条款明确"
+          ],
+          "advice": [
+            "保留证据",
+            "依法主张"
+          ],
+          "timing": "近期"
+        },
+        "谈判": {
+          "situation": "谈判主动权较高",
+          "reasons": [
+            "筹码充分"
+          ],
+          "advice": [
+            "设定底线",
+            "避免拖延"
+          ],
+          "timing": "近期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "43": {
+      "name": "夬",
+      "overall_tendency": "吉",
+      "lawsuit_rating": 4,
+      "key_points": [
+        "证据较充分，胜算相对占优",
+        "宜走正规程序，稳步推进",
+        "注意时间与成本控制",
+        "保持沟通，避免激化"
+      ],
+      "scenario_specific": {
+        "纠纷": {
+          "situation": "处理相对顺利，立场较有利",
+          "reasons": [
+            "证据清晰"
+          ],
+          "advice": [
+            "按程序推进",
+            "保持沟通"
+          ],
+          "timing": "近期"
+        },
+        "仲裁": {
+          "situation": "仲裁结果存在积极可能",
+          "reasons": [
+            "规则有利"
+          ],
+          "advice": [
+            "准备材料",
+            "稳步推进"
+          ],
+          "timing": "中期"
+        },
+        "合同": {
+          "situation": "合同争议可控",
+          "reasons": [
+            "条款明确"
+          ],
+          "advice": [
+            "保留证据",
+            "依法主张"
+          ],
+          "timing": "近期"
+        },
+        "谈判": {
+          "situation": "谈判主动权较高",
+          "reasons": [
+            "筹码充分"
+          ],
+          "advice": [
+            "设定底线",
+            "避免拖延"
+          ],
+          "timing": "近期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "44": {
+      "name": "姤",
+      "overall_tendency": "不利",
+      "lawsuit_rating": 2,
+      "key_points": [
+        "风险偏高，证据不足",
+        "不宜冒进，优先协商",
+        "成本与不确定性较大",
+        "避免情绪化处理"
+      ],
+      "scenario_specific": {
+        "纠纷": {
+          "situation": "风险较高",
+          "reasons": [
+            "证据不足",
+            "对方强势"
+          ],
+          "advice": [
+            "谨慎推进",
+            "优先协商"
+          ],
+          "timing": "近期需谨慎"
+        },
+        "仲裁": {
+          "situation": "败诉风险偏高",
+          "reasons": [
+            "不利证据"
+          ],
+          "advice": [
+            "评估成本",
+            "考虑撤回"
+          ],
+          "timing": "中后期"
+        },
+        "合同": {
+          "situation": "不利因素多",
+          "reasons": [
+            "条款不清"
+          ],
+          "advice": [
+            "补充证据",
+            "寻求专业支持"
+          ],
+          "timing": "中期"
+        },
+        "谈判": {
+          "situation": "谈判易僵",
+          "reasons": [
+            "分歧大"
+          ],
+          "advice": [
+            "降温沟通",
+            "引入第三方"
+          ],
+          "timing": "近期谨慎"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "45": {
+      "name": "萃",
+      "overall_tendency": "吉",
+      "lawsuit_rating": 4,
+      "key_points": [
+        "证据较充分，胜算相对占优",
+        "宜走正规程序，稳步推进",
+        "注意时间与成本控制",
+        "保持沟通，避免激化"
+      ],
+      "scenario_specific": {
+        "纠纷": {
+          "situation": "处理相对顺利，立场较有利",
+          "reasons": [
+            "证据清晰"
+          ],
+          "advice": [
+            "按程序推进",
+            "保持沟通"
+          ],
+          "timing": "近期"
+        },
+        "仲裁": {
+          "situation": "仲裁结果存在积极可能",
+          "reasons": [
+            "规则有利"
+          ],
+          "advice": [
+            "准备材料",
+            "稳步推进"
+          ],
+          "timing": "中期"
+        },
+        "合同": {
+          "situation": "合同争议可控",
+          "reasons": [
+            "条款明确"
+          ],
+          "advice": [
+            "保留证据",
+            "依法主张"
+          ],
+          "timing": "近期"
+        },
+        "谈判": {
+          "situation": "谈判主动权较高",
+          "reasons": [
+            "筹码充分"
+          ],
+          "advice": [
+            "设定底线",
+            "避免拖延"
+          ],
+          "timing": "近期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "46": {
+      "name": "升",
+      "overall_tendency": "大吉",
+      "lawsuit_rating": 5,
+      "key_points": [
+        "证据较充分，胜算相对占优",
+        "宜走正规程序，稳步推进",
+        "注意时间与成本控制",
+        "保持沟通，避免激化"
+      ],
+      "scenario_specific": {
+        "纠纷": {
+          "situation": "处理相对顺利，立场较有利",
+          "reasons": [
+            "证据清晰"
+          ],
+          "advice": [
+            "按程序推进",
+            "保持沟通"
+          ],
+          "timing": "近期"
+        },
+        "仲裁": {
+          "situation": "仲裁结果存在积极可能",
+          "reasons": [
+            "规则有利"
+          ],
+          "advice": [
+            "准备材料",
+            "稳步推进"
+          ],
+          "timing": "中期"
+        },
+        "合同": {
+          "situation": "合同争议可控",
+          "reasons": [
+            "条款明确"
+          ],
+          "advice": [
+            "保留证据",
+            "依法主张"
+          ],
+          "timing": "近期"
+        },
+        "谈判": {
+          "situation": "谈判主动权较高",
+          "reasons": [
+            "筹码充分"
+          ],
+          "advice": [
+            "设定底线",
+            "避免拖延"
+          ],
+          "timing": "近期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "47": {
+      "name": "困",
+      "overall_tendency": "凶",
+      "lawsuit_rating": 2,
+      "key_points": [
+        "风险偏高，证据不足",
+        "不宜冒进，优先协商",
+        "成本与不确定性较大",
+        "避免情绪化处理"
+      ],
+      "scenario_specific": {
+        "纠纷": {
+          "situation": "风险较高",
+          "reasons": [
+            "证据不足",
+            "对方强势"
+          ],
+          "advice": [
+            "谨慎推进",
+            "优先协商"
+          ],
+          "timing": "近期需谨慎"
+        },
+        "仲裁": {
+          "situation": "败诉风险偏高",
+          "reasons": [
+            "不利证据"
+          ],
+          "advice": [
+            "评估成本",
+            "考虑撤回"
+          ],
+          "timing": "中后期"
+        },
+        "合同": {
+          "situation": "不利因素多",
+          "reasons": [
+            "条款不清"
+          ],
+          "advice": [
+            "补充证据",
+            "寻求专业支持"
+          ],
+          "timing": "中期"
+        },
+        "谈判": {
+          "situation": "谈判易僵",
+          "reasons": [
+            "分歧大"
+          ],
+          "advice": [
+            "降温沟通",
+            "引入第三方"
+          ],
+          "timing": "近期谨慎"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "48": {
+      "name": "井",
+      "overall_tendency": "平",
+      "lawsuit_rating": 3,
+      "key_points": [
+        "胜负未定，需补强证据",
+        "谈判空间存在",
+        "注意时间成本与风险",
+        "建议寻求专业意见"
+      ],
+      "scenario_specific": {
+        "纠纷": {
+          "situation": "局势胶着",
+          "reasons": [
+            "证据一般"
+          ],
+          "advice": [
+            "补强证据",
+            "寻求调解"
+          ],
+          "timing": "中期"
+        },
+        "仲裁": {
+          "situation": "结果不明",
+          "reasons": [
+            "规则解读分歧"
+          ],
+          "advice": [
+            "咨询专业意见",
+            "做好备选"
+          ],
+          "timing": "中期"
+        },
+        "合同": {
+          "situation": "争议复杂",
+          "reasons": [
+            "条款模糊"
+          ],
+          "advice": [
+            "梳理事实",
+            "争取和解"
+          ],
+          "timing": "中期"
+        },
+        "谈判": {
+          "situation": "谈判空间存在",
+          "reasons": [
+            "双方顾虑"
+          ],
+          "advice": [
+            "提高方案可行性",
+            "控制情绪"
+          ],
+          "timing": "近期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "49": {
+      "name": "革",
+      "overall_tendency": "吉",
+      "lawsuit_rating": 4,
+      "key_points": [
+        "证据较充分，胜算相对占优",
+        "宜走正规程序，稳步推进",
+        "注意时间与成本控制",
+        "保持沟通，避免激化"
+      ],
+      "scenario_specific": {
+        "纠纷": {
+          "situation": "处理相对顺利，立场较有利",
+          "reasons": [
+            "证据清晰"
+          ],
+          "advice": [
+            "按程序推进",
+            "保持沟通"
+          ],
+          "timing": "近期"
+        },
+        "仲裁": {
+          "situation": "仲裁结果存在积极可能",
+          "reasons": [
+            "规则有利"
+          ],
+          "advice": [
+            "准备材料",
+            "稳步推进"
+          ],
+          "timing": "中期"
+        },
+        "合同": {
+          "situation": "合同争议可控",
+          "reasons": [
+            "条款明确"
+          ],
+          "advice": [
+            "保留证据",
+            "依法主张"
+          ],
+          "timing": "近期"
+        },
+        "谈判": {
+          "situation": "谈判主动权较高",
+          "reasons": [
+            "筹码充分"
+          ],
+          "advice": [
+            "设定底线",
+            "避免拖延"
+          ],
+          "timing": "近期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "50": {
+      "name": "鼎",
+      "overall_tendency": "大吉",
+      "lawsuit_rating": 5,
+      "key_points": [
+        "证据较充分，胜算相对占优",
+        "宜走正规程序，稳步推进",
+        "注意时间与成本控制",
+        "保持沟通，避免激化"
+      ],
+      "scenario_specific": {
+        "纠纷": {
+          "situation": "处理相对顺利，立场较有利",
+          "reasons": [
+            "证据清晰"
+          ],
+          "advice": [
+            "按程序推进",
+            "保持沟通"
+          ],
+          "timing": "近期"
+        },
+        "仲裁": {
+          "situation": "仲裁结果存在积极可能",
+          "reasons": [
+            "规则有利"
+          ],
+          "advice": [
+            "准备材料",
+            "稳步推进"
+          ],
+          "timing": "中期"
+        },
+        "合同": {
+          "situation": "合同争议可控",
+          "reasons": [
+            "条款明确"
+          ],
+          "advice": [
+            "保留证据",
+            "依法主张"
+          ],
+          "timing": "近期"
+        },
+        "谈判": {
+          "situation": "谈判主动权较高",
+          "reasons": [
+            "筹码充分"
+          ],
+          "advice": [
+            "设定底线",
+            "避免拖延"
+          ],
+          "timing": "近期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "51": {
+      "name": "震",
+      "overall_tendency": "平",
+      "lawsuit_rating": 3,
+      "key_points": [
+        "胜负未定，需补强证据",
+        "谈判空间存在",
+        "注意时间成本与风险",
+        "建议寻求专业意见"
+      ],
+      "scenario_specific": {
+        "纠纷": {
+          "situation": "局势胶着",
+          "reasons": [
+            "证据一般"
+          ],
+          "advice": [
+            "补强证据",
+            "寻求调解"
+          ],
+          "timing": "中期"
+        },
+        "仲裁": {
+          "situation": "结果不明",
+          "reasons": [
+            "规则解读分歧"
+          ],
+          "advice": [
+            "咨询专业意见",
+            "做好备选"
+          ],
+          "timing": "中期"
+        },
+        "合同": {
+          "situation": "争议复杂",
+          "reasons": [
+            "条款模糊"
+          ],
+          "advice": [
+            "梳理事实",
+            "争取和解"
+          ],
+          "timing": "中期"
+        },
+        "谈判": {
+          "situation": "谈判空间存在",
+          "reasons": [
+            "双方顾虑"
+          ],
+          "advice": [
+            "提高方案可行性",
+            "控制情绪"
+          ],
+          "timing": "近期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "52": {
+      "name": "艮",
+      "overall_tendency": "平",
+      "lawsuit_rating": 3,
+      "key_points": [
+        "胜负未定，需补强证据",
+        "谈判空间存在",
+        "注意时间成本与风险",
+        "建议寻求专业意见"
+      ],
+      "scenario_specific": {
+        "纠纷": {
+          "situation": "局势胶着",
+          "reasons": [
+            "证据一般"
+          ],
+          "advice": [
+            "补强证据",
+            "寻求调解"
+          ],
+          "timing": "中期"
+        },
+        "仲裁": {
+          "situation": "结果不明",
+          "reasons": [
+            "规则解读分歧"
+          ],
+          "advice": [
+            "咨询专业意见",
+            "做好备选"
+          ],
+          "timing": "中期"
+        },
+        "合同": {
+          "situation": "争议复杂",
+          "reasons": [
+            "条款模糊"
+          ],
+          "advice": [
+            "梳理事实",
+            "争取和解"
+          ],
+          "timing": "中期"
+        },
+        "谈判": {
+          "situation": "谈判空间存在",
+          "reasons": [
+            "双方顾虑"
+          ],
+          "advice": [
+            "提高方案可行性",
+            "控制情绪"
+          ],
+          "timing": "近期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "53": {
+      "name": "渐",
+      "overall_tendency": "吉",
+      "lawsuit_rating": 4,
+      "key_points": [
+        "证据较充分，胜算相对占优",
+        "宜走正规程序，稳步推进",
+        "注意时间与成本控制",
+        "保持沟通，避免激化"
+      ],
+      "scenario_specific": {
+        "纠纷": {
+          "situation": "处理相对顺利，立场较有利",
+          "reasons": [
+            "证据清晰"
+          ],
+          "advice": [
+            "按程序推进",
+            "保持沟通"
+          ],
+          "timing": "近期"
+        },
+        "仲裁": {
+          "situation": "仲裁结果存在积极可能",
+          "reasons": [
+            "规则有利"
+          ],
+          "advice": [
+            "准备材料",
+            "稳步推进"
+          ],
+          "timing": "中期"
+        },
+        "合同": {
+          "situation": "合同争议可控",
+          "reasons": [
+            "条款明确"
+          ],
+          "advice": [
+            "保留证据",
+            "依法主张"
+          ],
+          "timing": "近期"
+        },
+        "谈判": {
+          "situation": "谈判主动权较高",
+          "reasons": [
+            "筹码充分"
+          ],
+          "advice": [
+            "设定底线",
+            "避免拖延"
+          ],
+          "timing": "近期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "54": {
+      "name": "归妹",
+      "overall_tendency": "不利",
+      "lawsuit_rating": 2,
+      "key_points": [
+        "风险偏高，证据不足",
+        "不宜冒进，优先协商",
+        "成本与不确定性较大",
+        "避免情绪化处理"
+      ],
+      "scenario_specific": {
+        "纠纷": {
+          "situation": "风险较高",
+          "reasons": [
+            "证据不足",
+            "对方强势"
+          ],
+          "advice": [
+            "谨慎推进",
+            "优先协商"
+          ],
+          "timing": "近期需谨慎"
+        },
+        "仲裁": {
+          "situation": "败诉风险偏高",
+          "reasons": [
+            "不利证据"
+          ],
+          "advice": [
+            "评估成本",
+            "考虑撤回"
+          ],
+          "timing": "中后期"
+        },
+        "合同": {
+          "situation": "不利因素多",
+          "reasons": [
+            "条款不清"
+          ],
+          "advice": [
+            "补充证据",
+            "寻求专业支持"
+          ],
+          "timing": "中期"
+        },
+        "谈判": {
+          "situation": "谈判易僵",
+          "reasons": [
+            "分歧大"
+          ],
+          "advice": [
+            "降温沟通",
+            "引入第三方"
+          ],
+          "timing": "近期谨慎"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "55": {
+      "name": "丰",
+      "overall_tendency": "大吉",
+      "lawsuit_rating": 5,
+      "key_points": [
+        "证据较充分，胜算相对占优",
+        "宜走正规程序，稳步推进",
+        "注意时间与成本控制",
+        "保持沟通，避免激化"
+      ],
+      "scenario_specific": {
+        "纠纷": {
+          "situation": "处理相对顺利，立场较有利",
+          "reasons": [
+            "证据清晰"
+          ],
+          "advice": [
+            "按程序推进",
+            "保持沟通"
+          ],
+          "timing": "近期"
+        },
+        "仲裁": {
+          "situation": "仲裁结果存在积极可能",
+          "reasons": [
+            "规则有利"
+          ],
+          "advice": [
+            "准备材料",
+            "稳步推进"
+          ],
+          "timing": "中期"
+        },
+        "合同": {
+          "situation": "合同争议可控",
+          "reasons": [
+            "条款明确"
+          ],
+          "advice": [
+            "保留证据",
+            "依法主张"
+          ],
+          "timing": "近期"
+        },
+        "谈判": {
+          "situation": "谈判主动权较高",
+          "reasons": [
+            "筹码充分"
+          ],
+          "advice": [
+            "设定底线",
+            "避免拖延"
+          ],
+          "timing": "近期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "56": {
+      "name": "旅",
+      "overall_tendency": "平",
+      "lawsuit_rating": 3,
+      "key_points": [
+        "胜负未定，需补强证据",
+        "谈判空间存在",
+        "注意时间成本与风险",
+        "建议寻求专业意见"
+      ],
+      "scenario_specific": {
+        "纠纷": {
+          "situation": "局势胶着",
+          "reasons": [
+            "证据一般"
+          ],
+          "advice": [
+            "补强证据",
+            "寻求调解"
+          ],
+          "timing": "中期"
+        },
+        "仲裁": {
+          "situation": "结果不明",
+          "reasons": [
+            "规则解读分歧"
+          ],
+          "advice": [
+            "咨询专业意见",
+            "做好备选"
+          ],
+          "timing": "中期"
+        },
+        "合同": {
+          "situation": "争议复杂",
+          "reasons": [
+            "条款模糊"
+          ],
+          "advice": [
+            "梳理事实",
+            "争取和解"
+          ],
+          "timing": "中期"
+        },
+        "谈判": {
+          "situation": "谈判空间存在",
+          "reasons": [
+            "双方顾虑"
+          ],
+          "advice": [
+            "提高方案可行性",
+            "控制情绪"
+          ],
+          "timing": "近期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "57": {
+      "name": "巽",
+      "overall_tendency": "吉",
+      "lawsuit_rating": 4,
+      "key_points": [
+        "证据较充分，胜算相对占优",
+        "宜走正规程序，稳步推进",
+        "注意时间与成本控制",
+        "保持沟通，避免激化"
+      ],
+      "scenario_specific": {
+        "纠纷": {
+          "situation": "处理相对顺利，立场较有利",
+          "reasons": [
+            "证据清晰"
+          ],
+          "advice": [
+            "按程序推进",
+            "保持沟通"
+          ],
+          "timing": "近期"
+        },
+        "仲裁": {
+          "situation": "仲裁结果存在积极可能",
+          "reasons": [
+            "规则有利"
+          ],
+          "advice": [
+            "准备材料",
+            "稳步推进"
+          ],
+          "timing": "中期"
+        },
+        "合同": {
+          "situation": "合同争议可控",
+          "reasons": [
+            "条款明确"
+          ],
+          "advice": [
+            "保留证据",
+            "依法主张"
+          ],
+          "timing": "近期"
+        },
+        "谈判": {
+          "situation": "谈判主动权较高",
+          "reasons": [
+            "筹码充分"
+          ],
+          "advice": [
+            "设定底线",
+            "避免拖延"
+          ],
+          "timing": "近期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "58": {
+      "name": "兑",
+      "overall_tendency": "吉",
+      "lawsuit_rating": 4,
+      "key_points": [
+        "证据较充分，胜算相对占优",
+        "宜走正规程序，稳步推进",
+        "注意时间与成本控制",
+        "保持沟通，避免激化"
+      ],
+      "scenario_specific": {
+        "纠纷": {
+          "situation": "处理相对顺利，立场较有利",
+          "reasons": [
+            "证据清晰"
+          ],
+          "advice": [
+            "按程序推进",
+            "保持沟通"
+          ],
+          "timing": "近期"
+        },
+        "仲裁": {
+          "situation": "仲裁结果存在积极可能",
+          "reasons": [
+            "规则有利"
+          ],
+          "advice": [
+            "准备材料",
+            "稳步推进"
+          ],
+          "timing": "中期"
+        },
+        "合同": {
+          "situation": "合同争议可控",
+          "reasons": [
+            "条款明确"
+          ],
+          "advice": [
+            "保留证据",
+            "依法主张"
+          ],
+          "timing": "近期"
+        },
+        "谈判": {
+          "situation": "谈判主动权较高",
+          "reasons": [
+            "筹码充分"
+          ],
+          "advice": [
+            "设定底线",
+            "避免拖延"
+          ],
+          "timing": "近期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "59": {
+      "name": "涣",
+      "overall_tendency": "平",
+      "lawsuit_rating": 3,
+      "key_points": [
+        "胜负未定，需补强证据",
+        "谈判空间存在",
+        "注意时间成本与风险",
+        "建议寻求专业意见"
+      ],
+      "scenario_specific": {
+        "纠纷": {
+          "situation": "局势胶着",
+          "reasons": [
+            "证据一般"
+          ],
+          "advice": [
+            "补强证据",
+            "寻求调解"
+          ],
+          "timing": "中期"
+        },
+        "仲裁": {
+          "situation": "结果不明",
+          "reasons": [
+            "规则解读分歧"
+          ],
+          "advice": [
+            "咨询专业意见",
+            "做好备选"
+          ],
+          "timing": "中期"
+        },
+        "合同": {
+          "situation": "争议复杂",
+          "reasons": [
+            "条款模糊"
+          ],
+          "advice": [
+            "梳理事实",
+            "争取和解"
+          ],
+          "timing": "中期"
+        },
+        "谈判": {
+          "situation": "谈判空间存在",
+          "reasons": [
+            "双方顾虑"
+          ],
+          "advice": [
+            "提高方案可行性",
+            "控制情绪"
+          ],
+          "timing": "近期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "60": {
+      "name": "节",
+      "overall_tendency": "平",
+      "lawsuit_rating": 3,
+      "key_points": [
+        "胜负未定，需补强证据",
+        "谈判空间存在",
+        "注意时间成本与风险",
+        "建议寻求专业意见"
+      ],
+      "scenario_specific": {
+        "纠纷": {
+          "situation": "局势胶着",
+          "reasons": [
+            "证据一般"
+          ],
+          "advice": [
+            "补强证据",
+            "寻求调解"
+          ],
+          "timing": "中期"
+        },
+        "仲裁": {
+          "situation": "结果不明",
+          "reasons": [
+            "规则解读分歧"
+          ],
+          "advice": [
+            "咨询专业意见",
+            "做好备选"
+          ],
+          "timing": "中期"
+        },
+        "合同": {
+          "situation": "争议复杂",
+          "reasons": [
+            "条款模糊"
+          ],
+          "advice": [
+            "梳理事实",
+            "争取和解"
+          ],
+          "timing": "中期"
+        },
+        "谈判": {
+          "situation": "谈判空间存在",
+          "reasons": [
+            "双方顾虑"
+          ],
+          "advice": [
+            "提高方案可行性",
+            "控制情绪"
+          ],
+          "timing": "近期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "61": {
+      "name": "中孚",
+      "overall_tendency": "吉",
+      "lawsuit_rating": 4,
+      "key_points": [
+        "证据较充分，胜算相对占优",
+        "宜走正规程序，稳步推进",
+        "注意时间与成本控制",
+        "保持沟通，避免激化"
+      ],
+      "scenario_specific": {
+        "纠纷": {
+          "situation": "处理相对顺利，立场较有利",
+          "reasons": [
+            "证据清晰"
+          ],
+          "advice": [
+            "按程序推进",
+            "保持沟通"
+          ],
+          "timing": "近期"
+        },
+        "仲裁": {
+          "situation": "仲裁结果存在积极可能",
+          "reasons": [
+            "规则有利"
+          ],
+          "advice": [
+            "准备材料",
+            "稳步推进"
+          ],
+          "timing": "中期"
+        },
+        "合同": {
+          "situation": "合同争议可控",
+          "reasons": [
+            "条款明确"
+          ],
+          "advice": [
+            "保留证据",
+            "依法主张"
+          ],
+          "timing": "近期"
+        },
+        "谈判": {
+          "situation": "谈判主动权较高",
+          "reasons": [
+            "筹码充分"
+          ],
+          "advice": [
+            "设定底线",
+            "避免拖延"
+          ],
+          "timing": "近期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "62": {
+      "name": "小过",
+      "overall_tendency": "平",
+      "lawsuit_rating": 3,
+      "key_points": [
+        "胜负未定，需补强证据",
+        "谈判空间存在",
+        "注意时间成本与风险",
+        "建议寻求专业意见"
+      ],
+      "scenario_specific": {
+        "纠纷": {
+          "situation": "局势胶着",
+          "reasons": [
+            "证据一般"
+          ],
+          "advice": [
+            "补强证据",
+            "寻求调解"
+          ],
+          "timing": "中期"
+        },
+        "仲裁": {
+          "situation": "结果不明",
+          "reasons": [
+            "规则解读分歧"
+          ],
+          "advice": [
+            "咨询专业意见",
+            "做好备选"
+          ],
+          "timing": "中期"
+        },
+        "合同": {
+          "situation": "争议复杂",
+          "reasons": [
+            "条款模糊"
+          ],
+          "advice": [
+            "梳理事实",
+            "争取和解"
+          ],
+          "timing": "中期"
+        },
+        "谈判": {
+          "situation": "谈判空间存在",
+          "reasons": [
+            "双方顾虑"
+          ],
+          "advice": [
+            "提高方案可行性",
+            "控制情绪"
+          ],
+          "timing": "近期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "63": {
+      "name": "既济",
+      "overall_tendency": "吉",
+      "lawsuit_rating": 4,
+      "key_points": [
+        "证据较充分，胜算相对占优",
+        "宜走正规程序，稳步推进",
+        "注意时间与成本控制",
+        "保持沟通，避免激化"
+      ],
+      "scenario_specific": {
+        "纠纷": {
+          "situation": "处理相对顺利，立场较有利",
+          "reasons": [
+            "证据清晰"
+          ],
+          "advice": [
+            "按程序推进",
+            "保持沟通"
+          ],
+          "timing": "近期"
+        },
+        "仲裁": {
+          "situation": "仲裁结果存在积极可能",
+          "reasons": [
+            "规则有利"
+          ],
+          "advice": [
+            "准备材料",
+            "稳步推进"
+          ],
+          "timing": "中期"
+        },
+        "合同": {
+          "situation": "合同争议可控",
+          "reasons": [
+            "条款明确"
+          ],
+          "advice": [
+            "保留证据",
+            "依法主张"
+          ],
+          "timing": "近期"
+        },
+        "谈判": {
+          "situation": "谈判主动权较高",
+          "reasons": [
+            "筹码充分"
+          ],
+          "advice": [
+            "设定底线",
+            "避免拖延"
+          ],
+          "timing": "近期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "64": {
+      "name": "未济",
+      "overall_tendency": "平",
+      "lawsuit_rating": 3,
+      "key_points": [
+        "胜负未定，需补强证据",
+        "谈判空间存在",
+        "注意时间成本与风险",
+        "建议寻求专业意见"
+      ],
+      "scenario_specific": {
+        "纠纷": {
+          "situation": "局势胶着",
+          "reasons": [
+            "证据一般"
+          ],
+          "advice": [
+            "补强证据",
+            "寻求调解"
+          ],
+          "timing": "中期"
+        },
+        "仲裁": {
+          "situation": "结果不明",
+          "reasons": [
+            "规则解读分歧"
+          ],
+          "advice": [
+            "咨询专业意见",
+            "做好备选"
+          ],
+          "timing": "中期"
+        },
+        "合同": {
+          "situation": "争议复杂",
+          "reasons": [
+            "条款模糊"
+          ],
+          "advice": [
+            "梳理事实",
+            "争取和解"
+          ],
+          "timing": "中期"
+        },
+        "谈判": {
+          "situation": "谈判空间存在",
+          "reasons": [
+            "双方顾虑"
+          ],
+          "advice": [
+            "提高方案可行性",
+            "控制情绪"
+          ],
+          "timing": "近期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    }
+  },
+  "notes": [
+    "本场景必须输出关键免责声明",
+    "所有卦象数据需包含 source_ref"
+  ]
+}

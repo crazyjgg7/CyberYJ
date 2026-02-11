@@ -1,0 +1,4030 @@
+{
+  "version": "1.0",
+  "scenario_info": {
+    "name": "家庭",
+    "code": "family",
+    "description": "夫妻、亲子、长辈与家庭关系",
+    "sub_scenarios": [
+      "夫妻",
+      "亲子",
+      "长辈",
+      "关系"
+    ],
+    "requires_disclaimer": false
+  },
+  "analysis_framework": {
+    "dimensions": [
+      "关系状态",
+      "沟通模式",
+      "责任分工",
+      "矛盾化解",
+      "稳定性"
+    ],
+    "focus": "以沟通与责任为主，稳定优先",
+    "key_aspects": [
+      "关系稳定性",
+      "沟通效率",
+      "责任与边界",
+      "矛盾处理"
+    ]
+  },
+  "output_structure": {
+    "template_id": "family_standard",
+    "sections": [
+      {
+        "id": "overall_family",
+        "title": "家庭总览",
+        "type": "summary",
+        "required": true,
+        "includes": [
+          "状态评级",
+          "总体判断",
+          "核心建议"
+        ]
+      },
+      {
+        "id": "hexagram_analysis",
+        "title": "卦象解析",
+        "type": "explanation",
+        "required": true,
+        "includes": [
+          "卦象含义",
+          "五行关系",
+          "关键词解读"
+        ]
+      },
+      {
+        "id": "family_details",
+        "title": "家庭详解",
+        "type": "detailed_analysis",
+        "required": true,
+        "sub_sections": [
+          {
+            "id": "communication",
+            "title": "沟通",
+            "description": "沟通质量与效率"
+          },
+          {
+            "id": "responsibility",
+            "title": "责任分工",
+            "description": "责任与边界"
+          },
+          {
+            "id": "conflict",
+            "title": "矛盾化解",
+            "description": "冲突处理方式"
+          },
+          {
+            "id": "stability",
+            "title": "稳定性",
+            "description": "关系稳定程度"
+          }
+        ]
+      },
+      {
+        "id": "action_guide",
+        "title": "行动建议",
+        "type": "advice",
+        "required": true,
+        "format": {
+          "do": "宜做事项（3-5条）",
+          "dont": "忌做事项（3-5条）"
+        }
+      }
+    ]
+  },
+  "prompt_template": {
+    "system_role": "你是一位理性且有同理心的家庭关系顾问，强调沟通与责任。",
+    "analysis_focus": [
+      "关注沟通与边界",
+      "强调稳定与长期经营",
+      "建议可执行"
+    ],
+    "output_requirements": [
+      "结构清晰",
+      "语气克制"
+    ]
+  },
+  "hexagrams": {
+    "1": {
+      "name": "乾",
+      "overall_tendency": "大吉",
+      "family_rating": 5,
+      "key_points": [
+        "家庭关系较和谐，互动顺畅",
+        "沟通较有效，理解增加",
+        "责任分工较清晰",
+        "注意持续经营与关怀"
+      ],
+      "scenario_specific": {
+        "夫妻": {
+          "situation": "关系较稳，互动积极",
+          "reasons": [
+            "互相支持"
+          ],
+          "advice": [
+            "保持沟通",
+            "安排共同时间"
+          ],
+          "timing": "近期"
+        },
+        "亲子": {
+          "situation": "亲子互动顺畅",
+          "reasons": [
+            "陪伴充分"
+          ],
+          "advice": [
+            "肯定引导",
+            "保持规则"
+          ],
+          "timing": "持续"
+        },
+        "长辈": {
+          "situation": "长辈关系和睦",
+          "reasons": [
+            "尊重体贴"
+          ],
+          "advice": [
+            "定期关心",
+            "注意健康"
+          ],
+          "timing": "持续"
+        },
+        "关系": {
+          "situation": "家庭氛围较稳定",
+          "reasons": [
+            "分工明确"
+          ],
+          "advice": [
+            "明确责任",
+            "持续经营"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "2": {
+      "name": "坤",
+      "overall_tendency": "大吉",
+      "family_rating": 5,
+      "key_points": [
+        "家庭关系较和谐，互动顺畅",
+        "沟通较有效，理解增加",
+        "责任分工较清晰",
+        "注意持续经营与关怀"
+      ],
+      "scenario_specific": {
+        "夫妻": {
+          "situation": "关系较稳，互动积极",
+          "reasons": [
+            "互相支持"
+          ],
+          "advice": [
+            "保持沟通",
+            "安排共同时间"
+          ],
+          "timing": "近期"
+        },
+        "亲子": {
+          "situation": "亲子互动顺畅",
+          "reasons": [
+            "陪伴充分"
+          ],
+          "advice": [
+            "肯定引导",
+            "保持规则"
+          ],
+          "timing": "持续"
+        },
+        "长辈": {
+          "situation": "长辈关系和睦",
+          "reasons": [
+            "尊重体贴"
+          ],
+          "advice": [
+            "定期关心",
+            "注意健康"
+          ],
+          "timing": "持续"
+        },
+        "关系": {
+          "situation": "家庭氛围较稳定",
+          "reasons": [
+            "分工明确"
+          ],
+          "advice": [
+            "明确责任",
+            "持续经营"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "3": {
+      "name": "屯",
+      "overall_tendency": "不利",
+      "family_rating": 2,
+      "key_points": [
+        "矛盾增多，沟通受阻",
+        "责任失衡，情绪波动",
+        "建议先降温再处理",
+        "避免激化冲突"
+      ],
+      "scenario_specific": {
+        "夫妻": {
+          "situation": "矛盾明显，容易争执",
+          "reasons": [
+            "误解累积",
+            "情绪化"
+          ],
+          "advice": [
+            "先降温",
+            "寻求第三方沟通"
+          ],
+          "timing": "近期需处理"
+        },
+        "亲子": {
+          "situation": "对立情绪增加",
+          "reasons": [
+            "期待不一致"
+          ],
+          "advice": [
+            "调整期望",
+            "增加理解"
+          ],
+          "timing": "中期"
+        },
+        "长辈": {
+          "situation": "观点冲突",
+          "reasons": [
+            "代际差异"
+          ],
+          "advice": [
+            "尊重差异",
+            "减少正面冲突"
+          ],
+          "timing": "中期"
+        },
+        "关系": {
+          "situation": "家庭氛围紧张",
+          "reasons": [
+            "责任失衡"
+          ],
+          "advice": [
+            "重新分工",
+            "建立边界"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "4": {
+      "name": "蒙",
+      "overall_tendency": "平",
+      "family_rating": 3,
+      "key_points": [
+        "关系平稳但仍需维护",
+        "沟通需加强，避免冷处理",
+        "边界与责任需明确",
+        "及时化解小矛盾"
+      ],
+      "scenario_specific": {
+        "夫妻": {
+          "situation": "关系平稳但略显疏离",
+          "reasons": [
+            "沟通不足"
+          ],
+          "advice": [
+            "增加交流",
+            "减少指责"
+          ],
+          "timing": "中期"
+        },
+        "亲子": {
+          "situation": "互动一般",
+          "reasons": [
+            "陪伴不足"
+          ],
+          "advice": [
+            "增加高质量陪伴",
+            "建立规则"
+          ],
+          "timing": "中期"
+        },
+        "长辈": {
+          "situation": "关系尚可",
+          "reasons": [
+            "联系较少"
+          ],
+          "advice": [
+            "主动问候",
+            "尊重边界"
+          ],
+          "timing": "中期"
+        },
+        "关系": {
+          "situation": "整体稳定但易起波澜",
+          "reasons": [
+            "压力累积"
+          ],
+          "advice": [
+            "定期沟通",
+            "及时化解小矛盾"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "5": {
+      "name": "需",
+      "overall_tendency": "平",
+      "family_rating": 3,
+      "key_points": [
+        "关系平稳但仍需维护",
+        "沟通需加强，避免冷处理",
+        "边界与责任需明确",
+        "及时化解小矛盾"
+      ],
+      "scenario_specific": {
+        "夫妻": {
+          "situation": "关系平稳但略显疏离",
+          "reasons": [
+            "沟通不足"
+          ],
+          "advice": [
+            "增加交流",
+            "减少指责"
+          ],
+          "timing": "中期"
+        },
+        "亲子": {
+          "situation": "互动一般",
+          "reasons": [
+            "陪伴不足"
+          ],
+          "advice": [
+            "增加高质量陪伴",
+            "建立规则"
+          ],
+          "timing": "中期"
+        },
+        "长辈": {
+          "situation": "关系尚可",
+          "reasons": [
+            "联系较少"
+          ],
+          "advice": [
+            "主动问候",
+            "尊重边界"
+          ],
+          "timing": "中期"
+        },
+        "关系": {
+          "situation": "整体稳定但易起波澜",
+          "reasons": [
+            "压力累积"
+          ],
+          "advice": [
+            "定期沟通",
+            "及时化解小矛盾"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "6": {
+      "name": "讼",
+      "overall_tendency": "不利",
+      "family_rating": 2,
+      "key_points": [
+        "矛盾增多，沟通受阻",
+        "责任失衡，情绪波动",
+        "建议先降温再处理",
+        "避免激化冲突"
+      ],
+      "scenario_specific": {
+        "夫妻": {
+          "situation": "矛盾明显，容易争执",
+          "reasons": [
+            "误解累积",
+            "情绪化"
+          ],
+          "advice": [
+            "先降温",
+            "寻求第三方沟通"
+          ],
+          "timing": "近期需处理"
+        },
+        "亲子": {
+          "situation": "对立情绪增加",
+          "reasons": [
+            "期待不一致"
+          ],
+          "advice": [
+            "调整期望",
+            "增加理解"
+          ],
+          "timing": "中期"
+        },
+        "长辈": {
+          "situation": "观点冲突",
+          "reasons": [
+            "代际差异"
+          ],
+          "advice": [
+            "尊重差异",
+            "减少正面冲突"
+          ],
+          "timing": "中期"
+        },
+        "关系": {
+          "situation": "家庭氛围紧张",
+          "reasons": [
+            "责任失衡"
+          ],
+          "advice": [
+            "重新分工",
+            "建立边界"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "7": {
+      "name": "师",
+      "overall_tendency": "吉",
+      "family_rating": 4,
+      "key_points": [
+        "家庭关系较和谐，互动顺畅",
+        "沟通较有效，理解增加",
+        "责任分工较清晰",
+        "注意持续经营与关怀"
+      ],
+      "scenario_specific": {
+        "夫妻": {
+          "situation": "关系较稳，互动积极",
+          "reasons": [
+            "互相支持"
+          ],
+          "advice": [
+            "保持沟通",
+            "安排共同时间"
+          ],
+          "timing": "近期"
+        },
+        "亲子": {
+          "situation": "亲子互动顺畅",
+          "reasons": [
+            "陪伴充分"
+          ],
+          "advice": [
+            "肯定引导",
+            "保持规则"
+          ],
+          "timing": "持续"
+        },
+        "长辈": {
+          "situation": "长辈关系和睦",
+          "reasons": [
+            "尊重体贴"
+          ],
+          "advice": [
+            "定期关心",
+            "注意健康"
+          ],
+          "timing": "持续"
+        },
+        "关系": {
+          "situation": "家庭氛围较稳定",
+          "reasons": [
+            "分工明确"
+          ],
+          "advice": [
+            "明确责任",
+            "持续经营"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "8": {
+      "name": "比",
+      "overall_tendency": "吉",
+      "family_rating": 4,
+      "key_points": [
+        "家庭关系较和谐，互动顺畅",
+        "沟通较有效，理解增加",
+        "责任分工较清晰",
+        "注意持续经营与关怀"
+      ],
+      "scenario_specific": {
+        "夫妻": {
+          "situation": "关系较稳，互动积极",
+          "reasons": [
+            "互相支持"
+          ],
+          "advice": [
+            "保持沟通",
+            "安排共同时间"
+          ],
+          "timing": "近期"
+        },
+        "亲子": {
+          "situation": "亲子互动顺畅",
+          "reasons": [
+            "陪伴充分"
+          ],
+          "advice": [
+            "肯定引导",
+            "保持规则"
+          ],
+          "timing": "持续"
+        },
+        "长辈": {
+          "situation": "长辈关系和睦",
+          "reasons": [
+            "尊重体贴"
+          ],
+          "advice": [
+            "定期关心",
+            "注意健康"
+          ],
+          "timing": "持续"
+        },
+        "关系": {
+          "situation": "家庭氛围较稳定",
+          "reasons": [
+            "分工明确"
+          ],
+          "advice": [
+            "明确责任",
+            "持续经营"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "9": {
+      "name": "小畜",
+      "overall_tendency": "平",
+      "family_rating": 3,
+      "key_points": [
+        "关系平稳但仍需维护",
+        "沟通需加强，避免冷处理",
+        "边界与责任需明确",
+        "及时化解小矛盾"
+      ],
+      "scenario_specific": {
+        "夫妻": {
+          "situation": "关系平稳但略显疏离",
+          "reasons": [
+            "沟通不足"
+          ],
+          "advice": [
+            "增加交流",
+            "减少指责"
+          ],
+          "timing": "中期"
+        },
+        "亲子": {
+          "situation": "互动一般",
+          "reasons": [
+            "陪伴不足"
+          ],
+          "advice": [
+            "增加高质量陪伴",
+            "建立规则"
+          ],
+          "timing": "中期"
+        },
+        "长辈": {
+          "situation": "关系尚可",
+          "reasons": [
+            "联系较少"
+          ],
+          "advice": [
+            "主动问候",
+            "尊重边界"
+          ],
+          "timing": "中期"
+        },
+        "关系": {
+          "situation": "整体稳定但易起波澜",
+          "reasons": [
+            "压力累积"
+          ],
+          "advice": [
+            "定期沟通",
+            "及时化解小矛盾"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "10": {
+      "name": "履",
+      "overall_tendency": "平",
+      "family_rating": 3,
+      "key_points": [
+        "关系平稳但仍需维护",
+        "沟通需加强，避免冷处理",
+        "边界与责任需明确",
+        "及时化解小矛盾"
+      ],
+      "scenario_specific": {
+        "夫妻": {
+          "situation": "关系平稳但略显疏离",
+          "reasons": [
+            "沟通不足"
+          ],
+          "advice": [
+            "增加交流",
+            "减少指责"
+          ],
+          "timing": "中期"
+        },
+        "亲子": {
+          "situation": "互动一般",
+          "reasons": [
+            "陪伴不足"
+          ],
+          "advice": [
+            "增加高质量陪伴",
+            "建立规则"
+          ],
+          "timing": "中期"
+        },
+        "长辈": {
+          "situation": "关系尚可",
+          "reasons": [
+            "联系较少"
+          ],
+          "advice": [
+            "主动问候",
+            "尊重边界"
+          ],
+          "timing": "中期"
+        },
+        "关系": {
+          "situation": "整体稳定但易起波澜",
+          "reasons": [
+            "压力累积"
+          ],
+          "advice": [
+            "定期沟通",
+            "及时化解小矛盾"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "11": {
+      "name": "泰",
+      "overall_tendency": "吉",
+      "family_rating": 4,
+      "key_points": [
+        "家庭关系较和谐，互动顺畅",
+        "沟通较有效，理解增加",
+        "责任分工较清晰",
+        "注意持续经营与关怀"
+      ],
+      "scenario_specific": {
+        "夫妻": {
+          "situation": "关系较稳，互动积极",
+          "reasons": [
+            "互相支持"
+          ],
+          "advice": [
+            "保持沟通",
+            "安排共同时间"
+          ],
+          "timing": "近期"
+        },
+        "亲子": {
+          "situation": "亲子互动顺畅",
+          "reasons": [
+            "陪伴充分"
+          ],
+          "advice": [
+            "肯定引导",
+            "保持规则"
+          ],
+          "timing": "持续"
+        },
+        "长辈": {
+          "situation": "长辈关系和睦",
+          "reasons": [
+            "尊重体贴"
+          ],
+          "advice": [
+            "定期关心",
+            "注意健康"
+          ],
+          "timing": "持续"
+        },
+        "关系": {
+          "situation": "家庭氛围较稳定",
+          "reasons": [
+            "分工明确"
+          ],
+          "advice": [
+            "明确责任",
+            "持续经营"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "12": {
+      "name": "否",
+      "overall_tendency": "凶",
+      "family_rating": 2,
+      "key_points": [
+        "矛盾增多，沟通受阻",
+        "责任失衡，情绪波动",
+        "建议先降温再处理",
+        "避免激化冲突"
+      ],
+      "scenario_specific": {
+        "夫妻": {
+          "situation": "矛盾明显，容易争执",
+          "reasons": [
+            "误解累积",
+            "情绪化"
+          ],
+          "advice": [
+            "先降温",
+            "寻求第三方沟通"
+          ],
+          "timing": "近期需处理"
+        },
+        "亲子": {
+          "situation": "对立情绪增加",
+          "reasons": [
+            "期待不一致"
+          ],
+          "advice": [
+            "调整期望",
+            "增加理解"
+          ],
+          "timing": "中期"
+        },
+        "长辈": {
+          "situation": "观点冲突",
+          "reasons": [
+            "代际差异"
+          ],
+          "advice": [
+            "尊重差异",
+            "减少正面冲突"
+          ],
+          "timing": "中期"
+        },
+        "关系": {
+          "situation": "家庭氛围紧张",
+          "reasons": [
+            "责任失衡"
+          ],
+          "advice": [
+            "重新分工",
+            "建立边界"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "13": {
+      "name": "同人",
+      "overall_tendency": "吉",
+      "family_rating": 4,
+      "key_points": [
+        "家庭关系较和谐，互动顺畅",
+        "沟通较有效，理解增加",
+        "责任分工较清晰",
+        "注意持续经营与关怀"
+      ],
+      "scenario_specific": {
+        "夫妻": {
+          "situation": "关系较稳，互动积极",
+          "reasons": [
+            "互相支持"
+          ],
+          "advice": [
+            "保持沟通",
+            "安排共同时间"
+          ],
+          "timing": "近期"
+        },
+        "亲子": {
+          "situation": "亲子互动顺畅",
+          "reasons": [
+            "陪伴充分"
+          ],
+          "advice": [
+            "肯定引导",
+            "保持规则"
+          ],
+          "timing": "持续"
+        },
+        "长辈": {
+          "situation": "长辈关系和睦",
+          "reasons": [
+            "尊重体贴"
+          ],
+          "advice": [
+            "定期关心",
+            "注意健康"
+          ],
+          "timing": "持续"
+        },
+        "关系": {
+          "situation": "家庭氛围较稳定",
+          "reasons": [
+            "分工明确"
+          ],
+          "advice": [
+            "明确责任",
+            "持续经营"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "14": {
+      "name": "大有",
+      "overall_tendency": "大吉",
+      "family_rating": 5,
+      "key_points": [
+        "家庭关系较和谐，互动顺畅",
+        "沟通较有效，理解增加",
+        "责任分工较清晰",
+        "注意持续经营与关怀"
+      ],
+      "scenario_specific": {
+        "夫妻": {
+          "situation": "关系较稳，互动积极",
+          "reasons": [
+            "互相支持"
+          ],
+          "advice": [
+            "保持沟通",
+            "安排共同时间"
+          ],
+          "timing": "近期"
+        },
+        "亲子": {
+          "situation": "亲子互动顺畅",
+          "reasons": [
+            "陪伴充分"
+          ],
+          "advice": [
+            "肯定引导",
+            "保持规则"
+          ],
+          "timing": "持续"
+        },
+        "长辈": {
+          "situation": "长辈关系和睦",
+          "reasons": [
+            "尊重体贴"
+          ],
+          "advice": [
+            "定期关心",
+            "注意健康"
+          ],
+          "timing": "持续"
+        },
+        "关系": {
+          "situation": "家庭氛围较稳定",
+          "reasons": [
+            "分工明确"
+          ],
+          "advice": [
+            "明确责任",
+            "持续经营"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "15": {
+      "name": "谦",
+      "overall_tendency": "吉",
+      "family_rating": 4,
+      "key_points": [
+        "家庭关系较和谐，互动顺畅",
+        "沟通较有效，理解增加",
+        "责任分工较清晰",
+        "注意持续经营与关怀"
+      ],
+      "scenario_specific": {
+        "夫妻": {
+          "situation": "关系较稳，互动积极",
+          "reasons": [
+            "互相支持"
+          ],
+          "advice": [
+            "保持沟通",
+            "安排共同时间"
+          ],
+          "timing": "近期"
+        },
+        "亲子": {
+          "situation": "亲子互动顺畅",
+          "reasons": [
+            "陪伴充分"
+          ],
+          "advice": [
+            "肯定引导",
+            "保持规则"
+          ],
+          "timing": "持续"
+        },
+        "长辈": {
+          "situation": "长辈关系和睦",
+          "reasons": [
+            "尊重体贴"
+          ],
+          "advice": [
+            "定期关心",
+            "注意健康"
+          ],
+          "timing": "持续"
+        },
+        "关系": {
+          "situation": "家庭氛围较稳定",
+          "reasons": [
+            "分工明确"
+          ],
+          "advice": [
+            "明确责任",
+            "持续经营"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "16": {
+      "name": "豫",
+      "overall_tendency": "吉",
+      "family_rating": 4,
+      "key_points": [
+        "家庭关系较和谐，互动顺畅",
+        "沟通较有效，理解增加",
+        "责任分工较清晰",
+        "注意持续经营与关怀"
+      ],
+      "scenario_specific": {
+        "夫妻": {
+          "situation": "关系较稳，互动积极",
+          "reasons": [
+            "互相支持"
+          ],
+          "advice": [
+            "保持沟通",
+            "安排共同时间"
+          ],
+          "timing": "近期"
+        },
+        "亲子": {
+          "situation": "亲子互动顺畅",
+          "reasons": [
+            "陪伴充分"
+          ],
+          "advice": [
+            "肯定引导",
+            "保持规则"
+          ],
+          "timing": "持续"
+        },
+        "长辈": {
+          "situation": "长辈关系和睦",
+          "reasons": [
+            "尊重体贴"
+          ],
+          "advice": [
+            "定期关心",
+            "注意健康"
+          ],
+          "timing": "持续"
+        },
+        "关系": {
+          "situation": "家庭氛围较稳定",
+          "reasons": [
+            "分工明确"
+          ],
+          "advice": [
+            "明确责任",
+            "持续经营"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "17": {
+      "name": "随",
+      "overall_tendency": "吉",
+      "family_rating": 4,
+      "key_points": [
+        "家庭关系较和谐，互动顺畅",
+        "沟通较有效，理解增加",
+        "责任分工较清晰",
+        "注意持续经营与关怀"
+      ],
+      "scenario_specific": {
+        "夫妻": {
+          "situation": "关系较稳，互动积极",
+          "reasons": [
+            "互相支持"
+          ],
+          "advice": [
+            "保持沟通",
+            "安排共同时间"
+          ],
+          "timing": "近期"
+        },
+        "亲子": {
+          "situation": "亲子互动顺畅",
+          "reasons": [
+            "陪伴充分"
+          ],
+          "advice": [
+            "肯定引导",
+            "保持规则"
+          ],
+          "timing": "持续"
+        },
+        "长辈": {
+          "situation": "长辈关系和睦",
+          "reasons": [
+            "尊重体贴"
+          ],
+          "advice": [
+            "定期关心",
+            "注意健康"
+          ],
+          "timing": "持续"
+        },
+        "关系": {
+          "situation": "家庭氛围较稳定",
+          "reasons": [
+            "分工明确"
+          ],
+          "advice": [
+            "明确责任",
+            "持续经营"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "18": {
+      "name": "蛊",
+      "overall_tendency": "不利",
+      "family_rating": 2,
+      "key_points": [
+        "矛盾增多，沟通受阻",
+        "责任失衡，情绪波动",
+        "建议先降温再处理",
+        "避免激化冲突"
+      ],
+      "scenario_specific": {
+        "夫妻": {
+          "situation": "矛盾明显，容易争执",
+          "reasons": [
+            "误解累积",
+            "情绪化"
+          ],
+          "advice": [
+            "先降温",
+            "寻求第三方沟通"
+          ],
+          "timing": "近期需处理"
+        },
+        "亲子": {
+          "situation": "对立情绪增加",
+          "reasons": [
+            "期待不一致"
+          ],
+          "advice": [
+            "调整期望",
+            "增加理解"
+          ],
+          "timing": "中期"
+        },
+        "长辈": {
+          "situation": "观点冲突",
+          "reasons": [
+            "代际差异"
+          ],
+          "advice": [
+            "尊重差异",
+            "减少正面冲突"
+          ],
+          "timing": "中期"
+        },
+        "关系": {
+          "situation": "家庭氛围紧张",
+          "reasons": [
+            "责任失衡"
+          ],
+          "advice": [
+            "重新分工",
+            "建立边界"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "19": {
+      "name": "临",
+      "overall_tendency": "吉",
+      "family_rating": 4,
+      "key_points": [
+        "家庭关系较和谐，互动顺畅",
+        "沟通较有效，理解增加",
+        "责任分工较清晰",
+        "注意持续经营与关怀"
+      ],
+      "scenario_specific": {
+        "夫妻": {
+          "situation": "关系较稳，互动积极",
+          "reasons": [
+            "互相支持"
+          ],
+          "advice": [
+            "保持沟通",
+            "安排共同时间"
+          ],
+          "timing": "近期"
+        },
+        "亲子": {
+          "situation": "亲子互动顺畅",
+          "reasons": [
+            "陪伴充分"
+          ],
+          "advice": [
+            "肯定引导",
+            "保持规则"
+          ],
+          "timing": "持续"
+        },
+        "长辈": {
+          "situation": "长辈关系和睦",
+          "reasons": [
+            "尊重体贴"
+          ],
+          "advice": [
+            "定期关心",
+            "注意健康"
+          ],
+          "timing": "持续"
+        },
+        "关系": {
+          "situation": "家庭氛围较稳定",
+          "reasons": [
+            "分工明确"
+          ],
+          "advice": [
+            "明确责任",
+            "持续经营"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "20": {
+      "name": "观",
+      "overall_tendency": "平",
+      "family_rating": 3,
+      "key_points": [
+        "关系平稳但仍需维护",
+        "沟通需加强，避免冷处理",
+        "边界与责任需明确",
+        "及时化解小矛盾"
+      ],
+      "scenario_specific": {
+        "夫妻": {
+          "situation": "关系平稳但略显疏离",
+          "reasons": [
+            "沟通不足"
+          ],
+          "advice": [
+            "增加交流",
+            "减少指责"
+          ],
+          "timing": "中期"
+        },
+        "亲子": {
+          "situation": "互动一般",
+          "reasons": [
+            "陪伴不足"
+          ],
+          "advice": [
+            "增加高质量陪伴",
+            "建立规则"
+          ],
+          "timing": "中期"
+        },
+        "长辈": {
+          "situation": "关系尚可",
+          "reasons": [
+            "联系较少"
+          ],
+          "advice": [
+            "主动问候",
+            "尊重边界"
+          ],
+          "timing": "中期"
+        },
+        "关系": {
+          "situation": "整体稳定但易起波澜",
+          "reasons": [
+            "压力累积"
+          ],
+          "advice": [
+            "定期沟通",
+            "及时化解小矛盾"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "21": {
+      "name": "噬嗑",
+      "overall_tendency": "平",
+      "family_rating": 3,
+      "key_points": [
+        "关系平稳但仍需维护",
+        "沟通需加强，避免冷处理",
+        "边界与责任需明确",
+        "及时化解小矛盾"
+      ],
+      "scenario_specific": {
+        "夫妻": {
+          "situation": "关系平稳但略显疏离",
+          "reasons": [
+            "沟通不足"
+          ],
+          "advice": [
+            "增加交流",
+            "减少指责"
+          ],
+          "timing": "中期"
+        },
+        "亲子": {
+          "situation": "互动一般",
+          "reasons": [
+            "陪伴不足"
+          ],
+          "advice": [
+            "增加高质量陪伴",
+            "建立规则"
+          ],
+          "timing": "中期"
+        },
+        "长辈": {
+          "situation": "关系尚可",
+          "reasons": [
+            "联系较少"
+          ],
+          "advice": [
+            "主动问候",
+            "尊重边界"
+          ],
+          "timing": "中期"
+        },
+        "关系": {
+          "situation": "整体稳定但易起波澜",
+          "reasons": [
+            "压力累积"
+          ],
+          "advice": [
+            "定期沟通",
+            "及时化解小矛盾"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "22": {
+      "name": "贲",
+      "overall_tendency": "吉",
+      "family_rating": 4,
+      "key_points": [
+        "家庭关系较和谐，互动顺畅",
+        "沟通较有效，理解增加",
+        "责任分工较清晰",
+        "注意持续经营与关怀"
+      ],
+      "scenario_specific": {
+        "夫妻": {
+          "situation": "关系较稳，互动积极",
+          "reasons": [
+            "互相支持"
+          ],
+          "advice": [
+            "保持沟通",
+            "安排共同时间"
+          ],
+          "timing": "近期"
+        },
+        "亲子": {
+          "situation": "亲子互动顺畅",
+          "reasons": [
+            "陪伴充分"
+          ],
+          "advice": [
+            "肯定引导",
+            "保持规则"
+          ],
+          "timing": "持续"
+        },
+        "长辈": {
+          "situation": "长辈关系和睦",
+          "reasons": [
+            "尊重体贴"
+          ],
+          "advice": [
+            "定期关心",
+            "注意健康"
+          ],
+          "timing": "持续"
+        },
+        "关系": {
+          "situation": "家庭氛围较稳定",
+          "reasons": [
+            "分工明确"
+          ],
+          "advice": [
+            "明确责任",
+            "持续经营"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "23": {
+      "name": "剥",
+      "overall_tendency": "凶",
+      "family_rating": 2,
+      "key_points": [
+        "矛盾增多，沟通受阻",
+        "责任失衡，情绪波动",
+        "建议先降温再处理",
+        "避免激化冲突"
+      ],
+      "scenario_specific": {
+        "夫妻": {
+          "situation": "矛盾明显，容易争执",
+          "reasons": [
+            "误解累积",
+            "情绪化"
+          ],
+          "advice": [
+            "先降温",
+            "寻求第三方沟通"
+          ],
+          "timing": "近期需处理"
+        },
+        "亲子": {
+          "situation": "对立情绪增加",
+          "reasons": [
+            "期待不一致"
+          ],
+          "advice": [
+            "调整期望",
+            "增加理解"
+          ],
+          "timing": "中期"
+        },
+        "长辈": {
+          "situation": "观点冲突",
+          "reasons": [
+            "代际差异"
+          ],
+          "advice": [
+            "尊重差异",
+            "减少正面冲突"
+          ],
+          "timing": "中期"
+        },
+        "关系": {
+          "situation": "家庭氛围紧张",
+          "reasons": [
+            "责任失衡"
+          ],
+          "advice": [
+            "重新分工",
+            "建立边界"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "24": {
+      "name": "复",
+      "overall_tendency": "吉",
+      "family_rating": 4,
+      "key_points": [
+        "家庭关系较和谐，互动顺畅",
+        "沟通较有效，理解增加",
+        "责任分工较清晰",
+        "注意持续经营与关怀"
+      ],
+      "scenario_specific": {
+        "夫妻": {
+          "situation": "关系较稳，互动积极",
+          "reasons": [
+            "互相支持"
+          ],
+          "advice": [
+            "保持沟通",
+            "安排共同时间"
+          ],
+          "timing": "近期"
+        },
+        "亲子": {
+          "situation": "亲子互动顺畅",
+          "reasons": [
+            "陪伴充分"
+          ],
+          "advice": [
+            "肯定引导",
+            "保持规则"
+          ],
+          "timing": "持续"
+        },
+        "长辈": {
+          "situation": "长辈关系和睦",
+          "reasons": [
+            "尊重体贴"
+          ],
+          "advice": [
+            "定期关心",
+            "注意健康"
+          ],
+          "timing": "持续"
+        },
+        "关系": {
+          "situation": "家庭氛围较稳定",
+          "reasons": [
+            "分工明确"
+          ],
+          "advice": [
+            "明确责任",
+            "持续经营"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "25": {
+      "name": "无妄",
+      "overall_tendency": "吉",
+      "family_rating": 4,
+      "key_points": [
+        "家庭关系较和谐，互动顺畅",
+        "沟通较有效，理解增加",
+        "责任分工较清晰",
+        "注意持续经营与关怀"
+      ],
+      "scenario_specific": {
+        "夫妻": {
+          "situation": "关系较稳，互动积极",
+          "reasons": [
+            "互相支持"
+          ],
+          "advice": [
+            "保持沟通",
+            "安排共同时间"
+          ],
+          "timing": "近期"
+        },
+        "亲子": {
+          "situation": "亲子互动顺畅",
+          "reasons": [
+            "陪伴充分"
+          ],
+          "advice": [
+            "肯定引导",
+            "保持规则"
+          ],
+          "timing": "持续"
+        },
+        "长辈": {
+          "situation": "长辈关系和睦",
+          "reasons": [
+            "尊重体贴"
+          ],
+          "advice": [
+            "定期关心",
+            "注意健康"
+          ],
+          "timing": "持续"
+        },
+        "关系": {
+          "situation": "家庭氛围较稳定",
+          "reasons": [
+            "分工明确"
+          ],
+          "advice": [
+            "明确责任",
+            "持续经营"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "26": {
+      "name": "大畜",
+      "overall_tendency": "吉",
+      "family_rating": 4,
+      "key_points": [
+        "家庭关系较和谐，互动顺畅",
+        "沟通较有效，理解增加",
+        "责任分工较清晰",
+        "注意持续经营与关怀"
+      ],
+      "scenario_specific": {
+        "夫妻": {
+          "situation": "关系较稳，互动积极",
+          "reasons": [
+            "互相支持"
+          ],
+          "advice": [
+            "保持沟通",
+            "安排共同时间"
+          ],
+          "timing": "近期"
+        },
+        "亲子": {
+          "situation": "亲子互动顺畅",
+          "reasons": [
+            "陪伴充分"
+          ],
+          "advice": [
+            "肯定引导",
+            "保持规则"
+          ],
+          "timing": "持续"
+        },
+        "长辈": {
+          "situation": "长辈关系和睦",
+          "reasons": [
+            "尊重体贴"
+          ],
+          "advice": [
+            "定期关心",
+            "注意健康"
+          ],
+          "timing": "持续"
+        },
+        "关系": {
+          "situation": "家庭氛围较稳定",
+          "reasons": [
+            "分工明确"
+          ],
+          "advice": [
+            "明确责任",
+            "持续经营"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "27": {
+      "name": "颐",
+      "overall_tendency": "平",
+      "family_rating": 3,
+      "key_points": [
+        "关系平稳但仍需维护",
+        "沟通需加强，避免冷处理",
+        "边界与责任需明确",
+        "及时化解小矛盾"
+      ],
+      "scenario_specific": {
+        "夫妻": {
+          "situation": "关系平稳但略显疏离",
+          "reasons": [
+            "沟通不足"
+          ],
+          "advice": [
+            "增加交流",
+            "减少指责"
+          ],
+          "timing": "中期"
+        },
+        "亲子": {
+          "situation": "互动一般",
+          "reasons": [
+            "陪伴不足"
+          ],
+          "advice": [
+            "增加高质量陪伴",
+            "建立规则"
+          ],
+          "timing": "中期"
+        },
+        "长辈": {
+          "situation": "关系尚可",
+          "reasons": [
+            "联系较少"
+          ],
+          "advice": [
+            "主动问候",
+            "尊重边界"
+          ],
+          "timing": "中期"
+        },
+        "关系": {
+          "situation": "整体稳定但易起波澜",
+          "reasons": [
+            "压力累积"
+          ],
+          "advice": [
+            "定期沟通",
+            "及时化解小矛盾"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "28": {
+      "name": "大过",
+      "overall_tendency": "不利",
+      "family_rating": 2,
+      "key_points": [
+        "矛盾增多，沟通受阻",
+        "责任失衡，情绪波动",
+        "建议先降温再处理",
+        "避免激化冲突"
+      ],
+      "scenario_specific": {
+        "夫妻": {
+          "situation": "矛盾明显，容易争执",
+          "reasons": [
+            "误解累积",
+            "情绪化"
+          ],
+          "advice": [
+            "先降温",
+            "寻求第三方沟通"
+          ],
+          "timing": "近期需处理"
+        },
+        "亲子": {
+          "situation": "对立情绪增加",
+          "reasons": [
+            "期待不一致"
+          ],
+          "advice": [
+            "调整期望",
+            "增加理解"
+          ],
+          "timing": "中期"
+        },
+        "长辈": {
+          "situation": "观点冲突",
+          "reasons": [
+            "代际差异"
+          ],
+          "advice": [
+            "尊重差异",
+            "减少正面冲突"
+          ],
+          "timing": "中期"
+        },
+        "关系": {
+          "situation": "家庭氛围紧张",
+          "reasons": [
+            "责任失衡"
+          ],
+          "advice": [
+            "重新分工",
+            "建立边界"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "29": {
+      "name": "坎",
+      "overall_tendency": "不利",
+      "family_rating": 2,
+      "key_points": [
+        "矛盾增多，沟通受阻",
+        "责任失衡，情绪波动",
+        "建议先降温再处理",
+        "避免激化冲突"
+      ],
+      "scenario_specific": {
+        "夫妻": {
+          "situation": "矛盾明显，容易争执",
+          "reasons": [
+            "误解累积",
+            "情绪化"
+          ],
+          "advice": [
+            "先降温",
+            "寻求第三方沟通"
+          ],
+          "timing": "近期需处理"
+        },
+        "亲子": {
+          "situation": "对立情绪增加",
+          "reasons": [
+            "期待不一致"
+          ],
+          "advice": [
+            "调整期望",
+            "增加理解"
+          ],
+          "timing": "中期"
+        },
+        "长辈": {
+          "situation": "观点冲突",
+          "reasons": [
+            "代际差异"
+          ],
+          "advice": [
+            "尊重差异",
+            "减少正面冲突"
+          ],
+          "timing": "中期"
+        },
+        "关系": {
+          "situation": "家庭氛围紧张",
+          "reasons": [
+            "责任失衡"
+          ],
+          "advice": [
+            "重新分工",
+            "建立边界"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "30": {
+      "name": "离",
+      "overall_tendency": "吉",
+      "family_rating": 4,
+      "key_points": [
+        "家庭关系较和谐，互动顺畅",
+        "沟通较有效，理解增加",
+        "责任分工较清晰",
+        "注意持续经营与关怀"
+      ],
+      "scenario_specific": {
+        "夫妻": {
+          "situation": "关系较稳，互动积极",
+          "reasons": [
+            "互相支持"
+          ],
+          "advice": [
+            "保持沟通",
+            "安排共同时间"
+          ],
+          "timing": "近期"
+        },
+        "亲子": {
+          "situation": "亲子互动顺畅",
+          "reasons": [
+            "陪伴充分"
+          ],
+          "advice": [
+            "肯定引导",
+            "保持规则"
+          ],
+          "timing": "持续"
+        },
+        "长辈": {
+          "situation": "长辈关系和睦",
+          "reasons": [
+            "尊重体贴"
+          ],
+          "advice": [
+            "定期关心",
+            "注意健康"
+          ],
+          "timing": "持续"
+        },
+        "关系": {
+          "situation": "家庭氛围较稳定",
+          "reasons": [
+            "分工明确"
+          ],
+          "advice": [
+            "明确责任",
+            "持续经营"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "31": {
+      "name": "咸",
+      "overall_tendency": "吉",
+      "family_rating": 4,
+      "key_points": [
+        "家庭关系较和谐，互动顺畅",
+        "沟通较有效，理解增加",
+        "责任分工较清晰",
+        "注意持续经营与关怀"
+      ],
+      "scenario_specific": {
+        "夫妻": {
+          "situation": "关系较稳，互动积极",
+          "reasons": [
+            "互相支持"
+          ],
+          "advice": [
+            "保持沟通",
+            "安排共同时间"
+          ],
+          "timing": "近期"
+        },
+        "亲子": {
+          "situation": "亲子互动顺畅",
+          "reasons": [
+            "陪伴充分"
+          ],
+          "advice": [
+            "肯定引导",
+            "保持规则"
+          ],
+          "timing": "持续"
+        },
+        "长辈": {
+          "situation": "长辈关系和睦",
+          "reasons": [
+            "尊重体贴"
+          ],
+          "advice": [
+            "定期关心",
+            "注意健康"
+          ],
+          "timing": "持续"
+        },
+        "关系": {
+          "situation": "家庭氛围较稳定",
+          "reasons": [
+            "分工明确"
+          ],
+          "advice": [
+            "明确责任",
+            "持续经营"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "32": {
+      "name": "恒",
+      "overall_tendency": "吉",
+      "family_rating": 4,
+      "key_points": [
+        "家庭关系较和谐，互动顺畅",
+        "沟通较有效，理解增加",
+        "责任分工较清晰",
+        "注意持续经营与关怀"
+      ],
+      "scenario_specific": {
+        "夫妻": {
+          "situation": "关系较稳，互动积极",
+          "reasons": [
+            "互相支持"
+          ],
+          "advice": [
+            "保持沟通",
+            "安排共同时间"
+          ],
+          "timing": "近期"
+        },
+        "亲子": {
+          "situation": "亲子互动顺畅",
+          "reasons": [
+            "陪伴充分"
+          ],
+          "advice": [
+            "肯定引导",
+            "保持规则"
+          ],
+          "timing": "持续"
+        },
+        "长辈": {
+          "situation": "长辈关系和睦",
+          "reasons": [
+            "尊重体贴"
+          ],
+          "advice": [
+            "定期关心",
+            "注意健康"
+          ],
+          "timing": "持续"
+        },
+        "关系": {
+          "situation": "家庭氛围较稳定",
+          "reasons": [
+            "分工明确"
+          ],
+          "advice": [
+            "明确责任",
+            "持续经营"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "33": {
+      "name": "遁",
+      "overall_tendency": "平",
+      "family_rating": 3,
+      "key_points": [
+        "关系平稳但仍需维护",
+        "沟通需加强，避免冷处理",
+        "边界与责任需明确",
+        "及时化解小矛盾"
+      ],
+      "scenario_specific": {
+        "夫妻": {
+          "situation": "关系平稳但略显疏离",
+          "reasons": [
+            "沟通不足"
+          ],
+          "advice": [
+            "增加交流",
+            "减少指责"
+          ],
+          "timing": "中期"
+        },
+        "亲子": {
+          "situation": "互动一般",
+          "reasons": [
+            "陪伴不足"
+          ],
+          "advice": [
+            "增加高质量陪伴",
+            "建立规则"
+          ],
+          "timing": "中期"
+        },
+        "长辈": {
+          "situation": "关系尚可",
+          "reasons": [
+            "联系较少"
+          ],
+          "advice": [
+            "主动问候",
+            "尊重边界"
+          ],
+          "timing": "中期"
+        },
+        "关系": {
+          "situation": "整体稳定但易起波澜",
+          "reasons": [
+            "压力累积"
+          ],
+          "advice": [
+            "定期沟通",
+            "及时化解小矛盾"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "34": {
+      "name": "大壮",
+      "overall_tendency": "吉",
+      "family_rating": 4,
+      "key_points": [
+        "家庭关系较和谐，互动顺畅",
+        "沟通较有效，理解增加",
+        "责任分工较清晰",
+        "注意持续经营与关怀"
+      ],
+      "scenario_specific": {
+        "夫妻": {
+          "situation": "关系较稳，互动积极",
+          "reasons": [
+            "互相支持"
+          ],
+          "advice": [
+            "保持沟通",
+            "安排共同时间"
+          ],
+          "timing": "近期"
+        },
+        "亲子": {
+          "situation": "亲子互动顺畅",
+          "reasons": [
+            "陪伴充分"
+          ],
+          "advice": [
+            "肯定引导",
+            "保持规则"
+          ],
+          "timing": "持续"
+        },
+        "长辈": {
+          "situation": "长辈关系和睦",
+          "reasons": [
+            "尊重体贴"
+          ],
+          "advice": [
+            "定期关心",
+            "注意健康"
+          ],
+          "timing": "持续"
+        },
+        "关系": {
+          "situation": "家庭氛围较稳定",
+          "reasons": [
+            "分工明确"
+          ],
+          "advice": [
+            "明确责任",
+            "持续经营"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "35": {
+      "name": "晋",
+      "overall_tendency": "大吉",
+      "family_rating": 5,
+      "key_points": [
+        "家庭关系较和谐，互动顺畅",
+        "沟通较有效，理解增加",
+        "责任分工较清晰",
+        "注意持续经营与关怀"
+      ],
+      "scenario_specific": {
+        "夫妻": {
+          "situation": "关系较稳，互动积极",
+          "reasons": [
+            "互相支持"
+          ],
+          "advice": [
+            "保持沟通",
+            "安排共同时间"
+          ],
+          "timing": "近期"
+        },
+        "亲子": {
+          "situation": "亲子互动顺畅",
+          "reasons": [
+            "陪伴充分"
+          ],
+          "advice": [
+            "肯定引导",
+            "保持规则"
+          ],
+          "timing": "持续"
+        },
+        "长辈": {
+          "situation": "长辈关系和睦",
+          "reasons": [
+            "尊重体贴"
+          ],
+          "advice": [
+            "定期关心",
+            "注意健康"
+          ],
+          "timing": "持续"
+        },
+        "关系": {
+          "situation": "家庭氛围较稳定",
+          "reasons": [
+            "分工明确"
+          ],
+          "advice": [
+            "明确责任",
+            "持续经营"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "36": {
+      "name": "明夷",
+      "overall_tendency": "凶",
+      "family_rating": 2,
+      "key_points": [
+        "矛盾增多，沟通受阻",
+        "责任失衡，情绪波动",
+        "建议先降温再处理",
+        "避免激化冲突"
+      ],
+      "scenario_specific": {
+        "夫妻": {
+          "situation": "矛盾明显，容易争执",
+          "reasons": [
+            "误解累积",
+            "情绪化"
+          ],
+          "advice": [
+            "先降温",
+            "寻求第三方沟通"
+          ],
+          "timing": "近期需处理"
+        },
+        "亲子": {
+          "situation": "对立情绪增加",
+          "reasons": [
+            "期待不一致"
+          ],
+          "advice": [
+            "调整期望",
+            "增加理解"
+          ],
+          "timing": "中期"
+        },
+        "长辈": {
+          "situation": "观点冲突",
+          "reasons": [
+            "代际差异"
+          ],
+          "advice": [
+            "尊重差异",
+            "减少正面冲突"
+          ],
+          "timing": "中期"
+        },
+        "关系": {
+          "situation": "家庭氛围紧张",
+          "reasons": [
+            "责任失衡"
+          ],
+          "advice": [
+            "重新分工",
+            "建立边界"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "37": {
+      "name": "家人",
+      "overall_tendency": "吉",
+      "family_rating": 4,
+      "key_points": [
+        "家庭关系较和谐，互动顺畅",
+        "沟通较有效，理解增加",
+        "责任分工较清晰",
+        "注意持续经营与关怀"
+      ],
+      "scenario_specific": {
+        "夫妻": {
+          "situation": "关系较稳，互动积极",
+          "reasons": [
+            "互相支持"
+          ],
+          "advice": [
+            "保持沟通",
+            "安排共同时间"
+          ],
+          "timing": "近期"
+        },
+        "亲子": {
+          "situation": "亲子互动顺畅",
+          "reasons": [
+            "陪伴充分"
+          ],
+          "advice": [
+            "肯定引导",
+            "保持规则"
+          ],
+          "timing": "持续"
+        },
+        "长辈": {
+          "situation": "长辈关系和睦",
+          "reasons": [
+            "尊重体贴"
+          ],
+          "advice": [
+            "定期关心",
+            "注意健康"
+          ],
+          "timing": "持续"
+        },
+        "关系": {
+          "situation": "家庭氛围较稳定",
+          "reasons": [
+            "分工明确"
+          ],
+          "advice": [
+            "明确责任",
+            "持续经营"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "38": {
+      "name": "睽",
+      "overall_tendency": "不利",
+      "family_rating": 2,
+      "key_points": [
+        "矛盾增多，沟通受阻",
+        "责任失衡，情绪波动",
+        "建议先降温再处理",
+        "避免激化冲突"
+      ],
+      "scenario_specific": {
+        "夫妻": {
+          "situation": "矛盾明显，容易争执",
+          "reasons": [
+            "误解累积",
+            "情绪化"
+          ],
+          "advice": [
+            "先降温",
+            "寻求第三方沟通"
+          ],
+          "timing": "近期需处理"
+        },
+        "亲子": {
+          "situation": "对立情绪增加",
+          "reasons": [
+            "期待不一致"
+          ],
+          "advice": [
+            "调整期望",
+            "增加理解"
+          ],
+          "timing": "中期"
+        },
+        "长辈": {
+          "situation": "观点冲突",
+          "reasons": [
+            "代际差异"
+          ],
+          "advice": [
+            "尊重差异",
+            "减少正面冲突"
+          ],
+          "timing": "中期"
+        },
+        "关系": {
+          "situation": "家庭氛围紧张",
+          "reasons": [
+            "责任失衡"
+          ],
+          "advice": [
+            "重新分工",
+            "建立边界"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "39": {
+      "name": "蹇",
+      "overall_tendency": "不利",
+      "family_rating": 2,
+      "key_points": [
+        "矛盾增多，沟通受阻",
+        "责任失衡，情绪波动",
+        "建议先降温再处理",
+        "避免激化冲突"
+      ],
+      "scenario_specific": {
+        "夫妻": {
+          "situation": "矛盾明显，容易争执",
+          "reasons": [
+            "误解累积",
+            "情绪化"
+          ],
+          "advice": [
+            "先降温",
+            "寻求第三方沟通"
+          ],
+          "timing": "近期需处理"
+        },
+        "亲子": {
+          "situation": "对立情绪增加",
+          "reasons": [
+            "期待不一致"
+          ],
+          "advice": [
+            "调整期望",
+            "增加理解"
+          ],
+          "timing": "中期"
+        },
+        "长辈": {
+          "situation": "观点冲突",
+          "reasons": [
+            "代际差异"
+          ],
+          "advice": [
+            "尊重差异",
+            "减少正面冲突"
+          ],
+          "timing": "中期"
+        },
+        "关系": {
+          "situation": "家庭氛围紧张",
+          "reasons": [
+            "责任失衡"
+          ],
+          "advice": [
+            "重新分工",
+            "建立边界"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "40": {
+      "name": "解",
+      "overall_tendency": "吉",
+      "family_rating": 4,
+      "key_points": [
+        "家庭关系较和谐，互动顺畅",
+        "沟通较有效，理解增加",
+        "责任分工较清晰",
+        "注意持续经营与关怀"
+      ],
+      "scenario_specific": {
+        "夫妻": {
+          "situation": "关系较稳，互动积极",
+          "reasons": [
+            "互相支持"
+          ],
+          "advice": [
+            "保持沟通",
+            "安排共同时间"
+          ],
+          "timing": "近期"
+        },
+        "亲子": {
+          "situation": "亲子互动顺畅",
+          "reasons": [
+            "陪伴充分"
+          ],
+          "advice": [
+            "肯定引导",
+            "保持规则"
+          ],
+          "timing": "持续"
+        },
+        "长辈": {
+          "situation": "长辈关系和睦",
+          "reasons": [
+            "尊重体贴"
+          ],
+          "advice": [
+            "定期关心",
+            "注意健康"
+          ],
+          "timing": "持续"
+        },
+        "关系": {
+          "situation": "家庭氛围较稳定",
+          "reasons": [
+            "分工明确"
+          ],
+          "advice": [
+            "明确责任",
+            "持续经营"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "41": {
+      "name": "损",
+      "overall_tendency": "平",
+      "family_rating": 3,
+      "key_points": [
+        "关系平稳但仍需维护",
+        "沟通需加强，避免冷处理",
+        "边界与责任需明确",
+        "及时化解小矛盾"
+      ],
+      "scenario_specific": {
+        "夫妻": {
+          "situation": "关系平稳但略显疏离",
+          "reasons": [
+            "沟通不足"
+          ],
+          "advice": [
+            "增加交流",
+            "减少指责"
+          ],
+          "timing": "中期"
+        },
+        "亲子": {
+          "situation": "互动一般",
+          "reasons": [
+            "陪伴不足"
+          ],
+          "advice": [
+            "增加高质量陪伴",
+            "建立规则"
+          ],
+          "timing": "中期"
+        },
+        "长辈": {
+          "situation": "关系尚可",
+          "reasons": [
+            "联系较少"
+          ],
+          "advice": [
+            "主动问候",
+            "尊重边界"
+          ],
+          "timing": "中期"
+        },
+        "关系": {
+          "situation": "整体稳定但易起波澜",
+          "reasons": [
+            "压力累积"
+          ],
+          "advice": [
+            "定期沟通",
+            "及时化解小矛盾"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "42": {
+      "name": "益",
+      "overall_tendency": "大吉",
+      "family_rating": 5,
+      "key_points": [
+        "家庭关系较和谐，互动顺畅",
+        "沟通较有效，理解增加",
+        "责任分工较清晰",
+        "注意持续经营与关怀"
+      ],
+      "scenario_specific": {
+        "夫妻": {
+          "situation": "关系较稳，互动积极",
+          "reasons": [
+            "互相支持"
+          ],
+          "advice": [
+            "保持沟通",
+            "安排共同时间"
+          ],
+          "timing": "近期"
+        },
+        "亲子": {
+          "situation": "亲子互动顺畅",
+          "reasons": [
+            "陪伴充分"
+          ],
+          "advice": [
+            "肯定引导",
+            "保持规则"
+          ],
+          "timing": "持续"
+        },
+        "长辈": {
+          "situation": "长辈关系和睦",
+          "reasons": [
+            "尊重体贴"
+          ],
+          "advice": [
+            "定期关心",
+            "注意健康"
+          ],
+          "timing": "持续"
+        },
+        "关系": {
+          "situation": "家庭氛围较稳定",
+          "reasons": [
+            "分工明确"
+          ],
+          "advice": [
+            "明确责任",
+            "持续经营"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "43": {
+      "name": "夬",
+      "overall_tendency": "吉",
+      "family_rating": 4,
+      "key_points": [
+        "家庭关系较和谐，互动顺畅",
+        "沟通较有效，理解增加",
+        "责任分工较清晰",
+        "注意持续经营与关怀"
+      ],
+      "scenario_specific": {
+        "夫妻": {
+          "situation": "关系较稳，互动积极",
+          "reasons": [
+            "互相支持"
+          ],
+          "advice": [
+            "保持沟通",
+            "安排共同时间"
+          ],
+          "timing": "近期"
+        },
+        "亲子": {
+          "situation": "亲子互动顺畅",
+          "reasons": [
+            "陪伴充分"
+          ],
+          "advice": [
+            "肯定引导",
+            "保持规则"
+          ],
+          "timing": "持续"
+        },
+        "长辈": {
+          "situation": "长辈关系和睦",
+          "reasons": [
+            "尊重体贴"
+          ],
+          "advice": [
+            "定期关心",
+            "注意健康"
+          ],
+          "timing": "持续"
+        },
+        "关系": {
+          "situation": "家庭氛围较稳定",
+          "reasons": [
+            "分工明确"
+          ],
+          "advice": [
+            "明确责任",
+            "持续经营"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "44": {
+      "name": "姤",
+      "overall_tendency": "不利",
+      "family_rating": 2,
+      "key_points": [
+        "矛盾增多，沟通受阻",
+        "责任失衡，情绪波动",
+        "建议先降温再处理",
+        "避免激化冲突"
+      ],
+      "scenario_specific": {
+        "夫妻": {
+          "situation": "矛盾明显，容易争执",
+          "reasons": [
+            "误解累积",
+            "情绪化"
+          ],
+          "advice": [
+            "先降温",
+            "寻求第三方沟通"
+          ],
+          "timing": "近期需处理"
+        },
+        "亲子": {
+          "situation": "对立情绪增加",
+          "reasons": [
+            "期待不一致"
+          ],
+          "advice": [
+            "调整期望",
+            "增加理解"
+          ],
+          "timing": "中期"
+        },
+        "长辈": {
+          "situation": "观点冲突",
+          "reasons": [
+            "代际差异"
+          ],
+          "advice": [
+            "尊重差异",
+            "减少正面冲突"
+          ],
+          "timing": "中期"
+        },
+        "关系": {
+          "situation": "家庭氛围紧张",
+          "reasons": [
+            "责任失衡"
+          ],
+          "advice": [
+            "重新分工",
+            "建立边界"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "45": {
+      "name": "萃",
+      "overall_tendency": "吉",
+      "family_rating": 4,
+      "key_points": [
+        "家庭关系较和谐，互动顺畅",
+        "沟通较有效，理解增加",
+        "责任分工较清晰",
+        "注意持续经营与关怀"
+      ],
+      "scenario_specific": {
+        "夫妻": {
+          "situation": "关系较稳，互动积极",
+          "reasons": [
+            "互相支持"
+          ],
+          "advice": [
+            "保持沟通",
+            "安排共同时间"
+          ],
+          "timing": "近期"
+        },
+        "亲子": {
+          "situation": "亲子互动顺畅",
+          "reasons": [
+            "陪伴充分"
+          ],
+          "advice": [
+            "肯定引导",
+            "保持规则"
+          ],
+          "timing": "持续"
+        },
+        "长辈": {
+          "situation": "长辈关系和睦",
+          "reasons": [
+            "尊重体贴"
+          ],
+          "advice": [
+            "定期关心",
+            "注意健康"
+          ],
+          "timing": "持续"
+        },
+        "关系": {
+          "situation": "家庭氛围较稳定",
+          "reasons": [
+            "分工明确"
+          ],
+          "advice": [
+            "明确责任",
+            "持续经营"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "46": {
+      "name": "升",
+      "overall_tendency": "大吉",
+      "family_rating": 5,
+      "key_points": [
+        "家庭关系较和谐，互动顺畅",
+        "沟通较有效，理解增加",
+        "责任分工较清晰",
+        "注意持续经营与关怀"
+      ],
+      "scenario_specific": {
+        "夫妻": {
+          "situation": "关系较稳，互动积极",
+          "reasons": [
+            "互相支持"
+          ],
+          "advice": [
+            "保持沟通",
+            "安排共同时间"
+          ],
+          "timing": "近期"
+        },
+        "亲子": {
+          "situation": "亲子互动顺畅",
+          "reasons": [
+            "陪伴充分"
+          ],
+          "advice": [
+            "肯定引导",
+            "保持规则"
+          ],
+          "timing": "持续"
+        },
+        "长辈": {
+          "situation": "长辈关系和睦",
+          "reasons": [
+            "尊重体贴"
+          ],
+          "advice": [
+            "定期关心",
+            "注意健康"
+          ],
+          "timing": "持续"
+        },
+        "关系": {
+          "situation": "家庭氛围较稳定",
+          "reasons": [
+            "分工明确"
+          ],
+          "advice": [
+            "明确责任",
+            "持续经营"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "47": {
+      "name": "困",
+      "overall_tendency": "凶",
+      "family_rating": 2,
+      "key_points": [
+        "矛盾增多，沟通受阻",
+        "责任失衡，情绪波动",
+        "建议先降温再处理",
+        "避免激化冲突"
+      ],
+      "scenario_specific": {
+        "夫妻": {
+          "situation": "矛盾明显，容易争执",
+          "reasons": [
+            "误解累积",
+            "情绪化"
+          ],
+          "advice": [
+            "先降温",
+            "寻求第三方沟通"
+          ],
+          "timing": "近期需处理"
+        },
+        "亲子": {
+          "situation": "对立情绪增加",
+          "reasons": [
+            "期待不一致"
+          ],
+          "advice": [
+            "调整期望",
+            "增加理解"
+          ],
+          "timing": "中期"
+        },
+        "长辈": {
+          "situation": "观点冲突",
+          "reasons": [
+            "代际差异"
+          ],
+          "advice": [
+            "尊重差异",
+            "减少正面冲突"
+          ],
+          "timing": "中期"
+        },
+        "关系": {
+          "situation": "家庭氛围紧张",
+          "reasons": [
+            "责任失衡"
+          ],
+          "advice": [
+            "重新分工",
+            "建立边界"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "48": {
+      "name": "井",
+      "overall_tendency": "平",
+      "family_rating": 3,
+      "key_points": [
+        "关系平稳但仍需维护",
+        "沟通需加强，避免冷处理",
+        "边界与责任需明确",
+        "及时化解小矛盾"
+      ],
+      "scenario_specific": {
+        "夫妻": {
+          "situation": "关系平稳但略显疏离",
+          "reasons": [
+            "沟通不足"
+          ],
+          "advice": [
+            "增加交流",
+            "减少指责"
+          ],
+          "timing": "中期"
+        },
+        "亲子": {
+          "situation": "互动一般",
+          "reasons": [
+            "陪伴不足"
+          ],
+          "advice": [
+            "增加高质量陪伴",
+            "建立规则"
+          ],
+          "timing": "中期"
+        },
+        "长辈": {
+          "situation": "关系尚可",
+          "reasons": [
+            "联系较少"
+          ],
+          "advice": [
+            "主动问候",
+            "尊重边界"
+          ],
+          "timing": "中期"
+        },
+        "关系": {
+          "situation": "整体稳定但易起波澜",
+          "reasons": [
+            "压力累积"
+          ],
+          "advice": [
+            "定期沟通",
+            "及时化解小矛盾"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "49": {
+      "name": "革",
+      "overall_tendency": "吉",
+      "family_rating": 4,
+      "key_points": [
+        "家庭关系较和谐，互动顺畅",
+        "沟通较有效，理解增加",
+        "责任分工较清晰",
+        "注意持续经营与关怀"
+      ],
+      "scenario_specific": {
+        "夫妻": {
+          "situation": "关系较稳，互动积极",
+          "reasons": [
+            "互相支持"
+          ],
+          "advice": [
+            "保持沟通",
+            "安排共同时间"
+          ],
+          "timing": "近期"
+        },
+        "亲子": {
+          "situation": "亲子互动顺畅",
+          "reasons": [
+            "陪伴充分"
+          ],
+          "advice": [
+            "肯定引导",
+            "保持规则"
+          ],
+          "timing": "持续"
+        },
+        "长辈": {
+          "situation": "长辈关系和睦",
+          "reasons": [
+            "尊重体贴"
+          ],
+          "advice": [
+            "定期关心",
+            "注意健康"
+          ],
+          "timing": "持续"
+        },
+        "关系": {
+          "situation": "家庭氛围较稳定",
+          "reasons": [
+            "分工明确"
+          ],
+          "advice": [
+            "明确责任",
+            "持续经营"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "50": {
+      "name": "鼎",
+      "overall_tendency": "大吉",
+      "family_rating": 5,
+      "key_points": [
+        "家庭关系较和谐，互动顺畅",
+        "沟通较有效，理解增加",
+        "责任分工较清晰",
+        "注意持续经营与关怀"
+      ],
+      "scenario_specific": {
+        "夫妻": {
+          "situation": "关系较稳，互动积极",
+          "reasons": [
+            "互相支持"
+          ],
+          "advice": [
+            "保持沟通",
+            "安排共同时间"
+          ],
+          "timing": "近期"
+        },
+        "亲子": {
+          "situation": "亲子互动顺畅",
+          "reasons": [
+            "陪伴充分"
+          ],
+          "advice": [
+            "肯定引导",
+            "保持规则"
+          ],
+          "timing": "持续"
+        },
+        "长辈": {
+          "situation": "长辈关系和睦",
+          "reasons": [
+            "尊重体贴"
+          ],
+          "advice": [
+            "定期关心",
+            "注意健康"
+          ],
+          "timing": "持续"
+        },
+        "关系": {
+          "situation": "家庭氛围较稳定",
+          "reasons": [
+            "分工明确"
+          ],
+          "advice": [
+            "明确责任",
+            "持续经营"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "51": {
+      "name": "震",
+      "overall_tendency": "平",
+      "family_rating": 3,
+      "key_points": [
+        "关系平稳但仍需维护",
+        "沟通需加强，避免冷处理",
+        "边界与责任需明确",
+        "及时化解小矛盾"
+      ],
+      "scenario_specific": {
+        "夫妻": {
+          "situation": "关系平稳但略显疏离",
+          "reasons": [
+            "沟通不足"
+          ],
+          "advice": [
+            "增加交流",
+            "减少指责"
+          ],
+          "timing": "中期"
+        },
+        "亲子": {
+          "situation": "互动一般",
+          "reasons": [
+            "陪伴不足"
+          ],
+          "advice": [
+            "增加高质量陪伴",
+            "建立规则"
+          ],
+          "timing": "中期"
+        },
+        "长辈": {
+          "situation": "关系尚可",
+          "reasons": [
+            "联系较少"
+          ],
+          "advice": [
+            "主动问候",
+            "尊重边界"
+          ],
+          "timing": "中期"
+        },
+        "关系": {
+          "situation": "整体稳定但易起波澜",
+          "reasons": [
+            "压力累积"
+          ],
+          "advice": [
+            "定期沟通",
+            "及时化解小矛盾"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "52": {
+      "name": "艮",
+      "overall_tendency": "平",
+      "family_rating": 3,
+      "key_points": [
+        "关系平稳但仍需维护",
+        "沟通需加强，避免冷处理",
+        "边界与责任需明确",
+        "及时化解小矛盾"
+      ],
+      "scenario_specific": {
+        "夫妻": {
+          "situation": "关系平稳但略显疏离",
+          "reasons": [
+            "沟通不足"
+          ],
+          "advice": [
+            "增加交流",
+            "减少指责"
+          ],
+          "timing": "中期"
+        },
+        "亲子": {
+          "situation": "互动一般",
+          "reasons": [
+            "陪伴不足"
+          ],
+          "advice": [
+            "增加高质量陪伴",
+            "建立规则"
+          ],
+          "timing": "中期"
+        },
+        "长辈": {
+          "situation": "关系尚可",
+          "reasons": [
+            "联系较少"
+          ],
+          "advice": [
+            "主动问候",
+            "尊重边界"
+          ],
+          "timing": "中期"
+        },
+        "关系": {
+          "situation": "整体稳定但易起波澜",
+          "reasons": [
+            "压力累积"
+          ],
+          "advice": [
+            "定期沟通",
+            "及时化解小矛盾"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "53": {
+      "name": "渐",
+      "overall_tendency": "吉",
+      "family_rating": 4,
+      "key_points": [
+        "家庭关系较和谐，互动顺畅",
+        "沟通较有效，理解增加",
+        "责任分工较清晰",
+        "注意持续经营与关怀"
+      ],
+      "scenario_specific": {
+        "夫妻": {
+          "situation": "关系较稳，互动积极",
+          "reasons": [
+            "互相支持"
+          ],
+          "advice": [
+            "保持沟通",
+            "安排共同时间"
+          ],
+          "timing": "近期"
+        },
+        "亲子": {
+          "situation": "亲子互动顺畅",
+          "reasons": [
+            "陪伴充分"
+          ],
+          "advice": [
+            "肯定引导",
+            "保持规则"
+          ],
+          "timing": "持续"
+        },
+        "长辈": {
+          "situation": "长辈关系和睦",
+          "reasons": [
+            "尊重体贴"
+          ],
+          "advice": [
+            "定期关心",
+            "注意健康"
+          ],
+          "timing": "持续"
+        },
+        "关系": {
+          "situation": "家庭氛围较稳定",
+          "reasons": [
+            "分工明确"
+          ],
+          "advice": [
+            "明确责任",
+            "持续经营"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "54": {
+      "name": "归妹",
+      "overall_tendency": "不利",
+      "family_rating": 2,
+      "key_points": [
+        "矛盾增多，沟通受阻",
+        "责任失衡，情绪波动",
+        "建议先降温再处理",
+        "避免激化冲突"
+      ],
+      "scenario_specific": {
+        "夫妻": {
+          "situation": "矛盾明显，容易争执",
+          "reasons": [
+            "误解累积",
+            "情绪化"
+          ],
+          "advice": [
+            "先降温",
+            "寻求第三方沟通"
+          ],
+          "timing": "近期需处理"
+        },
+        "亲子": {
+          "situation": "对立情绪增加",
+          "reasons": [
+            "期待不一致"
+          ],
+          "advice": [
+            "调整期望",
+            "增加理解"
+          ],
+          "timing": "中期"
+        },
+        "长辈": {
+          "situation": "观点冲突",
+          "reasons": [
+            "代际差异"
+          ],
+          "advice": [
+            "尊重差异",
+            "减少正面冲突"
+          ],
+          "timing": "中期"
+        },
+        "关系": {
+          "situation": "家庭氛围紧张",
+          "reasons": [
+            "责任失衡"
+          ],
+          "advice": [
+            "重新分工",
+            "建立边界"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "55": {
+      "name": "丰",
+      "overall_tendency": "大吉",
+      "family_rating": 5,
+      "key_points": [
+        "家庭关系较和谐，互动顺畅",
+        "沟通较有效，理解增加",
+        "责任分工较清晰",
+        "注意持续经营与关怀"
+      ],
+      "scenario_specific": {
+        "夫妻": {
+          "situation": "关系较稳，互动积极",
+          "reasons": [
+            "互相支持"
+          ],
+          "advice": [
+            "保持沟通",
+            "安排共同时间"
+          ],
+          "timing": "近期"
+        },
+        "亲子": {
+          "situation": "亲子互动顺畅",
+          "reasons": [
+            "陪伴充分"
+          ],
+          "advice": [
+            "肯定引导",
+            "保持规则"
+          ],
+          "timing": "持续"
+        },
+        "长辈": {
+          "situation": "长辈关系和睦",
+          "reasons": [
+            "尊重体贴"
+          ],
+          "advice": [
+            "定期关心",
+            "注意健康"
+          ],
+          "timing": "持续"
+        },
+        "关系": {
+          "situation": "家庭氛围较稳定",
+          "reasons": [
+            "分工明确"
+          ],
+          "advice": [
+            "明确责任",
+            "持续经营"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "56": {
+      "name": "旅",
+      "overall_tendency": "平",
+      "family_rating": 3,
+      "key_points": [
+        "关系平稳但仍需维护",
+        "沟通需加强，避免冷处理",
+        "边界与责任需明确",
+        "及时化解小矛盾"
+      ],
+      "scenario_specific": {
+        "夫妻": {
+          "situation": "关系平稳但略显疏离",
+          "reasons": [
+            "沟通不足"
+          ],
+          "advice": [
+            "增加交流",
+            "减少指责"
+          ],
+          "timing": "中期"
+        },
+        "亲子": {
+          "situation": "互动一般",
+          "reasons": [
+            "陪伴不足"
+          ],
+          "advice": [
+            "增加高质量陪伴",
+            "建立规则"
+          ],
+          "timing": "中期"
+        },
+        "长辈": {
+          "situation": "关系尚可",
+          "reasons": [
+            "联系较少"
+          ],
+          "advice": [
+            "主动问候",
+            "尊重边界"
+          ],
+          "timing": "中期"
+        },
+        "关系": {
+          "situation": "整体稳定但易起波澜",
+          "reasons": [
+            "压力累积"
+          ],
+          "advice": [
+            "定期沟通",
+            "及时化解小矛盾"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "57": {
+      "name": "巽",
+      "overall_tendency": "吉",
+      "family_rating": 4,
+      "key_points": [
+        "家庭关系较和谐，互动顺畅",
+        "沟通较有效，理解增加",
+        "责任分工较清晰",
+        "注意持续经营与关怀"
+      ],
+      "scenario_specific": {
+        "夫妻": {
+          "situation": "关系较稳，互动积极",
+          "reasons": [
+            "互相支持"
+          ],
+          "advice": [
+            "保持沟通",
+            "安排共同时间"
+          ],
+          "timing": "近期"
+        },
+        "亲子": {
+          "situation": "亲子互动顺畅",
+          "reasons": [
+            "陪伴充分"
+          ],
+          "advice": [
+            "肯定引导",
+            "保持规则"
+          ],
+          "timing": "持续"
+        },
+        "长辈": {
+          "situation": "长辈关系和睦",
+          "reasons": [
+            "尊重体贴"
+          ],
+          "advice": [
+            "定期关心",
+            "注意健康"
+          ],
+          "timing": "持续"
+        },
+        "关系": {
+          "situation": "家庭氛围较稳定",
+          "reasons": [
+            "分工明确"
+          ],
+          "advice": [
+            "明确责任",
+            "持续经营"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "58": {
+      "name": "兑",
+      "overall_tendency": "吉",
+      "family_rating": 4,
+      "key_points": [
+        "家庭关系较和谐，互动顺畅",
+        "沟通较有效，理解增加",
+        "责任分工较清晰",
+        "注意持续经营与关怀"
+      ],
+      "scenario_specific": {
+        "夫妻": {
+          "situation": "关系较稳，互动积极",
+          "reasons": [
+            "互相支持"
+          ],
+          "advice": [
+            "保持沟通",
+            "安排共同时间"
+          ],
+          "timing": "近期"
+        },
+        "亲子": {
+          "situation": "亲子互动顺畅",
+          "reasons": [
+            "陪伴充分"
+          ],
+          "advice": [
+            "肯定引导",
+            "保持规则"
+          ],
+          "timing": "持续"
+        },
+        "长辈": {
+          "situation": "长辈关系和睦",
+          "reasons": [
+            "尊重体贴"
+          ],
+          "advice": [
+            "定期关心",
+            "注意健康"
+          ],
+          "timing": "持续"
+        },
+        "关系": {
+          "situation": "家庭氛围较稳定",
+          "reasons": [
+            "分工明确"
+          ],
+          "advice": [
+            "明确责任",
+            "持续经营"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "59": {
+      "name": "涣",
+      "overall_tendency": "平",
+      "family_rating": 3,
+      "key_points": [
+        "关系平稳但仍需维护",
+        "沟通需加强，避免冷处理",
+        "边界与责任需明确",
+        "及时化解小矛盾"
+      ],
+      "scenario_specific": {
+        "夫妻": {
+          "situation": "关系平稳但略显疏离",
+          "reasons": [
+            "沟通不足"
+          ],
+          "advice": [
+            "增加交流",
+            "减少指责"
+          ],
+          "timing": "中期"
+        },
+        "亲子": {
+          "situation": "互动一般",
+          "reasons": [
+            "陪伴不足"
+          ],
+          "advice": [
+            "增加高质量陪伴",
+            "建立规则"
+          ],
+          "timing": "中期"
+        },
+        "长辈": {
+          "situation": "关系尚可",
+          "reasons": [
+            "联系较少"
+          ],
+          "advice": [
+            "主动问候",
+            "尊重边界"
+          ],
+          "timing": "中期"
+        },
+        "关系": {
+          "situation": "整体稳定但易起波澜",
+          "reasons": [
+            "压力累积"
+          ],
+          "advice": [
+            "定期沟通",
+            "及时化解小矛盾"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "60": {
+      "name": "节",
+      "overall_tendency": "平",
+      "family_rating": 3,
+      "key_points": [
+        "关系平稳但仍需维护",
+        "沟通需加强，避免冷处理",
+        "边界与责任需明确",
+        "及时化解小矛盾"
+      ],
+      "scenario_specific": {
+        "夫妻": {
+          "situation": "关系平稳但略显疏离",
+          "reasons": [
+            "沟通不足"
+          ],
+          "advice": [
+            "增加交流",
+            "减少指责"
+          ],
+          "timing": "中期"
+        },
+        "亲子": {
+          "situation": "互动一般",
+          "reasons": [
+            "陪伴不足"
+          ],
+          "advice": [
+            "增加高质量陪伴",
+            "建立规则"
+          ],
+          "timing": "中期"
+        },
+        "长辈": {
+          "situation": "关系尚可",
+          "reasons": [
+            "联系较少"
+          ],
+          "advice": [
+            "主动问候",
+            "尊重边界"
+          ],
+          "timing": "中期"
+        },
+        "关系": {
+          "situation": "整体稳定但易起波澜",
+          "reasons": [
+            "压力累积"
+          ],
+          "advice": [
+            "定期沟通",
+            "及时化解小矛盾"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "61": {
+      "name": "中孚",
+      "overall_tendency": "吉",
+      "family_rating": 4,
+      "key_points": [
+        "家庭关系较和谐，互动顺畅",
+        "沟通较有效，理解增加",
+        "责任分工较清晰",
+        "注意持续经营与关怀"
+      ],
+      "scenario_specific": {
+        "夫妻": {
+          "situation": "关系较稳，互动积极",
+          "reasons": [
+            "互相支持"
+          ],
+          "advice": [
+            "保持沟通",
+            "安排共同时间"
+          ],
+          "timing": "近期"
+        },
+        "亲子": {
+          "situation": "亲子互动顺畅",
+          "reasons": [
+            "陪伴充分"
+          ],
+          "advice": [
+            "肯定引导",
+            "保持规则"
+          ],
+          "timing": "持续"
+        },
+        "长辈": {
+          "situation": "长辈关系和睦",
+          "reasons": [
+            "尊重体贴"
+          ],
+          "advice": [
+            "定期关心",
+            "注意健康"
+          ],
+          "timing": "持续"
+        },
+        "关系": {
+          "situation": "家庭氛围较稳定",
+          "reasons": [
+            "分工明确"
+          ],
+          "advice": [
+            "明确责任",
+            "持续经营"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "62": {
+      "name": "小过",
+      "overall_tendency": "平",
+      "family_rating": 3,
+      "key_points": [
+        "关系平稳但仍需维护",
+        "沟通需加强，避免冷处理",
+        "边界与责任需明确",
+        "及时化解小矛盾"
+      ],
+      "scenario_specific": {
+        "夫妻": {
+          "situation": "关系平稳但略显疏离",
+          "reasons": [
+            "沟通不足"
+          ],
+          "advice": [
+            "增加交流",
+            "减少指责"
+          ],
+          "timing": "中期"
+        },
+        "亲子": {
+          "situation": "互动一般",
+          "reasons": [
+            "陪伴不足"
+          ],
+          "advice": [
+            "增加高质量陪伴",
+            "建立规则"
+          ],
+          "timing": "中期"
+        },
+        "长辈": {
+          "situation": "关系尚可",
+          "reasons": [
+            "联系较少"
+          ],
+          "advice": [
+            "主动问候",
+            "尊重边界"
+          ],
+          "timing": "中期"
+        },
+        "关系": {
+          "situation": "整体稳定但易起波澜",
+          "reasons": [
+            "压力累积"
+          ],
+          "advice": [
+            "定期沟通",
+            "及时化解小矛盾"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "63": {
+      "name": "既济",
+      "overall_tendency": "吉",
+      "family_rating": 4,
+      "key_points": [
+        "家庭关系较和谐，互动顺畅",
+        "沟通较有效，理解增加",
+        "责任分工较清晰",
+        "注意持续经营与关怀"
+      ],
+      "scenario_specific": {
+        "夫妻": {
+          "situation": "关系较稳，互动积极",
+          "reasons": [
+            "互相支持"
+          ],
+          "advice": [
+            "保持沟通",
+            "安排共同时间"
+          ],
+          "timing": "近期"
+        },
+        "亲子": {
+          "situation": "亲子互动顺畅",
+          "reasons": [
+            "陪伴充分"
+          ],
+          "advice": [
+            "肯定引导",
+            "保持规则"
+          ],
+          "timing": "持续"
+        },
+        "长辈": {
+          "situation": "长辈关系和睦",
+          "reasons": [
+            "尊重体贴"
+          ],
+          "advice": [
+            "定期关心",
+            "注意健康"
+          ],
+          "timing": "持续"
+        },
+        "关系": {
+          "situation": "家庭氛围较稳定",
+          "reasons": [
+            "分工明确"
+          ],
+          "advice": [
+            "明确责任",
+            "持续经营"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "64": {
+      "name": "未济",
+      "overall_tendency": "平",
+      "family_rating": 3,
+      "key_points": [
+        "关系平稳但仍需维护",
+        "沟通需加强，避免冷处理",
+        "边界与责任需明确",
+        "及时化解小矛盾"
+      ],
+      "scenario_specific": {
+        "夫妻": {
+          "situation": "关系平稳但略显疏离",
+          "reasons": [
+            "沟通不足"
+          ],
+          "advice": [
+            "增加交流",
+            "减少指责"
+          ],
+          "timing": "中期"
+        },
+        "亲子": {
+          "situation": "互动一般",
+          "reasons": [
+            "陪伴不足"
+          ],
+          "advice": [
+            "增加高质量陪伴",
+            "建立规则"
+          ],
+          "timing": "中期"
+        },
+        "长辈": {
+          "situation": "关系尚可",
+          "reasons": [
+            "联系较少"
+          ],
+          "advice": [
+            "主动问候",
+            "尊重边界"
+          ],
+          "timing": "中期"
+        },
+        "关系": {
+          "situation": "整体稳定但易起波澜",
+          "reasons": [
+            "压力累积"
+          ],
+          "advice": [
+            "定期沟通",
+            "及时化解小矛盾"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    }
+  },
+  "notes": [
+    "所有卦象数据需包含 source_ref"
+  ]
+}

@@ -1,0 +1,3783 @@
+{
+  "version": "1.0",
+  "scenario_info": {
+    "name": "财运",
+    "code": "wealth",
+    "description": "正财、偏财、投资与风险管理",
+    "sub_scenarios": [
+      "正财",
+      "偏财",
+      "投资",
+      "风险"
+    ],
+    "requires_disclaimer": true
+  },
+  "analysis_framework": {
+    "dimensions": [
+      "现金流",
+      "收益潜力",
+      "风险控制",
+      "机会窗口",
+      "资产配置"
+    ],
+    "focus": "稳健增益、风险优先、避免投机",
+    "key_aspects": [
+      "稳定性评估",
+      "风险等级",
+      "策略建议",
+      "节奏把控"
+    ]
+  },
+  "output_structure": {
+    "template_id": "wealth_standard",
+    "sections": [
+      {
+        "id": "overall_wealth",
+        "title": "财运总览",
+        "type": "summary",
+        "required": true,
+        "includes": [
+          "评级",
+          "总体判断",
+          "风险提示"
+        ]
+      },
+      {
+        "id": "hexagram_analysis",
+        "title": "卦象解析",
+        "type": "explanation",
+        "required": true,
+        "includes": [
+          "卦象含义",
+          "五行关系",
+          "关键词解读"
+        ]
+      },
+      {
+        "id": "wealth_details",
+        "title": "财运详解",
+        "type": "detailed_analysis",
+        "required": true,
+        "sub_sections": [
+          {
+            "id": "cashflow",
+            "title": "现金流",
+            "description": "稳定性与流入流出"
+          },
+          {
+            "id": "opportunities",
+            "title": "机会",
+            "description": "可把握的增长点"
+          },
+          {
+            "id": "risk",
+            "title": "风险",
+            "description": "潜在风险与规避"
+          },
+          {
+            "id": "timing",
+            "title": "时机",
+            "description": "适合行动的窗口"
+          }
+        ]
+      },
+      {
+        "id": "action_guide",
+        "title": "行动建议",
+        "type": "advice",
+        "required": true,
+        "format": {
+          "do": "宜做事项（3-5条）",
+          "dont": "忌做事项（3-5条）"
+        }
+      }
+    ]
+  },
+  "prompt_template": {
+    "system_role": "你是一位谨慎理财的易经分析师，强调风险与稳健策略。",
+    "analysis_focus": [
+      "以稳健为优先，不鼓励投机",
+      "强调风险控制与现金流",
+      "建议要具体、可执行",
+      "语言清晰，避免夸大"
+    ],
+    "output_requirements": [
+      "结构清晰",
+      "风险提示明确",
+      "建议可落地",
+      "避免过度承诺"
+    ]
+  },
+  "hexagrams": {
+    "1": {
+      "name": "乾",
+      "overall_tendency": "吉",
+      "wealth_rating": 4,
+      "key_points": [
+        "财运上升，机会增多",
+        "适合主动争取",
+        "注意风控",
+        "忌过度乐观"
+      ],
+      "scenario_specific": {
+        "正财": {
+          "situation": "收入增长，机会更多",
+          "reasons": [
+            "能力释放"
+          ],
+          "advice": [
+            "积极争取",
+            "稳中求进"
+          ],
+          "timing": "近期"
+        },
+        "偏财": {
+          "situation": "偏财机会出现",
+          "reasons": [
+            "机会增多"
+          ],
+          "advice": [
+            "谨慎参与",
+            "避免盲目"
+          ],
+          "timing": "短期"
+        },
+        "投资": {
+          "situation": "投资机会多",
+          "reasons": [
+            "趋势向好"
+          ],
+          "advice": [
+            "控制仓位",
+            "设置止损"
+          ],
+          "timing": "近期"
+        },
+        "风险": {
+          "situation": "风险可控但需警惕",
+          "reasons": [
+            "情绪高"
+          ],
+          "advice": [
+            "保持克制",
+            "避免过度押注"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "2": {
+      "name": "坤",
+      "overall_tendency": "吉",
+      "wealth_rating": 4,
+      "key_points": [
+        "稳健积累，重视守成",
+        "适合长期配置",
+        "收益稳但不快",
+        "忌急功近利"
+      ],
+      "scenario_specific": {
+        "正财": {
+          "situation": "收入稳定",
+          "reasons": [
+            "稳定性强"
+          ],
+          "advice": [
+            "稳步积累",
+            "长期规划"
+          ],
+          "timing": "长期"
+        },
+        "偏财": {
+          "situation": "偏财一般",
+          "reasons": [
+            "不宜冒进"
+          ],
+          "advice": [
+            "谨慎参与"
+          ],
+          "timing": "短期"
+        },
+        "投资": {
+          "situation": "适合稳健型配置",
+          "reasons": [
+            "风格保守"
+          ],
+          "advice": [
+            "分散配置",
+            "避免高波动"
+          ],
+          "timing": "长期"
+        },
+        "风险": {
+          "situation": "风险较低",
+          "reasons": [
+            "稳健策略"
+          ],
+          "advice": [
+            "守住底线",
+            "避免投机"
+          ],
+          "timing": "长期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "3": {
+      "name": "屯",
+      "overall_tendency": "不利",
+      "wealth_rating": 2,
+      "key_points": [
+        "起步困难，阻力较多",
+        "现金流紧张",
+        "需控制支出",
+        "等待时机"
+      ],
+      "scenario_specific": {
+        "正财": {
+          "situation": "收入增长缓慢",
+          "reasons": [
+            "起步艰难"
+          ],
+          "advice": [
+            "控制成本",
+            "稳住现金流"
+          ],
+          "timing": "短期"
+        },
+        "偏财": {
+          "situation": "偏财不稳",
+          "reasons": [
+            "机会不成熟"
+          ],
+          "advice": [
+            "避免冲动"
+          ],
+          "timing": "短期"
+        },
+        "投资": {
+          "situation": "不宜大额投入",
+          "reasons": [
+            "风险偏高"
+          ],
+          "advice": [
+            "保守观望"
+          ],
+          "timing": "短期"
+        },
+        "风险": {
+          "situation": "风险偏高",
+          "reasons": [
+            "环境不稳"
+          ],
+          "advice": [
+            "保守应对"
+          ],
+          "timing": "短期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "4": {
+      "name": "蒙",
+      "overall_tendency": "平",
+      "wealth_rating": 3,
+      "key_points": [
+        "信息不足，需学习",
+        "谨慎决策",
+        "避免盲目",
+        "稳步积累"
+      ],
+      "scenario_specific": {
+        "正财": {
+          "situation": "收入稳定但增长有限",
+          "reasons": [
+            "积累期"
+          ],
+          "advice": [
+            "提升能力",
+            "积累经验"
+          ],
+          "timing": "中期"
+        },
+        "偏财": {
+          "situation": "偏财信息不足",
+          "reasons": [
+            "判断不明"
+          ],
+          "advice": [
+            "少参与"
+          ],
+          "timing": "短期"
+        },
+        "投资": {
+          "situation": "需学习后再投资",
+          "reasons": [
+            "知识不足"
+          ],
+          "advice": [
+            "先学习",
+            "再行动"
+          ],
+          "timing": "中期"
+        },
+        "风险": {
+          "situation": "风险中等",
+          "reasons": [
+            "判断不清"
+          ],
+          "advice": [
+            "谨慎评估"
+          ],
+          "timing": "短期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "5": {
+      "name": "需",
+      "overall_tendency": "平",
+      "wealth_rating": 3,
+      "key_points": [
+        "等待时机，蓄势",
+        "保持现金流",
+        "适合储备",
+        "不宜冒进"
+      ],
+      "scenario_specific": {
+        "正财": {
+          "situation": "收入稳定但需等待提升",
+          "reasons": [
+            "时机未到"
+          ],
+          "advice": [
+            "稳住收入",
+            "等待机会"
+          ],
+          "timing": "中期"
+        },
+        "偏财": {
+          "situation": "偏财机会未成熟",
+          "reasons": [
+            "时机未到"
+          ],
+          "advice": [
+            "观望"
+          ],
+          "timing": "短期"
+        },
+        "投资": {
+          "situation": "适合观望与准备",
+          "reasons": [
+            "等待窗口"
+          ],
+          "advice": [
+            "做好功课",
+            "控制仓位"
+          ],
+          "timing": "中期"
+        },
+        "风险": {
+          "situation": "风险可控",
+          "reasons": [
+            "稳健策略"
+          ],
+          "advice": [
+            "保持谨慎"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "6": {
+      "name": "讼",
+      "overall_tendency": "不利",
+      "wealth_rating": 2,
+      "key_points": [
+        "财务纠纷风险",
+        "需合规与证据",
+        "避免冲突",
+        "谨慎签约"
+      ],
+      "scenario_specific": {
+        "正财": {
+          "situation": "收入易受纠纷影响",
+          "reasons": [
+            "争议"
+          ],
+          "advice": [
+            "合规处理",
+            "留存证据"
+          ],
+          "timing": "短期"
+        },
+        "偏财": {
+          "situation": "偏财风险高",
+          "reasons": [
+            "纠纷风险"
+          ],
+          "advice": [
+            "避免参与"
+          ],
+          "timing": "短期"
+        },
+        "投资": {
+          "situation": "投资易起争议",
+          "reasons": [
+            "合同风险"
+          ],
+          "advice": [
+            "谨慎签约",
+            "法律审查"
+          ],
+          "timing": "短期"
+        },
+        "风险": {
+          "situation": "风险偏高",
+          "reasons": [
+            "纠纷"
+          ],
+          "advice": [
+            "避免激进"
+          ],
+          "timing": "短期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "7": {
+      "name": "师",
+      "overall_tendency": "吉",
+      "wealth_rating": 4,
+      "key_points": [
+        "纪律与执行力带来收益",
+        "适合规范管理",
+        "稳中求进",
+        "团队协作"
+      ],
+      "scenario_specific": {
+        "正财": {
+          "situation": "收入稳步增长",
+          "reasons": [
+            "执行力"
+          ],
+          "advice": [
+            "按计划推进"
+          ],
+          "timing": "近期"
+        },
+        "偏财": {
+          "situation": "偏财需规范",
+          "reasons": [
+            "纪律性"
+          ],
+          "advice": [
+            "设定规则"
+          ],
+          "timing": "短期"
+        },
+        "投资": {
+          "situation": "投资适合规则化策略",
+          "reasons": [
+            "纪律"
+          ],
+          "advice": [
+            "严格风控"
+          ],
+          "timing": "中期"
+        },
+        "风险": {
+          "situation": "风险可控",
+          "reasons": [
+            "纪律"
+          ],
+          "advice": [
+            "遵守规则"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "8": {
+      "name": "比",
+      "overall_tendency": "吉",
+      "wealth_rating": 4,
+      "key_points": [
+        "合作带来收益",
+        "人脉资源关键",
+        "适合合伙",
+        "谨慎选择伙伴"
+      ],
+      "scenario_specific": {
+        "正财": {
+          "situation": "合作提高收入",
+          "reasons": [
+            "协作"
+          ],
+          "advice": [
+            "选择可靠伙伴"
+          ],
+          "timing": "近期"
+        },
+        "偏财": {
+          "situation": "偏财来自人脉",
+          "reasons": [
+            "资源共享"
+          ],
+          "advice": [
+            "谨慎选择合作"
+          ],
+          "timing": "短期"
+        },
+        "投资": {
+          "situation": "合伙投资有利",
+          "reasons": [
+            "互补"
+          ],
+          "advice": [
+            "明确协议"
+          ],
+          "timing": "近期"
+        },
+        "风险": {
+          "situation": "合作风险可控",
+          "reasons": [
+            "互信"
+          ],
+          "advice": [
+            "明确边界"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "9": {
+      "name": "小畜",
+      "overall_tendency": "平",
+      "wealth_rating": 3,
+      "key_points": [
+        "小有积累",
+        "稳步增长",
+        "不宜冒进",
+        "重视储蓄"
+      ],
+      "scenario_specific": {
+        "正财": {
+          "situation": "收入稳步",
+          "reasons": [
+            "小步增长"
+          ],
+          "advice": [
+            "稳步积累"
+          ],
+          "timing": "中期"
+        },
+        "偏财": {
+          "situation": "偏财一般",
+          "reasons": [
+            "机会有限"
+          ],
+          "advice": [
+            "谨慎参与"
+          ],
+          "timing": "短期"
+        },
+        "投资": {
+          "situation": "适合小仓位试水",
+          "reasons": [
+            "稳健"
+          ],
+          "advice": [
+            "控制仓位"
+          ],
+          "timing": "中期"
+        },
+        "风险": {
+          "situation": "风险较低",
+          "reasons": [
+            "稳健"
+          ],
+          "advice": [
+            "保持节奏"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "10": {
+      "name": "履",
+      "overall_tendency": "平",
+      "wealth_rating": 3,
+      "key_points": [
+        "行事谨慎，守住底线",
+        "规则与合规重要",
+        "避免冒险",
+        "稳中求进"
+      ],
+      "scenario_specific": {
+        "正财": {
+          "situation": "收入稳定",
+          "reasons": [
+            "规则清晰"
+          ],
+          "advice": [
+            "遵守流程"
+          ],
+          "timing": "稳定"
+        },
+        "偏财": {
+          "situation": "偏财需谨慎",
+          "reasons": [
+            "风险控制"
+          ],
+          "advice": [
+            "避免投机"
+          ],
+          "timing": "短期"
+        },
+        "投资": {
+          "situation": "投资需合规谨慎",
+          "reasons": [
+            "合规"
+          ],
+          "advice": [
+            "审慎评估"
+          ],
+          "timing": "短期"
+        },
+        "风险": {
+          "situation": "风险中等",
+          "reasons": [
+            "谨慎"
+          ],
+          "advice": [
+            "守住底线"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "11": {
+      "name": "泰",
+      "overall_tendency": "吉",
+      "wealth_rating": 4,
+      "key_points": [
+        "财运通泰",
+        "机会增多",
+        "适合扩展",
+        "防盛极而衰"
+      ],
+      "scenario_specific": {
+        "正财": {
+          "situation": "收入增长明显",
+          "reasons": [
+            "通泰"
+          ],
+          "advice": [
+            "把握机会"
+          ],
+          "timing": "近期"
+        },
+        "偏财": {
+          "situation": "偏财机会增加",
+          "reasons": [
+            "顺势"
+          ],
+          "advice": [
+            "谨慎参与"
+          ],
+          "timing": "短期"
+        },
+        "投资": {
+          "situation": "投资机会较好",
+          "reasons": [
+            "行情向好"
+          ],
+          "advice": [
+            "适度扩仓",
+            "控制风险"
+          ],
+          "timing": "近期"
+        },
+        "风险": {
+          "situation": "风险可控",
+          "reasons": [
+            "顺势"
+          ],
+          "advice": [
+            "保持谨慎"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "12": {
+      "name": "否",
+      "overall_tendency": "不利",
+      "wealth_rating": 2,
+      "key_points": [
+        "财运受阻",
+        "现金流紧张",
+        "宜守不宜攻",
+        "避免扩张"
+      ],
+      "scenario_specific": {
+        "正财": {
+          "situation": "收入受限",
+          "reasons": [
+            "环境不利"
+          ],
+          "advice": [
+            "控制支出"
+          ],
+          "timing": "短期"
+        },
+        "偏财": {
+          "situation": "偏财机会少",
+          "reasons": [
+            "时机不佳"
+          ],
+          "advice": [
+            "减少参与"
+          ],
+          "timing": "短期"
+        },
+        "投资": {
+          "situation": "投资宜保守",
+          "reasons": [
+            "环境不利"
+          ],
+          "advice": [
+            "防守策略"
+          ],
+          "timing": "短期"
+        },
+        "风险": {
+          "situation": "风险偏高",
+          "reasons": [
+            "下行期"
+          ],
+          "advice": [
+            "谨慎"
+          ],
+          "timing": "短期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "13": {
+      "name": "同人",
+      "overall_tendency": "吉",
+      "wealth_rating": 4,
+      "key_points": [
+        "合作增益",
+        "人脉带来机会",
+        "共赢重要",
+        "适合联合"
+      ],
+      "scenario_specific": {
+        "正财": {
+          "situation": "合作提升收入",
+          "reasons": [
+            "协作"
+          ],
+          "advice": [
+            "加强合作"
+          ],
+          "timing": "近期"
+        },
+        "偏财": {
+          "situation": "偏财来自合作",
+          "reasons": [
+            "人脉"
+          ],
+          "advice": [
+            "谨慎合作"
+          ],
+          "timing": "短期"
+        },
+        "投资": {
+          "situation": "合伙投资较顺",
+          "reasons": [
+            "共赢"
+          ],
+          "advice": [
+            "明确分工"
+          ],
+          "timing": "近期"
+        },
+        "风险": {
+          "situation": "风险可控",
+          "reasons": [
+            "共识"
+          ],
+          "advice": [
+            "明确规则"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "14": {
+      "name": "大有",
+      "overall_tendency": "吉",
+      "wealth_rating": 5,
+      "key_points": [
+        "资源丰厚",
+        "收益显著",
+        "适合扩张",
+        "需守住风控"
+      ],
+      "scenario_specific": {
+        "正财": {
+          "situation": "收入显著增长",
+          "reasons": [
+            "资源充足"
+          ],
+          "advice": [
+            "把握机会"
+          ],
+          "timing": "近期"
+        },
+        "偏财": {
+          "situation": "偏财机会好",
+          "reasons": [
+            "机会多"
+          ],
+          "advice": [
+            "谨慎参与"
+          ],
+          "timing": "短期"
+        },
+        "投资": {
+          "situation": "投资回报较好",
+          "reasons": [
+            "行情向好"
+          ],
+          "advice": [
+            "控制风险",
+            "避免过度扩张"
+          ],
+          "timing": "近期"
+        },
+        "风险": {
+          "situation": "风险可控",
+          "reasons": [
+            "收益高"
+          ],
+          "advice": [
+            "防止贪心"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "15": {
+      "name": "谦",
+      "overall_tendency": "吉",
+      "wealth_rating": 4,
+      "key_points": [
+        "稳健积累",
+        "低调为宜",
+        "重视长期",
+        "避免浮躁"
+      ],
+      "scenario_specific": {
+        "正财": {
+          "situation": "收入稳健",
+          "reasons": [
+            "稳健"
+          ],
+          "advice": [
+            "持续积累"
+          ],
+          "timing": "长期"
+        },
+        "偏财": {
+          "situation": "偏财一般",
+          "reasons": [
+            "低调"
+          ],
+          "advice": [
+            "谨慎"
+          ],
+          "timing": "短期"
+        },
+        "投资": {
+          "situation": "适合长期稳健配置",
+          "reasons": [
+            "稳健策略"
+          ],
+          "advice": [
+            "长期持有"
+          ],
+          "timing": "长期"
+        },
+        "风险": {
+          "situation": "风险较低",
+          "reasons": [
+            "谨慎"
+          ],
+          "advice": [
+            "保持克制"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "16": {
+      "name": "豫",
+      "overall_tendency": "吉",
+      "wealth_rating": 4,
+      "key_points": [
+        "市场情绪高",
+        "机会增多",
+        "需防过度乐观",
+        "把握节奏"
+      ],
+      "scenario_specific": {
+        "正财": {
+          "situation": "收入机会增加",
+          "reasons": [
+            "情绪向好"
+          ],
+          "advice": [
+            "把握机会"
+          ],
+          "timing": "近期"
+        },
+        "偏财": {
+          "situation": "偏财活跃",
+          "reasons": [
+            "情绪高"
+          ],
+          "advice": [
+            "谨慎参与"
+          ],
+          "timing": "短期"
+        },
+        "投资": {
+          "situation": "投资情绪偏热",
+          "reasons": [
+            "行情上升"
+          ],
+          "advice": [
+            "控制仓位",
+            "避免追高"
+          ],
+          "timing": "近期"
+        },
+        "风险": {
+          "situation": "风险偏高",
+          "reasons": [
+            "情绪过热"
+          ],
+          "advice": [
+            "保持克制"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "17": {
+      "name": "随",
+      "overall_tendency": "吉",
+      "wealth_rating": 4,
+      "key_points": [
+        "顺势而为",
+        "跟随趋势获利",
+        "保持原则",
+        "避免盲从"
+      ],
+      "scenario_specific": {
+        "正财": {
+          "situation": "顺势调整岗位收入增加",
+          "reasons": [
+            "趋势有利"
+          ],
+          "advice": [
+            "把握趋势"
+          ],
+          "timing": "近期"
+        },
+        "偏财": {
+          "situation": "偏财随趋势出现",
+          "reasons": [
+            "风口"
+          ],
+          "advice": [
+            "谨慎参与"
+          ],
+          "timing": "短期"
+        },
+        "投资": {
+          "situation": "趋势行情利好",
+          "reasons": [
+            "趋势明确"
+          ],
+          "advice": [
+            "跟随趋势",
+            "注意风控"
+          ],
+          "timing": "近期"
+        },
+        "风险": {
+          "situation": "风险中等",
+          "reasons": [
+            "趋势波动"
+          ],
+          "advice": [
+            "设止损"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "18": {
+      "name": "蛊",
+      "overall_tendency": "平",
+      "wealth_rating": 3,
+      "key_points": [
+        "问题暴露需整改",
+        "财务结构需修复",
+        "先治本后求利",
+        "避免拖延"
+      ],
+      "scenario_specific": {
+        "正财": {
+          "situation": "收入结构需调整",
+          "reasons": [
+            "结构问题"
+          ],
+          "advice": [
+            "优化收入来源"
+          ],
+          "timing": "中期"
+        },
+        "偏财": {
+          "situation": "偏财模式需修正",
+          "reasons": [
+            "方法问题"
+          ],
+          "advice": [
+            "修正策略"
+          ],
+          "timing": "短期"
+        },
+        "投资": {
+          "situation": "投资结构需整顿",
+          "reasons": [
+            "配置失衡"
+          ],
+          "advice": [
+            "重新配置"
+          ],
+          "timing": "中期"
+        },
+        "风险": {
+          "situation": "风险中等偏高",
+          "reasons": [
+            "结构性问题"
+          ],
+          "advice": [
+            "控制风险"
+          ],
+          "timing": "短期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "19": {
+      "name": "临",
+      "overall_tendency": "吉",
+      "wealth_rating": 4,
+      "key_points": [
+        "财运上升",
+        "机会临近",
+        "适合扩展",
+        "保持谨慎"
+      ],
+      "scenario_specific": {
+        "正财": {
+          "situation": "收入提升",
+          "reasons": [
+            "上升期"
+          ],
+          "advice": [
+            "主动争取"
+          ],
+          "timing": "近期"
+        },
+        "偏财": {
+          "situation": "偏财机会增加",
+          "reasons": [
+            "时机好"
+          ],
+          "advice": [
+            "谨慎参与"
+          ],
+          "timing": "短期"
+        },
+        "投资": {
+          "situation": "投资机会较多",
+          "reasons": [
+            "行情回暖"
+          ],
+          "advice": [
+            "控制仓位"
+          ],
+          "timing": "近期"
+        },
+        "风险": {
+          "situation": "风险可控",
+          "reasons": [
+            "趋势向好"
+          ],
+          "advice": [
+            "保持谨慎"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "20": {
+      "name": "观",
+      "overall_tendency": "平",
+      "wealth_rating": 3,
+      "key_points": [
+        "适合观察与评估",
+        "不宜贸然投入",
+        "先看清方向",
+        "谨慎决策"
+      ],
+      "scenario_specific": {
+        "正财": {
+          "situation": "收入稳定",
+          "reasons": [
+            "观望期"
+          ],
+          "advice": [
+            "稳住收入"
+          ],
+          "timing": "短期"
+        },
+        "偏财": {
+          "situation": "偏财不明朗",
+          "reasons": [
+            "信息不足"
+          ],
+          "advice": [
+            "观望"
+          ],
+          "timing": "短期"
+        },
+        "投资": {
+          "situation": "投资需观望",
+          "reasons": [
+            "方向不明"
+          ],
+          "advice": [
+            "暂缓"
+          ],
+          "timing": "短期"
+        },
+        "风险": {
+          "situation": "风险中等",
+          "reasons": [
+            "不确定"
+          ],
+          "advice": [
+            "谨慎评估"
+          ],
+          "timing": "短期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "21": {
+      "name": "噬嗑",
+      "overall_tendency": "平",
+      "wealth_rating": 3,
+      "key_points": [
+        "需果断处理问题",
+        "制度合规重要",
+        "适合整顿财务",
+        "避免拖延"
+      ],
+      "scenario_specific": {
+        "正财": {
+          "situation": "收入结构需梳理",
+          "reasons": [
+            "规则问题"
+          ],
+          "advice": [
+            "规范流程"
+          ],
+          "timing": "短期"
+        },
+        "偏财": {
+          "situation": "偏财需合规",
+          "reasons": [
+            "合规风险"
+          ],
+          "advice": [
+            "谨慎参与"
+          ],
+          "timing": "短期"
+        },
+        "投资": {
+          "situation": "投资需合规审查",
+          "reasons": [
+            "风控"
+          ],
+          "advice": [
+            "审查合同"
+          ],
+          "timing": "短期"
+        },
+        "风险": {
+          "situation": "风险中等",
+          "reasons": [
+            "合规"
+          ],
+          "advice": [
+            "保持合规"
+          ],
+          "timing": "短期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "22": {
+      "name": "贲",
+      "overall_tendency": "平",
+      "wealth_rating": 3,
+      "key_points": [
+        "包装与展示带来机会",
+        "重视形象与品牌",
+        "勿舍本逐末",
+        "保持内核"
+      ],
+      "scenario_specific": {
+        "正财": {
+          "situation": "收入受形象影响",
+          "reasons": [
+            "展示"
+          ],
+          "advice": [
+            "提升专业形象"
+          ],
+          "timing": "近期"
+        },
+        "偏财": {
+          "situation": "偏财与包装有关",
+          "reasons": [
+            "外在呈现"
+          ],
+          "advice": [
+            "注意合规"
+          ],
+          "timing": "短期"
+        },
+        "投资": {
+          "situation": "投资需辨别包装噪音",
+          "reasons": [
+            "信息复杂"
+          ],
+          "advice": [
+            "重视基本面"
+          ],
+          "timing": "短期"
+        },
+        "风险": {
+          "situation": "风险中等",
+          "reasons": [
+            "信息噪音"
+          ],
+          "advice": [
+            "谨慎判断"
+          ],
+          "timing": "短期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "23": {
+      "name": "剥",
+      "overall_tendency": "不利",
+      "wealth_rating": 2,
+      "key_points": [
+        "财运下行",
+        "现金流承压",
+        "宜守不宜攻",
+        "避免扩张"
+      ],
+      "scenario_specific": {
+        "正财": {
+          "situation": "收入下降",
+          "reasons": [
+            "环境不利"
+          ],
+          "advice": [
+            "控制支出"
+          ],
+          "timing": "短期"
+        },
+        "偏财": {
+          "situation": "偏财枯竭",
+          "reasons": [
+            "机会减少"
+          ],
+          "advice": [
+            "减少参与"
+          ],
+          "timing": "短期"
+        },
+        "投资": {
+          "situation": "投资宜防守",
+          "reasons": [
+            "下行期"
+          ],
+          "advice": [
+            "降低风险资产"
+          ],
+          "timing": "短期"
+        },
+        "风险": {
+          "situation": "风险偏高",
+          "reasons": [
+            "下行"
+          ],
+          "advice": [
+            "保守"
+          ],
+          "timing": "短期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "24": {
+      "name": "复",
+      "overall_tendency": "吉",
+      "wealth_rating": 4,
+      "key_points": [
+        "财运回暖",
+        "适合重启",
+        "小步复苏",
+        "把握机会"
+      ],
+      "scenario_specific": {
+        "正财": {
+          "situation": "收入回升",
+          "reasons": [
+            "回暖"
+          ],
+          "advice": [
+            "把握机会"
+          ],
+          "timing": "近期"
+        },
+        "偏财": {
+          "situation": "偏财回暖",
+          "reasons": [
+            "回暖"
+          ],
+          "advice": [
+            "谨慎参与"
+          ],
+          "timing": "短期"
+        },
+        "投资": {
+          "situation": "投资回暖",
+          "reasons": [
+            "趋势回升"
+          ],
+          "advice": [
+            "小步加仓"
+          ],
+          "timing": "近期"
+        },
+        "风险": {
+          "situation": "风险可控",
+          "reasons": [
+            "回暖"
+          ],
+          "advice": [
+            "保持谨慎"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "25": {
+      "name": "无妄",
+      "overall_tendency": "吉",
+      "wealth_rating": 4,
+      "key_points": [
+        "诚信与规则带来稳定收益",
+        "不宜投机",
+        "稳健为主",
+        "长期积累"
+      ],
+      "scenario_specific": {
+        "正财": {
+          "situation": "收入稳定",
+          "reasons": [
+            "诚信"
+          ],
+          "advice": [
+            "坚持稳健"
+          ],
+          "timing": "长期"
+        },
+        "偏财": {
+          "situation": "偏财不宜冒进",
+          "reasons": [
+            "规则"
+          ],
+          "advice": [
+            "避免投机"
+          ],
+          "timing": "短期"
+        },
+        "投资": {
+          "situation": "适合长期稳健投资",
+          "reasons": [
+            "稳健"
+          ],
+          "advice": [
+            "长期持有"
+          ],
+          "timing": "长期"
+        },
+        "风险": {
+          "situation": "风险较低",
+          "reasons": [
+            "纪律"
+          ],
+          "advice": [
+            "保持克制"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "26": {
+      "name": "大畜",
+      "overall_tendency": "平",
+      "wealth_rating": 3,
+      "key_points": [
+        "积蓄力量",
+        "适合储备资金",
+        "不宜冒进",
+        "等待时机"
+      ],
+      "scenario_specific": {
+        "正财": {
+          "situation": "收入稳定，需积蓄",
+          "reasons": [
+            "储备期"
+          ],
+          "advice": [
+            "加强储蓄"
+          ],
+          "timing": "中期"
+        },
+        "偏财": {
+          "situation": "偏财机会少",
+          "reasons": [
+            "储备期"
+          ],
+          "advice": [
+            "保守"
+          ],
+          "timing": "短期"
+        },
+        "投资": {
+          "situation": "适合稳健储备型配置",
+          "reasons": [
+            "等待时机"
+          ],
+          "advice": [
+            "控制仓位"
+          ],
+          "timing": "中期"
+        },
+        "风险": {
+          "situation": "风险中等",
+          "reasons": [
+            "储备期"
+          ],
+          "advice": [
+            "保持谨慎"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "27": {
+      "name": "颐",
+      "overall_tendency": "平",
+      "wealth_rating": 3,
+      "key_points": [
+        "关注基础与现金流",
+        "稳步积累",
+        "避免分心",
+        "重视长期"
+      ],
+      "scenario_specific": {
+        "正财": {
+          "situation": "收入稳定",
+          "reasons": [
+            "基础稳"
+          ],
+          "advice": [
+            "稳步积累"
+          ],
+          "timing": "长期"
+        },
+        "偏财": {
+          "situation": "偏财一般",
+          "reasons": [
+            "基础期"
+          ],
+          "advice": [
+            "谨慎参与"
+          ],
+          "timing": "短期"
+        },
+        "投资": {
+          "situation": "适合长期基础配置",
+          "reasons": [
+            "基础建设"
+          ],
+          "advice": [
+            "稳健配置"
+          ],
+          "timing": "长期"
+        },
+        "风险": {
+          "situation": "风险可控",
+          "reasons": [
+            "稳健"
+          ],
+          "advice": [
+            "保持节奏"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "28": {
+      "name": "大过",
+      "overall_tendency": "平",
+      "wealth_rating": 3,
+      "key_points": [
+        "压力过重",
+        "资金负担大",
+        "需调整结构",
+        "降低风险"
+      ],
+      "scenario_specific": {
+        "正财": {
+          "situation": "收入压力大",
+          "reasons": [
+            "负担重"
+          ],
+          "advice": [
+            "减少支出"
+          ],
+          "timing": "短期"
+        },
+        "偏财": {
+          "situation": "偏财风险高",
+          "reasons": [
+            "压力"
+          ],
+          "advice": [
+            "避免冲动"
+          ],
+          "timing": "短期"
+        },
+        "投资": {
+          "situation": "投资需减轻负荷",
+          "reasons": [
+            "风险高"
+          ],
+          "advice": [
+            "降低仓位"
+          ],
+          "timing": "短期"
+        },
+        "风险": {
+          "situation": "风险偏高",
+          "reasons": [
+            "压力大"
+          ],
+          "advice": [
+            "降低风险"
+          ],
+          "timing": "短期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "29": {
+      "name": "坎",
+      "overall_tendency": "不利",
+      "wealth_rating": 2,
+      "key_points": [
+        "风险高，波动大",
+        "需优先风控",
+        "避免冒险",
+        "保守策略"
+      ],
+      "scenario_specific": {
+        "正财": {
+          "situation": "收入波动",
+          "reasons": [
+            "风险"
+          ],
+          "advice": [
+            "稳住现金流"
+          ],
+          "timing": "短期"
+        },
+        "偏财": {
+          "situation": "偏财高风险",
+          "reasons": [
+            "波动"
+          ],
+          "advice": [
+            "避免参与"
+          ],
+          "timing": "短期"
+        },
+        "投资": {
+          "situation": "投资风险高",
+          "reasons": [
+            "不确定"
+          ],
+          "advice": [
+            "保守防守"
+          ],
+          "timing": "短期"
+        },
+        "风险": {
+          "situation": "风险高",
+          "reasons": [
+            "波动"
+          ],
+          "advice": [
+            "严格风控"
+          ],
+          "timing": "短期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "30": {
+      "name": "离",
+      "overall_tendency": "吉",
+      "wealth_rating": 4,
+      "key_points": [
+        "品牌与曝光带来收益",
+        "适合推广与传播",
+        "注意持续性",
+        "避免浮躁"
+      ],
+      "scenario_specific": {
+        "正财": {
+          "situation": "收入增加",
+          "reasons": [
+            "曝光"
+          ],
+          "advice": [
+            "强化品牌"
+          ],
+          "timing": "近期"
+        },
+        "偏财": {
+          "situation": "偏财来自传播",
+          "reasons": [
+            "曝光"
+          ],
+          "advice": [
+            "谨慎合作"
+          ],
+          "timing": "短期"
+        },
+        "投资": {
+          "situation": "适合关注传播型机会",
+          "reasons": [
+            "曝光效应"
+          ],
+          "advice": [
+            "控制仓位"
+          ],
+          "timing": "近期"
+        },
+        "风险": {
+          "situation": "风险中等",
+          "reasons": [
+            "情绪波动"
+          ],
+          "advice": [
+            "避免追高"
+          ],
+          "timing": "短期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "31": {
+      "name": "咸",
+      "overall_tendency": "吉",
+      "wealth_rating": 4,
+      "key_points": [
+        "互动带来机会",
+        "人脉价值高",
+        "沟通增益",
+        "合作可成"
+      ],
+      "scenario_specific": {
+        "正财": {
+          "situation": "收入因人脉增加",
+          "reasons": [
+            "互动"
+          ],
+          "advice": [
+            "维护关系"
+          ],
+          "timing": "近期"
+        },
+        "偏财": {
+          "situation": "偏财来自人脉",
+          "reasons": [
+            "互动"
+          ],
+          "advice": [
+            "谨慎选择"
+          ],
+          "timing": "短期"
+        },
+        "投资": {
+          "situation": "合作投资较顺",
+          "reasons": [
+            "关系"
+          ],
+          "advice": [
+            "明确协议"
+          ],
+          "timing": "近期"
+        },
+        "风险": {
+          "situation": "风险可控",
+          "reasons": [
+            "互信"
+          ],
+          "advice": [
+            "保持边界"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "32": {
+      "name": "恒",
+      "overall_tendency": "吉",
+      "wealth_rating": 4,
+      "key_points": [
+        "稳定持续",
+        "适合长期配置",
+        "不宜频繁变动",
+        "稳中求进"
+      ],
+      "scenario_specific": {
+        "正财": {
+          "situation": "收入稳定",
+          "reasons": [
+            "持续性"
+          ],
+          "advice": [
+            "保持节奏"
+          ],
+          "timing": "长期"
+        },
+        "偏财": {
+          "situation": "偏财不稳定",
+          "reasons": [
+            "稳健为主"
+          ],
+          "advice": [
+            "少参与"
+          ],
+          "timing": "短期"
+        },
+        "投资": {
+          "situation": "适合长期稳健投资",
+          "reasons": [
+            "稳定"
+          ],
+          "advice": [
+            "长期持有"
+          ],
+          "timing": "长期"
+        },
+        "风险": {
+          "situation": "风险较低",
+          "reasons": [
+            "稳健"
+          ],
+          "advice": [
+            "保持纪律"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "33": {
+      "name": "遯",
+      "overall_tendency": "平",
+      "wealth_rating": 3,
+      "key_points": [
+        "宜退守保本",
+        "减少暴露",
+        "等待时机",
+        "避免硬碰"
+      ],
+      "scenario_specific": {
+        "正财": {
+          "situation": "收入需保守",
+          "reasons": [
+            "环境不利"
+          ],
+          "advice": [
+            "稳住岗位"
+          ],
+          "timing": "短期"
+        },
+        "偏财": {
+          "situation": "偏财风险高",
+          "reasons": [
+            "时机不佳"
+          ],
+          "advice": [
+            "避免参与"
+          ],
+          "timing": "短期"
+        },
+        "投资": {
+          "situation": "投资宜防守",
+          "reasons": [
+            "不确定"
+          ],
+          "advice": [
+            "降低仓位"
+          ],
+          "timing": "短期"
+        },
+        "风险": {
+          "situation": "风险偏高",
+          "reasons": [
+            "下行"
+          ],
+          "advice": [
+            "保守"
+          ],
+          "timing": "短期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "34": {
+      "name": "大壮",
+      "overall_tendency": "吉",
+      "wealth_rating": 4,
+      "key_points": [
+        "行动力增强",
+        "可扩展收入",
+        "需守规矩",
+        "避免冒进"
+      ],
+      "scenario_specific": {
+        "正财": {
+          "situation": "收入增长机会多",
+          "reasons": [
+            "行动力"
+          ],
+          "advice": [
+            "把握机会"
+          ],
+          "timing": "近期"
+        },
+        "偏财": {
+          "situation": "偏财活跃",
+          "reasons": [
+            "行动"
+          ],
+          "advice": [
+            "谨慎参与"
+          ],
+          "timing": "短期"
+        },
+        "投资": {
+          "situation": "投资机会增加",
+          "reasons": [
+            "行情活跃"
+          ],
+          "advice": [
+            "控制风险"
+          ],
+          "timing": "近期"
+        },
+        "风险": {
+          "situation": "风险中等",
+          "reasons": [
+            "波动"
+          ],
+          "advice": [
+            "设止损"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "35": {
+      "name": "晋",
+      "overall_tendency": "吉",
+      "wealth_rating": 4,
+      "key_points": [
+        "财运上升",
+        "机会增多",
+        "适合推进",
+        "注意节奏"
+      ],
+      "scenario_specific": {
+        "正财": {
+          "situation": "收入提升",
+          "reasons": [
+            "上升期"
+          ],
+          "advice": [
+            "把握机会"
+          ],
+          "timing": "近期"
+        },
+        "偏财": {
+          "situation": "偏财机会增多",
+          "reasons": [
+            "行情好"
+          ],
+          "advice": [
+            "谨慎参与"
+          ],
+          "timing": "短期"
+        },
+        "投资": {
+          "situation": "投资机会好",
+          "reasons": [
+            "上升"
+          ],
+          "advice": [
+            "控制仓位"
+          ],
+          "timing": "近期"
+        },
+        "风险": {
+          "situation": "风险可控",
+          "reasons": [
+            "行情好"
+          ],
+          "advice": [
+            "保持谨慎"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "36": {
+      "name": "明夷",
+      "overall_tendency": "不利",
+      "wealth_rating": 2,
+      "key_points": [
+        "收益受阻",
+        "需低调保守",
+        "避免扩张",
+        "等待转机"
+      ],
+      "scenario_specific": {
+        "正财": {
+          "situation": "收入受限",
+          "reasons": [
+            "环境不利"
+          ],
+          "advice": [
+            "稳住收入"
+          ],
+          "timing": "短期"
+        },
+        "偏财": {
+          "situation": "偏财不利",
+          "reasons": [
+            "环境不佳"
+          ],
+          "advice": [
+            "避免参与"
+          ],
+          "timing": "短期"
+        },
+        "投资": {
+          "situation": "投资需保守",
+          "reasons": [
+            "风险"
+          ],
+          "advice": [
+            "防守"
+          ],
+          "timing": "短期"
+        },
+        "风险": {
+          "situation": "风险偏高",
+          "reasons": [
+            "环境弱"
+          ],
+          "advice": [
+            "保守"
+          ],
+          "timing": "短期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "37": {
+      "name": "家人",
+      "overall_tendency": "平",
+      "wealth_rating": 3,
+      "key_points": [
+        "家庭责任与开支",
+        "适合预算管理",
+        "重视稳定",
+        "避免浪费"
+      ],
+      "scenario_specific": {
+        "正财": {
+          "situation": "收入稳定但需预算",
+          "reasons": [
+            "家庭开支"
+          ],
+          "advice": [
+            "制定预算"
+          ],
+          "timing": "持续"
+        },
+        "偏财": {
+          "situation": "偏财一般",
+          "reasons": [
+            "稳定优先"
+          ],
+          "advice": [
+            "谨慎参与"
+          ],
+          "timing": "短期"
+        },
+        "投资": {
+          "situation": "投资需考虑家庭责任",
+          "reasons": [
+            "责任"
+          ],
+          "advice": [
+            "稳健配置"
+          ],
+          "timing": "长期"
+        },
+        "风险": {
+          "situation": "风险中等",
+          "reasons": [
+            "责任"
+          ],
+          "advice": [
+            "控制风险"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "38": {
+      "name": "睽",
+      "overall_tendency": "平",
+      "wealth_rating": 3,
+      "key_points": [
+        "分歧影响收益",
+        "需协调资源",
+        "小事可成",
+        "大事暂缓"
+      ],
+      "scenario_specific": {
+        "正财": {
+          "situation": "收入受分歧影响",
+          "reasons": [
+            "协作问题"
+          ],
+          "advice": [
+            "协调关系"
+          ],
+          "timing": "短期"
+        },
+        "偏财": {
+          "situation": "偏财不稳定",
+          "reasons": [
+            "分歧"
+          ],
+          "advice": [
+            "谨慎参与"
+          ],
+          "timing": "短期"
+        },
+        "投资": {
+          "situation": "投资需谨慎协调",
+          "reasons": [
+            "分歧"
+          ],
+          "advice": [
+            "小步试错"
+          ],
+          "timing": "短期"
+        },
+        "风险": {
+          "situation": "风险中等",
+          "reasons": [
+            "分歧"
+          ],
+          "advice": [
+            "降低风险"
+          ],
+          "timing": "短期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "39": {
+      "name": "蹇",
+      "overall_tendency": "不利",
+      "wealth_rating": 2,
+      "key_points": [
+        "财运受阻",
+        "需调整策略",
+        "避免冒进",
+        "借助外力"
+      ],
+      "scenario_specific": {
+        "正财": {
+          "situation": "收入受阻",
+          "reasons": [
+            "环境不利"
+          ],
+          "advice": [
+            "调整策略"
+          ],
+          "timing": "短期"
+        },
+        "偏财": {
+          "situation": "偏财不利",
+          "reasons": [
+            "阻力"
+          ],
+          "advice": [
+            "减少参与"
+          ],
+          "timing": "短期"
+        },
+        "投资": {
+          "situation": "投资受阻",
+          "reasons": [
+            "阻力"
+          ],
+          "advice": [
+            "保守"
+          ],
+          "timing": "短期"
+        },
+        "风险": {
+          "situation": "风险偏高",
+          "reasons": [
+            "受阻"
+          ],
+          "advice": [
+            "谨慎"
+          ],
+          "timing": "短期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "40": {
+      "name": "解",
+      "overall_tendency": "吉",
+      "wealth_rating": 4,
+      "key_points": [
+        "阻力解除",
+        "机会回升",
+        "适合修复",
+        "顺势而为"
+      ],
+      "scenario_specific": {
+        "正财": {
+          "situation": "收入回升",
+          "reasons": [
+            "阻力减轻"
+          ],
+          "advice": [
+            "把握机会"
+          ],
+          "timing": "近期"
+        },
+        "偏财": {
+          "situation": "偏财回暖",
+          "reasons": [
+            "环境改善"
+          ],
+          "advice": [
+            "谨慎参与"
+          ],
+          "timing": "短期"
+        },
+        "投资": {
+          "situation": "投资回暖",
+          "reasons": [
+            "风险释放"
+          ],
+          "advice": [
+            "小步加仓"
+          ],
+          "timing": "近期"
+        },
+        "风险": {
+          "situation": "风险可控",
+          "reasons": [
+            "环境改善"
+          ],
+          "advice": [
+            "保持谨慎"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "41": {
+      "name": "损",
+      "overall_tendency": "平",
+      "wealth_rating": 3,
+      "key_points": [
+        "减负增效",
+        "削减开支",
+        "优化结构",
+        "先减后增"
+      ],
+      "scenario_specific": {
+        "正财": {
+          "situation": "收入需优化结构",
+          "reasons": [
+            "减负"
+          ],
+          "advice": [
+            "控制支出"
+          ],
+          "timing": "短期"
+        },
+        "偏财": {
+          "situation": "偏财宜保守",
+          "reasons": [
+            "减负"
+          ],
+          "advice": [
+            "谨慎"
+          ],
+          "timing": "短期"
+        },
+        "投资": {
+          "situation": "投资需减仓",
+          "reasons": [
+            "风险控制"
+          ],
+          "advice": [
+            "降低仓位"
+          ],
+          "timing": "短期"
+        },
+        "风险": {
+          "situation": "风险中等",
+          "reasons": [
+            "减负"
+          ],
+          "advice": [
+            "控制风险"
+          ],
+          "timing": "短期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "42": {
+      "name": "益",
+      "overall_tendency": "吉",
+      "wealth_rating": 4,
+      "key_points": [
+        "增益明显",
+        "资源增长",
+        "适合扩展",
+        "把握机会"
+      ],
+      "scenario_specific": {
+        "正财": {
+          "situation": "收入增长",
+          "reasons": [
+            "增益"
+          ],
+          "advice": [
+            "争取机会"
+          ],
+          "timing": "近期"
+        },
+        "偏财": {
+          "situation": "偏财机会增加",
+          "reasons": [
+            "增益"
+          ],
+          "advice": [
+            "谨慎参与"
+          ],
+          "timing": "短期"
+        },
+        "投资": {
+          "situation": "投资机会增多",
+          "reasons": [
+            "行情好"
+          ],
+          "advice": [
+            "控制仓位"
+          ],
+          "timing": "近期"
+        },
+        "风险": {
+          "situation": "风险可控",
+          "reasons": [
+            "增益"
+          ],
+          "advice": [
+            "谨慎"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "43": {
+      "name": "夬",
+      "overall_tendency": "平",
+      "wealth_rating": 3,
+      "key_points": [
+        "果断取舍",
+        "避免拖延",
+        "机会窗口短",
+        "控制风险"
+      ],
+      "scenario_specific": {
+        "正财": {
+          "situation": "需果断调整收入策略",
+          "reasons": [
+            "窗口期"
+          ],
+          "advice": [
+            "快速决策"
+          ],
+          "timing": "短期"
+        },
+        "偏财": {
+          "situation": "偏财需果断选择",
+          "reasons": [
+            "窗口期"
+          ],
+          "advice": [
+            "谨慎参与"
+          ],
+          "timing": "短期"
+        },
+        "投资": {
+          "situation": "投资需果断决策",
+          "reasons": [
+            "窗口期"
+          ],
+          "advice": [
+            "设定规则"
+          ],
+          "timing": "短期"
+        },
+        "风险": {
+          "situation": "风险中等",
+          "reasons": [
+            "决断"
+          ],
+          "advice": [
+            "保持纪律"
+          ],
+          "timing": "短期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "44": {
+      "name": "姤",
+      "overall_tendency": "平",
+      "wealth_rating": 3,
+      "key_points": [
+        "突发机会",
+        "需谨慎筛选",
+        "避免冲动",
+        "先观察"
+      ],
+      "scenario_specific": {
+        "正财": {
+          "situation": "突发机会出现",
+          "reasons": [
+            "机会临时"
+          ],
+          "advice": [
+            "谨慎评估"
+          ],
+          "timing": "短期"
+        },
+        "偏财": {
+          "situation": "偏财突然出现",
+          "reasons": [
+            "机会"
+          ],
+          "advice": [
+            "先观察"
+          ],
+          "timing": "短期"
+        },
+        "投资": {
+          "situation": "投资机会突发",
+          "reasons": [
+            "临时"
+          ],
+          "advice": [
+            "谨慎评估"
+          ],
+          "timing": "短期"
+        },
+        "风险": {
+          "situation": "风险中等",
+          "reasons": [
+            "突发"
+          ],
+          "advice": [
+            "谨慎"
+          ],
+          "timing": "短期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "45": {
+      "name": "萃",
+      "overall_tendency": "吉",
+      "wealth_rating": 4,
+      "key_points": [
+        "资源汇聚",
+        "适合整合",
+        "人脉带来收益",
+        "凝聚共识"
+      ],
+      "scenario_specific": {
+        "正财": {
+          "situation": "收入因资源汇聚提升",
+          "reasons": [
+            "合力"
+          ],
+          "advice": [
+            "整合资源"
+          ],
+          "timing": "近期"
+        },
+        "偏财": {
+          "situation": "偏财来自人脉汇聚",
+          "reasons": [
+            "人脉"
+          ],
+          "advice": [
+            "谨慎合作"
+          ],
+          "timing": "短期"
+        },
+        "投资": {
+          "situation": "投资合力增强",
+          "reasons": [
+            "资源"
+          ],
+          "advice": [
+            "明确分工"
+          ],
+          "timing": "近期"
+        },
+        "风险": {
+          "situation": "风险可控",
+          "reasons": [
+            "合力"
+          ],
+          "advice": [
+            "明确规则"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "46": {
+      "name": "升",
+      "overall_tendency": "吉",
+      "wealth_rating": 4,
+      "key_points": [
+        "稳步上升",
+        "循序渐进",
+        "长期增长",
+        "保持节奏"
+      ],
+      "scenario_specific": {
+        "正财": {
+          "situation": "收入稳步增长",
+          "reasons": [
+            "积累"
+          ],
+          "advice": [
+            "持续投入"
+          ],
+          "timing": "中期"
+        },
+        "偏财": {
+          "situation": "偏财稳步",
+          "reasons": [
+            "积累"
+          ],
+          "advice": [
+            "谨慎参与"
+          ],
+          "timing": "短期"
+        },
+        "投资": {
+          "situation": "投资稳步增长",
+          "reasons": [
+            "积累"
+          ],
+          "advice": [
+            "长期持有"
+          ],
+          "timing": "长期"
+        },
+        "风险": {
+          "situation": "风险中等",
+          "reasons": [
+            "节奏"
+          ],
+          "advice": [
+            "保持节奏"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "47": {
+      "name": "困",
+      "overall_tendency": "不利",
+      "wealth_rating": 2,
+      "key_points": [
+        "财运受困",
+        "资源受限",
+        "需保守",
+        "等待转机"
+      ],
+      "scenario_specific": {
+        "正财": {
+          "situation": "收入受限",
+          "reasons": [
+            "受困"
+          ],
+          "advice": [
+            "控制支出"
+          ],
+          "timing": "短期"
+        },
+        "偏财": {
+          "situation": "偏财受阻",
+          "reasons": [
+            "受限"
+          ],
+          "advice": [
+            "避免参与"
+          ],
+          "timing": "短期"
+        },
+        "投资": {
+          "situation": "投资受困",
+          "reasons": [
+            "受限"
+          ],
+          "advice": [
+            "保守防守"
+          ],
+          "timing": "短期"
+        },
+        "风险": {
+          "situation": "风险偏高",
+          "reasons": [
+            "受限"
+          ],
+          "advice": [
+            "保守"
+          ],
+          "timing": "短期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "48": {
+      "name": "井",
+      "overall_tendency": "平",
+      "wealth_rating": 3,
+      "key_points": [
+        "重视基础建设",
+        "稳固现金流",
+        "可持续",
+        "避免急进"
+      ],
+      "scenario_specific": {
+        "正财": {
+          "situation": "收入稳定",
+          "reasons": [
+            "基础稳"
+          ],
+          "advice": [
+            "稳固现金流"
+          ],
+          "timing": "长期"
+        },
+        "偏财": {
+          "situation": "偏财一般",
+          "reasons": [
+            "基础期"
+          ],
+          "advice": [
+            "谨慎"
+          ],
+          "timing": "短期"
+        },
+        "投资": {
+          "situation": "投资需重视基础",
+          "reasons": [
+            "基础建设"
+          ],
+          "advice": [
+            "长期布局"
+          ],
+          "timing": "长期"
+        },
+        "风险": {
+          "situation": "风险可控",
+          "reasons": [
+            "基础稳"
+          ],
+          "advice": [
+            "保持节奏"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "49": {
+      "name": "革",
+      "overall_tendency": "吉",
+      "wealth_rating": 4,
+      "key_points": [
+        "需要改革与更新",
+        "适合调整财务结构",
+        "把握变革机会",
+        "风险可控"
+      ],
+      "scenario_specific": {
+        "正财": {
+          "situation": "收入结构需调整",
+          "reasons": [
+            "变革"
+          ],
+          "advice": [
+            "优化收入结构"
+          ],
+          "timing": "近期"
+        },
+        "偏财": {
+          "situation": "偏财机会变动",
+          "reasons": [
+            "变革"
+          ],
+          "advice": [
+            "谨慎参与"
+          ],
+          "timing": "短期"
+        },
+        "投资": {
+          "situation": "投资需调整策略",
+          "reasons": [
+            "变革"
+          ],
+          "advice": [
+            "调整配置"
+          ],
+          "timing": "近期"
+        },
+        "风险": {
+          "situation": "风险中等",
+          "reasons": [
+            "变动"
+          ],
+          "advice": [
+            "控制风险"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "50": {
+      "name": "鼎",
+      "overall_tendency": "吉",
+      "wealth_rating": 4,
+      "key_points": [
+        "制度成型，收益稳定",
+        "适合稳健经营",
+        "组织能力增强",
+        "稳中求进"
+      ],
+      "scenario_specific": {
+        "正财": {
+          "situation": "收入稳定",
+          "reasons": [
+            "制度成型"
+          ],
+          "advice": [
+            "稳健经营"
+          ],
+          "timing": "长期"
+        },
+        "偏财": {
+          "situation": "偏财一般",
+          "reasons": [
+            "稳定"
+          ],
+          "advice": [
+            "谨慎"
+          ],
+          "timing": "短期"
+        },
+        "投资": {
+          "situation": "适合稳健投资",
+          "reasons": [
+            "制度"
+          ],
+          "advice": [
+            "长期配置"
+          ],
+          "timing": "长期"
+        },
+        "风险": {
+          "situation": "风险较低",
+          "reasons": [
+            "稳健"
+          ],
+          "advice": [
+            "保持纪律"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "51": {
+      "name": "震",
+      "overall_tendency": "平",
+      "wealth_rating": 3,
+      "key_points": [
+        "突发波动",
+        "需快速应对",
+        "保持现金流",
+        "避免恐慌"
+      ],
+      "scenario_specific": {
+        "正财": {
+          "situation": "收入波动",
+          "reasons": [
+            "突发"
+          ],
+          "advice": [
+            "稳住现金流"
+          ],
+          "timing": "短期"
+        },
+        "偏财": {
+          "situation": "偏财波动",
+          "reasons": [
+            "突发"
+          ],
+          "advice": [
+            "谨慎"
+          ],
+          "timing": "短期"
+        },
+        "投资": {
+          "situation": "投资波动大",
+          "reasons": [
+            "突发"
+          ],
+          "advice": [
+            "控制仓位"
+          ],
+          "timing": "短期"
+        },
+        "风险": {
+          "situation": "风险偏高",
+          "reasons": [
+            "波动"
+          ],
+          "advice": [
+            "降低风险"
+          ],
+          "timing": "短期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "52": {
+      "name": "艮",
+      "overall_tendency": "平",
+      "wealth_rating": 3,
+      "key_points": [
+        "宜停稳观望",
+        "守住底线",
+        "控制支出",
+        "不宜冒进"
+      ],
+      "scenario_specific": {
+        "正财": {
+          "situation": "收入稳定",
+          "reasons": [
+            "守成"
+          ],
+          "advice": [
+            "稳住收入"
+          ],
+          "timing": "短期"
+        },
+        "偏财": {
+          "situation": "偏财不利",
+          "reasons": [
+            "观望"
+          ],
+          "advice": [
+            "减少参与"
+          ],
+          "timing": "短期"
+        },
+        "投资": {
+          "situation": "投资宜观望",
+          "reasons": [
+            "不确定"
+          ],
+          "advice": [
+            "暂缓"
+          ],
+          "timing": "短期"
+        },
+        "风险": {
+          "situation": "风险中等",
+          "reasons": [
+            "观望"
+          ],
+          "advice": [
+            "控制风险"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "53": {
+      "name": "渐",
+      "overall_tendency": "吉",
+      "wealth_rating": 4,
+      "key_points": [
+        "稳步增长",
+        "循序渐进",
+        "长期积累",
+        "避免急进"
+      ],
+      "scenario_specific": {
+        "正财": {
+          "situation": "收入稳步增长",
+          "reasons": [
+            "积累"
+          ],
+          "advice": [
+            "持续提升"
+          ],
+          "timing": "中期"
+        },
+        "偏财": {
+          "situation": "偏财稳步",
+          "reasons": [
+            "积累"
+          ],
+          "advice": [
+            "谨慎参与"
+          ],
+          "timing": "短期"
+        },
+        "投资": {
+          "situation": "投资稳步增长",
+          "reasons": [
+            "长期"
+          ],
+          "advice": [
+            "长期持有"
+          ],
+          "timing": "长期"
+        },
+        "风险": {
+          "situation": "风险可控",
+          "reasons": [
+            "稳健"
+          ],
+          "advice": [
+            "保持节奏"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "54": {
+      "name": "归妹",
+      "overall_tendency": "平",
+      "wealth_rating": 3,
+      "key_points": [
+        "短期机会不稳",
+        "决策需谨慎",
+        "避免仓促",
+        "风险中等"
+      ],
+      "scenario_specific": {
+        "正财": {
+          "situation": "收入不稳",
+          "reasons": [
+            "变动"
+          ],
+          "advice": [
+            "谨慎"
+          ],
+          "timing": "短期"
+        },
+        "偏财": {
+          "situation": "偏财不稳",
+          "reasons": [
+            "变动"
+          ],
+          "advice": [
+            "避免冲动"
+          ],
+          "timing": "短期"
+        },
+        "投资": {
+          "situation": "投资需谨慎",
+          "reasons": [
+            "不稳"
+          ],
+          "advice": [
+            "谨慎评估"
+          ],
+          "timing": "短期"
+        },
+        "风险": {
+          "situation": "风险中等",
+          "reasons": [
+            "不稳"
+          ],
+          "advice": [
+            "控制风险"
+          ],
+          "timing": "短期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "55": {
+      "name": "丰",
+      "overall_tendency": "吉",
+      "wealth_rating": 4,
+      "key_points": [
+        "收益丰厚",
+        "资源充足",
+        "适合扩展",
+        "防盛极而衰"
+      ],
+      "scenario_specific": {
+        "正财": {
+          "situation": "收入丰厚",
+          "reasons": [
+            "丰盛"
+          ],
+          "advice": [
+            "稳住成果"
+          ],
+          "timing": "近期"
+        },
+        "偏财": {
+          "situation": "偏财旺盛",
+          "reasons": [
+            "丰盛"
+          ],
+          "advice": [
+            "谨慎参与"
+          ],
+          "timing": "短期"
+        },
+        "投资": {
+          "situation": "投资回报好",
+          "reasons": [
+            "丰盛"
+          ],
+          "advice": [
+            "控制风险"
+          ],
+          "timing": "近期"
+        },
+        "风险": {
+          "situation": "风险中等",
+          "reasons": [
+            "高位"
+          ],
+          "advice": [
+            "防止贪心"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "56": {
+      "name": "旅",
+      "overall_tendency": "平",
+      "wealth_rating": 3,
+      "key_points": [
+        "财务多变",
+        "需灵活应对",
+        "短期机会",
+        "不宜久留"
+      ],
+      "scenario_specific": {
+        "正财": {
+          "situation": "收入波动",
+          "reasons": [
+            "环境变动"
+          ],
+          "advice": [
+            "保持灵活"
+          ],
+          "timing": "短期"
+        },
+        "偏财": {
+          "situation": "偏财不稳",
+          "reasons": [
+            "变动"
+          ],
+          "advice": [
+            "谨慎"
+          ],
+          "timing": "短期"
+        },
+        "投资": {
+          "situation": "投资需灵活",
+          "reasons": [
+            "不稳定"
+          ],
+          "advice": [
+            "短期应对"
+          ],
+          "timing": "短期"
+        },
+        "风险": {
+          "situation": "风险中等",
+          "reasons": [
+            "变动"
+          ],
+          "advice": [
+            "控制风险"
+          ],
+          "timing": "短期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "57": {
+      "name": "巽",
+      "overall_tendency": "吉",
+      "wealth_rating": 4,
+      "key_points": [
+        "柔性渗透",
+        "稳步推进",
+        "细节决定收益",
+        "耐心累积"
+      ],
+      "scenario_specific": {
+        "正财": {
+          "situation": "收入稳步提升",
+          "reasons": [
+            "细节"
+          ],
+          "advice": [
+            "持续优化"
+          ],
+          "timing": "中期"
+        },
+        "偏财": {
+          "situation": "偏财可期",
+          "reasons": [
+            "策略"
+          ],
+          "advice": [
+            "谨慎参与"
+          ],
+          "timing": "短期"
+        },
+        "投资": {
+          "situation": "投资稳健",
+          "reasons": [
+            "策略"
+          ],
+          "advice": [
+            "稳健配置"
+          ],
+          "timing": "中期"
+        },
+        "风险": {
+          "situation": "风险可控",
+          "reasons": [
+            "稳健"
+          ],
+          "advice": [
+            "保持耐心"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "58": {
+      "name": "兑",
+      "overall_tendency": "吉",
+      "wealth_rating": 4,
+      "key_points": [
+        "沟通带来收益",
+        "谈判有利",
+        "合作顺畅",
+        "注意口舌"
+      ],
+      "scenario_specific": {
+        "正财": {
+          "situation": "收入提升",
+          "reasons": [
+            "沟通"
+          ],
+          "advice": [
+            "加强谈判"
+          ],
+          "timing": "近期"
+        },
+        "偏财": {
+          "situation": "偏财来自沟通",
+          "reasons": [
+            "谈判"
+          ],
+          "advice": [
+            "谨慎承诺"
+          ],
+          "timing": "短期"
+        },
+        "投资": {
+          "situation": "投资谈判有利",
+          "reasons": [
+            "沟通"
+          ],
+          "advice": [
+            "明确条款"
+          ],
+          "timing": "近期"
+        },
+        "风险": {
+          "situation": "风险中等",
+          "reasons": [
+            "口舌"
+          ],
+          "advice": [
+            "避免误解"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "59": {
+      "name": "涣",
+      "overall_tendency": "平",
+      "wealth_rating": 3,
+      "key_points": [
+        "资源分散",
+        "需重新聚焦",
+        "避免分心",
+        "重整方向"
+      ],
+      "scenario_specific": {
+        "正财": {
+          "situation": "收入分散",
+          "reasons": [
+            "方向不一"
+          ],
+          "advice": [
+            "聚焦主线"
+          ],
+          "timing": "短期"
+        },
+        "偏财": {
+          "situation": "偏财分散",
+          "reasons": [
+            "分心"
+          ],
+          "advice": [
+            "减少参与"
+          ],
+          "timing": "短期"
+        },
+        "投资": {
+          "situation": "投资需聚焦",
+          "reasons": [
+            "分散"
+          ],
+          "advice": [
+            "收敛战线"
+          ],
+          "timing": "短期"
+        },
+        "风险": {
+          "situation": "风险中等",
+          "reasons": [
+            "分散"
+          ],
+          "advice": [
+            "控制风险"
+          ],
+          "timing": "短期"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "60": {
+      "name": "节",
+      "overall_tendency": "平",
+      "wealth_rating": 3,
+      "key_points": [
+        "节制为主",
+        "控制支出",
+        "遵循规则",
+        "稳中求进"
+      ],
+      "scenario_specific": {
+        "正财": {
+          "situation": "收入稳定",
+          "reasons": [
+            "节制"
+          ],
+          "advice": [
+            "控制支出"
+          ],
+          "timing": "稳定"
+        },
+        "偏财": {
+          "situation": "偏财谨慎",
+          "reasons": [
+            "节制"
+          ],
+          "advice": [
+            "避免投机"
+          ],
+          "timing": "短期"
+        },
+        "投资": {
+          "situation": "投资需节制",
+          "reasons": [
+            "规则"
+          ],
+          "advice": [
+            "控制仓位"
+          ],
+          "timing": "稳定"
+        },
+        "风险": {
+          "situation": "风险中等",
+          "reasons": [
+            "节制"
+          ],
+          "advice": [
+            "保持纪律"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "61": {
+      "name": "中孚",
+      "overall_tendency": "吉",
+      "wealth_rating": 4,
+      "key_points": [
+        "诚信带来收益",
+        "信任稳定",
+        "适合合作",
+        "稳中求进"
+      ],
+      "scenario_specific": {
+        "正财": {
+          "situation": "收入稳定",
+          "reasons": [
+            "诚信"
+          ],
+          "advice": [
+            "保持诚信"
+          ],
+          "timing": "长期"
+        },
+        "偏财": {
+          "situation": "偏财一般",
+          "reasons": [
+            "稳健"
+          ],
+          "advice": [
+            "谨慎"
+          ],
+          "timing": "短期"
+        },
+        "投资": {
+          "situation": "合作投资顺利",
+          "reasons": [
+            "信任"
+          ],
+          "advice": [
+            "明确规则"
+          ],
+          "timing": "长期"
+        },
+        "风险": {
+          "situation": "风险较低",
+          "reasons": [
+            "诚信"
+          ],
+          "advice": [
+            "保持纪律"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "62": {
+      "name": "小过",
+      "overall_tendency": "平",
+      "wealth_rating": 3,
+      "key_points": [
+        "小事可成",
+        "大事谨慎",
+        "控制风险",
+        "稳步推进"
+      ],
+      "scenario_specific": {
+        "正财": {
+          "situation": "收入小幅提升",
+          "reasons": [
+            "小步"
+          ],
+          "advice": [
+            "稳步"
+          ],
+          "timing": "短期"
+        },
+        "偏财": {
+          "situation": "偏财小幅",
+          "reasons": [
+            "谨慎"
+          ],
+          "advice": [
+            "少量参与"
+          ],
+          "timing": "短期"
+        },
+        "投资": {
+          "situation": "投资小步试错",
+          "reasons": [
+            "谨慎"
+          ],
+          "advice": [
+            "小仓位"
+          ],
+          "timing": "短期"
+        },
+        "风险": {
+          "situation": "风险中等",
+          "reasons": [
+            "谨慎"
+          ],
+          "advice": [
+            "控制风险"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "63": {
+      "name": "既济",
+      "overall_tendency": "平",
+      "wealth_rating": 3,
+      "key_points": [
+        "阶段完成",
+        "需防反复",
+        "守住成果",
+        "避免松懈"
+      ],
+      "scenario_specific": {
+        "正财": {
+          "situation": "收入阶段性稳定",
+          "reasons": [
+            "完成"
+          ],
+          "advice": [
+            "守住成果"
+          ],
+          "timing": "短期"
+        },
+        "偏财": {
+          "situation": "偏财阶段性稳定",
+          "reasons": [
+            "完成"
+          ],
+          "advice": [
+            "避免贪心"
+          ],
+          "timing": "短期"
+        },
+        "投资": {
+          "situation": "投资阶段性完成",
+          "reasons": [
+            "完成"
+          ],
+          "advice": [
+            "锁定收益"
+          ],
+          "timing": "短期"
+        },
+        "风险": {
+          "situation": "风险中等",
+          "reasons": [
+            "反复"
+          ],
+          "advice": [
+            "保持警惕"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    "64": {
+      "name": "未济",
+      "overall_tendency": "平",
+      "wealth_rating": 3,
+      "key_points": [
+        "尚未完成",
+        "需继续推进",
+        "保持耐心",
+        "避免急躁"
+      ],
+      "scenario_specific": {
+        "正财": {
+          "situation": "收入尚未稳定",
+          "reasons": [
+            "未完成"
+          ],
+          "advice": [
+            "持续努力"
+          ],
+          "timing": "短期"
+        },
+        "偏财": {
+          "situation": "偏财尚未成形",
+          "reasons": [
+            "未完成"
+          ],
+          "advice": [
+            "谨慎"
+          ],
+          "timing": "短期"
+        },
+        "投资": {
+          "situation": "投资尚在推进",
+          "reasons": [
+            "未完成"
+          ],
+          "advice": [
+            "保持耐心"
+          ],
+          "timing": "短期"
+        },
+        "风险": {
+          "situation": "风险中等",
+          "reasons": [
+            "未完成"
+          ],
+          "advice": [
+            "保持谨慎"
+          ],
+          "timing": "持续"
+        }
+      },
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    }
+  },
+  "notes": [
+    "本场景需要输出高风险免责声明",
+    "所有卦象数据需包含 source_ref"
+  ]
+}

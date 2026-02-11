@@ -1,0 +1,770 @@
+[
+  {
+    "id": 1,
+    "name": "乾",
+    "judgment_summary": "元亨，利贞。",
+    "source_ref": [
+      "ctext_yijing"
+    ],
+    "upper_trigram": "乾",
+    "lower_trigram": "乾",
+    "image_summary": "天行健，君子以自强不息。",
+    "element_relation": "上下卦比和（金）"
+  },
+  {
+    "id": 2,
+    "name": "坤",
+    "judgment_summary": "元亨，利牝马之贞。君子有攸往，先迷后得主，利西南得朋，东北丧朋。安贞，吉。",
+    "source_ref": [
+      "ctext_yijing"
+    ],
+    "upper_trigram": "坤",
+    "lower_trigram": "坤",
+    "image_summary": "地势坤，君子以厚德载物。",
+    "element_relation": "上下卦比和（土）"
+  },
+  {
+    "id": 3,
+    "name": "屯",
+    "judgment_summary": "元亨，利贞，勿用有攸往，利建侯。",
+    "source_ref": [
+      "ctext_yijing"
+    ],
+    "upper_trigram": "坎",
+    "lower_trigram": "震",
+    "image_summary": "云雷屯，君子以经纶。",
+    "element_relation": "上卦水生下卦木"
+  },
+  {
+    "id": 4,
+    "name": "蒙",
+    "judgment_summary": "亨。匪我求童蒙，童蒙求我。初筮告，再三渎，渎则不告。利贞。",
+    "source_ref": [
+      "ctext_yijing"
+    ],
+    "upper_trigram": "艮",
+    "lower_trigram": "坎",
+    "image_summary": "山下出泉，蒙，君子以果行育德。",
+    "element_relation": "上卦土克下卦水"
+  },
+  {
+    "id": 5,
+    "name": "需",
+    "judgment_summary": "有孚，光亨，贞吉。利涉大川。",
+    "source_ref": [
+      "ctext_yijing"
+    ],
+    "upper_trigram": "坎",
+    "lower_trigram": "乾",
+    "image_summary": "云上于天，需，君子以饮食宴乐。",
+    "element_relation": "下卦金生上卦水"
+  },
+  {
+    "id": 6,
+    "name": "讼",
+    "judgment_summary": "有孚，窒。惕中吉。终凶。利见大人，不利涉大川。",
+    "source_ref": [
+      "ctext_yijing"
+    ],
+    "upper_trigram": "乾",
+    "lower_trigram": "坎",
+    "image_summary": "天与水违行，讼，君子以作事谋始。",
+    "element_relation": "上卦金生下卦水"
+  },
+  {
+    "id": 7,
+    "name": "师",
+    "judgment_summary": "贞，丈人，吉无咎。",
+    "source_ref": [
+      "ctext_yijing"
+    ],
+    "upper_trigram": "坤",
+    "lower_trigram": "坎",
+    "image_summary": "地中有水，师，君子以容民畜众。",
+    "element_relation": "上卦土克下卦水"
+  },
+  {
+    "id": 8,
+    "name": "比",
+    "judgment_summary": "吉。原筮元永贞，无咎。不宁方来，后夫凶。",
+    "source_ref": [
+      "ctext_yijing"
+    ],
+    "upper_trigram": "坎",
+    "lower_trigram": "坤",
+    "image_summary": "地上有水，比，先王以建万国，亲诸侯。",
+    "element_relation": "下卦土克上卦水"
+  },
+  {
+    "id": 9,
+    "name": "小畜",
+    "judgment_summary": "亨。密云不雨，自我西郊。",
+    "source_ref": [
+      "ctext_yijing"
+    ],
+    "upper_trigram": "巽",
+    "lower_trigram": "乾",
+    "image_summary": "风行天上，小畜，君子以懿文德。",
+    "element_relation": "下卦金克上卦木"
+  },
+  {
+    "id": 10,
+    "name": "履",
+    "judgment_summary": "履虎尾，不咥人，亨。",
+    "source_ref": [
+      "ctext_yijing"
+    ],
+    "upper_trigram": "乾",
+    "lower_trigram": "兑",
+    "image_summary": "上天下泽，履，君子以辨上下，定民志。",
+    "element_relation": "上下卦比和（金）"
+  },
+  {
+    "id": 11,
+    "name": "泰",
+    "judgment_summary": "小往大来，吉亨。",
+    "source_ref": [
+      "ctext_yijing"
+    ],
+    "upper_trigram": "坤",
+    "lower_trigram": "乾",
+    "image_summary": "天地交，泰，后以财成天地之道，辅相天地之宜，以左右民。",
+    "element_relation": "上卦土生下卦金"
+  },
+  {
+    "id": 12,
+    "name": "否",
+    "judgment_summary": "否之匪人，不利君子贞，大往小来。",
+    "source_ref": [
+      "ctext_yijing"
+    ],
+    "upper_trigram": "乾",
+    "lower_trigram": "坤",
+    "image_summary": "天地不交，否，君子以俭德辟难，不可荣以禄。",
+    "element_relation": "下卦土生上卦金"
+  },
+  {
+    "id": 13,
+    "name": "同人",
+    "judgment_summary": "同人于野，亨。利涉大川，利君子贞。",
+    "source_ref": [
+      "ctext_yijing"
+    ],
+    "upper_trigram": "乾",
+    "lower_trigram": "離",
+    "image_summary": "天与火，同人，君子以类族辨物。",
+    "element_relation": "下卦火克上卦金"
+  },
+  {
+    "id": 14,
+    "name": "大有",
+    "judgment_summary": "元亨。",
+    "source_ref": [
+      "ctext_yijing"
+    ],
+    "upper_trigram": "離",
+    "lower_trigram": "乾",
+    "image_summary": "火在天上，大有，君子以遏恶扬善，顺天休命。",
+    "element_relation": "上卦火克下卦金"
+  },
+  {
+    "id": 15,
+    "name": "谦",
+    "judgment_summary": "亨，君子有终。",
+    "source_ref": [
+      "ctext_yijing"
+    ],
+    "upper_trigram": "坤",
+    "lower_trigram": "艮",
+    "image_summary": "地中有山，谦，君子以裒多益寡，称物平施。",
+    "element_relation": "上下卦比和（土）"
+  },
+  {
+    "id": 16,
+    "name": "豫",
+    "judgment_summary": "利建侯行师。",
+    "source_ref": [
+      "ctext_yijing"
+    ],
+    "upper_trigram": "震",
+    "lower_trigram": "坤",
+    "image_summary": "雷出地奋，豫，先王以作乐崇德，殷荐之上帝，以配祖考。",
+    "element_relation": "上卦木克下卦土"
+  },
+  {
+    "id": 17,
+    "name": "随",
+    "judgment_summary": "元亨利贞，无咎。",
+    "source_ref": [
+      "ctext_yijing"
+    ],
+    "upper_trigram": "兑",
+    "lower_trigram": "震",
+    "image_summary": "泽中有雷，随，君子以向晦入宴息。",
+    "element_relation": "上卦金克下卦木"
+  },
+  {
+    "id": 18,
+    "name": "蛊",
+    "judgment_summary": "元亨，利涉大川。先甲三日，后甲三日。",
+    "source_ref": [
+      "ctext_yijing"
+    ],
+    "upper_trigram": "艮",
+    "lower_trigram": "巽",
+    "image_summary": "山下有风，蛊，君子以振民育德。",
+    "element_relation": "下卦木克上卦土"
+  },
+  {
+    "id": 19,
+    "name": "临",
+    "judgment_summary": "元，亨，利，贞。至于八月有凶。",
+    "source_ref": [
+      "ctext_yijing"
+    ],
+    "upper_trigram": "坤",
+    "lower_trigram": "兑",
+    "image_summary": "地上有泽，临，君子以教思无穷，容保民无疆。",
+    "element_relation": "上卦土生下卦金"
+  },
+  {
+    "id": 20,
+    "name": "观",
+    "judgment_summary": "盥而不荐，有孚颙若。",
+    "source_ref": [
+      "ctext_yijing"
+    ],
+    "upper_trigram": "巽",
+    "lower_trigram": "坤",
+    "image_summary": "风行地上，观，先王以省方，观民设教。",
+    "element_relation": "上卦木克下卦土"
+  },
+  {
+    "id": 21,
+    "name": "噬嗑",
+    "judgment_summary": "亨。利用狱。",
+    "source_ref": [
+      "ctext_yijing"
+    ],
+    "upper_trigram": "離",
+    "lower_trigram": "震",
+    "image_summary": "雷电噬嗑，先王以明罚敕法。",
+    "element_relation": "下卦木生上卦火"
+  },
+  {
+    "id": 22,
+    "name": "贲",
+    "judgment_summary": "亨。小利有攸往。",
+    "source_ref": [
+      "ctext_yijing"
+    ],
+    "upper_trigram": "艮",
+    "lower_trigram": "離",
+    "image_summary": "山下有火，贲，君子以明庶政，无敢折狱。",
+    "element_relation": "下卦火生上卦土"
+  },
+  {
+    "id": 23,
+    "name": "剥",
+    "judgment_summary": "不利有攸往。",
+    "source_ref": [
+      "ctext_yijing"
+    ],
+    "upper_trigram": "艮",
+    "lower_trigram": "坤",
+    "image_summary": "山附于地，剥，上以厚下安宅。",
+    "element_relation": "上下卦比和（土）"
+  },
+  {
+    "id": 24,
+    "name": "复",
+    "judgment_summary": "亨。出入无疾，朋来无咎。反复其道，七日来复，利有攸往。",
+    "source_ref": [
+      "ctext_yijing"
+    ],
+    "upper_trigram": "坤",
+    "lower_trigram": "震",
+    "image_summary": "雷在地中，复，先王以至日闭关，商旅不行，后不省方。",
+    "element_relation": "下卦木克上卦土"
+  },
+  {
+    "id": 25,
+    "name": "无妄",
+    "judgment_summary": "元，亨，利，贞。其匪正有眚，不利有攸往。",
+    "source_ref": [
+      "ctext_yijing"
+    ],
+    "upper_trigram": "乾",
+    "lower_trigram": "震",
+    "image_summary": "天下雷行，无妄，先王以茂对时，育万物。",
+    "element_relation": "上卦金克下卦木"
+  },
+  {
+    "id": 26,
+    "name": "大畜",
+    "judgment_summary": "利贞，不家食吉，利涉大川。",
+    "source_ref": [
+      "ctext_yijing"
+    ],
+    "upper_trigram": "艮",
+    "lower_trigram": "乾",
+    "image_summary": "天在山中，大畜，君子以多识前言往行，以畜其德。",
+    "element_relation": "上卦土生下卦金"
+  },
+  {
+    "id": 27,
+    "name": "颐",
+    "judgment_summary": "贞吉。观颐，自求口实。",
+    "source_ref": [
+      "ctext_yijing"
+    ],
+    "upper_trigram": "艮",
+    "lower_trigram": "震",
+    "image_summary": "山下有雷，颐，君子以慎言语，节饮食。",
+    "element_relation": "下卦木克上卦土"
+  },
+  {
+    "id": 28,
+    "name": "大过",
+    "judgment_summary": "栋桡，利有攸往，亨。",
+    "source_ref": [
+      "ctext_yijing"
+    ],
+    "upper_trigram": "兑",
+    "lower_trigram": "巽",
+    "image_summary": "泽灭木，大过，君子以独立不惧，遁世无闷。",
+    "element_relation": "上卦金克下卦木"
+  },
+  {
+    "id": 29,
+    "name": "坎",
+    "judgment_summary": "习坎，有孚，维心亨，行有尚。",
+    "source_ref": [
+      "ctext_yijing"
+    ],
+    "upper_trigram": "坎",
+    "lower_trigram": "坎",
+    "image_summary": "水洊至，习坎，君子以常德行，习教事。",
+    "element_relation": "上下卦比和（水）"
+  },
+  {
+    "id": 30,
+    "name": "离",
+    "judgment_summary": "利贞，亨。畜牝牛，吉。",
+    "source_ref": [
+      "ctext_yijing"
+    ],
+    "upper_trigram": "離",
+    "lower_trigram": "離",
+    "image_summary": "明两作，离，大人以继明照于四方。",
+    "element_relation": "上下卦比和（火）"
+  },
+  {
+    "id": 31,
+    "name": "咸",
+    "judgment_summary": "亨，利贞，取女吉。",
+    "source_ref": [
+      "ctext_yijing"
+    ],
+    "upper_trigram": "兑",
+    "lower_trigram": "艮",
+    "image_summary": "山上有泽，咸，君子以虚受人。",
+    "element_relation": "下卦土生上卦金"
+  },
+  {
+    "id": 32,
+    "name": "恒",
+    "judgment_summary": "亨，无咎，利贞，利有攸往。",
+    "source_ref": [
+      "ctext_yijing"
+    ],
+    "upper_trigram": "震",
+    "lower_trigram": "巽",
+    "image_summary": "雷风恒，君子以立不易方。",
+    "element_relation": "上下卦比和（木）"
+  },
+  {
+    "id": 33,
+    "name": "遁",
+    "judgment_summary": "亨，小利贞。",
+    "source_ref": [
+      "ctext_yijing"
+    ],
+    "upper_trigram": "乾",
+    "lower_trigram": "艮",
+    "image_summary": "天下有山，遁，君子以远小人，不恶而严。",
+    "element_relation": "下卦土生上卦金"
+  },
+  {
+    "id": 34,
+    "name": "大壮",
+    "judgment_summary": "利贞。",
+    "source_ref": [
+      "ctext_yijing"
+    ],
+    "upper_trigram": "震",
+    "lower_trigram": "乾",
+    "image_summary": "雷在天上，大壮，君子以非礼弗履。",
+    "element_relation": "下卦金克上卦木"
+  },
+  {
+    "id": 35,
+    "name": "晋",
+    "judgment_summary": "康侯用锡马蕃庶，昼日三接。",
+    "source_ref": [
+      "ctext_yijing"
+    ],
+    "upper_trigram": "離",
+    "lower_trigram": "坤",
+    "image_summary": "明出地上，晋，君子以自昭明德。",
+    "element_relation": "上卦火生下卦土"
+  },
+  {
+    "id": 36,
+    "name": "明夷",
+    "judgment_summary": "利艰贞。",
+    "source_ref": [
+      "ctext_yijing"
+    ],
+    "upper_trigram": "坤",
+    "lower_trigram": "離",
+    "image_summary": "明入地中，明夷，君子以莅众，用晦而明。",
+    "element_relation": "下卦火生上卦土"
+  },
+  {
+    "id": 37,
+    "name": "家人",
+    "judgment_summary": "利女贞。",
+    "source_ref": [
+      "ctext_yijing"
+    ],
+    "upper_trigram": "巽",
+    "lower_trigram": "離",
+    "image_summary": "风自火出，家人，君子以言有物而行有恒。",
+    "element_relation": "上卦木生下卦火"
+  },
+  {
+    "id": 38,
+    "name": "睽",
+    "judgment_summary": "小事吉。",
+    "source_ref": [
+      "ctext_yijing"
+    ],
+    "upper_trigram": "離",
+    "lower_trigram": "兑",
+    "image_summary": "上火下泽，睽，君子以同而异。",
+    "element_relation": "上卦火克下卦金"
+  },
+  {
+    "id": 39,
+    "name": "蹇",
+    "judgment_summary": "利西南，不利东北；利见大人，贞吉。",
+    "source_ref": [
+      "ctext_yijing"
+    ],
+    "upper_trigram": "坎",
+    "lower_trigram": "艮",
+    "image_summary": "山上有水，蹇，君子以反身修德。",
+    "element_relation": "下卦土克上卦水"
+  },
+  {
+    "id": 40,
+    "name": "解",
+    "judgment_summary": "利西南，无所往，其来复吉。有攸往，夙吉。",
+    "source_ref": [
+      "ctext_yijing"
+    ],
+    "upper_trigram": "震",
+    "lower_trigram": "坎",
+    "image_summary": "雷雨作，解，君子以赦过宥罪。",
+    "element_relation": "下卦水生上卦木"
+  },
+  {
+    "id": 41,
+    "name": "损",
+    "judgment_summary": "有孚，元吉，无咎，可贞，利有攸往。曷之用，二簋可用享。",
+    "source_ref": [
+      "ctext_yijing"
+    ],
+    "upper_trigram": "艮",
+    "lower_trigram": "兑",
+    "image_summary": "山下有泽，损，君子以惩忿窒欲。",
+    "element_relation": "上卦土生下卦金"
+  },
+  {
+    "id": 42,
+    "name": "益",
+    "judgment_summary": "利有攸往，利涉大川。",
+    "source_ref": [
+      "ctext_yijing"
+    ],
+    "upper_trigram": "巽",
+    "lower_trigram": "震",
+    "image_summary": "风雷益，君子以见善则迁，有过则改。",
+    "element_relation": "上下卦比和（木）"
+  },
+  {
+    "id": 43,
+    "name": "夬",
+    "judgment_summary": "扬于王庭，孚号，有厉，告自邑，不利即戎，利有攸往。",
+    "source_ref": [
+      "ctext_yijing"
+    ],
+    "upper_trigram": "兑",
+    "lower_trigram": "乾",
+    "image_summary": "泽上于天，夬，君子以施禄及下，居德则忌。",
+    "element_relation": "上下卦比和（金）"
+  },
+  {
+    "id": 44,
+    "name": "姤",
+    "judgment_summary": "女壮，勿用取女。",
+    "source_ref": [
+      "ctext_yijing"
+    ],
+    "upper_trigram": "乾",
+    "lower_trigram": "巽",
+    "image_summary": "天下有风，姤，后以施命诰四方。",
+    "element_relation": "上卦金克下卦木"
+  },
+  {
+    "id": 45,
+    "name": "萃",
+    "judgment_summary": "亨。王假有庙，利见大人，亨，利贞。用大牲吉，利有攸往。",
+    "source_ref": [
+      "ctext_yijing"
+    ],
+    "upper_trigram": "兑",
+    "lower_trigram": "坤",
+    "image_summary": "泽上于地，萃，君子以除戎器，戒不虞。",
+    "element_relation": "下卦土生上卦金"
+  },
+  {
+    "id": 46,
+    "name": "升",
+    "judgment_summary": "元亨，用见大人，勿恤，南征吉。",
+    "source_ref": [
+      "ctext_yijing"
+    ],
+    "upper_trigram": "坤",
+    "lower_trigram": "巽",
+    "image_summary": "地中生木，升，君子以顺德，积小以高大。",
+    "element_relation": "下卦木克上卦土"
+  },
+  {
+    "id": 47,
+    "name": "困",
+    "judgment_summary": "亨，贞，大人吉，无咎，有言不信。",
+    "source_ref": [
+      "ctext_yijing"
+    ],
+    "upper_trigram": "兑",
+    "lower_trigram": "坎",
+    "image_summary": "泽无水，困，君子以致命遂志。",
+    "element_relation": "上卦金生下卦水"
+  },
+  {
+    "id": 48,
+    "name": "井",
+    "judgment_summary": "改邑不改井，无丧无得，往来井井。汔至亦未繘井，羸其瓶，凶。",
+    "source_ref": [
+      "ctext_yijing"
+    ],
+    "upper_trigram": "坎",
+    "lower_trigram": "巽",
+    "image_summary": "木上有水，井，君子以劳民劝相。",
+    "element_relation": "上卦水生下卦木"
+  },
+  {
+    "id": 49,
+    "name": "革",
+    "judgment_summary": "巳日乃孚，元亨利贞，悔亡。",
+    "source_ref": [
+      "ctext_yijing"
+    ],
+    "upper_trigram": "兑",
+    "lower_trigram": "離",
+    "image_summary": "泽中有火，革，君子以治历明时。",
+    "element_relation": "下卦火克上卦金"
+  },
+  {
+    "id": 50,
+    "name": "鼎",
+    "judgment_summary": "元吉，亨。",
+    "source_ref": [
+      "ctext_yijing"
+    ],
+    "upper_trigram": "離",
+    "lower_trigram": "巽",
+    "image_summary": "木上有火，鼎，君子以正位凝命。",
+    "element_relation": "下卦木生上卦火"
+  },
+  {
+    "id": 51,
+    "name": "震",
+    "judgment_summary": "亨。震来虩虩，笑言哑哑。震惊百里，不丧匕鬯。",
+    "source_ref": [
+      "ctext_yijing"
+    ],
+    "upper_trigram": "震",
+    "lower_trigram": "震",
+    "image_summary": "洊雷震，君子以恐惧修省。",
+    "element_relation": "上下卦比和（木）"
+  },
+  {
+    "id": 52,
+    "name": "艮",
+    "judgment_summary": "艮其背，不获其身，行其庭，不见其人，无咎。",
+    "source_ref": [
+      "ctext_yijing"
+    ],
+    "upper_trigram": "艮",
+    "lower_trigram": "艮",
+    "image_summary": "兼山艮，君子以思不出其位。",
+    "element_relation": "上下卦比和（土）"
+  },
+  {
+    "id": 53,
+    "name": "渐",
+    "judgment_summary": "女归吉，利贞。",
+    "source_ref": [
+      "ctext_yijing"
+    ],
+    "upper_trigram": "巽",
+    "lower_trigram": "艮",
+    "image_summary": "山上有木，渐，君子以居贤德善俗。",
+    "element_relation": "上卦木克下卦土"
+  },
+  {
+    "id": 54,
+    "name": "归妹",
+    "judgment_summary": "征凶，无攸利。",
+    "source_ref": [
+      "ctext_yijing"
+    ],
+    "upper_trigram": "震",
+    "lower_trigram": "兑",
+    "image_summary": "泽上有雷，归妹，君子以永终知敝。",
+    "element_relation": "下卦金克上卦木"
+  },
+  {
+    "id": 55,
+    "name": "丰",
+    "judgment_summary": "亨。王假之，勿忧，宜日中。",
+    "source_ref": [
+      "ctext_yijing"
+    ],
+    "upper_trigram": "震",
+    "lower_trigram": "離",
+    "image_summary": "雷电皆至，丰，君子以折狱致刑。",
+    "element_relation": "上卦木生下卦火"
+  },
+  {
+    "id": 56,
+    "name": "旅",
+    "judgment_summary": "小亨，旅贞吉。",
+    "source_ref": [
+      "ctext_yijing"
+    ],
+    "upper_trigram": "離",
+    "lower_trigram": "艮",
+    "image_summary": "山上有火，旅，君子以明慎用刑而不留狱。",
+    "element_relation": "上卦火生下卦土"
+  },
+  {
+    "id": 57,
+    "name": "巽",
+    "judgment_summary": "小亨，利有攸往，利见大人。",
+    "source_ref": [
+      "ctext_yijing"
+    ],
+    "upper_trigram": "巽",
+    "lower_trigram": "巽",
+    "image_summary": "随风巽，君子以申命行事。",
+    "element_relation": "上下卦比和（木）"
+  },
+  {
+    "id": 58,
+    "name": "兑",
+    "judgment_summary": "亨，利贞。",
+    "source_ref": [
+      "ctext_yijing"
+    ],
+    "upper_trigram": "兑",
+    "lower_trigram": "兑",
+    "image_summary": "丽泽兑，君子以朋友讲习。",
+    "element_relation": "上下卦比和（金）"
+  },
+  {
+    "id": 59,
+    "name": "涣",
+    "judgment_summary": "亨。王假有庙，利涉大川，利贞。",
+    "source_ref": [
+      "ctext_yijing"
+    ],
+    "upper_trigram": "巽",
+    "lower_trigram": "坎",
+    "image_summary": "风行水上，涣，先王以享于帝立庙。",
+    "element_relation": "下卦水生上卦木"
+  },
+  {
+    "id": 60,
+    "name": "节",
+    "judgment_summary": "亨。苦节不可贞。",
+    "source_ref": [
+      "ctext_yijing"
+    ],
+    "upper_trigram": "坎",
+    "lower_trigram": "兑",
+    "image_summary": "泽上有水，节，君子以制数度，议德行。",
+    "element_relation": "下卦金生上卦水"
+  },
+  {
+    "id": 61,
+    "name": "中孚",
+    "judgment_summary": "豚鱼吉，利涉大川，利贞。",
+    "source_ref": [
+      "ctext_yijing"
+    ],
+    "upper_trigram": "巽",
+    "lower_trigram": "兑",
+    "image_summary": "泽上有风，中孚，君子以议狱缓死。",
+    "element_relation": "下卦金克上卦木"
+  },
+  {
+    "id": 62,
+    "name": "小过",
+    "judgment_summary": "亨，利贞，可小事，不可大事。飞鸟遗之音，不宜上宜下，大吉。",
+    "source_ref": [
+      "ctext_yijing"
+    ],
+    "upper_trigram": "震",
+    "lower_trigram": "艮",
+    "image_summary": "山上有雷，小过，君子以行过乎恭，丧过乎哀，用过乎俭。",
+    "element_relation": "上卦木克下卦土"
+  },
+  {
+    "id": 63,
+    "name": "既济",
+    "judgment_summary": "亨，小利贞，初吉终乱。",
+    "source_ref": [
+      "ctext_yijing"
+    ],
+    "upper_trigram": "坎",
+    "lower_trigram": "離",
+    "image_summary": "水在火上，既济，君子以思患而豫防之。",
+    "element_relation": "上卦水克下卦火"
+  },
+  {
+    "id": 64,
+    "name": "未济",
+    "judgment_summary": "亨，小狐汔济，濡其尾，无攸利。",
+    "source_ref": [
+      "ctext_yijing"
+    ],
+    "upper_trigram": "離",
+    "lower_trigram": "坎",
+    "image_summary": "火在水上，未济，君子以慎辨物居方。",
+    "element_relation": "下卦水克上卦火"
+  }
+]

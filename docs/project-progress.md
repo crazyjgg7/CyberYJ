@@ -48,6 +48,7 @@
 - 已新增 `source_ref` 一致性校验模块：`src/cyberYJ/utils/source_ref_integrity.py`
 - 已新增 `source_ref` 一致性脚本：`scripts/check_source_ref_integrity.py`
 - 当前 `source_ref` 一致性检查：PASS（24 个 JSON 文件，884 处 source_ref，未知来源 0）
+- 已新增来源变更审计模板：`docs/source-change-audit-template.md`
 
 ## M4 可执行清单
 

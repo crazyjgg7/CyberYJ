@@ -31,4 +31,5 @@ python3 /Users/apple/dev/CyberYJ/scripts/check_source_ref_integrity.py
 
 1. 将 `source_ref` 高频命中字段与来源证据做一对一映射检查（字段级）。
 2. 扩展到非必选来源并补全版本细节字段（edition/section 精细化）。
-3. 建立“来源变更审计”记录模板（增量差异 + 责任人 + 时间戳）。
+3. 建立“来源变更审计”记录模板（增量差异 + 责任人 + 时间戳）✅  
+   模板文件：`/Users/apple/dev/CyberYJ/docs/source-change-audit-template.md`

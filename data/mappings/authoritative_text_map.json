@@ -49,6 +49,56 @@
         "ctext_yijing",
         "convention"
       ]
+    },
+    {
+      "field_path": "hexagrams[?(@.id==11)].judgment_summary",
+      "text_kind": "summary",
+      "license": "summary_only",
+      "content": "泰卦核心义在通达与协和，宜以秩序推进，不宜躁进冒进。",
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    {
+      "field_path": "hexagrams[?(@.id==11)].image_summary",
+      "text_kind": "summary",
+      "license": "summary_only",
+      "content": "天地交泰之象重在上下通气、内外协同，行事以中正与协调为先。",
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    {
+      "field_path": "data.scenarios.career.hexagrams['11'].key_points",
+      "text_kind": "summary",
+      "license": "summary_only",
+      "content": "关键点应聚焦组织协同、资源配置与节奏控制，避免单点激进策略。",
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    {
+      "field_path": "data.scenarios.career.hexagrams['11'].scenario_specific.求职.advice",
+      "text_kind": "summary",
+      "license": "summary_only",
+      "content": "求职策略宜先匹配岗位能力模型，再做节奏化投递与复盘迭代。",
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    {
+      "field_path": "data.fengshui.ba_zhai.rules",
+      "text_kind": "summary",
+      "license": "summary_only",
+      "content": "八宅规则用于宅卦与方位判定，实际布局需结合户型与使用场景综合判断。",
+      "source_ref": [
+        "cinii_bazhai_mingjing",
+        "convention"
+      ]
     }
   ]
 }

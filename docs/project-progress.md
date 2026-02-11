@@ -27,8 +27,17 @@
 ## 未完成（仅 M4）
 
 - 权威文本/许可摘要尚未在 `data` 目录完成规模化落地
-- 字段级映射覆盖率未达目标（目前是首批示例）
+- 全模块字段级映射覆盖率目标（超出当前核心字段集）未完成
 - 24 山向、八宅、飞星规则的权威版本逐条校核未完成
+
+## M4 阶段进展（P1 已完成）
+
+- 覆盖率目标已确定：80%
+- 已新增覆盖率基线：`data/mappings/authoritative_coverage_targets.json`（10 个核心字段）
+- 已新增校验脚本：`scripts/check_authoritative_coverage.py`
+- 已新增校验模块：`src/cyberYJ/utils/authoritative_coverage.py`
+- 当前覆盖率：10/10 = 100%（>= 80%）
+- 说明：该结果仅代表“字段映射覆盖率达标”，不代表 M4 全部完成
 
 ## M4 可执行清单
 
@@ -42,6 +51,7 @@
 8. 输出验收报告：形成 M4 完成报告（覆盖率、缺口、风险、待办）。
 
 执行细则见：`/Users/apple/dev/CyberYJ/docs/m4-checklist.md`
+阶段验收见：`/Users/apple/dev/CyberYJ/docs/m4-acceptance-report.md`
 
 ---
 

@@ -1,0 +1,76 @@
+{
+  "version": "1.0.0",
+  "threshold": 0.8,
+  "targets": [
+    {
+      "id": "fengshui.main_hexagram.judgment",
+      "description": "卦辞摘要字段",
+      "match": {
+        "regex": "^hexagrams\\[\\?\\(@\\.id==\\d+\\)\\]\\.judgment_summary$"
+      }
+    },
+    {
+      "id": "fengshui.main_hexagram.image",
+      "description": "象辞摘要字段",
+      "match": {
+        "regex": "^hexagrams\\[\\?\\(@\\.id==\\d+\\)\\]\\.image_summary$"
+      }
+    },
+    {
+      "id": "fengshui.scenario_analysis.overall_tendency",
+      "description": "场景总趋势字段",
+      "match": {
+        "regex": "^data\\.scenarios\\.\\w+\\.hexagrams\\['\\d+'\\]\\.overall_tendency$"
+      }
+    },
+    {
+      "id": "fengshui.scenario_analysis.key_points",
+      "description": "场景关键点字段",
+      "match": {
+        "regex": "^data\\.scenarios\\.\\w+\\.hexagrams\\['\\d+'\\]\\.key_points$"
+      }
+    },
+    {
+      "id": "fengshui.scenario_specific.situation",
+      "description": "场景子域现状字段",
+      "match": {
+        "regex": "^data\\.scenarios\\.\\w+\\.hexagrams\\['\\d+'\\]\\.scenario_specific\\.[^\\.]+\\.situation$"
+      }
+    },
+    {
+      "id": "fengshui.scenario_specific.advice",
+      "description": "场景子域建议字段",
+      "match": {
+        "regex": "^data\\.scenarios\\.\\w+\\.hexagrams\\['\\d+'\\]\\.scenario_specific\\.[^\\.]+\\.advice$"
+      }
+    },
+    {
+      "id": "luopan.flying_stars_periods.period",
+      "description": "元运周期字段",
+      "match": {
+        "prefix": "data.fengshui.flying_stars_periods.period"
+      }
+    },
+    {
+      "id": "luopan.flying_stars_house.palace_map",
+      "description": "宅盘九宫字段",
+      "match": {
+        "prefix": "data.fengshui.flying_stars_house.palace_map"
+      }
+    },
+    {
+      "id": "luopan.flying_stars_scoring.thresholds",
+      "description": "飞星评分阈值字段",
+      "match": {
+        "prefix": "data.fengshui.flying_stars_scoring.thresholds"
+      }
+    },
+    {
+      "id": "luopan.ba_zhai.rules",
+      "description": "八宅规则说明字段",
+      "match": {
+        "prefix": "data.fengshui.ba_zhai.rules"
+      }
+    }
+  ]
+}

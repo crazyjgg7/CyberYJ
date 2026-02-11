@@ -14,6 +14,7 @@ from typing import Dict, Any, Optional, List
 import pytz
 
 from cyberYJ.core.luopan_calculator import LuopanCalculator
+from cyberYJ.core.flying_star_calculator import combine_flying_stars
 from cyberYJ.utils.data_loader import get_data_loader
 from cyberYJ.utils.authoritative_text_map import match_luopan_item
 
@@ -127,6 +128,36 @@ class LuopanOrientationTool:
         else:
             trace.append(f"流年飞星: {year}年数据暂无")
 
+        # 6.1 宅盘 + 流年叠加
+        period_info = self.data_loader.get_flying_star_period_by_year(year)
+        house_rule = None
+        if period_info:
+            house_rule = self.data_loader.get_flying_star_house_rule(
+                period=period_info['period'],
+                sitting_mountain=direction_info['sitting_mountain']
+            )
+
+        combined = None
+        current_auspicious: List[str] = []
+        current_inauspicious: List[str] = []
+
+        scoring = self.data_loader.get_flying_star_scoring()
+        scoring_table = scoring.get('stars', {})
+
+        if house_rule and flying_stars:
+            combined, current_auspicious, current_inauspicious = combine_flying_stars(
+                house_rule['palace_map'],
+                flying_stars['palace_map'],
+                scoring_table
+            )
+            trace.append(
+                f"元运: 第{period_info['period']}运（{period_info['start_year']}-{period_info['end_year']}）"
+            )
+            trace.append(f"宅盘命中: {direction_info['sitting_mountain']}山")
+            trace.append("飞星叠加: 宅盘 + 流年")
+        else:
+            trace.append("飞星叠加: 缺少宅盘或流年数据，降级为仅流年年盘")
+
         # 7. 生成布局建议
         layout_tips = self._generate_layout_tips(
             house_gua,
@@ -164,6 +195,18 @@ class LuopanOrientationTool:
                 "central_star": flying_stars['central_star'],
                 "palace_map": flying_stars['palace_map']
             }
+
+        if house_rule:
+            result["house_flying_stars"] = {
+                "period": period_info['period'] if period_info else None,
+                "sitting_mountain": house_rule['sitting_mountain'],
+                "palace_map": house_rule['palace_map']
+            }
+
+        if combined:
+            result["combined_flying_stars"] = combined
+            result["current_auspicious_positions"] = current_auspicious
+            result["current_inauspicious_positions"] = current_inauspicious
 
         # 权威映射替换（如有）
         mapped_sources = self._apply_authoritative_mappings(result, trace)

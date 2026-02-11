@@ -144,6 +144,20 @@ class TestLuopanOrientationTool:
         assert result['annual_flying_stars']['year'] == 2035
         assert result['annual_flying_stars']['central_star'] in range(1, 10)
 
+    def test_house_flying_stars_combined(self):
+        result = self.tool.execute(
+            sitting_direction="坐北朝南",
+            building_type="住宅",
+            timestamp="2026-06-01T10:00:00+08:00"
+        )
+
+        assert 'house_flying_stars' in result
+        assert 'combined_flying_stars' in result
+        assert 'current_auspicious_positions' in result
+        assert 'current_inauspicious_positions' in result
+        assert isinstance(result['current_auspicious_positions'], list)
+        assert isinstance(result['current_inauspicious_positions'], list)
+
     def test_layout_tips_generation(self):
         """测试布局建议生成"""
         result = self.tool.execute(

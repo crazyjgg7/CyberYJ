@@ -45,6 +45,9 @@
 - 已新增来源合规校验模块：`src/cyberYJ/utils/source_compliance.py`
 - 已新增来源合规脚本：`scripts/check_source_compliance.py`
 - 当前核心来源合规检查：PASS（5/5 必选来源，缺失与非法字段为 0）
+- 已新增 `source_ref` 一致性校验模块：`src/cyberYJ/utils/source_ref_integrity.py`
+- 已新增 `source_ref` 一致性脚本：`scripts/check_source_ref_integrity.py`
+- 当前 `source_ref` 一致性检查：PASS（24 个 JSON 文件，884 处 source_ref，未知来源 0）
 
 ## M4 可执行清单
 

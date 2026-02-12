@@ -1,0 +1,30 @@
+{
+  "generated_at": "2026-02-12",
+  "batch": "M4-P2-summary-expansion-batch-1",
+  "scope": "career scenario wildcard-derived explicit fields",
+  "added_summary_items_count": 15,
+  "added_summary_fields": [
+    "data.scenarios.career.hexagrams[*].career_rating",
+    "data.scenarios.career.hexagrams[*].interpersonal",
+    "data.scenarios.career.hexagrams[*].interpersonal.boss",
+    "data.scenarios.career.hexagrams[*].interpersonal.colleague",
+    "data.scenarios.career.hexagrams[*].interpersonal.partner",
+    "data.scenarios.career.hexagrams[*].key_points[*]",
+    "data.scenarios.career.hexagrams[*].name",
+    "data.scenarios.career.hexagrams[*].scenario_specific",
+    "data.scenarios.career.hexagrams[*].scenario_specific[*]",
+    "data.scenarios.career.hexagrams[*].scenario_specific[*].advice[*]",
+    "data.scenarios.career.hexagrams[*].scenario_specific[*].reasons",
+    "data.scenarios.career.hexagrams[*].scenario_specific[*].reasons[*]",
+    "data.scenarios.career.hexagrams[*].scenario_specific[*].timing",
+    "data.scenarios.career.hexagrams[*].source_ref",
+    "data.scenarios.career.hexagrams[*].source_ref[*]"
+  ],
+  "summary_items_total": 172,
+  "ctext_yijing_summary_items": 131,
+  "next_recommended_scenarios": [
+    "love",
+    "fortune",
+    "wealth"
+  ]
+}

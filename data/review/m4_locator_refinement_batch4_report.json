@@ -1,0 +1,9 @@
+{
+  "generated_at": "2026-02-12",
+  "batch": "M4-P2-locator-refinement-batch-4",
+  "target_scope": "all summary url_index_locator",
+  "url_locator_total": 112,
+  "with_field_path_locator_count": 112,
+  "without_field_path_locator_count": 0,
+  "without_field_path_fields": []
+}

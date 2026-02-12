@@ -1,0 +1,13 @@
+{
+  "generated_at": "2026-02-12",
+  "batch": "M4-P2-locator-refinement-batch-1",
+  "target_locator": "CTP《周易》对应卦条目（按卦号与字段键定位）",
+  "before_count": 110,
+  "after_count": 0,
+  "new_locator_counts": {
+    "scenario_locator": 108,
+    "core_locator": 2
+  },
+  "summary_items_total": 157,
+  "summary_items_with_url_locator": 112
+}

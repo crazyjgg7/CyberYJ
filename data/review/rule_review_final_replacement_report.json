@@ -1,0 +1,32 @@
+{
+  "total_records": 35,
+  "total_confirmed_records": 35,
+  "transitional_records_count": 0,
+  "transition_pending_records": [],
+  "missing_final_locator_records": [],
+  "final_authority_ready_records": 35,
+  "ready_for_final_authority_closeout": true,
+  "group_counts": {
+    "luopan_24_mountains": {
+      "total": 24,
+      "confirmed": 24,
+      "transition_pending": 0,
+      "final_ready": 24
+    },
+    "bazhai_rules": {
+      "total": 8,
+      "confirmed": 8,
+      "transition_pending": 0,
+      "final_ready": 8
+    },
+    "flying_star_rules": {
+      "total": 3,
+      "confirmed": 3,
+      "transition_pending": 0,
+      "final_ready": 3
+    }
+  },
+  "pending_replacements": [],
+  "invalid_rows": [],
+  "passed": true
+}

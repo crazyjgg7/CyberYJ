@@ -1,0 +1,10 @@
+{
+  "generated_at": "2026-02-12",
+  "batch": "M4-P2-locator-refinement-batch-3",
+  "target_scope": "ctext_yijing + data.scenarios.* + url_index_locator",
+  "target_items_count": 108,
+  "with_field_path_locator_count": 108,
+  "without_field_path_locator_count": 0,
+  "unique_locator_count": 108,
+  "sample_locator": "CTP《周易》六十四卦经文条目（career场景元数据绑定，按hexagram_id=1..64索引），在线索引：https://ctext.org/book-of-changes；映射字段=data.scenarios.career"
+}

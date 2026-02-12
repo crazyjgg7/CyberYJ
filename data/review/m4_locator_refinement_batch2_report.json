@@ -1,0 +1,24 @@
+{
+  "generated_at": "2026-02-12",
+  "batch": "M4-P2-locator-refinement-batch-2",
+  "target_locator": "CTP《周易》六十四卦经文条目（按hexagram_id=1..64对齐场景卦象键），在线索引：https://ctext.org/book-of-changes",
+  "before_count_from_batch1": 108,
+  "after_count": 0,
+  "new_category_counts": {
+    "hexagrams": 54,
+    "analysis_framework": 9,
+    "notes": 18,
+    "meta": 27
+  },
+  "new_scenario_counts": {
+    "career": 12,
+    "family": 12,
+    "fortune": 12,
+    "health": 12,
+    "lawsuit": 12,
+    "love": 12,
+    "study": 12,
+    "travel": 12,
+    "wealth": 12
+  }
+}

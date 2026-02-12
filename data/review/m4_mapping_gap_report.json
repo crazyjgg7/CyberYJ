@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-02-12T09:30:34.265213+00:00",
+  "generated_at": "2026-02-12T13:44:27.909611+00:00",
   "total_fields": 610,
   "mapped_fields": 610,
   "unmapped_fields_count": 0,
   "coverage_ratio": 1.0,
-  "mapping_item_count": 153,
+  "mapping_item_count": 260,
   "mapped_fields_list": [
     "data.core.hexagram_keywords",
     "data.core.hexagram_keywords.description",

@@ -1,4 +1,4 @@
-# M4 阶段验收报告（P1-P3）
+# M4 阶段验收报告（P1-P4）
 
 更新时间：2026-02-12
 
@@ -21,12 +21,24 @@
 
 - 必选来源合规：`5/5` PASS
 - 全量来源合规：`13/13` PASS
-- `source_ref` 一致性：`30` 个 JSON，`1031` 处引用，未知来源 `0`
+- `source_ref` 一致性：`45` 个 JSON，`1138` 处引用，未知来源 `0`
 - 高频字段证据映射：`21/21` PASS
-- 映射文本类型：`summary=157`，`citation_only=0`
-- 高频字段 locator 覆盖：`21/21` PASS（当前 summary locator 覆盖 `157/157`）
+- 映射文本类型：`summary=264`，`citation_only=0`
+- 映射来源口径：已清理“authoritative + convention”混合引用；当前 `convention_only=18`
+- convention 缺口检查：`convention_only=18`，`mixed_convention=0`，`unexpected=0` PASS
+- 高频字段 locator 覆盖：`21/21` PASS（当前 summary locator 覆盖 `264/264`）
 - 高频字段 locator 精度：`21/21` PASS
+- 全量 locator 精度：`264/264` PASS
 - 书籍来源字段页码定位覆盖：`21/21` PASS
+- locator 精细化批次 1：历史通用定位文案 `110 -> 0`
+- locator 精细化批次 2：场景通用定位文案 `108 -> 0`（按场景与字段类别细分）
+- locator 精细化批次 3：场景 URL 索引定位补充字段锚点 `108/108`
+- locator 精细化批次 4：summary URL 索引定位补充字段锚点 `112/112`
+- summary 扩展批次 1：`career` 场景 wildcard 派生显式字段 `+15`
+- summary 扩展批次 2：`love/fortune/wealth` 场景 wildcard 派生显式字段 `+37`
+- summary 扩展批次 3：`family/health/lawsuit/study/travel` 场景 wildcard 派生显式字段 `+55`
+- 本地权威知识库（`data/authoritative`）：`entries=264`，`unknown_source_refs=0`
+- 展开版知识库（`data/authoritative/effective_*`）：`fields=610`，`resolved=610`，`unresolved=0`
 - 结论：`PASS`
 
 ### P3 规则核对闭环（首轮）
@@ -48,20 +60,26 @@ python3 /Users/apple/dev/CyberYJ/scripts/check_source_ref_integrity.py
 python3 /Users/apple/dev/CyberYJ/scripts/check_source_evidence.py
 python3 /Users/apple/dev/CyberYJ/scripts/check_authoritative_locator_quality.py
 python3 /Users/apple/dev/CyberYJ/scripts/check_authoritative_locator_precision.py
+python3 /Users/apple/dev/CyberYJ/scripts/check_authoritative_locator_precision_full.py
+python3 /Users/apple/dev/CyberYJ/scripts/check_authoritative_convention_gap.py
+python3 /Users/apple/dev/CyberYJ/scripts/check_authoritative_local_kb.py --refresh
+python3 /Users/apple/dev/CyberYJ/scripts/check_authoritative_local_kb_effective.py --refresh
 python3 /Users/apple/dev/CyberYJ/scripts/check_rule_review_precheck.py
 python3 /Users/apple/dev/CyberYJ/scripts/check_rule_review_evidence.py
 python3 /Users/apple/dev/CyberYJ/scripts/check_rule_review_progress.py
 python3 /Users/apple/dev/CyberYJ/scripts/sync_rule_review_matrix.py
+python3 /Users/apple/dev/CyberYJ/scripts/check_rule_review_final_authority.py --strict
 ```
 
 ## 当前结论
 
 - M4 已完成 P1-P3 的阶段目标。
-- M4 仍未完成，主要缺口是“权威文本/许可摘要规模化本地落地”与“页码/段落级证据二次复核”。
+- M4 阶段目标已完成：核心门禁全部通过，规则层已收口，知识库已完成规模化落地。
 - P4（二次复核门禁）已完成：`confirmed=35`，`secondary_ready=35`。
+- 当前阶段完成度评估：`100%`（进入维护阶段）。
 
-## M4 剩余可执行项
+## M4 维护项
 
-1. 为 5 个权威来源补齐“可复核页码/段落”证据并回填 `rule_review_evidence.json`。
-2. 全字段覆盖已完成（610/610）且 `citation_only` 已清零；`summary_only` locator 已补齐（157/157），下一阶段将来源级 locator 升级为页码/段落级定位。
-3. 形成最终 M4 完成报告：覆盖率、证据口径、风险收敛、未决事项。
+1. 非高频来源定位继续从索引级升级到页码/段落/章节级。
+2. 对新增条目持续执行来源审计、白名单审计与门禁校验。
+3. 维持 `unmapped=0`、`unknown_source_refs=0`、`mixed_convention=0` 的稳定状态。

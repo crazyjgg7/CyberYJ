@@ -149,9 +149,9 @@
 - M1（已完成）：数据结构 + 规则表 + `sources` 索引
 - M2（已完成）：MCP schema + 基础计算逻辑
 - M3（已完成）：输出模板、示例测试、关键词路由、统一 JSON 响应
-- M4（未完成）：权威文本合法获取与本地 `data` 知识库落地
+- M4（已完成）：权威文本合法获取与本地 `data` 知识库落地（进入维护阶段）
 
-**11. 已完成 / 未完成（M4）**
+**11. M4 完成态 / 维护项**
 
 已完成：
 - 所有场景数据已补齐（命运/事业/感情/财运/健康/学业/家庭/出行/诉讼）
@@ -163,22 +163,18 @@
 - M4-P1 覆盖率基线与校验器已落地（目标 80%，高频字段 21/21 达标）
 - M4 字段清单导出与映射缺口报告已落地（`data/review/m4_field_inventory.json` + `data/review/m4_mapping_gap_report.json`）
 - M4 映射补齐已完成全字段覆盖（当前盘点 610 字段，已映射 610 字段，覆盖率 100%）
+- M4 本地权威知识库基线已落地（`data/authoritative/index.json` + `data/authoritative/entries.jsonl`，当前 264 条）
+- M4 本地权威知识库展开版已落地（`data/authoritative/effective_index.json` + `data/authoritative/effective_entries.jsonl`，当前 610 条字段展开条目）
 
-未完成（M4）：
-- 未完成“权威文本/许可摘要”在 `data` 目录的规模化替换
-- 字段级映射覆盖已达标（610/610）且 `citation_only` 已清零，`summary_only` 条目 157 条已具备 locator；高频 21 字段已通过 locator 精度门禁且书籍来源字段页码定位 21/21，剩余字段仍需逐步升级为页码/段落级定位
-- “权威版本统一与逐条校核”已完成首轮（24 山向/八宅/飞星），但权威页码/段落级证据的二次复核仍未完成
+维护项：
+- 继续把非高频字段定位从索引级升级到页码/段落/章节级（不阻塞上线）。
+- 按维护节奏执行来源审计与白名单漂移检查，保持 `mixed_convention=0`、`unexpected=0`。
+- 新增业务字段时同步补齐映射与本地知识库，保持 `unmapped=0`。
 
-**12. M4 可执行清单（按顺序）**
-1. 锁定版本：为 5 个权威来源确定具体版本与版本号，写入 `data/core/sources.json` 的 `edition/section`。
-2. 建立映射基线：按模块生成字段清单（hexagram/scenario/ba_zhai/flying_star/solar_term）。
-3. 制定覆盖目标：定义每模块 M4 最低覆盖率（如核心结论字段 >= 80%）。
-4. 批量补映射：扩充 `data/mappings/authoritative_text_map.json`，优先补高频输出字段。
-5. 引入校验器：增加“覆盖率 + source_ref + license”检查脚本与测试。
-6. 运行时追踪：确保映射命中后 `trace` 与 `sources` 可见，并区分 `citation_only/summary`。
-7. 逐条校核规则：按权威版本校核 24 山向、八宅、飞星评分与阈值口径。
-8. 页码级二次复核：对 `confirmed` 规则补齐页码/段落与二次复核人信息，并通过二次门禁校验。
-9. 出具验收报告：产出 M4 验收文档（覆盖率、缺口、风险、后续计划）。
+**12. M4 维护执行清单**
+1. 升级 locator 精细度：将非高频字段定位逐步升级到更细粒度（页码/段落/章节）。
+2. 抽检与审计：对新增条目执行批次抽检并记录来源变更审计。
+3. 变更门禁：新增映射后必须通过 `source_ref`、locator、本地知识库与测试校验。
 
 详细执行文档：`/Users/apple/dev/CyberYJ/docs/m4-checklist.md`
 

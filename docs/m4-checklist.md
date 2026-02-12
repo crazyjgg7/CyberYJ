@@ -41,12 +41,10 @@
 ## 当前阶段状态
 
 - P1（覆盖率基线与校验）：已完成（见 `docs/m4-acceptance-report.md`）
-- P2（版本与合规材料完备）：进行中（已落地来源合规、全量来源扩展校验、source_ref 一致性、证据映射校验）
-- P2（版本与合规材料完备）：进行中（已补充字段清单导出与映射缺口报告自动化）
-- P3（规则逐条校核与规模化替换）：已完成（首轮，35/35 已 verified）
+- P2（版本与合规材料完备）：已完成（来源合规、source_ref、locator、本地知识库、convention 缺口门禁均通过）
+- P3（规则逐条校核与规模化替换）：已完成（35/35 已 verified，且最终权威替换完成）
 - P4（二次复核：页码/段落级证据）：已完成（门禁 35/35）
-
-说明：P3 当前完成态基于“书目级索引 + 合法摘要 + 结构一致性核对”，后续需补权威页码/段落证据并进行二次复核。
+说明：M4 主线任务已完成，当前进入维护阶段。
 
 ### P4-B1 二次复核门禁（已完成）
 
@@ -88,15 +86,47 @@
 - 动作：补齐 `locator(页码)` + `second_reviewer` + `second_reviewed_at`
 - 结果：二次复核准备度从 `27/35` 提升到 `35/35`
 
+### P4-B7 最终权威版替换追踪（已完成）
+
+- 新增评估模块：`/Users/apple/dev/CyberYJ/src/cyberYJ/utils/rule_review_final_authority.py`
+- 新增检查脚本：`/Users/apple/dev/CyberYJ/scripts/check_rule_review_final_authority.py`
+- 新增导出脚本：`/Users/apple/dev/CyberYJ/scripts/generate_rule_review_final_replacement_report.py`
+- 新增批次导出脚本：`/Users/apple/dev/CyberYJ/scripts/generate_rule_review_final_replacement_batches.py`
+- 当前替换基线（2026-02-12）：
+  - `total_confirmed_records=35`
+  - `transitional_records_count=0`
+  - `final_authority_ready_records=35`
+  - `ready_for_final_authority_closeout=true`
+- 批次状态：`A/B/C1/C2/C3(done)=0/0/0/0/0`
+- 导出清单：`/Users/apple/dev/CyberYJ/data/review/rule_review_final_replacement_report.json`
+- 批次清单：`/Users/apple/dev/CyberYJ/data/review/rule_review_final_replacement_batches.json`
+
 P2 阶段报告：`docs/m4-p2-source-compliance-report.md`
+本地知识库报告：`docs/m4-p2-local-kb-report.md`
+展开版知识库报告：`docs/m4-p2-effective-local-kb-report.md`
+convention 缺口报告：`docs/m4-p2-convention-gap-report.md`
 字段盘点报告：`data/review/m4_field_inventory.json`
 映射缺口报告：`data/review/m4_mapping_gap_report.json`
+convention 缺口报告：`data/review/m4_convention_gap_report.json`
 当前覆盖进度：`total_fields=610`，`mapped_fields=610`，`coverage_ratio=1.0`
-当前文本类型：`summary=157`，`citation_only=0`
-当前 locator 覆盖：高频字段 `21/21`，summary 全量 `157/157`
+当前文本类型：`summary=264`，`citation_only=0`
+当前 convention 缺口：`convention_only=18`，`mixed_convention=0`，`unexpected=0`
+当前 locator 覆盖：高频字段 `21/21`，summary 全量 `264/264`
 当前 locator 精度：高频字段 `21/21`
+全量 locator 精度：`264/264`
+locator 精细化批次 1：历史通用定位文案 `110 -> 0`（见 `data/review/m4_locator_refinement_batch1_report.json`）
+locator 精细化批次 2：场景通用定位文案 `108 -> 0`（见 `data/review/m4_locator_refinement_batch2_report.json`）
+locator 精细化批次 3：场景 URL 索引定位补充字段锚点 `108/108`（见 `data/review/m4_locator_refinement_batch3_report.json`）
+locator 精细化批次 4：summary URL 索引定位补充字段锚点 `112/112`（见 `data/review/m4_locator_refinement_batch4_report.json`）
+summary 扩展批次 1：`career` 场景 wildcard 派生显式字段 `+15`（见 `data/review/m4_summary_expansion_batch1_report.json`）
+summary 扩展批次 2：`love/fortune/wealth` 场景 wildcard 派生显式字段 `+37`（见 `data/review/m4_summary_expansion_batch2_report.json`）
+summary 扩展批次 3：`family/health/lawsuit/study/travel` 场景 wildcard 派生显式字段 `+55`（见 `data/review/m4_summary_expansion_batch3_report.json`）
 当前书籍来源页码定位：`21/21`
+本地知识库落地：`entries=264`，`unknown_source_refs=0`
+展开版知识库落地：`fields=610`，`resolved=610`，`unresolved=0`
+下一轮扩展候选：`data/review/m4_summary_expansion_backlog.json`（seed `54` 条，pending explicit `0`）
 P3 核对记录：`docs/m4-p3-rule-review-record.md`
+最终收口报告：`docs/m4-final-closeout-report.md`
 
 ### P3 结构预核对（已完成）
 

@@ -1,0 +1,24 @@
+{
+  "version": "1.0.0",
+  "notes": "允许保留 convention_only 的场景输出模板字段（M4 当前口径）",
+  "allowed_convention_only_field_paths": [
+    "data.scenarios.career.output_structure",
+    "data.scenarios.career.prompt_template",
+    "data.scenarios.family.output_structure",
+    "data.scenarios.family.prompt_template",
+    "data.scenarios.fortune.output_structure",
+    "data.scenarios.fortune.prompt_template",
+    "data.scenarios.health.output_structure",
+    "data.scenarios.health.prompt_template",
+    "data.scenarios.lawsuit.output_structure",
+    "data.scenarios.lawsuit.prompt_template",
+    "data.scenarios.love.output_structure",
+    "data.scenarios.love.prompt_template",
+    "data.scenarios.study.output_structure",
+    "data.scenarios.study.prompt_template",
+    "data.scenarios.travel.output_structure",
+    "data.scenarios.travel.prompt_template",
+    "data.scenarios.wealth.output_structure",
+    "data.scenarios.wealth.prompt_template"
+  ]
+}

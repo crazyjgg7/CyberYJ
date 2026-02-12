@@ -87,3 +87,18 @@ def test_authoritative_text_map_m4_quality_book_sources_use_page_locator():
             invalid_items.append(item.get("field_path"))
 
     assert invalid_items == []
+
+
+def test_authoritative_text_map_m4_quality_convention_not_mixed_with_authoritative_refs():
+    path = "/Users/apple/dev/CyberYJ/data/mappings/authoritative_text_map.json"
+    data = json.loads(open(path, "r", encoding="utf-8").read())
+
+    mixed_items = []
+    for item in data.get("items", []):
+        if not isinstance(item, dict) or item.get("license") != "summary_only":
+            continue
+        refs = [x for x in item.get("source_ref", []) if isinstance(x, str)]
+        if "convention" in refs and len(refs) > 1:
+            mixed_items.append(item.get("field_path"))
+
+    assert mixed_items == []

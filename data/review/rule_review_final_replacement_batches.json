@@ -1,0 +1,43 @@
+{
+  "version": "1.0.0",
+  "generated_at": "2026-02-12",
+  "source_report": "data/review/rule_review_final_replacement_report.json",
+  "total_pending_items": 0,
+  "batches": [
+    {
+      "batch": "A",
+      "scope": "flying_star_rules",
+      "item_count": 0,
+      "status": "done",
+      "items": []
+    },
+    {
+      "batch": "B",
+      "scope": "bazhai_rules",
+      "item_count": 0,
+      "status": "done",
+      "items": []
+    },
+    {
+      "batch": "C1",
+      "scope": "luopan_24_mountains",
+      "item_count": 0,
+      "status": "done",
+      "items": []
+    },
+    {
+      "batch": "C2",
+      "scope": "luopan_24_mountains",
+      "item_count": 0,
+      "status": "done",
+      "items": []
+    },
+    {
+      "batch": "C3",
+      "scope": "luopan_24_mountains",
+      "item_count": 0,
+      "status": "done",
+      "items": []
+    }
+  ]
+}

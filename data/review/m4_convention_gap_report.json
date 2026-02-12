@@ -1,0 +1,75 @@
+{
+  "total_summary_items": 264,
+  "convention_only_items": 18,
+  "mixed_convention_items": 0,
+  "convention_only_ratio": 0.0682,
+  "convention_only_threshold": 18,
+  "by_module": {
+    "core": {
+      "summary_items": 4,
+      "convention_only_items": 0,
+      "mixed_convention_items": 0
+    },
+    "fengshui": {
+      "summary_items": 21,
+      "convention_only_items": 0,
+      "mixed_convention_items": 0
+    },
+    "scenarios": {
+      "summary_items": 237,
+      "convention_only_items": 18,
+      "mixed_convention_items": 0
+    },
+    "other": {
+      "summary_items": 2,
+      "convention_only_items": 0,
+      "mixed_convention_items": 0
+    }
+  },
+  "convention_only_field_paths": [
+    "data.scenarios.career.output_structure",
+    "data.scenarios.career.prompt_template",
+    "data.scenarios.family.output_structure",
+    "data.scenarios.family.prompt_template",
+    "data.scenarios.fortune.output_structure",
+    "data.scenarios.fortune.prompt_template",
+    "data.scenarios.health.output_structure",
+    "data.scenarios.health.prompt_template",
+    "data.scenarios.lawsuit.output_structure",
+    "data.scenarios.lawsuit.prompt_template",
+    "data.scenarios.love.output_structure",
+    "data.scenarios.love.prompt_template",
+    "data.scenarios.study.output_structure",
+    "data.scenarios.study.prompt_template",
+    "data.scenarios.travel.output_structure",
+    "data.scenarios.travel.prompt_template",
+    "data.scenarios.wealth.output_structure",
+    "data.scenarios.wealth.prompt_template"
+  ],
+  "allowed_convention_only_fields": [
+    "data.scenarios.career.output_structure",
+    "data.scenarios.career.prompt_template",
+    "data.scenarios.family.output_structure",
+    "data.scenarios.family.prompt_template",
+    "data.scenarios.fortune.output_structure",
+    "data.scenarios.fortune.prompt_template",
+    "data.scenarios.health.output_structure",
+    "data.scenarios.health.prompt_template",
+    "data.scenarios.lawsuit.output_structure",
+    "data.scenarios.lawsuit.prompt_template",
+    "data.scenarios.love.output_structure",
+    "data.scenarios.love.prompt_template",
+    "data.scenarios.study.output_structure",
+    "data.scenarios.study.prompt_template",
+    "data.scenarios.travel.output_structure",
+    "data.scenarios.travel.prompt_template",
+    "data.scenarios.wealth.output_structure",
+    "data.scenarios.wealth.prompt_template"
+  ],
+  "unexpected_convention_only_fields": [],
+  "mixed_convention_field_paths": [],
+  "invalid_items": [],
+  "allowlist_path": "/Users/apple/dev/CyberYJ/data/core/convention_allowlist.json",
+  "invalid_allowlist": [],
+  "passed": true
+}

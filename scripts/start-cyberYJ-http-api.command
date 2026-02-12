@@ -15,7 +15,7 @@ echo -e "${BLUE}========================================${NC}"
 echo ""
 
 PROJECT_DIR="/Users/apple/dev/CyberYJ"
-PORT="${1:-8080}"
+PORT="${1:-18080}"
 HOST="${HOST:-0.0.0.0}"
 
 echo -e "${GREEN}[1/6]${NC} 切换到项目目录: $PROJECT_DIR"
@@ -62,8 +62,8 @@ then
 fi
 
 if lsof -iTCP:"$PORT" -sTCP:LISTEN >/dev/null 2>&1; then
-  echo -e "${YELLOW}      警告: 端口 ${PORT} 已被占用，自动切换到 18080${NC}"
-  PORT=18080
+  echo -e "${YELLOW}      警告: 端口 ${PORT} 已被占用，自动切换到 18081${NC}"
+  PORT=18081
 fi
 
 echo -e "${GREEN}[6/6]${NC} 启动 HTTP API..."
@@ -82,4 +82,3 @@ echo ""
 echo -e "${RED}API 已停止${NC}"
 echo ""
 read -p "按任意键关闭窗口..." -n1 -s
-

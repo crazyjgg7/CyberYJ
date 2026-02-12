@@ -179,6 +179,7 @@ python run_http_api.py
 ```bash
 curl -X POST "http://127.0.0.1:18080/v1/divination/interpret" \
   -H "X-API-Key: cyberyj-dev-key" \
+  -H "X-Request-ID: req-demo-001" \
   -H "Content-Type: application/json" \
   -d '{"coins":[6,7,8,9,7,7],"question":"事业发展"}'
 ```

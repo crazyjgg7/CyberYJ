@@ -7,12 +7,14 @@
 - URL：`POST /v1/divination/interpret`
 - Content-Type：`application/json`
 - Header：`X-API-Key: <your_api_key>`
+- Header（可选）：`X-Request-ID: <client_trace_id>`
 - 用途：小程序传入六次投掷结果（`coins`），后端返回本卦/变卦与解读结构
 
 ## 1.1 安全与限流（MVP）
 
 - 鉴权：必须提供 `X-API-Key`
 - 限流：固定窗口限流（默认 60 次/60 秒，按 `API-Key + IP` 统计）
+- 请求追踪：每个响应都返回 `X-Request-ID`，便于问题排查
 - 可配置环境变量：
   - `CYBERYJ_API_KEY`（默认：`cyberyj-dev-key`，上线必须替换）
   - `CYBERYJ_RATE_LIMIT_MAX`（默认：`60`）
@@ -80,7 +82,8 @@
 {
   "error": {
     "code": "INVALID_INPUT",
-    "message": "coins数组必须包含6个元素 (6/7/8/9)"
+    "message": "coins数组必须包含6个元素 (6/7/8/9)",
+    "request_id": "e71af9d87fdb4bb0b8f2c7fcd74cd2d8"
   }
 }
 ```
@@ -91,7 +94,8 @@
 {
   "error": {
     "code": "INTERNAL_ERROR",
-    "message": "..."
+    "message": "...",
+    "request_id": "e71af9d87fdb4bb0b8f2c7fcd74cd2d8"
   }
 }
 ```
@@ -102,7 +106,8 @@
 {
   "error": {
     "code": "UNAUTHORIZED",
-    "message": "missing or invalid X-API-Key"
+    "message": "missing or invalid X-API-Key",
+    "request_id": "e71af9d87fdb4bb0b8f2c7fcd74cd2d8"
   }
 }
 ```
@@ -113,16 +118,33 @@
 {
   "error": {
     "code": "RATE_LIMITED",
-    "message": "rate limit exceeded, retry in 42s"
+    "message": "rate limit exceeded, retry in 42s",
+    "request_id": "e71af9d87fdb4bb0b8f2c7fcd74cd2d8"
   }
 }
 ```
 
 并返回响应头：
+- `X-Request-ID`
 - `Retry-After`
 - `X-RateLimit-Limit`
 - `X-RateLimit-Remaining`
 - `X-RateLimit-Reset`
+
+## 4.1 结构化日志与错误追踪
+
+- 日志格式：JSON 行日志（单行可解析）
+- 关键事件：
+  - `request.received`
+  - `request.completed`
+  - `request.rejected`
+  - `request.error`
+- 关键字段：
+  - `request_id`
+  - `method` / `path`
+  - `status_code`
+  - `duration_ms`
+  - `error_code`（错误时）
 
 ## 5. 启动方式
 
@@ -162,6 +184,7 @@ python run_http_api.py
 ```bash
 curl -X POST "http://127.0.0.1:18080/v1/divination/interpret" \
   -H "X-API-Key: cyberyj-dev-key" \
+  -H "X-Request-ID: req-demo-001" \
   -H "Content-Type: application/json" \
   -d '{"coins":[6,7,8,9,7,7],"question":"事业发展"}'
 ```

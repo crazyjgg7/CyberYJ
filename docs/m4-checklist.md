@@ -43,7 +43,7 @@
 - P1（覆盖率基线与校验）：已完成（见 `docs/m4-acceptance-report.md`）
 - P2（版本与合规材料完备）：进行中（已落地来源合规、全量来源扩展校验、source_ref 一致性、证据映射校验）
 - P3（规则逐条校核与规模化替换）：已完成（首轮，35/35 已 verified）
-- P4（二次复核：页码/段落级证据）：已启动
+- P4（二次复核：页码/段落级证据）：已完成（门禁 35/35）
 
 说明：P3 当前完成态基于“书目级索引 + 合法摘要 + 结构一致性核对”，后续需补权威页码/段落证据并进行二次复核。
 
@@ -54,8 +54,8 @@
 - 新增模板文档：`/Users/apple/dev/CyberYJ/docs/m4-secondary-evidence-template.md`
 - 当前结果：
   - `total_confirmed_records=35`
-  - `secondary_ready_records=3`
-  - `ready_for_full_secondary_review=false`
+  - `secondary_ready_records=35`
+  - `ready_for_full_secondary_review=true`
 
 ### P4-B2 二次复核首批（已完成）
 
@@ -74,6 +74,18 @@
 - 范围：`luopan_24_mountains` 首批 8 条（壬/子/癸/丑/艮/寅/甲/卯）
 - 动作：补齐 `locator(页码)` + `second_reviewer` + `second_reviewed_at`
 - 结果：二次复核准备度从 `11/35` 提升到 `19/35`
+
+### P4-B5 二次复核第四批（已完成）
+
+- 范围：`luopan_24_mountains` 第二批 8 条（乙/辰/巽/巳/丙/午/丁/未）
+- 动作：补齐 `locator(页码)` + `second_reviewer` + `second_reviewed_at`
+- 结果：二次复核准备度从 `19/35` 提升到 `27/35`
+
+### P4-B6 二次复核第五批（已完成）
+
+- 范围：`luopan_24_mountains` 第三批 8 条（坤/申/庚/酉/辛/戌/乾/亥）
+- 动作：补齐 `locator(页码)` + `second_reviewer` + `second_reviewed_at`
+- 结果：二次复核准备度从 `27/35` 提升到 `35/35`
 
 P2 阶段报告：`docs/m4-p2-source-compliance-report.md`
 P3 核对记录：`docs/m4-p3-rule-review-record.md`

@@ -46,11 +46,11 @@ def test_rule_review_secondary_gate_shape():
     assert "passed" in report
 
 
-def test_rule_review_secondary_gate_baseline_not_ready():
+def test_rule_review_secondary_gate_baseline_ready():
     report = evaluate_rule_review_secondary_gate(EVIDENCE_PATH)
     assert report["total_confirmed_records"] == 35
-    assert report["secondary_ready_records"] < report["total_confirmed_records"]
-    assert report["ready_for_full_secondary_review"] is False
+    assert report["secondary_ready_records"] == report["total_confirmed_records"]
+    assert report["ready_for_full_secondary_review"] is True
     assert report["passed"] is True
 
 

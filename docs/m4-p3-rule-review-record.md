@@ -209,6 +209,6 @@ python3 /Users/apple/dev/CyberYJ/scripts/check_rule_review_evidence.py
 - 校验脚本：`/Users/apple/dev/CyberYJ/scripts/check_rule_review_secondary_gate.py`
 - 当前结果：
   - `total_confirmed_records=35`
-  - `secondary_ready_records=19`
-  - `ready_for_full_secondary_review=false`
-- 说明：当前 verified 为首轮口径；已完成飞星 3 条 + 八宅 8 条 + 二十四山首批 8 条二次复核准备，剩余 16 条待补页码/段落级证据。
+  - `secondary_ready_records=35`
+  - `ready_for_full_secondary_review=true`
+- 说明：当前 verified 首轮口径已全部补齐二次复核字段，后续进入权威页码证据替换与抽检阶段。

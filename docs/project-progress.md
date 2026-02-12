@@ -28,15 +28,15 @@
 
 - 权威文本/许可摘要尚未在 `data` 目录完成规模化落地
 - 全模块字段级映射覆盖率目标（超出当前核心字段集）未完成
-- 24 山向、八宅、飞星规则已完成首轮逐条校核，但仍缺“可复核权威页码/段落”证据的二次复核
+- 24 山向、八宅、飞星规则已完成首轮逐条校核与二次复核门禁补齐，后续需替换为最终权威版页码证据
 
-## M4 阶段进展（P4 已启动：二次复核门禁）
+## M4 阶段进展（P4 已完成：二次复核门禁）
 
 - 已新增二次复核校验模块：`src/cyberYJ/utils/rule_review_secondary_gate.py`
 - 已新增二次复核校验脚本：`scripts/check_rule_review_secondary_gate.py`
 - 已新增二次复核模板：`docs/m4-secondary-evidence-template.md`
-- 当前二次复核准备度：`total_confirmed_records=35`，`secondary_ready_records=19`
-- 结论：已完成前三批二次复核（飞星 3 条 + 八宅 8 条 + 二十四山首批 8 条），其余 16 条待补证据
+- 当前二次复核准备度：`total_confirmed_records=35`，`secondary_ready_records=35`
+- 结论：二次复核门禁已达标（`ready_for_full_secondary_review=true`）
 
 ## M4 阶段进展（P3 已完成：首轮）
 

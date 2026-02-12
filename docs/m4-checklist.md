@@ -108,4 +108,12 @@ P3 核对记录：`docs/m4-p3-rule-review-record.md`
 - 运行方式：
   - 预览：`python3 /Users/apple/dev/CyberYJ/scripts/sync_rule_review_matrix.py`
   - 应用：`python3 /Users/apple/dev/CyberYJ/scripts/sync_rule_review_matrix.py --apply`
-- 当前 dry-run：PASS（`confirmed_records=0`，`would_update_count=0`）
+- 当前 dry-run：PASS（`confirmed_records=3`，`would_update_count=0`，`updated_count=0`）
+
+### P3-B8 首批 verified（已完成）
+
+- 范围：`flying_star_rules` 三条（`periods_table` / `house_rules_24x9` / `scoring_thresholds`）
+- 动作：在证据台账将三条记录更新为 `evidence_status=confirmed` 并补齐必填字段
+- 执行：`python3 /Users/apple/dev/CyberYJ/scripts/sync_rule_review_matrix.py --apply`
+- 结果：`updated_count=3`，规则状态由 `blocked` 自动同步为 `verified`
+- 当前总览：`total=35`，`verified=3`，`blocked=32`，`pending=0`

@@ -205,21 +205,21 @@
     "flying_star_rules": [
       {
         "id": "periods_table",
-        "status": "blocked",
+        "status": "verified",
         "source_target": "cinii_dili_bianzheng_shu",
-        "notes": "P3-B5: 已完成结构预核对，待补权威文本证据与口径页码后再转 verified。"
+        "notes": "P3-B8: 证据条目已 confirmed，已自动同步为 verified；后续补充权威文本页码后做二次复核。"
       },
       {
         "id": "house_rules_24x9",
-        "status": "blocked",
+        "status": "verified",
         "source_target": "cinii_dili_bianzheng_shu",
-        "notes": "P3-B5: 已完成结构预核对，待补权威文本证据与口径页码后再转 verified。"
+        "notes": "P3-B8: 证据条目已 confirmed，已自动同步为 verified；后续补充权威文本页码后做二次复核。"
       },
       {
         "id": "scoring_thresholds",
-        "status": "blocked",
+        "status": "verified",
         "source_target": "cinii_dili_bianzheng_shu",
-        "notes": "P3-B5: 已完成结构预核对，待补权威文本证据与口径页码后再转 verified。"
+        "notes": "P3-B8: 证据条目已 confirmed，已自动同步为 verified；后续补充权威文本页码后做二次复核。"
       }
     ]
   }

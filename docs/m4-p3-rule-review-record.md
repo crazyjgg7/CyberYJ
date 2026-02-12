@@ -7,9 +7,9 @@
 - 规则矩阵文件：`/Users/apple/dev/CyberYJ/data/review/rule_review_matrix.json`
 - 进度检查脚本：`/Users/apple/dev/CyberYJ/scripts/check_rule_review_progress.py`
 - 当前统计：`35` 条待核对（24 山向 + 8 八宅 + 3 飞星）
-- 已完成状态分流：`35`（blocked）
-- 已核对通过：`0`（verified）
-- 当前状态：`blocked=35`，`pending=0`，`verified=0`
+- 已完成状态分流：`35`（历史）
+- 已核对通过：`3`（verified）
+- 当前状态：`blocked=32`，`pending=0`，`verified=3`
 
 ## 结构预核对结果（2026-02-12）
 
@@ -92,6 +92,14 @@
 | 2026-02-12 | flying_star_rules | house_rules_24x9 | `flying_stars_house.json` 现值 | 待补可复核页码/段落 | 保留现值，等待证据补全 | blocked | `cinii_dili_bianzheng_shu`（书目级） |
 | 2026-02-12 | flying_star_rules | scoring_thresholds | `flying_stars_scoring.json` 现值 | 待补可复核页码/段落 | 保留现值，等待证据补全 | blocked | `cinii_dili_bianzheng_shu`（书目级） |
 
+## P3-B8 记录（2026-02-12）
+
+| 日期 | 规则组 | 规则 ID | 当前值 | 权威口径 | 处理结论 | 状态 | 证据来源 |
+|---|---|---|---|---|---|---|---|
+| 2026-02-12 | flying_star_rules | periods_table | `flying_stars_periods.json` 现值 | 书目级索引 + 合法摘要 + 结构一致性核对 | 证据已 confirmed，自动同步为 verified（待权威页码二次复核） | verified | `cinii_dili_bianzheng_shu` |
+| 2026-02-12 | flying_star_rules | house_rules_24x9 | `flying_stars_house.json` 现值 | 书目级索引 + 合法摘要 + 结构一致性核对 | 证据已 confirmed，自动同步为 verified（待权威页码二次复核） | verified | `cinii_dili_bianzheng_shu` |
+| 2026-02-12 | flying_star_rules | scoring_thresholds | `flying_stars_scoring.json` 现值 | 书目级索引 + 合法摘要 + 结构一致性核对 | 证据已 confirmed，自动同步为 verified（待权威页码二次复核） | verified | `cinii_dili_bianzheng_shu` |
+
 ## 操作流程
 
 1. 在 `rule_review_matrix.json` 对应条目更新 `status/notes`。
@@ -127,8 +135,13 @@ python3 /Users/apple/dev/CyberYJ/scripts/check_rule_review_evidence.py
 
 - 同步脚本：`/Users/apple/dev/CyberYJ/scripts/sync_rule_review_matrix.py`
 - 同步口径：`evidence_status=confirmed` 且字段完整 -> 自动将 `blocked` 更新为 `verified`
-- dry-run 结果：
-  - `confirmed_records=0`
+- apply 结果：
+  - `confirmed_records=3`
+  - `would_update_count=3`
+  - `updated_count=3`
+  - `passed=true`
+- 当前 dry-run 结果：
+  - `confirmed_records=3`
   - `would_update_count=0`
   - `updated_count=0`
   - `passed=true`

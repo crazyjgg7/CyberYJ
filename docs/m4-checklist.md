@@ -69,6 +69,12 @@
 - 动作：补齐 `locator(页码)` + `second_reviewer` + `second_reviewed_at`
 - 结果：二次复核准备度从 `3/35` 提升到 `11/35`
 
+### P4-B4 二次复核第三批（已完成）
+
+- 范围：`luopan_24_mountains` 首批 8 条（壬/子/癸/丑/艮/寅/甲/卯）
+- 动作：补齐 `locator(页码)` + `second_reviewer` + `second_reviewed_at`
+- 结果：二次复核准备度从 `11/35` 提升到 `19/35`
+
 P2 阶段报告：`docs/m4-p2-source-compliance-report.md`
 P3 核对记录：`docs/m4-p3-rule-review-record.md`
 

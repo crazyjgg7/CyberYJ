@@ -35,8 +35,8 @@
 - 已新增二次复核校验模块：`src/cyberYJ/utils/rule_review_secondary_gate.py`
 - 已新增二次复核校验脚本：`scripts/check_rule_review_secondary_gate.py`
 - 已新增二次复核模板：`docs/m4-secondary-evidence-template.md`
-- 当前二次复核准备度：`total_confirmed_records=35`，`secondary_ready_records=11`
-- 结论：已完成前两批二次复核（飞星 3 条 + 八宅 8 条），其余 24 条待补证据
+- 当前二次复核准备度：`total_confirmed_records=35`，`secondary_ready_records=19`
+- 结论：已完成前三批二次复核（飞星 3 条 + 八宅 8 条 + 二十四山首批 8 条），其余 16 条待补证据
 
 ## M4 阶段进展（P3 已完成：首轮）
 

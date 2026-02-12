@@ -13,39 +13,43 @@
     },
     {
       "field_path": "data.core.hexagrams",
-      "text_kind": "citation_only",
-      "license": "citation_only",
+      "text_kind": "summary",
+      "license": "summary_only",
       "source_ref": [
         "ctext_yijing",
         "convention"
-      ]
+      ],
+      "content": "六十四卦基础数据用于卦象编号、上下卦组合与解释索引。"
     },
     {
       "field_path": "data.core.solar_terms",
-      "text_kind": "citation_only",
-      "license": "citation_only",
+      "text_kind": "summary",
+      "license": "summary_only",
       "source_ref": [
         "cma_24_terms",
         "convention"
-      ]
+      ],
+      "content": "二十四节气表用于节气判定与时令影响计算。"
     },
     {
       "field_path": "data.core.trigrams",
-      "text_kind": "citation_only",
-      "license": "citation_only",
+      "text_kind": "summary",
+      "license": "summary_only",
       "source_ref": [
         "ctext_shuogua",
         "convention"
-      ]
+      ],
+      "content": "八卦基础属性用于上下卦解析与五行关系推导。"
     },
     {
       "field_path": "data.fengshui.ba_zhai",
-      "text_kind": "citation_only",
-      "license": "citation_only",
+      "text_kind": "summary",
+      "license": "summary_only",
       "source_ref": [
         "cinii_bazhai_mingjing",
         "convention"
-      ]
+      ],
+      "content": "八宅主表用于宅卦、吉凶方位与分区建议的基础映射。"
     },
     {
       "field_path": "data.fengshui.ba_zhai.auspicious_positions",
@@ -59,12 +63,13 @@
     },
     {
       "field_path": "data.fengshui.ba_zhai.house_gua",
-      "text_kind": "citation_only",
-      "license": "citation_only",
+      "text_kind": "summary",
+      "license": "summary_only",
       "source_ref": [
         "cinii_bazhai_mingjing",
         "convention"
-      ]
+      ],
+      "content": "宅卦字段用于按坐向归宅并联动八宅吉凶方位。"
     },
     {
       "field_path": "data.fengshui.ba_zhai.inauspicious_positions",
@@ -98,12 +103,13 @@
     },
     {
       "field_path": "data.fengshui.flying_stars_house",
-      "text_kind": "citation_only",
-      "license": "citation_only",
+      "text_kind": "summary",
+      "license": "summary_only",
       "source_ref": [
         "cinii_dili_bianzheng_shu",
         "convention"
-      ]
+      ],
+      "content": "飞星宅盘主表用于按元运与坐山生成九宫星盘。"
     },
     {
       "field_path": "data.fengshui.flying_stars_house.palace_map",
@@ -117,21 +123,23 @@
     },
     {
       "field_path": "data.fengshui.flying_stars_house.sitting_mountain",
-      "text_kind": "citation_only",
-      "license": "citation_only",
+      "text_kind": "summary",
+      "license": "summary_only",
       "source_ref": [
         "cinii_dili_bianzheng_shu",
         "convention"
-      ]
+      ],
+      "content": "坐山字段用于命中宅盘规则并完成年盘叠加。"
     },
     {
       "field_path": "data.fengshui.flying_stars_periods",
-      "text_kind": "citation_only",
-      "license": "citation_only",
+      "text_kind": "summary",
+      "license": "summary_only",
       "source_ref": [
         "cinii_dili_bianzheng_shu",
         "convention"
-      ]
+      ],
+      "content": "元运分期主表用于确定年份所属运期。"
     },
     {
       "field_path": "data.fengshui.flying_stars_periods.end_year",
@@ -145,12 +153,13 @@
     },
     {
       "field_path": "data.fengshui.flying_stars_periods.period",
-      "text_kind": "citation_only",
-      "license": "citation_only",
+      "text_kind": "summary",
+      "license": "summary_only",
       "source_ref": [
         "cinii_dili_bianzheng_shu",
         "convention"
-      ]
+      ],
+      "content": "运期编号字段用于飞星计算规则分流。"
     },
     {
       "field_path": "data.fengshui.flying_stars_periods.start_year",
@@ -194,12 +203,13 @@
     },
     {
       "field_path": "data.fengshui.luopan",
-      "text_kind": "citation_only",
-      "license": "citation_only",
+      "text_kind": "summary",
+      "license": "summary_only",
       "source_ref": [
         "qingnang_aoyu",
         "convention"
-      ]
+      ],
+      "content": "二十四山向主表用于角度到山向的标准化映射。"
     },
     {
       "field_path": "data.fengshui.luopan.direction_group",
@@ -223,12 +233,13 @@
     },
     {
       "field_path": "data.fengshui.luopan.name",
-      "text_kind": "citation_only",
-      "license": "citation_only",
+      "text_kind": "summary",
+      "license": "summary_only",
       "source_ref": [
         "qingnang_aoyu",
         "convention"
-      ]
+      ],
+      "content": "山向名称字段用于坐向分类与输出展示。"
     },
     {
       "field_path": "data.fengshui.luopan.start_deg",
@@ -242,12 +253,13 @@
     },
     {
       "field_path": "data.scenarios.career",
-      "text_kind": "citation_only",
-      "license": "citation_only",
+      "text_kind": "summary",
+      "license": "summary_only",
       "source_ref": [
         "ctext_yijing",
         "convention"
-      ]
+      ],
+      "content": "该字段用于权威来源映射与输出可追踪说明。"
     },
     {
       "field_path": "data.scenarios.career.analysis_framework",
@@ -261,12 +273,13 @@
     },
     {
       "field_path": "data.scenarios.career.hexagrams",
-      "text_kind": "citation_only",
-      "license": "citation_only",
+      "text_kind": "summary",
+      "license": "summary_only",
       "source_ref": [
         "ctext_yijing",
         "convention"
-      ]
+      ],
+      "content": "事业场景卦象表用于同卦在该问题域下的差异化解释。"
     },
     {
       "field_path": "data.scenarios.career.hexagrams['11'].key_points",
@@ -360,21 +373,23 @@
     },
     {
       "field_path": "data.scenarios.career.notes",
-      "text_kind": "citation_only",
-      "license": "citation_only",
+      "text_kind": "summary",
+      "license": "summary_only",
       "source_ref": [
         "ctext_yijing",
         "convention"
-      ]
+      ],
+      "content": "事业场景备注用于补充数据使用边界与解释说明。"
     },
     {
       "field_path": "data.scenarios.career.notes[*]",
-      "text_kind": "citation_only",
-      "license": "citation_only",
+      "text_kind": "summary",
+      "license": "summary_only",
       "source_ref": [
         "ctext_yijing",
         "convention"
-      ]
+      ],
+      "content": "事业场景备注条目用于记录口径说明与维护注记。"
     },
     {
       "field_path": "data.scenarios.career.output_structure",
@@ -406,21 +421,23 @@
     },
     {
       "field_path": "data.scenarios.career.version",
-      "text_kind": "citation_only",
-      "license": "citation_only",
+      "text_kind": "summary",
+      "license": "summary_only",
       "source_ref": [
         "ctext_yijing",
         "convention"
-      ]
+      ],
+      "content": "事业场景版本字段用于追踪数据迭代口径。"
     },
     {
       "field_path": "data.scenarios.family",
-      "text_kind": "citation_only",
-      "license": "citation_only",
+      "text_kind": "summary",
+      "license": "summary_only",
       "source_ref": [
         "ctext_yijing",
         "convention"
-      ]
+      ],
+      "content": "该字段用于权威来源映射与输出可追踪说明。"
     },
     {
       "field_path": "data.scenarios.family.analysis_framework",
@@ -434,12 +451,13 @@
     },
     {
       "field_path": "data.scenarios.family.hexagrams",
-      "text_kind": "citation_only",
-      "license": "citation_only",
+      "text_kind": "summary",
+      "license": "summary_only",
       "source_ref": [
         "ctext_yijing",
         "convention"
-      ]
+      ],
+      "content": "家庭场景卦象表用于同卦在该问题域下的差异化解释。"
     },
     {
       "field_path": "data.scenarios.family.hexagrams[*]",
@@ -493,21 +511,23 @@
     },
     {
       "field_path": "data.scenarios.family.notes",
-      "text_kind": "citation_only",
-      "license": "citation_only",
+      "text_kind": "summary",
+      "license": "summary_only",
       "source_ref": [
         "ctext_yijing",
         "convention"
-      ]
+      ],
+      "content": "家庭场景备注用于补充数据使用边界与解释说明。"
     },
     {
       "field_path": "data.scenarios.family.notes[*]",
-      "text_kind": "citation_only",
-      "license": "citation_only",
+      "text_kind": "summary",
+      "license": "summary_only",
       "source_ref": [
         "ctext_yijing",
         "convention"
-      ]
+      ],
+      "content": "家庭场景备注条目用于记录口径说明与维护注记。"
     },
     {
       "field_path": "data.scenarios.family.output_structure",
@@ -539,21 +559,23 @@
     },
     {
       "field_path": "data.scenarios.family.version",
-      "text_kind": "citation_only",
-      "license": "citation_only",
+      "text_kind": "summary",
+      "license": "summary_only",
       "source_ref": [
         "ctext_yijing",
         "convention"
-      ]
+      ],
+      "content": "家庭场景版本字段用于追踪数据迭代口径。"
     },
     {
       "field_path": "data.scenarios.fortune",
-      "text_kind": "citation_only",
-      "license": "citation_only",
+      "text_kind": "summary",
+      "license": "summary_only",
       "source_ref": [
         "ctext_yijing",
         "convention"
-      ]
+      ],
+      "content": "该字段用于权威来源映射与输出可追踪说明。"
     },
     {
       "field_path": "data.scenarios.fortune.analysis_framework",
@@ -567,12 +589,13 @@
     },
     {
       "field_path": "data.scenarios.fortune.hexagrams",
-      "text_kind": "citation_only",
-      "license": "citation_only",
+      "text_kind": "summary",
+      "license": "summary_only",
       "source_ref": [
         "ctext_yijing",
         "convention"
-      ]
+      ],
+      "content": "命运场景卦象表用于同卦在该问题域下的差异化解释。"
     },
     {
       "field_path": "data.scenarios.fortune.hexagrams[*]",
@@ -626,21 +649,23 @@
     },
     {
       "field_path": "data.scenarios.fortune.notes",
-      "text_kind": "citation_only",
-      "license": "citation_only",
+      "text_kind": "summary",
+      "license": "summary_only",
       "source_ref": [
         "ctext_yijing",
         "convention"
-      ]
+      ],
+      "content": "命运场景备注用于补充数据使用边界与解释说明。"
     },
     {
       "field_path": "data.scenarios.fortune.notes[*]",
-      "text_kind": "citation_only",
-      "license": "citation_only",
+      "text_kind": "summary",
+      "license": "summary_only",
       "source_ref": [
         "ctext_yijing",
         "convention"
-      ]
+      ],
+      "content": "命运场景备注条目用于记录口径说明与维护注记。"
     },
     {
       "field_path": "data.scenarios.fortune.output_structure",
@@ -672,21 +697,23 @@
     },
     {
       "field_path": "data.scenarios.fortune.version",
-      "text_kind": "citation_only",
-      "license": "citation_only",
+      "text_kind": "summary",
+      "license": "summary_only",
       "source_ref": [
         "ctext_yijing",
         "convention"
-      ]
+      ],
+      "content": "命运场景版本字段用于追踪数据迭代口径。"
     },
     {
       "field_path": "data.scenarios.health",
-      "text_kind": "citation_only",
-      "license": "citation_only",
+      "text_kind": "summary",
+      "license": "summary_only",
       "source_ref": [
         "ctext_yijing",
         "convention"
-      ]
+      ],
+      "content": "该字段用于权威来源映射与输出可追踪说明。"
     },
     {
       "field_path": "data.scenarios.health.analysis_framework",
@@ -700,12 +727,13 @@
     },
     {
       "field_path": "data.scenarios.health.hexagrams",
-      "text_kind": "citation_only",
-      "license": "citation_only",
+      "text_kind": "summary",
+      "license": "summary_only",
       "source_ref": [
         "ctext_yijing",
         "convention"
-      ]
+      ],
+      "content": "健康场景卦象表用于同卦在该问题域下的差异化解释。"
     },
     {
       "field_path": "data.scenarios.health.hexagrams[*]",
@@ -759,21 +787,23 @@
     },
     {
       "field_path": "data.scenarios.health.notes",
-      "text_kind": "citation_only",
-      "license": "citation_only",
+      "text_kind": "summary",
+      "license": "summary_only",
       "source_ref": [
         "ctext_yijing",
         "convention"
-      ]
+      ],
+      "content": "健康场景备注用于补充数据使用边界与解释说明。"
     },
     {
       "field_path": "data.scenarios.health.notes[*]",
-      "text_kind": "citation_only",
-      "license": "citation_only",
+      "text_kind": "summary",
+      "license": "summary_only",
       "source_ref": [
         "ctext_yijing",
         "convention"
-      ]
+      ],
+      "content": "健康场景备注条目用于记录口径说明与维护注记。"
     },
     {
       "field_path": "data.scenarios.health.output_structure",
@@ -805,21 +835,23 @@
     },
     {
       "field_path": "data.scenarios.health.version",
-      "text_kind": "citation_only",
-      "license": "citation_only",
+      "text_kind": "summary",
+      "license": "summary_only",
       "source_ref": [
         "ctext_yijing",
         "convention"
-      ]
+      ],
+      "content": "健康场景版本字段用于追踪数据迭代口径。"
     },
     {
       "field_path": "data.scenarios.lawsuit",
-      "text_kind": "citation_only",
-      "license": "citation_only",
+      "text_kind": "summary",
+      "license": "summary_only",
       "source_ref": [
         "ctext_yijing",
         "convention"
-      ]
+      ],
+      "content": "该字段用于权威来源映射与输出可追踪说明。"
     },
     {
       "field_path": "data.scenarios.lawsuit.analysis_framework",
@@ -833,12 +865,13 @@
     },
     {
       "field_path": "data.scenarios.lawsuit.hexagrams",
-      "text_kind": "citation_only",
-      "license": "citation_only",
+      "text_kind": "summary",
+      "license": "summary_only",
       "source_ref": [
         "ctext_yijing",
         "convention"
-      ]
+      ],
+      "content": "诉讼场景卦象表用于同卦在该问题域下的差异化解释。"
     },
     {
       "field_path": "data.scenarios.lawsuit.hexagrams[*]",
@@ -892,21 +925,23 @@
     },
     {
       "field_path": "data.scenarios.lawsuit.notes",
-      "text_kind": "citation_only",
-      "license": "citation_only",
+      "text_kind": "summary",
+      "license": "summary_only",
       "source_ref": [
         "ctext_yijing",
         "convention"
-      ]
+      ],
+      "content": "诉讼场景备注用于补充数据使用边界与解释说明。"
     },
     {
       "field_path": "data.scenarios.lawsuit.notes[*]",
-      "text_kind": "citation_only",
-      "license": "citation_only",
+      "text_kind": "summary",
+      "license": "summary_only",
       "source_ref": [
         "ctext_yijing",
         "convention"
-      ]
+      ],
+      "content": "诉讼场景备注条目用于记录口径说明与维护注记。"
     },
     {
       "field_path": "data.scenarios.lawsuit.output_structure",
@@ -938,21 +973,23 @@
     },
     {
       "field_path": "data.scenarios.lawsuit.version",
-      "text_kind": "citation_only",
-      "license": "citation_only",
+      "text_kind": "summary",
+      "license": "summary_only",
       "source_ref": [
         "ctext_yijing",
         "convention"
-      ]
+      ],
+      "content": "诉讼场景版本字段用于追踪数据迭代口径。"
     },
     {
       "field_path": "data.scenarios.love",
-      "text_kind": "citation_only",
-      "license": "citation_only",
+      "text_kind": "summary",
+      "license": "summary_only",
       "source_ref": [
         "ctext_yijing",
         "convention"
-      ]
+      ],
+      "content": "该字段用于权威来源映射与输出可追踪说明。"
     },
     {
       "field_path": "data.scenarios.love.analysis_framework",
@@ -966,12 +1003,13 @@
     },
     {
       "field_path": "data.scenarios.love.hexagrams",
-      "text_kind": "citation_only",
-      "license": "citation_only",
+      "text_kind": "summary",
+      "license": "summary_only",
       "source_ref": [
         "ctext_yijing",
         "convention"
-      ]
+      ],
+      "content": "感情场景卦象表用于同卦在该问题域下的差异化解释。"
     },
     {
       "field_path": "data.scenarios.love.hexagrams[*]",
@@ -1025,21 +1063,23 @@
     },
     {
       "field_path": "data.scenarios.love.notes",
-      "text_kind": "citation_only",
-      "license": "citation_only",
+      "text_kind": "summary",
+      "license": "summary_only",
       "source_ref": [
         "ctext_yijing",
         "convention"
-      ]
+      ],
+      "content": "感情场景备注用于补充数据使用边界与解释说明。"
     },
     {
       "field_path": "data.scenarios.love.notes[*]",
-      "text_kind": "citation_only",
-      "license": "citation_only",
+      "text_kind": "summary",
+      "license": "summary_only",
       "source_ref": [
         "ctext_yijing",
         "convention"
-      ]
+      ],
+      "content": "感情场景备注条目用于记录口径说明与维护注记。"
     },
     {
       "field_path": "data.scenarios.love.output_structure",
@@ -1071,21 +1111,23 @@
     },
     {
       "field_path": "data.scenarios.love.version",
-      "text_kind": "citation_only",
-      "license": "citation_only",
+      "text_kind": "summary",
+      "license": "summary_only",
       "source_ref": [
         "ctext_yijing",
         "convention"
-      ]
+      ],
+      "content": "感情场景版本字段用于追踪数据迭代口径。"
     },
     {
       "field_path": "data.scenarios.study",
-      "text_kind": "citation_only",
-      "license": "citation_only",
+      "text_kind": "summary",
+      "license": "summary_only",
       "source_ref": [
         "ctext_yijing",
         "convention"
-      ]
+      ],
+      "content": "该字段用于权威来源映射与输出可追踪说明。"
     },
     {
       "field_path": "data.scenarios.study.analysis_framework",
@@ -1099,12 +1141,13 @@
     },
     {
       "field_path": "data.scenarios.study.hexagrams",
-      "text_kind": "citation_only",
-      "license": "citation_only",
+      "text_kind": "summary",
+      "license": "summary_only",
       "source_ref": [
         "ctext_yijing",
         "convention"
-      ]
+      ],
+      "content": "学业场景卦象表用于同卦在该问题域下的差异化解释。"
     },
     {
       "field_path": "data.scenarios.study.hexagrams[*]",
@@ -1158,21 +1201,23 @@
     },
     {
       "field_path": "data.scenarios.study.notes",
-      "text_kind": "citation_only",
-      "license": "citation_only",
+      "text_kind": "summary",
+      "license": "summary_only",
       "source_ref": [
         "ctext_yijing",
         "convention"
-      ]
+      ],
+      "content": "学业场景备注用于补充数据使用边界与解释说明。"
     },
     {
       "field_path": "data.scenarios.study.notes[*]",
-      "text_kind": "citation_only",
-      "license": "citation_only",
+      "text_kind": "summary",
+      "license": "summary_only",
       "source_ref": [
         "ctext_yijing",
         "convention"
-      ]
+      ],
+      "content": "学业场景备注条目用于记录口径说明与维护注记。"
     },
     {
       "field_path": "data.scenarios.study.output_structure",
@@ -1204,21 +1249,23 @@
     },
     {
       "field_path": "data.scenarios.study.version",
-      "text_kind": "citation_only",
-      "license": "citation_only",
+      "text_kind": "summary",
+      "license": "summary_only",
       "source_ref": [
         "ctext_yijing",
         "convention"
-      ]
+      ],
+      "content": "学业场景版本字段用于追踪数据迭代口径。"
     },
     {
       "field_path": "data.scenarios.travel",
-      "text_kind": "citation_only",
-      "license": "citation_only",
+      "text_kind": "summary",
+      "license": "summary_only",
       "source_ref": [
         "ctext_yijing",
         "convention"
-      ]
+      ],
+      "content": "该字段用于权威来源映射与输出可追踪说明。"
     },
     {
       "field_path": "data.scenarios.travel.analysis_framework",
@@ -1232,12 +1279,13 @@
     },
     {
       "field_path": "data.scenarios.travel.hexagrams",
-      "text_kind": "citation_only",
-      "license": "citation_only",
+      "text_kind": "summary",
+      "license": "summary_only",
       "source_ref": [
         "ctext_yijing",
         "convention"
-      ]
+      ],
+      "content": "出行场景卦象表用于同卦在该问题域下的差异化解释。"
     },
     {
       "field_path": "data.scenarios.travel.hexagrams[*]",
@@ -1291,21 +1339,23 @@
     },
     {
       "field_path": "data.scenarios.travel.notes",
-      "text_kind": "citation_only",
-      "license": "citation_only",
+      "text_kind": "summary",
+      "license": "summary_only",
       "source_ref": [
         "ctext_yijing",
         "convention"
-      ]
+      ],
+      "content": "出行场景备注用于补充数据使用边界与解释说明。"
     },
     {
       "field_path": "data.scenarios.travel.notes[*]",
-      "text_kind": "citation_only",
-      "license": "citation_only",
+      "text_kind": "summary",
+      "license": "summary_only",
       "source_ref": [
         "ctext_yijing",
         "convention"
-      ]
+      ],
+      "content": "出行场景备注条目用于记录口径说明与维护注记。"
     },
     {
       "field_path": "data.scenarios.travel.output_structure",
@@ -1337,21 +1387,23 @@
     },
     {
       "field_path": "data.scenarios.travel.version",
-      "text_kind": "citation_only",
-      "license": "citation_only",
+      "text_kind": "summary",
+      "license": "summary_only",
       "source_ref": [
         "ctext_yijing",
         "convention"
-      ]
+      ],
+      "content": "出行场景版本字段用于追踪数据迭代口径。"
     },
     {
       "field_path": "data.scenarios.wealth",
-      "text_kind": "citation_only",
-      "license": "citation_only",
+      "text_kind": "summary",
+      "license": "summary_only",
       "source_ref": [
         "ctext_yijing",
         "convention"
-      ]
+      ],
+      "content": "该字段用于权威来源映射与输出可追踪说明。"
     },
     {
       "field_path": "data.scenarios.wealth.analysis_framework",
@@ -1365,12 +1417,13 @@
     },
     {
       "field_path": "data.scenarios.wealth.hexagrams",
-      "text_kind": "citation_only",
-      "license": "citation_only",
+      "text_kind": "summary",
+      "license": "summary_only",
       "source_ref": [
         "ctext_yijing",
         "convention"
-      ]
+      ],
+      "content": "财运场景卦象表用于同卦在该问题域下的差异化解释。"
     },
     {
       "field_path": "data.scenarios.wealth.hexagrams[*]",
@@ -1424,21 +1477,23 @@
     },
     {
       "field_path": "data.scenarios.wealth.notes",
-      "text_kind": "citation_only",
-      "license": "citation_only",
+      "text_kind": "summary",
+      "license": "summary_only",
       "source_ref": [
         "ctext_yijing",
         "convention"
-      ]
+      ],
+      "content": "财运场景备注用于补充数据使用边界与解释说明。"
     },
     {
       "field_path": "data.scenarios.wealth.notes[*]",
-      "text_kind": "citation_only",
-      "license": "citation_only",
+      "text_kind": "summary",
+      "license": "summary_only",
       "source_ref": [
         "ctext_yijing",
         "convention"
-      ]
+      ],
+      "content": "财运场景备注条目用于记录口径说明与维护注记。"
     },
     {
       "field_path": "data.scenarios.wealth.output_structure",
@@ -1470,12 +1525,13 @@
     },
     {
       "field_path": "data.scenarios.wealth.version",
-      "text_kind": "citation_only",
-      "license": "citation_only",
+      "text_kind": "summary",
+      "license": "summary_only",
       "source_ref": [
         "ctext_yijing",
         "convention"
-      ]
+      ],
+      "content": "财运场景版本字段用于追踪数据迭代口径。"
     },
     {
       "field_path": "hexagrams[?(@.id==11)].image_summary",

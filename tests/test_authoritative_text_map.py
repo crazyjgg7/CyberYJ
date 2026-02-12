@@ -1,3 +1,5 @@
+import json
+
 from cyberYJ.utils.authoritative_text_map import (
     match_mapping_item,
     match_luopan_item,
@@ -39,3 +41,14 @@ def test_match_mapping_item_scenario_specific_wildcard_subscene():
     match = match_mapping_item(item, hexagram_id=11, scenario_code="career")
     assert match is not None
     assert match["target"] == "scenario_specific.*.advice"
+
+
+def test_authoritative_text_map_m4_quality_no_citation_only_entries():
+    path = "/Users/apple/dev/CyberYJ/data/mappings/authoritative_text_map.json"
+    data = json.loads(open(path, "r", encoding="utf-8").read())
+    citation_only_items = [
+        item["field_path"]
+        for item in data.get("items", [])
+        if isinstance(item, dict) and item.get("text_kind") == "citation_only"
+    ]
+    assert citation_only_items == []

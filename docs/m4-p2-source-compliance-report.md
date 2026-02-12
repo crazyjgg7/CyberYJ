@@ -39,3 +39,5 @@ python3 /Users/apple/dev/CyberYJ/scripts/check_source_evidence.py
 2. 扩展到非必选来源并补全版本细节字段（edition/section 精细化）✅
 3. 建立“来源变更审计”记录模板（增量差异 + 责任人 + 时间戳）✅  
    模板文件：`/Users/apple/dev/CyberYJ/docs/source-change-audit-template.md`
+4. 新增字段盘点与映射缺口自动报告（`scripts/generate_m4_mapping_gap_report.py`）✅  
+   产物文件：`/Users/apple/dev/CyberYJ/data/review/m4_field_inventory.json`、`/Users/apple/dev/CyberYJ/data/review/m4_mapping_gap_report.json`

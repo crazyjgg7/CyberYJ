@@ -1,0 +1,3089 @@
+{
+  "generated_at": "2026-02-12T05:32:15.370775+00:00",
+  "data_root": "data",
+  "scanned_files": [
+    "data/core/hexagram_keywords.json",
+    "data/core/hexagrams.json",
+    "data/core/solar_terms.json",
+    "data/core/trigrams.json",
+    "data/scenarios/career.json",
+    "data/scenarios/family.json",
+    "data/scenarios/fortune.json",
+    "data/scenarios/health.json",
+    "data/scenarios/lawsuit.json",
+    "data/scenarios/love.json",
+    "data/scenarios/study.json",
+    "data/scenarios/travel.json",
+    "data/scenarios/wealth.json",
+    "data/fengshui/ba_zhai.json",
+    "data/fengshui/flying_stars.json",
+    "data/fengshui/flying_stars_house.json",
+    "data/fengshui/flying_stars_periods.json",
+    "data/fengshui/flying_stars_scoring.json",
+    "data/fengshui/luopan.json"
+  ],
+  "total_fields": 610,
+  "modules": {
+    "core": {
+      "total_fields": 39
+    },
+    "fengshui": {
+      "total_fields": 45
+    },
+    "scenarios": {
+      "total_fields": 526
+    }
+  },
+  "fields": [
+    {
+      "field_path": "data.core.hexagram_keywords",
+      "module": "core",
+      "value_type": "object"
+    },
+    {
+      "field_path": "data.core.hexagram_keywords.description",
+      "module": "core",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.core.hexagram_keywords.keywords",
+      "module": "core",
+      "value_type": "object"
+    },
+    {
+      "field_path": "data.core.hexagram_keywords.keywords[*]",
+      "module": "core",
+      "value_type": "object"
+    },
+    {
+      "field_path": "data.core.hexagram_keywords.keywords[*].general_meaning",
+      "module": "core",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.core.hexagram_keywords.keywords[*].literal",
+      "module": "core",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.core.hexagram_keywords.keywords[*].scenario_applications",
+      "module": "core",
+      "value_type": "object"
+    },
+    {
+      "field_path": "data.core.hexagram_keywords.keywords[*].scenario_applications[*]",
+      "module": "core",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.core.hexagram_keywords.keywords[*].symbolic",
+      "module": "core",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.core.hexagram_keywords.notes",
+      "module": "core",
+      "value_type": "array"
+    },
+    {
+      "field_path": "data.core.hexagram_keywords.notes[*]",
+      "module": "core",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.core.hexagram_keywords.source_ref",
+      "module": "core",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.core.hexagram_keywords.version",
+      "module": "core",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.core.hexagrams",
+      "module": "core",
+      "value_type": "array"
+    },
+    {
+      "field_path": "data.core.hexagrams[*]",
+      "module": "core",
+      "value_type": "object"
+    },
+    {
+      "field_path": "data.core.hexagrams[*].element_relation",
+      "module": "core",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.core.hexagrams[*].id",
+      "module": "core",
+      "value_type": "integer"
+    },
+    {
+      "field_path": "data.core.hexagrams[*].image_summary",
+      "module": "core",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.core.hexagrams[*].judgment_summary",
+      "module": "core",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.core.hexagrams[*].lower_trigram",
+      "module": "core",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.core.hexagrams[*].name",
+      "module": "core",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.core.hexagrams[*].source_ref",
+      "module": "core",
+      "value_type": "array"
+    },
+    {
+      "field_path": "data.core.hexagrams[*].source_ref[*]",
+      "module": "core",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.core.hexagrams[*].upper_trigram",
+      "module": "core",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.core.solar_terms",
+      "module": "core",
+      "value_type": "array"
+    },
+    {
+      "field_path": "data.core.solar_terms[*]",
+      "module": "core",
+      "value_type": "object"
+    },
+    {
+      "field_path": "data.core.solar_terms[*].id",
+      "module": "core",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.core.solar_terms[*].name",
+      "module": "core",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.core.solar_terms[*].solar_longitude_deg",
+      "module": "core",
+      "value_type": "integer"
+    },
+    {
+      "field_path": "data.core.solar_terms[*].source_ref",
+      "module": "core",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.core.trigrams",
+      "module": "core",
+      "value_type": "array"
+    },
+    {
+      "field_path": "data.core.trigrams[*]",
+      "module": "core",
+      "value_type": "object"
+    },
+    {
+      "field_path": "data.core.trigrams[*].direction",
+      "module": "core",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.core.trigrams[*].element",
+      "module": "core",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.core.trigrams[*].id",
+      "module": "core",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.core.trigrams[*].name",
+      "module": "core",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.core.trigrams[*].source_ref",
+      "module": "core",
+      "value_type": "array"
+    },
+    {
+      "field_path": "data.core.trigrams[*].source_ref[*]",
+      "module": "core",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.core.trigrams[*].symbol",
+      "module": "core",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.fengshui.ba_zhai",
+      "module": "fengshui",
+      "value_type": "array"
+    },
+    {
+      "field_path": "data.fengshui.ba_zhai[*]",
+      "module": "fengshui",
+      "value_type": "object"
+    },
+    {
+      "field_path": "data.fengshui.ba_zhai[*].auspicious_positions",
+      "module": "fengshui",
+      "value_type": "array"
+    },
+    {
+      "field_path": "data.fengshui.ba_zhai[*].auspicious_positions[*]",
+      "module": "fengshui",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.fengshui.ba_zhai[*].house_gua",
+      "module": "fengshui",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.fengshui.ba_zhai[*].inauspicious_positions",
+      "module": "fengshui",
+      "value_type": "array"
+    },
+    {
+      "field_path": "data.fengshui.ba_zhai[*].inauspicious_positions[*]",
+      "module": "fengshui",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.fengshui.ba_zhai[*].source_ref",
+      "module": "fengshui",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.fengshui.flying_stars",
+      "module": "fengshui",
+      "value_type": "array"
+    },
+    {
+      "field_path": "data.fengshui.flying_stars[*]",
+      "module": "fengshui",
+      "value_type": "object"
+    },
+    {
+      "field_path": "data.fengshui.flying_stars[*].central_star",
+      "module": "fengshui",
+      "value_type": "integer"
+    },
+    {
+      "field_path": "data.fengshui.flying_stars[*].palace_map",
+      "module": "fengshui",
+      "value_type": "object"
+    },
+    {
+      "field_path": "data.fengshui.flying_stars[*].palace_map[*]",
+      "module": "fengshui",
+      "value_type": "integer"
+    },
+    {
+      "field_path": "data.fengshui.flying_stars[*].source_ref",
+      "module": "fengshui",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.fengshui.flying_stars[*].year",
+      "module": "fengshui",
+      "value_type": "integer"
+    },
+    {
+      "field_path": "data.fengshui.flying_stars_house",
+      "module": "fengshui",
+      "value_type": "array"
+    },
+    {
+      "field_path": "data.fengshui.flying_stars_house[*]",
+      "module": "fengshui",
+      "value_type": "object"
+    },
+    {
+      "field_path": "data.fengshui.flying_stars_house[*].palace_map",
+      "module": "fengshui",
+      "value_type": "object"
+    },
+    {
+      "field_path": "data.fengshui.flying_stars_house[*].palace_map[*]",
+      "module": "fengshui",
+      "value_type": "object"
+    },
+    {
+      "field_path": "data.fengshui.flying_stars_house[*].palace_map[*].facing_star",
+      "module": "fengshui",
+      "value_type": "integer"
+    },
+    {
+      "field_path": "data.fengshui.flying_stars_house[*].palace_map[*].mountain_star",
+      "module": "fengshui",
+      "value_type": "integer"
+    },
+    {
+      "field_path": "data.fengshui.flying_stars_house[*].period",
+      "module": "fengshui",
+      "value_type": "integer"
+    },
+    {
+      "field_path": "data.fengshui.flying_stars_house[*].sitting_mountain",
+      "module": "fengshui",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.fengshui.flying_stars_house[*].source_ref",
+      "module": "fengshui",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.fengshui.flying_stars_periods",
+      "module": "fengshui",
+      "value_type": "array"
+    },
+    {
+      "field_path": "data.fengshui.flying_stars_periods[*]",
+      "module": "fengshui",
+      "value_type": "object"
+    },
+    {
+      "field_path": "data.fengshui.flying_stars_periods[*].end_year",
+      "module": "fengshui",
+      "value_type": "integer"
+    },
+    {
+      "field_path": "data.fengshui.flying_stars_periods[*].period",
+      "module": "fengshui",
+      "value_type": "integer"
+    },
+    {
+      "field_path": "data.fengshui.flying_stars_periods[*].source_ref",
+      "module": "fengshui",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.fengshui.flying_stars_periods[*].start_year",
+      "module": "fengshui",
+      "value_type": "integer"
+    },
+    {
+      "field_path": "data.fengshui.flying_stars_scoring",
+      "module": "fengshui",
+      "value_type": "object"
+    },
+    {
+      "field_path": "data.fengshui.flying_stars_scoring.source_ref",
+      "module": "fengshui",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.fengshui.flying_stars_scoring.stars",
+      "module": "fengshui",
+      "value_type": "object"
+    },
+    {
+      "field_path": "data.fengshui.flying_stars_scoring.stars[*]",
+      "module": "fengshui",
+      "value_type": "object"
+    },
+    {
+      "field_path": "data.fengshui.flying_stars_scoring.stars[*].label",
+      "module": "fengshui",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.fengshui.flying_stars_scoring.stars[*].score",
+      "module": "fengshui",
+      "value_type": "integer"
+    },
+    {
+      "field_path": "data.fengshui.flying_stars_scoring.version",
+      "module": "fengshui",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.fengshui.luopan",
+      "module": "fengshui",
+      "value_type": "array"
+    },
+    {
+      "field_path": "data.fengshui.luopan[*]",
+      "module": "fengshui",
+      "value_type": "object"
+    },
+    {
+      "field_path": "data.fengshui.luopan[*].direction_group",
+      "module": "fengshui",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.fengshui.luopan[*].end_deg",
+      "module": "fengshui",
+      "value_type": "number"
+    },
+    {
+      "field_path": "data.fengshui.luopan[*].id",
+      "module": "fengshui",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.fengshui.luopan[*].name",
+      "module": "fengshui",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.fengshui.luopan[*].source_ref",
+      "module": "fengshui",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.fengshui.luopan[*].start_deg",
+      "module": "fengshui",
+      "value_type": "number"
+    },
+    {
+      "field_path": "data.scenarios.career",
+      "module": "scenarios",
+      "value_type": "object"
+    },
+    {
+      "field_path": "data.scenarios.career.analysis_framework",
+      "module": "scenarios",
+      "value_type": "object"
+    },
+    {
+      "field_path": "data.scenarios.career.analysis_framework.dimensions",
+      "module": "scenarios",
+      "value_type": "array"
+    },
+    {
+      "field_path": "data.scenarios.career.analysis_framework.dimensions[*]",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.career.analysis_framework.focus",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.career.analysis_framework.key_aspects",
+      "module": "scenarios",
+      "value_type": "array"
+    },
+    {
+      "field_path": "data.scenarios.career.analysis_framework.key_aspects[*]",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.career.hexagrams",
+      "module": "scenarios",
+      "value_type": "object"
+    },
+    {
+      "field_path": "data.scenarios.career.hexagrams[*]",
+      "module": "scenarios",
+      "value_type": "object"
+    },
+    {
+      "field_path": "data.scenarios.career.hexagrams[*].career_rating",
+      "module": "scenarios",
+      "value_type": "integer"
+    },
+    {
+      "field_path": "data.scenarios.career.hexagrams[*].interpersonal",
+      "module": "scenarios",
+      "value_type": "object"
+    },
+    {
+      "field_path": "data.scenarios.career.hexagrams[*].interpersonal.boss",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.career.hexagrams[*].interpersonal.colleague",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.career.hexagrams[*].interpersonal.partner",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.career.hexagrams[*].key_points",
+      "module": "scenarios",
+      "value_type": "array"
+    },
+    {
+      "field_path": "data.scenarios.career.hexagrams[*].key_points[*]",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.career.hexagrams[*].name",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.career.hexagrams[*].overall_tendency",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.career.hexagrams[*].scenario_specific",
+      "module": "scenarios",
+      "value_type": "object"
+    },
+    {
+      "field_path": "data.scenarios.career.hexagrams[*].scenario_specific[*]",
+      "module": "scenarios",
+      "value_type": "object"
+    },
+    {
+      "field_path": "data.scenarios.career.hexagrams[*].scenario_specific[*].advice",
+      "module": "scenarios",
+      "value_type": "array"
+    },
+    {
+      "field_path": "data.scenarios.career.hexagrams[*].scenario_specific[*].advice[*]",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.career.hexagrams[*].scenario_specific[*].reasons",
+      "module": "scenarios",
+      "value_type": "array"
+    },
+    {
+      "field_path": "data.scenarios.career.hexagrams[*].scenario_specific[*].reasons[*]",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.career.hexagrams[*].scenario_specific[*].situation",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.career.hexagrams[*].scenario_specific[*].timing",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.career.hexagrams[*].source_ref",
+      "module": "scenarios",
+      "value_type": "array"
+    },
+    {
+      "field_path": "data.scenarios.career.hexagrams[*].source_ref[*]",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.career.notes",
+      "module": "scenarios",
+      "value_type": "array"
+    },
+    {
+      "field_path": "data.scenarios.career.notes[*]",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.career.output_structure",
+      "module": "scenarios",
+      "value_type": "object"
+    },
+    {
+      "field_path": "data.scenarios.career.output_structure.sections",
+      "module": "scenarios",
+      "value_type": "array"
+    },
+    {
+      "field_path": "data.scenarios.career.output_structure.sections[*]",
+      "module": "scenarios",
+      "value_type": "object"
+    },
+    {
+      "field_path": "data.scenarios.career.output_structure.sections[*].each_includes",
+      "module": "scenarios",
+      "value_type": "array"
+    },
+    {
+      "field_path": "data.scenarios.career.output_structure.sections[*].each_includes[*]",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.career.output_structure.sections[*].format",
+      "module": "scenarios",
+      "value_type": "object"
+    },
+    {
+      "field_path": "data.scenarios.career.output_structure.sections[*].format.do",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.career.output_structure.sections[*].format.dont",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.career.output_structure.sections[*].id",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.career.output_structure.sections[*].includes",
+      "module": "scenarios",
+      "value_type": "array"
+    },
+    {
+      "field_path": "data.scenarios.career.output_structure.sections[*].includes[*]",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.career.output_structure.sections[*].required",
+      "module": "scenarios",
+      "value_type": "boolean"
+    },
+    {
+      "field_path": "data.scenarios.career.output_structure.sections[*].scenarios",
+      "module": "scenarios",
+      "value_type": "array"
+    },
+    {
+      "field_path": "data.scenarios.career.output_structure.sections[*].scenarios[*]",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.career.output_structure.sections[*].title",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.career.output_structure.sections[*].type",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.career.output_structure.template_id",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.career.prompt_template",
+      "module": "scenarios",
+      "value_type": "object"
+    },
+    {
+      "field_path": "data.scenarios.career.prompt_template.analysis_focus",
+      "module": "scenarios",
+      "value_type": "array"
+    },
+    {
+      "field_path": "data.scenarios.career.prompt_template.analysis_focus[*]",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.career.prompt_template.output_requirements",
+      "module": "scenarios",
+      "value_type": "array"
+    },
+    {
+      "field_path": "data.scenarios.career.prompt_template.output_requirements[*]",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.career.prompt_template.system_role",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.career.scenario_info",
+      "module": "scenarios",
+      "value_type": "object"
+    },
+    {
+      "field_path": "data.scenarios.career.scenario_info.code",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.career.scenario_info.description",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.career.scenario_info.name",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.career.scenario_info.requires_disclaimer",
+      "module": "scenarios",
+      "value_type": "boolean"
+    },
+    {
+      "field_path": "data.scenarios.career.scenario_info.sub_scenarios",
+      "module": "scenarios",
+      "value_type": "array"
+    },
+    {
+      "field_path": "data.scenarios.career.scenario_info.sub_scenarios[*]",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.career.version",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.family",
+      "module": "scenarios",
+      "value_type": "object"
+    },
+    {
+      "field_path": "data.scenarios.family.analysis_framework",
+      "module": "scenarios",
+      "value_type": "object"
+    },
+    {
+      "field_path": "data.scenarios.family.analysis_framework.dimensions",
+      "module": "scenarios",
+      "value_type": "array"
+    },
+    {
+      "field_path": "data.scenarios.family.analysis_framework.dimensions[*]",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.family.analysis_framework.focus",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.family.analysis_framework.key_aspects",
+      "module": "scenarios",
+      "value_type": "array"
+    },
+    {
+      "field_path": "data.scenarios.family.analysis_framework.key_aspects[*]",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.family.hexagrams",
+      "module": "scenarios",
+      "value_type": "object"
+    },
+    {
+      "field_path": "data.scenarios.family.hexagrams[*]",
+      "module": "scenarios",
+      "value_type": "object"
+    },
+    {
+      "field_path": "data.scenarios.family.hexagrams[*].family_rating",
+      "module": "scenarios",
+      "value_type": "integer"
+    },
+    {
+      "field_path": "data.scenarios.family.hexagrams[*].key_points",
+      "module": "scenarios",
+      "value_type": "array"
+    },
+    {
+      "field_path": "data.scenarios.family.hexagrams[*].key_points[*]",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.family.hexagrams[*].name",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.family.hexagrams[*].overall_tendency",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.family.hexagrams[*].scenario_specific",
+      "module": "scenarios",
+      "value_type": "object"
+    },
+    {
+      "field_path": "data.scenarios.family.hexagrams[*].scenario_specific[*]",
+      "module": "scenarios",
+      "value_type": "object"
+    },
+    {
+      "field_path": "data.scenarios.family.hexagrams[*].scenario_specific[*].advice",
+      "module": "scenarios",
+      "value_type": "array"
+    },
+    {
+      "field_path": "data.scenarios.family.hexagrams[*].scenario_specific[*].advice[*]",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.family.hexagrams[*].scenario_specific[*].reasons",
+      "module": "scenarios",
+      "value_type": "array"
+    },
+    {
+      "field_path": "data.scenarios.family.hexagrams[*].scenario_specific[*].reasons[*]",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.family.hexagrams[*].scenario_specific[*].situation",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.family.hexagrams[*].scenario_specific[*].timing",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.family.hexagrams[*].source_ref",
+      "module": "scenarios",
+      "value_type": "array"
+    },
+    {
+      "field_path": "data.scenarios.family.hexagrams[*].source_ref[*]",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.family.notes",
+      "module": "scenarios",
+      "value_type": "array"
+    },
+    {
+      "field_path": "data.scenarios.family.notes[*]",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.family.output_structure",
+      "module": "scenarios",
+      "value_type": "object"
+    },
+    {
+      "field_path": "data.scenarios.family.output_structure.sections",
+      "module": "scenarios",
+      "value_type": "array"
+    },
+    {
+      "field_path": "data.scenarios.family.output_structure.sections[*]",
+      "module": "scenarios",
+      "value_type": "object"
+    },
+    {
+      "field_path": "data.scenarios.family.output_structure.sections[*].format",
+      "module": "scenarios",
+      "value_type": "object"
+    },
+    {
+      "field_path": "data.scenarios.family.output_structure.sections[*].format.do",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.family.output_structure.sections[*].format.dont",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.family.output_structure.sections[*].id",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.family.output_structure.sections[*].includes",
+      "module": "scenarios",
+      "value_type": "array"
+    },
+    {
+      "field_path": "data.scenarios.family.output_structure.sections[*].includes[*]",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.family.output_structure.sections[*].required",
+      "module": "scenarios",
+      "value_type": "boolean"
+    },
+    {
+      "field_path": "data.scenarios.family.output_structure.sections[*].sub_sections",
+      "module": "scenarios",
+      "value_type": "array"
+    },
+    {
+      "field_path": "data.scenarios.family.output_structure.sections[*].sub_sections[*]",
+      "module": "scenarios",
+      "value_type": "object"
+    },
+    {
+      "field_path": "data.scenarios.family.output_structure.sections[*].sub_sections[*].description",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.family.output_structure.sections[*].sub_sections[*].id",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.family.output_structure.sections[*].sub_sections[*].title",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.family.output_structure.sections[*].title",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.family.output_structure.sections[*].type",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.family.output_structure.template_id",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.family.prompt_template",
+      "module": "scenarios",
+      "value_type": "object"
+    },
+    {
+      "field_path": "data.scenarios.family.prompt_template.analysis_focus",
+      "module": "scenarios",
+      "value_type": "array"
+    },
+    {
+      "field_path": "data.scenarios.family.prompt_template.analysis_focus[*]",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.family.prompt_template.output_requirements",
+      "module": "scenarios",
+      "value_type": "array"
+    },
+    {
+      "field_path": "data.scenarios.family.prompt_template.output_requirements[*]",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.family.prompt_template.system_role",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.family.scenario_info",
+      "module": "scenarios",
+      "value_type": "object"
+    },
+    {
+      "field_path": "data.scenarios.family.scenario_info.code",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.family.scenario_info.description",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.family.scenario_info.name",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.family.scenario_info.requires_disclaimer",
+      "module": "scenarios",
+      "value_type": "boolean"
+    },
+    {
+      "field_path": "data.scenarios.family.scenario_info.sub_scenarios",
+      "module": "scenarios",
+      "value_type": "array"
+    },
+    {
+      "field_path": "data.scenarios.family.scenario_info.sub_scenarios[*]",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.family.version",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.fortune",
+      "module": "scenarios",
+      "value_type": "object"
+    },
+    {
+      "field_path": "data.scenarios.fortune.analysis_framework",
+      "module": "scenarios",
+      "value_type": "object"
+    },
+    {
+      "field_path": "data.scenarios.fortune.analysis_framework.dimensions",
+      "module": "scenarios",
+      "value_type": "array"
+    },
+    {
+      "field_path": "data.scenarios.fortune.analysis_framework.dimensions[*]",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.fortune.analysis_framework.focus",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.fortune.analysis_framework.key_aspects",
+      "module": "scenarios",
+      "value_type": "array"
+    },
+    {
+      "field_path": "data.scenarios.fortune.analysis_framework.key_aspects[*]",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.fortune.hexagrams",
+      "module": "scenarios",
+      "value_type": "object"
+    },
+    {
+      "field_path": "data.scenarios.fortune.hexagrams[*]",
+      "module": "scenarios",
+      "value_type": "object"
+    },
+    {
+      "field_path": "data.scenarios.fortune.hexagrams[*].challenges",
+      "module": "scenarios",
+      "value_type": "array"
+    },
+    {
+      "field_path": "data.scenarios.fortune.hexagrams[*].challenges[*]",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.fortune.hexagrams[*].fortune_rating",
+      "module": "scenarios",
+      "value_type": "integer"
+    },
+    {
+      "field_path": "data.scenarios.fortune.hexagrams[*].key_points",
+      "module": "scenarios",
+      "value_type": "array"
+    },
+    {
+      "field_path": "data.scenarios.fortune.hexagrams[*].key_points[*]",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.fortune.hexagrams[*].name",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.fortune.hexagrams[*].opportunities",
+      "module": "scenarios",
+      "value_type": "array"
+    },
+    {
+      "field_path": "data.scenarios.fortune.hexagrams[*].opportunities[*]",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.fortune.hexagrams[*].overall_tendency",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.fortune.hexagrams[*].timing",
+      "module": "scenarios",
+      "value_type": "object"
+    },
+    {
+      "field_path": "data.scenarios.fortune.hexagrams[*].timing.advice",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.fortune.hexagrams[*].timing.best_periods",
+      "module": "scenarios",
+      "value_type": "array"
+    },
+    {
+      "field_path": "data.scenarios.fortune.hexagrams[*].timing.best_periods[*]",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.fortune.hexagrams[*].timing.caution_periods",
+      "module": "scenarios",
+      "value_type": "array"
+    },
+    {
+      "field_path": "data.scenarios.fortune.hexagrams[*].timing.caution_periods[*]",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.fortune.hexagrams[*].timing.key_months",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.fortune.hexagrams[*].timing.turning_point",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.fortune.notes",
+      "module": "scenarios",
+      "value_type": "array"
+    },
+    {
+      "field_path": "data.scenarios.fortune.notes[*]",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.fortune.output_structure",
+      "module": "scenarios",
+      "value_type": "object"
+    },
+    {
+      "field_path": "data.scenarios.fortune.output_structure.sections",
+      "module": "scenarios",
+      "value_type": "array"
+    },
+    {
+      "field_path": "data.scenarios.fortune.output_structure.sections[*]",
+      "module": "scenarios",
+      "value_type": "object"
+    },
+    {
+      "field_path": "data.scenarios.fortune.output_structure.sections[*].format",
+      "module": "scenarios",
+      "value_type": "object"
+    },
+    {
+      "field_path": "data.scenarios.fortune.output_structure.sections[*].format.do",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.fortune.output_structure.sections[*].format.dont",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.fortune.output_structure.sections[*].id",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.fortune.output_structure.sections[*].includes",
+      "module": "scenarios",
+      "value_type": "array"
+    },
+    {
+      "field_path": "data.scenarios.fortune.output_structure.sections[*].includes[*]",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.fortune.output_structure.sections[*].required",
+      "module": "scenarios",
+      "value_type": "boolean"
+    },
+    {
+      "field_path": "data.scenarios.fortune.output_structure.sections[*].sub_sections",
+      "module": "scenarios",
+      "value_type": "array"
+    },
+    {
+      "field_path": "data.scenarios.fortune.output_structure.sections[*].sub_sections[*]",
+      "module": "scenarios",
+      "value_type": "object"
+    },
+    {
+      "field_path": "data.scenarios.fortune.output_structure.sections[*].sub_sections[*].description",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.fortune.output_structure.sections[*].sub_sections[*].id",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.fortune.output_structure.sections[*].sub_sections[*].title",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.fortune.output_structure.sections[*].title",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.fortune.output_structure.sections[*].type",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.fortune.output_structure.template_id",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.fortune.prompt_template",
+      "module": "scenarios",
+      "value_type": "object"
+    },
+    {
+      "field_path": "data.scenarios.fortune.prompt_template.analysis_focus",
+      "module": "scenarios",
+      "value_type": "array"
+    },
+    {
+      "field_path": "data.scenarios.fortune.prompt_template.analysis_focus[*]",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.fortune.prompt_template.output_requirements",
+      "module": "scenarios",
+      "value_type": "array"
+    },
+    {
+      "field_path": "data.scenarios.fortune.prompt_template.output_requirements[*]",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.fortune.prompt_template.system_role",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.fortune.scenario_info",
+      "module": "scenarios",
+      "value_type": "object"
+    },
+    {
+      "field_path": "data.scenarios.fortune.scenario_info.code",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.fortune.scenario_info.description",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.fortune.scenario_info.name",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.fortune.scenario_info.requires_disclaimer",
+      "module": "scenarios",
+      "value_type": "boolean"
+    },
+    {
+      "field_path": "data.scenarios.fortune.scenario_info.sub_scenarios",
+      "module": "scenarios",
+      "value_type": "array"
+    },
+    {
+      "field_path": "data.scenarios.fortune.scenario_info.sub_scenarios[*]",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.fortune.version",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.health",
+      "module": "scenarios",
+      "value_type": "object"
+    },
+    {
+      "field_path": "data.scenarios.health.analysis_framework",
+      "module": "scenarios",
+      "value_type": "object"
+    },
+    {
+      "field_path": "data.scenarios.health.analysis_framework.dimensions",
+      "module": "scenarios",
+      "value_type": "array"
+    },
+    {
+      "field_path": "data.scenarios.health.analysis_framework.dimensions[*]",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.health.analysis_framework.focus",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.health.analysis_framework.key_aspects",
+      "module": "scenarios",
+      "value_type": "array"
+    },
+    {
+      "field_path": "data.scenarios.health.analysis_framework.key_aspects[*]",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.health.hexagrams",
+      "module": "scenarios",
+      "value_type": "object"
+    },
+    {
+      "field_path": "data.scenarios.health.hexagrams[*]",
+      "module": "scenarios",
+      "value_type": "object"
+    },
+    {
+      "field_path": "data.scenarios.health.hexagrams[*].health_rating",
+      "module": "scenarios",
+      "value_type": "integer"
+    },
+    {
+      "field_path": "data.scenarios.health.hexagrams[*].key_points",
+      "module": "scenarios",
+      "value_type": "array"
+    },
+    {
+      "field_path": "data.scenarios.health.hexagrams[*].key_points[*]",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.health.hexagrams[*].name",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.health.hexagrams[*].overall_tendency",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.health.hexagrams[*].scenario_specific",
+      "module": "scenarios",
+      "value_type": "object"
+    },
+    {
+      "field_path": "data.scenarios.health.hexagrams[*].scenario_specific[*]",
+      "module": "scenarios",
+      "value_type": "object"
+    },
+    {
+      "field_path": "data.scenarios.health.hexagrams[*].scenario_specific[*].advice",
+      "module": "scenarios",
+      "value_type": "array"
+    },
+    {
+      "field_path": "data.scenarios.health.hexagrams[*].scenario_specific[*].advice[*]",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.health.hexagrams[*].scenario_specific[*].reasons",
+      "module": "scenarios",
+      "value_type": "array"
+    },
+    {
+      "field_path": "data.scenarios.health.hexagrams[*].scenario_specific[*].reasons[*]",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.health.hexagrams[*].scenario_specific[*].situation",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.health.hexagrams[*].scenario_specific[*].timing",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.health.hexagrams[*].source_ref",
+      "module": "scenarios",
+      "value_type": "array"
+    },
+    {
+      "field_path": "data.scenarios.health.hexagrams[*].source_ref[*]",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.health.notes",
+      "module": "scenarios",
+      "value_type": "array"
+    },
+    {
+      "field_path": "data.scenarios.health.notes[*]",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.health.output_structure",
+      "module": "scenarios",
+      "value_type": "object"
+    },
+    {
+      "field_path": "data.scenarios.health.output_structure.sections",
+      "module": "scenarios",
+      "value_type": "array"
+    },
+    {
+      "field_path": "data.scenarios.health.output_structure.sections[*]",
+      "module": "scenarios",
+      "value_type": "object"
+    },
+    {
+      "field_path": "data.scenarios.health.output_structure.sections[*].format",
+      "module": "scenarios",
+      "value_type": "object"
+    },
+    {
+      "field_path": "data.scenarios.health.output_structure.sections[*].format.do",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.health.output_structure.sections[*].format.dont",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.health.output_structure.sections[*].id",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.health.output_structure.sections[*].includes",
+      "module": "scenarios",
+      "value_type": "array"
+    },
+    {
+      "field_path": "data.scenarios.health.output_structure.sections[*].includes[*]",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.health.output_structure.sections[*].required",
+      "module": "scenarios",
+      "value_type": "boolean"
+    },
+    {
+      "field_path": "data.scenarios.health.output_structure.sections[*].sub_sections",
+      "module": "scenarios",
+      "value_type": "array"
+    },
+    {
+      "field_path": "data.scenarios.health.output_structure.sections[*].sub_sections[*]",
+      "module": "scenarios",
+      "value_type": "object"
+    },
+    {
+      "field_path": "data.scenarios.health.output_structure.sections[*].sub_sections[*].description",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.health.output_structure.sections[*].sub_sections[*].id",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.health.output_structure.sections[*].sub_sections[*].title",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.health.output_structure.sections[*].title",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.health.output_structure.sections[*].type",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.health.output_structure.template_id",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.health.prompt_template",
+      "module": "scenarios",
+      "value_type": "object"
+    },
+    {
+      "field_path": "data.scenarios.health.prompt_template.analysis_focus",
+      "module": "scenarios",
+      "value_type": "array"
+    },
+    {
+      "field_path": "data.scenarios.health.prompt_template.analysis_focus[*]",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.health.prompt_template.output_requirements",
+      "module": "scenarios",
+      "value_type": "array"
+    },
+    {
+      "field_path": "data.scenarios.health.prompt_template.output_requirements[*]",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.health.prompt_template.system_role",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.health.scenario_info",
+      "module": "scenarios",
+      "value_type": "object"
+    },
+    {
+      "field_path": "data.scenarios.health.scenario_info.code",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.health.scenario_info.description",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.health.scenario_info.name",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.health.scenario_info.requires_disclaimer",
+      "module": "scenarios",
+      "value_type": "boolean"
+    },
+    {
+      "field_path": "data.scenarios.health.scenario_info.sub_scenarios",
+      "module": "scenarios",
+      "value_type": "array"
+    },
+    {
+      "field_path": "data.scenarios.health.scenario_info.sub_scenarios[*]",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.health.version",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.lawsuit",
+      "module": "scenarios",
+      "value_type": "object"
+    },
+    {
+      "field_path": "data.scenarios.lawsuit.analysis_framework",
+      "module": "scenarios",
+      "value_type": "object"
+    },
+    {
+      "field_path": "data.scenarios.lawsuit.analysis_framework.dimensions",
+      "module": "scenarios",
+      "value_type": "array"
+    },
+    {
+      "field_path": "data.scenarios.lawsuit.analysis_framework.dimensions[*]",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.lawsuit.analysis_framework.focus",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.lawsuit.analysis_framework.key_aspects",
+      "module": "scenarios",
+      "value_type": "array"
+    },
+    {
+      "field_path": "data.scenarios.lawsuit.analysis_framework.key_aspects[*]",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.lawsuit.hexagrams",
+      "module": "scenarios",
+      "value_type": "object"
+    },
+    {
+      "field_path": "data.scenarios.lawsuit.hexagrams[*]",
+      "module": "scenarios",
+      "value_type": "object"
+    },
+    {
+      "field_path": "data.scenarios.lawsuit.hexagrams[*].key_points",
+      "module": "scenarios",
+      "value_type": "array"
+    },
+    {
+      "field_path": "data.scenarios.lawsuit.hexagrams[*].key_points[*]",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.lawsuit.hexagrams[*].lawsuit_rating",
+      "module": "scenarios",
+      "value_type": "integer"
+    },
+    {
+      "field_path": "data.scenarios.lawsuit.hexagrams[*].name",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.lawsuit.hexagrams[*].overall_tendency",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.lawsuit.hexagrams[*].scenario_specific",
+      "module": "scenarios",
+      "value_type": "object"
+    },
+    {
+      "field_path": "data.scenarios.lawsuit.hexagrams[*].scenario_specific[*]",
+      "module": "scenarios",
+      "value_type": "object"
+    },
+    {
+      "field_path": "data.scenarios.lawsuit.hexagrams[*].scenario_specific[*].advice",
+      "module": "scenarios",
+      "value_type": "array"
+    },
+    {
+      "field_path": "data.scenarios.lawsuit.hexagrams[*].scenario_specific[*].advice[*]",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.lawsuit.hexagrams[*].scenario_specific[*].reasons",
+      "module": "scenarios",
+      "value_type": "array"
+    },
+    {
+      "field_path": "data.scenarios.lawsuit.hexagrams[*].scenario_specific[*].reasons[*]",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.lawsuit.hexagrams[*].scenario_specific[*].situation",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.lawsuit.hexagrams[*].scenario_specific[*].timing",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.lawsuit.hexagrams[*].source_ref",
+      "module": "scenarios",
+      "value_type": "array"
+    },
+    {
+      "field_path": "data.scenarios.lawsuit.hexagrams[*].source_ref[*]",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.lawsuit.notes",
+      "module": "scenarios",
+      "value_type": "array"
+    },
+    {
+      "field_path": "data.scenarios.lawsuit.notes[*]",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.lawsuit.output_structure",
+      "module": "scenarios",
+      "value_type": "object"
+    },
+    {
+      "field_path": "data.scenarios.lawsuit.output_structure.sections",
+      "module": "scenarios",
+      "value_type": "array"
+    },
+    {
+      "field_path": "data.scenarios.lawsuit.output_structure.sections[*]",
+      "module": "scenarios",
+      "value_type": "object"
+    },
+    {
+      "field_path": "data.scenarios.lawsuit.output_structure.sections[*].format",
+      "module": "scenarios",
+      "value_type": "object"
+    },
+    {
+      "field_path": "data.scenarios.lawsuit.output_structure.sections[*].format.do",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.lawsuit.output_structure.sections[*].format.dont",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.lawsuit.output_structure.sections[*].id",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.lawsuit.output_structure.sections[*].includes",
+      "module": "scenarios",
+      "value_type": "array"
+    },
+    {
+      "field_path": "data.scenarios.lawsuit.output_structure.sections[*].includes[*]",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.lawsuit.output_structure.sections[*].required",
+      "module": "scenarios",
+      "value_type": "boolean"
+    },
+    {
+      "field_path": "data.scenarios.lawsuit.output_structure.sections[*].sub_sections",
+      "module": "scenarios",
+      "value_type": "array"
+    },
+    {
+      "field_path": "data.scenarios.lawsuit.output_structure.sections[*].sub_sections[*]",
+      "module": "scenarios",
+      "value_type": "object"
+    },
+    {
+      "field_path": "data.scenarios.lawsuit.output_structure.sections[*].sub_sections[*].description",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.lawsuit.output_structure.sections[*].sub_sections[*].id",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.lawsuit.output_structure.sections[*].sub_sections[*].title",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.lawsuit.output_structure.sections[*].title",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.lawsuit.output_structure.sections[*].type",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.lawsuit.output_structure.template_id",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.lawsuit.prompt_template",
+      "module": "scenarios",
+      "value_type": "object"
+    },
+    {
+      "field_path": "data.scenarios.lawsuit.prompt_template.analysis_focus",
+      "module": "scenarios",
+      "value_type": "array"
+    },
+    {
+      "field_path": "data.scenarios.lawsuit.prompt_template.analysis_focus[*]",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.lawsuit.prompt_template.output_requirements",
+      "module": "scenarios",
+      "value_type": "array"
+    },
+    {
+      "field_path": "data.scenarios.lawsuit.prompt_template.output_requirements[*]",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.lawsuit.prompt_template.system_role",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.lawsuit.scenario_info",
+      "module": "scenarios",
+      "value_type": "object"
+    },
+    {
+      "field_path": "data.scenarios.lawsuit.scenario_info.code",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.lawsuit.scenario_info.description",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.lawsuit.scenario_info.name",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.lawsuit.scenario_info.requires_disclaimer",
+      "module": "scenarios",
+      "value_type": "boolean"
+    },
+    {
+      "field_path": "data.scenarios.lawsuit.scenario_info.sub_scenarios",
+      "module": "scenarios",
+      "value_type": "array"
+    },
+    {
+      "field_path": "data.scenarios.lawsuit.scenario_info.sub_scenarios[*]",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.lawsuit.version",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.love",
+      "module": "scenarios",
+      "value_type": "object"
+    },
+    {
+      "field_path": "data.scenarios.love.analysis_framework",
+      "module": "scenarios",
+      "value_type": "object"
+    },
+    {
+      "field_path": "data.scenarios.love.analysis_framework.dimensions",
+      "module": "scenarios",
+      "value_type": "array"
+    },
+    {
+      "field_path": "data.scenarios.love.analysis_framework.dimensions[*]",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.love.analysis_framework.focus",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.love.analysis_framework.key_aspects",
+      "module": "scenarios",
+      "value_type": "array"
+    },
+    {
+      "field_path": "data.scenarios.love.analysis_framework.key_aspects[*]",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.love.hexagrams",
+      "module": "scenarios",
+      "value_type": "object"
+    },
+    {
+      "field_path": "data.scenarios.love.hexagrams[*]",
+      "module": "scenarios",
+      "value_type": "object"
+    },
+    {
+      "field_path": "data.scenarios.love.hexagrams[*].key_points",
+      "module": "scenarios",
+      "value_type": "array"
+    },
+    {
+      "field_path": "data.scenarios.love.hexagrams[*].key_points[*]",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.love.hexagrams[*].love_rating",
+      "module": "scenarios",
+      "value_type": "integer"
+    },
+    {
+      "field_path": "data.scenarios.love.hexagrams[*].name",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.love.hexagrams[*].overall_tendency",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.love.hexagrams[*].scenario_specific",
+      "module": "scenarios",
+      "value_type": "object"
+    },
+    {
+      "field_path": "data.scenarios.love.hexagrams[*].scenario_specific[*]",
+      "module": "scenarios",
+      "value_type": "object"
+    },
+    {
+      "field_path": "data.scenarios.love.hexagrams[*].scenario_specific[*].advice",
+      "module": "scenarios",
+      "value_type": "array"
+    },
+    {
+      "field_path": "data.scenarios.love.hexagrams[*].scenario_specific[*].advice[*]",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.love.hexagrams[*].scenario_specific[*].reasons",
+      "module": "scenarios",
+      "value_type": "array"
+    },
+    {
+      "field_path": "data.scenarios.love.hexagrams[*].scenario_specific[*].reasons[*]",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.love.hexagrams[*].scenario_specific[*].situation",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.love.hexagrams[*].scenario_specific[*].timing",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.love.hexagrams[*].source_ref",
+      "module": "scenarios",
+      "value_type": "array"
+    },
+    {
+      "field_path": "data.scenarios.love.hexagrams[*].source_ref[*]",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.love.notes",
+      "module": "scenarios",
+      "value_type": "array"
+    },
+    {
+      "field_path": "data.scenarios.love.notes[*]",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.love.output_structure",
+      "module": "scenarios",
+      "value_type": "object"
+    },
+    {
+      "field_path": "data.scenarios.love.output_structure.sections",
+      "module": "scenarios",
+      "value_type": "array"
+    },
+    {
+      "field_path": "data.scenarios.love.output_structure.sections[*]",
+      "module": "scenarios",
+      "value_type": "object"
+    },
+    {
+      "field_path": "data.scenarios.love.output_structure.sections[*].each_includes",
+      "module": "scenarios",
+      "value_type": "array"
+    },
+    {
+      "field_path": "data.scenarios.love.output_structure.sections[*].each_includes[*]",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.love.output_structure.sections[*].format",
+      "module": "scenarios",
+      "value_type": "object"
+    },
+    {
+      "field_path": "data.scenarios.love.output_structure.sections[*].format.do",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.love.output_structure.sections[*].format.dont",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.love.output_structure.sections[*].id",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.love.output_structure.sections[*].includes",
+      "module": "scenarios",
+      "value_type": "array"
+    },
+    {
+      "field_path": "data.scenarios.love.output_structure.sections[*].includes[*]",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.love.output_structure.sections[*].required",
+      "module": "scenarios",
+      "value_type": "boolean"
+    },
+    {
+      "field_path": "data.scenarios.love.output_structure.sections[*].scenarios",
+      "module": "scenarios",
+      "value_type": "array"
+    },
+    {
+      "field_path": "data.scenarios.love.output_structure.sections[*].scenarios[*]",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.love.output_structure.sections[*].title",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.love.output_structure.sections[*].type",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.love.output_structure.template_id",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.love.prompt_template",
+      "module": "scenarios",
+      "value_type": "object"
+    },
+    {
+      "field_path": "data.scenarios.love.prompt_template.analysis_focus",
+      "module": "scenarios",
+      "value_type": "array"
+    },
+    {
+      "field_path": "data.scenarios.love.prompt_template.analysis_focus[*]",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.love.prompt_template.output_requirements",
+      "module": "scenarios",
+      "value_type": "array"
+    },
+    {
+      "field_path": "data.scenarios.love.prompt_template.output_requirements[*]",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.love.prompt_template.system_role",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.love.scenario_info",
+      "module": "scenarios",
+      "value_type": "object"
+    },
+    {
+      "field_path": "data.scenarios.love.scenario_info.code",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.love.scenario_info.description",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.love.scenario_info.name",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.love.scenario_info.requires_disclaimer",
+      "module": "scenarios",
+      "value_type": "boolean"
+    },
+    {
+      "field_path": "data.scenarios.love.scenario_info.sub_scenarios",
+      "module": "scenarios",
+      "value_type": "array"
+    },
+    {
+      "field_path": "data.scenarios.love.scenario_info.sub_scenarios[*]",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.love.version",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.study",
+      "module": "scenarios",
+      "value_type": "object"
+    },
+    {
+      "field_path": "data.scenarios.study.analysis_framework",
+      "module": "scenarios",
+      "value_type": "object"
+    },
+    {
+      "field_path": "data.scenarios.study.analysis_framework.dimensions",
+      "module": "scenarios",
+      "value_type": "array"
+    },
+    {
+      "field_path": "data.scenarios.study.analysis_framework.dimensions[*]",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.study.analysis_framework.focus",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.study.analysis_framework.key_aspects",
+      "module": "scenarios",
+      "value_type": "array"
+    },
+    {
+      "field_path": "data.scenarios.study.analysis_framework.key_aspects[*]",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.study.hexagrams",
+      "module": "scenarios",
+      "value_type": "object"
+    },
+    {
+      "field_path": "data.scenarios.study.hexagrams[*]",
+      "module": "scenarios",
+      "value_type": "object"
+    },
+    {
+      "field_path": "data.scenarios.study.hexagrams[*].key_points",
+      "module": "scenarios",
+      "value_type": "array"
+    },
+    {
+      "field_path": "data.scenarios.study.hexagrams[*].key_points[*]",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.study.hexagrams[*].name",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.study.hexagrams[*].overall_tendency",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.study.hexagrams[*].scenario_specific",
+      "module": "scenarios",
+      "value_type": "object"
+    },
+    {
+      "field_path": "data.scenarios.study.hexagrams[*].scenario_specific[*]",
+      "module": "scenarios",
+      "value_type": "object"
+    },
+    {
+      "field_path": "data.scenarios.study.hexagrams[*].scenario_specific[*].advice",
+      "module": "scenarios",
+      "value_type": "array"
+    },
+    {
+      "field_path": "data.scenarios.study.hexagrams[*].scenario_specific[*].advice[*]",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.study.hexagrams[*].scenario_specific[*].reasons",
+      "module": "scenarios",
+      "value_type": "array"
+    },
+    {
+      "field_path": "data.scenarios.study.hexagrams[*].scenario_specific[*].reasons[*]",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.study.hexagrams[*].scenario_specific[*].situation",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.study.hexagrams[*].scenario_specific[*].timing",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.study.hexagrams[*].source_ref",
+      "module": "scenarios",
+      "value_type": "array"
+    },
+    {
+      "field_path": "data.scenarios.study.hexagrams[*].source_ref[*]",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.study.hexagrams[*].study_rating",
+      "module": "scenarios",
+      "value_type": "integer"
+    },
+    {
+      "field_path": "data.scenarios.study.notes",
+      "module": "scenarios",
+      "value_type": "array"
+    },
+    {
+      "field_path": "data.scenarios.study.notes[*]",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.study.output_structure",
+      "module": "scenarios",
+      "value_type": "object"
+    },
+    {
+      "field_path": "data.scenarios.study.output_structure.sections",
+      "module": "scenarios",
+      "value_type": "array"
+    },
+    {
+      "field_path": "data.scenarios.study.output_structure.sections[*]",
+      "module": "scenarios",
+      "value_type": "object"
+    },
+    {
+      "field_path": "data.scenarios.study.output_structure.sections[*].format",
+      "module": "scenarios",
+      "value_type": "object"
+    },
+    {
+      "field_path": "data.scenarios.study.output_structure.sections[*].format.do",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.study.output_structure.sections[*].format.dont",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.study.output_structure.sections[*].id",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.study.output_structure.sections[*].includes",
+      "module": "scenarios",
+      "value_type": "array"
+    },
+    {
+      "field_path": "data.scenarios.study.output_structure.sections[*].includes[*]",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.study.output_structure.sections[*].required",
+      "module": "scenarios",
+      "value_type": "boolean"
+    },
+    {
+      "field_path": "data.scenarios.study.output_structure.sections[*].sub_sections",
+      "module": "scenarios",
+      "value_type": "array"
+    },
+    {
+      "field_path": "data.scenarios.study.output_structure.sections[*].sub_sections[*]",
+      "module": "scenarios",
+      "value_type": "object"
+    },
+    {
+      "field_path": "data.scenarios.study.output_structure.sections[*].sub_sections[*].description",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.study.output_structure.sections[*].sub_sections[*].id",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.study.output_structure.sections[*].sub_sections[*].title",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.study.output_structure.sections[*].title",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.study.output_structure.sections[*].type",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.study.output_structure.template_id",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.study.prompt_template",
+      "module": "scenarios",
+      "value_type": "object"
+    },
+    {
+      "field_path": "data.scenarios.study.prompt_template.analysis_focus",
+      "module": "scenarios",
+      "value_type": "array"
+    },
+    {
+      "field_path": "data.scenarios.study.prompt_template.analysis_focus[*]",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.study.prompt_template.output_requirements",
+      "module": "scenarios",
+      "value_type": "array"
+    },
+    {
+      "field_path": "data.scenarios.study.prompt_template.output_requirements[*]",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.study.prompt_template.system_role",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.study.scenario_info",
+      "module": "scenarios",
+      "value_type": "object"
+    },
+    {
+      "field_path": "data.scenarios.study.scenario_info.code",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.study.scenario_info.description",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.study.scenario_info.name",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.study.scenario_info.requires_disclaimer",
+      "module": "scenarios",
+      "value_type": "boolean"
+    },
+    {
+      "field_path": "data.scenarios.study.scenario_info.sub_scenarios",
+      "module": "scenarios",
+      "value_type": "array"
+    },
+    {
+      "field_path": "data.scenarios.study.scenario_info.sub_scenarios[*]",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.study.version",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.travel",
+      "module": "scenarios",
+      "value_type": "object"
+    },
+    {
+      "field_path": "data.scenarios.travel.analysis_framework",
+      "module": "scenarios",
+      "value_type": "object"
+    },
+    {
+      "field_path": "data.scenarios.travel.analysis_framework.dimensions",
+      "module": "scenarios",
+      "value_type": "array"
+    },
+    {
+      "field_path": "data.scenarios.travel.analysis_framework.dimensions[*]",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.travel.analysis_framework.focus",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.travel.analysis_framework.key_aspects",
+      "module": "scenarios",
+      "value_type": "array"
+    },
+    {
+      "field_path": "data.scenarios.travel.analysis_framework.key_aspects[*]",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.travel.hexagrams",
+      "module": "scenarios",
+      "value_type": "object"
+    },
+    {
+      "field_path": "data.scenarios.travel.hexagrams[*]",
+      "module": "scenarios",
+      "value_type": "object"
+    },
+    {
+      "field_path": "data.scenarios.travel.hexagrams[*].key_points",
+      "module": "scenarios",
+      "value_type": "array"
+    },
+    {
+      "field_path": "data.scenarios.travel.hexagrams[*].key_points[*]",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.travel.hexagrams[*].name",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.travel.hexagrams[*].overall_tendency",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.travel.hexagrams[*].scenario_specific",
+      "module": "scenarios",
+      "value_type": "object"
+    },
+    {
+      "field_path": "data.scenarios.travel.hexagrams[*].scenario_specific[*]",
+      "module": "scenarios",
+      "value_type": "object"
+    },
+    {
+      "field_path": "data.scenarios.travel.hexagrams[*].scenario_specific[*].advice",
+      "module": "scenarios",
+      "value_type": "array"
+    },
+    {
+      "field_path": "data.scenarios.travel.hexagrams[*].scenario_specific[*].advice[*]",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.travel.hexagrams[*].scenario_specific[*].reasons",
+      "module": "scenarios",
+      "value_type": "array"
+    },
+    {
+      "field_path": "data.scenarios.travel.hexagrams[*].scenario_specific[*].reasons[*]",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.travel.hexagrams[*].scenario_specific[*].situation",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.travel.hexagrams[*].scenario_specific[*].timing",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.travel.hexagrams[*].source_ref",
+      "module": "scenarios",
+      "value_type": "array"
+    },
+    {
+      "field_path": "data.scenarios.travel.hexagrams[*].source_ref[*]",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.travel.hexagrams[*].travel_rating",
+      "module": "scenarios",
+      "value_type": "integer"
+    },
+    {
+      "field_path": "data.scenarios.travel.notes",
+      "module": "scenarios",
+      "value_type": "array"
+    },
+    {
+      "field_path": "data.scenarios.travel.notes[*]",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.travel.output_structure",
+      "module": "scenarios",
+      "value_type": "object"
+    },
+    {
+      "field_path": "data.scenarios.travel.output_structure.sections",
+      "module": "scenarios",
+      "value_type": "array"
+    },
+    {
+      "field_path": "data.scenarios.travel.output_structure.sections[*]",
+      "module": "scenarios",
+      "value_type": "object"
+    },
+    {
+      "field_path": "data.scenarios.travel.output_structure.sections[*].format",
+      "module": "scenarios",
+      "value_type": "object"
+    },
+    {
+      "field_path": "data.scenarios.travel.output_structure.sections[*].format.do",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.travel.output_structure.sections[*].format.dont",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.travel.output_structure.sections[*].id",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.travel.output_structure.sections[*].includes",
+      "module": "scenarios",
+      "value_type": "array"
+    },
+    {
+      "field_path": "data.scenarios.travel.output_structure.sections[*].includes[*]",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.travel.output_structure.sections[*].required",
+      "module": "scenarios",
+      "value_type": "boolean"
+    },
+    {
+      "field_path": "data.scenarios.travel.output_structure.sections[*].sub_sections",
+      "module": "scenarios",
+      "value_type": "array"
+    },
+    {
+      "field_path": "data.scenarios.travel.output_structure.sections[*].sub_sections[*]",
+      "module": "scenarios",
+      "value_type": "object"
+    },
+    {
+      "field_path": "data.scenarios.travel.output_structure.sections[*].sub_sections[*].description",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.travel.output_structure.sections[*].sub_sections[*].id",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.travel.output_structure.sections[*].sub_sections[*].title",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.travel.output_structure.sections[*].title",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.travel.output_structure.sections[*].type",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.travel.output_structure.template_id",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.travel.prompt_template",
+      "module": "scenarios",
+      "value_type": "object"
+    },
+    {
+      "field_path": "data.scenarios.travel.prompt_template.analysis_focus",
+      "module": "scenarios",
+      "value_type": "array"
+    },
+    {
+      "field_path": "data.scenarios.travel.prompt_template.analysis_focus[*]",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.travel.prompt_template.output_requirements",
+      "module": "scenarios",
+      "value_type": "array"
+    },
+    {
+      "field_path": "data.scenarios.travel.prompt_template.output_requirements[*]",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.travel.prompt_template.system_role",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.travel.scenario_info",
+      "module": "scenarios",
+      "value_type": "object"
+    },
+    {
+      "field_path": "data.scenarios.travel.scenario_info.code",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.travel.scenario_info.description",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.travel.scenario_info.name",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.travel.scenario_info.requires_disclaimer",
+      "module": "scenarios",
+      "value_type": "boolean"
+    },
+    {
+      "field_path": "data.scenarios.travel.scenario_info.sub_scenarios",
+      "module": "scenarios",
+      "value_type": "array"
+    },
+    {
+      "field_path": "data.scenarios.travel.scenario_info.sub_scenarios[*]",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.travel.version",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.wealth",
+      "module": "scenarios",
+      "value_type": "object"
+    },
+    {
+      "field_path": "data.scenarios.wealth.analysis_framework",
+      "module": "scenarios",
+      "value_type": "object"
+    },
+    {
+      "field_path": "data.scenarios.wealth.analysis_framework.dimensions",
+      "module": "scenarios",
+      "value_type": "array"
+    },
+    {
+      "field_path": "data.scenarios.wealth.analysis_framework.dimensions[*]",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.wealth.analysis_framework.focus",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.wealth.analysis_framework.key_aspects",
+      "module": "scenarios",
+      "value_type": "array"
+    },
+    {
+      "field_path": "data.scenarios.wealth.analysis_framework.key_aspects[*]",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.wealth.hexagrams",
+      "module": "scenarios",
+      "value_type": "object"
+    },
+    {
+      "field_path": "data.scenarios.wealth.hexagrams[*]",
+      "module": "scenarios",
+      "value_type": "object"
+    },
+    {
+      "field_path": "data.scenarios.wealth.hexagrams[*].key_points",
+      "module": "scenarios",
+      "value_type": "array"
+    },
+    {
+      "field_path": "data.scenarios.wealth.hexagrams[*].key_points[*]",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.wealth.hexagrams[*].name",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.wealth.hexagrams[*].overall_tendency",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.wealth.hexagrams[*].scenario_specific",
+      "module": "scenarios",
+      "value_type": "object"
+    },
+    {
+      "field_path": "data.scenarios.wealth.hexagrams[*].scenario_specific[*]",
+      "module": "scenarios",
+      "value_type": "object"
+    },
+    {
+      "field_path": "data.scenarios.wealth.hexagrams[*].scenario_specific[*].advice",
+      "module": "scenarios",
+      "value_type": "array"
+    },
+    {
+      "field_path": "data.scenarios.wealth.hexagrams[*].scenario_specific[*].advice[*]",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.wealth.hexagrams[*].scenario_specific[*].reasons",
+      "module": "scenarios",
+      "value_type": "array"
+    },
+    {
+      "field_path": "data.scenarios.wealth.hexagrams[*].scenario_specific[*].reasons[*]",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.wealth.hexagrams[*].scenario_specific[*].situation",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.wealth.hexagrams[*].scenario_specific[*].timing",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.wealth.hexagrams[*].source_ref",
+      "module": "scenarios",
+      "value_type": "array"
+    },
+    {
+      "field_path": "data.scenarios.wealth.hexagrams[*].source_ref[*]",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.wealth.hexagrams[*].wealth_rating",
+      "module": "scenarios",
+      "value_type": "integer"
+    },
+    {
+      "field_path": "data.scenarios.wealth.notes",
+      "module": "scenarios",
+      "value_type": "array"
+    },
+    {
+      "field_path": "data.scenarios.wealth.notes[*]",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.wealth.output_structure",
+      "module": "scenarios",
+      "value_type": "object"
+    },
+    {
+      "field_path": "data.scenarios.wealth.output_structure.sections",
+      "module": "scenarios",
+      "value_type": "array"
+    },
+    {
+      "field_path": "data.scenarios.wealth.output_structure.sections[*]",
+      "module": "scenarios",
+      "value_type": "object"
+    },
+    {
+      "field_path": "data.scenarios.wealth.output_structure.sections[*].format",
+      "module": "scenarios",
+      "value_type": "object"
+    },
+    {
+      "field_path": "data.scenarios.wealth.output_structure.sections[*].format.do",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.wealth.output_structure.sections[*].format.dont",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.wealth.output_structure.sections[*].id",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.wealth.output_structure.sections[*].includes",
+      "module": "scenarios",
+      "value_type": "array"
+    },
+    {
+      "field_path": "data.scenarios.wealth.output_structure.sections[*].includes[*]",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.wealth.output_structure.sections[*].required",
+      "module": "scenarios",
+      "value_type": "boolean"
+    },
+    {
+      "field_path": "data.scenarios.wealth.output_structure.sections[*].sub_sections",
+      "module": "scenarios",
+      "value_type": "array"
+    },
+    {
+      "field_path": "data.scenarios.wealth.output_structure.sections[*].sub_sections[*]",
+      "module": "scenarios",
+      "value_type": "object"
+    },
+    {
+      "field_path": "data.scenarios.wealth.output_structure.sections[*].sub_sections[*].description",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.wealth.output_structure.sections[*].sub_sections[*].id",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.wealth.output_structure.sections[*].sub_sections[*].title",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.wealth.output_structure.sections[*].title",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.wealth.output_structure.sections[*].type",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.wealth.output_structure.template_id",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.wealth.prompt_template",
+      "module": "scenarios",
+      "value_type": "object"
+    },
+    {
+      "field_path": "data.scenarios.wealth.prompt_template.analysis_focus",
+      "module": "scenarios",
+      "value_type": "array"
+    },
+    {
+      "field_path": "data.scenarios.wealth.prompt_template.analysis_focus[*]",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.wealth.prompt_template.output_requirements",
+      "module": "scenarios",
+      "value_type": "array"
+    },
+    {
+      "field_path": "data.scenarios.wealth.prompt_template.output_requirements[*]",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.wealth.prompt_template.system_role",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.wealth.scenario_info",
+      "module": "scenarios",
+      "value_type": "object"
+    },
+    {
+      "field_path": "data.scenarios.wealth.scenario_info.code",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.wealth.scenario_info.description",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.wealth.scenario_info.name",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.wealth.scenario_info.requires_disclaimer",
+      "module": "scenarios",
+      "value_type": "boolean"
+    },
+    {
+      "field_path": "data.scenarios.wealth.scenario_info.sub_scenarios",
+      "module": "scenarios",
+      "value_type": "array"
+    },
+    {
+      "field_path": "data.scenarios.wealth.scenario_info.sub_scenarios[*]",
+      "module": "scenarios",
+      "value_type": "string"
+    },
+    {
+      "field_path": "data.scenarios.wealth.version",
+      "module": "scenarios",
+      "value_type": "string"
+    }
+  ]
+}

@@ -161,6 +161,7 @@
 - 权威书目索引已建立（`data/core/sources.json`）
 - 字段级权威映射首批落地（period/house/scoring + fengshui 场景示例）
 - M4-P1 覆盖率基线与校验器已落地（目标 80%，高频字段 21/21 达标）
+- M4 字段清单导出与映射缺口报告已落地（`data/review/m4_field_inventory.json` + `data/review/m4_mapping_gap_report.json`）
 
 未完成（M4）：
 - 未完成“权威文本/许可摘要”在 `data` 目录的规模化替换

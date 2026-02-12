@@ -57,5 +57,5 @@ python3 /Users/apple/dev/CyberYJ/scripts/sync_rule_review_matrix.py
 ## M4 剩余可执行项
 
 1. 为 5 个权威来源补齐“可复核页码/段落”证据并回填 `rule_review_evidence.json`。
-2. 扩展 `authoritative_text_map.json` 到全模块字段级覆盖（超出当前高频字段集）。
+2. 基于 `data/review/m4_mapping_gap_report.json` 扩展 `authoritative_text_map.json` 到全模块字段级覆盖（当前盘点 610 字段，已映射 29 字段）。
 3. 形成最终 M4 完成报告：覆盖率、证据口径、风险收敛、未决事项。

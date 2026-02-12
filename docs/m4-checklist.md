@@ -42,6 +42,7 @@
 
 - P1（覆盖率基线与校验）：已完成（见 `docs/m4-acceptance-report.md`）
 - P2（版本与合规材料完备）：进行中（已落地来源合规、全量来源扩展校验、source_ref 一致性、证据映射校验）
+- P2（版本与合规材料完备）：进行中（已补充字段清单导出与映射缺口报告自动化）
 - P3（规则逐条校核与规模化替换）：已完成（首轮，35/35 已 verified）
 - P4（二次复核：页码/段落级证据）：已完成（门禁 35/35）
 
@@ -88,6 +89,8 @@
 - 结果：二次复核准备度从 `27/35` 提升到 `35/35`
 
 P2 阶段报告：`docs/m4-p2-source-compliance-report.md`
+字段盘点报告：`data/review/m4_field_inventory.json`
+映射缺口报告：`data/review/m4_mapping_gap_report.json`
 P3 核对记录：`docs/m4-p3-rule-review-record.md`
 
 ### P3 结构预核对（已完成）

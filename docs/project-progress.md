@@ -87,6 +87,11 @@
 - 已新增证据映射校验模块：`src/cyberYJ/utils/source_evidence_check.py`
 - 已新增证据映射校验脚本：`scripts/check_source_evidence.py`
 - 当前高频字段证据映射检查：PASS（21/21）
+- 已新增字段清单与缺口分析模块：`src/cyberYJ/utils/m4_mapping_gap.py`
+- 已新增自动导出脚本：`scripts/generate_m4_mapping_gap_report.py`
+- 已新增盘点产物：`data/review/m4_field_inventory.json`
+- 已新增缺口报告：`data/review/m4_mapping_gap_report.json`
+- 当前盘点口径：`total_fields=610`，`mapped_fields=29`，`unmapped_fields=581`，`coverage_ratio=0.0475`
 
 ## M4 可执行清单
 

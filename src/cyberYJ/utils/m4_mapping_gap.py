@@ -192,6 +192,9 @@ def _is_covered(field_path: str, mapping_paths: Set[str]) -> bool:
     for mapped in mapping_paths:
         if field_path == mapped:
             return True
+        # 列表根路径规范化后为 xxx[*]，应视为覆盖其容器根字段 xxx
+        if mapped.endswith("[*]") and field_path == mapped[:-3]:
+            return True
         if field_path.startswith(f"{mapped}."):
             return True
         if field_path.startswith(f"{mapped}[*]"):

@@ -27,7 +27,7 @@
 ## 未完成（仅 M4）
 
 - 权威文本/许可摘要尚未在 `data` 目录完成规模化落地
-- 全模块字段级映射覆盖率目标未完成（当前盘点 610 字段，已映射 558 字段，剩余 52 字段）
+- 字段级映射覆盖已达成（610/610），但大量条目仍为 `citation_only/summary_only`，后续需逐步替换为可复核合法摘要或授权文本
 - 24 山向、八宅、飞星规则已完成首轮逐条校核与二次复核门禁补齐，后续需替换为最终权威版页码证据
 
 ## M4 阶段进展（P4 已完成：二次复核门禁）
@@ -82,7 +82,7 @@
 - 当前核心来源合规检查：PASS（5/5 必选来源，缺失与非法字段为 0）
 - 已新增 `source_ref` 一致性校验模块：`src/cyberYJ/utils/source_ref_integrity.py`
 - 已新增 `source_ref` 一致性脚本：`scripts/check_source_ref_integrity.py`
-- 当前 `source_ref` 一致性检查：PASS（30 个 JSON 文件，986 处 source_ref，未知来源 0）
+- 当前 `source_ref` 一致性检查：PASS（30 个 JSON 文件，1031 处 source_ref，未知来源 0）
 - 已新增来源变更审计模板：`docs/source-change-audit-template.md`
 - 已新增证据映射校验模块：`src/cyberYJ/utils/source_evidence_check.py`
 - 已新增证据映射校验脚本：`scripts/check_source_evidence.py`
@@ -91,7 +91,7 @@
 - 已新增自动导出脚本：`scripts/generate_m4_mapping_gap_report.py`
 - 已新增盘点产物：`data/review/m4_field_inventory.json`
 - 已新增缺口报告：`data/review/m4_mapping_gap_report.json`
-- 当前盘点口径：`total_fields=610`，`mapped_fields=558`，`unmapped_fields=52`，`coverage_ratio=0.9148`
+- 当前盘点口径：`total_fields=610`，`mapped_fields=610`，`unmapped_fields=0`，`coverage_ratio=1.0`
 
 ## M4 可执行清单
 

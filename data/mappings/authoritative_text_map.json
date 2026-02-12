@@ -22,9 +22,8 @@
     },
     {
       "field_path": "data.core.solar_terms",
-      "text_kind": "summary",
-      "license": "summary_only",
-      "content": "二十四节气数据用于节气识别与时令影响分析，当前采用标准黄经规则与工程化表示。",
+      "text_kind": "citation_only",
+      "license": "citation_only",
       "source_ref": [
         "cma_24_terms",
         "convention"
@@ -41,9 +40,8 @@
     },
     {
       "field_path": "data.fengshui.ba_zhai",
-      "text_kind": "summary",
-      "license": "summary_only",
-      "content": "八宅结构数据用于宅卦方位判定与布局建议生成，后续以权威版本逐条细化。",
+      "text_kind": "citation_only",
+      "license": "citation_only",
       "source_ref": [
         "cinii_bazhai_mingjing",
         "convention"
@@ -100,9 +98,8 @@
     },
     {
       "field_path": "data.fengshui.flying_stars_house",
-      "text_kind": "summary",
-      "license": "summary_only",
-      "content": "飞星宅盘数据用于按坐山生成九宫分布，供运行时叠加计算。",
+      "text_kind": "citation_only",
+      "license": "citation_only",
       "source_ref": [
         "cinii_dili_bianzheng_shu",
         "convention"
@@ -129,9 +126,8 @@
     },
     {
       "field_path": "data.fengshui.flying_stars_periods",
-      "text_kind": "summary",
-      "license": "summary_only",
-      "content": "飞星元运分期用于定位宅盘与流年叠加口径。",
+      "text_kind": "citation_only",
+      "license": "citation_only",
       "source_ref": [
         "cinii_dili_bianzheng_shu",
         "convention"
@@ -245,10 +241,28 @@
       ]
     },
     {
+      "field_path": "data.scenarios.career",
+      "text_kind": "citation_only",
+      "license": "citation_only",
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    {
       "field_path": "data.scenarios.career.analysis_framework",
       "text_kind": "summary",
       "license": "summary_only",
       "content": "分析框架字段用于统一推理维度与输出结构。",
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    {
+      "field_path": "data.scenarios.career.hexagrams",
+      "text_kind": "citation_only",
+      "license": "citation_only",
       "source_ref": [
         "ctext_yijing",
         "convention"
@@ -345,6 +359,24 @@
       ]
     },
     {
+      "field_path": "data.scenarios.career.notes",
+      "text_kind": "citation_only",
+      "license": "citation_only",
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    {
+      "field_path": "data.scenarios.career.notes[*]",
+      "text_kind": "citation_only",
+      "license": "citation_only",
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    {
       "field_path": "data.scenarios.career.output_structure",
       "text_kind": "summary",
       "license": "summary_only",
@@ -373,10 +405,37 @@
       ]
     },
     {
+      "field_path": "data.scenarios.career.version",
+      "text_kind": "citation_only",
+      "license": "citation_only",
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    {
+      "field_path": "data.scenarios.family",
+      "text_kind": "citation_only",
+      "license": "citation_only",
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    {
       "field_path": "data.scenarios.family.analysis_framework",
       "text_kind": "summary",
       "license": "summary_only",
       "content": "分析框架字段用于统一推理维度与输出结构。",
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    {
+      "field_path": "data.scenarios.family.hexagrams",
+      "text_kind": "citation_only",
+      "license": "citation_only",
       "source_ref": [
         "ctext_yijing",
         "convention"
@@ -433,6 +492,24 @@
       ]
     },
     {
+      "field_path": "data.scenarios.family.notes",
+      "text_kind": "citation_only",
+      "license": "citation_only",
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    {
+      "field_path": "data.scenarios.family.notes[*]",
+      "text_kind": "citation_only",
+      "license": "citation_only",
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    {
       "field_path": "data.scenarios.family.output_structure",
       "text_kind": "summary",
       "license": "summary_only",
@@ -461,10 +538,37 @@
       ]
     },
     {
+      "field_path": "data.scenarios.family.version",
+      "text_kind": "citation_only",
+      "license": "citation_only",
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    {
+      "field_path": "data.scenarios.fortune",
+      "text_kind": "citation_only",
+      "license": "citation_only",
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    {
       "field_path": "data.scenarios.fortune.analysis_framework",
       "text_kind": "summary",
       "license": "summary_only",
       "content": "分析框架字段用于统一推理维度与输出结构。",
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    {
+      "field_path": "data.scenarios.fortune.hexagrams",
+      "text_kind": "citation_only",
+      "license": "citation_only",
       "source_ref": [
         "ctext_yijing",
         "convention"
@@ -521,6 +625,24 @@
       ]
     },
     {
+      "field_path": "data.scenarios.fortune.notes",
+      "text_kind": "citation_only",
+      "license": "citation_only",
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    {
+      "field_path": "data.scenarios.fortune.notes[*]",
+      "text_kind": "citation_only",
+      "license": "citation_only",
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    {
       "field_path": "data.scenarios.fortune.output_structure",
       "text_kind": "summary",
       "license": "summary_only",
@@ -549,10 +671,37 @@
       ]
     },
     {
+      "field_path": "data.scenarios.fortune.version",
+      "text_kind": "citation_only",
+      "license": "citation_only",
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    {
+      "field_path": "data.scenarios.health",
+      "text_kind": "citation_only",
+      "license": "citation_only",
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    {
       "field_path": "data.scenarios.health.analysis_framework",
       "text_kind": "summary",
       "license": "summary_only",
       "content": "分析框架字段用于统一推理维度与输出结构。",
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    {
+      "field_path": "data.scenarios.health.hexagrams",
+      "text_kind": "citation_only",
+      "license": "citation_only",
       "source_ref": [
         "ctext_yijing",
         "convention"
@@ -609,6 +758,24 @@
       ]
     },
     {
+      "field_path": "data.scenarios.health.notes",
+      "text_kind": "citation_only",
+      "license": "citation_only",
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    {
+      "field_path": "data.scenarios.health.notes[*]",
+      "text_kind": "citation_only",
+      "license": "citation_only",
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    {
       "field_path": "data.scenarios.health.output_structure",
       "text_kind": "summary",
       "license": "summary_only",
@@ -637,10 +804,37 @@
       ]
     },
     {
+      "field_path": "data.scenarios.health.version",
+      "text_kind": "citation_only",
+      "license": "citation_only",
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    {
+      "field_path": "data.scenarios.lawsuit",
+      "text_kind": "citation_only",
+      "license": "citation_only",
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    {
       "field_path": "data.scenarios.lawsuit.analysis_framework",
       "text_kind": "summary",
       "license": "summary_only",
       "content": "分析框架字段用于统一推理维度与输出结构。",
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    {
+      "field_path": "data.scenarios.lawsuit.hexagrams",
+      "text_kind": "citation_only",
+      "license": "citation_only",
       "source_ref": [
         "ctext_yijing",
         "convention"
@@ -697,6 +891,24 @@
       ]
     },
     {
+      "field_path": "data.scenarios.lawsuit.notes",
+      "text_kind": "citation_only",
+      "license": "citation_only",
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    {
+      "field_path": "data.scenarios.lawsuit.notes[*]",
+      "text_kind": "citation_only",
+      "license": "citation_only",
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    {
       "field_path": "data.scenarios.lawsuit.output_structure",
       "text_kind": "summary",
       "license": "summary_only",
@@ -725,10 +937,37 @@
       ]
     },
     {
+      "field_path": "data.scenarios.lawsuit.version",
+      "text_kind": "citation_only",
+      "license": "citation_only",
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    {
+      "field_path": "data.scenarios.love",
+      "text_kind": "citation_only",
+      "license": "citation_only",
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    {
       "field_path": "data.scenarios.love.analysis_framework",
       "text_kind": "summary",
       "license": "summary_only",
       "content": "分析框架字段用于统一推理维度与输出结构。",
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    {
+      "field_path": "data.scenarios.love.hexagrams",
+      "text_kind": "citation_only",
+      "license": "citation_only",
       "source_ref": [
         "ctext_yijing",
         "convention"
@@ -785,6 +1024,24 @@
       ]
     },
     {
+      "field_path": "data.scenarios.love.notes",
+      "text_kind": "citation_only",
+      "license": "citation_only",
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    {
+      "field_path": "data.scenarios.love.notes[*]",
+      "text_kind": "citation_only",
+      "license": "citation_only",
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    {
       "field_path": "data.scenarios.love.output_structure",
       "text_kind": "summary",
       "license": "summary_only",
@@ -813,10 +1070,37 @@
       ]
     },
     {
+      "field_path": "data.scenarios.love.version",
+      "text_kind": "citation_only",
+      "license": "citation_only",
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    {
+      "field_path": "data.scenarios.study",
+      "text_kind": "citation_only",
+      "license": "citation_only",
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    {
       "field_path": "data.scenarios.study.analysis_framework",
       "text_kind": "summary",
       "license": "summary_only",
       "content": "分析框架字段用于统一推理维度与输出结构。",
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    {
+      "field_path": "data.scenarios.study.hexagrams",
+      "text_kind": "citation_only",
+      "license": "citation_only",
       "source_ref": [
         "ctext_yijing",
         "convention"
@@ -873,6 +1157,24 @@
       ]
     },
     {
+      "field_path": "data.scenarios.study.notes",
+      "text_kind": "citation_only",
+      "license": "citation_only",
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    {
+      "field_path": "data.scenarios.study.notes[*]",
+      "text_kind": "citation_only",
+      "license": "citation_only",
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    {
       "field_path": "data.scenarios.study.output_structure",
       "text_kind": "summary",
       "license": "summary_only",
@@ -901,10 +1203,37 @@
       ]
     },
     {
+      "field_path": "data.scenarios.study.version",
+      "text_kind": "citation_only",
+      "license": "citation_only",
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    {
+      "field_path": "data.scenarios.travel",
+      "text_kind": "citation_only",
+      "license": "citation_only",
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    {
       "field_path": "data.scenarios.travel.analysis_framework",
       "text_kind": "summary",
       "license": "summary_only",
       "content": "分析框架字段用于统一推理维度与输出结构。",
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    {
+      "field_path": "data.scenarios.travel.hexagrams",
+      "text_kind": "citation_only",
+      "license": "citation_only",
       "source_ref": [
         "ctext_yijing",
         "convention"
@@ -961,6 +1290,24 @@
       ]
     },
     {
+      "field_path": "data.scenarios.travel.notes",
+      "text_kind": "citation_only",
+      "license": "citation_only",
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    {
+      "field_path": "data.scenarios.travel.notes[*]",
+      "text_kind": "citation_only",
+      "license": "citation_only",
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    {
       "field_path": "data.scenarios.travel.output_structure",
       "text_kind": "summary",
       "license": "summary_only",
@@ -989,10 +1336,37 @@
       ]
     },
     {
+      "field_path": "data.scenarios.travel.version",
+      "text_kind": "citation_only",
+      "license": "citation_only",
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    {
+      "field_path": "data.scenarios.wealth",
+      "text_kind": "citation_only",
+      "license": "citation_only",
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    {
       "field_path": "data.scenarios.wealth.analysis_framework",
       "text_kind": "summary",
       "license": "summary_only",
       "content": "分析框架字段用于统一推理维度与输出结构。",
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    {
+      "field_path": "data.scenarios.wealth.hexagrams",
+      "text_kind": "citation_only",
+      "license": "citation_only",
       "source_ref": [
         "ctext_yijing",
         "convention"
@@ -1049,6 +1423,24 @@
       ]
     },
     {
+      "field_path": "data.scenarios.wealth.notes",
+      "text_kind": "citation_only",
+      "license": "citation_only",
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    {
+      "field_path": "data.scenarios.wealth.notes[*]",
+      "text_kind": "citation_only",
+      "license": "citation_only",
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    {
       "field_path": "data.scenarios.wealth.output_structure",
       "text_kind": "summary",
       "license": "summary_only",
@@ -1071,6 +1463,15 @@
       "text_kind": "summary",
       "license": "summary_only",
       "content": "场景定义信息用于路由与解释上下文绑定。",
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    {
+      "field_path": "data.scenarios.wealth.version",
+      "text_kind": "citation_only",
+      "license": "citation_only",
       "source_ref": [
         "ctext_yijing",
         "convention"

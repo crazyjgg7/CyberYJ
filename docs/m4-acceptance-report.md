@@ -21,7 +21,7 @@
 
 - 必选来源合规：`5/5` PASS
 - 全量来源合规：`13/13` PASS
-- `source_ref` 一致性：`30` 个 JSON，`986` 处引用，未知来源 `0`
+- `source_ref` 一致性：`30` 个 JSON，`1031` 处引用，未知来源 `0`
 - 高频字段证据映射：`21/21` PASS
 - 结论：`PASS`
 
@@ -57,5 +57,5 @@ python3 /Users/apple/dev/CyberYJ/scripts/sync_rule_review_matrix.py
 ## M4 剩余可执行项
 
 1. 为 5 个权威来源补齐“可复核页码/段落”证据并回填 `rule_review_evidence.json`。
-2. 基于 `data/review/m4_mapping_gap_report.json` 扩展 `authoritative_text_map.json` 到全模块字段级覆盖（当前盘点 610 字段，已映射 558 字段）。
+2. 全字段覆盖已完成（610/610），下一阶段将 `citation_only/summary_only` 条目逐步替换为可复核合法摘要或授权文本。
 3. 形成最终 M4 完成报告：覆盖率、证据口径、风险收敛、未决事项。

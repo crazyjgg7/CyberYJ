@@ -3,6 +3,7 @@ M4 字段清单与映射缺口报告测试
 """
 
 import json
+from pathlib import Path
 
 from cyberYJ.utils.m4_mapping_gap import (
     build_m4_field_inventory,
@@ -105,3 +106,14 @@ def test_build_inventory_and_evaluate_gap(tmp_path):
     )
     assert report["modules"]["core"]["mapped_fields"] >= 1
     assert report["modules"]["fengshui"]["mapped_fields"] >= 1
+
+
+def test_project_mapping_gap_fully_covered():
+    root = Path("/Users/apple/dev/CyberYJ")
+    inventory = build_m4_field_inventory(str(root / "data"))
+    report = evaluate_m4_mapping_gap(
+        inventory=inventory,
+        mapping_path=str(root / "data/mappings/authoritative_text_map.json"),
+    )
+    assert report["total_fields"] > 0
+    assert report["unmapped_fields_count"] == 0

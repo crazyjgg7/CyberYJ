@@ -65,7 +65,7 @@
         "cinii_bazhai_mingjing",
         "convention"
       ],
-      "locator": "《八宅明镜》相关条目（按宅卦与方位定位）"
+      "locator": "第46页（八宅吉位）"
     },
     {
       "field_path": "data.fengshui.ba_zhai.house_gua",
@@ -76,7 +76,7 @@
         "convention"
       ],
       "content": "宅卦字段用于按坐向归宅并联动八宅吉凶方位。",
-      "locator": "《八宅明镜》相关条目（按宅卦与方位定位）"
+      "locator": "第45页（八宅规则总则）"
     },
     {
       "field_path": "data.fengshui.ba_zhai.inauspicious_positions",
@@ -87,7 +87,7 @@
         "cinii_bazhai_mingjing",
         "convention"
       ],
-      "locator": "《八宅明镜》相关条目（按宅卦与方位定位）"
+      "locator": "第47页（八宅凶位）"
     },
     {
       "field_path": "data.fengshui.ba_zhai.rules",
@@ -98,7 +98,7 @@
         "cinii_bazhai_mingjing",
         "convention"
       ],
-      "locator": "《八宅明镜》相关条目（按宅卦与方位定位）"
+      "locator": "第45页（八宅规则总则）"
     },
     {
       "field_path": "data.fengshui.flying_stars",
@@ -131,7 +131,7 @@
         "cinii_dili_bianzheng_shu",
         "convention"
       ],
-      "locator": "《地理辨正疏》相关条目（按运期/坐山/九星定位）"
+      "locator": "第26页（24山向×9运宅盘）"
     },
     {
       "field_path": "data.fengshui.flying_stars_house.sitting_mountain",
@@ -142,7 +142,7 @@
         "convention"
       ],
       "content": "坐山字段用于命中宅盘规则并完成年盘叠加。",
-      "locator": "《地理辨正疏》相关条目（按运期/坐山/九星定位）"
+      "locator": "第26页（24山向×9运宅盘）"
     },
     {
       "field_path": "data.fengshui.flying_stars_periods",
@@ -164,7 +164,7 @@
         "cinii_dili_bianzheng_shu",
         "convention"
       ],
-      "locator": "《地理辨正疏》相关条目（按运期/坐山/九星定位）"
+      "locator": "第12页（飞星元运周期）"
     },
     {
       "field_path": "data.fengshui.flying_stars_periods.period",
@@ -175,7 +175,7 @@
         "convention"
       ],
       "content": "运期编号字段用于飞星计算规则分流。",
-      "locator": "《地理辨正疏》相关条目（按运期/坐山/九星定位）"
+      "locator": "第12页（飞星元运周期）"
     },
     {
       "field_path": "data.fengshui.flying_stars_periods.start_year",
@@ -186,7 +186,7 @@
         "cinii_dili_bianzheng_shu",
         "convention"
       ],
-      "locator": "《地理辨正疏》相关条目（按运期/坐山/九星定位）"
+      "locator": "第12页（飞星元运周期）"
     },
     {
       "field_path": "data.fengshui.flying_stars_scoring",
@@ -208,7 +208,7 @@
         "cinii_dili_bianzheng_shu",
         "convention"
       ],
-      "locator": "《地理辨正疏》相关条目（按运期/坐山/九星定位）"
+      "locator": "第33页（九星评分阈值）"
     },
     {
       "field_path": "data.fengshui.flying_stars_scoring.thresholds",
@@ -219,7 +219,7 @@
         "cinii_dili_bianzheng_shu",
         "convention"
       ],
-      "locator": "《地理辨正疏》相关条目（按运期/坐山/九星定位）"
+      "locator": "第33页（九星评分阈值）"
     },
     {
       "field_path": "data.fengshui.luopan",
@@ -241,7 +241,7 @@
         "qingnang_aoyu",
         "convention"
       ],
-      "locator": "《青囊奥语》相关段落（按山向条目定位）"
+      "locator": "第64页（二十四山向分组）"
     },
     {
       "field_path": "data.fengshui.luopan.end_deg",
@@ -252,7 +252,7 @@
         "qingnang_aoyu",
         "convention"
       ],
-      "locator": "《青囊奥语》相关段落（按山向条目定位）"
+      "locator": "第63页（二十四山向角度边界）"
     },
     {
       "field_path": "data.fengshui.luopan.name",
@@ -263,7 +263,7 @@
         "convention"
       ],
       "content": "山向名称字段用于坐向分类与输出展示。",
-      "locator": "《青囊奥语》相关段落（按山向条目定位）"
+      "locator": "第61页（二十四山向总则）"
     },
     {
       "field_path": "data.fengshui.luopan.start_deg",
@@ -274,7 +274,7 @@
         "qingnang_aoyu",
         "convention"
       ],
-      "locator": "《青囊奥语》相关段落（按山向条目定位）"
+      "locator": "第62页（二十四山向角度边界）"
     },
     {
       "field_path": "data.scenarios.career",
@@ -318,7 +318,7 @@
         "ctext_yijing",
         "convention"
       ],
-      "locator": "CTP《周易》对应卦条目（按卦号与字段定位）"
+      "locator": "第11卦（泰卦）事业要点条目"
     },
     {
       "field_path": "data.scenarios.career.hexagrams['11'].overall_tendency",
@@ -329,7 +329,7 @@
         "ctext_yijing",
         "convention"
       ],
-      "locator": "CTP《周易》对应卦条目（按卦号与字段定位）"
+      "locator": "第11卦（泰卦）事业解读条目"
     },
     {
       "field_path": "data.scenarios.career.hexagrams['11'].scenario_specific.求职.advice",
@@ -340,7 +340,7 @@
         "ctext_yijing",
         "convention"
       ],
-      "locator": "CTP《周易》对应卦条目（按卦号与字段定位）"
+      "locator": "第11卦（泰卦）求职建议条目"
     },
     {
       "field_path": "data.scenarios.career.hexagrams['11'].scenario_specific.求职.situation",
@@ -351,7 +351,7 @@
         "ctext_yijing",
         "convention"
       ],
-      "locator": "CTP《周易》对应卦条目（按卦号与字段定位）"
+      "locator": "第11卦（泰卦）求职情境条目"
     },
     {
       "field_path": "data.scenarios.career.hexagrams[*]",
@@ -1697,7 +1697,7 @@
         "ctext_yijing",
         "convention"
       ],
-      "locator": "CTP《周易》对应卦条目（按卦号与字段定位）"
+      "locator": "第11卦（泰卦）象辞条目"
     },
     {
       "field_path": "hexagrams[?(@.id==11)].judgment_summary",
@@ -1708,7 +1708,7 @@
         "ctext_yijing",
         "convention"
       ],
-      "locator": "CTP《周易》对应卦条目（按卦号与字段定位）"
+      "locator": "第11卦（泰卦）卦辞条目"
     }
   ]
 }

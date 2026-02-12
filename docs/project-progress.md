@@ -91,6 +91,9 @@
 - 已新增 locator 质量校验模块：`src/cyberYJ/utils/authoritative_locator_quality.py`
 - 已新增 locator 质量校验脚本：`scripts/check_authoritative_locator_quality.py`
 - 当前高频字段 locator 覆盖：PASS（21/21）
+- 已新增 locator 精度校验模块：`src/cyberYJ/utils/authoritative_locator_precision.py`
+- 已新增 locator 精度校验脚本：`scripts/check_authoritative_locator_precision.py`
+- 当前高频字段 locator 精度：PASS（21/21）
 - 已新增字段清单与缺口分析模块：`src/cyberYJ/utils/m4_mapping_gap.py`
 - 已新增自动导出脚本：`scripts/generate_m4_mapping_gap_report.py`
 - 已新增盘点产物：`data/review/m4_field_inventory.json`

@@ -94,6 +94,7 @@ P2 阶段报告：`docs/m4-p2-source-compliance-report.md`
 当前覆盖进度：`total_fields=610`，`mapped_fields=610`，`coverage_ratio=1.0`
 当前文本类型：`summary=157`，`citation_only=0`
 当前 locator 覆盖：高频字段 `21/21`，summary 全量 `157/157`
+当前 locator 精度：高频字段 `21/21`
 P3 核对记录：`docs/m4-p3-rule-review-record.md`
 
 ### P3 结构预核对（已完成）

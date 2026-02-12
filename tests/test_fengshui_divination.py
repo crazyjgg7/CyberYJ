@@ -255,6 +255,49 @@ class TestFengshuiDivinationTool:
             for step in result["trace"]
         )
 
+    def test_authoritative_mapping_scenario_wildcard_note(self, monkeypatch):
+        """测试场景 wildcard 映射写入 authoritative_notes"""
+        monkeypatch.setattr(
+            self.tool.data_loader,
+            "get_authoritative_text_map",
+            lambda: {
+                "version": "1.0.0",
+                "items": [
+                    {
+                        "field_path": "data.scenarios.career.hexagrams[*].overall_tendency",
+                        "text_kind": "summary",
+                        "license": "summary_only",
+                        "content": "事业趋势应结合行业周期与组织阶段综合研判。",
+                        "source_ref": ["ctext_yijing", "convention"]
+                    },
+                    {
+                        "field_path": "data.scenarios.career.hexagrams[*].scenario_specific[*].advice",
+                        "text_kind": "summary",
+                        "license": "summary_only",
+                        "content": "行动建议应按目标拆解并分阶段验证。",
+                        "source_ref": ["ctext_yijing", "convention"]
+                    }
+                ]
+            }
+        )
+
+        result = self.tool.execute(
+            upper_trigram="坤",
+            lower_trigram="乾",
+            question_type="事业",
+            timestamp="2026-02-11T10:00:00+08:00"
+        )
+
+        assert "authoritative_notes" in result
+        assert (
+            result["authoritative_notes"]["scenario_analysis.overall_tendency"] ==
+            "事业趋势应结合行业周期与组织阶段综合研判。"
+        )
+        assert (
+            result["authoritative_notes"]["scenario_specific.*.advice"] ==
+            "行动建议应按目标拆解并分阶段验证。"
+        )
+
     def test_trace_completeness(self):
         """测试推导路径完整性"""
         result = self.tool.execute(

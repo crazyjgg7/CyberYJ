@@ -85,10 +85,10 @@ def validate_authoritative_text_map_file(path: str) -> List[str]:
 _CORE_HEX_JUDGMENT = re.compile(r"hexagrams\[\?\(@\.id==(?P<id>\d+)\)\]\.judgment_summary$")
 _CORE_HEX_IMAGE = re.compile(r"hexagrams\[\?\(@\.id==(?P<id>\d+)\)\]\.image_summary$")
 _SCENARIO_FIELD = re.compile(
-    r"data\.scenarios\.(?P<scenario>\w+)\.hexagrams\['(?P<id>\d+)'\]\.(?P<field>\w+)$"
+    r"data\.scenarios\.(?P<scenario>\w+)\.hexagrams(?:\['(?P<id>\d+)'\]|\[\*\])\.(?P<field>\w+)$"
 )
 _SCENARIO_SPECIFIC = re.compile(
-    r"data\.scenarios\.(?P<scenario>\w+)\.hexagrams\['(?P<id>\d+)'\]\.scenario_specific\.(?P<sub>[^\.]+)\.(?P<field>\w+)$"
+    r"data\.scenarios\.(?P<scenario>\w+)\.hexagrams(?:\['(?P<id>\d+)'\]|\[\*\])\.scenario_specific(?:\.(?P<sub>[^\.]+)|\[\*\])\.(?P<field>\w+)$"
 )
 _SOLAR_TERMS_FIELD = re.compile(
     r"data\.core\.solar_terms(?:\[[^]]*name=='(?P<name>[^']+)'[^]]*\])?(?:\.(?P<field>\w+))?"
@@ -116,15 +116,19 @@ def match_mapping_item(
         return {"target": "main_hexagram.image", "field_path": field_path}
 
     m = _SCENARIO_FIELD.search(field_path)
-    if m and int(m.group("id")) == hexagram_id:
-        if scenario_code and m.group("scenario") == scenario_code:
+    if m and scenario_code and m.group("scenario") == scenario_code:
+        item_id = m.group("id")
+        if item_id is None or int(item_id) == hexagram_id:
             field = m.group("field")
             return {"target": f"scenario_analysis.{field}", "field_path": field_path}
 
     m = _SCENARIO_SPECIFIC.search(field_path)
-    if m and int(m.group("id")) == hexagram_id:
-        if scenario_code and m.group("scenario") == scenario_code:
+    if m and scenario_code and m.group("scenario") == scenario_code:
+        item_id = m.group("id")
+        if item_id is None or int(item_id) == hexagram_id:
             sub = m.group("sub")
+            if sub is None:
+                sub = "*"
             field = m.group("field")
             return {
                 "target": f"scenario_specific.{sub}.{field}",

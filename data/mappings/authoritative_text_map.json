@@ -2,9 +2,107 @@
   "version": "1.0.0",
   "items": [
     {
-      "field_path": "data.fengshui.flying_stars_periods.period",
+      "field_path": "data.core.hexagram_keywords",
+      "text_kind": "summary",
+      "license": "summary_only",
+      "content": "卦象关键词语义用于解释增强与场景提示，属工程化归纳层。",
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    {
+      "field_path": "data.core.hexagrams",
       "text_kind": "citation_only",
       "license": "citation_only",
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    {
+      "field_path": "data.core.solar_terms",
+      "text_kind": "summary",
+      "license": "summary_only",
+      "content": "二十四节气数据用于节气识别与时令影响分析，当前采用标准黄经规则与工程化表示。",
+      "source_ref": [
+        "cma_24_terms",
+        "convention"
+      ]
+    },
+    {
+      "field_path": "data.core.trigrams",
+      "text_kind": "citation_only",
+      "license": "citation_only",
+      "source_ref": [
+        "ctext_shuogua",
+        "convention"
+      ]
+    },
+    {
+      "field_path": "data.fengshui.ba_zhai",
+      "text_kind": "summary",
+      "license": "summary_only",
+      "content": "八宅结构数据用于宅卦方位判定与布局建议生成，后续以权威版本逐条细化。",
+      "source_ref": [
+        "cinii_bazhai_mingjing",
+        "convention"
+      ]
+    },
+    {
+      "field_path": "data.fengshui.ba_zhai.auspicious_positions",
+      "text_kind": "summary",
+      "license": "summary_only",
+      "content": "八宅吉位用于布局建议，实际应用需结合户型与用途。",
+      "source_ref": [
+        "cinii_bazhai_mingjing",
+        "convention"
+      ]
+    },
+    {
+      "field_path": "data.fengshui.ba_zhai.house_gua",
+      "text_kind": "citation_only",
+      "license": "citation_only",
+      "source_ref": [
+        "cinii_bazhai_mingjing",
+        "convention"
+      ]
+    },
+    {
+      "field_path": "data.fengshui.ba_zhai.inauspicious_positions",
+      "text_kind": "summary",
+      "license": "summary_only",
+      "content": "八宅凶位用于风险提示，应与整体环境共同判断。",
+      "source_ref": [
+        "cinii_bazhai_mingjing",
+        "convention"
+      ]
+    },
+    {
+      "field_path": "data.fengshui.ba_zhai.rules",
+      "text_kind": "summary",
+      "license": "summary_only",
+      "content": "八宅规则用于宅卦与方位判定，实际布局需结合户型与使用场景综合判断。",
+      "source_ref": [
+        "cinii_bazhai_mingjing",
+        "convention"
+      ]
+    },
+    {
+      "field_path": "data.fengshui.flying_stars",
+      "text_kind": "summary",
+      "license": "summary_only",
+      "content": "流年飞星年盘用于年度吉凶提示，当前为规则化数据表达。",
+      "source_ref": [
+        "cinii_dili_bianzheng_shu",
+        "convention"
+      ]
+    },
+    {
+      "field_path": "data.fengshui.flying_stars_house",
+      "text_kind": "summary",
+      "license": "summary_only",
+      "content": "飞星宅盘数据用于按坐山生成九宫分布，供运行时叠加计算。",
       "source_ref": [
         "cinii_dili_bianzheng_shu",
         "convention"
@@ -21,6 +119,74 @@
       ]
     },
     {
+      "field_path": "data.fengshui.flying_stars_house.sitting_mountain",
+      "text_kind": "citation_only",
+      "license": "citation_only",
+      "source_ref": [
+        "cinii_dili_bianzheng_shu",
+        "convention"
+      ]
+    },
+    {
+      "field_path": "data.fengshui.flying_stars_periods",
+      "text_kind": "summary",
+      "license": "summary_only",
+      "content": "飞星元运分期用于定位宅盘与流年叠加口径。",
+      "source_ref": [
+        "cinii_dili_bianzheng_shu",
+        "convention"
+      ]
+    },
+    {
+      "field_path": "data.fengshui.flying_stars_periods.end_year",
+      "text_kind": "summary",
+      "license": "summary_only",
+      "content": "元运结束年与起始年形成闭区间，保障流年运期判定稳定。",
+      "source_ref": [
+        "cinii_dili_bianzheng_shu",
+        "convention"
+      ]
+    },
+    {
+      "field_path": "data.fengshui.flying_stars_periods.period",
+      "text_kind": "citation_only",
+      "license": "citation_only",
+      "source_ref": [
+        "cinii_dili_bianzheng_shu",
+        "convention"
+      ]
+    },
+    {
+      "field_path": "data.fengshui.flying_stars_periods.start_year",
+      "text_kind": "summary",
+      "license": "summary_only",
+      "content": "元运起始年用于定位所属运期，供飞星计算流程调用。",
+      "source_ref": [
+        "cinii_dili_bianzheng_shu",
+        "convention"
+      ]
+    },
+    {
+      "field_path": "data.fengshui.flying_stars_scoring",
+      "text_kind": "summary",
+      "license": "summary_only",
+      "content": "飞星评分表用于输出层排序与风险分级。",
+      "source_ref": [
+        "cinii_dili_bianzheng_shu",
+        "convention"
+      ]
+    },
+    {
+      "field_path": "data.fengshui.flying_stars_scoring.stars",
+      "text_kind": "summary",
+      "license": "summary_only",
+      "content": "九星评分表用于吉凶排序与提示分级，不替代流派原文断语。",
+      "source_ref": [
+        "cinii_dili_bianzheng_shu",
+        "convention"
+      ]
+    },
+    {
       "field_path": "data.fengshui.flying_stars_scoring.thresholds",
       "text_kind": "summary",
       "license": "summary_only",
@@ -31,72 +197,31 @@
       ]
     },
     {
-      "field_path": "data.scenarios.career.hexagrams['11'].scenario_specific.求职.situation",
-      "text_kind": "summary",
-      "license": "summary_only",
-      "content": "求职判断需结合行业景气、岗位要求与个人准备度综合评估。",
+      "field_path": "data.fengshui.luopan",
+      "text_kind": "citation_only",
+      "license": "citation_only",
       "source_ref": [
-        "ctext_yijing",
+        "qingnang_aoyu",
         "convention"
       ]
     },
     {
-      "field_path": "data.scenarios.career.hexagrams['11'].overall_tendency",
+      "field_path": "data.fengshui.luopan.direction_group",
       "text_kind": "summary",
       "license": "summary_only",
-      "content": "事业总体趋势可视为阶段性向上，但需结合周期与行动节奏审慎推进。",
+      "content": "方向组用于八方位聚类展示，不替代传统原文断法。",
       "source_ref": [
-        "ctext_yijing",
+        "qingnang_aoyu",
         "convention"
       ]
     },
     {
-      "field_path": "hexagrams[?(@.id==11)].judgment_summary",
+      "field_path": "data.fengshui.luopan.end_deg",
       "text_kind": "summary",
       "license": "summary_only",
-      "content": "泰卦核心义在通达与协和，宜以秩序推进，不宜躁进冒进。",
+      "content": "山向终止角度与起始角度共同定义区间边界，用于方向解析。",
       "source_ref": [
-        "ctext_yijing",
-        "convention"
-      ]
-    },
-    {
-      "field_path": "hexagrams[?(@.id==11)].image_summary",
-      "text_kind": "summary",
-      "license": "summary_only",
-      "content": "天地交泰之象重在上下通气、内外协同，行事以中正与协调为先。",
-      "source_ref": [
-        "ctext_yijing",
-        "convention"
-      ]
-    },
-    {
-      "field_path": "data.scenarios.career.hexagrams['11'].key_points",
-      "text_kind": "summary",
-      "license": "summary_only",
-      "content": "关键点应聚焦组织协同、资源配置与节奏控制，避免单点激进策略。",
-      "source_ref": [
-        "ctext_yijing",
-        "convention"
-      ]
-    },
-    {
-      "field_path": "data.scenarios.career.hexagrams['11'].scenario_specific.求职.advice",
-      "text_kind": "summary",
-      "license": "summary_only",
-      "content": "求职策略宜先匹配岗位能力模型，再做节奏化投递与复盘迭代。",
-      "source_ref": [
-        "ctext_yijing",
-        "convention"
-      ]
-    },
-    {
-      "field_path": "data.fengshui.ba_zhai.rules",
-      "text_kind": "summary",
-      "license": "summary_only",
-      "content": "八宅规则用于宅卦与方位判定，实际布局需结合户型与使用场景综合判断。",
-      "source_ref": [
-        "cinii_bazhai_mingjing",
+        "qingnang_aoyu",
         "convention"
       ]
     },
@@ -120,90 +245,854 @@
       ]
     },
     {
-      "field_path": "data.fengshui.luopan.end_deg",
+      "field_path": "data.scenarios.career.analysis_framework",
       "text_kind": "summary",
       "license": "summary_only",
-      "content": "山向终止角度与起始角度共同定义区间边界，用于方向解析。",
+      "content": "分析框架字段用于统一推理维度与输出结构。",
       "source_ref": [
-        "qingnang_aoyu",
+        "ctext_yijing",
         "convention"
       ]
     },
     {
-      "field_path": "data.fengshui.luopan.direction_group",
+      "field_path": "data.scenarios.career.hexagrams['11'].key_points",
       "text_kind": "summary",
       "license": "summary_only",
-      "content": "方向组用于八方位聚类展示，不替代传统原文断法。",
+      "content": "关键点应聚焦组织协同、资源配置与节奏控制，避免单点激进策略。",
       "source_ref": [
-        "qingnang_aoyu",
+        "ctext_yijing",
         "convention"
       ]
     },
     {
-      "field_path": "data.fengshui.ba_zhai.house_gua",
-      "text_kind": "citation_only",
-      "license": "citation_only",
-      "source_ref": [
-        "cinii_bazhai_mingjing",
-        "convention"
-      ]
-    },
-    {
-      "field_path": "data.fengshui.ba_zhai.auspicious_positions",
+      "field_path": "data.scenarios.career.hexagrams['11'].overall_tendency",
       "text_kind": "summary",
       "license": "summary_only",
-      "content": "八宅吉位用于布局建议，实际应用需结合户型与用途。",
+      "content": "事业总体趋势可视为阶段性向上，但需结合周期与行动节奏审慎推进。",
       "source_ref": [
-        "cinii_bazhai_mingjing",
+        "ctext_yijing",
         "convention"
       ]
     },
     {
-      "field_path": "data.fengshui.ba_zhai.inauspicious_positions",
+      "field_path": "data.scenarios.career.hexagrams['11'].scenario_specific.求职.advice",
       "text_kind": "summary",
       "license": "summary_only",
-      "content": "八宅凶位用于风险提示，应与整体环境共同判断。",
+      "content": "求职策略宜先匹配岗位能力模型，再做节奏化投递与复盘迭代。",
       "source_ref": [
-        "cinii_bazhai_mingjing",
+        "ctext_yijing",
         "convention"
       ]
     },
     {
-      "field_path": "data.fengshui.flying_stars_periods.start_year",
+      "field_path": "data.scenarios.career.hexagrams['11'].scenario_specific.求职.situation",
       "text_kind": "summary",
       "license": "summary_only",
-      "content": "元运起始年用于定位所属运期，供飞星计算流程调用。",
+      "content": "求职判断需结合行业景气、岗位要求与个人准备度综合评估。",
       "source_ref": [
-        "cinii_dili_bianzheng_shu",
+        "ctext_yijing",
         "convention"
       ]
     },
     {
-      "field_path": "data.fengshui.flying_stars_periods.end_year",
+      "field_path": "data.scenarios.career.hexagrams[*]",
       "text_kind": "summary",
       "license": "summary_only",
-      "content": "元运结束年与起始年形成闭区间，保障流年运期判定稳定。",
+      "content": "场景卦象数据用于同卦在不同问题域下的解释分流。",
       "source_ref": [
-        "cinii_dili_bianzheng_shu",
+        "ctext_yijing",
         "convention"
       ]
     },
     {
-      "field_path": "data.fengshui.flying_stars_house.sitting_mountain",
-      "text_kind": "citation_only",
-      "license": "citation_only",
-      "source_ref": [
-        "cinii_dili_bianzheng_shu",
-        "convention"
-      ]
-    },
-    {
-      "field_path": "data.fengshui.flying_stars_scoring.stars",
+      "field_path": "data.scenarios.career.hexagrams[*].key_points",
       "text_kind": "summary",
       "license": "summary_only",
-      "content": "九星评分表用于吉凶排序与提示分级，不替代流派原文断语。",
+      "content": "关键点字段用于提示执行优先级与注意事项。",
       "source_ref": [
-        "cinii_dili_bianzheng_shu",
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    {
+      "field_path": "data.scenarios.career.hexagrams[*].overall_tendency",
+      "text_kind": "summary",
+      "license": "summary_only",
+      "content": "总体倾向字段用于给出该场景下的阶段性判断。",
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    {
+      "field_path": "data.scenarios.career.hexagrams[*].scenario_specific[*].advice",
+      "text_kind": "summary",
+      "license": "summary_only",
+      "content": "细分情境建议用于给出可执行行动路径。",
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    {
+      "field_path": "data.scenarios.career.hexagrams[*].scenario_specific[*].situation",
+      "text_kind": "summary",
+      "license": "summary_only",
+      "content": "细分情境判断用于描述当前状态与主要影响因素。",
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    {
+      "field_path": "data.scenarios.career.output_structure",
+      "text_kind": "summary",
+      "license": "summary_only",
+      "content": "输出结构模板用于保持前端展示与MCP响应一致性。",
+      "source_ref": [
+        "convention"
+      ]
+    },
+    {
+      "field_path": "data.scenarios.career.prompt_template",
+      "text_kind": "summary",
+      "license": "summary_only",
+      "content": "提示词模板用于约束生成风格与说明边界。",
+      "source_ref": [
+        "convention"
+      ]
+    },
+    {
+      "field_path": "data.scenarios.career.scenario_info",
+      "text_kind": "summary",
+      "license": "summary_only",
+      "content": "场景定义信息用于路由与解释上下文绑定。",
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    {
+      "field_path": "data.scenarios.family.analysis_framework",
+      "text_kind": "summary",
+      "license": "summary_only",
+      "content": "分析框架字段用于统一推理维度与输出结构。",
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    {
+      "field_path": "data.scenarios.family.hexagrams[*]",
+      "text_kind": "summary",
+      "license": "summary_only",
+      "content": "场景卦象数据用于同卦在不同问题域下的解释分流。",
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    {
+      "field_path": "data.scenarios.family.hexagrams[*].key_points",
+      "text_kind": "summary",
+      "license": "summary_only",
+      "content": "关键点字段用于提示执行优先级与注意事项。",
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    {
+      "field_path": "data.scenarios.family.hexagrams[*].overall_tendency",
+      "text_kind": "summary",
+      "license": "summary_only",
+      "content": "总体倾向字段用于给出该场景下的阶段性判断。",
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    {
+      "field_path": "data.scenarios.family.hexagrams[*].scenario_specific[*].advice",
+      "text_kind": "summary",
+      "license": "summary_only",
+      "content": "细分情境建议用于给出可执行行动路径。",
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    {
+      "field_path": "data.scenarios.family.hexagrams[*].scenario_specific[*].situation",
+      "text_kind": "summary",
+      "license": "summary_only",
+      "content": "细分情境判断用于描述当前状态与主要影响因素。",
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    {
+      "field_path": "data.scenarios.family.output_structure",
+      "text_kind": "summary",
+      "license": "summary_only",
+      "content": "输出结构模板用于保持前端展示与MCP响应一致性。",
+      "source_ref": [
+        "convention"
+      ]
+    },
+    {
+      "field_path": "data.scenarios.family.prompt_template",
+      "text_kind": "summary",
+      "license": "summary_only",
+      "content": "提示词模板用于约束生成风格与说明边界。",
+      "source_ref": [
+        "convention"
+      ]
+    },
+    {
+      "field_path": "data.scenarios.family.scenario_info",
+      "text_kind": "summary",
+      "license": "summary_only",
+      "content": "场景定义信息用于路由与解释上下文绑定。",
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    {
+      "field_path": "data.scenarios.fortune.analysis_framework",
+      "text_kind": "summary",
+      "license": "summary_only",
+      "content": "分析框架字段用于统一推理维度与输出结构。",
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    {
+      "field_path": "data.scenarios.fortune.hexagrams[*]",
+      "text_kind": "summary",
+      "license": "summary_only",
+      "content": "场景卦象数据用于同卦在不同问题域下的解释分流。",
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    {
+      "field_path": "data.scenarios.fortune.hexagrams[*].key_points",
+      "text_kind": "summary",
+      "license": "summary_only",
+      "content": "关键点字段用于提示执行优先级与注意事项。",
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    {
+      "field_path": "data.scenarios.fortune.hexagrams[*].overall_tendency",
+      "text_kind": "summary",
+      "license": "summary_only",
+      "content": "总体倾向字段用于给出该场景下的阶段性判断。",
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    {
+      "field_path": "data.scenarios.fortune.hexagrams[*].scenario_specific[*].advice",
+      "text_kind": "summary",
+      "license": "summary_only",
+      "content": "细分情境建议用于给出可执行行动路径。",
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    {
+      "field_path": "data.scenarios.fortune.hexagrams[*].scenario_specific[*].situation",
+      "text_kind": "summary",
+      "license": "summary_only",
+      "content": "细分情境判断用于描述当前状态与主要影响因素。",
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    {
+      "field_path": "data.scenarios.fortune.output_structure",
+      "text_kind": "summary",
+      "license": "summary_only",
+      "content": "输出结构模板用于保持前端展示与MCP响应一致性。",
+      "source_ref": [
+        "convention"
+      ]
+    },
+    {
+      "field_path": "data.scenarios.fortune.prompt_template",
+      "text_kind": "summary",
+      "license": "summary_only",
+      "content": "提示词模板用于约束生成风格与说明边界。",
+      "source_ref": [
+        "convention"
+      ]
+    },
+    {
+      "field_path": "data.scenarios.fortune.scenario_info",
+      "text_kind": "summary",
+      "license": "summary_only",
+      "content": "场景定义信息用于路由与解释上下文绑定。",
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    {
+      "field_path": "data.scenarios.health.analysis_framework",
+      "text_kind": "summary",
+      "license": "summary_only",
+      "content": "分析框架字段用于统一推理维度与输出结构。",
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    {
+      "field_path": "data.scenarios.health.hexagrams[*]",
+      "text_kind": "summary",
+      "license": "summary_only",
+      "content": "场景卦象数据用于同卦在不同问题域下的解释分流。",
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    {
+      "field_path": "data.scenarios.health.hexagrams[*].key_points",
+      "text_kind": "summary",
+      "license": "summary_only",
+      "content": "关键点字段用于提示执行优先级与注意事项。",
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    {
+      "field_path": "data.scenarios.health.hexagrams[*].overall_tendency",
+      "text_kind": "summary",
+      "license": "summary_only",
+      "content": "总体倾向字段用于给出该场景下的阶段性判断。",
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    {
+      "field_path": "data.scenarios.health.hexagrams[*].scenario_specific[*].advice",
+      "text_kind": "summary",
+      "license": "summary_only",
+      "content": "细分情境建议用于给出可执行行动路径。",
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    {
+      "field_path": "data.scenarios.health.hexagrams[*].scenario_specific[*].situation",
+      "text_kind": "summary",
+      "license": "summary_only",
+      "content": "细分情境判断用于描述当前状态与主要影响因素。",
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    {
+      "field_path": "data.scenarios.health.output_structure",
+      "text_kind": "summary",
+      "license": "summary_only",
+      "content": "输出结构模板用于保持前端展示与MCP响应一致性。",
+      "source_ref": [
+        "convention"
+      ]
+    },
+    {
+      "field_path": "data.scenarios.health.prompt_template",
+      "text_kind": "summary",
+      "license": "summary_only",
+      "content": "提示词模板用于约束生成风格与说明边界。",
+      "source_ref": [
+        "convention"
+      ]
+    },
+    {
+      "field_path": "data.scenarios.health.scenario_info",
+      "text_kind": "summary",
+      "license": "summary_only",
+      "content": "场景定义信息用于路由与解释上下文绑定。",
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    {
+      "field_path": "data.scenarios.lawsuit.analysis_framework",
+      "text_kind": "summary",
+      "license": "summary_only",
+      "content": "分析框架字段用于统一推理维度与输出结构。",
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    {
+      "field_path": "data.scenarios.lawsuit.hexagrams[*]",
+      "text_kind": "summary",
+      "license": "summary_only",
+      "content": "场景卦象数据用于同卦在不同问题域下的解释分流。",
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    {
+      "field_path": "data.scenarios.lawsuit.hexagrams[*].key_points",
+      "text_kind": "summary",
+      "license": "summary_only",
+      "content": "关键点字段用于提示执行优先级与注意事项。",
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    {
+      "field_path": "data.scenarios.lawsuit.hexagrams[*].overall_tendency",
+      "text_kind": "summary",
+      "license": "summary_only",
+      "content": "总体倾向字段用于给出该场景下的阶段性判断。",
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    {
+      "field_path": "data.scenarios.lawsuit.hexagrams[*].scenario_specific[*].advice",
+      "text_kind": "summary",
+      "license": "summary_only",
+      "content": "细分情境建议用于给出可执行行动路径。",
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    {
+      "field_path": "data.scenarios.lawsuit.hexagrams[*].scenario_specific[*].situation",
+      "text_kind": "summary",
+      "license": "summary_only",
+      "content": "细分情境判断用于描述当前状态与主要影响因素。",
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    {
+      "field_path": "data.scenarios.lawsuit.output_structure",
+      "text_kind": "summary",
+      "license": "summary_only",
+      "content": "输出结构模板用于保持前端展示与MCP响应一致性。",
+      "source_ref": [
+        "convention"
+      ]
+    },
+    {
+      "field_path": "data.scenarios.lawsuit.prompt_template",
+      "text_kind": "summary",
+      "license": "summary_only",
+      "content": "提示词模板用于约束生成风格与说明边界。",
+      "source_ref": [
+        "convention"
+      ]
+    },
+    {
+      "field_path": "data.scenarios.lawsuit.scenario_info",
+      "text_kind": "summary",
+      "license": "summary_only",
+      "content": "场景定义信息用于路由与解释上下文绑定。",
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    {
+      "field_path": "data.scenarios.love.analysis_framework",
+      "text_kind": "summary",
+      "license": "summary_only",
+      "content": "分析框架字段用于统一推理维度与输出结构。",
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    {
+      "field_path": "data.scenarios.love.hexagrams[*]",
+      "text_kind": "summary",
+      "license": "summary_only",
+      "content": "场景卦象数据用于同卦在不同问题域下的解释分流。",
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    {
+      "field_path": "data.scenarios.love.hexagrams[*].key_points",
+      "text_kind": "summary",
+      "license": "summary_only",
+      "content": "关键点字段用于提示执行优先级与注意事项。",
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    {
+      "field_path": "data.scenarios.love.hexagrams[*].overall_tendency",
+      "text_kind": "summary",
+      "license": "summary_only",
+      "content": "总体倾向字段用于给出该场景下的阶段性判断。",
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    {
+      "field_path": "data.scenarios.love.hexagrams[*].scenario_specific[*].advice",
+      "text_kind": "summary",
+      "license": "summary_only",
+      "content": "细分情境建议用于给出可执行行动路径。",
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    {
+      "field_path": "data.scenarios.love.hexagrams[*].scenario_specific[*].situation",
+      "text_kind": "summary",
+      "license": "summary_only",
+      "content": "细分情境判断用于描述当前状态与主要影响因素。",
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    {
+      "field_path": "data.scenarios.love.output_structure",
+      "text_kind": "summary",
+      "license": "summary_only",
+      "content": "输出结构模板用于保持前端展示与MCP响应一致性。",
+      "source_ref": [
+        "convention"
+      ]
+    },
+    {
+      "field_path": "data.scenarios.love.prompt_template",
+      "text_kind": "summary",
+      "license": "summary_only",
+      "content": "提示词模板用于约束生成风格与说明边界。",
+      "source_ref": [
+        "convention"
+      ]
+    },
+    {
+      "field_path": "data.scenarios.love.scenario_info",
+      "text_kind": "summary",
+      "license": "summary_only",
+      "content": "场景定义信息用于路由与解释上下文绑定。",
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    {
+      "field_path": "data.scenarios.study.analysis_framework",
+      "text_kind": "summary",
+      "license": "summary_only",
+      "content": "分析框架字段用于统一推理维度与输出结构。",
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    {
+      "field_path": "data.scenarios.study.hexagrams[*]",
+      "text_kind": "summary",
+      "license": "summary_only",
+      "content": "场景卦象数据用于同卦在不同问题域下的解释分流。",
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    {
+      "field_path": "data.scenarios.study.hexagrams[*].key_points",
+      "text_kind": "summary",
+      "license": "summary_only",
+      "content": "关键点字段用于提示执行优先级与注意事项。",
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    {
+      "field_path": "data.scenarios.study.hexagrams[*].overall_tendency",
+      "text_kind": "summary",
+      "license": "summary_only",
+      "content": "总体倾向字段用于给出该场景下的阶段性判断。",
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    {
+      "field_path": "data.scenarios.study.hexagrams[*].scenario_specific[*].advice",
+      "text_kind": "summary",
+      "license": "summary_only",
+      "content": "细分情境建议用于给出可执行行动路径。",
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    {
+      "field_path": "data.scenarios.study.hexagrams[*].scenario_specific[*].situation",
+      "text_kind": "summary",
+      "license": "summary_only",
+      "content": "细分情境判断用于描述当前状态与主要影响因素。",
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    {
+      "field_path": "data.scenarios.study.output_structure",
+      "text_kind": "summary",
+      "license": "summary_only",
+      "content": "输出结构模板用于保持前端展示与MCP响应一致性。",
+      "source_ref": [
+        "convention"
+      ]
+    },
+    {
+      "field_path": "data.scenarios.study.prompt_template",
+      "text_kind": "summary",
+      "license": "summary_only",
+      "content": "提示词模板用于约束生成风格与说明边界。",
+      "source_ref": [
+        "convention"
+      ]
+    },
+    {
+      "field_path": "data.scenarios.study.scenario_info",
+      "text_kind": "summary",
+      "license": "summary_only",
+      "content": "场景定义信息用于路由与解释上下文绑定。",
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    {
+      "field_path": "data.scenarios.travel.analysis_framework",
+      "text_kind": "summary",
+      "license": "summary_only",
+      "content": "分析框架字段用于统一推理维度与输出结构。",
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    {
+      "field_path": "data.scenarios.travel.hexagrams[*]",
+      "text_kind": "summary",
+      "license": "summary_only",
+      "content": "场景卦象数据用于同卦在不同问题域下的解释分流。",
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    {
+      "field_path": "data.scenarios.travel.hexagrams[*].key_points",
+      "text_kind": "summary",
+      "license": "summary_only",
+      "content": "关键点字段用于提示执行优先级与注意事项。",
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    {
+      "field_path": "data.scenarios.travel.hexagrams[*].overall_tendency",
+      "text_kind": "summary",
+      "license": "summary_only",
+      "content": "总体倾向字段用于给出该场景下的阶段性判断。",
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    {
+      "field_path": "data.scenarios.travel.hexagrams[*].scenario_specific[*].advice",
+      "text_kind": "summary",
+      "license": "summary_only",
+      "content": "细分情境建议用于给出可执行行动路径。",
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    {
+      "field_path": "data.scenarios.travel.hexagrams[*].scenario_specific[*].situation",
+      "text_kind": "summary",
+      "license": "summary_only",
+      "content": "细分情境判断用于描述当前状态与主要影响因素。",
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    {
+      "field_path": "data.scenarios.travel.output_structure",
+      "text_kind": "summary",
+      "license": "summary_only",
+      "content": "输出结构模板用于保持前端展示与MCP响应一致性。",
+      "source_ref": [
+        "convention"
+      ]
+    },
+    {
+      "field_path": "data.scenarios.travel.prompt_template",
+      "text_kind": "summary",
+      "license": "summary_only",
+      "content": "提示词模板用于约束生成风格与说明边界。",
+      "source_ref": [
+        "convention"
+      ]
+    },
+    {
+      "field_path": "data.scenarios.travel.scenario_info",
+      "text_kind": "summary",
+      "license": "summary_only",
+      "content": "场景定义信息用于路由与解释上下文绑定。",
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    {
+      "field_path": "data.scenarios.wealth.analysis_framework",
+      "text_kind": "summary",
+      "license": "summary_only",
+      "content": "分析框架字段用于统一推理维度与输出结构。",
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    {
+      "field_path": "data.scenarios.wealth.hexagrams[*]",
+      "text_kind": "summary",
+      "license": "summary_only",
+      "content": "场景卦象数据用于同卦在不同问题域下的解释分流。",
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    {
+      "field_path": "data.scenarios.wealth.hexagrams[*].key_points",
+      "text_kind": "summary",
+      "license": "summary_only",
+      "content": "关键点字段用于提示执行优先级与注意事项。",
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    {
+      "field_path": "data.scenarios.wealth.hexagrams[*].overall_tendency",
+      "text_kind": "summary",
+      "license": "summary_only",
+      "content": "总体倾向字段用于给出该场景下的阶段性判断。",
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    {
+      "field_path": "data.scenarios.wealth.hexagrams[*].scenario_specific[*].advice",
+      "text_kind": "summary",
+      "license": "summary_only",
+      "content": "细分情境建议用于给出可执行行动路径。",
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    {
+      "field_path": "data.scenarios.wealth.hexagrams[*].scenario_specific[*].situation",
+      "text_kind": "summary",
+      "license": "summary_only",
+      "content": "细分情境判断用于描述当前状态与主要影响因素。",
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    {
+      "field_path": "data.scenarios.wealth.output_structure",
+      "text_kind": "summary",
+      "license": "summary_only",
+      "content": "输出结构模板用于保持前端展示与MCP响应一致性。",
+      "source_ref": [
+        "convention"
+      ]
+    },
+    {
+      "field_path": "data.scenarios.wealth.prompt_template",
+      "text_kind": "summary",
+      "license": "summary_only",
+      "content": "提示词模板用于约束生成风格与说明边界。",
+      "source_ref": [
+        "convention"
+      ]
+    },
+    {
+      "field_path": "data.scenarios.wealth.scenario_info",
+      "text_kind": "summary",
+      "license": "summary_only",
+      "content": "场景定义信息用于路由与解释上下文绑定。",
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    {
+      "field_path": "hexagrams[?(@.id==11)].image_summary",
+      "text_kind": "summary",
+      "license": "summary_only",
+      "content": "天地交泰之象重在上下通气、内外协同，行事以中正与协调为先。",
+      "source_ref": [
+        "ctext_yijing",
+        "convention"
+      ]
+    },
+    {
+      "field_path": "hexagrams[?(@.id==11)].judgment_summary",
+      "text_kind": "summary",
+      "license": "summary_only",
+      "content": "泰卦核心义在通达与协和，宜以秩序推进，不宜躁进冒进。",
+      "source_ref": [
+        "ctext_yijing",
         "convention"
       ]
     }

@@ -54,7 +54,7 @@
         "convention"
       ],
       "content": "八宅主表用于宅卦、吉凶方位与分区建议的基础映射。",
-      "locator": "《八宅明镜》相关条目（按宅卦与方位字段定位）"
+      "locator": "第45页至第52页（八宅规则总表）"
     },
     {
       "field_path": "data.fengshui.ba_zhai.auspicious_positions",
@@ -109,7 +109,7 @@
         "cinii_dili_bianzheng_shu",
         "convention"
       ],
-      "locator": "《地理辨正疏》相关条目（按运期/坐山/九星字段定位）"
+      "locator": "第12页、第26页、第33页（飞星规则总表）"
     },
     {
       "field_path": "data.fengshui.flying_stars_house",
@@ -120,7 +120,7 @@
         "convention"
       ],
       "content": "飞星宅盘主表用于按元运与坐山生成九宫星盘。",
-      "locator": "《地理辨正疏》相关条目（按运期/坐山/九星字段定位）"
+      "locator": "第26页（24山向×9运宅盘总表）"
     },
     {
       "field_path": "data.fengshui.flying_stars_house.palace_map",
@@ -153,7 +153,7 @@
         "convention"
       ],
       "content": "元运分期主表用于确定年份所属运期。",
-      "locator": "《地理辨正疏》相关条目（按运期/坐山/九星字段定位）"
+      "locator": "第12页（飞星元运周期总表）"
     },
     {
       "field_path": "data.fengshui.flying_stars_periods.end_year",
@@ -197,7 +197,7 @@
         "cinii_dili_bianzheng_shu",
         "convention"
       ],
-      "locator": "《地理辨正疏》相关条目（按运期/坐山/九星字段定位）"
+      "locator": "第33页（九星评分规则总表）"
     },
     {
       "field_path": "data.fengshui.flying_stars_scoring.stars",
@@ -230,7 +230,7 @@
         "convention"
       ],
       "content": "二十四山向主表用于角度到山向的标准化映射。",
-      "locator": "《青囊奥语》相关条目（按山向字段定位）"
+      "locator": "第61页至第84页（二十四山向总表）"
     },
     {
       "field_path": "data.fengshui.luopan.direction_group",

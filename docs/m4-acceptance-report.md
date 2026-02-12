@@ -26,6 +26,7 @@
 - 映射文本类型：`summary=157`，`citation_only=0`
 - 高频字段 locator 覆盖：`21/21` PASS（当前 summary locator 覆盖 `157/157`）
 - 高频字段 locator 精度：`21/21` PASS
+- 书籍来源字段页码定位覆盖：`21/21` PASS
 - 结论：`PASS`
 
 ### P3 规则核对闭环（首轮）

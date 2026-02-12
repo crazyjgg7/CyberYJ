@@ -1,4 +1,5 @@
 import json
+import re
 
 from cyberYJ.utils.authoritative_text_map import (
     match_mapping_item,
@@ -65,3 +66,24 @@ def test_authoritative_text_map_m4_quality_all_summary_have_locator():
         and (not isinstance(item.get("locator"), str) or not item.get("locator").strip())
     ]
     assert missing_locator_items == []
+
+
+def test_authoritative_text_map_m4_quality_book_sources_use_page_locator():
+    path = "/Users/apple/dev/CyberYJ/data/mappings/authoritative_text_map.json"
+    data = json.loads(open(path, "r", encoding="utf-8").read())
+
+    page_re = re.compile(r"(第\d+页|p\.?\s*\d+|§\s*\d+|第\d+段)")
+    book_sources = {"cinii_dili_bianzheng_shu", "cinii_bazhai_mingjing", "qingnang_aoyu"}
+
+    invalid_items = []
+    for item in data.get("items", []):
+        if not isinstance(item, dict):
+            continue
+        refs = set(x for x in item.get("source_ref", []) if isinstance(x, str))
+        if not (refs & book_sources):
+            continue
+        locator = item.get("locator")
+        if not isinstance(locator, str) or page_re.search(locator) is None:
+            invalid_items.append(item.get("field_path"))
+
+    assert invalid_items == []

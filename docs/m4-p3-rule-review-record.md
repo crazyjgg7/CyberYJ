@@ -203,3 +203,12 @@ python3 /Users/apple/dev/CyberYJ/scripts/check_rule_review_evidence.py
   - `would_update_count=0`
   - `updated_count=0`
   - `passed=true`
+
+## 二次复核门禁结果（2026-02-12）
+
+- 校验脚本：`/Users/apple/dev/CyberYJ/scripts/check_rule_review_secondary_gate.py`
+- 当前结果：
+  - `total_confirmed_records=35`
+  - `secondary_ready_records=0`
+  - `ready_for_full_secondary_review=false`
+- 说明：当前 verified 为首轮口径，待补页码/段落级证据后进入二次复核。

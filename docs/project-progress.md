@@ -30,6 +30,14 @@
 - 全模块字段级映射覆盖率目标（超出当前核心字段集）未完成
 - 24 山向、八宅、飞星规则已完成首轮逐条校核，但仍缺“可复核权威页码/段落”证据的二次复核
 
+## M4 阶段进展（P4 已启动：二次复核门禁）
+
+- 已新增二次复核校验模块：`src/cyberYJ/utils/rule_review_secondary_gate.py`
+- 已新增二次复核校验脚本：`scripts/check_rule_review_secondary_gate.py`
+- 已新增二次复核模板：`docs/m4-secondary-evidence-template.md`
+- 当前二次复核准备度：`total_confirmed_records=35`，`secondary_ready_records=0`
+- 结论：首轮核对已完成，二次复核（页码/段落级）待补证据
+
 ## M4 阶段进展（P3 已完成：首轮）
 
 - 已新增规则核对矩阵：`data/review/rule_review_matrix.json`

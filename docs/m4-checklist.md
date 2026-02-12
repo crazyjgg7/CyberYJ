@@ -43,8 +43,19 @@
 - P1（覆盖率基线与校验）：已完成（见 `docs/m4-acceptance-report.md`）
 - P2（版本与合规材料完备）：进行中（已落地来源合规、全量来源扩展校验、source_ref 一致性、证据映射校验）
 - P3（规则逐条校核与规模化替换）：已完成（首轮，35/35 已 verified）
+- P4（二次复核：页码/段落级证据）：已启动
 
 说明：P3 当前完成态基于“书目级索引 + 合法摘要 + 结构一致性核对”，后续需补权威页码/段落证据并进行二次复核。
+
+### P4-B1 二次复核门禁（已完成）
+
+- 新增校验模块：`/Users/apple/dev/CyberYJ/src/cyberYJ/utils/rule_review_secondary_gate.py`
+- 新增校验脚本：`/Users/apple/dev/CyberYJ/scripts/check_rule_review_secondary_gate.py`
+- 新增模板文档：`/Users/apple/dev/CyberYJ/docs/m4-secondary-evidence-template.md`
+- 当前结果：
+  - `total_confirmed_records=35`
+  - `secondary_ready_records=0`
+  - `ready_for_full_secondary_review=false`
 
 P2 阶段报告：`docs/m4-p2-source-compliance-report.md`
 P3 核对记录：`docs/m4-p3-rule-review-record.md`

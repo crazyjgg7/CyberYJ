@@ -8,8 +8,8 @@
 - 进度检查脚本：`/Users/apple/dev/CyberYJ/scripts/check_rule_review_progress.py`
 - 当前统计：`35` 条待核对（24 山向 + 8 八宅 + 3 飞星）
 - 已完成状态分流：`35`（历史）
-- 已核对通过：`27`（verified）
-- 当前状态：`blocked=8`，`pending=0`，`verified=27`
+- 已核对通过：`35`（verified）
+- 当前状态：`blocked=0`，`pending=0`，`verified=35`
 
 ## 结构预核对结果（2026-02-12）
 
@@ -139,6 +139,19 @@
 | 2026-02-12 | luopan_24_mountains | 丁 | `luopan.json` 现值 | 书目级索引 + 合法摘要 + 规则映射核对 | 证据已 confirmed，自动同步为 verified（待权威页码二次复核） | verified | `qingnang_aoyu` |
 | 2026-02-12 | luopan_24_mountains | 未 | `luopan.json` 现值 | 书目级索引 + 合法摘要 + 规则映射核对 | 证据已 confirmed，自动同步为 verified（待权威页码二次复核） | verified | `qingnang_aoyu` |
 
+## P3-B12 记录（2026-02-12）
+
+| 日期 | 规则组 | 规则 ID | 当前值 | 权威口径 | 处理结论 | 状态 | 证据来源 |
+|---|---|---|---|---|---|---|---|
+| 2026-02-12 | luopan_24_mountains | 坤 | `luopan.json` 现值 | 书目级索引 + 合法摘要 + 规则映射核对 | 证据已 confirmed，自动同步为 verified（待权威页码二次复核） | verified | `qingnang_aoyu` |
+| 2026-02-12 | luopan_24_mountains | 申 | `luopan.json` 现值 | 书目级索引 + 合法摘要 + 规则映射核对 | 证据已 confirmed，自动同步为 verified（待权威页码二次复核） | verified | `qingnang_aoyu` |
+| 2026-02-12 | luopan_24_mountains | 庚 | `luopan.json` 现值 | 书目级索引 + 合法摘要 + 规则映射核对 | 证据已 confirmed，自动同步为 verified（待权威页码二次复核） | verified | `qingnang_aoyu` |
+| 2026-02-12 | luopan_24_mountains | 酉 | `luopan.json` 现值 | 书目级索引 + 合法摘要 + 规则映射核对 | 证据已 confirmed，自动同步为 verified（待权威页码二次复核） | verified | `qingnang_aoyu` |
+| 2026-02-12 | luopan_24_mountains | 辛 | `luopan.json` 现值 | 书目级索引 + 合法摘要 + 规则映射核对 | 证据已 confirmed，自动同步为 verified（待权威页码二次复核） | verified | `qingnang_aoyu` |
+| 2026-02-12 | luopan_24_mountains | 戌 | `luopan.json` 现值 | 书目级索引 + 合法摘要 + 规则映射核对 | 证据已 confirmed，自动同步为 verified（待权威页码二次复核） | verified | `qingnang_aoyu` |
+| 2026-02-12 | luopan_24_mountains | 乾 | `luopan.json` 现值 | 书目级索引 + 合法摘要 + 规则映射核对 | 证据已 confirmed，自动同步为 verified（待权威页码二次复核） | verified | `qingnang_aoyu` |
+| 2026-02-12 | luopan_24_mountains | 亥 | `luopan.json` 现值 | 书目级索引 + 合法摘要 + 规则映射核对 | 证据已 confirmed，自动同步为 verified（待权威页码二次复核） | verified | `qingnang_aoyu` |
+
 ## 操作流程
 
 1. 在 `rule_review_matrix.json` 对应条目更新 `status/notes`。
@@ -174,13 +187,13 @@ python3 /Users/apple/dev/CyberYJ/scripts/check_rule_review_evidence.py
 
 - 同步脚本：`/Users/apple/dev/CyberYJ/scripts/sync_rule_review_matrix.py`
 - 同步口径：`evidence_status=confirmed` 且字段完整 -> 自动将 `blocked` 更新为 `verified`
-- apply 结果（四批累计）：
-  - `confirmed_records=27`
+- apply 结果（五批累计）：
+  - `confirmed_records=35`
   - `would_update_count=8`（最近一批）
   - `updated_count=8`（最近一批）
   - `passed=true`
 - 当前 dry-run 结果：
-  - `confirmed_records=27`
+  - `confirmed_records=35`
   - `would_update_count=0`
   - `updated_count=0`
   - `passed=true`

@@ -105,51 +105,51 @@
       },
       {
         "id": "坤",
-        "status": "blocked",
+        "status": "verified",
         "source_target": "qingnang_aoyu",
-        "notes": "P3-B3: 已完成结构预核对；待补权威文本页码/段落后再转 verified。"
+        "notes": "P3-B12: 证据条目已 confirmed，已自动同步为 verified；后续补充权威文本页码后做二次复核。"
       },
       {
         "id": "申",
-        "status": "blocked",
+        "status": "verified",
         "source_target": "qingnang_aoyu",
-        "notes": "P3-B3: 已完成结构预核对；待补权威文本页码/段落后再转 verified。"
+        "notes": "P3-B12: 证据条目已 confirmed，已自动同步为 verified；后续补充权威文本页码后做二次复核。"
       },
       {
         "id": "庚",
-        "status": "blocked",
+        "status": "verified",
         "source_target": "qingnang_aoyu",
-        "notes": "P3-B3: 已完成结构预核对；待补权威文本页码/段落后再转 verified。"
+        "notes": "P3-B12: 证据条目已 confirmed，已自动同步为 verified；后续补充权威文本页码后做二次复核。"
       },
       {
         "id": "酉",
-        "status": "blocked",
+        "status": "verified",
         "source_target": "qingnang_aoyu",
-        "notes": "P3-B3: 已完成结构预核对；待补权威文本页码/段落后再转 verified。"
+        "notes": "P3-B12: 证据条目已 confirmed，已自动同步为 verified；后续补充权威文本页码后做二次复核。"
       },
       {
         "id": "辛",
-        "status": "blocked",
+        "status": "verified",
         "source_target": "qingnang_aoyu",
-        "notes": "P3-B3: 已完成结构预核对；待补权威文本页码/段落后再转 verified。"
+        "notes": "P3-B12: 证据条目已 confirmed，已自动同步为 verified；后续补充权威文本页码后做二次复核。"
       },
       {
         "id": "戌",
-        "status": "blocked",
+        "status": "verified",
         "source_target": "qingnang_aoyu",
-        "notes": "P3-B3: 已完成结构预核对；待补权威文本页码/段落后再转 verified。"
+        "notes": "P3-B12: 证据条目已 confirmed，已自动同步为 verified；后续补充权威文本页码后做二次复核。"
       },
       {
         "id": "乾",
-        "status": "blocked",
+        "status": "verified",
         "source_target": "qingnang_aoyu",
-        "notes": "P3-B3: 已完成结构预核对；待补权威文本页码/段落后再转 verified。"
+        "notes": "P3-B12: 证据条目已 confirmed，已自动同步为 verified；后续补充权威文本页码后做二次复核。"
       },
       {
         "id": "亥",
-        "status": "blocked",
+        "status": "verified",
         "source_target": "qingnang_aoyu",
-        "notes": "P3-B3: 已完成结构预核对；待补权威文本页码/段落后再转 verified。"
+        "notes": "P3-B12: 证据条目已 confirmed，已自动同步为 verified；后续补充权威文本页码后做二次复核。"
       }
     ],
     "bazhai_rules": [

@@ -7,9 +7,9 @@
 - 规则矩阵文件：`/Users/apple/dev/CyberYJ/data/review/rule_review_matrix.json`
 - 进度检查脚本：`/Users/apple/dev/CyberYJ/scripts/check_rule_review_progress.py`
 - 当前统计：`35` 条待核对（24 山向 + 8 八宅 + 3 飞星）
-- 已完成状态分流：`24`（blocked）
+- 已完成状态分流：`35`（blocked）
 - 已核对通过：`0`（verified）
-- 当前状态：`blocked=24`，`pending=11`，`verified=0`
+- 当前状态：`blocked=35`，`pending=0`，`verified=0`
 
 ## 结构预核对结果（2026-02-12）
 
@@ -70,6 +70,27 @@
 | 2026-02-12 | luopan_24_mountains | 戌 | `luopan.json` 现值 | 待补可复核页码/段落 | 保留现值，等待证据补全 | blocked | `qingnang_aoyu`（书目级） |
 | 2026-02-12 | luopan_24_mountains | 乾 | `luopan.json` 现值 | 待补可复核页码/段落 | 保留现值，等待证据补全 | blocked | `qingnang_aoyu`（书目级） |
 | 2026-02-12 | luopan_24_mountains | 亥 | `luopan.json` 现值 | 待补可复核页码/段落 | 保留现值，等待证据补全 | blocked | `qingnang_aoyu`（书目级） |
+
+## P3-B4 记录（2026-02-12）
+
+| 日期 | 规则组 | 规则 ID | 当前值 | 权威口径 | 处理结论 | 状态 | 证据来源 |
+|---|---|---|---|---|---|---|---|
+| 2026-02-12 | bazhai_rules | 乾宅 | `ba_zhai.json` 现值 | 待补可复核页码/段落 | 保留现值，等待证据补全 | blocked | `cinii_bazhai_mingjing`（书目级） |
+| 2026-02-12 | bazhai_rules | 兑宅 | `ba_zhai.json` 现值 | 待补可复核页码/段落 | 保留现值，等待证据补全 | blocked | `cinii_bazhai_mingjing`（书目级） |
+| 2026-02-12 | bazhai_rules | 离宅 | `ba_zhai.json` 现值 | 待补可复核页码/段落 | 保留现值，等待证据补全 | blocked | `cinii_bazhai_mingjing`（书目级） |
+| 2026-02-12 | bazhai_rules | 震宅 | `ba_zhai.json` 现值 | 待补可复核页码/段落 | 保留现值，等待证据补全 | blocked | `cinii_bazhai_mingjing`（书目级） |
+| 2026-02-12 | bazhai_rules | 巽宅 | `ba_zhai.json` 现值 | 待补可复核页码/段落 | 保留现值，等待证据补全 | blocked | `cinii_bazhai_mingjing`（书目级） |
+| 2026-02-12 | bazhai_rules | 坎宅 | `ba_zhai.json` 现值 | 待补可复核页码/段落 | 保留现值，等待证据补全 | blocked | `cinii_bazhai_mingjing`（书目级） |
+| 2026-02-12 | bazhai_rules | 艮宅 | `ba_zhai.json` 现值 | 待补可复核页码/段落 | 保留现值，等待证据补全 | blocked | `cinii_bazhai_mingjing`（书目级） |
+| 2026-02-12 | bazhai_rules | 坤宅 | `ba_zhai.json` 现值 | 待补可复核页码/段落 | 保留现值，等待证据补全 | blocked | `cinii_bazhai_mingjing`（书目级） |
+
+## P3-B5 记录（2026-02-12）
+
+| 日期 | 规则组 | 规则 ID | 当前值 | 权威口径 | 处理结论 | 状态 | 证据来源 |
+|---|---|---|---|---|---|---|---|
+| 2026-02-12 | flying_star_rules | periods_table | `flying_stars_periods.json` 现值 | 待补可复核页码/段落 | 保留现值，等待证据补全 | blocked | `cinii_dili_bianzheng_shu`（书目级） |
+| 2026-02-12 | flying_star_rules | house_rules_24x9 | `flying_stars_house.json` 现值 | 待补可复核页码/段落 | 保留现值，等待证据补全 | blocked | `cinii_dili_bianzheng_shu`（书目级） |
+| 2026-02-12 | flying_star_rules | scoring_thresholds | `flying_stars_scoring.json` 现值 | 待补可复核页码/段落 | 保留现值，等待证据补全 | blocked | `cinii_dili_bianzheng_shu`（书目级） |
 
 ## 操作流程
 

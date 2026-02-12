@@ -75,3 +75,17 @@ P3 核对记录：`docs/m4-p3-rule-review-record.md`
 - 动作：状态从 `pending` 更新为 `blocked`
 - 口径：已通过结构预核对，但缺“可复核的权威文本页码/段落”证据，不提前标记 `verified`
 - 校验结果：`total=35`，`blocked=24`，`pending=11`，`verified=0`
+
+### P3-B4 状态分流（已完成）
+
+- 范围：`bazhai_rules` 全部 8 条（乾宅/兑宅/离宅/震宅/巽宅/坎宅/艮宅/坤宅）
+- 动作：状态从 `pending` 更新为 `blocked`
+- 口径：已有权威书目索引，但缺“可复核的权威文本页码/段落”证据，不提前标记 `verified`
+- 校验结果：`total=35`，`blocked=32`，`pending=3`，`verified=0`
+
+### P3-B5 状态分流（已完成）
+
+- 范围：`flying_star_rules` 全部 3 条（`periods_table` / `house_rules_24x9` / `scoring_thresholds`）
+- 动作：状态从 `pending` 更新为 `blocked`
+- 口径：已通过结构预核对，但缺“可复核的权威文本页码/段落”证据，不提前标记 `verified`
+- 校验结果：`total=35`，`blocked=35`，`pending=0`，`verified=0`

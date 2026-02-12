@@ -155,71 +155,71 @@
     "bazhai_rules": [
       {
         "id": "乾宅",
-        "status": "pending",
+        "status": "blocked",
         "source_target": "cinii_bazhai_mingjing",
-        "notes": ""
+        "notes": "P3-B4: 已有书目索引，待补可复核权威文本页码/段落后再转 verified。"
       },
       {
         "id": "兑宅",
-        "status": "pending",
+        "status": "blocked",
         "source_target": "cinii_bazhai_mingjing",
-        "notes": ""
+        "notes": "P3-B4: 已有书目索引，待补可复核权威文本页码/段落后再转 verified。"
       },
       {
         "id": "离宅",
-        "status": "pending",
+        "status": "blocked",
         "source_target": "cinii_bazhai_mingjing",
-        "notes": ""
+        "notes": "P3-B4: 已有书目索引，待补可复核权威文本页码/段落后再转 verified。"
       },
       {
         "id": "震宅",
-        "status": "pending",
+        "status": "blocked",
         "source_target": "cinii_bazhai_mingjing",
-        "notes": ""
+        "notes": "P3-B4: 已有书目索引，待补可复核权威文本页码/段落后再转 verified。"
       },
       {
         "id": "巽宅",
-        "status": "pending",
+        "status": "blocked",
         "source_target": "cinii_bazhai_mingjing",
-        "notes": ""
+        "notes": "P3-B4: 已有书目索引，待补可复核权威文本页码/段落后再转 verified。"
       },
       {
         "id": "坎宅",
-        "status": "pending",
+        "status": "blocked",
         "source_target": "cinii_bazhai_mingjing",
-        "notes": ""
+        "notes": "P3-B4: 已有书目索引，待补可复核权威文本页码/段落后再转 verified。"
       },
       {
         "id": "艮宅",
-        "status": "pending",
+        "status": "blocked",
         "source_target": "cinii_bazhai_mingjing",
-        "notes": ""
+        "notes": "P3-B4: 已有书目索引，待补可复核权威文本页码/段落后再转 verified。"
       },
       {
         "id": "坤宅",
-        "status": "pending",
+        "status": "blocked",
         "source_target": "cinii_bazhai_mingjing",
-        "notes": ""
+        "notes": "P3-B4: 已有书目索引，待补可复核权威文本页码/段落后再转 verified。"
       }
     ],
     "flying_star_rules": [
       {
         "id": "periods_table",
-        "status": "pending",
+        "status": "blocked",
         "source_target": "cinii_dili_bianzheng_shu",
-        "notes": ""
+        "notes": "P3-B5: 已完成结构预核对，待补权威文本证据与口径页码后再转 verified。"
       },
       {
         "id": "house_rules_24x9",
-        "status": "pending",
+        "status": "blocked",
         "source_target": "cinii_dili_bianzheng_shu",
-        "notes": ""
+        "notes": "P3-B5: 已完成结构预核对，待补权威文本证据与口径页码后再转 verified。"
       },
       {
         "id": "scoring_thresholds",
-        "status": "pending",
+        "status": "blocked",
         "source_target": "cinii_dili_bianzheng_shu",
-        "notes": ""
+        "notes": "P3-B5: 已完成结构预核对，待补权威文本证据与口径页码后再转 verified。"
       }
     ]
   }

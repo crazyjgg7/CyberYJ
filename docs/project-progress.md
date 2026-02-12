@@ -30,6 +30,14 @@
 - 全模块字段级映射覆盖率目标（超出当前核心字段集）未完成
 - 24 山向、八宅、飞星规则的权威版本逐条校核未完成
 
+## M4 阶段进展（P3 已启动）
+
+- 已新增规则核对矩阵：`data/review/rule_review_matrix.json`
+- 已新增进度校验模块：`src/cyberYJ/utils/rule_review_progress.py`
+- 已新增进度脚本：`scripts/check_rule_review_progress.py`
+- 已新增核对记录模板：`docs/m4-p3-rule-review-record.md`
+- 当前基线：35 条待核对，完成率 0%
+
 ## M4 阶段进展（P1 已完成）
 
 - 覆盖率目标已确定：80%

@@ -1,0 +1,51 @@
+{
+  "version": "1.0.0",
+  "status_enum": [
+    "pending",
+    "verified",
+    "blocked"
+  ],
+  "groups": {
+    "luopan_24_mountains": [
+      {"id": "壬", "status": "pending", "source_target": "qingnang_aoyu", "notes": ""},
+      {"id": "子", "status": "pending", "source_target": "qingnang_aoyu", "notes": ""},
+      {"id": "癸", "status": "pending", "source_target": "qingnang_aoyu", "notes": ""},
+      {"id": "丑", "status": "pending", "source_target": "qingnang_aoyu", "notes": ""},
+      {"id": "艮", "status": "pending", "source_target": "qingnang_aoyu", "notes": ""},
+      {"id": "寅", "status": "pending", "source_target": "qingnang_aoyu", "notes": ""},
+      {"id": "甲", "status": "pending", "source_target": "qingnang_aoyu", "notes": ""},
+      {"id": "卯", "status": "pending", "source_target": "qingnang_aoyu", "notes": ""},
+      {"id": "乙", "status": "pending", "source_target": "qingnang_aoyu", "notes": ""},
+      {"id": "辰", "status": "pending", "source_target": "qingnang_aoyu", "notes": ""},
+      {"id": "巽", "status": "pending", "source_target": "qingnang_aoyu", "notes": ""},
+      {"id": "巳", "status": "pending", "source_target": "qingnang_aoyu", "notes": ""},
+      {"id": "丙", "status": "pending", "source_target": "qingnang_aoyu", "notes": ""},
+      {"id": "午", "status": "pending", "source_target": "qingnang_aoyu", "notes": ""},
+      {"id": "丁", "status": "pending", "source_target": "qingnang_aoyu", "notes": ""},
+      {"id": "未", "status": "pending", "source_target": "qingnang_aoyu", "notes": ""},
+      {"id": "坤", "status": "pending", "source_target": "qingnang_aoyu", "notes": ""},
+      {"id": "申", "status": "pending", "source_target": "qingnang_aoyu", "notes": ""},
+      {"id": "庚", "status": "pending", "source_target": "qingnang_aoyu", "notes": ""},
+      {"id": "酉", "status": "pending", "source_target": "qingnang_aoyu", "notes": ""},
+      {"id": "辛", "status": "pending", "source_target": "qingnang_aoyu", "notes": ""},
+      {"id": "戌", "status": "pending", "source_target": "qingnang_aoyu", "notes": ""},
+      {"id": "乾", "status": "pending", "source_target": "qingnang_aoyu", "notes": ""},
+      {"id": "亥", "status": "pending", "source_target": "qingnang_aoyu", "notes": ""}
+    ],
+    "bazhai_rules": [
+      {"id": "乾宅", "status": "pending", "source_target": "cinii_bazhai_mingjing", "notes": ""},
+      {"id": "兑宅", "status": "pending", "source_target": "cinii_bazhai_mingjing", "notes": ""},
+      {"id": "离宅", "status": "pending", "source_target": "cinii_bazhai_mingjing", "notes": ""},
+      {"id": "震宅", "status": "pending", "source_target": "cinii_bazhai_mingjing", "notes": ""},
+      {"id": "巽宅", "status": "pending", "source_target": "cinii_bazhai_mingjing", "notes": ""},
+      {"id": "坎宅", "status": "pending", "source_target": "cinii_bazhai_mingjing", "notes": ""},
+      {"id": "艮宅", "status": "pending", "source_target": "cinii_bazhai_mingjing", "notes": ""},
+      {"id": "坤宅", "status": "pending", "source_target": "cinii_bazhai_mingjing", "notes": ""}
+    ],
+    "flying_star_rules": [
+      {"id": "periods_table", "status": "pending", "source_target": "cinii_dili_bianzheng_shu", "notes": ""},
+      {"id": "house_rules_24x9", "status": "pending", "source_target": "cinii_dili_bianzheng_shu", "notes": ""},
+      {"id": "scoring_thresholds", "status": "pending", "source_target": "cinii_dili_bianzheng_shu", "notes": ""}
+    ]
+  }
+}

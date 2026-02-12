@@ -42,6 +42,7 @@
 
 - P1（覆盖率基线与校验）：已完成（见 `docs/m4-acceptance-report.md`）
 - P2（版本与合规材料完备）：进行中（已落地来源合规、全量来源扩展校验、source_ref 一致性、证据映射校验）
-- P3（规则逐条校核与规模化替换）：未完成
+- P3（规则逐条校核与规模化替换）：已启动（已落地规则核对矩阵与进度脚本）
 
 P2 阶段报告：`docs/m4-p2-source-compliance-report.md`
+P3 核对记录：`docs/m4-p3-rule-review-record.md`

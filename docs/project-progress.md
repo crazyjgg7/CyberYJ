@@ -49,8 +49,9 @@
 - P3-B8（飞星 3 条）已通过证据同步转 `verified`：`blocked=32`，`pending=0`，`verified=3`
 - P3-B9（八宅 8 条）已通过证据同步转 `verified`：`blocked=24`，`pending=0`，`verified=11`
 - P3-B10（二十四山首批 8 条）已通过证据同步转 `verified`：`blocked=16`，`pending=0`，`verified=19`
+- P3-B11（二十四山第二批 8 条）已通过证据同步转 `verified`：`blocked=8`，`pending=0`，`verified=27`
 - 当前证据门禁：PASS（35/35 规则已建立证据记录，source_target 对齐）
-- 当前状态同步（dry-run）：PASS（`confirmed_records=19`，`would_update_count=0`，已与 matrix 对齐）
+- 当前状态同步（dry-run）：PASS（`confirmed_records=27`，`would_update_count=0`，已与 matrix 对齐）
 
 ## M4 阶段进展（P1 已完成）
 

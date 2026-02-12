@@ -163,6 +163,24 @@ compatibility = calculator.check_house_compatibility(house_gua, ming_gua)
 print(f"匹配度: {compatibility['compatible']}")
 ```
 
+### 示例 5: Wechat 小程序 HTTP API
+
+```bash
+# 安装 HTTP API 可选依赖
+pip install -e ".[api]"
+
+# 启动 HTTP 适配服务
+python run_http_api.py
+```
+
+```bash
+curl -X POST "http://127.0.0.1:8080/v1/divination/interpret" \
+  -H "Content-Type: application/json" \
+  -d '{"coins":[6,7,8,9,7,7],"question":"事业发展"}'
+```
+
+接口文档见 `docs/api/wechat-divination-http-api.md`。
+
 更多示例请查看 `examples/` 目录。
 
 ## 运行测试

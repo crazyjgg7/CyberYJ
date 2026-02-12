@@ -112,6 +112,23 @@
 - `trace`：推导路径摘要
 - `sources`：来源列表
 
+**5.3 Wechat 小程序 HTTP 适配接口（MVP）**
+输入字段：
+- `coins`：长度为 6 的整数数组（仅允许 `6/7/8/9`，顺序 `初爻 -> 上爻`）
+- `question`：可选，问题原文
+
+输出字段：
+- `hexagram`：本卦（含 `code/name/symbol/judgment/image/upper_trigram/lower_trigram`）
+- `changing_hexagram`：变卦（无动爻时返回 `null`）
+- `analysis`：综合解读（`overall/active_lines/five_elements/solar_term/advice`）
+- `do_dont`：宜忌建议
+- `trace`：推导路径
+- `sources`：来源列表
+
+错误规范：
+- 输入非法返回 `400`：`{"error":{"code":"INVALID_INPUT","message":"..."}}`
+- 服务异常返回 `500`：`{"error":{"code":"INTERNAL_ERROR","message":"..."}}`
+
 **6. 输出规范**
 - 默认输出 JSON：`{ "tool": "...", "data": { ... } }`
 - 结论层简明、解释层可追溯

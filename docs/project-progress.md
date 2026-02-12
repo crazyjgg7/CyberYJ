@@ -18,6 +18,7 @@
   - `罗盘：` -> `luopan_orientation`
 - `keyword_dispatch` 可用（文本自动路由）
 - 输出协议统一：`tool + data + meta`
+- Wechat 小程序 HTTP 适配接口已落地：`POST /v1/divination/interpret`
 - 全场景数据已补齐（命运/事业/感情/财运/健康/学业/家庭/出行/诉讼）
 - 玄空飞星 V2（宅盘 + 流年叠加 + 当前吉凶位）已上线
 - 权威来源索引与映射机制已接入（书目级 + 字段级首批）

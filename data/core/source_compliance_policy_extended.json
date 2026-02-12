@@ -1,0 +1,16 @@
+{
+  "version": "1.0.0",
+  "required_source_ids": [],
+  "required_fields": [
+    "title",
+    "edition",
+    "section",
+    "url_or_archive",
+    "license",
+    "notes"
+  ],
+  "disallow_values": [
+    ""
+  ],
+  "require_http_url": true
+}

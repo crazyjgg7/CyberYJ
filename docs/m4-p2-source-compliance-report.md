@@ -15,7 +15,8 @@
 - 必选来源存在性：`5/5`
 - 缺失来源：`0`
 - 非法字段：`0`
-- `source_ref` 扫描文件：`24`
+- 全量来源合规（扩展策略）：`13/13`（缺失 0，非法字段 0）
+- `source_ref` 扫描文件：`26`
 - `source_ref` 总计：`884`
 - 未知来源：`0`
 - 非法 source_ref 条目：`0`
@@ -27,6 +28,7 @@
 
 ```bash
 python3 /Users/apple/dev/CyberYJ/scripts/check_source_compliance.py
+python3 /Users/apple/dev/CyberYJ/scripts/check_source_compliance_extended.py
 python3 /Users/apple/dev/CyberYJ/scripts/check_source_ref_integrity.py
 python3 /Users/apple/dev/CyberYJ/scripts/check_source_evidence.py
 ```
@@ -34,6 +36,6 @@ python3 /Users/apple/dev/CyberYJ/scripts/check_source_evidence.py
 ## 后续工作
 
 1. 将 `source_ref` 高频命中字段与来源证据做一对一映射检查（字段级）✅
-2. 扩展到非必选来源并补全版本细节字段（edition/section 精细化）。
+2. 扩展到非必选来源并补全版本细节字段（edition/section 精细化）✅
 3. 建立“来源变更审计”记录模板（增量差异 + 责任人 + 时间戳）✅  
    模板文件：`/Users/apple/dev/CyberYJ/docs/source-change-audit-template.md`

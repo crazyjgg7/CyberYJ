@@ -3,6 +3,7 @@ from cyberYJ.utils.source_compliance import evaluate_source_compliance
 
 SOURCES_PATH = "/Users/apple/dev/CyberYJ/data/core/sources.json"
 POLICY_PATH = "/Users/apple/dev/CyberYJ/data/core/source_compliance_policy.json"
+EXTENDED_POLICY_PATH = "/Users/apple/dev/CyberYJ/data/core/source_compliance_policy_extended.json"
 
 
 def test_source_compliance_report_shape():
@@ -19,3 +20,11 @@ def test_source_compliance_passed():
     assert report["passed"] is True
     assert report["missing_required_ids"] == []
     assert report["invalid_fields"] == []
+
+
+def test_source_compliance_extended_passed():
+    report = evaluate_source_compliance(SOURCES_PATH, EXTENDED_POLICY_PATH)
+    assert report["passed"] is True
+    assert report["missing_required_ids"] == []
+    assert report["invalid_fields"] == []
+    assert len(report["required_source_ids"]) >= 10

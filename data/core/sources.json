@@ -2,11 +2,11 @@
   {
     "source_id": "convention",
     "title": "行业惯例汇编",
-    "edition": "TBD",
-    "section": "TBD",
-    "url_or_archive": "TBD",
-    "license": "TBD",
-    "notes": "用于暂无法唯一对应权威出处的规则，后续应尽量替换为明确出处。"
+    "edition": "CyberYJ 内部归纳规则（v1）",
+    "section": "M4 过渡层（待权威替换）",
+    "url_or_archive": "https://github.com/crazyjgg7/CyberYJ",
+    "license": "Project-internal summary",
+    "notes": "用于暂无法唯一对应权威出处的规则，需在 M4/P3 持续替换为明确出处。"
   },
   {
     "source_id": "ctext_yijing",

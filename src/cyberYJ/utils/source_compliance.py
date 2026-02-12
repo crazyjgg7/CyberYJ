@@ -35,11 +35,14 @@ def evaluate_source_compliance(sources_path: str, policy_path: str) -> Dict[str,
         if isinstance(row, dict) and isinstance(row.get("source_id"), str):
             index[row["source_id"]] = row
 
+    # required_source_ids 为空时，表示对索引中的全部来源执行校验
+    ids_to_check = required_ids if required_ids else sorted(index.keys())
+
     present_required_ids: List[str] = []
     missing_required_ids: List[str] = []
     invalid_fields: List[str] = []
 
-    for sid in required_ids:
+    for sid in ids_to_check:
         if sid not in index:
             missing_required_ids.append(sid)
             continue
@@ -63,7 +66,7 @@ def evaluate_source_compliance(sources_path: str, policy_path: str) -> Dict[str,
                 invalid_fields.append(f"{sid}.{field}: non_string")
 
     return {
-        "required_source_ids": required_ids,
+        "required_source_ids": ids_to_check,
         "present_required_ids": present_required_ids,
         "missing_required_ids": missing_required_ids,
         "invalid_fields": invalid_fields,

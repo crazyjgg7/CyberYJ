@@ -41,7 +41,7 @@
 ## 当前阶段状态
 
 - P1（覆盖率基线与校验）：已完成（见 `docs/m4-acceptance-report.md`）
-- P2（版本与合规材料完备）：进行中（已落地来源合规、source_ref 一致性、证据映射校验）
+- P2（版本与合规材料完备）：进行中（已落地来源合规、全量来源扩展校验、source_ref 一致性、证据映射校验）
 - P3（规则逐条校核与规模化替换）：未完成
 
 P2 阶段报告：`docs/m4-p2-source-compliance-report.md`

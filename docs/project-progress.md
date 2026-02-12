@@ -42,12 +42,14 @@
 ## M4 阶段进展（P2 进行中）
 
 - 已新增来源合规策略：`data/core/source_compliance_policy.json`
+- 已新增来源合规扩展策略：`data/core/source_compliance_policy_extended.json`
 - 已新增来源合规校验模块：`src/cyberYJ/utils/source_compliance.py`
 - 已新增来源合规脚本：`scripts/check_source_compliance.py`
+- 已新增来源合规扩展脚本：`scripts/check_source_compliance_extended.py`
 - 当前核心来源合规检查：PASS（5/5 必选来源，缺失与非法字段为 0）
 - 已新增 `source_ref` 一致性校验模块：`src/cyberYJ/utils/source_ref_integrity.py`
 - 已新增 `source_ref` 一致性脚本：`scripts/check_source_ref_integrity.py`
-- 当前 `source_ref` 一致性检查：PASS（24 个 JSON 文件，884 处 source_ref，未知来源 0）
+- 当前 `source_ref` 一致性检查：PASS（26 个 JSON 文件，884 处 source_ref，未知来源 0）
 - 已新增来源变更审计模板：`docs/source-change-audit-template.md`
 - 已新增证据映射校验模块：`src/cyberYJ/utils/source_evidence_check.py`
 - 已新增证据映射校验脚本：`scripts/check_source_evidence.py`

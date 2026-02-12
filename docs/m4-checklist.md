@@ -63,6 +63,12 @@
 - 动作：补齐 `locator(页码)` + `second_reviewer` + `second_reviewed_at`
 - 结果：二次复核准备度从 `0/35` 提升到 `3/35`
 
+### P4-B3 二次复核第二批（已完成）
+
+- 范围：`bazhai_rules` 八条（乾宅/兑宅/离宅/震宅/巽宅/坎宅/艮宅/坤宅）
+- 动作：补齐 `locator(页码)` + `second_reviewer` + `second_reviewed_at`
+- 结果：二次复核准备度从 `3/35` 提升到 `11/35`
+
 P2 阶段报告：`docs/m4-p2-source-compliance-report.md`
 P3 核对记录：`docs/m4-p3-rule-review-record.md`
 

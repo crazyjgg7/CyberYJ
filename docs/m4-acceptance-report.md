@@ -52,7 +52,7 @@ python3 /Users/apple/dev/CyberYJ/scripts/sync_rule_review_matrix.py
 
 - M4 已完成 P1-P3 的阶段目标。
 - M4 仍未完成，主要缺口是“权威文本/许可摘要规模化本地落地”与“页码/段落级证据二次复核”。
-- P4（二次复核门禁）已启动：`confirmed=35`，`secondary_ready=3`。
+- P4（二次复核门禁）已启动：`confirmed=35`，`secondary_ready=11`。
 
 ## M4 剩余可执行项
 

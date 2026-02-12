@@ -24,6 +24,7 @@
 - `source_ref` 一致性：`30` 个 JSON，`1031` 处引用，未知来源 `0`
 - 高频字段证据映射：`21/21` PASS
 - 映射文本类型：`summary=157`，`citation_only=0`
+- 高频字段 locator 覆盖：`21/21` PASS（当前 summary locator 覆盖 `21/157`）
 - 结论：`PASS`
 
 ### P3 规则核对闭环（首轮）
@@ -43,6 +44,7 @@ python3 /Users/apple/dev/CyberYJ/scripts/check_source_compliance.py
 python3 /Users/apple/dev/CyberYJ/scripts/check_source_compliance_extended.py
 python3 /Users/apple/dev/CyberYJ/scripts/check_source_ref_integrity.py
 python3 /Users/apple/dev/CyberYJ/scripts/check_source_evidence.py
+python3 /Users/apple/dev/CyberYJ/scripts/check_authoritative_locator_quality.py
 python3 /Users/apple/dev/CyberYJ/scripts/check_rule_review_precheck.py
 python3 /Users/apple/dev/CyberYJ/scripts/check_rule_review_evidence.py
 python3 /Users/apple/dev/CyberYJ/scripts/check_rule_review_progress.py

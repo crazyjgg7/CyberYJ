@@ -22,6 +22,8 @@
 - 非法 source_ref 条目：`0`
 - 高频字段证据映射：`21/21`
 - 映射文本类型：`summary=157`，`citation_only=0`
+- 高频字段 locator 覆盖：`21/21`
+- summary locator 覆盖：`21/157`
 - 证据映射失败字段：`0`
 - 结论：`PASS`
 
@@ -32,6 +34,7 @@ python3 /Users/apple/dev/CyberYJ/scripts/check_source_compliance.py
 python3 /Users/apple/dev/CyberYJ/scripts/check_source_compliance_extended.py
 python3 /Users/apple/dev/CyberYJ/scripts/check_source_ref_integrity.py
 python3 /Users/apple/dev/CyberYJ/scripts/check_source_evidence.py
+python3 /Users/apple/dev/CyberYJ/scripts/check_authoritative_locator_quality.py
 ```
 
 ## 后续工作

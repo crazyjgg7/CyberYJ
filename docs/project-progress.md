@@ -28,9 +28,9 @@
 
 - 权威文本/许可摘要尚未在 `data` 目录完成规模化落地
 - 全模块字段级映射覆盖率目标（超出当前核心字段集）未完成
-- 24 山向、八宅、飞星规则的权威版本逐条校核未完成
+- 24 山向、八宅、飞星规则已完成首轮逐条校核，但仍缺“可复核权威页码/段落”证据的二次复核
 
-## M4 阶段进展（P3 已启动）
+## M4 阶段进展（P3 已完成：首轮）
 
 - 已新增规则核对矩阵：`data/review/rule_review_matrix.json`
 - 已新增进度校验模块：`src/cyberYJ/utils/rule_review_progress.py`
@@ -53,6 +53,7 @@
 - P3-B12（二十四山第三批 8 条）已通过证据同步转 `verified`：`blocked=0`，`pending=0`，`verified=35`
 - 当前证据门禁：PASS（35/35 规则已建立证据记录，source_target 对齐）
 - 当前状态同步（dry-run）：PASS（`confirmed_records=35`，`would_update_count=0`，已与 matrix 对齐）
+- 说明：P3 当前为“书目级索引 + 合法摘要”口径的首轮完成态；权威页码/段落级证据补全后需做二次复核
 
 ## M4 阶段进展（P1 已完成）
 

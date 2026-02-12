@@ -11,6 +11,12 @@
 - 已核对通过：`35`（verified）
 - 当前状态：`blocked=0`，`pending=0`，`verified=35`
 
+## 完成说明
+
+- P3 已完成首轮规则核对闭环：结构预核对 + 证据门禁 + 自动状态同步。
+- 当前 `verified=35` 代表“书目级索引 + 合法摘要 + 结构一致性”口径下可追踪通过。
+- 后续仍需在 M4 中补齐“权威页码/段落级”证据并执行二次复核。
+
 ## 结构预核对结果（2026-02-12）
 
 - 执行命令：`python3 /Users/apple/dev/CyberYJ/scripts/check_rule_review_precheck.py`

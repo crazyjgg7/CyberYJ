@@ -7,8 +7,9 @@
 - 规则矩阵文件：`/Users/apple/dev/CyberYJ/data/review/rule_review_matrix.json`
 - 进度检查脚本：`/Users/apple/dev/CyberYJ/scripts/check_rule_review_progress.py`
 - 当前统计：`35` 条待核对（24 山向 + 8 八宅 + 3 飞星）
-- 已核对：`0`
-- 完成率：`0%`
+- 已完成状态分流：`8`（blocked）
+- 已核对通过：`0`（verified）
+- 当前状态：`blocked=8`，`pending=27`，`verified=0`
 
 ## 结构预核对结果（2026-02-12）
 
@@ -30,6 +31,19 @@
 | 日期 | 规则组 | 规则 ID | 当前值 | 权威口径 | 处理结论 | 状态 | 证据来源 |
 |---|---|---|---|---|---|---|---|
 | YYYY-MM-DD | luopan_24_mountains | 壬 | ... | ... | 保留/替换/待定 | verified/blocked | source_id + section |
+
+## P3-B1 记录（2026-02-12）
+
+| 日期 | 规则组 | 规则 ID | 当前值 | 权威口径 | 处理结论 | 状态 | 证据来源 |
+|---|---|---|---|---|---|---|---|
+| 2026-02-12 | luopan_24_mountains | 壬 | `luopan.json` 现值 | 待补可复核页码/段落 | 保留现值，等待证据补全 | blocked | `qingnang_aoyu`（书目级） |
+| 2026-02-12 | luopan_24_mountains | 子 | `luopan.json` 现值 | 待补可复核页码/段落 | 保留现值，等待证据补全 | blocked | `qingnang_aoyu`（书目级） |
+| 2026-02-12 | luopan_24_mountains | 癸 | `luopan.json` 现值 | 待补可复核页码/段落 | 保留现值，等待证据补全 | blocked | `qingnang_aoyu`（书目级） |
+| 2026-02-12 | luopan_24_mountains | 丑 | `luopan.json` 现值 | 待补可复核页码/段落 | 保留现值，等待证据补全 | blocked | `qingnang_aoyu`（书目级） |
+| 2026-02-12 | luopan_24_mountains | 艮 | `luopan.json` 现值 | 待补可复核页码/段落 | 保留现值，等待证据补全 | blocked | `qingnang_aoyu`（书目级） |
+| 2026-02-12 | luopan_24_mountains | 寅 | `luopan.json` 现值 | 待补可复核页码/段落 | 保留现值，等待证据补全 | blocked | `qingnang_aoyu`（书目级） |
+| 2026-02-12 | luopan_24_mountains | 甲 | `luopan.json` 现值 | 待补可复核页码/段落 | 保留现值，等待证据补全 | blocked | `qingnang_aoyu`（书目级） |
+| 2026-02-12 | luopan_24_mountains | 卯 | `luopan.json` 现值 | 待补可复核页码/段落 | 保留现值，等待证据补全 | blocked | `qingnang_aoyu`（书目级） |
 
 ## 操作流程
 

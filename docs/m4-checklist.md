@@ -54,3 +54,10 @@ P3 核对记录：`docs/m4-p3-rule-review-record.md`
   - luopan：矩阵 24 / 数据 24（无缺失、无冗余）
   - bazhai：矩阵 8 / 数据 8（无缺失、无冗余）
   - flying_star：`period_count=9`，`house_pair_count=216`，`scoring_star_count=9`
+
+### P3-B1 状态分流（已完成）
+
+- 范围：`luopan_24_mountains` 前 8 条（壬/子/癸/丑/艮/寅/甲/卯）
+- 动作：状态从 `pending` 更新为 `blocked`
+- 口径：已通过结构预核对，但缺“可复核的权威文本页码/段落”证据，不提前标记 `verified`
+- 校验结果：`total=35`，`blocked=8`，`pending=27`，`verified=0`

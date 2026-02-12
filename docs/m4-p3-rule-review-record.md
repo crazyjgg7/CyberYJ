@@ -122,3 +122,13 @@ python3 /Users/apple/dev/CyberYJ/scripts/check_rule_review_evidence.py
   - `invalid_blocked_records=0`
   - `invalid_pending_records=0`
   - `passed=true`
+
+## 状态同步结果（2026-02-12）
+
+- 同步脚本：`/Users/apple/dev/CyberYJ/scripts/sync_rule_review_matrix.py`
+- 同步口径：`evidence_status=confirmed` 且字段完整 -> 自动将 `blocked` 更新为 `verified`
+- dry-run 结果：
+  - `confirmed_records=0`
+  - `would_update_count=0`
+  - `updated_count=0`
+  - `passed=true`

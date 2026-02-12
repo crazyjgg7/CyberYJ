@@ -99,3 +99,13 @@ P3 核对记录：`docs/m4-p3-rule-review-record.md`
   - `verified` 必须 `evidence_status=confirmed` 且具备 `source_id/locator/summary/reviewed_by/reviewed_at`
   - `blocked` 必须具备阻塞证据状态（`missing_text/conflict/unavailable`）与 `notes`
 - 校验结果：PASS（`total_rules=35`，`total_records=35`，无缺失、无冗余、无 source_target 不一致）
+
+### P3-B7 状态同步（已完成）
+
+- 新增同步模块：`/Users/apple/dev/CyberYJ/src/cyberYJ/utils/rule_review_status_sync.py`
+- 新增同步脚本：`/Users/apple/dev/CyberYJ/scripts/sync_rule_review_matrix.py`
+- 同步规则：仅当证据条目 `evidence_status=confirmed` 且字段完整时，自动把 `matrix.status` 从 `blocked` 推升为 `verified`
+- 运行方式：
+  - 预览：`python3 /Users/apple/dev/CyberYJ/scripts/sync_rule_review_matrix.py`
+  - 应用：`python3 /Users/apple/dev/CyberYJ/scripts/sync_rule_review_matrix.py --apply`
+- 当前 dry-run：PASS（`confirmed_records=0`，`would_update_count=0`）

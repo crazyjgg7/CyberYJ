@@ -61,3 +61,17 @@ P3 核对记录：`docs/m4-p3-rule-review-record.md`
 - 动作：状态从 `pending` 更新为 `blocked`
 - 口径：已通过结构预核对，但缺“可复核的权威文本页码/段落”证据，不提前标记 `verified`
 - 校验结果：`total=35`，`blocked=8`，`pending=27`，`verified=0`
+
+### P3-B2 状态分流（已完成）
+
+- 范围：`luopan_24_mountains` 第 9-16 条（乙/辰/巽/巳/丙/午/丁/未）
+- 动作：状态从 `pending` 更新为 `blocked`
+- 口径：已通过结构预核对，但缺“可复核的权威文本页码/段落”证据，不提前标记 `verified`
+- 校验结果：`total=35`，`blocked=16`，`pending=19`，`verified=0`
+
+### P3-B3 状态分流（已完成）
+
+- 范围：`luopan_24_mountains` 第 17-24 条（坤/申/庚/酉/辛/戌/乾/亥）
+- 动作：状态从 `pending` 更新为 `blocked`
+- 口径：已通过结构预核对，但缺“可复核的权威文本页码/段落”证据，不提前标记 `verified`
+- 校验结果：`total=35`，`blocked=24`，`pending=11`，`verified=0`

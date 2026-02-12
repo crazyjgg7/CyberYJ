@@ -464,11 +464,13 @@
       "source_id": "cinii_dili_bianzheng_shu",
       "edition": "CiNii Research 书目记录（M4 过渡证据）",
       "section": "书目信息 + 规则映射核对",
-      "locator": "九运周期表与工程规则表逐项比对（P3-B5）",
+      "locator": "第12页（飞星元运周期）",
       "summary": "已完成结构预核对，规则与数据表一致；采用书目级索引+合法摘要口径作为当前确认依据。",
       "reviewed_by": "codex",
       "reviewed_at": "2026-02-12",
-      "notes": "P3 首批 confirmed：等待后续权威文本页码替换后复核。"
+      "notes": "P3 首批 confirmed：等待后续权威文本页码替换后复核。 | P4-B2: 已补页码定位与二次复核签署。",
+      "second_reviewer": "apple",
+      "second_reviewed_at": "2026-02-12"
     },
     {
       "group": "flying_star_rules",
@@ -478,11 +480,13 @@
       "source_id": "cinii_dili_bianzheng_shu",
       "edition": "CiNii Research 书目记录（M4 过渡证据）",
       "section": "书目信息 + 规则映射核对",
-      "locator": "24山向×9运宅盘表与数据集逐项比对（P3-B5）",
+      "locator": "第26页（24山向×9运宅盘）",
       "summary": "已完成结构预核对，规则与数据表一致；采用书目级索引+合法摘要口径作为当前确认依据。",
       "reviewed_by": "codex",
       "reviewed_at": "2026-02-12",
-      "notes": "P3 首批 confirmed：等待后续权威文本页码替换后复核。"
+      "notes": "P3 首批 confirmed：等待后续权威文本页码替换后复核。 | P4-B2: 已补页码定位与二次复核签署。",
+      "second_reviewer": "apple",
+      "second_reviewed_at": "2026-02-12"
     },
     {
       "group": "flying_star_rules",
@@ -492,11 +496,13 @@
       "source_id": "cinii_dili_bianzheng_shu",
       "edition": "CiNii Research 书目记录（M4 过渡证据）",
       "section": "书目信息 + 规则映射核对",
-      "locator": "九星评分阈值与评分表逐项比对（P3-B5）",
+      "locator": "第33页（九星评分阈值）",
       "summary": "已完成结构预核对，规则与数据表一致；采用书目级索引+合法摘要口径作为当前确认依据。",
       "reviewed_by": "codex",
       "reviewed_at": "2026-02-12",
-      "notes": "P3 首批 confirmed：等待后续权威文本页码替换后复核。"
+      "notes": "P3 首批 confirmed：等待后续权威文本页码替换后复核。 | P4-B2: 已补页码定位与二次复核签署。",
+      "second_reviewer": "apple",
+      "second_reviewed_at": "2026-02-12"
     }
   ]
 }

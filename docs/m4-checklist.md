@@ -54,8 +54,14 @@
 - 新增模板文档：`/Users/apple/dev/CyberYJ/docs/m4-secondary-evidence-template.md`
 - 当前结果：
   - `total_confirmed_records=35`
-  - `secondary_ready_records=0`
+  - `secondary_ready_records=3`
   - `ready_for_full_secondary_review=false`
+
+### P4-B2 二次复核首批（已完成）
+
+- 范围：`flying_star_rules` 三条（`periods_table` / `house_rules_24x9` / `scoring_thresholds`）
+- 动作：补齐 `locator(页码)` + `second_reviewer` + `second_reviewed_at`
+- 结果：二次复核准备度从 `0/35` 提升到 `3/35`
 
 P2 阶段报告：`docs/m4-p2-source-compliance-report.md`
 P3 核对记录：`docs/m4-p3-rule-review-record.md`

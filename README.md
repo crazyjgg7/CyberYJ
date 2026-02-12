@@ -169,6 +169,9 @@ print(f"匹配度: {compatibility['compatible']}")
 # 安装 HTTP API 可选依赖
 pip install -e ".[api]"
 
+# 双击脚本启动（推荐）
+/Users/apple/Desktop/start-cyberYJ-http-api.command
+
 # 启动 HTTP 适配服务
 python run_http_api.py
 ```

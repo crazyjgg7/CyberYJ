@@ -1,6 +1,6 @@
 # M4 执行清单（权威数据本地落地）
 
-更新时间：2026-02-11
+更新时间：2026-02-12
 
 ## 目标
 
@@ -42,7 +42,15 @@
 
 - P1（覆盖率基线与校验）：已完成（见 `docs/m4-acceptance-report.md`）
 - P2（版本与合规材料完备）：进行中（已落地来源合规、全量来源扩展校验、source_ref 一致性、证据映射校验）
-- P3（规则逐条校核与规模化替换）：已启动（已落地规则核对矩阵与进度脚本）
+- P3（规则逐条校核与规模化替换）：已启动（已落地规则核对矩阵、进度脚本、结构预核对脚本）
 
 P2 阶段报告：`docs/m4-p2-source-compliance-report.md`
 P3 核对记录：`docs/m4-p3-rule-review-record.md`
+
+### P3 结构预核对（已完成）
+
+- 命令：`python3 /Users/apple/dev/CyberYJ/scripts/check_rule_review_precheck.py`
+- 结果：PASS
+  - luopan：矩阵 24 / 数据 24（无缺失、无冗余）
+  - bazhai：矩阵 8 / 数据 8（无缺失、无冗余）
+  - flying_star：`period_count=9`，`house_pair_count=216`，`scoring_star_count=9`

@@ -10,6 +10,15 @@
 - 已核对：`0`
 - 完成率：`0%`
 
+## 结构预核对结果（2026-02-12）
+
+- 执行命令：`python3 /Users/apple/dev/CyberYJ/scripts/check_rule_review_precheck.py`
+- 结果：`passed = true`
+- 明细：
+  - `luopan`：矩阵 `24`，数据 `24`，`missing=0`，`extra=0`
+  - `bazhai`：矩阵 `8`，数据 `8`，`missing=0`，`extra=0`
+  - `flying_star`：`period_count=9`，`house_expected_pairs=216`，`house_pair_count=216`，`scoring_star_count=9`
+
 ## 核对口径
 
 1. `verified`：已根据权威版本核对并通过。

@@ -1,7 +1,7 @@
 # CyberYJ 项目进度（单一口径）
 
 **项目名称**: 玄学知识库 + MCP 服务  
-**更新时间**: 2026-02-11  
+**更新时间**: 2026-02-12  
 **版本**: v0.7
 
 ---
@@ -35,8 +35,11 @@
 - 已新增规则核对矩阵：`data/review/rule_review_matrix.json`
 - 已新增进度校验模块：`src/cyberYJ/utils/rule_review_progress.py`
 - 已新增进度脚本：`scripts/check_rule_review_progress.py`
+- 已新增结构预核对模块：`src/cyberYJ/utils/rule_review_precheck.py`
+- 已新增结构预核对脚本：`scripts/check_rule_review_precheck.py`
 - 已新增核对记录模板：`docs/m4-p3-rule-review-record.md`
 - 当前基线：35 条待核对，完成率 0%
+- 当前结构预核对：PASS（24 山向一致、8 宅卦一致、飞星 9 运 × 24 山向 = 216 条）
 
 ## M4 阶段进展（P1 已完成）
 

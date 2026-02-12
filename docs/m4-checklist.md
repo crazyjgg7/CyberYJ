@@ -89,3 +89,13 @@ P3 核对记录：`docs/m4-p3-rule-review-record.md`
 - 动作：状态从 `pending` 更新为 `blocked`
 - 口径：已通过结构预核对，但缺“可复核的权威文本页码/段落”证据，不提前标记 `verified`
 - 校验结果：`total=35`，`blocked=35`，`pending=0`，`verified=0`
+
+### P3-B6 证据门禁（已完成）
+
+- 新增证据台账：`/Users/apple/dev/CyberYJ/data/review/rule_review_evidence.json`
+- 新增校验模块：`/Users/apple/dev/CyberYJ/src/cyberYJ/utils/rule_review_evidence.py`
+- 新增校验脚本：`/Users/apple/dev/CyberYJ/scripts/check_rule_review_evidence.py`
+- 门禁规则：
+  - `verified` 必须 `evidence_status=confirmed` 且具备 `source_id/locator/summary/reviewed_by/reviewed_at`
+  - `blocked` 必须具备阻塞证据状态（`missing_text/conflict/unavailable`）与 `notes`
+- 校验结果：PASS（`total_rules=35`，`total_records=35`，无缺失、无冗余、无 source_target 不一致）

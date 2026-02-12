@@ -37,10 +37,14 @@
 - 已新增进度脚本：`scripts/check_rule_review_progress.py`
 - 已新增结构预核对模块：`src/cyberYJ/utils/rule_review_precheck.py`
 - 已新增结构预核对脚本：`scripts/check_rule_review_precheck.py`
+- 已新增证据门禁模块：`src/cyberYJ/utils/rule_review_evidence.py`
+- 已新增证据门禁脚本：`scripts/check_rule_review_evidence.py`
+- 已新增证据台账：`data/review/rule_review_evidence.json`
 - 已新增核对记录模板：`docs/m4-p3-rule-review-record.md`
 - 当前基线：35 条规则
 - 当前结构预核对：PASS（24 山向一致、8 宅卦一致、飞星 9 运 × 24 山向 = 216 条）
 - P3-B1/B2/B3/B4/B5（24 山向 + 8 八宅 + 3 飞星）已完成状态分流：`blocked=35`，`pending=0`，`verified=0`
+- 当前证据门禁：PASS（35/35 规则已建立证据记录，source_target 对齐）
 
 ## M4 阶段进展（P1 已完成）
 

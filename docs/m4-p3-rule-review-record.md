@@ -101,3 +101,24 @@
 ```bash
 python3 /Users/apple/dev/CyberYJ/scripts/check_rule_review_progress.py
 ```
+
+4. 执行证据门禁检查：
+
+```bash
+python3 /Users/apple/dev/CyberYJ/scripts/check_rule_review_evidence.py
+```
+
+## 证据门禁结果（2026-02-12）
+
+- 证据台账：`/Users/apple/dev/CyberYJ/data/review/rule_review_evidence.json`
+- 校验脚本：`/Users/apple/dev/CyberYJ/scripts/check_rule_review_evidence.py`
+- 当前结果：
+  - `total_rules=35`
+  - `total_records=35`
+  - `missing_records=0`
+  - `extra_records=0`
+  - `source_target_mismatches=0`
+  - `invalid_verified_records=0`
+  - `invalid_blocked_records=0`
+  - `invalid_pending_records=0`
+  - `passed=true`

@@ -108,7 +108,7 @@ P3 核对记录：`docs/m4-p3-rule-review-record.md`
 - 运行方式：
   - 预览：`python3 /Users/apple/dev/CyberYJ/scripts/sync_rule_review_matrix.py`
   - 应用：`python3 /Users/apple/dev/CyberYJ/scripts/sync_rule_review_matrix.py --apply`
-- 当前 dry-run：PASS（`confirmed_records=3`，`would_update_count=0`，`updated_count=0`）
+- 当前 dry-run：PASS（`confirmed_records=11`，`would_update_count=0`，`updated_count=0`）
 
 ### P3-B8 首批 verified（已完成）
 
@@ -117,3 +117,11 @@ P3 核对记录：`docs/m4-p3-rule-review-record.md`
 - 执行：`python3 /Users/apple/dev/CyberYJ/scripts/sync_rule_review_matrix.py --apply`
 - 结果：`updated_count=3`，规则状态由 `blocked` 自动同步为 `verified`
 - 当前总览：`total=35`，`verified=3`，`blocked=32`，`pending=0`
+
+### P3-B9 第二批 verified（已完成）
+
+- 范围：`bazhai_rules` 八条（乾宅/兑宅/离宅/震宅/巽宅/坎宅/艮宅/坤宅）
+- 动作：在证据台账将八条记录更新为 `evidence_status=confirmed` 并补齐必填字段
+- 执行：`python3 /Users/apple/dev/CyberYJ/scripts/sync_rule_review_matrix.py --apply`
+- 结果：`updated_count=8`，规则状态由 `blocked` 自动同步为 `verified`
+- 当前总览：`total=35`，`verified=11`，`blocked=24`，`pending=0`

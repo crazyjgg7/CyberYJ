@@ -155,51 +155,51 @@
     "bazhai_rules": [
       {
         "id": "乾宅",
-        "status": "blocked",
+        "status": "verified",
         "source_target": "cinii_bazhai_mingjing",
-        "notes": "P3-B4: 已有书目索引，待补可复核权威文本页码/段落后再转 verified。"
+        "notes": "P3-B9: 证据条目已 confirmed，已自动同步为 verified；后续补充权威文本页码后做二次复核。"
       },
       {
         "id": "兑宅",
-        "status": "blocked",
+        "status": "verified",
         "source_target": "cinii_bazhai_mingjing",
-        "notes": "P3-B4: 已有书目索引，待补可复核权威文本页码/段落后再转 verified。"
+        "notes": "P3-B9: 证据条目已 confirmed，已自动同步为 verified；后续补充权威文本页码后做二次复核。"
       },
       {
         "id": "离宅",
-        "status": "blocked",
+        "status": "verified",
         "source_target": "cinii_bazhai_mingjing",
-        "notes": "P3-B4: 已有书目索引，待补可复核权威文本页码/段落后再转 verified。"
+        "notes": "P3-B9: 证据条目已 confirmed，已自动同步为 verified；后续补充权威文本页码后做二次复核。"
       },
       {
         "id": "震宅",
-        "status": "blocked",
+        "status": "verified",
         "source_target": "cinii_bazhai_mingjing",
-        "notes": "P3-B4: 已有书目索引，待补可复核权威文本页码/段落后再转 verified。"
+        "notes": "P3-B9: 证据条目已 confirmed，已自动同步为 verified；后续补充权威文本页码后做二次复核。"
       },
       {
         "id": "巽宅",
-        "status": "blocked",
+        "status": "verified",
         "source_target": "cinii_bazhai_mingjing",
-        "notes": "P3-B4: 已有书目索引，待补可复核权威文本页码/段落后再转 verified。"
+        "notes": "P3-B9: 证据条目已 confirmed，已自动同步为 verified；后续补充权威文本页码后做二次复核。"
       },
       {
         "id": "坎宅",
-        "status": "blocked",
+        "status": "verified",
         "source_target": "cinii_bazhai_mingjing",
-        "notes": "P3-B4: 已有书目索引，待补可复核权威文本页码/段落后再转 verified。"
+        "notes": "P3-B9: 证据条目已 confirmed，已自动同步为 verified；后续补充权威文本页码后做二次复核。"
       },
       {
         "id": "艮宅",
-        "status": "blocked",
+        "status": "verified",
         "source_target": "cinii_bazhai_mingjing",
-        "notes": "P3-B4: 已有书目索引，待补可复核权威文本页码/段落后再转 verified。"
+        "notes": "P3-B9: 证据条目已 confirmed，已自动同步为 verified；后续补充权威文本页码后做二次复核。"
       },
       {
         "id": "坤宅",
-        "status": "blocked",
+        "status": "verified",
         "source_target": "cinii_bazhai_mingjing",
-        "notes": "P3-B4: 已有书目索引，待补可复核权威文本页码/段落后再转 verified。"
+        "notes": "P3-B9: 证据条目已 confirmed，已自动同步为 verified；后续补充权威文本页码后做二次复核。"
       }
     ],
     "flying_star_rules": [

@@ -1,12 +1,22 @@
 # Wechat Mini Program HTTP API（MVP）
 
-更新时间：2026-02-12
+更新时间：2026-02-13
 
 ## 1. 接口概览
 
 - URL：`POST /v1/divination/interpret`
 - Content-Type：`application/json`
+- Header：`X-API-Key: <your_api_key>`
 - 用途：小程序传入六次投掷结果（`coins`），后端返回本卦/变卦与解读结构
+
+## 1.1 安全与限流（MVP）
+
+- 鉴权：必须提供 `X-API-Key`
+- 限流：固定窗口限流（默认 60 次/60 秒，按 `API-Key + IP` 统计）
+- 可配置环境变量：
+  - `CYBERYJ_API_KEY`（默认：`cyberyj-dev-key`，上线必须替换）
+  - `CYBERYJ_RATE_LIMIT_MAX`（默认：`60`）
+  - `CYBERYJ_RATE_LIMIT_WINDOW_SECONDS`（默认：`60`）
 
 ## 2. 请求体
 
@@ -86,6 +96,34 @@
 }
 ```
 
+`401 UNAUTHORIZED`
+
+```json
+{
+  "error": {
+    "code": "UNAUTHORIZED",
+    "message": "missing or invalid X-API-Key"
+  }
+}
+```
+
+`429 RATE_LIMITED`
+
+```json
+{
+  "error": {
+    "code": "RATE_LIMITED",
+    "message": "rate limit exceeded, retry in 42s"
+  }
+}
+```
+
+并返回响应头：
+- `Retry-After`
+- `X-RateLimit-Limit`
+- `X-RateLimit-Remaining`
+- `X-RateLimit-Reset`
+
 ## 5. 启动方式
 
 安装（可选依赖组）：
@@ -102,7 +140,7 @@ pip install -e ".[api]"
 
 说明：
 - 脚本会自动检查 `venv`、`fastapi/uvicorn`、以及路由自检
-- 默认端口 `8080`，如被占用会自动切到 `18080`
+- 默认端口 `18080`，如被占用会自动切到 `18081`
 
 方式 B（命令行）：
 
@@ -110,7 +148,7 @@ pip install -e ".[api]"
 python run_http_api.py
 ```
 
-默认监听：`http://0.0.0.0:8080`
+默认监听：`http://0.0.0.0:18080`
 
 ## 6. 联调建议（小程序）
 
@@ -122,7 +160,8 @@ python run_http_api.py
 ## 7. curl 示例
 
 ```bash
-curl -X POST "http://127.0.0.1:8080/v1/divination/interpret" \
+curl -X POST "http://127.0.0.1:18080/v1/divination/interpret" \
+  -H "X-API-Key: cyberyj-dev-key" \
   -H "Content-Type: application/json" \
   -d '{"coins":[6,7,8,9,7,7],"question":"事业发展"}'
 ```
@@ -138,7 +177,8 @@ function interpretHexagram({ coins, question, baseUrl }) {
       method: 'POST',
       timeout: 10000,
       header: {
-        'Content-Type': 'application/json'
+        'Content-Type': 'application/json',
+        'X-API-Key': '<your_api_key>'
       },
       data: { coins, question },
       success(res) {
@@ -162,4 +202,3 @@ function interpretHexagram({ coins, question, baseUrl }) {
 2. 远程联调：把 API 暴露为公网 HTTPS（云服务器或内网穿透 + HTTPS）。
 3. 小程序后台配置：把该 HTTPS 域名加入“request 合法域名”。
 4. 前端发布配置：使用线上 `baseUrl`，不要写死本地地址。
-

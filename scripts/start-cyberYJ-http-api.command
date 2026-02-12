@@ -18,6 +18,13 @@ PROJECT_DIR="/Users/apple/dev/CyberYJ"
 PORT="${1:-18080}"
 HOST="${HOST:-0.0.0.0}"
 
+# 安全配置（可通过环境变量覆盖）
+if [ -z "${CYBERYJ_API_KEY:-}" ]; then
+  export CYBERYJ_API_KEY="cyberyj-dev-key"
+fi
+export CYBERYJ_RATE_LIMIT_MAX="${CYBERYJ_RATE_LIMIT_MAX:-60}"
+export CYBERYJ_RATE_LIMIT_WINDOW_SECONDS="${CYBERYJ_RATE_LIMIT_WINDOW_SECONDS:-60}"
+
 echo -e "${GREEN}[1/6]${NC} 切换到项目目录: $PROJECT_DIR"
 cd "$PROJECT_DIR" || {
   echo -e "${RED}错误: 无法找到项目目录${NC}"
@@ -71,6 +78,8 @@ echo ""
 echo -e "${BLUE}========================================${NC}"
 echo -e "${BLUE}   API 正在运行: http://${HOST}:${PORT}${NC}"
 echo -e "${BLUE}   接口: POST /v1/divination/interpret${NC}"
+echo -e "${BLUE}   鉴权: X-API-Key=${CYBERYJ_API_KEY}${NC}"
+echo -e "${BLUE}   限流: ${CYBERYJ_RATE_LIMIT_MAX}/${CYBERYJ_RATE_LIMIT_WINDOW_SECONDS}s${NC}"
 echo -e "${BLUE}   按 Ctrl+C 停止服务${NC}"
 echo -e "${BLUE}========================================${NC}"
 echo ""

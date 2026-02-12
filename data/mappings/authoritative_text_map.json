@@ -99,6 +99,113 @@
         "cinii_bazhai_mingjing",
         "convention"
       ]
+    },
+    {
+      "field_path": "data.fengshui.luopan.name",
+      "text_kind": "citation_only",
+      "license": "citation_only",
+      "source_ref": [
+        "qingnang_aoyu",
+        "convention"
+      ]
+    },
+    {
+      "field_path": "data.fengshui.luopan.start_deg",
+      "text_kind": "summary",
+      "license": "summary_only",
+      "content": "二十四山角度区间用于坐向归类，采用规则化表达并保留权威替换入口。",
+      "source_ref": [
+        "qingnang_aoyu",
+        "convention"
+      ]
+    },
+    {
+      "field_path": "data.fengshui.luopan.end_deg",
+      "text_kind": "summary",
+      "license": "summary_only",
+      "content": "山向终止角度与起始角度共同定义区间边界，用于方向解析。",
+      "source_ref": [
+        "qingnang_aoyu",
+        "convention"
+      ]
+    },
+    {
+      "field_path": "data.fengshui.luopan.direction_group",
+      "text_kind": "summary",
+      "license": "summary_only",
+      "content": "方向组用于八方位聚类展示，不替代传统原文断法。",
+      "source_ref": [
+        "qingnang_aoyu",
+        "convention"
+      ]
+    },
+    {
+      "field_path": "data.fengshui.ba_zhai.house_gua",
+      "text_kind": "citation_only",
+      "license": "citation_only",
+      "source_ref": [
+        "cinii_bazhai_mingjing",
+        "convention"
+      ]
+    },
+    {
+      "field_path": "data.fengshui.ba_zhai.auspicious_positions",
+      "text_kind": "summary",
+      "license": "summary_only",
+      "content": "八宅吉位用于布局建议，实际应用需结合户型与用途。",
+      "source_ref": [
+        "cinii_bazhai_mingjing",
+        "convention"
+      ]
+    },
+    {
+      "field_path": "data.fengshui.ba_zhai.inauspicious_positions",
+      "text_kind": "summary",
+      "license": "summary_only",
+      "content": "八宅凶位用于风险提示，应与整体环境共同判断。",
+      "source_ref": [
+        "cinii_bazhai_mingjing",
+        "convention"
+      ]
+    },
+    {
+      "field_path": "data.fengshui.flying_stars_periods.start_year",
+      "text_kind": "summary",
+      "license": "summary_only",
+      "content": "元运起始年用于定位所属运期，供飞星计算流程调用。",
+      "source_ref": [
+        "cinii_dili_bianzheng_shu",
+        "convention"
+      ]
+    },
+    {
+      "field_path": "data.fengshui.flying_stars_periods.end_year",
+      "text_kind": "summary",
+      "license": "summary_only",
+      "content": "元运结束年与起始年形成闭区间，保障流年运期判定稳定。",
+      "source_ref": [
+        "cinii_dili_bianzheng_shu",
+        "convention"
+      ]
+    },
+    {
+      "field_path": "data.fengshui.flying_stars_house.sitting_mountain",
+      "text_kind": "citation_only",
+      "license": "citation_only",
+      "source_ref": [
+        "cinii_dili_bianzheng_shu",
+        "convention"
+      ]
+    },
+    {
+      "field_path": "data.fengshui.flying_stars_scoring.stars",
+      "text_kind": "summary",
+      "license": "summary_only",
+      "content": "九星评分表用于吉凶排序与提示分级，不替代流派原文断语。",
+      "source_ref": [
+        "cinii_dili_bianzheng_shu",
+        "convention"
+      ]
     }
   ]
 }

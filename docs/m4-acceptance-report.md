@@ -4,7 +4,7 @@
 
 ## 验收范围
 
-- P1：核心字段权威映射覆盖率
+- P1：高频字段权威映射覆盖率
 - P2：来源合规与 `source_ref` 一致性
 - P3：规则核对闭环（结构预核对 + 证据门禁 + 状态同步）
 
@@ -13,16 +13,16 @@
 ### P1 覆盖率
 
 - 覆盖率阈值：`80%`
-- 统计对象：`authoritative_coverage_targets.json` 10 个核心字段
-- 结果：`10/10`，覆盖率 `100%`
+- 统计对象：`authoritative_coverage_targets.json` 21 个高频字段
+- 结果：`21/21`，覆盖率 `100%`
 - 结论：`PASS`
 
 ### P2 合规与一致性
 
 - 必选来源合规：`5/5` PASS
 - 全量来源合规：`13/13` PASS
-- `source_ref` 一致性：`26` 个 JSON，`884` 处引用，未知来源 `0`
-- 高频字段证据映射：`10/10` PASS
+- `source_ref` 一致性：`28` 个 JSON，`895` 处引用，未知来源 `0`
+- 高频字段证据映射：`21/21` PASS
 - 结论：`PASS`
 
 ### P3 规则核对闭环（首轮）
@@ -57,5 +57,5 @@ python3 /Users/apple/dev/CyberYJ/scripts/sync_rule_review_matrix.py
 ## M4 剩余可执行项
 
 1. 为 5 个权威来源补齐“可复核页码/段落”证据并回填 `rule_review_evidence.json`。
-2. 扩展 `authoritative_text_map.json` 到全模块字段级覆盖（超出当前核心字段集）。
+2. 扩展 `authoritative_text_map.json` 到全模块字段级覆盖（超出当前高频字段集）。
 3. 形成最终 M4 完成报告：覆盖率、证据口径、风险收敛、未决事项。

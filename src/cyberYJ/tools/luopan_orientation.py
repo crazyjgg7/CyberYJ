@@ -383,14 +383,9 @@ class LuopanOrientationTool:
                 field = match.get("field", "")
                 note_key = section if not field else f"{section}.{field}"
 
-                # V2 字段级映射：写入 authoritative_notes，便于前端按字段展示
-                if section in {"flying_stars_house", "flying_stars_periods", "flying_stars_scoring"}:
-                    result.setdefault("authoritative_notes", {})
-                    result["authoritative_notes"][note_key] = content
-                else:
-                    # 兼容旧逻辑：其他映射仍作为布局建议补充
-                    result.setdefault("layout_tips", [])
-                    result["layout_tips"].insert(0, f"权威补充: {content}")
+                # 字段级映射统一写入 authoritative_notes，避免与布局建议混杂
+                result.setdefault("authoritative_notes", {})
+                result["authoritative_notes"][note_key] = content
                 trace.append(f"权威补充: {match['field_path']}")
 
             for sid in source_ref:

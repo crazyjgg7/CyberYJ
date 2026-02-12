@@ -248,6 +248,33 @@ class TestLuopanOrientationTool:
         )
         assert any("权威补充: data.fengshui.flying_stars_scoring.thresholds" in step for step in result["trace"])
 
+    def test_authoritative_mapping_non_flying_field_note(self, monkeypatch):
+        monkeypatch.setattr(
+            self.tool.data_loader,
+            "get_authoritative_text_map",
+            lambda: {
+                "version": "1.0.0",
+                "items": [
+                    {
+                        "field_path": "data.fengshui.ba_zhai.rules",
+                        "text_kind": "summary",
+                        "license": "summary_only",
+                        "content": "八宅规则摘要：用于宅卦与方位判定。",
+                        "source_ref": ["cinii_bazhai_mingjing"]
+                    }
+                ]
+            }
+        )
+        result = self.tool.execute(
+            sitting_direction="坐北朝南",
+            building_type="住宅",
+            timestamp="2026-06-01T10:00:00+08:00"
+        )
+
+        assert "authoritative_notes" in result
+        assert result["authoritative_notes"]["ba_zhai.rules"] == "八宅规则摘要：用于宅卦与方位判定。"
+        assert all("权威补充:" not in tip for tip in result["layout_tips"])
+
     def test_layout_tips_generation(self):
         """测试布局建议生成"""
         result = self.tool.execute(

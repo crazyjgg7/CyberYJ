@@ -27,7 +27,7 @@
 ## 未完成（仅 M4）
 
 - 权威文本/许可摘要尚未在 `data` 目录完成规模化落地
-- 全模块字段级映射覆盖率目标（超出当前核心字段集）未完成
+- 全模块字段级映射覆盖率目标（超出当前高频字段集）未完成
 - 24 山向、八宅、飞星规则已完成首轮逐条校核与二次复核门禁补齐，后续需替换为最终权威版页码证据
 
 ## M4 阶段进展（P4 已完成：二次复核门禁）
@@ -66,10 +66,10 @@
 ## M4 阶段进展（P1 已完成）
 
 - 覆盖率目标已确定：80%
-- 已新增覆盖率基线：`data/mappings/authoritative_coverage_targets.json`（10 个核心字段）
+- 已新增覆盖率基线：`data/mappings/authoritative_coverage_targets.json`（21 个高频字段）
 - 已新增校验脚本：`scripts/check_authoritative_coverage.py`
 - 已新增校验模块：`src/cyberYJ/utils/authoritative_coverage.py`
-- 当前覆盖率：10/10 = 100%（>= 80%）
+- 当前覆盖率：21/21 = 100%（>= 80%）
 - 说明：该结果仅代表“字段映射覆盖率达标”，不代表 M4 全部完成
 
 ## M4 阶段进展（P2 进行中）
@@ -82,17 +82,17 @@
 - 当前核心来源合规检查：PASS（5/5 必选来源，缺失与非法字段为 0）
 - 已新增 `source_ref` 一致性校验模块：`src/cyberYJ/utils/source_ref_integrity.py`
 - 已新增 `source_ref` 一致性脚本：`scripts/check_source_ref_integrity.py`
-- 当前 `source_ref` 一致性检查：PASS（26 个 JSON 文件，884 处 source_ref，未知来源 0）
+- 当前 `source_ref` 一致性检查：PASS（28 个 JSON 文件，895 处 source_ref，未知来源 0）
 - 已新增来源变更审计模板：`docs/source-change-audit-template.md`
 - 已新增证据映射校验模块：`src/cyberYJ/utils/source_evidence_check.py`
 - 已新增证据映射校验脚本：`scripts/check_source_evidence.py`
-- 当前高频字段证据映射检查：PASS（10/10）
+- 当前高频字段证据映射检查：PASS（21/21）
 
 ## M4 可执行清单
 
 1. 固化权威版本：锁定来源版本并补全 `data/core/sources.json` 的版本字段。
 2. 拉平字段清单：导出所有可映射输出字段（hexagram/scenario/fengshui/core）。
-3. 设定覆盖率目标：定义核心字段最低覆盖率（建议 >= 80%）。
+3. 设定覆盖率目标：定义高频字段最低覆盖率（建议 >= 80%）。
 4. 批量补映射：扩展 `data/mappings/authoritative_text_map.json`。
 5. 增加校验器：新增覆盖率 + source_ref + license 自动检查。
 6. 校核关键规则：24 山向、八宅、飞星评分表按权威版本逐条核对。

@@ -71,6 +71,83 @@
       "match": {
         "prefix": "data.fengshui.ba_zhai.rules"
       }
+    },
+    {
+      "id": "luopan.luopan.name",
+      "description": "二十四山名称字段",
+      "match": {
+        "prefix": "data.fengshui.luopan.name"
+      }
+    },
+    {
+      "id": "luopan.luopan.start_deg",
+      "description": "二十四山起始角度字段",
+      "match": {
+        "prefix": "data.fengshui.luopan.start_deg"
+      }
+    },
+    {
+      "id": "luopan.luopan.end_deg",
+      "description": "二十四山终止角度字段",
+      "match": {
+        "prefix": "data.fengshui.luopan.end_deg"
+      }
+    },
+    {
+      "id": "luopan.luopan.direction_group",
+      "description": "二十四山方向组字段",
+      "match": {
+        "prefix": "data.fengshui.luopan.direction_group"
+      }
+    },
+    {
+      "id": "luopan.ba_zhai.house_gua",
+      "description": "八宅宅卦字段",
+      "match": {
+        "prefix": "data.fengshui.ba_zhai.house_gua"
+      }
+    },
+    {
+      "id": "luopan.ba_zhai.auspicious_positions",
+      "description": "八宅吉位字段",
+      "match": {
+        "prefix": "data.fengshui.ba_zhai.auspicious_positions"
+      }
+    },
+    {
+      "id": "luopan.ba_zhai.inauspicious_positions",
+      "description": "八宅凶位字段",
+      "match": {
+        "prefix": "data.fengshui.ba_zhai.inauspicious_positions"
+      }
+    },
+    {
+      "id": "luopan.flying_stars_periods.start_year",
+      "description": "元运起始年字段",
+      "match": {
+        "prefix": "data.fengshui.flying_stars_periods.start_year"
+      }
+    },
+    {
+      "id": "luopan.flying_stars_periods.end_year",
+      "description": "元运结束年字段",
+      "match": {
+        "prefix": "data.fengshui.flying_stars_periods.end_year"
+      }
+    },
+    {
+      "id": "luopan.flying_stars_house.sitting_mountain",
+      "description": "飞星宅盘坐山字段",
+      "match": {
+        "prefix": "data.fengshui.flying_stars_house.sitting_mountain"
+      }
+    },
+    {
+      "id": "luopan.flying_stars_scoring.stars",
+      "description": "飞星评分星级表字段",
+      "match": {
+        "prefix": "data.fengshui.flying_stars_scoring.stars"
+      }
     }
   ]
 }

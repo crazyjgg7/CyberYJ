@@ -90,6 +90,105 @@
       "required_source_ids": [
         "cinii_bazhai_mingjing"
       ]
+    },
+    {
+      "id": "luopan.luopan.name",
+      "match": {
+        "prefix": "data.fengshui.luopan.name"
+      },
+      "required_source_ids": [
+        "qingnang_aoyu"
+      ]
+    },
+    {
+      "id": "luopan.luopan.start_deg",
+      "match": {
+        "prefix": "data.fengshui.luopan.start_deg"
+      },
+      "required_source_ids": [
+        "qingnang_aoyu"
+      ]
+    },
+    {
+      "id": "luopan.luopan.end_deg",
+      "match": {
+        "prefix": "data.fengshui.luopan.end_deg"
+      },
+      "required_source_ids": [
+        "qingnang_aoyu"
+      ]
+    },
+    {
+      "id": "luopan.luopan.direction_group",
+      "match": {
+        "prefix": "data.fengshui.luopan.direction_group"
+      },
+      "required_source_ids": [
+        "qingnang_aoyu"
+      ]
+    },
+    {
+      "id": "luopan.ba_zhai.house_gua",
+      "match": {
+        "prefix": "data.fengshui.ba_zhai.house_gua"
+      },
+      "required_source_ids": [
+        "cinii_bazhai_mingjing"
+      ]
+    },
+    {
+      "id": "luopan.ba_zhai.auspicious_positions",
+      "match": {
+        "prefix": "data.fengshui.ba_zhai.auspicious_positions"
+      },
+      "required_source_ids": [
+        "cinii_bazhai_mingjing"
+      ]
+    },
+    {
+      "id": "luopan.ba_zhai.inauspicious_positions",
+      "match": {
+        "prefix": "data.fengshui.ba_zhai.inauspicious_positions"
+      },
+      "required_source_ids": [
+        "cinii_bazhai_mingjing"
+      ]
+    },
+    {
+      "id": "luopan.flying_stars_periods.start_year",
+      "match": {
+        "prefix": "data.fengshui.flying_stars_periods.start_year"
+      },
+      "required_source_ids": [
+        "cinii_dili_bianzheng_shu"
+      ]
+    },
+    {
+      "id": "luopan.flying_stars_periods.end_year",
+      "match": {
+        "prefix": "data.fengshui.flying_stars_periods.end_year"
+      },
+      "required_source_ids": [
+        "cinii_dili_bianzheng_shu"
+      ]
+    },
+    {
+      "id": "luopan.flying_stars_house.sitting_mountain",
+      "match": {
+        "prefix": "data.fengshui.flying_stars_house.sitting_mountain"
+      },
+      "required_source_ids": [
+        "cinii_dili_bianzheng_shu"
+      ]
+    },
+    {
+      "id": "luopan.flying_stars_scoring.stars",
+      "match": {
+        "prefix": "data.fengshui.flying_stars_scoring.stars"
+      },
+      "required_source_ids": [
+        "cinii_dili_bianzheng_shu"
+      ]
     }
   ]
 }

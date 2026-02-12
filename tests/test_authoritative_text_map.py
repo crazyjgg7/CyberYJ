@@ -52,3 +52,16 @@ def test_authoritative_text_map_m4_quality_no_citation_only_entries():
         if isinstance(item, dict) and item.get("text_kind") == "citation_only"
     ]
     assert citation_only_items == []
+
+
+def test_authoritative_text_map_m4_quality_all_summary_have_locator():
+    path = "/Users/apple/dev/CyberYJ/data/mappings/authoritative_text_map.json"
+    data = json.loads(open(path, "r", encoding="utf-8").read())
+    missing_locator_items = [
+        item["field_path"]
+        for item in data.get("items", [])
+        if isinstance(item, dict)
+        and item.get("text_kind") == "summary"
+        and (not isinstance(item.get("locator"), str) or not item.get("locator").strip())
+    ]
+    assert missing_locator_items == []

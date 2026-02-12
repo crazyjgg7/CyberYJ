@@ -24,7 +24,7 @@
 - `source_ref` 一致性：`30` 个 JSON，`1031` 处引用，未知来源 `0`
 - 高频字段证据映射：`21/21` PASS
 - 映射文本类型：`summary=157`，`citation_only=0`
-- 高频字段 locator 覆盖：`21/21` PASS（当前 summary locator 覆盖 `21/157`）
+- 高频字段 locator 覆盖：`21/21` PASS（当前 summary locator 覆盖 `157/157`）
 - 结论：`PASS`
 
 ### P3 规则核对闭环（首轮）
@@ -60,5 +60,5 @@ python3 /Users/apple/dev/CyberYJ/scripts/sync_rule_review_matrix.py
 ## M4 剩余可执行项
 
 1. 为 5 个权威来源补齐“可复核页码/段落”证据并回填 `rule_review_evidence.json`。
-2. 全字段覆盖已完成（610/610）且 `citation_only` 已清零；下一阶段将 `summary_only` 条目逐步补齐可复核页码/段落定位。
+2. 全字段覆盖已完成（610/610）且 `citation_only` 已清零；`summary_only` locator 已补齐（157/157），下一阶段将来源级 locator 升级为页码/段落级定位。
 3. 形成最终 M4 完成报告：覆盖率、证据口径、风险收敛、未决事项。

@@ -23,7 +23,7 @@
 - 高频字段证据映射：`21/21`
 - 映射文本类型：`summary=157`，`citation_only=0`
 - 高频字段 locator 覆盖：`21/21`
-- summary locator 覆盖：`21/157`
+- summary locator 覆盖：`157/157`
 - 证据映射失败字段：`0`
 - 结论：`PASS`
 

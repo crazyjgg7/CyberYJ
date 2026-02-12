@@ -27,7 +27,8 @@
 ## 未完成（仅 M4）
 
 - 权威文本/许可摘要尚未在 `data` 目录完成规模化落地
-- 字段级映射覆盖已达成（610/610），且 `citation_only` 已清零；`summary_only` 条目共 157，已补 locator 21 条，剩余 136 条待补
+- 字段级映射覆盖已达成（610/610），且 `citation_only` 已清零；`summary_only` 条目 157 条已全部补 locator（157/157）
+- 仍需把来源级 locator 逐步升级为页码/段落级 locator（目前以可复核来源定位为主）
 - 24 山向、八宅、飞星规则已完成首轮逐条校核与二次复核门禁补齐，后续需替换为最终权威版页码证据
 
 ## M4 阶段进展（P4 已完成：二次复核门禁）
@@ -95,7 +96,7 @@
 - 已新增盘点产物：`data/review/m4_field_inventory.json`
 - 已新增缺口报告：`data/review/m4_mapping_gap_report.json`
 - 当前盘点口径：`total_fields=610`，`mapped_fields=610`，`unmapped_fields=0`，`coverage_ratio=1.0`
-- 当前映射文本口径：`summary=157`，`citation_only=0`，`summary_with_locator=21`
+- 当前映射文本口径：`summary=157`，`citation_only=0`，`summary_with_locator=157`
 
 ## M4 可执行清单
 

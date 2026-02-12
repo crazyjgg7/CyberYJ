@@ -8,6 +8,7 @@
 - 校验维度：`title/edition/section/url_or_archive/license/notes`
 - 校验规则：非空、非 `TBD`、URL 为 HTTP(S)
 - `data` 全量 `source_ref` 一致性（source_id 存在、字段类型合法）
+- 高频输出字段与来源证据一对一映射（10 个核心字段）
 
 ## 结果
 
@@ -18,6 +19,8 @@
 - `source_ref` 总计：`884`
 - 未知来源：`0`
 - 非法 source_ref 条目：`0`
+- 高频字段证据映射：`10/10`
+- 证据映射失败字段：`0`
 - 结论：`PASS`
 
 ## 校验命令
@@ -25,11 +28,12 @@
 ```bash
 python3 /Users/apple/dev/CyberYJ/scripts/check_source_compliance.py
 python3 /Users/apple/dev/CyberYJ/scripts/check_source_ref_integrity.py
+python3 /Users/apple/dev/CyberYJ/scripts/check_source_evidence.py
 ```
 
 ## 后续工作
 
-1. 将 `source_ref` 高频命中字段与来源证据做一对一映射检查（字段级）。
+1. 将 `source_ref` 高频命中字段与来源证据做一对一映射检查（字段级）✅
 2. 扩展到非必选来源并补全版本细节字段（edition/section 精细化）。
 3. 建立“来源变更审计”记录模板（增量差异 + 责任人 + 时间戳）✅  
    模板文件：`/Users/apple/dev/CyberYJ/docs/source-change-audit-template.md`

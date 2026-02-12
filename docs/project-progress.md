@@ -49,6 +49,9 @@
 - 已新增 `source_ref` 一致性脚本：`scripts/check_source_ref_integrity.py`
 - 当前 `source_ref` 一致性检查：PASS（24 个 JSON 文件，884 处 source_ref，未知来源 0）
 - 已新增来源变更审计模板：`docs/source-change-audit-template.md`
+- 已新增证据映射校验模块：`src/cyberYJ/utils/source_evidence_check.py`
+- 已新增证据映射校验脚本：`scripts/check_source_evidence.py`
+- 当前高频字段证据映射检查：PASS（10/10）
 
 ## M4 可执行清单
 

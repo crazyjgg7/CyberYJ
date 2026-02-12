@@ -1,0 +1,95 @@
+{
+  "version": "1.0.0",
+  "targets": [
+    {
+      "id": "fengshui.main_hexagram.judgment",
+      "match": {
+        "regex": "^hexagrams\\[\\?\\(@\\.id==\\d+\\)\\]\\.judgment_summary$"
+      },
+      "required_source_ids": [
+        "ctext_yijing"
+      ]
+    },
+    {
+      "id": "fengshui.main_hexagram.image",
+      "match": {
+        "regex": "^hexagrams\\[\\?\\(@\\.id==\\d+\\)\\]\\.image_summary$"
+      },
+      "required_source_ids": [
+        "ctext_yijing"
+      ]
+    },
+    {
+      "id": "fengshui.scenario_analysis.overall_tendency",
+      "match": {
+        "regex": "^data\\.scenarios\\.\\w+\\.hexagrams\\['\\d+'\\]\\.overall_tendency$"
+      },
+      "required_source_ids": [
+        "ctext_yijing"
+      ]
+    },
+    {
+      "id": "fengshui.scenario_analysis.key_points",
+      "match": {
+        "regex": "^data\\.scenarios\\.\\w+\\.hexagrams\\['\\d+'\\]\\.key_points$"
+      },
+      "required_source_ids": [
+        "ctext_yijing"
+      ]
+    },
+    {
+      "id": "fengshui.scenario_specific.situation",
+      "match": {
+        "regex": "^data\\.scenarios\\.\\w+\\.hexagrams\\['\\d+'\\]\\.scenario_specific\\.[^\\.]+\\.situation$"
+      },
+      "required_source_ids": [
+        "ctext_yijing"
+      ]
+    },
+    {
+      "id": "fengshui.scenario_specific.advice",
+      "match": {
+        "regex": "^data\\.scenarios\\.\\w+\\.hexagrams\\['\\d+'\\]\\.scenario_specific\\.[^\\.]+\\.advice$"
+      },
+      "required_source_ids": [
+        "ctext_yijing"
+      ]
+    },
+    {
+      "id": "luopan.flying_stars_periods.period",
+      "match": {
+        "prefix": "data.fengshui.flying_stars_periods.period"
+      },
+      "required_source_ids": [
+        "cinii_dili_bianzheng_shu"
+      ]
+    },
+    {
+      "id": "luopan.flying_stars_house.palace_map",
+      "match": {
+        "prefix": "data.fengshui.flying_stars_house.palace_map"
+      },
+      "required_source_ids": [
+        "cinii_dili_bianzheng_shu"
+      ]
+    },
+    {
+      "id": "luopan.flying_stars_scoring.thresholds",
+      "match": {
+        "prefix": "data.fengshui.flying_stars_scoring.thresholds"
+      },
+      "required_source_ids": [
+        "cinii_dili_bianzheng_shu"
+      ]
+    },
+    {
+      "id": "luopan.ba_zhai.rules",
+      "match": {
+        "prefix": "data.fengshui.ba_zhai.rules"
+      },
+      "required_source_ids": [
+        "cinii_bazhai_mingjing"
+      ]
+    }
+  ]
+}

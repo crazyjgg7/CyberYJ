@@ -1,6 +1,6 @@
-# CyberYJ - 玄学知识库 + MCP + Wechat 小程序
+# CyberYJ - 玄学知识库 + MCP 服务
 
-易经 + 风水（八宅、玄空飞星）结构化 MCP 能力，包含后端服务与 Wechat 小程序前端。
+易经 + 风水（八宅、玄空飞星）结构化 MCP 工具能力
 
 ## 项目概述
 
@@ -13,22 +13,18 @@
 - **节气影响分析**：基于天文算法的节气计算
 - **数据可追溯**：所有数据标注权威来源
 
-## 项目结构（统一仓库）
+## 项目结构
 
 ```
 CyberYJ/
-├── data/                      # 数据文件
-│   ├── core/                  # 基础规则/来源索引
-│   │   ├── hexagrams.json
-│   │   ├── trigrams.json
-│   │   ├── solar_terms.json
-│   │   ├── luopan.json
-│   │   ├── ba_zhai.json
-│   │   ├── flying_stars.json
-│   │   └── sources.json
-│   ├── scenarios/             # 场景化解读数据
-│   ├── mappings/              # 权威映射与替换表
-│   └── authoritative/         # 本地权威知识库
+├── data/                   # 数据文件
+│   ├── trigrams.json      # 八卦数据
+│   ├── hexagrams.json     # 六十四卦数据
+│   ├── solar_terms.json   # 二十四节气
+│   ├── luopan.json        # 二十四山向
+│   ├── ba_zhai.json       # 八宅规则
+│   ├── flying_stars.json  # 玄空飞星年盘
+│   └── sources.json       # 数据来源索引
 ├── src/cyberYJ/           # 源代码
 │   ├── core/              # 核心计算模块
 │   ├── tools/             # MCP 工具实现
@@ -38,11 +34,6 @@ CyberYJ/
 ├── docs/                  # 文档
 │   ├── requirements.md    # 需求文档
 │   └── project-progress.md # 项目进度
-├── Wechat-ZY/             # 微信小程序前端工程（可直接导入微信开发者工具）
-│   ├── pages/             # 页面
-│   ├── services/          # 前端 API/传感器服务
-│   ├── config/            # 环境配置（baseUrl/apiKey）
-│   └── project.config.json # 开发者工具配置
 └── schemas/               # Schema 定义
     └── mcp-tools.json     # MCP 工具 schema
 ```
@@ -186,21 +177,12 @@ python run_http_api.py
 ```
 
 ```bash
-curl -X POST "http://127.0.0.1:18080/v1/divination/interpret" \
-  -H "X-API-Key: cyberyj-dev-key" \
-  -H "X-Request-ID: req-demo-001" \
+curl -X POST "http://127.0.0.1:8080/v1/divination/interpret" \
   -H "Content-Type: application/json" \
-  -d '{"coins":[6,7,8,9,7,7],"question":"事业发展","scene_type":"career"}'
+  -d '{"coins":[6,7,8,9,7,7],"question":"事业发展"}'
 ```
 
 接口文档见 `docs/api/wechat-divination-http-api.md`。
-前端场景对齐说明见 `docs/api/wechat-scene-interface-adjustments.md`。
-小程序前端工程见 `Wechat-ZY/`，可直接在微信开发者工具中导入 `/Users/apple/dev/CyberYJ/Wechat-ZY`。
-
-`/v1/divination/interpret` 当前返回除基础解卦结构外，还包含：
-- `scene_type`（最终生效场景）
-- `keywords` / `advice_tags` / `score`（前端渲染增强字段）
-- `consistency`（逻辑一致性元数据）
 
 更多示例请查看 `examples/` 目录。
 
@@ -217,36 +199,65 @@ pytest tests/test_data_loader.py
 pytest --cov=src/cyberYJ --cov-report=html
 ```
 
-## 当前状态
+## 开发进度
 
-统一口径以 `/Users/apple/dev/CyberYJ/docs/project-progress.md` 为准，当前已达成：
-- MCP 工具链可用（`fengshui_divination`、`luopan_orientation`、`keyword_dispatch`）
-- Wechat HTTP API 可用（`/v1/divination/interpret`）
-- Wechat 小程序前端已并入仓库（`/Users/apple/dev/CyberYJ/Wechat-ZY`）
-- 前后端联调可用（真实接口优先，网络失败回退 Mock）
+详见 [项目进度文档](docs/project-progress.md) 和 [完成报告](docs/completion-report.md)
 
-## Wechat 小程序快速联调
+- ✅ 数据层（100%）- 7 个数据文件，143 条数据
+- ✅ 逻辑层（100%）- 4 个核心模块，119 个测试通过
+- ⏳ 服务层（0%）- MCP Server 待开发
+- ✅ 测试层（100%）- 单元测试全部完成
 
-1. 启动后端 API（任选其一）：
-```bash
-/Users/apple/Desktop/start-cyberYJ-http-api.command
-```
-```bash
-python run_http_api.py
-```
+**总进度**: 75%
 
-2. 微信开发者工具导入目录：
-```text
-/Users/apple/dev/CyberYJ/Wechat-ZY
-```
+### 已实现功能
 
-3. 根据环境设置 `/Users/apple/dev/CyberYJ/Wechat-ZY/config/env.js`：
-- 本地联调：`currentEnv = 'dev'`
-- 线上联调：`currentEnv = 'prod'`（HTTPS 且合法域名）
+#### 数据层
+- ✅ 八卦数据（8 条）
+- ✅ 六十四卦数据（64 条，含卦辞、象辞、五行关系）
+- ✅ 二十四节气数据（24 条，含太阳黄经）
+- ✅ 二十四山向数据（24 条，含角度映射）
+- ✅ 八宅规则数据（8 条，含吉凶方位）
+- ✅ 玄空飞星年盘（2024-2030 年）
+- ✅ 数据来源索引（8 个权威来源）
 
-4. 保持前后端 API Key 一致：
-- 前端：`config/env.js` 中 `apiKey`
-- 后端：环境变量 `CYBERYJ_API_KEY`
+#### 逻辑层
+- ✅ **数据加载器** (`data_loader.py`)
+  - 统一的数据访问接口
+  - 内存缓存机制
+  - 丰富的查询方法
+  - 23 个测试通过
+
+- ✅ **节气计算器** (`solar_calculator.py`)
+  - 太阳黄经计算（精度 0.01°）
+  - 24 节气查询
+  - 节气时间计算
+  - 节气影响分析
+  - 31 个测试通过
+
+- ✅ **卦象分析器** (`hexagram_analyzer.py`)
+  - 灵活的输入解析（名称/方位/数字）
+  - 64 卦查询
+  - 五行生克关系分析
+  - 变卦分析（6 爻）
+  - 针对性解释生成（事业/财运/感情/健康）
+  - 43 个测试通过
+
+- ✅ **罗盘计算器** (`luopan_calculator.py`)
+  - 多格式坐向解析（中文/角度/干支）
+  - 24 山向查询
+  - 八宅卦计算
+  - 吉凶方位查询
+  - 命卦计算与宅命匹配
+  - 22 个测试通过
+
+### 待实现功能
+
+#### 服务层（M3 里程碑）
+- ⏳ MCP Server 骨架
+- ⏳ `fengshui_divination` 工具（易经解卦）
+- ⏳ `luopan_orientation` 工具（罗盘坐向分析）
+- ⏳ MCP 工具集成测试
 
 ## 数据来源
 
@@ -258,7 +269,7 @@ python run_http_api.py
 - **八宅明镜**：八宅规则
 - **地理辨正疏**：玄空飞星规则
 
-详见 `/Users/apple/dev/CyberYJ/data/core/sources.json`
+详见 `data/sources.json`
 
 ## 许可证
 

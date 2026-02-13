@@ -1,0 +1,6 @@
+{
+    "navigationBarTitleText": "诚心摇卦",
+    "usingComponents": {
+        "music-control": "../../components/music-control/music-control"
+    }
+}

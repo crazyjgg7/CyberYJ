@@ -1,0 +1,21 @@
+<view class="container">
+  <music-control />
+  <music-control />
+  <view class="title-group">
+      <text class="sub-title">赛博易经</text>
+      <text class="main-title">六爻卜卦</text>
+  </view>
+  <button class="start-btn" hover-class="btn-hover" bindtap="startDivination">开始卜卦</button>
+  
+  <!-- Disclaimer Modal -->
+  <view class="modal-mask" wx:if="{{showDisclaimer}}">
+    <view class="modal-box">
+      <view class="modal-header">特别声明</view>
+      <scroll-view scroll-y class="modal-content">
+        <text>本应用基于《易经》六爻数理模型进行算法推演，旨在弘扬传统国学文化。</text>
+        <text>\n\n测试结果仅供娱乐与民俗研究参考，请相信科学，切勿迷信。\n\n未成年人请在监护人陪同下使用。</text>
+      </scroll-view>
+      <button class="modal-btn" bindtap="acceptDisclaimer">我已知晓</button>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,357 @@
+/** pages/result/result.wxss **/
+/* Phase 13: Xianxia Upgrade - Integrating with Phase 11 Themes */
+
+.container {
+  min-height: 100vh;
+  padding: 40rpx 30rpx;
+  box-sizing: border-box;
+  /* Use global mist background */
+  background: var(--color-mist); 
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+/* Loading State - Ancient Spinner */
+.loading-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+}
+
+.spinner {
+  width: 80rpx;
+  height: 80rpx;
+  border: 6rpx solid var(--color-ink-light);
+  border-top-color: var(--color-jade);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 40rpx;
+}
+
+/* Hexagram Header Section */
+.hex-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 60rpx;
+  position: relative;
+  /* Add subtle background pattern */
+}
+
+/* Hexagram Name Card */
+.hex-circle {
+  width: 220rpx;
+  height: 220rpx;
+  border-radius: 50%;
+  background: #fff;
+  border: 4rpx solid var(--theme-primary); /* Inherit scene color */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8rpx 24rpx rgba(0,0,0,0.05);
+  margin-bottom: 30rpx;
+  position: relative;
+}
+
+.hex-circle::after {
+  content: '';
+  position: absolute;
+  top: 10rpx; left: 10rpx; right: 10rpx; bottom: 10rpx;
+  border: 1rpx dashed var(--theme-secondary);
+  border-radius: 50%;
+}
+
+.hex-symbol {
+  font-size: 80rpx;
+  line-height: 1;
+  color: var(--theme-primary);
+  margin-bottom: 8rpx;
+}
+
+.hex-name {
+  font-size: 40rpx;
+  font-weight: bold;
+  color: var(--color-ink);
+}
+
+.hex-pinyin {
+  font-size: 24rpx;
+  color: var(--color-ink-light);
+  text-transform: uppercase;
+  letter-spacing: 2rpx;
+}
+
+/* Scene Tag in Result */
+.scene-tag {
+  background: var(--theme-primary);
+  color: #fff;
+  padding: 8rpx 24rpx;
+  border-radius: 30rpx;
+  font-size: 26rpx;
+  margin-bottom: 20rpx;
+  border: 1rpx solid rgba(255,255,255,0.3);
+}
+
+.user-question {
+  font-size: 30rpx;
+  color: var(--color-ink);
+  text-align: center;
+  font-weight: bold;
+  max-width: 90%;
+  line-height: 1.5;
+}
+
+/* Content Cards (Xianxia Style) */
+.section-card {
+  /* Inherit global card style but override local needed vars */
+  background: #fff;
+  border-radius: 12rpx;
+  padding: 40rpx 30rpx;
+  margin-bottom: 30rpx;
+  border: 1rpx solid rgba(0,0,0,0.03);
+  box-shadow: 0 4rpx 12rpx rgba(0,0,0,0.02);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Card Decorative Header Line */
+.section-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 6rpx;
+  background: linear-gradient(90deg, transparent, var(--theme-primary), transparent);
+  opacity: 0.6;
+}
+
+.section-title {
+  font-size: 32rpx;
+  font-weight: bold;
+  color: var(--theme-primary);
+  margin-bottom: 24rpx;
+  display: flex;
+  align-items: center;
+}
+
+.section-title::before {
+  content: '';
+  display: block;
+  width: 8rpx;
+  height: 32rpx;
+  background: var(--theme-secondary);
+  margin-right: 16rpx;
+  border-radius: 4rpx;
+}
+
+.section-content {
+  font-size: 30rpx;
+  color: var(--color-ink);
+  line-height: 1.8;
+  text-align: justify;
+}
+
+/* Analysis Meta (Score) */
+.score-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24rpx;
+  background: rgba(0,0,0,0.02);
+  padding: 16rpx;
+  border-radius: 8rpx;
+}
+
+.score-label {
+  font-size: 26rpx;
+  color: var(--color-ink-light);
+  margin-right: 20rpx;
+}
+
+.score-bar {
+  flex: 1;
+  margin-right: 20rpx;
+}
+
+.score-value {
+  font-size: 32rpx;
+  font-weight: bold;
+  color: var(--theme-primary);
+  font-family: Arial, sans-serif;
+}
+
+/* Response Tags */
+.tags-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16rpx;
+  margin-bottom: 30rpx;
+}
+
+.result-tag {
+  font-size: 24rpx;
+  padding: 6rpx 16rpx;
+  border-radius: 8rpx;
+  border: 1rpx solid;
+}
+
+.keyword-tag {
+  background: var(--theme-bg);
+  color: var(--theme-primary);
+  border-color: var(--theme-secondary);
+}
+
+.advice-tag {
+  background: #fff;
+  color: var(--color-ink-light);
+  border-color: #ddd;
+}
+.keywords-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16rpx;
+}
+
+.keyword-chip {
+  background: var(--theme-bg);
+  color: var(--theme-primary);
+  padding: 8rpx 20rpx;
+  border-radius: 8rpx;
+  font-size: 26rpx;
+  border: 1rpx solid var(--theme-secondary);
+}
+
+/* Action Buttons */
+.footer-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40rpx;
+  margin-bottom: 60rpx;
+}
+
+.action-btn {
+  flex: 1;
+  margin: 0 15rpx;
+  height: 88rpx;
+  line-height: 88rpx;
+  text-align: center;
+  border-radius: 12rpx;
+  font-size: 30rpx;
+  font-weight: bold;
+  
+  /* Outline Style by default */
+  background: transparent;
+  border: 2rpx solid var(--theme-primary);
+  color: var(--theme-primary);
+  transition: all 0.2s;
+}
+
+.action-btn.primary {
+  background: var(--theme-primary);
+  color: #fff;
+  box-shadow: 0 6rpx 16rpx rgba(0,0,0,0.1);
+}
+
+.action-btn:active {
+  transform: scale(0.98);
+  opacity: 0.9;
+}
+
+/* --- Theme Color Variables (Preserved from Phase 11) --- */
+/* These will be injected via style attribute or specific classes in WXML */
+/* But we define defaults here for reference */
+
+.theme-career {
+  --theme-primary: #2C5F58;  /* Match Jade */
+  --theme-secondary: #CBA763; /* Match Gold */
+  --theme-bg: #F0F6F5;
+}
+
+.theme-love {
+  --theme-primary: #D45D79; /* Pink/Red */
+  --theme-secondary: #EAAEC0;
+  --theme-bg: #FEF0F4;
+}
+
+.theme-wealth {
+  --theme-primary: #CBA763; /* Gold */
+  --theme-secondary: #8B7355; 
+  --theme-bg: #FFF9E6;
+}
+
+.theme-health {
+  --theme-primary: #4A90E2; 
+  --theme-secondary: #A3C9F2;
+  --theme-bg: #F0F7FF;
+}
+
+.theme-study {
+  --theme-primary: #5D5C61; /* Ink/Scholar */
+  --theme-secondary: #938E96;
+  --theme-bg: #F5F5F7;
+}
+
+.theme-fortune {
+  --theme-primary: #722ED1; /* Purple/Mystic for Fortune */
+  --theme-secondary: #B37FEB;
+  --theme-bg: #F9F0FF;
+}
+
+.theme-family {
+  --theme-primary: #FA8C16; /* Warm Orange for Family */
+  --theme-secondary: #FFC069;
+  --theme-bg: #FFF7E6;
+}
+
+.theme-travel {
+  --theme-primary: #13C2C2; /* Cyan/Sky for Travel */
+  --theme-secondary: #87E8DE;
+  --theme-bg: #E6FFFB;
+}
+
+.theme-lawsuit {
+  --theme-primary: #2F54EB; /* Stern Blue for Law */
+  --theme-secondary: #85A5FF;
+  --theme-bg: #F0F5FF;
+}
+
+.theme-default {
+  --theme-primary: #333333;
+  --theme-secondary: #999999;
+  --theme-bg: #F8F8F8;
+}
+
+/* Error State */
+.error-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 60vh;
+}
+
+.error-icon {
+  font-size: 80rpx;
+  margin-bottom: 30rpx;
+  color: #D81E06;
+}
+
+.error-text {
+  font-size: 30rpx;
+  color: var(--color-ink);
+  margin-bottom: 40rpx;
+}
+
+.retry-btn {
+  width: 200rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  background: var(--color-ink);
+  color: #fff;
+  text-align: center;
+  border-radius: 8rpx;
+}

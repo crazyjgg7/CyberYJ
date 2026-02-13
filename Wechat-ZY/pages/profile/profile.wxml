@@ -1,0 +1,65 @@
+<view class="container">
+  <!-- Header Section -->
+  <view class="profile-header">
+    <view class="avatar-container">
+      <open-data type="userAvatarUrl" class="avatar"></open-data> 
+      <!-- Fallback container if needed, but open-data handles display -->
+    </view>
+    <view class="user-info">
+      <open-data type="userNickName" class="nickname"></open-data>
+      <text class="user-tag">道友</text>
+    </view>
+  </view>
+
+  <!-- Menu List -->
+  <view class="menu-card">
+    <view class="menu-item" bindtap="goToHistory">
+      <image class="menu-icon" src="../../images/history.svg" mode="aspectFit"></image> 
+      <text class="menu-text">我的卜卦记录</text>
+      <text class="arrow">></text>
+    </view>
+    
+    <view class="menu-item">
+      <image class="menu-icon" src="../../images/shake.svg" mode="aspectFit"></image>
+      <text class="menu-text">摇一摇起卦</text>
+      <switch checked="{{gyroEnabled}}" bindchange="toggleGyro" color="#D4AF37" style="transform: scale(0.8);"/>
+    </view>
+
+    <view class="menu-item" bindtap="clearHistory">
+      <image class="menu-icon" src="../../images/delete.svg" mode="aspectFit"></image>
+      <text class="menu-text">清除缓存</text>
+      <text class="arrow">></text>
+    </view>
+  </view>
+
+  <view class="menu-card">
+    <view class="menu-item" bindtap="showAbout">
+      <image class="menu-icon" src="../../images/about.svg" mode="aspectFit"></image>
+      <text class="menu-text">关于我们</text>
+      <text class="arrow">></text>
+    </view>
+
+    <button class="menu-item feedback-btn" open-type="feedback">
+      <image class="menu-icon" src="../../images/feedback.svg" mode="aspectFit"></image>
+      <text class="menu-text">意见反馈</text>
+      <text class="arrow">></text>
+    </button>
+  </view>
+
+  <view class="copyright-card">
+    <view class="copyright-title">特别声明</view>
+    <view class="copyright-content">
+      <text>1. 本应用算法基于《易经》六爻数理模型，旨在弘扬传统国学文化。\n</text>
+      <text>2. 所有测试结果仅供娱乐、心理疏导与民俗研究参考，不具备任何科学依据，不作为决策建议。\n</text>
+      <text>3. 请崇尚科学，理性对待，切勿迷信。\n</text>
+      <text>4. 背景音乐《三个人的时光》来源于网络，版权归原作者所有。本项目无任何商业盈利目的。</text>
+    </view>
+    <view class="copyright-contact">
+      如有侵权或建议请联系：[1378150147@qq.com]
+    </view>
+  </view>
+
+  <view class="footer">
+    <text class="version">v1.0.0 CyberYJ</text>
+  </view>
+</view>

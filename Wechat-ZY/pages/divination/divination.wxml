@@ -1,0 +1,103 @@
+<view class="container">
+  <music-control />
+  <!-- guide overlay -->
+  <view class="guide-mask" wx:if="{{showGuide}}" bindtap="closeGuide">
+    <view class="guide-content" catchtap="dummy">
+      <view class="guide-icon">📱</view>
+      <text class="guide-text">请专注心念\n摇动手机 6 次\n或点击按钮进行卜卦</text>
+      <button class="guide-btn" bindtap="closeGuide">我知道了</button>
+    </view>
+  </view>
+  <!-- Mode Switch -->
+  <view class="mode-switch" bindtap="toggleMode">
+    <text class="mode-text">切换模式</text>
+  </view>
+
+  <!-- Scene and Question Info -->
+  <view class="scene-info" wx:if="{{sceneName}}">
+    <view class="scene-tag">[{{sceneName}}]</view>
+    <text class="question-text">{{question}}</text>
+  </view>
+
+  <view class="hint-area">
+    <block wx:if="{{status === 'complete'}}">
+      <text class="hint-text">卦象已成，点击查看</text>
+    </block>
+    <block wx:else>
+      <block wx:if="{{mode === 'gyro'}}">
+        <text class="hint-text">{{status === 'shaking' ? '感应中...' : '请摇晃手机起卦'}}</text>
+      </block>
+      <block wx:elif="{{mode === 'touch'}}">
+        <text class="hint-text">{{status === 'shaking' ? '感应中...' : '点击下方按钮起卦'}}</text>
+        <text class="sub-hint-mode">(无法使用陀螺仪时的替代方案)</text>
+      </block>
+      <block wx:else>
+        <text class="hint-text">点击铜钱调整阴阳</text>
+        <text class="sub-hint-mode">(手动投掷铜钱后记录结果)</text>
+      </block>
+    </block>
+    <text class="sub-hint">{{lines.length}}/6 爻</text>
+  </view>
+
+  <view class="lines-area {{status === 'shaking' ? 'shaking-anim' : ''}}">
+    <block wx:for="{{lines}}" wx:key="index">
+      <view class="line-row fade-in">
+        <!-- Line Graphic (Left) -->
+        <view class="line-wrapper">
+            <view class="line yin" wx:if="{{item.value === 6 || item.value === 8}}">
+            <view class="bar"></view>
+            <view class="gap"></view>
+            <view class="bar"></view>
+            </view>
+            
+            <view class="line yang" wx:if="{{item.value === 7 || item.value === 9}}">
+            <view class="bar-full"></view>
+            </view>
+
+            <!-- Overlay X/O for changing lines -->
+            <view class="changing-mark" wx:if="{{item.value === 6}}">✕</view>
+            <view class="changing-mark" wx:if="{{item.value === 9}}">○</view>
+        </view>
+
+        <!-- Right: Coins & Annotation -->
+        <view class="info-right">
+            <view class="coins-display">
+                <block wx:for="{{item.coins}}" wx:for-item="coin" wx:key="*this">
+                    <image class="coin-icon-small" src="../../images/coin-{{coin === 2 ? 'front' : 'back'}}.svg"></image>
+                </block>
+            </view>
+            <text class="annotation-text">
+                {{item.value === 6 ? '老阴' : (item.value === 9 ? '老阳' : (item.value === 7 ? '少阳' : '少阴'))}}
+            </text>
+        </view>       
+      </view>
+    </block>
+  </view>
+
+  <!-- Manual Input Area -->
+  <view class="manual-area" wx:if="{{mode === 'input' && status !== 'complete'}}">
+     <view class="manual-coins">
+        <block wx:for="{{manualCoins}}" wx:key="index">
+            <view class="manual-coin-wrapper" bindtap="toggleCoin" data-index="{{index}}">
+                <image 
+                    class="manual-coin" 
+                    src="../../images/coin-{{item === 2 ? 'front' : 'back'}}.svg"
+                ></image>
+                <text class="coin-label">{{item === 2 ? '字' : '花'}}</text>
+            </view>
+        </block>
+     </view>
+     <button class="action-btn" hover-class="btn-hover" bindtap="confirmManualLine">确认此爻</button>
+  </view>
+
+  <view class="action-area" wx:else>
+    <button 
+      class="action-btn {{status === 'complete' ? 'finish-btn' : ''}}" 
+      hover-class="btn-hover" 
+      bindtap="handleAction"
+      wx:if="{{status === 'complete' || mode === 'touch'}}"
+    >
+      {{status === 'complete' ? '查看卦解' : '点击起卦'}}
+    </button>
+  </view>
+</view>

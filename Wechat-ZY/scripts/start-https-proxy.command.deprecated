@@ -1,0 +1,18 @@
+#!/bin/bash
+
+# Start Nginx for Wechat Local Dev
+# Requires sudo for port 443
+
+CONF_PATH="/Users/apple/dev/CyberYJ/Wechat-ZY/scripts/nginx-for-wechat.conf.deprecated"
+
+echo "Stopping existing nginx..."
+sudo nginx -s stop 2>/dev/null
+
+echo "Starting Nginx with config: $CONF_PATH"
+sudo nginx -c "$CONF_PATH"
+
+if [ $? -eq 0 ]; then
+    echo "✅ Nginx Started: https://youtang.128228.xyz -> http://127.0.0.1:18080"
+else
+    echo "❌ Failed to start Nginx"
+fi

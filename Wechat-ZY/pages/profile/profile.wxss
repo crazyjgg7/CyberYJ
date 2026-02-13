@@ -1,0 +1,155 @@
+/* Pages Profile Styles */
+page {
+  background-color: var(--bg-color); /* Light gray usually */
+}
+
+.container {
+  padding-bottom: 40rpx;
+}
+
+/* Header */
+.profile-header {
+  background-color: #fff;
+  padding: 40rpx 40rpx;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20rpx;
+}
+
+.avatar-container {
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 30rpx;
+  background-color: #f0f0f0;
+  border: 2rpx solid #e0e0e0;
+}
+
+.avatar {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.avatar-img {
+  width: 100%;
+  height: 100%;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.nickname {
+  font-size: 36rpx;
+  font-weight: bold;
+  color: var(--text-main);
+  margin-bottom: 8rpx;
+}
+
+.user-tag {
+  font-size: 24rpx;
+  color: #fff;
+  background-color: var(--primary-color);
+  padding: 4rpx 16rpx;
+  border-radius: 20rpx;
+  align-self: flex-start;
+}
+
+/* Menu Card */
+.menu-card {
+  background-color: #fff;
+  margin: 20rpx 30rpx;
+  border-radius: 16rpx;
+  overflow: hidden;
+  box-shadow: 0 4rpx 12rpx rgba(0,0,0,0.03);
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  height: 110rpx;
+  padding: 0 30rpx;
+  background-color: #fff;
+  border-bottom: 1rpx solid #f5f5f5;
+  transition: background-color 0.2s;
+}
+
+.menu-item:last-child {
+  border-bottom: none;
+}
+
+.menu-item:active {
+  background-color: #f9f9f9;
+}
+
+/* Button Reset */
+button.menu-item {
+  width: 100%;
+  font-weight: normal;
+  margin: 0;
+  border-radius: 0;
+  text-align: left;
+  line-height: normal;
+}
+
+button.menu-item::after {
+  border: none;
+}
+
+.menu-icon {
+  width: 44rpx;
+  height: 44rpx;
+  margin-right: 24rpx;
+}
+
+.menu-text {
+  flex: 1;
+  font-size: 30rpx;
+  color: var(--text-main);
+}
+
+.arrow {
+  color: #ccc;
+  font-size: 26rpx;
+}
+
+/* Footer */
+.footer {
+  margin-top: 60rpx;
+  text-align: center;
+}
+
+.version {
+  font-size: 24rpx;
+  color: #999;
+}/* Copyright Card */
+.copyright-card {
+  margin: 30rpx 30rpx;
+  padding: 24rpx;
+  background-color: #f8f8f8;
+  border-radius: 12rpx;
+  border: 1rpx solid #eee;
+}
+
+.copyright-title {
+  font-size: 26rpx;
+  font-weight: bold;
+  color: #666;
+  margin-bottom: 12rpx;
+}
+
+.copyright-content {
+  font-size: 24rpx;
+  color: #999;
+  line-height: 1.6;
+  margin-bottom: 12rpx;
+  text-align: justify;
+}
+
+.copyright-contact {
+  font-size: 24rpx;
+  color: #576b95; /* Link color */
+}

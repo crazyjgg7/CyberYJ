@@ -1,0 +1,35 @@
+worker_processes  1;
+
+events {
+    worker_connections  1024;
+}
+
+http {
+    include       /usr/local/etc/nginx/mime.types;
+    default_type  application/octet-stream;
+    sendfile        on;
+    keepalive_timeout  65;
+
+    server {
+        listen       443 ssl;
+        server_name  youtang.128228.xyz;
+
+        # SSL Configuration
+        ssl_certificate      "/Users/apple/Desktop/nginx证书/cert.pem";
+        ssl_certificate_key  "/Users/apple/Desktop/nginx证书/privkey.pem";
+
+        ssl_session_cache    shared:SSL:1m;
+        ssl_session_timeout  5m;
+        ssl_ciphers  HIGH:!aNULL:!MD5;
+        ssl_prefer_server_ciphers  on;
+
+        # Proxy to Local API
+        location / {
+            proxy_pass http://127.0.0.1:18080;
+            proxy_set_header Host $host;
+            proxy_set_header X-Real-IP $remote_addr;
+            proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+            proxy_set_header X-Forwarded-Proto $scheme;
+        }
+    }
+}

@@ -1,0 +1,42 @@
+/* divination.wxss */
+.guide-mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.guide-content {
+  background: white;
+  padding: 40px;
+  border-radius: 16px;
+  text-align: center;
+  width: 70%;
+}
+
+.guide-icon {
+  font-size: 60px;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.guide-text {
+  font-size: 18px;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  display: block;
+}
+
+.guide-btn {
+  background: var(--color-primary);
+  color: white;
+  border-radius: 20px;
+  width: 120px;
+}

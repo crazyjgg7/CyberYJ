@@ -19,6 +19,8 @@
 - `keyword_dispatch` 可用（文本自动路由）
 - 输出协议统一：`tool + data + meta`
 - Wechat 小程序 HTTP 适配接口已落地：`POST /v1/divination/interpret`
+- Wechat 前端工程已并入当前仓库：`/Users/apple/dev/CyberYJ/Wechat-ZY`
+- Wechat 工程可直接导入开发者工具（已补齐 `sitemap.json`，API 层兼容 `tool+data+meta` 与直出结构）
 - Wechat 场景化接口增强已落地：支持 `scene_type` 入参优先级、`keywords/advice_tags/score` 与 `consistency` 输出
 - Wechat HTTP API 安全基线（D2）已完成：`X-API-Key` + 固定窗口限流
 - Wechat HTTP API 可观测性（D3）已完成：`X-Request-ID`、结构化日志、错误计数追踪

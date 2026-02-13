@@ -1,0 +1,6 @@
+{
+    "navigationBarTitleText": "首页",
+    "usingComponents": {
+        "music-control": "../../components/music-control/music-control"
+    }
+}

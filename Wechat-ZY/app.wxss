@@ -1,0 +1,101 @@
+/** app.wxss **/
+page {
+  /* --- Phase 13: 仙侠风 Design Tokens --- */
+  
+  /* 1. 玄青 (Jade) - Major Actions, Icons */
+  --color-jade: #2C5F58;
+  
+  /* 2. 墨色 (Ink) - Text, Borders */
+  --color-ink: #333333;
+  --color-ink-light: #666666;
+  
+  /* 3. 云白 (Mist) - Backgrounds */
+  --color-mist: #F7F7F2;
+  
+  /* 4. 流金 (Gold) - Accents */
+  --color-gold: #CBA763;
+  
+  /* Legacy mapping for backward compatibility */
+  --primary-color: var(--color-jade); 
+  --bg-color: var(--color-mist);
+  --text-main: var(--color-ink);
+  --text-secondary: var(--color-ink-light);
+  
+  /* Typography */
+  --font-serif: "Songti SC", "SimSun", "STSong", "AR PL New Sung", serif;
+  
+  /* Global Background: Cloud Mist Effect */
+  background: radial-gradient(circle at 50% 30%, #FFFFFF, var(--color-mist));
+  min-height: 100vh;
+  
+  font-family: var(--font-serif);
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* Changed from space-between for better control */
+  padding: 40rpx 30rpx;
+  box-sizing: border-box;
+}
+
+/* --- Phase 13 Components --- */
+
+/* 1. 符箓/玉牌按钮 (Xianxia Button) */
+.btn-xianxia {
+  background: var(--color-jade);
+  color: #fff;
+  border: 4rpx double var(--color-gold); /* Double border for talisman look */
+  border-radius: 12rpx; /* Slightly rounded, like a jade tablet */
+  font-family: var(--font-serif);
+  font-weight: bold;
+  letter-spacing: 4rpx;
+  box-shadow: 0 4rpx 10rpx rgba(44, 95, 88, 0.3);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-xianxia::after {
+  /* Subtle sheen effect */
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(45deg, transparent, rgba(255,255,255,0.1), transparent);
+  transform: rotate(45deg);
+  transition: all 0.5s;
+}
+
+.btn-xianxia-hover {
+  transform: translateY(2rpx);
+  box-shadow: 0 2rpx 6rpx rgba(44, 95, 88, 0.5); /* Glow intensifies */
+  background: #24504A; /* Darker Jade */
+}
+
+/* 2. 宣纸卡片 (Rice Paper Card) */
+.card-xianxia {
+  background: #fff; /* Pure white base */
+  background-image: linear-gradient(to bottom right, #fff, #fcfcfc);
+  border: 1rpx solid rgba(0,0,0,0.05);
+  box-shadow: 0 4rpx 12rpx rgba(0,0,0,0.03);
+  border-radius: 8rpx;
+  padding: 30rpx;
+  position: relative;
+}
+
+/* Optional: Corner decoration */
+.card-xianxia::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4rpx;
+  background: linear-gradient(90deg, transparent, var(--color-gold), transparent);
+  opacity: 0.5;
+}

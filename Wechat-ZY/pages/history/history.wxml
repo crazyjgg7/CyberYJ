@@ -1,0 +1,28 @@
+<view class="container">
+  <block wx:if="{{history.length > 0}}">
+    <view class="history-list">
+      <view class="history-item" wx:for="{{history}}" wx:key="id" bindtap="viewDetail" data-id="{{item.id}}">
+        <view class="item-left">
+          <view class="hex-symbol">{{item.result.hexagram.symbol}}</view>
+        </view>
+        <view class="item-content">
+          <view class="item-header">
+            <text class="hex-name">{{item.result.hexagram.name}}卦</text>
+            <text class="date">{{item.dateStr}}</text>
+          </view>
+          <text class="judgment">{{item.result.hexagram.judgment}}</text>
+        </view>
+        <view class="item-right">
+          <text class="arrow">></text>
+        </view>
+      </view>
+    </view>
+    <view class="actions">
+      <button class="clear-btn" bindtap="clearHistory">清空记录</button>
+    </view>
+  </block>
+  
+  <view class="empty-state" wx:else>
+    <text>暂无卜卦记录</text>
+  </view>
+</view>

@@ -1,0 +1,147 @@
+/** index.wxss **/
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 0; 
+  background: var(--color-mist);
+}
+
+.title-group {
+  display: flex;
+  flex-direction: row-reverse; /* Right to Left visual order if not using writing-mode on container, but let's use writing-mode on items or container */
+  /* Actually with vertical-rl on container:
+     first child is Rightmost. 
+     second child is Left of first.
+  */
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  align-items: flex-start; /* Vertical alignment in horizontal mode, but here it's Horizontal alignment in vertical mode? 
+                              No, inside vertical-rl: 
+                              align-items controls alignment along the Cross Axis (Horizontal).
+                              Wait, Main Axis is Vertical. Cross Axis is Horizontal (Right to Left).
+                              So align-items ends up controlling vertical alignment of lines? 
+                              Let's test. 
+                              Actually, just putting writing-mode on container is easiest.
+  */
+  margin-bottom: 120rpx;
+  height: auto;
+}
+
+.sub-title {
+  font-size: 36rpx;
+  color: var(--color-ink-light);
+  letter-spacing: 12rpx;
+  margin-left: 40rpx; /* Increased space between lines */
+  margin-top: 0;      /* Removed negative margin to prevent overlap */
+  font-weight: normal;
+}
+
+.main-title {
+  font-size: 80rpx;
+  font-weight: bold;
+  color: var(--color-ink);
+  letter-spacing: 24rpx;
+  border-left: 4rpx solid var(--color-gold);
+  padding-left: 40rpx;
+}
+
+.start-btn {
+  /* Tai Chi / Alchemy Furnace Style Button */
+  width: 260rpx;
+  height: 260rpx;
+  border-radius: 50%;
+  background: radial-gradient(circle at 30% 30%, #3e8e84, var(--color-jade));
+  color: #fff;
+  font-size: 40rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10rpx 30rpx rgba(44, 95, 88, 0.4), inset 0 0 20rpx rgba(255,255,255,0.2);
+  border: 4rpx solid var(--color-gold);
+  position: relative;
+  z-index: 10;
+  
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  letter-spacing: 12rpx;
+}
+
+/* Decorative Ring around button */
+.start-btn::before {
+  content: '';
+  position: absolute;
+  top: -20rpx;
+  left: -20rpx;
+  right: -20rpx;
+  bottom: -20rpx;
+  border: 2rpx dashed var(--color-gold);
+  border-radius: 50%;
+  animation: spin 20s linear infinite;
+  opacity: 0.6;
+}
+
+.btn-hover {
+  transform: scale(0.95);
+  box-shadow: 0 6rpx 20rpx rgba(44, 95, 88, 0.5);
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Modal Styles */
+.modal-mask {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.6);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(4px);
+}
+
+.modal-box {
+  width: 560rpx;
+  background: #fff;
+  border-radius: 24rpx;
+  padding: 40rpx;
+  box-shadow: 0 10rpx 40rpx rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal-header {
+  font-size: 36rpx;
+  font-weight: bold;
+  color: var(--color-ink);
+  margin-bottom: 30rpx;
+  border-bottom: 2rpx solid var(--color-gold);
+  padding-bottom: 10rpx;
+}
+
+.modal-content {
+  max-height: 400rpx;
+  font-size: 28rpx;
+  color: #666;
+  line-height: 1.6;
+  text-align: justify;
+  margin-bottom: 40rpx;
+}
+
+.modal-btn {
+  width: 100%;
+  height: 88rpx;
+  background: var(--color-jade);
+  color: #fff;
+  font-size: 32rpx;
+  border-radius: 44rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

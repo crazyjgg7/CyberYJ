@@ -1,0 +1,101 @@
+{
+  "miniprogramRoot": "./",
+  "projectname": "CyberYJ-Wechat",
+  "description": "I Ching Divination Mini Program",
+  "appid": "wx3fd799cf0582bc8e",
+  "setting": {
+    "urlCheck": false,
+    "es6": true,
+    "enhance": true,
+    "postcss": true,
+    "preloadBackgroundData": false,
+    "minified": true,
+    "newFeature": true,
+    "coverView": true,
+    "nodeModules": true,
+    "autoAudits": false,
+    "showShadowRootInWxmlPanel": true,
+    "scopeDataCheck": false,
+    "uglifyFileName": false,
+    "checkInvalidDI": true,
+    "checkSiteMap": true,
+    "uploadWithSourceMap": true,
+    "compileHotReLoad": false,
+    "lazyloadPlaceholderEnable": false,
+    "useMultiFrameRuntime": true,
+    "useApiHook": true,
+    "useApiHostProcess": true,
+    "babelSetting": {
+      "ignore": [],
+      "disablePlugins": [],
+      "outputPath": ""
+    },
+    "enableEngineNative": false,
+    "useIsolateContext": true,
+    "userConfirmedBundleSwitch": false,
+    "packNpmManually": true,
+    "packNpmRelationList": [],
+    "minifyWXSS": true,
+    "compileWorklet": false,
+    "minifyWXML": true,
+    "localPlugins": false,
+    "disableUseStrict": false,
+    "useCompilerPlugins": false,
+    "condition": false,
+    "swc": false,
+    "disableSWC": true
+  },
+  "compileType": "miniprogram",
+  "libVersion": "2.19.4",
+  "srcMiniprogramRoot": "",
+  "packOptions": {
+    "ignore": [
+      {
+        "type": "folder",
+        "value": "docs"
+      },
+      {
+        "type": "folder",
+        "value": "scripts"
+      },
+      {
+        "type": "folder",
+        "value": "venv"
+      },
+      {
+        "type": "folder",
+        "value": ".gemini"
+      },
+      {
+        "type": "folder",
+        "value": ".agent"
+      },
+      {
+        "type": "file",
+        "value": "*.md"
+      },
+      {
+        "type": "file",
+        "value": "*.sh"
+      },
+      {
+        "type": "file",
+        "value": ".*"
+      },
+      {
+        "type": "file",
+        "value": "images/乾隆通宝字.png"
+      },
+      {
+        "type": "file",
+        "value": "images/符号面.png"
+      }
+    ],
+    "include": []
+  },
+  "editorSetting": {
+    "tabIndent": "insertSpaces",
+    "tabSize": 2
+  },
+  "simulatorPluginLibVersion": {}
+}

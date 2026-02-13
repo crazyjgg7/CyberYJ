@@ -1,0 +1,126 @@
+<view class="container {{themeClass}}">
+  <music-control />
+  <!-- Loading State -->
+  <view class="loading-state" wx:if="{{loading}}">
+    <view class="spinner"></view>
+    <text>正在向天问道...</text>
+  </view>
+
+  <!-- Error State -->
+  <view class="error-state" wx:elif="{{error}}">
+    <icon type="warn" size="64" color="#F56C6C"></icon>
+    <text>{{errorMsg}}</text>
+    <button class="retry-btn" bindtap="goHome">返回首页</button>
+  </view>
+
+  <!-- Result Content -->
+  <scroll-view class="result-content" scroll-y wx:else>
+    
+    <!-- Base Hexagram Card -->
+    <view class="card base-hexagram">
+      <view class="hex-header">
+        <view class="hex-symbol">{{result.hexagram.symbol}}</view>
+        <view class="hex-info">
+          <text class="hex-name">{{result.hexagram.name}}卦</text>
+          <text class="hex-structure">{{result.hexagram.upper_trigram}}上{{result.hexagram.lower_trigram}}下</text>
+        </view>
+      </view>
+      <view class="hex-text">
+        <view class="section-title">卦辞</view>
+        <text class="text-content">{{result.hexagram.judgment}}</text>
+        <view class="section-title">象曰</view>
+        <text class="text-content">{{result.hexagram.image}}</text>
+      </view>
+    </view>
+
+    <!-- General Analysis Card -->
+    <view class="card analysis-card">
+      <view class="card-title">综合分析</view>
+      
+      <!-- Score & Tags Section -->
+      <view class="analysis-meta" wx:if="{{result.score}}">
+        <view class="score-container">
+            <text class="score-label">吉凶指数</text>
+            <progress class="score-bar" percent="{{result.score}}" stroke-width="6" border-radius="4" activeColor="var(--theme-primary)" backgroundColor="rgba(0,0,0,0.05)" />
+            <text class="score-value">{{result.score}}</text>
+        </view>
+      </view>
+
+      <view class="tags-container" wx:if="{{result.keywords}}">
+        <block wx:for="{{result.keywords}}" wx:key="index">
+            <view class="result-tag keyword-tag">{{item}}</view>
+        </block>
+        <block wx:for="{{result.advice_tags}}" wx:key="index">
+            <view class="result-tag advice-tag">{{item}}</view>
+        </block>
+      </view>
+
+      <view class="analysis-section">
+        <text class="analysis-text">{{result.analysis.overall}}</text>
+      </view>
+      
+      <view class="analysis-section" wx:if="{{result.analysis.solar_term}}">
+        <text class="label">节气旺衰：</text>
+        <text>{{result.analysis.solar_term}}</text>
+      </view>
+
+      <view class="analysis-section" wx:if="{{result.analysis.five_elements}}">
+        <text class="label">五行生克：</text>
+        <text>{{result.analysis.five_elements}}</text>
+      </view>
+    </view>
+
+    <!-- Do / Dont Card -->
+    <view class="card do-dont-card" wx:if="{{result.do_dont}}">
+      <view class="half-section do-section">
+        <text class="section-header do-header">宜</text>
+        <block wx:for="{{result.do_dont.do}}" wx:key="index">
+          <text class="item do-item">✅ {{item}}</text>
+        </block>
+      </view>
+      <view class="half-section dont-section">
+        <text class="section-header dont-header">忌</text>
+        <block wx:for="{{result.do_dont.dont}}" wx:key="index">
+          <text class="item dont-item">❌ {{item}}</text>
+        </block>
+      </view>
+    </view>
+
+    <!-- Changing Lines (Active Lines) -->
+    <view class="card lines-card" wx:if="{{result.analysis.active_lines && result.analysis.active_lines.length > 0}}">
+      <view class="card-title">动爻解读</view>
+      <block wx:for="{{result.analysis.active_lines}}" wx:key="index">
+        <view class="line-item">
+          <text>{{item}}</text>
+        </view>
+      </block>
+    </view>
+
+    <!-- Changing Hexagram (If any) -->
+    <view class="card changing-hex-card" wx:if="{{result.changing_hexagram}}">
+      <view class="card-title">变卦：{{result.changing_hexagram.name}}</view>
+      <view class="hex-header small">
+        <view class="hex-symbol">{{result.changing_hexagram.symbol}}</view>
+        <view class="hex-text">
+          <text class="text-content">{{result.changing_hexagram.judgment}}</text>
+        </view>
+      </view>
+    </view>
+
+    <!-- Advice Card -->
+    <view class="card advice-card">
+      <view class="card-title">趋吉避凶</view>
+      <text class="advice-text">{{result.analysis.advice}}</text>
+    </view>
+
+    <view class="footer-actions">
+      <button class="action-btn share-btn" open-type="share">转发</button>
+      <button class="action-btn poster-btn" bindtap="generatePoster">生成海报</button>
+      <button class="action-btn home-btn" bindtap="goHome">回首页</button>
+    </view>
+
+  </scroll-view>
+  
+  <!-- Hidden Canvas for Poster Generation -->
+  <canvas type="2d" id="posterCanvas" style="width: 375px; height: 600px; position: fixed; left: -9999px;"></canvas>
+</view>

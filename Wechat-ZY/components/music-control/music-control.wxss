@@ -1,0 +1,29 @@
+/* components/music-control.wxss */
+.music-control {
+  position: fixed;
+  top: 180rpx; /* Adjust based on navigation bar height */
+  right: 30rpx;
+  width: 64rpx;
+  height: 64rpx;
+  z-index: 9999;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4rpx 12rpx rgba(0,0,0,0.1);
+}
+
+.music-icon {
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.playing .music-icon {
+  animation: rotate 3s linear infinite;
+}
+
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}

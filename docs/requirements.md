@@ -1,10 +1,16 @@
-# 玄学知识库 + MCP 服务 需求文档（v0.6）
+# 玄学知识库 + MCP + Wechat 小程序 需求文档（v0.7）
 
-更新时间：2026-02-12
+更新时间：2026-02-13
 默认时区：Asia/Shanghai（北京时间）
 
 **1. 项目概述**
 目标：将易经 + 风水（八宅、玄空飞星）结构化为 MCP 工具能力，提供可解释、可追溯的结果输出。
+
+**1.1 统一仓库结构（前后端一体）**
+- 后端服务仓库根目录：`/Users/apple/dev/CyberYJ`
+- 小程序前端目录：`/Users/apple/dev/CyberYJ/Wechat-ZY`
+- 前端通过 HTTP API 调用后端：`POST /v1/divination/interpret`
+- 小程序导入路径固定为：`/Users/apple/dev/CyberYJ/Wechat-ZY`
 
 **2. 范围（V1）**
 包含：

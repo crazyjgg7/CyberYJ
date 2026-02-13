@@ -1,0 +1,73 @@
+<view class="container">
+  <!-- Top Title Area -->
+  <view class="header">
+    <text class="title">请拨动法阵</text>
+    <text class="subtitle">选择您的问事场景</text>
+  </view>
+
+  <!-- Bagua Wheel Area -->
+  <view class="wheel-area">
+    <!-- Active Indicator (Fixed at Top) -->
+    <view class="active-indicator"></view>
+    
+    <!-- Wheel Container: Rotates based on gesture -->
+    <view class="bagua-wheel" 
+          style="transform: rotate({{wheelAngle}}deg);" 
+          bindtouchstart="onWheelTouchStart" 
+          bindtouchmove="onWheelTouchMove" 
+          bindtouchend="onWheelTouchEnd">
+          
+      <!-- Center Decoration (Tai Chi) - Now animated in CSS -->
+      <view class="center-taichi"></view>
+      
+      <!-- 6 Scene Items -->
+      <view class="scene-item item-{{index}} {{selectedIndex === index ? 'active' : ''}}" 
+            wx:for="{{scenes}}" 
+            wx:key="id"
+            data-index="{{index}}"
+            bindtap="onItemTap">
+        
+        <!-- Icon Container -->
+        <view class="icon-container" style="transform: rotate({{-wheelAngle - (index * 60)}}deg)">
+           <!-- Counter-rotate icon to keep it upright as wheel spins AND compensate for item position -->
+           <image class="scene-icon" src="../../images/scene-{{item.icon}}.svg" mode="aspectFit"></image>
+        </view>
+        
+        <!-- Name Label -->
+        <text class="scene-text" style="transform: rotate({{-wheelAngle - (index * 60)}}deg)">{{item.name}}</text>
+      </view>
+      
+      <!-- Decorative Rings -->
+      <view class="ring-outer"></view>
+    </view>
+  </view>
+
+  <!-- Dynamic Input Area & Action -->
+  <view class="input-section">
+      <view class="selected-scene-header">
+        <text class="selected-label">当前选择：</text>
+        <text class="selected-name">{{scenes[selectedIndex].name}}</text>
+      </view>
+      
+      <view class="hint-text">
+        <block wx:if="{{scenes[selectedIndex].id === 'career'}}">可问升迁·跳槽·创业·职场人际...</block>
+        <block wx:elif="{{scenes[selectedIndex].id === 'love'}}">可问正缘·复合·桃花·感情走势...</block>
+        <block wx:elif="{{scenes[selectedIndex].id === 'wealth'}}">可问投资·理财·正财·偏财运势...</block>
+        <block wx:elif="{{scenes[selectedIndex].id === 'health'}}">可问身体·疾病·疗养·家人安康...</block>
+        <block wx:elif="{{scenes[selectedIndex].id === 'study'}}">可问考试·考研·留学·技能进修...</block>
+        <block wx:else>心中疑惑，皆可诚心问之...</block>
+      </view>
+
+      <!-- Quick Question Chips -->
+      <view class="chips-container" wx:if="{{quickQuestions && quickQuestions.length > 0}}">
+        <block wx:for="{{quickQuestions}}" wx:key="*this">
+          <view class="chip" bindtap="fillQuestion" data-question="{{item}}">{{item}}</view>
+        </block>
+      </view>
+      
+      <!-- Simplified Input -->
+      <input class="simple-input" placeholder="输入具体问题 (选填)" value="{{question}}" bindinput="onQuestionInput" />
+      
+      <button class="confirm-btn" bindtap="startDivination">开始起卦</button>
+  </view>
+</view>

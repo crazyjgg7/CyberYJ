@@ -1,0 +1,4 @@
+<!-- components/music-control.wxml -->
+<view class="music-control {{isPlaying ? 'playing' : ''}}" bindtap="toggleMusic">
+  <image class="music-icon" src="../../images/music.svg" mode="aspectFit"></image>
+</view>

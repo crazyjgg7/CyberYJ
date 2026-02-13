@@ -21,6 +21,7 @@
 - Wechat 小程序 HTTP 适配接口已落地：`POST /v1/divination/interpret`
 - Wechat HTTP API 安全基线（D2）已完成：`X-API-Key` + 固定窗口限流
 - Wechat HTTP API 可观测性（D3）已完成：`X-Request-ID`、结构化日志、错误计数追踪
+- 场景解读一致性（D4）已完成：统一建议基调（攻/守/中），`do_dont` 与 `key_points` 去冲突
 - 全场景数据已补齐（命运/事业/感情/财运/健康/学业/家庭/出行/诉讼）
 - 玄空飞星 V2（宅盘 + 流年叠加 + 当前吉凶位）已上线
 - 权威来源索引与映射机制已接入（书目级 + 字段级首批）

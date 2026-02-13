@@ -318,6 +318,47 @@ class TestFengshuiDivinationTool:
         assert '五行关系' in trace_text
         assert '当前节气' in trace_text
 
+    def test_scene_consistency_mingyi_love_no_attack_guard_conflict(self):
+        """测试明夷感情场景不再出现“守势 + 进取”冲突"""
+        result = self.tool.execute(
+            upper_trigram="坤",
+            lower_trigram="離",
+            question_type="感情",
+            timestamp="2026-02-13T10:00:00+08:00",
+            timezone="Asia/Shanghai",
+        )
+
+        # 场景核心仍是守势
+        assert "需低调守护" in result["fortune_advice"]
+
+        do_text = " ".join(result["do_dont"]["do"])
+        dont_text = " ".join(result["do_dont"]["dont"])
+
+        # 不应再出现进攻型建议
+        assert "积极进取" not in do_text
+        assert "把握机遇" not in do_text
+        # 守势场景不应把“保守”列为忌
+        assert "过于保守" not in dont_text
+
+    def test_scene_consistency_mingyi_career_no_attack_guard_conflict(self):
+        """测试明夷事业场景不再出现“低调保守 + 积极进取”冲突"""
+        result = self.tool.execute(
+            upper_trigram="坤",
+            lower_trigram="離",
+            question_type="事业",
+            timestamp="2026-02-13T10:00:00+08:00",
+            timezone="Asia/Shanghai",
+        )
+
+        assert "低调保守" in result["fortune_advice"]
+
+        do_text = " ".join(result["do_dont"]["do"])
+        dont_text = " ".join(result["do_dont"]["dont"])
+
+        assert "积极进取" not in do_text
+        assert "把握机遇" not in do_text
+        assert "过于保守" not in dont_text
+
 
 class TestFengshuiDivinationIntegration:
     """集成测试"""
@@ -342,7 +383,8 @@ class TestFengshuiDivinationIntegration:
         # 乾卦初爻变，验证变卦存在即可
         assert result['changing_hexagram']['name'] is not None
         assert 'do_dont' in result
-        assert '自强不息' in str(result['do_dont']['do'])
+        do_text = " ".join(result["do_dont"]["do"])
+        assert any(keyword in do_text for keyword in ["主动", "进取", "把握机会"])
 
 
 if __name__ == '__main__':

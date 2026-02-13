@@ -10,7 +10,7 @@
 """
 
 from datetime import datetime
-from typing import Dict, Any, Optional, List
+from typing import Dict, Any, Optional, List, Tuple
 import pytz
 
 from cyberYJ.core.hexagram_analyzer import HexagramAnalyzer
@@ -46,6 +46,60 @@ class FengshuiDivinationTool:
         "家庭": "family",
         "出行": "travel",
         "诉讼": "lawsuit"
+    }
+
+    # 建议基调关键词（用于一致性判定）
+    GUARD_HINTS = [
+        "低调", "收敛", "保守", "谨慎", "等待", "暂缓", "自保", "韬光养晦",
+        "不宜", "避免冲突", "防止", "风险偏高", "不利", "凶"
+    ]
+    ATTACK_HINTS = [
+        "积极", "进取", "把握机遇", "扩张", "突破", "推进", "冲刺", "放手一搏", "大展宏图"
+    ]
+    GUARD_CONFLICT_DONT = ["过于保守", "错失良机", "不宜等待", "忌守"]
+    ATTACK_CONFLICT_DO = ["暂缓", "按兵不动", "完全观望", "停止行动"]
+
+    # 强语义卦名的基调兜底（用于防止 key_points 缺失时跑偏）
+    GUARD_HEXAGRAMS = {"明夷", "否", "遯", "剥", "困", "蹇", "坎"}
+    ATTACK_HEXAGRAMS = {"乾", "泰", "晋", "大有", "升", "解"}
+
+    TONE_TEMPLATES = {
+        "guard": {
+            "do": [
+                "低调行事，先稳住局面",
+                "以守代攻，控制节奏",
+                "优先自保，减少无谓消耗",
+            ],
+            "dont": [
+                "盲目冒进，强行突破",
+                "高调出头，激化矛盾",
+                "忽视风险，过度扩张",
+            ],
+        },
+        "attack": {
+            "do": [
+                "顺势推进，主动把握窗口",
+                "聚焦关键目标，果断执行",
+                "整合资源，扩大成果",
+            ],
+            "dont": [
+                "犹豫拖延，错失时机",
+                "分散精力，贪多求快",
+                "忽视边界，过度冒险",
+            ],
+        },
+        "neutral": {
+            "do": [
+                "稳扎稳打，循序推进",
+                "先验证再扩大投入",
+                "保持沟通，动态调整",
+            ],
+            "dont": [
+                "急于求成，一步到位",
+                "情绪决策，忽略复盘",
+                "长期僵化，不做调整",
+            ],
+        },
     }
 
     def __init__(self):
@@ -211,14 +265,16 @@ class FengshuiDivinationTool:
                 hexagram,
                 changing_hexagram,
                 element_analysis,
-                scenario_hexagram
+                scenario_hexagram,
+                trace
             )
         else:
             result["do_dont"] = self._generate_do_dont(
                 hexagram,
                 None,
                 element_analysis,
-                scenario_hexagram
+                scenario_hexagram,
+                trace
             )
 
         # 添加免责声明（如果需要）
@@ -343,7 +399,8 @@ class FengshuiDivinationTool:
         hexagram: Dict[str, Any],
         changing_hexagram: Optional[Dict[str, Any]],
         element_analysis: Dict[str, Any],
-        scenario_hexagram: Optional[Dict[str, Any]] = None
+        scenario_hexagram: Optional[Dict[str, Any]] = None,
+        trace: Optional[List[str]] = None
     ) -> Dict[str, List[str]]:
         """
         生成宜忌建议
@@ -357,68 +414,180 @@ class FengshuiDivinationTool:
         Returns:
             包含 do 和 dont 列表的字典
         """
-        do_list = []
-        dont_list = []
+        do_list: List[str] = []
+        dont_list: List[str] = []
 
-        # 优先使用场景化数据（如果有）
+        tone = self._determine_guidance_tone(
+            hexagram=hexagram,
+            element_analysis=element_analysis,
+            scenario_hexagram=scenario_hexagram,
+        )
+        if trace is not None:
+            tone_label = {"guard": "守势", "attack": "攻势", "neutral": "中性"}.get(tone, tone)
+            trace.append(f"建议基调: {tone_label}")
+
+        # 1) 场景优先：使用 opportunities/challenges 或 scenario_specific advice
         if scenario_hexagram:
-            # 从场景数据中提取建议
-            opportunities = scenario_hexagram.get('opportunities', [])
-            challenges = scenario_hexagram.get('challenges', [])
+            do_candidates, dont_candidates = self._collect_scenario_candidates(scenario_hexagram)
+            do_list.extend(do_candidates)
+            dont_list.extend(dont_candidates)
 
-            # 机遇转化为"宜做"
-            for opp in opportunities[:3]:
+        # 2) 通用兜底：仅在场景数据不足时补齐，不再无条件注入“进取模板”
+        if len(do_list) < 3 or len(dont_list) < 3:
+            do_fallback, dont_fallback = self._build_generic_fallback(element_analysis, tone)
+            do_list.extend(do_fallback)
+            dont_list.extend(dont_fallback)
+
+        # 3) 卦象级补充（保留历史行为，但走基调过滤）
+        special_do, special_dont = self._get_special_advice(hexagram["name"])
+        do_list.extend(special_do)
+        dont_list.extend(special_dont)
+
+        # 4) 变卦提示（按基调区分）
+        if changing_hexagram:
+            if tone == "guard":
+                do_list.append("顺势微调，先守后动")
+                dont_list.append("情绪化转向，频繁折腾")
+            elif tone == "attack":
+                do_list.append("顺势加速，动态校正")
+                dont_list.append("固守旧法，错失窗口")
+            else:
+                do_list.append("顺应变化，灵活调整")
+                dont_list.append("固守成规，拒绝改变")
+
+        # 5) 一致性过滤 + 模板补齐
+        do_list = self._filter_by_tone(do_list, tone, item_type="do")
+        dont_list = self._filter_by_tone(dont_list, tone, item_type="dont")
+
+        template = self.TONE_TEMPLATES.get(tone, self.TONE_TEMPLATES["neutral"])
+        do_list = self._fill_with_template(do_list, template["do"])
+        dont_list = self._fill_with_template(dont_list, template["dont"])
+
+        return {"do": do_list[:5], "dont": dont_list[:5]}
+
+    def _determine_guidance_tone(
+        self,
+        hexagram: Dict[str, Any],
+        element_analysis: Dict[str, Any],
+        scenario_hexagram: Optional[Dict[str, Any]],
+    ) -> str:
+        """判定建议基调：guard/attack/neutral。"""
+        hexagram_name = hexagram.get("name", "")
+        if hexagram_name in self.GUARD_HEXAGRAMS:
+            return "guard"
+        if hexagram_name in self.ATTACK_HEXAGRAMS:
+            return "attack"
+
+        tone = "neutral"
+        if scenario_hexagram:
+            tendency = scenario_hexagram.get("overall_tendency", "")
+            if tendency in ("凶", "不利"):
+                tone = "guard"
+            elif tendency in ("大吉", "吉"):
+                tone = "attack"
+
+            key_points = " ".join(scenario_hexagram.get("key_points", []))
+            if self._contains_any(key_points, self.GUARD_HINTS):
+                tone = "guard"
+            elif tone != "guard" and self._contains_any(key_points, self.ATTACK_HINTS):
+                tone = "attack"
+
+        # 仅在仍无法判定时，退回五行关系
+        if tone == "neutral":
+            relation_type = element_analysis.get("relation_type", "")
+            if relation_type == "克":
+                tone = "guard"
+            elif relation_type == "生":
+                tone = "attack"
+
+        return tone
+
+    def _collect_scenario_candidates(self, scenario_hexagram: Dict[str, Any]) -> Tuple[List[str], List[str]]:
+        """从场景数据提取宜忌候选。"""
+        do_list: List[str] = []
+        dont_list: List[str] = []
+
+        for opp in scenario_hexagram.get("opportunities", [])[:4]:
+            if opp and opp not in do_list:
                 do_list.append(opp)
-
-            # 挑战转化为"忌做"
-            for chal in challenges[:3]:
+        for chal in scenario_hexagram.get("challenges", [])[:4]:
+            if chal and chal not in dont_list:
                 dont_list.append(chal)
 
-        # 如果场景数据不足，使用通用建议
-        if len(do_list) < 3:
-            # 根据五行关系给出建议
-            relation_type = element_analysis.get('relation_type', '')
+        # 非 fortune 场景通常没有 opportunities/challenges，退回 scenario_specific.advice
+        scenario_specific = scenario_hexagram.get("scenario_specific", {})
+        if isinstance(scenario_specific, dict):
+            for detail in scenario_specific.values():
+                if not isinstance(detail, dict):
+                    continue
+                for advice in detail.get("advice", []):
+                    if advice and advice not in do_list:
+                        do_list.append(advice)
 
-            if relation_type == '生':
-                do_list.append("顺势而为，借助外力")
-                do_list.append("积极进取，把握机遇")
-                dont_list.append("过于保守，错失良机")
-            elif relation_type == '克':
-                do_list.append("谨慎行事，化解冲突")
-                do_list.append("以柔克刚，迂回前进")
-                dont_list.append("硬碰硬，激化矛盾")
-            else:  # 比和
-                do_list.append("稳扎稳打，持续发展")
-                do_list.append("团结协作，共同进步")
-                dont_list.append("急于求成，冒进行事")
+        return do_list, dont_list
 
-            # 根据卦象特点添加建议
-            hexagram_name = hexagram['name']
+    def _build_generic_fallback(
+        self, element_analysis: Dict[str, Any], tone: str
+    ) -> Tuple[List[str], List[str]]:
+        """构建通用兜底建议（受基调约束）。"""
+        relation_type = element_analysis.get("relation_type", "")
 
-            # 特殊卦象的建议
-            special_advice = {
-                '乾': (['自强不息', '积极进取'], ['骄傲自满', '刚愎自用']),
-                '坤': (['厚德载物', '包容谦逊'], ['过于被动', '失去原则']),
-                '泰': (['把握时机', '促进交流'], ['得意忘形', '忽视隐患']),
-                '否': (['韬光养晦', '等待时机'], ['强行突破', '意气用事']),
-                '既济': (['居安思危', '保持警惕'], ['松懈大意', '停滞不前']),
-                '未济': (['谨慎前行', '做好准备'], ['急于求成', '盲目乐观'])
-            }
+        if tone == "guard":
+            return (["谨慎行事，优先稳住局面"], ["盲目冒进，强行推进"])
+        if tone == "attack":
+            return (["顺势推进，把握关键机会"], ["犹豫拖延，坐失窗口"])
 
-            if hexagram_name in special_advice:
-                do_add, dont_add = special_advice[hexagram_name]
-                do_list.extend(do_add)
-                dont_list.extend(dont_add)
+        # neutral：按五行给轻量补充
+        if relation_type == "克":
+            return (["谨慎行事，化解冲突"], ["硬碰硬，激化矛盾"])
+        if relation_type == "生":
+            return (["顺势而为，稳步推进"], ["忽视边界，过度冒险"])
+        return (["稳扎稳打，持续发展"], ["急于求成，冒进行事"])
 
-        # 如果有变卦，添加变化相关建议
-        if changing_hexagram:
-            do_list.append("顺应变化，灵活调整")
-            dont_list.append("固守成规，拒绝改变")
-
-        return {
-            "do": do_list[:5],  # 最多5条
-            "dont": dont_list[:5]
+    def _get_special_advice(self, hexagram_name: str) -> Tuple[List[str], List[str]]:
+        special_advice = {
+            "乾": (["自强不息", "积极进取"], ["骄傲自满", "刚愎自用"]),
+            "坤": (["厚德载物", "包容谦逊"], ["过于被动", "失去原则"]),
+            "泰": (["把握时机", "促进交流"], ["得意忘形", "忽视隐患"]),
+            "否": (["韬光养晦", "等待时机"], ["强行突破", "意气用事"]),
+            "既济": (["居安思危", "保持警惕"], ["松懈大意", "停滞不前"]),
+            "未济": (["谨慎前行", "做好准备"], ["急于求成", "盲目乐观"]),
         }
+        return special_advice.get(hexagram_name, ([], []))
+
+    def _filter_by_tone(self, items: List[str], tone: str, item_type: str) -> List[str]:
+        filtered: List[str] = []
+        for item in items:
+            if not item:
+                continue
+            if tone == "guard":
+                if item_type == "do" and self._contains_any(item, self.ATTACK_HINTS):
+                    continue
+                if item_type == "dont" and self._contains_any(item, self.GUARD_CONFLICT_DONT):
+                    continue
+            elif tone == "attack":
+                if item_type == "do" and self._contains_any(item, self.ATTACK_CONFLICT_DO):
+                    continue
+                if item_type == "dont" and self._contains_any(item, self.ATTACK_HINTS):
+                    continue
+
+            if item not in filtered:
+                filtered.append(item)
+        return filtered
+
+    @staticmethod
+    def _fill_with_template(items: List[str], template_items: List[str], target_len: int = 3) -> List[str]:
+        result = list(items)
+        for template_item in template_items:
+            if len(result) >= target_len:
+                break
+            if template_item not in result:
+                result.append(template_item)
+        return result
+
+    @staticmethod
+    def _contains_any(text: str, keywords: List[str]) -> bool:
+        return any(keyword in text for keyword in keywords)
 
     def _get_sources(self, extra_source_ids: Optional[List[str]] = None) -> List[str]:
         """

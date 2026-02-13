@@ -2,7 +2,7 @@
 HTTP API request/response models.
 """
 
-from typing import Optional
+from typing import Literal, Optional
 
 from pydantic import BaseModel, Field, field_validator
 
@@ -12,6 +12,19 @@ class DivinationRequest(BaseModel):
 
     coins: list[int] = Field(..., min_length=6, max_length=6)
     question: Optional[str] = None
+    scene_type: Optional[
+        Literal[
+            "fortune",
+            "career",
+            "love",
+            "wealth",
+            "health",
+            "study",
+            "family",
+            "travel",
+            "lawsuit",
+        ]
+    ] = None
 
     @field_validator("coins")
     @classmethod

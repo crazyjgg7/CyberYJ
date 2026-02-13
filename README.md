@@ -181,10 +181,16 @@ curl -X POST "http://127.0.0.1:18080/v1/divination/interpret" \
   -H "X-API-Key: cyberyj-dev-key" \
   -H "X-Request-ID: req-demo-001" \
   -H "Content-Type: application/json" \
-  -d '{"coins":[6,7,8,9,7,7],"question":"事业发展"}'
+  -d '{"coins":[6,7,8,9,7,7],"question":"事业发展","scene_type":"career"}'
 ```
 
 接口文档见 `docs/api/wechat-divination-http-api.md`。
+前端场景对齐说明见 `docs/api/wechat-scene-interface-adjustments.md`。
+
+`/v1/divination/interpret` 当前返回除基础解卦结构外，还包含：
+- `scene_type`（最终生效场景）
+- `keywords` / `advice_tags` / `score`（前端渲染增强字段）
+- `consistency`（逻辑一致性元数据）
 
 更多示例请查看 `examples/` 目录。
 

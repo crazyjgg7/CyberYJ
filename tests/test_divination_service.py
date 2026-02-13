@@ -36,3 +36,37 @@ def test_multiple_changing_lines_keep_array_shape():
     assert len(result["analysis"]["active_lines"]) == 4
     assert isinstance(result["do_dont"]["do"], list)
     assert isinstance(result["do_dont"]["dont"], list)
+
+
+def test_scene_type_has_priority_over_question_keyword():
+    service = DivinationService()
+    result = service.interpret(
+        coins=[6, 7, 8, 9, 7, 8],
+        question="我想问事业",
+        scene_type="love",
+    )
+    assert result["scene_type"] == "love"
+
+
+def test_response_contains_scene_enhancement_fields():
+    service = DivinationService()
+    result = service.interpret(
+        [6, 7, 8, 9, 7, 8],
+        question="问事业",
+        scene_type="career",
+    )
+    assert "scene_type" in result
+    assert "keywords" in result and isinstance(result["keywords"], list)
+    assert "advice_tags" in result and isinstance(result["advice_tags"], list)
+    assert "score" in result and isinstance(result["score"], int)
+
+
+def test_guard_tone_has_no_attack_phrase_conflict():
+    service = DivinationService()
+    result = service.interpret(
+        coins=[7, 8, 7, 8, 8, 8],
+        question="问感情",
+        scene_type="love",
+    )
+    assert result["consistency"]["tone"] == "guard"
+    assert result["consistency"]["conflict_count"] == 0

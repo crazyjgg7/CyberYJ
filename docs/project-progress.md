@@ -19,6 +19,7 @@
 - `keyword_dispatch` 可用（文本自动路由）
 - 输出协议统一：`tool + data + meta`
 - Wechat 小程序 HTTP 适配接口已落地：`POST /v1/divination/interpret`
+- Wechat 场景化接口增强已落地：支持 `scene_type` 入参优先级、`keywords/advice_tags/score` 与 `consistency` 输出
 - Wechat HTTP API 安全基线（D2）已完成：`X-API-Key` + 固定窗口限流
 - Wechat HTTP API 可观测性（D3）已完成：`X-Request-ID`、结构化日志、错误计数追踪
 - 场景解读一致性（D4）已完成：统一建议基调（攻/守/中），`do_dont` 与 `key_points` 去冲突

@@ -89,3 +89,52 @@ def test_structured_log_contains_request_completed_event(caplog):
         and event.get("status_code") == 200
         for event in events
     )
+
+
+def test_post_interpret_scene_type_overrides_question_keyword():
+    client = TestClient(create_app(api_key="test-key", rate_limit_max=10, rate_limit_window_seconds=60))
+    resp = client.post(
+        "/v1/divination/interpret",
+        headers={"X-API-Key": "test-key"},
+        json={
+            "coins": [6, 7, 8, 9, 7, 8],
+            "question": "我想问事业",
+            "scene_type": "love",
+        },
+    )
+    assert resp.status_code == 200
+    assert resp.json()["scene_type"] == "love"
+
+
+def test_post_interpret_returns_scene_enhancement_payload():
+    client = TestClient(create_app(api_key="test-key", rate_limit_max=10, rate_limit_window_seconds=60))
+    resp = client.post(
+        "/v1/divination/interpret",
+        headers={"X-API-Key": "test-key"},
+        json={
+            "coins": [7, 8, 7, 8, 8, 8],
+            "question": "问感情",
+            "scene_type": "love",
+        },
+    )
+    assert resp.status_code == 200
+    body = resp.json()
+    assert isinstance(body["keywords"], list)
+    assert isinstance(body["advice_tags"], list)
+    assert isinstance(body["score"], int)
+    assert isinstance(body["consistency"], dict)
+
+
+def test_post_interpret_rejects_invalid_scene_type():
+    client = TestClient(create_app(api_key="test-key", rate_limit_max=10, rate_limit_window_seconds=60))
+    resp = client.post(
+        "/v1/divination/interpret",
+        headers={"X-API-Key": "test-key"},
+        json={
+            "coins": [6, 7, 8, 9, 7, 7],
+            "scene_type": "unknown",
+        },
+    )
+    assert resp.status_code == 400
+    assert resp.json()["error"]["code"] == "INVALID_INPUT"
+    assert "scene_type" in resp.json()["error"]["message"]

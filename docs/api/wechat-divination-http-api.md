@@ -1,6 +1,6 @@
-# Wechat Mini Program HTTP API（MVP）
+# Wechat Mini Program HTTP API（MVP+）
 
-更新时间：2026-02-13
+更新时间：2026-02-13（scene_type 对齐版）
 
 ## 1. 接口概览
 
@@ -25,7 +25,8 @@
 ```json
 {
   "coins": [6, 7, 8, 9, 7, 7],
-  "question": "事业发展"
+  "question": "事业发展",
+  "scene_type": "career"
 }
 ```
 
@@ -33,6 +34,21 @@
 - `coins` 必填，长度固定 6，顺序为 `初爻 -> 上爻`
 - 允许值：`6/7/8/9`
 - `question` 选填，用于场景化解读辅助
+- `scene_type` 选填，建议传入，枚举：
+  - `fortune`
+  - `career`
+  - `love`
+  - `wealth`
+  - `health`
+  - `study`
+  - `family`
+  - `travel`
+  - `lawsuit`
+
+场景优先级：
+1. 显式 `scene_type`
+2. `question` 关键词推断
+3. 默认 `fortune`
 
 ## 3. 响应体（成功）
 
@@ -54,6 +70,7 @@
     "judgment": "元亨利贞，勿用有攸往，利建侯。",
     "image": "云雷，屯；君子以经纶。"
   },
+  "scene_type": "career",
   "analysis": {
     "overall": "...",
     "active_lines": ["第1爻动（老阴）"],
@@ -65,6 +82,15 @@
     "do": ["..."],
     "dont": ["..."]
   },
+  "keywords": ["稳扎稳打", "贵人助力", "避免冒进"],
+  "advice_tags": ["进取", "职场", "防风险"],
+  "score": 80,
+  "consistency": {
+    "status": "pass",
+    "tone": "attack",
+    "conflict_count": 0,
+    "adjustments": []
+  },
   "trace": [
     "Step 0: mapped coins to yin/yang bits and trigrams"
   ],
@@ -73,6 +99,13 @@
   ]
 }
 ```
+
+字段说明（新增）：
+- `scene_type`：后端最终生效场景
+- `keywords`：从场景 key points / advice 提炼的前端标签词
+- `advice_tags`：建议标签（例如 `守势/进取/防风险/沟通`）
+- `score`：场景评分（`rating*20`，范围 20~100）
+- `consistency`：建议一致性元数据（`status/tone/conflict_count/adjustments`）
 
 ## 4. 错误响应
 
@@ -186,14 +219,14 @@ curl -X POST "http://127.0.0.1:18080/v1/divination/interpret" \
   -H "X-API-Key: cyberyj-dev-key" \
   -H "X-Request-ID: req-demo-001" \
   -H "Content-Type: application/json" \
-  -d '{"coins":[6,7,8,9,7,7],"question":"事业发展"}'
+  -d '{"coins":[6,7,8,9,7,7],"question":"事业发展","scene_type":"career"}'
 ```
 
 ## 8. 小程序前端调用示例
 
 ```javascript
 // services/api.js
-function interpretHexagram({ coins, question, baseUrl }) {
+function interpretHexagram({ coins, question, sceneType, baseUrl }) {
   return new Promise((resolve, reject) => {
     wx.request({
       url: `${baseUrl}/v1/divination/interpret`,
@@ -203,7 +236,11 @@ function interpretHexagram({ coins, question, baseUrl }) {
         'Content-Type': 'application/json',
         'X-API-Key': '<your_api_key>'
       },
-      data: { coins, question },
+      data: {
+        coins,
+        question,
+        scene_type: sceneType // 推荐显式透传
+      },
       success(res) {
         if (res.statusCode >= 200 && res.statusCode < 300) {
           resolve(res.data)
@@ -225,3 +262,7 @@ function interpretHexagram({ coins, question, baseUrl }) {
 2. 远程联调：把 API 暴露为公网 HTTPS（云服务器或内网穿透 + HTTPS）。
 3. 小程序后台配置：把该 HTTPS 域名加入“request 合法域名”。
 4. 前端发布配置：使用线上 `baseUrl`，不要写死本地地址。
+
+兼容说明：
+- 不传 `scene_type` 仍可调用，后端会退回关键词推断/默认场景。
+- 前端可分阶段接入新增响应字段：先只传 `scene_type`，再启用 `keywords/advice_tags/score/consistency` 展示。

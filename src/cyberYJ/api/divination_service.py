@@ -5,12 +5,26 @@ Service adapter for Wechat mini-program divination HTTP API.
 from typing import Any, Dict, List, Optional
 
 from cyberYJ.api.coin_mapper import TRIGRAM_FROM_BITS, map_coins_to_divination_input
+from cyberYJ.api.consistency_guard import apply_consistency_guard
+from cyberYJ.api.scene_output import build_scene_enhancements
 from cyberYJ.server.handlers.fengshui import FengshuiHandler
 from cyberYJ.utils.data_loader import DataLoader, get_data_loader
 
 
 class DivinationService:
     """Adapter from coins-based payload to current fengshui handler output."""
+
+    SCENE_TO_QUESTION_TYPE = {
+        "fortune": "命运",
+        "career": "事业",
+        "love": "感情",
+        "wealth": "财运",
+        "health": "健康",
+        "study": "学业",
+        "family": "家庭",
+        "travel": "出行",
+        "lawsuit": "诉讼",
+    }
 
     def __init__(
         self,
@@ -20,22 +34,48 @@ class DivinationService:
         self._handler = handler or FengshuiHandler()
         self._data_loader = data_loader or get_data_loader()
 
-    def interpret(self, coins: List[int], question: Optional[str] = None) -> Dict[str, Any]:
+    def interpret(
+        self,
+        coins: List[int],
+        question: Optional[str] = None,
+        scene_type: Optional[str] = None,
+    ) -> Dict[str, Any]:
         mapped = map_coins_to_divination_input(coins)
+        question_type = self.SCENE_TO_QUESTION_TYPE.get(scene_type) if scene_type else None
         tool_result = self._handler.execute(
             {
                 "upper_trigram": mapped["upper_trigram"],
                 "lower_trigram": mapped["lower_trigram"],
                 "changing_line": mapped["primary_changing_line"],
+                "question_type": question_type,
                 "question_text": question,
             }
         )
+        resolved_scene_type = (
+            tool_result.get("scenario", {}).get("code")
+            or scene_type
+            or "fortune"
+        )
+        do_dont = self._normalize_do_dont(tool_result)
+        guard_result = apply_consistency_guard(tool_result, do_dont)
+        do_dont = guard_result["do_dont"]
+        consistency = guard_result["consistency"]
+        scene_enhancements = build_scene_enhancements(
+            tool_result=tool_result,
+            scene_type=resolved_scene_type,
+            do_dont=do_dont,
+        )
 
         response = {
+            "scene_type": resolved_scene_type,
             "hexagram": self._build_hexagram(mapped, tool_result),
             "changing_hexagram": self._build_changing_hexagram(mapped, tool_result),
             "analysis": self._build_analysis(coins, mapped, tool_result),
-            "do_dont": self._normalize_do_dont(tool_result),
+            "do_dont": do_dont,
+            "keywords": scene_enhancements["keywords"],
+            "advice_tags": scene_enhancements["advice_tags"],
+            "score": scene_enhancements["score"],
+            "consistency": consistency,
             "trace": self._build_trace(coins, mapped, tool_result),
             "sources": self._normalize_sources(tool_result),
         }
@@ -166,4 +206,3 @@ class DivinationService:
         if isinstance(hexagram_id, int) and 1 <= hexagram_id <= 64:
             return chr(0x4DC0 + hexagram_id - 1)
         return ""
-

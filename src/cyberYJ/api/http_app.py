@@ -99,6 +99,29 @@ def _error_response(
     )
 
 
+def _validation_message(exc: RequestValidationError) -> str:
+    errors = exc.errors()
+    if not errors:
+        return "请求参数校验失败"
+
+    first = errors[0]
+    loc = [str(item) for item in first.get("loc", []) if str(item) != "body"]
+    if "coins" in loc:
+        return "coins数组必须包含6个元素 (6/7/8/9)"
+    if "scene_type" in loc:
+        return (
+            "scene_type 无效，必须是 fortune/career/love/wealth/health/"
+            "study/family/travel/lawsuit 之一"
+        )
+
+    message = first.get("msg")
+    if isinstance(message, str) and message.strip():
+        if loc:
+            return f"{'.'.join(loc)}: {message}"
+        return message
+    return "请求参数校验失败"
+
+
 def create_app(
     api_key: Optional[str] = None,
     rate_limit_max: Optional[int] = None,
@@ -233,8 +256,8 @@ def create_app(
     @app.exception_handler(RequestValidationError)
     async def handle_validation_error(request: Request, exc: RequestValidationError) -> JSONResponse:
         request_id = _get_request_id(request)
-        _ = exc
         error_tracker.record("INVALID_INPUT")
+        message = _validation_message(exc)
         _log_structured(
             logger,
             logging.WARNING,
@@ -248,7 +271,7 @@ def create_app(
         response = _error_response(
             status_code=400,
             code="INVALID_INPUT",
-            message="coins数组必须包含6个元素 (6/7/8/9)",
+            message=message,
             request_id=request_id,
         )
         response.headers["X-Request-ID"] = request_id
@@ -305,6 +328,6 @@ def create_app(
 
     @app.post("/v1/divination/interpret")
     async def interpret(req: DivinationRequest) -> dict:
-        return service.interpret(req.coins, req.question)
+        return service.interpret(req.coins, req.question, req.scene_type)
 
     return app

@@ -87,6 +87,33 @@ class TestDataLoader:
         assert tai is not None
         assert tai['name'] == '泰'
 
+    def test_get_trigram_by_name_supports_variants(self):
+        """测试八卦名繁简体兼容（兌/兑、離/离）"""
+        dui_traditional = self.loader.get_trigram_by_name('兌')
+        dui_simplified = self.loader.get_trigram_by_name('兑')
+        li_traditional = self.loader.get_trigram_by_name('離')
+        li_simplified = self.loader.get_trigram_by_name('离')
+
+        assert dui_traditional is not None
+        assert dui_simplified is not None
+        assert dui_traditional['id'] == dui_simplified['id'] == 'dui'
+        assert li_traditional is not None
+        assert li_simplified is not None
+        assert li_traditional['id'] == li_simplified['id'] == 'li'
+
+    def test_get_hexagram_by_trigrams_supports_variant_mix(self):
+        """测试上下卦繁简体混用时仍可命中卦象"""
+        # 当前数据中 hexagrams 使用“兑”，coin mapper 可能输出“兌”
+        lin = self.loader.get_hexagram_by_trigrams('坤', '兌')
+        assert lin is not None
+        assert lin['id'] == 19
+        assert lin['name'] == '临'
+
+        da_guo = self.loader.get_hexagram_by_trigrams('兌', '巽')
+        assert da_guo is not None
+        assert da_guo['id'] == 28
+        assert da_guo['name'] == '大过'
+
     def test_get_solar_terms(self):
         """测试获取节气数据"""
         solar_terms = self.loader.get_solar_terms()

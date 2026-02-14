@@ -89,9 +89,10 @@ class DataLoader:
         Returns:
             八卦数据字典，未找到返回 None
         """
+        name_variants = self._trigram_name_variants(name)
         trigrams = self.get_trigrams()
         for trigram in trigrams:
-            if trigram['name'] == name:
+            if trigram['name'] in name_variants:
                 return trigram
         return None
 
@@ -170,12 +171,25 @@ class DataLoader:
         Returns:
             卦数据字典，未找到返回 None
         """
+        upper_variants = self._trigram_name_variants(upper_trigram)
+        lower_variants = self._trigram_name_variants(lower_trigram)
         hexagrams = self.get_hexagrams()
         for hexagram in hexagrams:
-            if (hexagram['upper_trigram'] == upper_trigram and
-                hexagram['lower_trigram'] == lower_trigram):
+            if (hexagram['upper_trigram'] in upper_variants and
+                hexagram['lower_trigram'] in lower_variants):
                 return hexagram
         return None
+
+    @staticmethod
+    def _trigram_name_variants(name: str) -> set[str]:
+        """返回八卦名的繁简体变体集合。"""
+        variant_map = {
+            "兑": {"兑", "兌"},
+            "兌": {"兑", "兌"},
+            "离": {"离", "離"},
+            "離": {"离", "離"},
+        }
+        return variant_map.get(name, {name})
 
     def get_solar_terms(self) -> List[Dict[str, Any]]:
         """

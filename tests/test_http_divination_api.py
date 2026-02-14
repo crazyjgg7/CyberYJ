@@ -140,6 +140,25 @@ def test_post_interpret_scene_type_overrides_question_keyword():
     assert resp.json()["scene_type"] == "love"
 
 
+def test_post_interpret_handles_dui_variant_hexagrams():
+    client = TestClient(create_app(api_key="test-key", rate_limit_max=10, rate_limit_window_seconds=60))
+    resp = client.post(
+        "/v1/divination/interpret",
+        headers={"X-API-Key": "test-key"},
+        json={
+            # upper=兌, lower=巽 (泽风大过)
+            "coins": [7, 7, 8, 8, 7, 7],
+            "question": "测试兑卦兼容",
+            "scene_type": "study",
+        },
+    )
+    assert resp.status_code == 200
+    body = resp.json()
+    assert body["hexagram"]["name"] == "大过"
+    assert body["hexagram"]["upper_trigram"] in ("兑", "兌")
+    assert body["hexagram"]["lower_trigram"] == "巽"
+
+
 def test_post_interpret_returns_scene_enhancement_payload():
     client = TestClient(create_app(api_key="test-key", rate_limit_max=10, rate_limit_window_seconds=60))
     resp = client.post(

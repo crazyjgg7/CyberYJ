@@ -8,6 +8,9 @@ const ENV = {
         baseUrl: 'http://127.0.0.1:18080',
         apiKey: 'cyberyj-dev-key',
         useMock: false,
+        mockFallbackOnError: true,
+        timeoutMs: 7000,
+        apiPaths: ['/v1/divination/interpret'],
         debug: true
     },
     prod: {
@@ -15,6 +18,9 @@ const ENV = {
         baseUrl: 'https://youtang.128228.xyz',
         apiKey: 'cyberyj-dev-key',
         useMock: false,
+        mockFallbackOnError: false,
+        timeoutMs: 7000,
+        apiPaths: ['/v1/divination/interpret'],
         debug: false
     }
 };

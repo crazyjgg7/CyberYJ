@@ -16,7 +16,11 @@ const { config } = require('../config/env.js');
 const API_BASE_URL = config.baseUrl;
 const API_KEY = config.apiKey || 'cyberyj-dev-key';
 const USE_MOCK = config.useMock;
-const API_PATHS = ['/v1/learning/interpret', '/v1/divination/interpret'];
+const MOCK_FALLBACK_ON_ERROR = Boolean(config.mockFallbackOnError);
+const API_TIMEOUT_MS = Number(config.timeoutMs) > 0 ? Number(config.timeoutMs) : 7000;
+const API_PATHS = Array.isArray(config.apiPaths) && config.apiPaths.length
+    ? config.apiPaths
+    : ['/v1/divination/interpret'];
 
 const TOPIC_NAME = {
     fortune: '综合学习',
@@ -161,7 +165,7 @@ const interpretHexagram = (coins, question, sceneType = 'fortune') => (
             wx.request({
                 url: `${API_BASE_URL}${path}`,
                 method: 'POST',
-                timeout: 10000,
+                timeout: API_TIMEOUT_MS,
                 header: {
                     'Content-Type': 'application/json',
                     'X-API-Key': API_KEY
@@ -183,12 +187,15 @@ const interpretHexagram = (coins, question, sceneType = 'fortune') => (
                     reject(res.data?.error || { code: 'HTTP_ERROR', message: `status=${res.statusCode}` });
                 },
                 fail: (err) => {
-                    if (idx + 1 < API_PATHS.length) {
-                        requestByIndex(idx + 1);
+                    if (MOCK_FALLBACK_ON_ERROR) {
+                        console.warn('API Network Error (Fallback to Mock):', err);
+                        resolve(toLearningPayload(buildMockPayload(sceneType), sceneType));
                         return;
                     }
-                    console.warn('API Network Error (Fallback to Mock):', err);
-                    resolve(toLearningPayload(buildMockPayload(sceneType), sceneType));
+                    reject({
+                        code: 'NETWORK_ERROR',
+                        message: err?.errMsg || 'network request failed'
+                    });
                 }
             });
         };

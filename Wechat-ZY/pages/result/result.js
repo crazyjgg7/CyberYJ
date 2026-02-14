@@ -14,6 +14,8 @@ Page({
         question: ''
     },
 
+    _requestGuardTimer: null,
+
     onLoad(options) {
         // 接收场景和问题参数
         const sceneId = options.scene || '';
@@ -73,9 +75,15 @@ Page({
 
     fetchResult(coins) {
         this.setData({ loading: true, error: false });
+        this._clearRequestGuardTimer();
+        // Guard: avoid permanent loading when request promise does not settle.
+        this._requestGuardTimer = setTimeout(() => {
+            this.setError('请求超时，请检查网络后重试');
+        }, 15000);
 
         interpretHexagram(coins, this.data.question, this.data.sceneId)
             .then(res => {
+                this._clearRequestGuardTimer();
                 // Enrich result with metadata for storage
                 const enrichedResult = {
                     timestamp: Date.now(),
@@ -97,6 +105,7 @@ Page({
                 });
             })
             .catch(err => {
+                this._clearRequestGuardTimer();
                 console.error(err);
                 this.setData({
                     loading: false,
@@ -104,6 +113,13 @@ Page({
                     errorMsg: err.message || '解卦失败，请检查网络'
                 });
             });
+    },
+
+    _clearRequestGuardTimer() {
+        if (this._requestGuardTimer) {
+            clearTimeout(this._requestGuardTimer);
+            this._requestGuardTimer = null;
+        }
     },
 
     setError(msg) {
@@ -118,6 +134,10 @@ Page({
         wx.reLaunch({
             url: '/pages/index/index'
         });
+    },
+
+    onUnload() {
+        this._clearRequestGuardTimer();
     },
 
     generatePoster() {

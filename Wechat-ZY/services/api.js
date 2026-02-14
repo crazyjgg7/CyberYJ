@@ -66,6 +66,16 @@ const toLearningPayload = (payload, sceneType = 'fortune') => {
     const keywords = Array.isArray(raw.keywords)
         ? raw.keywords.map((item) => sanitizeText(item)).filter(Boolean)
         : [];
+    const topicTagsSource = Array.isArray(raw.topic_tags)
+        ? raw.topic_tags
+        : (Array.isArray(raw.advice_tags) ? raw.advice_tags : []);
+    const topicTags = topicTagsSource.map((item) => sanitizeText(item)).filter(Boolean);
+    const learningPoints = raw.learning_points && typeof raw.learning_points === 'object'
+        ? raw.learning_points
+        : {
+            can_refer: raw.do_dont?.do || [],
+            attention: raw.do_dont?.dont || []
+        };
 
     return {
         hexagram: {
@@ -92,10 +102,21 @@ const toLearningPayload = (payload, sceneType = 'fortune') => {
             active_lines: activeLines,
             five_elements: sanitizeText(analysis.five_elements || '可结合五行基础概念理解卦象符号关系。'),
             solar_term: sanitizeText(analysis.solar_term || '可结合节气背景理解传统文本语境。'),
-            advice: '建议结合经典原文与注释资料进行学习记录，不作为现实决策依据。'
+            advice: sanitizeText(
+                analysis.advice || '建议结合经典原文与注释资料进行学习记录，不作为现实决策依据。'
+            )
         },
         keywords: keywords.length ? keywords : ['卦象结构', '经典文本', '术语入门'],
-        topic_tags: [TOPIC_NAME[sceneType] || TOPIC_NAME.fortune, '国学学习', '经典研读']
+        topic_tags: topicTags.length ? topicTags : [TOPIC_NAME[sceneType] || TOPIC_NAME.fortune, '国学学习', '经典研读'],
+        learning_points: {
+            can_refer: Array.isArray(learningPoints.can_refer)
+                ? learningPoints.can_refer.map((item) => sanitizeText(item))
+                : [],
+            attention: Array.isArray(learningPoints.attention)
+                ? learningPoints.attention.map((item) => sanitizeText(item))
+                : []
+        },
+        reading_style: sanitizeText(raw.reading_style || '平衡阅读')
     };
 };
 

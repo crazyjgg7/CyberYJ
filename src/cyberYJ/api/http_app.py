@@ -15,6 +15,7 @@ from fastapi.exceptions import RequestValidationError
 from fastapi.responses import JSONResponse
 
 from cyberYJ.api.divination_service import DivinationService
+from cyberYJ.api.learning_output import to_learning_response
 from cyberYJ.api.models import DivinationRequest
 
 
@@ -327,8 +328,12 @@ def create_app(
         return response
 
     @app.post("/v1/divination/interpret")
-    @app.post("/v1/learning/interpret")
     async def interpret(req: DivinationRequest) -> dict:
         return service.interpret(req.coins, req.question, req.scene_type)
+
+    @app.post("/v1/learning/interpret")
+    async def learning_interpret(req: DivinationRequest) -> dict:
+        raw = service.interpret(req.coins, req.question, req.scene_type)
+        return to_learning_response(raw)
 
     return app

@@ -31,7 +31,27 @@ def test_post_learning_interpret_success():
     body = resp.json()
     assert "hexagram" in body
     assert "analysis" in body
+    assert "learning_points" in body
+    assert "topic_tags" in body
+    assert "reading_style" in body
+    assert "do_dont" not in body
+    assert "score" not in body
     assert resp.headers["X-Request-ID"] == "req-learning-001"
+
+
+def test_post_learning_interpret_text_is_learning_oriented():
+    client = TestClient(create_app(api_key="test-key", rate_limit_max=10, rate_limit_window_seconds=60))
+    resp = client.post(
+        "/v1/learning/interpret",
+        headers={"X-API-Key": "test-key"},
+        json={"coins": [6, 7, 8, 9, 7, 7], "question": "我会不会升职"},
+    )
+    assert resp.status_code == 200
+    body_text = json.dumps(resp.json(), ensure_ascii=False)
+    assert "吉凶" not in body_text
+    assert "趋吉避凶" not in body_text
+    assert "宜：" not in body_text
+    assert "忌：" not in body_text
 
 
 def test_post_interpret_invalid_input():

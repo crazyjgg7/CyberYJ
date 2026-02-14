@@ -50,12 +50,12 @@
       </view>
       
       <view class="hint-text">
-        <block wx:if="{{scenes[selectedIndex].id === 'career'}}">推荐学习：上下卦结构、卦序和阅读顺序...</block>
-        <block wx:elif="{{scenes[selectedIndex].id === 'love'}}">推荐学习：卦辞关键词、白话释义与常见误读...</block>
-        <block wx:elif="{{scenes[selectedIndex].id === 'wealth'}}">推荐学习：象辞图景、语境理解与关联文本...</block>
-        <block wx:elif="{{scenes[selectedIndex].id === 'health'}}">推荐学习：爻位层次、动爻概念与符号含义...</block>
-        <block wx:elif="{{scenes[selectedIndex].id === 'study'}}">推荐学习：五行关系、术语基础与入门路径...</block>
-        <block wx:else>可输入你想学习的《周易》问题...</block>
+        <block wx:if="{{scenes[selectedIndex].id === 'career'}}">关键词：协作 · 规划 · 成长</block>
+        <block wx:elif="{{scenes[selectedIndex].id === 'love'}}">关键词：沟通 · 信任 · 边界</block>
+        <block wx:elif="{{scenes[selectedIndex].id === 'wealth'}}">关键词：预算 · 风险 · 取舍</block>
+        <block wx:elif="{{scenes[selectedIndex].id === 'health'}}">关键词：作息 · 压力 · 恢复</block>
+        <block wx:elif="{{scenes[selectedIndex].id === 'study'}}">关键词：入门 · 术语 · 复盘</block>
+        <block wx:else>关键词：框架 · 重点 · 误区</block>
       </view>
 
       <!-- Quick Question Chips -->
@@ -66,7 +66,7 @@
       </view>
       
       <!-- Simplified Input -->
-      <input class="simple-input" placeholder="输入学习问题 (选填)" value="{{question}}" bindinput="onQuestionInput" />
+      <input class="simple-input" placeholder="何所学（选填）" value="{{question}}" bindinput="onQuestionInput" />
       
       <button class="confirm-btn" bindtap="startDivination">进入学习</button>
   </view>

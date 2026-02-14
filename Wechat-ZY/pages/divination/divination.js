@@ -11,11 +11,11 @@ Page({
         manualCoins: [2, 2, 2], // Default Yang (2)
         sceneId: '', // 场景 ID
         sceneName: '', // 场景名称
-        question: '' // 用户问题
+        question: '' // 用户输入
     },
 
     onLoad(options) {
-        // 接收场景和问题参数
+        // 接收主题和输入参数
         const sceneId = options.scene || 'other';
         const question = decodeURIComponent(options.question || '');
 
@@ -91,7 +91,7 @@ Page({
 
     toggleMode() {
         wx.showActionSheet({
-            itemList: ['感应起卦 (摇一摇)', '手动起卦 (点击)', '手动装卦 (自选)'],
+            itemList: ['感应生成 (摇一摇)', '手动生成 (点击)', '手动输入 (自选)'],
             success: (res) => {
                 const index = res.tapIndex;
                 let newMode = 'gyro';
@@ -116,7 +116,7 @@ Page({
         // Start gyro if entering gyro mode
         if (mode === 'gyro') {
             if (!this.data.isGyroSupported) {
-                wx.showToast({ title: '设备不支持陀螺仪，建议使用点击起卦', icon: 'none' });
+                wx.showToast({ title: '设备不支持陀螺仪，建议使用点击生成', icon: 'none' });
             }
             gyroService.start().catch(err => {
                 console.error('Start Gyro Error:', err);
@@ -135,8 +135,8 @@ Page({
 
         // Show toast for mode feedback
         let modeName = '感应模式';
-        if (mode === 'touch') modeName = '点击起卦';
-        if (mode === 'input') modeName = '手动装卦';
+        if (mode === 'touch') modeName = '点击生成';
+        if (mode === 'input') modeName = '手动输入';
         wx.showToast({ title: `已切换至${modeName}`, icon: 'none' });
     },
 

@@ -327,6 +327,7 @@ def create_app(
         return response
 
     @app.post("/v1/divination/interpret")
+    @app.post("/v1/learning/interpret")
     async def interpret(req: DivinationRequest) -> dict:
         return service.interpret(req.coins, req.question, req.scene_type)
 

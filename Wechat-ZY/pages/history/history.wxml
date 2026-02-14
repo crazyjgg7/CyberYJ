@@ -23,6 +23,6 @@
   </block>
   
   <view class="empty-state" wx:else>
-    <text>暂无卜卦记录</text>
+    <text>暂无学习记录</text>
   </view>
 </view>

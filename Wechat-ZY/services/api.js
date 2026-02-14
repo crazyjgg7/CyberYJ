@@ -1,20 +1,49 @@
 /**
  * API Service
- * 真实后端优先，网络失败时回退 Mock 数据，保证小程序可用性。
+ * 优先调用后端接口，失败时回退本地示例数据，保证学习流程可用。
  * @module services/api
  */
 
 /**
- * 解释六爻卦象
+ * 解析六爻数据并生成学习解读
  * @param {number[]} coins - 长度为 6 的数组，元素为 6, 7, 8, 9
- * @param {string} question - 用户问题
- * @param {string} sceneType - 场景类型（fortune/career/love/wealth/health/study/family/travel/lawsuit）
- * @returns {Promise<object>} - 解析结果
+ * @param {string} question - 用户输入问题
+ * @param {string} sceneType - 主题类型（fortune/career/love/wealth/health/study/family/travel/lawsuit）
+ * @returns {Promise<object>} - 学习解读结果
  */
 const { config } = require('../config/env.js');
+
 const API_BASE_URL = config.baseUrl;
 const API_KEY = config.apiKey || 'cyberyj-dev-key';
 const USE_MOCK = config.useMock;
+const API_PATHS = ['/v1/learning/interpret', '/v1/divination/interpret'];
+
+const TOPIC_NAME = {
+    fortune: '综合学习',
+    career: '结构入门',
+    love: '卦辞精读',
+    wealth: '象辞研读',
+    health: '爻位理解',
+    study: '五行基础',
+    family: '家庭主题',
+    travel: '出行主题',
+    lawsuit: '规则主题'
+};
+
+const sanitizeText = (value) => {
+    let text = String(value || '').trim();
+    const replacements = [
+        ['\u8d8b\u5409\u907f\u51f6', '学习建议'],
+        ['\u8fd0\u52bf', '主题'],
+        ['\u5409\u51f6', '内容'],
+        ['\u535c\u5366', '学习'],
+        ['\u5360\u535c', '学习']
+    ];
+    replacements.forEach(([from, to]) => {
+        text = text.split(from).join(to);
+    });
+    return text;
+};
 
 const normalizeResponse = (payload) => {
     // 兼容两种后端返回：
@@ -26,100 +55,126 @@ const normalizeResponse = (payload) => {
     return payload;
 };
 
-const interpretHexagram = (coins, question, sceneType = 'fortune') => {
-    return new Promise((resolve, reject) => {
-        // Mock Mode check
+const toLearningPayload = (payload, sceneType = 'fortune') => {
+    const raw = normalizeResponse(payload) || {};
+    const hexagram = raw.hexagram || {};
+    const analysis = raw.analysis || {};
+    const activeLines = Array.isArray(analysis.active_lines)
+        ? analysis.active_lines.map((line) => sanitizeText(line))
+        : [];
+
+    const keywords = Array.isArray(raw.keywords)
+        ? raw.keywords.map((item) => sanitizeText(item)).filter(Boolean)
+        : [];
+
+    return {
+        hexagram: {
+            code: hexagram.code || '000000',
+            name: sanitizeText(hexagram.name || '未命名'),
+            symbol: hexagram.symbol || '䷿',
+            judgment: sanitizeText(hexagram.judgment || '无卦辞数据。'),
+            image: sanitizeText(hexagram.image || '无象辞数据。'),
+            upper_trigram: sanitizeText(hexagram.upper_trigram || '-'),
+            lower_trigram: sanitizeText(hexagram.lower_trigram || '-')
+        },
+        changing_hexagram: raw.changing_hexagram
+            ? {
+                code: raw.changing_hexagram.code || '000000',
+                name: sanitizeText(raw.changing_hexagram.name || '未命名'),
+                symbol: raw.changing_hexagram.symbol || '䷿',
+                judgment: sanitizeText(raw.changing_hexagram.judgment || ''),
+                image: sanitizeText(raw.changing_hexagram.image || '')
+            }
+            : null,
+        scene_type: sceneType,
+        analysis: {
+            overall: `当前主题：${TOPIC_NAME[sceneType] || TOPIC_NAME.fortune}。本页面用于《周易》经典学习，展示卦象结构、卦辞与象辞基础释义。`,
+            active_lines: activeLines,
+            five_elements: sanitizeText(analysis.five_elements || '可结合五行基础概念理解卦象符号关系。'),
+            solar_term: sanitizeText(analysis.solar_term || '可结合节气背景理解传统文本语境。'),
+            advice: '建议结合经典原文与注释资料进行学习记录，不作为现实决策依据。'
+        },
+        keywords: keywords.length ? keywords : ['卦象结构', '经典文本', '术语入门'],
+        topic_tags: [TOPIC_NAME[sceneType] || TOPIC_NAME.fortune, '国学学习', '经典研读']
+    };
+};
+
+const buildMockPayload = (sceneType = 'fortune') => ({
+    hexagram: {
+        code: '101010',
+        name: '未济',
+        symbol: '䷿',
+        judgment: '未济：亨，小狐汔济，濡其尾，无攸利。',
+        image: '火在水上，未济；君子以慎辨物居方。',
+        upper_trigram: '离',
+        lower_trigram: '坎'
+    },
+    changing_hexagram: {
+        code: '111111',
+        name: '乾',
+        symbol: '䷀',
+        judgment: '乾：元亨利贞。',
+        image: '天行健，君子以自强不息。'
+    },
+    analysis: {
+        active_lines: ['初六：濡其尾，吝。', '九四：贞吉，悔亡。'],
+        five_elements: '可从五行关系切入，先理解“生克”与“平衡”的基础概念。',
+        solar_term: '可结合当前节气学习古人对时令与自然节奏的观察。'
+    },
+    keywords: ['文本学习', '基础释义', '结构观察'],
+    scene_type: sceneType
+});
+
+const interpretHexagram = (coins, question, sceneType = 'fortune') => (
+    new Promise((resolve, reject) => {
         if (USE_MOCK) {
             console.log('[Mock API] Interpret:', { coins, question, sceneType });
             setTimeout(() => {
-                const mockResponse = getMockResponse(coins, sceneType);
-                resolve(mockResponse);
-            }, 1000);
+                resolve(toLearningPayload(buildMockPayload(sceneType), sceneType));
+            }, 300);
             return;
         }
 
-        // Real API Call
-        wx.request({
-            url: `${API_BASE_URL}/v1/divination/interpret`,
-            method: 'POST',
-            timeout: 10000,
-            header: {
-                'Content-Type': 'application/json',
-                'X-API-Key': API_KEY
-            },
-            data: {
-                coins,
-                question,
-                scene_type: sceneType // explicit scene type
-            },
-            success: (res) => {
-                if (res.statusCode >= 200 && res.statusCode < 300) {
-                    console.log('API Response (Real):', res.data);
-                    resolve(normalizeResponse(res.data));
-                } else {
-                    console.error('API Error (HTTP):', res);
-                    // Fallback to Mock if 500 or 404 (optional, depending on preference)
-                    // For now, reject to show error UI
+        const requestByIndex = (idx) => {
+            const path = API_PATHS[idx];
+            wx.request({
+                url: `${API_BASE_URL}${path}`,
+                method: 'POST',
+                timeout: 10000,
+                header: {
+                    'Content-Type': 'application/json',
+                    'X-API-Key': API_KEY
+                },
+                data: {
+                    coins,
+                    question,
+                    scene_type: sceneType
+                },
+                success: (res) => {
+                    if (res.statusCode >= 200 && res.statusCode < 300) {
+                        resolve(toLearningPayload(res.data, sceneType));
+                        return;
+                    }
+                    if (res.statusCode === 404 && idx + 1 < API_PATHS.length) {
+                        requestByIndex(idx + 1);
+                        return;
+                    }
                     reject(res.data?.error || { code: 'HTTP_ERROR', message: `status=${res.statusCode}` });
+                },
+                fail: (err) => {
+                    if (idx + 1 < API_PATHS.length) {
+                        requestByIndex(idx + 1);
+                        return;
+                    }
+                    console.warn('API Network Error (Fallback to Mock):', err);
+                    resolve(toLearningPayload(buildMockPayload(sceneType), sceneType));
                 }
-            },
-            fail: (err) => {
-                console.warn('API Network Error (Fallback to Mock):', err);
+            });
+        };
 
-                // Fallback to Mock Data (Simulated)
-                // This ensures app works even if backend is not running
-                const mockResponse = getMockResponse(coins, sceneType);
-                resolve(mockResponse);
-
-                // Or reject if you prefer strict mode:
-                // reject({ code: 'NETWORK_ERROR', message: err.errMsg });
-            }
-        });
-    });
-};
-
-// Mock Response Helper (Moved from original function)
-const getMockResponse = (coins, sceneType = 'fortune') => {
-    return {
-        hexagram: {
-            code: "101010",
-            name: "未济 (Mock Fallback)",
-            symbol: "䷿",
-            judgment: "未济：亨，小狐汔济，濡其尾，无攸利。",
-            image: "火在水上，未济；君子以慎辨物居方。",
-            upper_trigram: "离",
-            lower_trigram: "坎"
-        },
-        changing_hexagram: {
-            code: "111111",
-            name: "乾",
-            symbol: "䷀",
-            judgment: "乾：元亨利贞。",
-            image: "天行健，君子以自强不息。",
-            interpretation: "【变卦】乾卦象征刚健不息，充满活力。表示目前正处于上升期，应积极进取。"
-        },
-        analysis: {
-            overall: "【注意：后端服务未连接，显示模拟数据】未济卦象征事未成，但这也意味着无限的可能性。此时不宜急进，需审慎行事，等待时机成熟。",
-            active_lines: ["初六：濡其尾，吝。", "九四：贞吉，悔亡，震用伐鬼方，三年有赏于大国。"],
-            five_elements: "本卦属火，变卦属金。火克金，需注意...",
-            solar_term: "当前节气立春，万物复苏，此卦象显示生机勃勃...",
-            advice: "宜：筹备规划，蓄势待发。\n忌：轻举妄动，涉水过河。"
-        },
-        do_dont: {
-            do: ["制定长远计划", "韬光养晦", "结交益友"],
-            dont: ["即刻行动", "强行推进", "与人争执"]
-        },
-        scene_type: sceneType,
-        score: 75,
-        keywords: ["时机未到", "潜龙勿用", "蓄势待发"],
-        advice_tags: ["守势", "规划", "防风险"],
-        consistency: {
-            status: "pass",
-            tone: "guard",
-            adjustments: []
-        }
-    };
-};
+        requestByIndex(0);
+    })
+);
 
 module.exports = {
     interpretHexagram

@@ -7,7 +7,7 @@
     </view>
     <view class="user-info">
       <open-data type="userNickName" class="nickname"></open-data>
-      <text class="user-tag">道友</text>
+      <text class="user-tag">学友</text>
     </view>
   </view>
 
@@ -15,13 +15,13 @@
   <view class="menu-card">
     <view class="menu-item" bindtap="goToHistory">
       <image class="menu-icon" src="../../images/history.svg" mode="aspectFit"></image> 
-      <text class="menu-text">我的卜卦记录</text>
+      <text class="menu-text">我的学习记录</text>
       <text class="arrow">></text>
     </view>
     
     <view class="menu-item">
       <image class="menu-icon" src="../../images/shake.svg" mode="aspectFit"></image>
-      <text class="menu-text">摇一摇起卦</text>
+      <text class="menu-text">摇一摇生成</text>
       <switch checked="{{gyroEnabled}}" bindchange="toggleGyro" color="#D4AF37" style="transform: scale(0.8);"/>
     </view>
 
@@ -49,9 +49,9 @@
   <view class="copyright-card">
     <view class="copyright-title">特别声明</view>
     <view class="copyright-content">
-      <text>1. 本应用算法基于《易经》六爻数理模型，旨在弘扬传统国学文化。\n</text>
-      <text>2. 所有测试结果仅供娱乐、心理疏导与民俗研究参考，不具备任何科学依据，不作为决策建议。\n</text>
-      <text>3. 请崇尚科学，理性对待，切勿迷信。\n</text>
+      <text>1. 本应用用于《周易》经典知识学习与文化科普。\n</text>
+      <text>2. 页面内容仅供学习交流，不构成现实决策建议。\n</text>
+      <text>3. 请理性阅读，结合权威教材系统学习。\n</text>
       <text>4. 背景音乐《三个人的时光》来源于网络，版权归原作者所有。本项目无任何商业盈利目的。</text>
     </view>
     <view class="copyright-contact">

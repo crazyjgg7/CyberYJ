@@ -34,7 +34,7 @@ Page({
     clearHistory() {
         wx.showModal({
             title: '提示',
-            content: '确定清空所有卜卦记录吗？',
+            content: '确定清空所有学习记录吗？',
             success: (res) => {
                 if (res.confirm) {
                     storage.clearHistory();

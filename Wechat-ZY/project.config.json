@@ -46,49 +46,49 @@
     "disableSWC": true
   },
   "compileType": "miniprogram",
-  "libVersion": "2.19.4",
+  "libVersion": "3.14.2",
   "srcMiniprogramRoot": "",
   "packOptions": {
     "ignore": [
       {
-        "type": "folder",
-        "value": "docs"
+        "value": "docs",
+        "type": "folder"
       },
       {
-        "type": "folder",
-        "value": "scripts"
+        "value": "scripts",
+        "type": "folder"
       },
       {
-        "type": "folder",
-        "value": "venv"
+        "value": "venv",
+        "type": "folder"
       },
       {
-        "type": "folder",
-        "value": ".gemini"
+        "value": ".gemini",
+        "type": "folder"
       },
       {
-        "type": "folder",
-        "value": ".agent"
+        "value": ".agent",
+        "type": "folder"
       },
       {
-        "type": "file",
-        "value": "*.md"
+        "value": "*.md",
+        "type": "file"
       },
       {
-        "type": "file",
-        "value": "*.sh"
+        "value": "*.sh",
+        "type": "file"
       },
       {
-        "type": "file",
-        "value": ".*"
+        "value": ".*",
+        "type": "file"
       },
       {
-        "type": "file",
-        "value": "images/乾隆通宝字.png"
+        "value": "images/乾隆通宝字.png",
+        "type": "file"
       },
       {
-        "type": "file",
-        "value": "images/符号面.png"
+        "value": "images/符号面.png",
+        "type": "file"
       }
     ],
     "include": []

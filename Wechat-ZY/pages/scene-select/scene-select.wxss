@@ -3,10 +3,11 @@
   padding: 0;
   /* Deep Mist Gradient: Dark Jade to Lighter Mist */
   background: radial-gradient(circle at 50% 30%, #e0e6e4, #a8c0bb, #2c5f58); 
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  overflow: hidden;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
   box-sizing: border-box;
 }
 
@@ -38,17 +39,18 @@
 
 /* Wheel Context */
 .wheel-area {
-  flex: 1;
+  flex: 0 0 auto;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: -40rpx; 
+  margin-top: -20rpx; 
+  min-height: 560rpx;
 }
 
 .bagua-wheel {
-  width: 600rpx;
-  height: 600rpx;
+  width: 540rpx;
+  height: 540rpx;
   border-radius: 50%;
   position: relative;
   
@@ -150,17 +152,17 @@
   align-items: center;
   justify-content: center;
   transition: all 0.3s cubic-bezier(0.4, 0.0, 0.2, 1); /* Snappy transition */
-  z-index: 100; /* Ensure items are above everything (rings/taichi) */
+  z-index: 20;
   overflow: visible; /* Prevent text clipping */
 }
 
 /* Positions matching .scene-select.wxss previously, preserved */
-.item-0 { transform: rotate(0deg) translate(0, -220rpx); }
-.item-1 { transform: rotate(60deg) translate(0, -220rpx); }
-.item-2 { transform: rotate(120deg) translate(0, -220rpx); }
-.item-3 { transform: rotate(180deg) translate(0, -220rpx); }
-.item-4 { transform: rotate(240deg) translate(0, -220rpx); }
-.item-5 { transform: rotate(300deg) translate(0, -220rpx); }
+.item-0 { transform: rotate(0deg) translate(0, -195rpx); }
+.item-1 { transform: rotate(60deg) translate(0, -195rpx); }
+.item-2 { transform: rotate(120deg) translate(0, -195rpx); }
+.item-3 { transform: rotate(180deg) translate(0, -195rpx); }
+.item-4 { transform: rotate(240deg) translate(0, -195rpx); }
+.item-5 { transform: rotate(300deg) translate(0, -195rpx); }
 
 /* Icons & Text */
 .icon-container {
@@ -240,7 +242,7 @@
 .input-section {
   background: rgba(255, 255, 255, 0.95); /* Nearly opaque paper */
   width: 90%;
-  margin-bottom: 60rpx;
+  margin-bottom: calc(env(safe-area-inset-bottom) + 24rpx);
   border-radius: 20rpx;
   padding: 40rpx;
   box-shadow: 0 10rpx 40rpx rgba(0,0,0,0.1);
@@ -259,7 +261,7 @@
   flex-direction: column;
   align-items: center;
   /* Ensure it covers enough space */
-  min-height: 360rpx;
+  min-height: 320rpx;
 }
 
 .selected-scene-header {
@@ -348,4 +350,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+  z-index: 50;
 }

@@ -4,7 +4,7 @@
   <view class="guide-mask" wx:if="{{showGuide}}" bindtap="closeGuide">
     <view class="guide-content" catchtap="dummy">
       <view class="guide-icon">📱</view>
-      <text class="guide-text">请专注心念\n摇动手机 6 次\n或点击按钮进行卜卦</text>
+      <text class="guide-text">请专注学习主题\n摇动手机 6 次\n或点击按钮生成样例</text>
       <button class="guide-btn" bindtap="closeGuide">我知道了</button>
     </view>
   </view>
@@ -21,14 +21,14 @@
 
   <view class="hint-area">
     <block wx:if="{{status === 'complete'}}">
-      <text class="hint-text">卦象已成，点击查看</text>
+      <text class="hint-text">学习样例已生成，点击查看</text>
     </block>
     <block wx:else>
       <block wx:if="{{mode === 'gyro'}}">
-        <text class="hint-text">{{status === 'shaking' ? '感应中...' : '请摇晃手机起卦'}}</text>
+        <text class="hint-text">{{status === 'shaking' ? '感应中...' : '请摇晃手机生成样例'}}</text>
       </block>
       <block wx:elif="{{mode === 'touch'}}">
-        <text class="hint-text">{{status === 'shaking' ? '感应中...' : '点击下方按钮起卦'}}</text>
+        <text class="hint-text">{{status === 'shaking' ? '感应中...' : '点击下方按钮生成样例'}}</text>
         <text class="sub-hint-mode">(无法使用陀螺仪时的替代方案)</text>
       </block>
       <block wx:else>
@@ -97,7 +97,7 @@
       bindtap="handleAction"
       wx:if="{{status === 'complete' || mode === 'touch'}}"
     >
-      {{status === 'complete' ? '查看卦解' : '点击起卦'}}
+      {{status === 'complete' ? '查看解读' : '点击生成'}}
     </button>
   </view>
 </view>

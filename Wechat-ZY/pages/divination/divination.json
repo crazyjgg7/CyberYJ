@@ -1,5 +1,5 @@
 {
-    "navigationBarTitleText": "诚心摇卦",
+    "navigationBarTitleText": "学习样例生成",
     "usingComponents": {
         "music-control": "../../components/music-control/music-control"
     }

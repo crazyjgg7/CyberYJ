@@ -248,8 +248,20 @@ Page({
 
     startDivination() {
         const { selectedScene, question } = this.data;
+        wx.showLoading({ title: '加载中...', mask: true });
         wx.navigateTo({
-            url: `/pages/divination/divination?scene=${selectedScene}&question=${question}`
+            url: `/pages/divination/divination?scene=${selectedScene}&question=${encodeURIComponent(question || '')}`,
+            success: () => {
+                wx.hideLoading();
+            },
+            fail: (err) => {
+                wx.hideLoading();
+                console.error('navigateTo divination failed:', err);
+                wx.showToast({
+                    title: '进入页面失败，请重试',
+                    icon: 'none'
+                });
+            }
         });
     }
 });

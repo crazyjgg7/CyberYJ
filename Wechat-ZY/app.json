@@ -21,7 +21,7 @@
     "list": [
       {
         "pagePath": "pages/index/index",
-        "text": "卜卦",
+        "text": "学习",
         "iconPath": "images/tab-home.png",
         "selectedIconPath": "images/tab-home-active.png"
       },

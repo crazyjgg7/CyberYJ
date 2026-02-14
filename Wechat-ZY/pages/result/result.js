@@ -7,6 +7,7 @@ Page({
         error: false,
         errorMsg: '',
         result: null, // Full API response
+        coins: null,
         isHistory: false,
         sceneId: '',
         sceneName: '',
@@ -36,6 +37,7 @@ Page({
                 // Format timestamp for display if needed, but wxml can handle or use wxs
                 this.setData({
                     result: record.result,
+                    coins: record.coins || null,
                     sceneId: record.sceneId || '',
                     sceneName: record.sceneName || '',
                     question: record.question || '',
@@ -49,6 +51,7 @@ Page({
             // New Divination
             try {
                 const coins = JSON.parse(options.coins);
+                this.setData({ coins });
                 this.fetchResult(coins);
             } catch (e) {
                 this.setError('无效的数据格式');
@@ -157,7 +160,7 @@ Page({
                 ctx.font = 'bold 20px sans-serif';
                 ctx.textAlign = 'center';
                 ctx.textBaseline = 'top';
-                ctx.fillText('CyberYJ 六爻卜卦', w / 2, 40);
+                ctx.fillText('CyberYJ 易经学习', w / 2, 40);
 
                 // Hexagram Symbol
                 ctx.fillStyle = '#bd9759';
@@ -195,7 +198,7 @@ Page({
                 // Footer
                 ctx.fillStyle = '#999999';
                 ctx.font = '12px sans-serif';
-                ctx.fillText('—— 长按识别，问吉凶 ——', w / 2, h - 50);
+                ctx.fillText('—— 经典学习卡片 ——', w / 2, h - 50);
 
                 // Save
                 setTimeout(() => {
@@ -235,8 +238,8 @@ Page({
     },
 
     onShareAppMessage() {
-        const title = this.data.result ? `我在 CyberYJ 求得一卦：【${this.data.result.hexagram.name}】，你也来试试？` : 'CyberYJ 六爻卜卦';
-        const path = this.data.result ? `/pages/result/result?coins=${JSON.stringify(this.data.result.coins)}` : '/pages/index/index';
+        const title = this.data.result ? `我在 CyberYJ 学习了【${this.data.result.hexagram.name}】` : 'CyberYJ 易经学习';
+        const path = this.data.coins ? `/pages/result/result?coins=${JSON.stringify(this.data.coins)}` : '/pages/index/index';
         return {
             title: title,
             path: path
@@ -244,10 +247,10 @@ Page({
     },
 
     onShareTimeline() {
-        const title = this.data.result ? `我在 CyberYJ 求得一卦：【${this.data.result.hexagram.name}】` : 'CyberYJ 六爻卜卦';
+        const title = this.data.result ? `我在 CyberYJ 学习了【${this.data.result.hexagram.name}】` : 'CyberYJ 易经学习';
         return {
             title: title,
-            query: this.data.result ? `coins=${JSON.stringify(this.data.result.coins)}` : ''
+            query: this.data.coins ? `coins=${JSON.stringify(this.data.coins)}` : ''
         };
     }
 });

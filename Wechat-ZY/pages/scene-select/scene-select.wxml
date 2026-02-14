@@ -2,7 +2,7 @@
   <!-- Top Title Area -->
   <view class="header">
     <text class="title">请拨动法阵</text>
-    <text class="subtitle">选择您的问事场景</text>
+    <text class="subtitle">选择您的学习主题</text>
   </view>
 
   <!-- Bagua Wheel Area -->
@@ -50,12 +50,12 @@
       </view>
       
       <view class="hint-text">
-        <block wx:if="{{scenes[selectedIndex].id === 'career'}}">可问升迁·跳槽·创业·职场人际...</block>
-        <block wx:elif="{{scenes[selectedIndex].id === 'love'}}">可问正缘·复合·桃花·感情走势...</block>
-        <block wx:elif="{{scenes[selectedIndex].id === 'wealth'}}">可问投资·理财·正财·偏财运势...</block>
-        <block wx:elif="{{scenes[selectedIndex].id === 'health'}}">可问身体·疾病·疗养·家人安康...</block>
-        <block wx:elif="{{scenes[selectedIndex].id === 'study'}}">可问考试·考研·留学·技能进修...</block>
-        <block wx:else>心中疑惑，皆可诚心问之...</block>
+        <block wx:if="{{scenes[selectedIndex].id === 'career'}}">推荐学习：上下卦结构、卦序和阅读顺序...</block>
+        <block wx:elif="{{scenes[selectedIndex].id === 'love'}}">推荐学习：卦辞关键词、白话释义与常见误读...</block>
+        <block wx:elif="{{scenes[selectedIndex].id === 'wealth'}}">推荐学习：象辞图景、语境理解与关联文本...</block>
+        <block wx:elif="{{scenes[selectedIndex].id === 'health'}}">推荐学习：爻位层次、动爻概念与符号含义...</block>
+        <block wx:elif="{{scenes[selectedIndex].id === 'study'}}">推荐学习：五行关系、术语基础与入门路径...</block>
+        <block wx:else>可输入你想学习的《周易》问题...</block>
       </view>
 
       <!-- Quick Question Chips -->
@@ -66,8 +66,8 @@
       </view>
       
       <!-- Simplified Input -->
-      <input class="simple-input" placeholder="输入具体问题 (选填)" value="{{question}}" bindinput="onQuestionInput" />
+      <input class="simple-input" placeholder="输入学习问题 (选填)" value="{{question}}" bindinput="onQuestionInput" />
       
-      <button class="confirm-btn" bindtap="startDivination">开始起卦</button>
+      <button class="confirm-btn" bindtap="startDivination">进入学习</button>
   </view>
 </view>

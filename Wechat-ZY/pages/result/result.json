@@ -1,5 +1,5 @@
 {
-    "navigationBarTitleText": "解卦结果",
+    "navigationBarTitleText": "学习结果",
     "usingComponents": {
         "music-control": "../../components/music-control/music-control"
     }

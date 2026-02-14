@@ -3,7 +3,7 @@
   <!-- Loading State -->
   <view class="loading-state" wx:if="{{loading}}">
     <view class="spinner"></view>
-    <text>正在向天问道...</text>
+    <text>正在整理学习内容...</text>
   </view>
 
   <!-- Error State -->
@@ -35,22 +35,13 @@
 
     <!-- General Analysis Card -->
     <view class="card analysis-card">
-      <view class="card-title">综合分析</view>
-      
-      <!-- Score & Tags Section -->
-      <view class="analysis-meta" wx:if="{{result.score}}">
-        <view class="score-container">
-            <text class="score-label">吉凶指数</text>
-            <progress class="score-bar" percent="{{result.score}}" stroke-width="6" border-radius="4" activeColor="var(--theme-primary)" backgroundColor="rgba(0,0,0,0.05)" />
-            <text class="score-value">{{result.score}}</text>
-        </view>
-      </view>
+      <view class="card-title">学习解读</view>
 
       <view class="tags-container" wx:if="{{result.keywords}}">
         <block wx:for="{{result.keywords}}" wx:key="index">
             <view class="result-tag keyword-tag">{{item}}</view>
         </block>
-        <block wx:for="{{result.advice_tags}}" wx:key="index">
+        <block wx:for="{{result.topic_tags}}" wx:key="index">
             <view class="result-tag advice-tag">{{item}}</view>
         </block>
       </view>
@@ -60,35 +51,19 @@
       </view>
       
       <view class="analysis-section" wx:if="{{result.analysis.solar_term}}">
-        <text class="label">节气旺衰：</text>
+        <text class="label">节气背景：</text>
         <text>{{result.analysis.solar_term}}</text>
       </view>
 
       <view class="analysis-section" wx:if="{{result.analysis.five_elements}}">
-        <text class="label">五行生克：</text>
+        <text class="label">结构关系：</text>
         <text>{{result.analysis.five_elements}}</text>
-      </view>
-    </view>
-
-    <!-- Do / Dont Card -->
-    <view class="card do-dont-card" wx:if="{{result.do_dont}}">
-      <view class="half-section do-section">
-        <text class="section-header do-header">宜</text>
-        <block wx:for="{{result.do_dont.do}}" wx:key="index">
-          <text class="item do-item">✅ {{item}}</text>
-        </block>
-      </view>
-      <view class="half-section dont-section">
-        <text class="section-header dont-header">忌</text>
-        <block wx:for="{{result.do_dont.dont}}" wx:key="index">
-          <text class="item dont-item">❌ {{item}}</text>
-        </block>
       </view>
     </view>
 
     <!-- Changing Lines (Active Lines) -->
     <view class="card lines-card" wx:if="{{result.analysis.active_lines && result.analysis.active_lines.length > 0}}">
-      <view class="card-title">动爻解读</view>
+      <view class="card-title">爻位注解</view>
       <block wx:for="{{result.analysis.active_lines}}" wx:key="index">
         <view class="line-item">
           <text>{{item}}</text>
@@ -98,7 +73,7 @@
 
     <!-- Changing Hexagram (If any) -->
     <view class="card changing-hex-card" wx:if="{{result.changing_hexagram}}">
-      <view class="card-title">变卦：{{result.changing_hexagram.name}}</view>
+      <view class="card-title">相关卦：{{result.changing_hexagram.name}}</view>
       <view class="hex-header small">
         <view class="hex-symbol">{{result.changing_hexagram.symbol}}</view>
         <view class="hex-text">
@@ -109,7 +84,7 @@
 
     <!-- Advice Card -->
     <view class="card advice-card">
-      <view class="card-title">趋吉避凶</view>
+      <view class="card-title">学习建议</view>
       <text class="advice-text">{{result.analysis.advice}}</text>
     </view>
 

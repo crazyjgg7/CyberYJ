@@ -1,52 +1,50 @@
 /**
- * 场景配置文件
- * 定义六爻占卜的各个场景
- * Backend Spec: fortune, career, love, wealth, health, study
+ * 学习主题配置
+ * 主题 ID 复用后端现有枚举，前端统一以“国学学习”表达展示。
  */
 
 const SCENES = {
     career: {
         id: 'career',
-        name: '问事业',
-        icon: 'briefcase',
-        defaultQuestion: '我的事业运势如何？',
-        quickQuestions: ['近期能否升职加薪？', '是否适合跳槽？', '创业机会如何？']
+        name: '结构入门',
+        icon: 'career',
+        defaultQuestion: '这组卦象的结构特点是什么？',
+        quickQuestions: ['上下卦如何组合？', '这一卦适合先看哪部分？', '新手如何快速读懂卦象结构？']
     },
     love: {
         id: 'love',
-        name: '问感情',
-        icon: 'heart',
-        defaultQuestion: '我的感情运势如何？',
-        quickQuestions: ['我和TA会有结果吗？', '近期有桃花运吗？', '如何挽回这段感情？']
+        name: '卦辞精读',
+        icon: 'love',
+        defaultQuestion: '请解释卦辞中的关键句。',
+        quickQuestions: ['卦辞重点词有哪些？', '可以给出白话解释吗？', '有哪些常见误读？']
     },
     wealth: {
         id: 'wealth',
-        name: '问财运',
-        icon: 'coins',
-        defaultQuestion: '我的财运如何？',
-        quickQuestions: ['近期财运走势？', '这个投资项目靠谱吗？', '如何提升偏财运？']
+        name: '象辞研读',
+        icon: 'wealth',
+        defaultQuestion: '请解释象辞与卦象关系。',
+        quickQuestions: ['象辞在说什么图景？', '如何从象辞理解经典语境？', '有哪些关联阅读建议？']
     },
     health: {
         id: 'health',
-        name: '问健康',
-        icon: 'heart-pulse',
-        defaultQuestion: '我的健康状况如何？',
-        quickQuestions: ['近期身体状况如何？', '如何调理身体？', '家人的健康运势？']
+        name: '爻位理解',
+        icon: 'health',
+        defaultQuestion: '请说明六爻位置的基础含义。',
+        quickQuestions: ['初爻到上爻如何理解？', '动爻在学习中怎么读？', '有没有简化记忆方法？']
     },
     study: {
         id: 'study',
-        name: '问学业',
-        icon: 'book',
-        defaultQuestion: '我的学业运势如何？',
-        quickQuestions: ['这次考试能过吗？', '适合考研还是工作？', '留学申请顺利吗？']
+        name: '五行基础',
+        icon: 'study',
+        defaultQuestion: '请从五行角度做基础讲解。',
+        quickQuestions: ['五行关系如何入门？', '如何避免过度解读？', '推荐哪些经典入门材料？']
     },
-    // Map 'other' -> 'fortune' (Backend Requirement)
     fortune: {
         id: 'fortune',
-        name: '综合运势', // Was '其他'
-        icon: 'ellipsis',
-        defaultQuestion: '近期运势如何？',
-        quickQuestions: ['最近运气怎么样？', '这件事能成吗？', '未来三个月运势？']
+        name: '综合学习',
+        icon: 'other',
+        defaultQuestion: '请给我一份这卦的学习提纲。',
+        quickQuestions: ['先看卦辞还是象辞？', '如何建立系统学习路径？', '请给出复习要点。']
     }
 };
 
@@ -73,7 +71,7 @@ function getSceneById(sceneId) {
  */
 function getDefaultQuestion(sceneId) {
     const scene = getSceneById(sceneId);
-    return scene ? scene.defaultQuestion : '此事发展如何？';
+    return scene ? scene.defaultQuestion : '请解释这组卦象的基础含义。';
 }
 
 module.exports = {

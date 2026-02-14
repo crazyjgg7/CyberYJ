@@ -20,6 +20,20 @@ def test_post_interpret_success():
     assert resp.headers["X-Request-ID"] == "req-success-001"
 
 
+def test_post_learning_interpret_success():
+    client = TestClient(create_app(api_key="test-key", rate_limit_max=10, rate_limit_window_seconds=60))
+    resp = client.post(
+        "/v1/learning/interpret",
+        headers={"X-API-Key": "test-key", "X-Request-ID": "req-learning-001"},
+        json={"coins": [6, 7, 8, 9, 7, 7]},
+    )
+    assert resp.status_code == 200
+    body = resp.json()
+    assert "hexagram" in body
+    assert "analysis" in body
+    assert resp.headers["X-Request-ID"] == "req-learning-001"
+
+
 def test_post_interpret_invalid_input():
     client = TestClient(create_app(api_key="test-key", rate_limit_max=10, rate_limit_window_seconds=60))
     resp = client.post(
